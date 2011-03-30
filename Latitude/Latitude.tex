@@ -1,0 +1,1135 @@
+\chapter{Planetary Latitudes}
+\section{Introduction}
+Up to now, we have neglected the fact that  the orbits of the
+five visible planets about the sun are all slightly inclined to the plane of the ecliptic. Of course, these inclinations cause
+the ecliptic latitudes of the said planets to take small, but non-zero, values. 
+In the following, we shall outline a model which is capable of predicting these values.
+
+\section{Determination of Ecliptic Latitude of Superior Planet}
+Figure~\ref{flong} shows the orbit of a superior planet. 
+As we have already mentioned, the deferent and epicycle of such a planet have the same elements as 
+the orbit of the planet in question  around the sun, and the apparent orbit of the
+sun around the earth, respectively. It follows that  the deferent and epicycle of a
+superior planet are, respectively,  inclined  and parallel to the ecliptic plane.
+ (Recall that the ecliptic plane corresponds to the
+plane of the sun's apparent orbit about the earth.) Let the plane of the deferent cut the
+ecliptic plane along the line $NGN'$. Here, $N$ is the point at which the
+deferent passes through the  plane of the ecliptic from south to north, in the direction of the
+mean planetary motion. This point is called the {\em ascending node}. 
+Note that the line $NGN'$ must pass through point $G$, since the
+earth is common to the plane of the deferent and the ecliptic plane.
+Now, it follows from simple geometry that the elevation of the guide-point $G'$ above of the
+ecliptic plane satisfies $v= r\,\sin i\,\sin F$, where $r$ is the length $GG'$, $i$  the fixed inclination of the
+planetary orbit (and, hence, of the deferent) to the ecliptic plane, and $F$  the angle $NGG'$. The
+angle $F$ is termed the {\em argument of latitude}. We can write (see Cha.~\ref{csup})
+\begin{equation}
+F = \bar{F} + q,
+\end{equation}
+where $\bar{F}$ is the {\em mean argument of latitude}, and $q$ the equation of center of the deferent. Note that $\bar{F}$
+increases {\em uniformly}\/ in time: {\em i.e.},
+\begin{equation}
+\bar{F}  = \bar{F}_0 + \breve{n}\,(t-t_0).
+\end{equation}
+ Now, since the epicycle is parallel to the ecliptic
+plane, the elevation of the planet above the said plane is
+the same as that of the guide-point. Hence, from simple geometry, the ecliptic latitude of the planet satisfies
+\begin{equation}
+\beta = \frac{v}{r''},
+\end{equation}
+where $r''$ is the length $GP$, and
+we have used the small angle approximation. However, it is apparent from Fig.~\ref{vf5xx} that
+\begin{equation}
+r'' = (r^2 + 2\,r\,r'\,\cos\mu+ r'^{\,2})^{1/2},
+\end{equation}
+where $r'$ the length $G'P$, and $\mu$ the
+equation of the epicycle. But, according to the analysis in Cha.~\ref{csup}, $r/r' = a\,z$, where $a$ is the planetary
+major radius in units in which the major radius of the sun's apparent orbit
+about the earth is unity, and $z$ is defined in Eq.~(\ref{ezdef}).
+Thus, we obtain
+\begin{equation}
+\beta =h\,\beta_0,
+\end{equation}
+where
+\begin{equation}
+\beta_0(F) = \sin i\,\sin F
+\end{equation}
+is termed the {\em  deferential latitude},
+and
+\begin{equation}
+h(\mu,z) = \left[1 + 2\,(a\,z)^{-1}\,\cos\mu+ (a\,z)^{-2}\right]^{-1/2}
+\end{equation}
+the {\em epicyclic latitude correction factor}.
+
+\begin{figure}[h]
+\epsfysize=3in
+\centerline{\epsffile{epsfiles/long.eps}}
+\caption[\em Orbit of a superior planet.]{\em Orbit of a superior planet. Here, $G$, $G'$, $P$, 
+$N$, $N'$,  and $F$ represent the earth, guide-point,
+planet, ascending node, descending node, and argument of latitude, respectively. View is from northern
+ecliptic pole.}\label{flong}
+\end{figure}
+
+In the following, $a$, $e$, $n$, $\tilde{n}$, $\breve{n}$, $\bar{\lambda}_0$, $M_0$,  $\bar{F}_0$, and $i$ are  elements of the orbit of the planet in question
+about the sun, and $e_S$, $\zeta_S$, and $\lambda_S$  are elements of the sun's apparent orbit
+about the earth. 
+The requisite elements for all of the superior planets at the J2000 epoch ($t_0=2\,451\,545.0$ JD)
+are listed in Tables~\ref{lt4} and \ref{tadd}.
+Employing a quadratic interpolation scheme to represent
+$F(\mu,z)$ (see Cha.~\ref{csup}), our procedure for determining the ecliptic latitude of a
+superior planet is summed up by the following formuale:
+\begin{eqnarray}
+\bar{\lambda}&=&  \bar{\lambda}_0 + n\,(t-t_0) ,\\[0.5ex]
+M &=& M_0  +\tilde{n}\,(t-t_0),\\[0.5ex]
+\bar{F} &=& \bar{F}_0 + \breve{n}\,(t-t_0),\\[0.5ex]
+q&=& 2\,e\,\sin \,M + (5/4)\,e^2\,\sin\,2M,\\[0.5ex]
+\zeta &=& e\,\cos M - e^2\,\sin^2 M,\\[0.5ex]
+F &=&\bar{F} + q,\\[0.5ex]
+\beta_0  &=& \sin i\,\sin F,\\[0.5ex]
+\mu&=& \lambda_S - \bar{\lambda}-q,\\[0.5ex]
+\bar{h} &=& h(\mu,\bar{z})\equiv\left[1 + 2\,(a\,\bar{z})^{-1}\,\cos\mu+ (a\,\bar{z})^{-2}\right]^{-1/2},\\[0.5ex]
+\delta h_- &=& h(\mu,\bar{z}) - h(\mu,z_{\rm max}),\\[0.5ex]
+\delta h_+&=& h(\mu,z_{\rm min}) - h(\mu,\bar{z}),\\[0.5ex]
+z &=& \frac{1-\zeta}{1-\zeta_S},\\[0.5ex]
+\xi &=& \frac{\bar{z}-z}{\delta z},\\[0.5ex]
+h  &=&\Theta_-(\xi)\,\delta h_-+ \bar{h}
++ \Theta_+(\xi)\,\delta\,h_+,\\[0.5ex]
+\beta &=& h\,\beta_0.
+\end{eqnarray}
+Here, $\bar{z} = (1+e\,e_S)/(1-e_S^{\,2})$, $\delta z = (e+e_S)/(1-e_S^{\,2})$, $z_{\rm min} = \bar{z}-\delta z$,
+and $z_{\rm max} = \bar{z}+\delta z$. The constants $\bar{z}$, $\delta z$, $z_{\rm min}$, and $z_{\rm max}$ 
+for each of the superior planets are listed in Table~\ref{vtx}.  Finally, the functions $\Theta_\pm$ are  tabulated in Table~\ref{vty}.
+
+For the case of Mars, the above formulae are capable of matching NASA ephemeris data during the years 1995--2006 CE
+with a mean error of $0.3'$ and a maximum error of $1.5'$. For the case of Jupiter, the mean error is
+$0.2'$ and the maximum error $0.5'$. Finally, for the case of Saturn, the mean error is $0.05'$ and the
+maximum error $0.08'$. 
+
+\section{Mars}
+The ecliptic latitude of Mars can be determined with the aid of Tables~\ref{vt8}, \ref{tlat1m}, and \ref{tlat2m}. Table~\ref{vt8} allows
+the mean argument of latitude, $\bar{F}$, of Mars to be calculated as a function of
+time. Next, Table~\ref{tlat1m} permits the deferential latitude, $\beta_0$, to
+be determined as a function of the true argument of latitude, $F$. Finally, Table~\ref{tlat2m} allows the quantities
+$\delta h_-$, $\bar{h}$, and $\delta h_+$ to be calculated as functions of the epicyclic
+anomaly, $\mu$. 
+
+The procedure for using the tables is as follows:
+\begin{enumerate}
+\item Determine the fractional Julian day number, $t$, corresponding to the date and time
+at which the ecliptic latitude is to be calculated with the aid of Tables~\ref{kt1}--\ref{kt3}. Form $\Delta t = t-t_0$, where $t_0=2\,451\,545.0$ is the epoch. 
+\item Calculate the planetary equation
+of center, $q$, ecliptic anomaly, $\mu$, and 
+interpolation parameters $\Theta_+$ and $\Theta_-$ using the
+procedure set out in Cha.~\ref{csup}.
+\item Enter Table~\ref{vt8} with the digit for each power of 10
+in ${\Delta} t$ and take out the corresponding values of $\Delta\bar{F}$. If $\Delta t$ is negative then the corresponding
+values are also negative.
+The value of the mean argument of latitude, $\bar{F}$, is the
+sum of all the $\Delta\bar{F}$ values plus the value of $\bar{F}$ at the epoch.  
+\item Form the true argument of latitude,
+$F=\bar{F} + q$. Add as many multiples of $360^\circ$ to $F$ 
+as is required to make it fall in the range $0^\circ$ to $360^\circ$.
+Round $F$ to the nearest degree.
+\item Enter Table~\ref{tlat1m} with the value of $F$ and take out the
+corresponding value of the deferential latitude, $\beta_0$. It is necessary to interpolate if $F$ is odd.
+\item Enter Table~\ref{tlat2m} with the value of $\mu$ and take
+out the corresponding values of $\delta h_-$, $\bar{h}$, and
+$\delta h_+$. If $\mu > 180^\circ$ then it is necessary to make use
+of the identities $\delta h_\pm(360^\circ - \mu) = \delta h_\pm(\mu)$
+and $\bar{h}(360^\circ - \mu) = \bar{h}(\mu)$.
+\item Form the epicyclic latitude correction factor, $h = \Theta_-\,\delta h_-+ \bar{h}
++ \Theta_+\,\delta h_+$.
+\item The ecliptic latitude, $\beta$, is the product of the deferential latitude, 
+$\beta_0$,  and the epicyclic latitude correction factor, $h$.  The decimal fraction can
+be converted into arc minutes
+using Table~\ref{lt6a}. Round to the nearest arc minute. 
+\end{enumerate}
+One example of this procedure is given below.
+
+~\\
+\noindent {\em Example}: May 5, 2005 CE, 00:00 UT:\\
+~\\
+From Cha.~\ref{csup}, $t-t_0=1\,950.5$ JD, 
+$q= -7.345^\circ$,  $\mu= 114.286^\circ$, $\Theta_-=0.101$, and
+$\Theta_+ = 0.619$.
+ Making use of
+Table~\ref{vt8}, we find:\\
+\begin{tabular}{rr}
+&\\
+$t$(JD) & $\bar{F}(^\circ)$\\[-2ex]
+&\\
++1000 & $164.041$ \\
++900 & $111.637$\\
++50 & $26.202$ \\
++.5 & $0.262$\\
+Epoch & $305.796$ \\\cline{2-2}
+&$607.938$ \\\cline{2-2}
+Modulus & $247.938$ \\ 
+&\\
+\end{tabular}\\
+Thus,
+$$
+F = \bar{F} + q = 247.938-7.345 = 240.593\simeq 241^\circ.
+$$
+It follows from Table~\ref{tlat1m} that
+$$
+\beta_0(241^\circ) = -1.615^\circ.
+$$
+Since $\mu\simeq 114^\circ$, Table~\ref{tlat2m} yields
+$$
+\delta h_-(114^\circ) = -0.017,\mbox{\hspace{0.5cm}}\bar{h}(114^\circ)=1.056, \mbox{\hspace{0.5cm}}\delta h_+(114^\circ) = -0.027,
+$$
+so
+$$
+h = \Theta_-\,\delta h_- + \bar{h}+\Theta_+\,\delta h_+ = -0.101\times 0.017+1.056-0.619\times 0.027 = 1.038.
+$$
+Finally,
+$$
+\beta = h\,\beta_0 = -1.038\times 1.615 = -1.676 \simeq -1^\circ 41'.
+$$
+Thus,
+the ecliptic latitude of Mars at 00:00 UT on May 5, 2005 CE was $-1^\circ 41'$.
+
+\section{Jupiter}
+The ecliptic latitude of Jupiter can be determined with the aid of Tables~\ref{vt11}, \ref{tlat1j}, and \ref{tlat2j}. Table~\ref{vt11} allows
+the mean argument of latitude, $\bar{F}$, of Jupiter to be calculated as a function of
+time. Next, Table~\ref{tlat1j} permits the deferential latitude, $\beta_0$, to
+be determined as a function of the true argument of latitude, $F$. Finally, Table~\ref{tlat2j} allows the quantities
+$\delta h_-$, $\bar{h}$, and $\delta h_+$ to be calculated as functions of the epicyclic
+anomaly, $\mu$.  The procedure for using these tables is analogous to the previously described procedure for
+using the Mars tables.
+One example of this procedure is given below.
+
+~\\
+\noindent {\em Example}: May 5, 2005 CE, 00:00 UT:\\
+~\\
+From Cha.~\ref{csup}, $t-t_0=1\,950.5$ JD, 
+$q= -0.091^\circ$,  $\mu= 208.192^\circ$, $\Theta_-=-0.469$, and
+$\Theta_+ = -0.121$.
+ Making use of
+Table~\ref{vt11}, we find:\\
+\begin{tabular}{rr}
+&\\
+$t$(JD) & $\bar{F}(^\circ)$\\[-2ex]
+&\\
++1000 & $83.081$ \\
++900 & $74.773$\\
++50 & $4.154$ \\
++.5 & $0.042$\\
+Epoch & $293.660$ \\\cline{2-2}
+&$455.710$ \\\cline{2-2}
+Modulus & $95.710$ \\ 
+&\\
+\end{tabular}\\
+Thus,
+$$
+F = \bar{F} + q =95.710-0.091 = 95.619\simeq 96^\circ.
+$$
+It follows from Table~\ref{tlat1j} that
+$$
+\beta_0(96^\circ) = 1.297^\circ.
+$$
+Since $\mu\simeq 208^\circ$, Table~\ref{tlat2j} yields
+$$
+\delta h_-(208^\circ) = 0.014,\mbox{\hspace{0.5cm}}\bar{h}(208^\circ)=1.197, \mbox{\hspace{0.5cm}}\delta h_+(208^\circ) = 0.016,
+$$
+so
+$$
+h = \Theta_-\,\delta h_- + \bar{h}+\Theta_+\,\delta h_+ = -0.469\times 0.014 +1.197-0.121\times 0.016 = 1.188.
+$$
+Finally,
+$$
+\beta = h\,\beta_0 = 1.188\times 1.297 = 1.541 \simeq 1^\circ 32'.
+$$
+Thus,
+the ecliptic latitude of Jupiter at 00:00 UT on May 5, 2005 CE was $1^\circ 32'$.
+
+\section{Saturn}
+The ecliptic latitude of Saturn can be determined with the aid of Tables~\ref{vt14}, \ref{tlat1s}, and \ref{tlat2s}. Table~\ref{vt14} allows
+the mean argument of latitude, $\bar{F}$, of Saturn to be calculated as a function of
+time. Next, Table~\ref{tlat1s} permits the deferential latitude, $\beta_0$, to
+be determined as a function of the true argument of latitude, $F$. Finally, Table~\ref{tlat2s} allows the quantities
+$\delta h_-$, $\bar{h}$, and $\delta h_+$ to be calculated as functions of the epicyclic
+anomaly, $\mu$.  The procedure for using these tables is analogous to the previously described procedure for
+using the Mars tables.
+One example of this procedure is given below.
+
+~\\
+\noindent {\em Example}: May 5, 2005 CE, 00:00 UT:\\
+~\\
+From Cha.~\ref{csup}, $t-t_0=1\,950.5$ JD, 
+$q= 2.561^\circ$,  $\mu= 286.625^\circ$, $\Theta_-=0.071$, and
+$\Theta_+ = 0.759$.
+ Making use of
+Table~\ref{vt14}, we find:\\
+\begin{tabular}{rr}
+&\\
+$t$(JD) & $\bar{F}(^\circ)$\\[-2ex]
+&\\
++1000 & $33.478$ \\
++900 & $30.130$\\
++50 & $1.674$ \\
++.5 & $0.017$\\
+Epoch & $296.482$ \\\cline{2-2}
+&$361.781$ \\\cline{2-2}
+Modulus & $1.781$ \\ 
+&\\
+\end{tabular}\\
+Thus,
+$$
+F = \bar{F} + q =1.781+2.561 = 4.342\simeq 4^\circ.
+$$
+It follows from Table~\ref{tlat1s} that
+$$
+\beta_0(4^\circ) = 0.173^\circ.
+$$
+Since $\mu\simeq 287^\circ$, Table~\ref{tlat2s} yields
+$$
+\delta h_-(287^\circ) = -0.002,\mbox{\hspace{0.5cm}}\bar{h}(287^\circ)=0.966, \mbox{\hspace{0.5cm}}\delta h_+(287^\circ) = -0.003,
+$$
+so
+$$
+h = \Theta_-\,\delta h_- + \bar{h}+\Theta_+\,\delta h_+ = -0.071\times 0.002 +0.966-0.759\times 0.003 = 0.964.
+$$
+Finally,
+$$
+\beta = h\,\beta_0 = 0.964\times 0.173 = 0.167 \simeq 0^\circ 10'.
+$$
+Thus,
+the ecliptic latitude of Saturn at 00:00 UT on May 5, 2005 CE was $0^\circ 10'$.
+
+
+
+\section{Determination of Ecliptic Latitude of Inferior Planet}
+Figure~\ref{flong1} shows the orbit of an inferior planet. 
+As we have already mentioned, the epicycle and deferent of such a planet 
+have the same elements as
+the orbit of the planet in question  around the sun, and the apparent orbit of the
+sun around the earth, respectively. It follows that  the epicycle and deferent of an inferior planet are, respectively,  inclined  and parallel to the ecliptic plane.
+ Let the plane of the epicycle cut the
+ecliptic plane along the line $NG'N'$. Here, $N$ is the point at which the
+epicycle passes through the  plane of the ecliptic from south to north, in the direction of the
+mean planetary motion. This point is called the {\em ascending node}. 
+Note that the line $NG'N'$ must pass through the guide-point, $G'$, since the
+sun (which is coincident with the guide-point)  is common to the plane of the planetary orbit and the ecliptic plane.
+Now, it follows from simple geometry that the elevation of the planet $P$ above  the
+guide-point, $G'$, satisfies $v= r'\,\sin i\,\sin F$, where $r'$ is the length $G'P$, $i$  the fixed inclination of the
+planetary orbit (and, hence, of the epicycle) to the ecliptic plane, and $F$  the angle $NG'P$. The
+angle $F$ is termed the argument of latitude. We can write (see Cha.~\ref{cinf})
+\begin{equation}
+F = \bar{F} + q,
+\end{equation}
+where $\bar{F}$ is the mean argument of latitude, and $q$ the equation of center of the epicycle. Note that $\bar{F}$
+increases {\em uniformly}\/ in time: {\em i.e.},
+\begin{equation}
+\bar{F}  = \bar{F}_0 + \breve{n}\,(t-t_0).
+\end{equation}
+ Now, since the deferent is parallel to the ecliptic
+plane, the elevation of the planet above the said plane is
+the same as that of the planet above the guide-point. Hence, from simple geometry, the ecliptic latitude of the planet satisfies
+\begin{equation}
+\beta = \frac{v}{r''},
+\end{equation}
+where $r''$ is the length $GP$, and
+we have used the small angle approximation. However, it is apparent from Fig.~\ref{vf5xx} that
+\begin{equation}
+r'' = (r^2 + 2\,r\,r'\,\cos\mu+ r'^{\,2})^{1/2},
+\end{equation}
+where $r$ the length $GG'$, and $\mu$ the
+equation of the epicycle. But, according to the analysis in Cha.~\ref{cinf}, $r'/r = a/z$, where $a$ is the planetary
+major radius in units in which the major radius of the sun's apparent orbit
+about the earth is unity, and $z$ is defined in Eq.~(\ref{e182x}).
+Thus, we obtain
+\begin{equation}
+\beta =h\,\beta_0,
+\end{equation}
+where
+\begin{equation}
+\beta_0(F) = a\,\sin i\,\sin F
+\end{equation}
+is termed the {\em epicyclic latitude},
+and
+\begin{equation}
+h(\mu,z) = \left[z^2 + 2\,a\,z\,\cos\mu+ a^2\right]^{-1/2}
+\end{equation}
+the {\em deferential latitude correction factor}.
+
+\begin{figure}[h]
+\epsfysize=3in
+\centerline{\epsffile{epsfiles/long1.eps}}
+\caption[\em Orbit of an inferior planet.]{\em Orbit of an inferior planet. Here, $G$, $G'$, $P$, 
+$N$, $N'$,  and $F$ represent the earth, guide-point,
+planet, ascending node, descending node, and argument of latitude, respectively. View is from northern
+ecliptic pole.}\label{flong1}
+\end{figure}
+
+In the following, $a$, $e$, $n$, $\tilde{n}$, $\breve{n}$, $\bar{\lambda}_0$, $M_0$,  $\bar{F}_0$, and $i$ are  elements of the orbit of the planet in question
+about the sun, and $e_S$, $\zeta_S$, and $\lambda_S$  are elements of the sun's apparent orbit
+about the earth. 
+The requisite elements for all of the superior planets at the J2000 epoch ($t_0=2\,451\,545.0$ JD)
+are listed in Tables~\ref{lt4} and \ref{tadd}.
+Employing a quadratic interpolation scheme to represent
+$F(\mu,z)$ (see Cha.~\ref{csup}), our procedure for determining the ecliptic latitude of a
+superior planet is summed up by the following formuale:
+\begin{eqnarray}
+\bar{\lambda}&=&  \bar{\lambda}_0 + n\,(t-t_0) ,\\[0.5ex]
+M &=& M_0  +\tilde{n}\,(t-t_0),\\[0.5ex]
+\bar{F} &=& \bar{F}_0 + \breve{n}\,(t-t_0),\\[0.5ex]
+q&=& 2\,e\,\sin \,M + (5/4)\,e^2\,\sin\,2M,\\[0.5ex]
+\zeta &=& e\,\cos M - e^2\,\sin^2 M,\\[0.5ex]
+F &=&\bar{F} + q,\\[0.5ex]
+\beta_0  &=& a\,\sin i\,\sin F,\\[0.5ex]
+\mu&=& \bar{\lambda}+q-\bar{\lambda}_S,\\[0.5ex]
+\bar{h} &=& h(\mu,\bar{z})\equiv\left[\bar{z}^2 + 2\,a\,\bar{z}\,\cos\mu+ a^2\right]^{-1/2},\\[0.5ex]
+\delta h_- &=& h(\mu,\bar{z}) - h(\mu,z_{\rm max}),\\[0.5ex]
+\delta h_+&=& h(\mu,z_{\rm min}) - h(\mu,\bar{z}),\\[0.5ex]
+z &=& \frac{1-\zeta_S}{1-\zeta},\\[0.5ex]
+\xi &=& \frac{\bar{z}-z}{\delta z},\\[0.5ex]
+h  &=&\Theta_-(\xi)\,\delta h_-+ \bar{h}
++ \Theta_+(\xi)\,\delta\,h_+,\\[0.5ex]
+\beta &=& h\,\beta_0.
+\end{eqnarray}
+Here, $\bar{z} = (1+e\,e_S)/(1-e^{2})$, $\delta z = (e+e_S)/(1-e^{2})$, $z_{\rm min} = \bar{z}-\delta z$,
+and $z_{\rm max} = \bar{z}+\delta z$. The constants $\bar{z}$, $\delta z$, $z_{\rm min}$, and $z_{\rm max}$ 
+for each of the inferior planets are listed in Table~\ref{vtx}.  Finally, the functions $\Theta_\pm$ are  tabulated in Table~\ref{vty}.
+
+For the case of Venus, the above formulae are capable of matching NASA ephemeris data during the years 1995--2006 CE
+with a mean error of $0.7'$ and a maximum error of $1.8'$. For the case of Mercury, with the augmentations to the theory described in Cha.~\ref{cinf}, the mean error is
+$1.6'$ and the maximum error $5'$. 
+
+\section{Venus}
+The ecliptic latitude of Venus can be determined with the aid of Tables~\ref{vt17}, \ref{tlat1v}, and \ref{tlat2v}. Table~\ref{vt17} allows
+the mean argument of latitude, $\bar{F}$, of Venus to be calculated as a function of
+time. Next, Table~\ref{tlat1v} permits the epicyclic  latitude, $\beta_0$, to
+be determined as a function of the true argument of latitude, $F$. Finally, Table~\ref{tlat2v} allows the quantities
+$\delta h_-$, $\bar{h}$, and $\delta h_+$ to be calculated as functions of the epicyclic
+anomaly, $\mu$. 
+
+The procedure for using the tables is as follows:
+\begin{enumerate}
+\item Determine the fractional Julian day number, $t$, corresponding to the date and time
+at which the ecliptic latitude is to be calculated with the aid of Tables~\ref{kt1}--\ref{kt3}. Form $\Delta t = t-t_0$, where $t_0=2\,451\,545.0$ is the epoch. 
+\item Calculate the planetary equation
+of center, $q$,  ecliptic anomaly, $\mu$, and 
+interpolation parameters $\Theta_+$ and $\Theta_-$ using the
+procedure set out in Cha.~\ref{cinf}.
+\item Enter Table~\ref{vt17} with the digit for each power of 10
+in ${\Delta} t$ and take out the corresponding values of $\Delta\bar{F}$. If $\Delta t$ is negative then the corresponding
+values are also negative.
+The value of the mean argument of latitude, $\bar{F}$, is the
+sum of all the $\Delta\bar{F}$ values plus the value of $\bar{F}$ at the epoch.  
+\item Form the true argument of latitude,
+$F=\bar{F} + q$. Add as many multiples of $360^\circ$ to $F$ 
+as is required to make it fall in the range $0^\circ$ to $360^\circ$.
+Round $F$ to the nearest degree.
+\item Enter Table~\ref{tlat1v} with the value of $F$ and take out the
+corresponding value of the epicyclic latitude, $\beta_0$. It is necessary to interpolate if $F$ is odd.
+\item Enter Table~\ref{tlat2v} with the value of $\mu$ and take
+out the corresponding values of $\delta h_-$, $\bar{h}$, and
+$\delta h_+$. If $\mu > 180^\circ$ then it is necessary to make use
+of the identities $\delta h_\pm(360^\circ - \mu) = \delta h_\pm(\mu)$
+and $\bar{h}(360^\circ - \mu) = \bar{h}(\mu)$.
+\item Form the deferential latitude correction factor, $h = \Theta_-\,\delta h_-+ \bar{h}
++ \Theta_+\,\delta h_+$.
+\item The ecliptic latitude, $\beta$, is the product of the epicyclic latitude, 
+$\beta_0$,  and the deferential latitude correction factor, $h$.  The decimal fraction can
+be converted into arc minutes
+using Table~\ref{lt6a}. Round to the nearest arc minute. 
+\end{enumerate}
+One example of this procedure is given below.
+
+~\\
+\noindent {\em Example}: May 5, 2005 CE, 00:00 UT:\\
+~\\
+From Cha.~\ref{cinf}, $t-t_0=1\,950.5$ JD, 
+$q= -0.712^\circ$,  $\mu= 21.689^\circ$, $\Theta_-=-0.355$, and
+$\Theta_+ = -0.125$.
+ Making use of
+Table~\ref{vt17}, we find:\\
+\begin{tabular}{rr}
+&\\
+$t$(JD) & $\bar{F}(^\circ)$\\[-2ex]
+&\\
++1000 & $162.138$ \\
++900 & $1.924$\\
++50 & $80.107$ \\
++.5 & $0.801$\\
+Epoch & $105.253$ \\\cline{2-2}
+&$350.223$ \\\cline{2-2}
+Modulus & $350.223$ \\ 
+&\\
+\end{tabular}\\
+Thus,
+$$
+F = \bar{F} + q = 350.223-0.712 = 349.511\simeq 350^\circ.
+$$
+It follows from Table~\ref{tlat1v} that
+$$
+\beta_0(350^\circ) = -0.423^\circ.
+$$
+Since $\mu\simeq 22^\circ$, Table~\ref{tlat2v} yields
+$$
+\delta h_-(22^\circ) = 0.008,\mbox{\hspace{0.5cm}}\bar{h}(22^\circ)=0.591, \mbox{\hspace{0.5cm}}\delta h_+(22^\circ) = 0.008,
+$$
+so
+$$
+h = \Theta_-\,\delta h_- + \bar{h}+\Theta_+\,\delta h_+ = -0.355\times 0.008+0.591-0.125\times 0.008 = 0.587.
+$$
+Finally,
+$$
+\beta = h\,\beta_0 =- 0.587\times 0.423 = -0.248\simeq -0^\circ 15'.
+$$
+Thus,
+the ecliptic latitude of Venus at 00:00 UT on May 5, 2005 CE was $-0^\circ 15'$.
+
+\section{Mercury}
+The ecliptic latitude of Mercury can be determined with the aid of Tables~\ref{vt20}, \ref{tlat1mc}, and \ref{tlat2mc}. Table~\ref{vt20} allows
+the mean argument of latitude, $\bar{F}$, of Mercury to be calculated as a function of
+time. Next, Table~\ref{tlat1mc} permits the epicyclic  latitude, $\beta_0$, to
+be determined as a function of the true argument of latitude, $F$. Finally, Table~\ref{tlat2mc} allows the quantities
+$\delta h_-$, $\bar{h}$, and $\delta h_+$ to be calculated as functions of the epicyclic
+anomaly, $\mu$. 
+The procedure for using the tables is analogous to the previously
+described procedure for using the Venus tables.
+One example of this procedure is given below.
+
+~\\
+\noindent {\em Example}: May 5, 2005 CE, 00:00 UT:\\
+~\\
+From Cha.~\ref{cinf}, $t-t_0=1\,950.5$ JD, 
+$q= -16.974^\circ$,  $\mu= 252.692^\circ$, $\Theta_-=0.107$, and
+$\Theta_+ = 0.583$.
+ Making use of
+Table~\ref{vt20}, we find:\\
+\begin{tabular}{rr}
+&\\
+$t$(JD) & $\bar{F}(^\circ)$\\[-2ex]
+&\\
++1000 & $132.342$ \\
++900 & $83.108$\\
++50 & $204.617$ \\
++.5 & $2.046$\\
+Epoch & $204.436$ \\\cline{2-2}
+&$626.549$ \\\cline{2-2}
+Modulus & $266.549$ \\ 
+&\\
+\end{tabular}\\
+Thus,
+$$
+F = \bar{F} + q = 266.549-16.974= 249.575\simeq 250^\circ.
+$$
+It follows from Table~\ref{tlat1mc} that
+$$
+\beta_0(250^\circ) = -2.511^\circ.
+$$
+Since $\mu\simeq 253^\circ$, Table~\ref{tlat2mc} yields
+$$
+\delta h_-(253^\circ) = 0.184,\mbox{\hspace{0.5cm}}\bar{h}(253^\circ)=1.037, \mbox{\hspace{0.5cm}}\delta h_+(253^\circ) = 0.272,
+$$
+so
+$$
+h = \Theta_-\,\delta h_- + \bar{h}+\Theta_+\,\delta h_+ = 0.107\times 0.184+1.037+0.583\times 0.272= 1.215.
+$$
+Finally,
+$$
+\beta = h\,\beta_0 =- 1.215\times 2.511 = -3.051\simeq -3^\circ 03'.
+$$
+Thus,
+the ecliptic latitude of Mercury at 00:00 UT on May 5, 2005 CE was $-3^\circ 03'$.
+
+\clearpage
+\begin{table}\centering
+\begin{tabular}{l|ccc}
+Object &  $i(^\circ)$& $\breve{n}\,(^\circ/{\rm day})$ & $\bar{F}_0\,(^\circ)$\\\hline
+&&&\\[-2.2ex]
+Mercury &  $6.9190$ & $4.09234221$ & $204.436$\\
+Venus     &  $3.3692$ & $1.60213807$ & $105.253$ \\
+Mars      &  $1.8467$  & $0.52404094$ & $305.796$ \\
+Jupiter   &  $1.3044$  & $0.08308122$ & $293.660$ \\
+Saturn   &  $2.4860$  & $0.03347795$ & $296.482$ \\
+\end{tabular}
+\caption[\em  Additional Keplerian orbital elements for the five visible planets.]{\em Additional Keplerian orbital elements for  the five visible planets at the J2000 epoch ({\em i.e.}, 12:00 UT, January 1, 2000 CE,
+which corresponds to $t_0 = 2\,451\,545.0$ JD). The elements are optimized for use in the
+time period 1800 CE to 2050 CE. Source: Jet Propulsion Laboratory (NASA), {\tt http://ssd.jpl.nasa.gov/}. }\label{tadd}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{crc}
+$F (^\circ)$ & $\beta_0(^\circ)$ &
+$F (^\circ)$ \\\hline
+&&\\[-1.75ex]
+000/180 &  0.000 & (180)/(360)\\
+002/178 &  0.064 & (182)/(358)\\
+004/176 &  0.129 & (184)/(356)\\
+006/174 &  0.193 & (186)/(354)\\
+008/172 &  0.257 & (188)/(352)\\
+010/170 &  0.321 & (190)/(350)\\
+012/168 &  0.384 & (192)/(348)\\
+014/166 &  0.447 & (194)/(346)\\
+016/164 &  0.509 & (196)/(344)\\
+018/162 &  0.571 & (198)/(342)\\
+020/160 &  0.631 & (200)/(340)\\
+022/158 &  0.692 & (202)/(338)\\
+024/156 &  0.751 & (204)/(336)\\
+026/154 &  0.809 & (206)/(334)\\
+028/152 &  0.867 & (208)/(332)\\
+030/150 &  0.923 & (210)/(330)\\
+032/148 &  0.978 & (212)/(328)\\
+034/146 &  1.032 & (214)/(326)\\
+036/144 &  1.085 & (216)/(324)\\
+038/142 &  1.137 & (218)/(322)\\
+040/140 &  1.187 & (220)/(320)\\
+042/138 &  1.235 & (222)/(318)\\
+044/136 &  1.283 & (224)/(316)\\
+046/134 &  1.328 & (226)/(314)\\
+048/132 &  1.372 & (228)/(312)\\
+050/130 &  1.414 & (230)/(310)\\
+052/128 &  1.455 & (232)/(308)\\
+054/126 &  1.494 & (234)/(306)\\
+056/124 &  1.531 & (236)/(304)\\
+058/122 &  1.566 & (238)/(302)\\
+060/120 &  1.599 & (240)/(300)\\
+062/118 &  1.630 & (242)/(298)\\
+064/116 &  1.660 & (244)/(296)\\
+066/114 &  1.687 & (246)/(294)\\
+068/112 &  1.712 & (248)/(292)\\
+070/110 &  1.735 & (250)/(290)\\
+072/108 &  1.756 & (252)/(288)\\
+074/106 &  1.775 & (254)/(286)\\
+076/104 &  1.792 & (256)/(284)\\
+078/102 &  1.806 & (258)/(282)\\
+080/100 &  1.818 & (260)/(280)\\
+082/098 &  1.828 & (262)/(278)\\
+084/096 &  1.836 & (264)/(276)\\
+086/094 &  1.842 & (266)/(274)\\
+088/092 &  1.845 & (268)/(272)\\
+090/090 &  1.846 & (270)/(270)\\
+\end{tabular}}
+\caption[\em Deferential ecliptic latitude of Mars.]{\em Deferential ecliptic latitude of Mars.  The latitude is minus the value shown
+in the table if the argument is
+in parenthesies. }\label{tlat1m}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrrr|rrrr|rrrr|crrr}
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ \\\hline
+&&&&&&&&&&&&&&&\\[-1.75ex]
+  0 & \tiny{ -0.025} &   0.604 & \tiny{ -0.028} &  45 & \tiny{ -0.025} &   0.652 & \tiny{ -0.029} &  90 & \tiny{ -0.025} &   0.836 & \tiny{ -0.031} & 135 & \tiny{  0.015} &   1.410 & \tiny{  0.003}\\
+  1 & \tiny{ -0.025} &   0.604 & \tiny{ -0.028} &  46 & \tiny{ -0.025} &   0.654 & \tiny{ -0.029} &  91 & \tiny{ -0.025} &   0.843 & \tiny{ -0.031} & 136 & \tiny{  0.018} &   1.433 & \tiny{  0.006}\\
+  2 & \tiny{ -0.025} &   0.604 & \tiny{ -0.028} &  47 & \tiny{ -0.025} &   0.656 & \tiny{ -0.029} &  92 & \tiny{ -0.024} &   0.850 & \tiny{ -0.031} & 137 & \tiny{  0.021} &   1.457 & \tiny{  0.009}\\
+  3 & \tiny{ -0.025} &   0.604 & \tiny{ -0.028} &  48 & \tiny{ -0.025} &   0.659 & \tiny{ -0.029} &  93 & \tiny{ -0.024} &   0.857 & \tiny{ -0.031} & 138 & \tiny{  0.025} &   1.482 & \tiny{  0.013}\\
+  4 & \tiny{ -0.025} &   0.605 & \tiny{ -0.028} &  49 & \tiny{ -0.025} &   0.661 & \tiny{ -0.029} &  94 & \tiny{ -0.024} &   0.865 & \tiny{ -0.031} & 139 & \tiny{  0.028} &   1.507 & \tiny{  0.017}\\
+  5 & \tiny{ -0.025} &   0.605 & \tiny{ -0.028} &  50 & \tiny{ -0.025} &   0.664 & \tiny{ -0.030} &  95 & \tiny{ -0.024} &   0.872 & \tiny{ -0.031} & 140 & \tiny{  0.032} &   1.533 & \tiny{  0.021}\\
+  6 & \tiny{ -0.025} &   0.605 & \tiny{ -0.028} &  51 & \tiny{ -0.025} &   0.666 & \tiny{ -0.030} &  96 & \tiny{ -0.024} &   0.880 & \tiny{ -0.031} & 141 & \tiny{  0.037} &   1.560 & \tiny{  0.026}\\
+  7 & \tiny{ -0.025} &   0.605 & \tiny{ -0.028} &  52 & \tiny{ -0.025} &   0.669 & \tiny{ -0.030} &  97 & \tiny{ -0.024} &   0.888 & \tiny{ -0.031} & 142 & \tiny{  0.041} &   1.588 & \tiny{  0.031}\\
+  8 & \tiny{ -0.025} &   0.606 & \tiny{ -0.028} &  53 & \tiny{ -0.025} &   0.672 & \tiny{ -0.030} &  98 & \tiny{ -0.023} &   0.896 & \tiny{ -0.031} & 143 & \tiny{  0.046} &   1.616 & \tiny{  0.036}\\
+  9 & \tiny{ -0.025} &   0.606 & \tiny{ -0.028} &  54 & \tiny{ -0.025} &   0.674 & \tiny{ -0.030} &  99 & \tiny{ -0.023} &   0.904 & \tiny{ -0.031} & 144 & \tiny{  0.051} &   1.646 & \tiny{  0.043}\\
+ 10 & \tiny{ -0.025} &   0.606 & \tiny{ -0.028} &  55 & \tiny{ -0.025} &   0.677 & \tiny{ -0.030} & 100 & \tiny{ -0.023} &   0.912 & \tiny{ -0.030} & 145 & \tiny{  0.057} &   1.676 & \tiny{  0.049}\\
+ 11 & \tiny{ -0.025} &   0.607 & \tiny{ -0.028} &  56 & \tiny{ -0.025} &   0.680 & \tiny{ -0.030} & 101 & \tiny{ -0.023} &   0.921 & \tiny{ -0.030} & 146 & \tiny{  0.063} &   1.708 & \tiny{  0.056}\\
+ 12 & \tiny{ -0.025} &   0.607 & \tiny{ -0.028} &  57 & \tiny{ -0.026} &   0.683 & \tiny{ -0.030} & 102 & \tiny{ -0.022} &   0.930 & \tiny{ -0.030} & 147 & \tiny{  0.069} &   1.740 & \tiny{  0.064}\\
+ 13 & \tiny{ -0.025} &   0.608 & \tiny{ -0.028} &  58 & \tiny{ -0.026} &   0.686 & \tiny{ -0.030} & 103 & \tiny{ -0.022} &   0.939 & \tiny{ -0.030} & 148 & \tiny{  0.076} &   1.773 & \tiny{  0.073}\\
+ 14 & \tiny{ -0.025} &   0.609 & \tiny{ -0.028} &  59 & \tiny{ -0.026} &   0.689 & \tiny{ -0.030} & 104 & \tiny{ -0.022} &   0.948 & \tiny{ -0.030} & 149 & \tiny{  0.084} &   1.807 & \tiny{  0.083}\\
+ 15 & \tiny{ -0.025} &   0.609 & \tiny{ -0.028} &  60 & \tiny{ -0.026} &   0.693 & \tiny{ -0.030} & 105 & \tiny{ -0.021} &   0.958 & \tiny{ -0.030} & 150 & \tiny{  0.092} &   1.843 & \tiny{  0.093}\\
+ 16 & \tiny{ -0.025} &   0.610 & \tiny{ -0.028} &  61 & \tiny{ -0.026} &   0.696 & \tiny{ -0.030} & 106 & \tiny{ -0.021} &   0.968 & \tiny{ -0.029} & 151 & \tiny{  0.100} &   1.879 & \tiny{  0.104}\\
+ 17 & \tiny{ -0.025} &   0.611 & \tiny{ -0.028} &  62 & \tiny{ -0.026} &   0.699 & \tiny{ -0.030} & 107 & \tiny{ -0.021} &   0.978 & \tiny{ -0.029} & 152 & \tiny{  0.109} &   1.916 & \tiny{  0.117}\\
+ 18 & \tiny{ -0.025} &   0.611 & \tiny{ -0.028} &  63 & \tiny{ -0.026} &   0.703 & \tiny{ -0.030} & 108 & \tiny{ -0.020} &   0.988 & \tiny{ -0.029} & 153 & \tiny{  0.118} &   1.955 & \tiny{  0.130}\\
+ 19 & \tiny{ -0.025} &   0.612 & \tiny{ -0.028} &  64 & \tiny{ -0.026} &   0.706 & \tiny{ -0.030} & 109 & \tiny{ -0.020} &   0.999 & \tiny{ -0.029} & 154 & \tiny{  0.128} &   1.994 & \tiny{  0.145}\\
+ 20 & \tiny{ -0.025} &   0.613 & \tiny{ -0.028} &  65 & \tiny{ -0.026} &   0.710 & \tiny{ -0.030} & 110 & \tiny{ -0.019} &   1.010 & \tiny{ -0.028} & 155 & \tiny{  0.139} &   2.034 & \tiny{  0.161}\\
+ 21 & \tiny{ -0.025} &   0.614 & \tiny{ -0.028} &  66 & \tiny{ -0.026} &   0.714 & \tiny{ -0.030} & 111 & \tiny{ -0.019} &   1.021 & \tiny{ -0.028} & 156 & \tiny{  0.151} &   2.075 & \tiny{  0.178}\\
+ 22 & \tiny{ -0.025} &   0.615 & \tiny{ -0.028} &  67 & \tiny{ -0.026} &   0.718 & \tiny{ -0.030} & 112 & \tiny{ -0.018} &   1.032 & \tiny{ -0.027} & 157 & \tiny{  0.163} &   2.117 & \tiny{  0.197}\\
+ 23 & \tiny{ -0.025} &   0.616 & \tiny{ -0.028} &  68 & \tiny{ -0.026} &   0.722 & \tiny{ -0.030} & 113 & \tiny{ -0.018} &   1.044 & \tiny{ -0.027} & 158 & \tiny{  0.175} &   2.160 & \tiny{  0.218}\\
+ 24 & \tiny{ -0.025} &   0.617 & \tiny{ -0.028} &  69 & \tiny{ -0.026} &   0.726 & \tiny{ -0.031} & 114 & \tiny{ -0.017} &   1.056 & \tiny{ -0.027} & 159 & \tiny{  0.189} &   2.203 & \tiny{  0.240}\\
+ 25 & \tiny{ -0.025} &   0.618 & \tiny{ -0.029} &  70 & \tiny{ -0.026} &   0.730 & \tiny{ -0.031} & 115 & \tiny{ -0.016} &   1.069 & \tiny{ -0.026} & 160 & \tiny{  0.202} &   2.247 & \tiny{  0.265}\\
+ 26 & \tiny{ -0.025} &   0.619 & \tiny{ -0.029} &  71 & \tiny{ -0.026} &   0.734 & \tiny{ -0.031} & 116 & \tiny{ -0.015} &   1.082 & \tiny{ -0.025} & 161 & \tiny{  0.217} &   2.292 & \tiny{  0.291}\\
+ 27 & \tiny{ -0.025} &   0.621 & \tiny{ -0.029} &  72 & \tiny{ -0.026} &   0.738 & \tiny{ -0.031} & 117 & \tiny{ -0.015} &   1.095 & \tiny{ -0.025} & 162 & \tiny{  0.232} &   2.337 & \tiny{  0.319}\\
+ 28 & \tiny{ -0.025} &   0.622 & \tiny{ -0.029} &  73 & \tiny{ -0.026} &   0.743 & \tiny{ -0.031} & 118 & \tiny{ -0.014} &   1.108 & \tiny{ -0.024} & 163 & \tiny{  0.248} &   2.382 & \tiny{  0.349}\\
+ 29 & \tiny{ -0.025} &   0.623 & \tiny{ -0.029} &  74 & \tiny{ -0.026} &   0.747 & \tiny{ -0.031} & 119 & \tiny{ -0.013} &   1.122 & \tiny{ -0.023} & 164 & \tiny{  0.264} &   2.427 & \tiny{  0.382}\\
+ 30 & \tiny{ -0.025} &   0.625 & \tiny{ -0.029} &  75 & \tiny{ -0.026} &   0.752 & \tiny{ -0.031} & 120 & \tiny{ -0.012} &   1.137 & \tiny{ -0.023} & 165 & \tiny{  0.280} &   2.472 & \tiny{  0.416}\\
+ 31 & \tiny{ -0.025} &   0.626 & \tiny{ -0.029} &  76 & \tiny{ -0.026} &   0.757 & \tiny{ -0.031} & 121 & \tiny{ -0.011} &   1.151 & \tiny{ -0.022} & 166 & \tiny{  0.297} &   2.517 & \tiny{  0.453}\\
+ 32 & \tiny{ -0.025} &   0.627 & \tiny{ -0.029} &  77 & \tiny{ -0.026} &   0.762 & \tiny{ -0.031} & 122 & \tiny{ -0.010} &   1.167 & \tiny{ -0.021} & 167 & \tiny{  0.314} &   2.560 & \tiny{  0.491}\\
+ 33 & \tiny{ -0.025} &   0.629 & \tiny{ -0.029} &  78 & \tiny{ -0.025} &   0.767 & \tiny{ -0.031} & 123 & \tiny{ -0.008} &   1.182 & \tiny{ -0.020} & 168 & \tiny{  0.331} &   2.603 & \tiny{  0.530}\\
+ 34 & \tiny{ -0.025} &   0.631 & \tiny{ -0.029} &  79 & \tiny{ -0.025} &   0.772 & \tiny{ -0.031} & 124 & \tiny{ -0.007} &   1.198 & \tiny{ -0.019} & 169 & \tiny{  0.348} &   2.644 & \tiny{  0.571}\\
+ 35 & \tiny{ -0.025} &   0.632 & \tiny{ -0.029} &  80 & \tiny{ -0.025} &   0.777 & \tiny{ -0.031} & 125 & \tiny{ -0.006} &   1.215 & \tiny{ -0.017} & 170 & \tiny{  0.364} &   2.683 & \tiny{  0.612}\\
+ 36 & \tiny{ -0.025} &   0.634 & \tiny{ -0.029} &  81 & \tiny{ -0.025} &   0.782 & \tiny{ -0.031} & 126 & \tiny{ -0.004} &   1.232 & \tiny{ -0.016} & 171 & \tiny{  0.380} &   2.721 & \tiny{  0.654}\\
+ 37 & \tiny{ -0.025} &   0.636 & \tiny{ -0.029} &  82 & \tiny{ -0.025} &   0.788 & \tiny{ -0.031} & 127 & \tiny{ -0.003} &   1.249 & \tiny{ -0.015} & 172 & \tiny{  0.395} &   2.755 & \tiny{  0.694}\\
+ 38 & \tiny{ -0.025} &   0.637 & \tiny{ -0.029} &  83 & \tiny{ -0.025} &   0.793 & \tiny{ -0.031} & 128 & \tiny{ -0.001} &   1.267 & \tiny{ -0.013} & 173 & \tiny{  0.408} &   2.787 & \tiny{  0.734}\\
+ 39 & \tiny{ -0.025} &   0.639 & \tiny{ -0.029} &  84 & \tiny{ -0.025} &   0.799 & \tiny{ -0.031} & 129 & \tiny{  0.001} &   1.286 & \tiny{ -0.011} & 174 & \tiny{  0.421} &   2.816 & \tiny{  0.770}\\
+ 40 & \tiny{ -0.025} &   0.641 & \tiny{ -0.029} &  85 & \tiny{ -0.025} &   0.805 & \tiny{ -0.031} & 130 & \tiny{  0.003} &   1.305 & \tiny{ -0.009} & 175 & \tiny{  0.432} &   2.840 & \tiny{  0.804}\\
+ 41 & \tiny{ -0.025} &   0.643 & \tiny{ -0.029} &  86 & \tiny{ -0.025} &   0.811 & \tiny{ -0.031} & 131 & \tiny{  0.005} &   1.325 & \tiny{ -0.007} & 176 & \tiny{  0.442} &   2.861 & \tiny{  0.833}\\
+ 42 & \tiny{ -0.025} &   0.645 & \tiny{ -0.029} &  87 & \tiny{ -0.025} &   0.817 & \tiny{ -0.031} & 132 & \tiny{  0.007} &   1.345 & \tiny{ -0.005} & 177 & \tiny{  0.449} &   2.878 & \tiny{  0.857}\\
+ 43 & \tiny{ -0.025} &   0.647 & \tiny{ -0.029} &  88 & \tiny{ -0.025} &   0.823 & \tiny{ -0.031} & 133 & \tiny{  0.010} &   1.366 & \tiny{ -0.003} & 178 & \tiny{  0.455} &   2.890 & \tiny{  0.874}\\
+ 44 & \tiny{ -0.025} &   0.649 & \tiny{ -0.029} &  89 & \tiny{ -0.025} &   0.830 & \tiny{ -0.031} & 134 & \tiny{  0.012} &   1.388 & \tiny{ -0.000} & 179 & \tiny{  0.458} &   2.897 & \tiny{  0.885}\\
+ 45 & \tiny{ -0.025} &   0.652 & \tiny{ -0.029} &  90 & \tiny{ -0.025} &   0.836 & \tiny{ -0.031} & 135 & \tiny{  0.015} &   1.410 & \tiny{  0.003} & 180 & \tiny{  0.459} &   2.899 & \tiny{  0.889}\\
+ \end{tabular}}
+\caption[\em  Epicyclic latitude correction factor for Mars. ]{\em Epicyclic latitude correction factor for Mars. $\mu$ is in degrees. Note that $\bar{h}(360^\circ-\mu) = \bar{h}(\mu)$, and $\delta h_{\pm}(360^\circ-\mu) = \delta h_{\pm}(\mu)$. }\label{tlat2m}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{crc}
+$F (^\circ)$ & $\beta_0(^\circ)$ &
+$F (^\circ)$ \\\hline
+&&\\[-1.75ex]
+000/180 &  0.000 & (180)/(360)\\
+002/178 &  0.046 & (182)/(358)\\
+004/176 &  0.091 & (184)/(356)\\
+006/174 &  0.136 & (186)/(354)\\
+008/172 &  0.182 & (188)/(352)\\
+010/170 &  0.226 & (190)/(350)\\
+012/168 &  0.271 & (192)/(348)\\
+014/166 &  0.316 & (194)/(346)\\
+016/164 &  0.360 & (196)/(344)\\
+018/162 &  0.403 & (198)/(342)\\
+020/160 &  0.446 & (200)/(340)\\
+022/158 &  0.489 & (202)/(338)\\
+024/156 &  0.531 & (204)/(336)\\
+026/154 &  0.572 & (206)/(334)\\
+028/152 &  0.612 & (208)/(332)\\
+030/150 &  0.652 & (210)/(330)\\
+032/148 &  0.691 & (212)/(328)\\
+034/146 &  0.729 & (214)/(326)\\
+036/144 &  0.767 & (216)/(324)\\
+038/142 &  0.803 & (218)/(322)\\
+040/140 &  0.838 & (220)/(320)\\
+042/138 &  0.873 & (222)/(318)\\
+044/136 &  0.906 & (224)/(316)\\
+046/134 &  0.938 & (226)/(314)\\
+048/132 &  0.969 & (228)/(312)\\
+050/130 &  0.999 & (230)/(310)\\
+052/128 &  1.028 & (232)/(308)\\
+054/126 &  1.055 & (234)/(306)\\
+056/124 &  1.081 & (236)/(304)\\
+058/122 &  1.106 & (238)/(302)\\
+060/120 &  1.130 & (240)/(300)\\
+062/118 &  1.152 & (242)/(298)\\
+064/116 &  1.172 & (244)/(296)\\
+066/114 &  1.192 & (246)/(294)\\
+068/112 &  1.209 & (248)/(292)\\
+070/110 &  1.226 & (250)/(290)\\
+072/108 &  1.240 & (252)/(288)\\
+074/106 &  1.254 & (254)/(286)\\
+076/104 &  1.266 & (256)/(284)\\
+078/102 &  1.276 & (258)/(282)\\
+080/100 &  1.284 & (260)/(280)\\
+082/098 &  1.292 & (262)/(278)\\
+084/096 &  1.297 & (264)/(276)\\
+086/094 &  1.301 & (266)/(274)\\
+088/092 &  1.303 & (268)/(272)\\
+090/090 &  1.304 & (270)/(270)\\
+\end{tabular}}
+\caption[\em Deferential ecliptic latitude of Jupiter.]{\em Deferential ecliptic latitude of Jupiter.  The latitude is minus the value shown
+in the table if the argument is
+in parenthesies. }\label{tlat1j}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrrr|rrrr|rrrr|crrr}
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ \\\hline
+&&&&&&&&&&&&&&&\\[-1.75ex]
+  0 & \tiny{ -0.008} &   0.839 & \tiny{ -0.009} &  45 & \tiny{ -0.007} &   0.874 & \tiny{ -0.008} &  90 & \tiny{ -0.002} &   0.982 & \tiny{ -0.003} & 135 & \tiny{  0.009} &   1.143 & \tiny{  0.010}\\
+  1 & \tiny{ -0.008} &   0.839 & \tiny{ -0.009} &  46 & \tiny{ -0.007} &   0.876 & \tiny{ -0.008} &  91 & \tiny{ -0.002} &   0.985 & \tiny{ -0.002} & 136 & \tiny{  0.009} &   1.147 & \tiny{  0.011}\\
+  2 & \tiny{ -0.008} &   0.839 & \tiny{ -0.009} &  47 & \tiny{ -0.007} &   0.877 & \tiny{ -0.008} &  92 & \tiny{ -0.002} &   0.988 & \tiny{ -0.002} & 137 & \tiny{  0.010} &   1.150 & \tiny{  0.011}\\
+  3 & \tiny{ -0.008} &   0.839 & \tiny{ -0.009} &  48 & \tiny{ -0.007} &   0.879 & \tiny{ -0.008} &  93 & \tiny{ -0.002} &   0.992 & \tiny{ -0.002} & 138 & \tiny{  0.010} &   1.154 & \tiny{  0.011}\\
+  4 & \tiny{ -0.008} &   0.839 & \tiny{ -0.009} &  49 & \tiny{ -0.007} &   0.881 & \tiny{ -0.008} &  94 & \tiny{ -0.001} &   0.995 & \tiny{ -0.002} & 139 & \tiny{  0.010} &   1.157 & \tiny{  0.012}\\
+  5 & \tiny{ -0.008} &   0.839 & \tiny{ -0.009} &  50 & \tiny{ -0.007} &   0.883 & \tiny{ -0.008} &  95 & \tiny{ -0.001} &   0.998 & \tiny{ -0.001} & 140 & \tiny{  0.010} &   1.160 & \tiny{  0.012}\\
+  6 & \tiny{ -0.008} &   0.840 & \tiny{ -0.009} &  51 & \tiny{ -0.007} &   0.884 & \tiny{ -0.008} &  96 & \tiny{ -0.001} &   1.002 & \tiny{ -0.001} & 141 & \tiny{  0.011} &   1.164 & \tiny{  0.012}\\
+  7 & \tiny{ -0.008} &   0.840 & \tiny{ -0.009} &  52 & \tiny{ -0.007} &   0.886 & \tiny{ -0.007} &  97 & \tiny{ -0.001} &   1.005 & \tiny{ -0.001} & 142 & \tiny{  0.011} &   1.167 & \tiny{  0.013}\\
+  8 & \tiny{ -0.008} &   0.840 & \tiny{ -0.009} &  53 & \tiny{ -0.007} &   0.888 & \tiny{ -0.007} &  98 & \tiny{ -0.001} &   1.008 & \tiny{ -0.001} & 143 & \tiny{  0.011} &   1.170 & \tiny{  0.013}\\
+  9 & \tiny{ -0.008} &   0.840 & \tiny{ -0.009} &  54 & \tiny{ -0.006} &   0.890 & \tiny{ -0.007} &  99 & \tiny{ -0.000} &   1.012 & \tiny{ -0.001} & 144 & \tiny{  0.012} &   1.173 & \tiny{  0.013}\\
+ 10 & \tiny{ -0.008} &   0.841 & \tiny{ -0.009} &  55 & \tiny{ -0.006} &   0.892 & \tiny{ -0.007} & 100 & \tiny{ -0.000} &   1.015 & \tiny{ -0.000} & 145 & \tiny{  0.012} &   1.177 & \tiny{  0.014}\\
+ 11 & \tiny{ -0.008} &   0.841 & \tiny{ -0.009} &  56 & \tiny{ -0.006} &   0.894 & \tiny{ -0.007} & 101 & \tiny{  0.000} &   1.019 & \tiny{ -0.000} & 146 & \tiny{  0.012} &   1.180 & \tiny{  0.014}\\
+ 12 & \tiny{ -0.008} &   0.841 & \tiny{ -0.009} &  57 & \tiny{ -0.006} &   0.896 & \tiny{ -0.007} & 102 & \tiny{  0.000} &   1.022 & \tiny{  0.000} & 147 & \tiny{  0.012} &   1.183 & \tiny{  0.014}\\
+ 13 & \tiny{ -0.008} &   0.842 & \tiny{ -0.009} &  58 & \tiny{ -0.006} &   0.898 & \tiny{ -0.007} & 103 & \tiny{  0.000} &   1.026 & \tiny{  0.000} & 148 & \tiny{  0.013} &   1.186 & \tiny{  0.015}\\
+ 14 & \tiny{ -0.008} &   0.842 & \tiny{ -0.009} &  59 & \tiny{ -0.006} &   0.900 & \tiny{ -0.007} & 104 & \tiny{  0.001} &   1.029 & \tiny{  0.001} & 149 & \tiny{  0.013} &   1.189 & \tiny{  0.015}\\
+ 15 & \tiny{ -0.008} &   0.843 & \tiny{ -0.009} &  60 & \tiny{ -0.006} &   0.902 & \tiny{ -0.007} & 105 & \tiny{  0.001} &   1.033 & \tiny{  0.001} & 150 & \tiny{  0.013} &   1.192 & \tiny{  0.015}\\
+ 16 & \tiny{ -0.008} &   0.843 & \tiny{ -0.009} &  61 & \tiny{ -0.006} &   0.904 & \tiny{ -0.007} & 106 & \tiny{  0.001} &   1.036 & \tiny{  0.001} & 151 & \tiny{  0.014} &   1.194 & \tiny{  0.016}\\
+ 17 & \tiny{ -0.008} &   0.844 & \tiny{ -0.009} &  62 & \tiny{ -0.006} &   0.906 & \tiny{ -0.007} & 107 & \tiny{  0.001} &   1.040 & \tiny{  0.001} & 152 & \tiny{  0.014} &   1.197 & \tiny{  0.016}\\
+ 18 & \tiny{ -0.008} &   0.845 & \tiny{ -0.009} &  63 & \tiny{ -0.006} &   0.909 & \tiny{ -0.006} & 108 & \tiny{  0.002} &   1.044 & \tiny{  0.002} & 153 & \tiny{  0.014} &   1.200 & \tiny{  0.016}\\
+ 19 & \tiny{ -0.008} &   0.845 & \tiny{ -0.009} &  64 & \tiny{ -0.006} &   0.911 & \tiny{ -0.006} & 109 & \tiny{  0.002} &   1.047 & \tiny{  0.002} & 154 & \tiny{  0.014} &   1.202 & \tiny{  0.017}\\
+ 20 & \tiny{ -0.008} &   0.846 & \tiny{ -0.009} &  65 & \tiny{ -0.005} &   0.913 & \tiny{ -0.006} & 110 & \tiny{  0.002} &   1.051 & \tiny{  0.002} & 155 & \tiny{  0.015} &   1.205 & \tiny{  0.017}\\
+ 21 & \tiny{ -0.008} &   0.847 & \tiny{ -0.009} &  66 & \tiny{ -0.005} &   0.916 & \tiny{ -0.006} & 111 & \tiny{  0.002} &   1.055 & \tiny{  0.003} & 156 & \tiny{  0.015} &   1.207 & \tiny{  0.017}\\
+ 22 & \tiny{ -0.008} &   0.847 & \tiny{ -0.009} &  67 & \tiny{ -0.005} &   0.918 & \tiny{ -0.006} & 112 & \tiny{  0.003} &   1.058 & \tiny{  0.003} & 157 & \tiny{  0.015} &   1.210 & \tiny{  0.017}\\
+ 23 & \tiny{ -0.008} &   0.848 & \tiny{ -0.009} &  68 & \tiny{ -0.005} &   0.920 & \tiny{ -0.006} & 113 & \tiny{  0.003} &   1.062 & \tiny{  0.003} & 158 & \tiny{  0.015} &   1.212 & \tiny{  0.018}\\
+ 24 & \tiny{ -0.008} &   0.849 & \tiny{ -0.009} &  69 & \tiny{ -0.005} &   0.923 & \tiny{ -0.006} & 114 & \tiny{  0.003} &   1.066 & \tiny{  0.003} & 159 & \tiny{  0.015} &   1.214 & \tiny{  0.018}\\
+ 25 & \tiny{ -0.008} &   0.850 & \tiny{ -0.009} &  70 & \tiny{ -0.005} &   0.925 & \tiny{ -0.006} & 115 & \tiny{  0.003} &   1.069 & \tiny{  0.004} & 160 & \tiny{  0.016} &   1.216 & \tiny{  0.018}\\
+ 26 & \tiny{ -0.008} &   0.851 & \tiny{ -0.009} &  71 & \tiny{ -0.005} &   0.928 & \tiny{ -0.006} & 116 & \tiny{  0.004} &   1.073 & \tiny{  0.004} & 161 & \tiny{  0.016} &   1.218 & \tiny{  0.018}\\
+ 27 & \tiny{ -0.008} &   0.852 & \tiny{ -0.009} &  72 & \tiny{ -0.005} &   0.930 & \tiny{ -0.005} & 117 & \tiny{  0.004} &   1.077 & \tiny{  0.004} & 162 & \tiny{  0.016} &   1.220 & \tiny{  0.019}\\
+ 28 & \tiny{ -0.008} &   0.853 & \tiny{ -0.009} &  73 & \tiny{ -0.005} &   0.933 & \tiny{ -0.005} & 118 & \tiny{  0.004} &   1.080 & \tiny{  0.005} & 163 & \tiny{  0.016} &   1.222 & \tiny{  0.019}\\
+ 29 & \tiny{ -0.008} &   0.854 & \tiny{ -0.009} &  74 & \tiny{ -0.004} &   0.935 & \tiny{ -0.005} & 119 & \tiny{  0.004} &   1.084 & \tiny{  0.005} & 164 & \tiny{  0.016} &   1.224 & \tiny{  0.019}\\
+ 30 & \tiny{ -0.008} &   0.855 & \tiny{ -0.009} &  75 & \tiny{ -0.004} &   0.938 & \tiny{ -0.005} & 120 & \tiny{  0.005} &   1.088 & \tiny{  0.005} & 165 & \tiny{  0.016} &   1.225 & \tiny{  0.019}\\
+ 31 & \tiny{ -0.008} &   0.856 & \tiny{ -0.009} &  76 & \tiny{ -0.004} &   0.941 & \tiny{ -0.005} & 121 & \tiny{  0.005} &   1.092 & \tiny{  0.006} & 166 & \tiny{  0.017} &   1.227 & \tiny{  0.019}\\
+ 32 & \tiny{ -0.008} &   0.857 & \tiny{ -0.009} &  77 & \tiny{ -0.004} &   0.944 & \tiny{ -0.005} & 122 & \tiny{  0.005} &   1.095 & \tiny{  0.006} & 167 & \tiny{  0.017} &   1.228 & \tiny{  0.020}\\
+ 33 & \tiny{ -0.008} &   0.858 & \tiny{ -0.009} &  78 & \tiny{ -0.004} &   0.946 & \tiny{ -0.005} & 123 & \tiny{  0.006} &   1.099 & \tiny{  0.006} & 168 & \tiny{  0.017} &   1.230 & \tiny{  0.020}\\
+ 34 & \tiny{ -0.008} &   0.859 & \tiny{ -0.009} &  79 & \tiny{ -0.004} &   0.949 & \tiny{ -0.004} & 124 & \tiny{  0.006} &   1.103 & \tiny{  0.007} & 169 & \tiny{  0.017} &   1.231 & \tiny{  0.020}\\
+ 35 & \tiny{ -0.008} &   0.860 & \tiny{ -0.009} &  80 & \tiny{ -0.004} &   0.952 & \tiny{ -0.004} & 125 & \tiny{  0.006} &   1.107 & \tiny{  0.007} & 170 & \tiny{  0.017} &   1.232 & \tiny{  0.020}\\
+ 36 & \tiny{ -0.008} &   0.861 & \tiny{ -0.008} &  81 & \tiny{ -0.004} &   0.955 & \tiny{ -0.004} & 126 & \tiny{  0.006} &   1.110 & \tiny{  0.007} & 171 & \tiny{  0.017} &   1.233 & \tiny{  0.020}\\
+ 37 & \tiny{ -0.008} &   0.863 & \tiny{ -0.008} &  82 & \tiny{ -0.003} &   0.958 & \tiny{ -0.004} & 127 & \tiny{  0.007} &   1.114 & \tiny{  0.008} & 172 & \tiny{  0.017} &   1.234 & \tiny{  0.020}\\
+ 38 & \tiny{ -0.007} &   0.864 & \tiny{ -0.008} &  83 & \tiny{ -0.003} &   0.961 & \tiny{ -0.004} & 128 & \tiny{  0.007} &   1.118 & \tiny{  0.008} & 173 & \tiny{  0.017} &   1.235 & \tiny{  0.020}\\
+ 39 & \tiny{ -0.007} &   0.865 & \tiny{ -0.008} &  84 & \tiny{ -0.003} &   0.964 & \tiny{ -0.004} & 129 & \tiny{  0.007} &   1.121 & \tiny{  0.008} & 174 & \tiny{  0.018} &   1.236 & \tiny{  0.021}\\
+ 40 & \tiny{ -0.007} &   0.867 & \tiny{ -0.008} &  85 & \tiny{ -0.003} &   0.967 & \tiny{ -0.003} & 130 & \tiny{  0.008} &   1.125 & \tiny{  0.009} & 175 & \tiny{  0.018} &   1.236 & \tiny{  0.021}\\
+ 41 & \tiny{ -0.007} &   0.868 & \tiny{ -0.008} &  86 & \tiny{ -0.003} &   0.970 & \tiny{ -0.003} & 131 & \tiny{  0.008} &   1.129 & \tiny{  0.009} & 176 & \tiny{  0.018} &   1.237 & \tiny{  0.021}\\
+ 42 & \tiny{ -0.007} &   0.870 & \tiny{ -0.008} &  87 & \tiny{ -0.003} &   0.973 & \tiny{ -0.003} & 132 & \tiny{  0.008} &   1.132 & \tiny{  0.009} & 177 & \tiny{  0.018} &   1.237 & \tiny{  0.021}\\
+ 43 & \tiny{ -0.007} &   0.871 & \tiny{ -0.008} &  88 & \tiny{ -0.002} &   0.976 & \tiny{ -0.003} & 133 & \tiny{  0.008} &   1.136 & \tiny{  0.010} & 178 & \tiny{  0.018} &   1.237 & \tiny{  0.021}\\
+ 44 & \tiny{ -0.007} &   0.873 & \tiny{ -0.008} &  89 & \tiny{ -0.002} &   0.979 & \tiny{ -0.003} & 134 & \tiny{  0.009} &   1.140 & \tiny{  0.010} & 179 & \tiny{  0.018} &   1.238 & \tiny{  0.021}\\
+ 45 & \tiny{ -0.007} &   0.874 & \tiny{ -0.008} &  90 & \tiny{ -0.002} &   0.982 & \tiny{ -0.003} & 135 & \tiny{  0.009} &   1.143 & \tiny{  0.010} & 180 & \tiny{  0.018} &   1.238 & \tiny{  0.021}\\
+ \end{tabular}}
+\caption[\em  Epicyclic latitude correction factor for Jupiter. ]{\em Epicyclic latitude correction factor for Jupiter. $\mu$ is in degrees. Note that $\bar{h}(360^\circ-\mu) = \bar{h}(\mu)$, and $\delta h_{\pm}(360^\circ-\mu) = \delta h_{\pm}(\mu)$. }\label{tlat2j}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{crc}
+$F (^\circ)$ & $\beta_0(^\circ)$ &
+$F (^\circ)$ \\\hline
+&&\\[-1.75ex]
+000/180 &  0.000 & (180)/(360)\\
+002/178 &  0.087 & (182)/(358)\\
+004/176 &  0.173 & (184)/(356)\\
+006/174 &  0.260 & (186)/(354)\\
+008/172 &  0.346 & (188)/(352)\\
+010/170 &  0.432 & (190)/(350)\\
+012/168 &  0.517 & (192)/(348)\\
+014/166 &  0.601 & (194)/(346)\\
+016/164 &  0.685 & (196)/(344)\\
+018/162 &  0.768 & (198)/(342)\\
+020/160 &  0.850 & (200)/(340)\\
+022/158 &  0.931 & (202)/(338)\\
+024/156 &  1.011 & (204)/(336)\\
+026/154 &  1.089 & (206)/(334)\\
+028/152 &  1.167 & (208)/(332)\\
+030/150 &  1.243 & (210)/(330)\\
+032/148 &  1.317 & (212)/(328)\\
+034/146 &  1.390 & (214)/(326)\\
+036/144 &  1.461 & (216)/(324)\\
+038/142 &  1.530 & (218)/(322)\\
+040/140 &  1.597 & (220)/(320)\\
+042/138 &  1.663 & (222)/(318)\\
+044/136 &  1.726 & (224)/(316)\\
+046/134 &  1.788 & (226)/(314)\\
+048/132 &  1.847 & (228)/(312)\\
+050/130 &  1.904 & (230)/(310)\\
+052/128 &  1.958 & (232)/(308)\\
+054/126 &  2.011 & (234)/(306)\\
+056/124 &  2.060 & (236)/(304)\\
+058/122 &  2.108 & (238)/(302)\\
+060/120 &  2.152 & (240)/(300)\\
+062/118 &  2.194 & (242)/(298)\\
+064/116 &  2.234 & (244)/(296)\\
+066/114 &  2.270 & (246)/(294)\\
+068/112 &  2.304 & (248)/(292)\\
+070/110 &  2.335 & (250)/(290)\\
+072/108 &  2.364 & (252)/(288)\\
+074/106 &  2.389 & (254)/(286)\\
+076/104 &  2.411 & (256)/(284)\\
+078/102 &  2.431 & (258)/(282)\\
+080/100 &  2.447 & (260)/(280)\\
+082/098 &  2.461 & (262)/(278)\\
+084/096 &  2.472 & (264)/(276)\\
+086/094 &  2.479 & (266)/(274)\\
+088/092 &  2.484 & (268)/(272)\\
+090/090 &  2.485 & (270)/(270)\\
+\end{tabular}}
+\caption[\em Deferential ecliptic latitude of Saturn.]{\em Deferential ecliptic latitude of Saturn.  The latitude is minus the value shown
+in the table if the argument is
+in parenthesies. }\label{tlat1s}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrrr|rrrr|rrrr|crrr}
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ \\\hline
+&&&&&&&&&&&&&&&\\[-1.75ex]
+  0 & \tiny{ -0.006} &   0.905 & \tiny{ -0.006} &  45 & \tiny{ -0.005} &   0.929 & \tiny{ -0.005} &  90 & \tiny{ -0.001} &   0.995 & \tiny{ -0.001} & 135 & \tiny{  0.005} &   1.077 & \tiny{  0.006}\\
+  1 & \tiny{ -0.006} &   0.905 & \tiny{ -0.006} &  46 & \tiny{ -0.004} &   0.930 & \tiny{ -0.005} &  91 & \tiny{ -0.001} &   0.996 & \tiny{ -0.001} & 136 & \tiny{  0.005} &   1.078 & \tiny{  0.006}\\
+  2 & \tiny{ -0.006} &   0.905 & \tiny{ -0.006} &  47 & \tiny{ -0.004} &   0.931 & \tiny{ -0.005} &  92 & \tiny{ -0.000} &   0.998 & \tiny{ -0.001} & 137 & \tiny{  0.005} &   1.080 & \tiny{  0.006}\\
+  3 & \tiny{ -0.006} &   0.905 & \tiny{ -0.006} &  48 & \tiny{ -0.004} &   0.932 & \tiny{ -0.005} &  93 & \tiny{ -0.000} &   1.000 & \tiny{ -0.000} & 138 & \tiny{  0.006} &   1.081 & \tiny{  0.006}\\
+  4 & \tiny{ -0.006} &   0.905 & \tiny{ -0.006} &  49 & \tiny{ -0.004} &   0.933 & \tiny{ -0.005} &  94 & \tiny{ -0.000} &   1.002 & \tiny{ -0.000} & 139 & \tiny{  0.006} &   1.083 & \tiny{  0.007}\\
+  5 & \tiny{ -0.006} &   0.905 & \tiny{ -0.006} &  50 & \tiny{ -0.004} &   0.934 & \tiny{ -0.005} &  95 & \tiny{ -0.000} &   1.004 & \tiny{ -0.000} & 140 & \tiny{  0.006} &   1.084 & \tiny{  0.007}\\
+  6 & \tiny{ -0.006} &   0.906 & \tiny{ -0.006} &  51 & \tiny{ -0.004} &   0.935 & \tiny{ -0.005} &  96 & \tiny{  0.000} &   1.006 & \tiny{ -0.000} & 141 & \tiny{  0.006} &   1.086 & \tiny{  0.007}\\
+  7 & \tiny{ -0.006} &   0.906 & \tiny{ -0.006} &  52 & \tiny{ -0.004} &   0.937 & \tiny{ -0.005} &  97 & \tiny{  0.000} &   1.007 & \tiny{  0.000} & 142 & \tiny{  0.006} &   1.087 & \tiny{  0.007}\\
+  8 & \tiny{ -0.006} &   0.906 & \tiny{ -0.006} &  53 & \tiny{ -0.004} &   0.938 & \tiny{ -0.005} &  98 & \tiny{  0.000} &   1.009 & \tiny{  0.000} & 143 & \tiny{  0.006} &   1.089 & \tiny{  0.007}\\
+  9 & \tiny{ -0.006} &   0.906 & \tiny{ -0.006} &  54 & \tiny{ -0.004} &   0.939 & \tiny{ -0.005} &  99 & \tiny{  0.000} &   1.011 & \tiny{  0.000} & 144 & \tiny{  0.006} &   1.090 & \tiny{  0.007}\\
+ 10 & \tiny{ -0.006} &   0.906 & \tiny{ -0.006} &  55 & \tiny{ -0.004} &   0.940 & \tiny{ -0.004} & 100 & \tiny{  0.001} &   1.013 & \tiny{  0.001} & 145 & \tiny{  0.006} &   1.091 & \tiny{  0.007}\\
+ 11 & \tiny{ -0.006} &   0.907 & \tiny{ -0.006} &  56 & \tiny{ -0.004} &   0.942 & \tiny{ -0.004} & 101 & \tiny{  0.001} &   1.015 & \tiny{  0.001} & 146 & \tiny{  0.006} &   1.093 & \tiny{  0.008}\\
+ 12 & \tiny{ -0.006} &   0.907 & \tiny{ -0.006} &  57 & \tiny{ -0.004} &   0.943 & \tiny{ -0.004} & 102 & \tiny{  0.001} &   1.017 & \tiny{  0.001} & 147 & \tiny{  0.007} &   1.094 & \tiny{  0.008}\\
+ 13 & \tiny{ -0.006} &   0.907 & \tiny{ -0.006} &  58 & \tiny{ -0.004} &   0.944 & \tiny{ -0.004} & 103 & \tiny{  0.001} &   1.019 & \tiny{  0.001} & 148 & \tiny{  0.007} &   1.095 & \tiny{  0.008}\\
+ 14 & \tiny{ -0.006} &   0.908 & \tiny{ -0.006} &  59 & \tiny{ -0.004} &   0.945 & \tiny{ -0.004} & 104 & \tiny{  0.001} &   1.020 & \tiny{  0.001} & 149 & \tiny{  0.007} &   1.097 & \tiny{  0.008}\\
+ 15 & \tiny{ -0.006} &   0.908 & \tiny{ -0.006} &  60 & \tiny{ -0.004} &   0.947 & \tiny{ -0.004} & 105 & \tiny{  0.001} &   1.022 & \tiny{  0.001} & 150 & \tiny{  0.007} &   1.098 & \tiny{  0.008}\\
+ 16 & \tiny{ -0.006} &   0.908 & \tiny{ -0.006} &  61 & \tiny{ -0.003} &   0.948 & \tiny{ -0.004} & 106 & \tiny{  0.001} &   1.024 & \tiny{  0.001} & 151 & \tiny{  0.007} &   1.099 & \tiny{  0.008}\\
+ 17 & \tiny{ -0.006} &   0.909 & \tiny{ -0.006} &  62 & \tiny{ -0.003} &   0.949 & \tiny{ -0.004} & 107 & \tiny{  0.001} &   1.026 & \tiny{  0.002} & 152 & \tiny{  0.007} &   1.100 & \tiny{  0.008}\\
+ 18 & \tiny{ -0.006} &   0.909 & \tiny{ -0.006} &  63 & \tiny{ -0.003} &   0.951 & \tiny{ -0.004} & 108 & \tiny{  0.002} &   1.028 & \tiny{  0.002} & 153 & \tiny{  0.007} &   1.101 & \tiny{  0.008}\\
+ 19 & \tiny{ -0.005} &   0.909 & \tiny{ -0.006} &  64 & \tiny{ -0.003} &   0.952 & \tiny{ -0.004} & 109 & \tiny{  0.002} &   1.030 & \tiny{  0.002} & 154 & \tiny{  0.007} &   1.103 & \tiny{  0.009}\\
+ 20 & \tiny{ -0.005} &   0.910 & \tiny{ -0.006} &  65 & \tiny{ -0.003} &   0.954 & \tiny{ -0.004} & 110 & \tiny{  0.002} &   1.032 & \tiny{  0.002} & 155 & \tiny{  0.007} &   1.104 & \tiny{  0.009}\\
+ 21 & \tiny{ -0.005} &   0.910 & \tiny{ -0.006} &  66 & \tiny{ -0.003} &   0.955 & \tiny{ -0.004} & 111 & \tiny{  0.002} &   1.034 & \tiny{  0.002} & 156 & \tiny{  0.007} &   1.105 & \tiny{  0.009}\\
+ 22 & \tiny{ -0.005} &   0.911 & \tiny{ -0.006} &  67 & \tiny{ -0.003} &   0.957 & \tiny{ -0.003} & 112 & \tiny{  0.002} &   1.036 & \tiny{  0.002} & 157 & \tiny{  0.008} &   1.106 & \tiny{  0.009}\\
+ 23 & \tiny{ -0.005} &   0.911 & \tiny{ -0.006} &  68 & \tiny{ -0.003} &   0.958 & \tiny{ -0.003} & 113 & \tiny{  0.002} &   1.037 & \tiny{  0.003} & 158 & \tiny{  0.008} &   1.107 & \tiny{  0.009}\\
+ 24 & \tiny{ -0.005} &   0.912 & \tiny{ -0.006} &  69 & \tiny{ -0.003} &   0.960 & \tiny{ -0.003} & 114 & \tiny{  0.002} &   1.039 & \tiny{  0.003} & 159 & \tiny{  0.008} &   1.107 & \tiny{  0.009}\\
+ 25 & \tiny{ -0.005} &   0.913 & \tiny{ -0.006} &  70 & \tiny{ -0.003} &   0.961 & \tiny{ -0.003} & 115 & \tiny{  0.002} &   1.041 & \tiny{  0.003} & 160 & \tiny{  0.008} &   1.108 & \tiny{  0.009}\\
+ 26 & \tiny{ -0.005} &   0.913 & \tiny{ -0.006} &  71 & \tiny{ -0.003} &   0.963 & \tiny{ -0.003} & 116 & \tiny{  0.003} &   1.043 & \tiny{  0.003} & 161 & \tiny{  0.008} &   1.109 & \tiny{  0.009}\\
+ 27 & \tiny{ -0.005} &   0.914 & \tiny{ -0.006} &  72 & \tiny{ -0.003} &   0.964 & \tiny{ -0.003} & 117 & \tiny{  0.003} &   1.045 & \tiny{  0.003} & 162 & \tiny{  0.008} &   1.110 & \tiny{  0.009}\\
+ 28 & \tiny{ -0.005} &   0.914 & \tiny{ -0.006} &  73 & \tiny{ -0.002} &   0.966 & \tiny{ -0.003} & 118 & \tiny{  0.003} &   1.047 & \tiny{  0.003} & 163 & \tiny{  0.008} &   1.111 & \tiny{  0.009}\\
+ 29 & \tiny{ -0.005} &   0.915 & \tiny{ -0.006} &  74 & \tiny{ -0.002} &   0.967 & \tiny{ -0.003} & 119 & \tiny{  0.003} &   1.049 & \tiny{  0.003} & 164 & \tiny{  0.008} &   1.111 & \tiny{  0.009}\\
+ 30 & \tiny{ -0.005} &   0.916 & \tiny{ -0.006} &  75 & \tiny{ -0.002} &   0.969 & \tiny{ -0.003} & 120 & \tiny{  0.003} &   1.050 & \tiny{  0.004} & 165 & \tiny{  0.008} &   1.112 & \tiny{  0.009}\\
+ 31 & \tiny{ -0.005} &   0.916 & \tiny{ -0.006} &  76 & \tiny{ -0.002} &   0.971 & \tiny{ -0.003} & 121 & \tiny{  0.003} &   1.052 & \tiny{  0.004} & 166 & \tiny{  0.008} &   1.113 & \tiny{  0.010}\\
+ 32 & \tiny{ -0.005} &   0.917 & \tiny{ -0.006} &  77 & \tiny{ -0.002} &   0.972 & \tiny{ -0.002} & 122 & \tiny{  0.003} &   1.054 & \tiny{  0.004} & 167 & \tiny{  0.008} &   1.113 & \tiny{  0.010}\\
+ 33 & \tiny{ -0.005} &   0.918 & \tiny{ -0.006} &  78 & \tiny{ -0.002} &   0.974 & \tiny{ -0.002} & 123 & \tiny{  0.004} &   1.056 & \tiny{  0.004} & 168 & \tiny{  0.008} &   1.114 & \tiny{  0.010}\\
+ 34 & \tiny{ -0.005} &   0.919 & \tiny{ -0.006} &  79 & \tiny{ -0.002} &   0.975 & \tiny{ -0.002} & 124 & \tiny{  0.004} &   1.058 & \tiny{  0.004} & 169 & \tiny{  0.008} &   1.114 & \tiny{  0.010}\\
+ 35 & \tiny{ -0.005} &   0.920 & \tiny{ -0.006} &  80 & \tiny{ -0.002} &   0.977 & \tiny{ -0.002} & 125 & \tiny{  0.004} &   1.060 & \tiny{  0.004} & 170 & \tiny{  0.008} &   1.115 & \tiny{  0.010}\\
+ 36 & \tiny{ -0.005} &   0.920 & \tiny{ -0.006} &  81 & \tiny{ -0.002} &   0.979 & \tiny{ -0.002} & 126 & \tiny{  0.004} &   1.061 & \tiny{  0.005} & 171 & \tiny{  0.008} &   1.115 & \tiny{  0.010}\\
+ 37 & \tiny{ -0.005} &   0.921 & \tiny{ -0.006} &  82 & \tiny{ -0.002} &   0.981 & \tiny{ -0.002} & 127 & \tiny{  0.004} &   1.063 & \tiny{  0.005} & 172 & \tiny{  0.008} &   1.116 & \tiny{  0.010}\\
+ 38 & \tiny{ -0.005} &   0.922 & \tiny{ -0.006} &  83 & \tiny{ -0.001} &   0.982 & \tiny{ -0.002} & 128 & \tiny{  0.004} &   1.065 & \tiny{  0.005} & 173 & \tiny{  0.008} &   1.116 & \tiny{  0.010}\\
+ 39 & \tiny{ -0.005} &   0.923 & \tiny{ -0.005} &  84 & \tiny{ -0.001} &   0.984 & \tiny{ -0.002} & 129 & \tiny{  0.004} &   1.067 & \tiny{  0.005} & 174 & \tiny{  0.008} &   1.116 & \tiny{  0.010}\\
+ 40 & \tiny{ -0.005} &   0.924 & \tiny{ -0.005} &  85 & \tiny{ -0.001} &   0.986 & \tiny{ -0.001} & 130 & \tiny{  0.005} &   1.068 & \tiny{  0.005} & 175 & \tiny{  0.008} &   1.116 & \tiny{  0.010}\\
+ 41 & \tiny{ -0.005} &   0.925 & \tiny{ -0.005} &  86 & \tiny{ -0.001} &   0.987 & \tiny{ -0.001} & 131 & \tiny{  0.005} &   1.070 & \tiny{  0.005} & 176 & \tiny{  0.009} &   1.117 & \tiny{  0.010}\\
+ 42 & \tiny{ -0.005} &   0.926 & \tiny{ -0.005} &  87 & \tiny{ -0.001} &   0.989 & \tiny{ -0.001} & 132 & \tiny{  0.005} &   1.072 & \tiny{  0.006} & 177 & \tiny{  0.009} &   1.117 & \tiny{  0.010}\\
+ 43 & \tiny{ -0.005} &   0.927 & \tiny{ -0.005} &  88 & \tiny{ -0.001} &   0.991 & \tiny{ -0.001} & 133 & \tiny{  0.005} &   1.073 & \tiny{  0.006} & 178 & \tiny{  0.009} &   1.117 & \tiny{  0.010}\\
+ 44 & \tiny{ -0.005} &   0.928 & \tiny{ -0.005} &  89 & \tiny{ -0.001} &   0.993 & \tiny{ -0.001} & 134 & \tiny{  0.005} &   1.075 & \tiny{  0.006} & 179 & \tiny{  0.009} &   1.117 & \tiny{  0.010}\\
+ 45 & \tiny{ -0.005} &   0.929 & \tiny{ -0.005} &  90 & \tiny{ -0.001} &   0.995 & \tiny{ -0.001} & 135 & \tiny{  0.005} &   1.077 & \tiny{  0.006} & 180 & \tiny{  0.009} &   1.117 & \tiny{  0.010}\\
+\end{tabular}}
+\caption[\em  Epicyclic latitude correction factor for Saturn. ]{\em Epicyclic latitude correction factor for Saturn. $\mu$ is in degrees. Note that $\bar{h}(360^\circ-\mu) = \bar{h}(\mu)$, and $\delta h_{\pm}(360^\circ-\mu) = \delta h_{\pm}(\mu)$. }\label{tlat2s}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{crc}
+$F (^\circ)$ & $\beta_0(^\circ)$ &
+$F (^\circ)$ \\\hline
+&&\\[-1.75ex]
+000/180 &  0.000 & (180)/(360)\\
+002/178 &  0.085 & (182)/(358)\\
+004/176 &  0.170 & (184)/(356)\\
+006/174 &  0.255 & (186)/(354)\\
+008/172 &  0.339 & (188)/(352)\\
+010/170 &  0.423 & (190)/(350)\\
+012/168 &  0.506 & (192)/(348)\\
+014/166 &  0.589 & (194)/(346)\\
+016/164 &  0.671 & (196)/(344)\\
+018/162 &  0.753 & (198)/(342)\\
+020/160 &  0.833 & (200)/(340)\\
+022/158 &  0.912 & (202)/(338)\\
+024/156 &  0.991 & (204)/(336)\\
+026/154 &  1.068 & (206)/(334)\\
+028/152 &  1.143 & (208)/(332)\\
+030/150 &  1.218 & (210)/(330)\\
+032/148 &  1.291 & (212)/(328)\\
+034/146 &  1.362 & (214)/(326)\\
+036/144 &  1.432 & (216)/(324)\\
+038/142 &  1.500 & (218)/(322)\\
+040/140 &  1.566 & (220)/(320)\\
+042/138 &  1.630 & (222)/(318)\\
+044/136 &  1.692 & (224)/(316)\\
+046/134 &  1.752 & (226)/(314)\\
+048/132 &  1.810 & (228)/(312)\\
+050/130 &  1.866 & (230)/(310)\\
+052/128 &  1.919 & (232)/(308)\\
+054/126 &  1.970 & (234)/(306)\\
+056/124 &  2.019 & (236)/(304)\\
+058/122 &  2.066 & (238)/(302)\\
+060/120 &  2.109 & (240)/(300)\\
+062/118 &  2.151 & (242)/(298)\\
+064/116 &  2.189 & (244)/(296)\\
+066/114 &  2.225 & (246)/(294)\\
+068/112 &  2.258 & (248)/(292)\\
+070/110 &  2.289 & (250)/(290)\\
+072/108 &  2.316 & (252)/(288)\\
+074/106 &  2.341 & (254)/(286)\\
+076/104 &  2.363 & (256)/(284)\\
+078/102 &  2.382 & (258)/(282)\\
+080/100 &  2.399 & (260)/(280)\\
+082/098 &  2.412 & (262)/(278)\\
+084/096 &  2.422 & (264)/(276)\\
+086/094 &  2.430 & (266)/(274)\\
+088/092 &  2.434 & (268)/(272)\\
+090/090 &  2.436 & (270)/(270)\\
+\end{tabular}}
+\caption[\em Epicyclic ecliptic latitude of Venus.]{\em Epicyclic ecliptic latitude of Venus.  The latitude is minus the value shown
+in the table if the argument is
+in parenthesies. }\label{tlat1v}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrrr|rrrr|rrrr|crrr}
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ \\\hline
+&&&&&&&&&&&&&&&\\[-1.75ex]
+  0 & \tiny{  0.008} &   0.580 & \tiny{  0.008} &  45 & \tiny{  0.009} &   0.627 & \tiny{  0.009} &  90 & \tiny{  0.012} &   0.810 & \tiny{  0.013} & 135 & \tiny{  0.032} &   1.413 & \tiny{  0.033}\\
+  1 & \tiny{  0.008} &   0.580 & \tiny{  0.008} &  46 & \tiny{  0.009} &   0.629 & \tiny{  0.009} &  91 & \tiny{  0.013} &   0.817 & \tiny{  0.013} & 136 & \tiny{  0.033} &   1.439 & \tiny{  0.034}\\
+  2 & \tiny{  0.008} &   0.580 & \tiny{  0.008} &  47 & \tiny{  0.009} &   0.631 & \tiny{  0.009} &  92 & \tiny{  0.013} &   0.824 & \tiny{  0.013} & 137 & \tiny{  0.034} &   1.466 & \tiny{  0.035}\\
+  3 & \tiny{  0.008} &   0.580 & \tiny{  0.008} &  48 & \tiny{  0.009} &   0.633 & \tiny{  0.009} &  93 & \tiny{  0.013} &   0.831 & \tiny{  0.013} & 138 & \tiny{  0.036} &   1.493 & \tiny{  0.037}\\
+  4 & \tiny{  0.008} &   0.580 & \tiny{  0.008} &  49 & \tiny{  0.009} &   0.636 & \tiny{  0.009} &  94 & \tiny{  0.013} &   0.838 & \tiny{  0.013} & 139 & \tiny{  0.037} &   1.522 & \tiny{  0.038}\\
+  5 & \tiny{  0.008} &   0.581 & \tiny{  0.008} &  50 & \tiny{  0.009} &   0.638 & \tiny{  0.009} &  95 & \tiny{  0.013} &   0.846 & \tiny{  0.013} & 140 & \tiny{  0.039} &   1.552 & \tiny{  0.040}\\
+  6 & \tiny{  0.008} &   0.581 & \tiny{  0.008} &  51 & \tiny{  0.009} &   0.641 & \tiny{  0.009} &  96 & \tiny{  0.013} &   0.854 & \tiny{  0.014} & 141 & \tiny{  0.040} &   1.583 & \tiny{  0.041}\\
+  7 & \tiny{  0.008} &   0.581 & \tiny{  0.008} &  52 & \tiny{  0.009} &   0.643 & \tiny{  0.009} &  97 & \tiny{  0.014} &   0.861 & \tiny{  0.014} & 142 & \tiny{  0.042} &   1.615 & \tiny{  0.043}\\
+  8 & \tiny{  0.008} &   0.582 & \tiny{  0.008} &  53 & \tiny{  0.009} &   0.646 & \tiny{  0.009} &  98 & \tiny{  0.014} &   0.870 & \tiny{  0.014} & 143 & \tiny{  0.044} &   1.648 & \tiny{  0.045}\\
+  9 & \tiny{  0.008} &   0.582 & \tiny{  0.008} &  54 & \tiny{  0.009} &   0.649 & \tiny{  0.009} &  99 & \tiny{  0.014} &   0.878 & \tiny{  0.014} & 144 & \tiny{  0.046} &   1.683 & \tiny{  0.047}\\
+ 10 & \tiny{  0.008} &   0.582 & \tiny{  0.008} &  55 & \tiny{  0.009} &   0.652 & \tiny{  0.009} & 100 & \tiny{  0.014} &   0.886 & \tiny{  0.014} & 145 & \tiny{  0.048} &   1.719 & \tiny{  0.049}\\
+ 11 & \tiny{  0.008} &   0.583 & \tiny{  0.008} &  56 & \tiny{  0.009} &   0.655 & \tiny{  0.009} & 101 & \tiny{  0.014} &   0.895 & \tiny{  0.015} & 146 & \tiny{  0.050} &   1.756 & \tiny{  0.052}\\
+ 12 & \tiny{  0.008} &   0.583 & \tiny{  0.008} &  57 & \tiny{  0.009} &   0.658 & \tiny{  0.009} & 102 & \tiny{  0.015} &   0.904 & \tiny{  0.015} & 147 & \tiny{  0.053} &   1.795 & \tiny{  0.054}\\
+ 13 & \tiny{  0.008} &   0.584 & \tiny{  0.008} &  58 & \tiny{  0.009} &   0.661 & \tiny{  0.009} & 103 & \tiny{  0.015} &   0.913 & \tiny{  0.015} & 148 & \tiny{  0.055} &   1.836 & \tiny{  0.057}\\
+ 14 & \tiny{  0.008} &   0.584 & \tiny{  0.008} &  59 & \tiny{  0.009} &   0.664 & \tiny{  0.010} & 104 & \tiny{  0.015} &   0.923 & \tiny{  0.015} & 149 & \tiny{  0.058} &   1.878 & \tiny{  0.060}\\
+ 15 & \tiny{  0.008} &   0.585 & \tiny{  0.008} &  60 & \tiny{  0.009} &   0.667 & \tiny{  0.010} & 105 & \tiny{  0.015} &   0.933 & \tiny{  0.016} & 150 & \tiny{  0.061} &   1.922 & \tiny{  0.063}\\
+ 16 & \tiny{  0.008} &   0.586 & \tiny{  0.008} &  61 & \tiny{  0.009} &   0.670 & \tiny{  0.010} & 106 & \tiny{  0.016} &   0.943 & \tiny{  0.016} & 151 & \tiny{  0.065} &   1.968 & \tiny{  0.067}\\
+ 17 & \tiny{  0.008} &   0.586 & \tiny{  0.008} &  62 & \tiny{  0.010} &   0.674 & \tiny{  0.010} & 107 & \tiny{  0.016} &   0.953 & \tiny{  0.016} & 152 & \tiny{  0.068} &   2.016 & \tiny{  0.071}\\
+ 18 & \tiny{  0.008} &   0.587 & \tiny{  0.008} &  63 & \tiny{  0.010} &   0.677 & \tiny{  0.010} & 108 & \tiny{  0.016} &   0.964 & \tiny{  0.017} & 153 & \tiny{  0.072} &   2.065 & \tiny{  0.075}\\
+ 19 & \tiny{  0.008} &   0.588 & \tiny{  0.008} &  64 & \tiny{  0.010} &   0.681 & \tiny{  0.010} & 109 & \tiny{  0.016} &   0.975 & \tiny{  0.017} & 154 & \tiny{  0.076} &   2.117 & \tiny{  0.080}\\
+ 20 & \tiny{  0.008} &   0.589 & \tiny{  0.008} &  65 & \tiny{  0.010} &   0.684 & \tiny{  0.010} & 110 & \tiny{  0.017} &   0.986 & \tiny{  0.017} & 155 & \tiny{  0.081} &   2.170 & \tiny{  0.085}\\
+ 21 & \tiny{  0.008} &   0.590 & \tiny{  0.008} &  66 & \tiny{  0.010} &   0.688 & \tiny{  0.010} & 111 & \tiny{  0.017} &   0.997 & \tiny{  0.017} & 156 & \tiny{  0.086} &   2.226 & \tiny{  0.090}\\
+ 22 & \tiny{  0.008} &   0.591 & \tiny{  0.008} &  67 & \tiny{  0.010} &   0.692 & \tiny{  0.010} & 112 & \tiny{  0.017} &   1.009 & \tiny{  0.018} & 157 & \tiny{  0.091} &   2.283 & \tiny{  0.096}\\
+ 23 & \tiny{  0.008} &   0.592 & \tiny{  0.008} &  68 & \tiny{  0.010} &   0.696 & \tiny{  0.010} & 113 & \tiny{  0.018} &   1.021 & \tiny{  0.018} & 158 & \tiny{  0.097} &   2.343 & \tiny{  0.102}\\
+ 24 & \tiny{  0.008} &   0.593 & \tiny{  0.008} &  69 & \tiny{  0.010} &   0.700 & \tiny{  0.010} & 114 & \tiny{  0.018} &   1.034 & \tiny{  0.019} & 159 & \tiny{  0.103} &   2.405 & \tiny{  0.109}\\
+ 25 & \tiny{  0.008} &   0.594 & \tiny{  0.008} &  70 & \tiny{  0.010} &   0.704 & \tiny{  0.010} & 115 & \tiny{  0.019} &   1.047 & \tiny{  0.019} & 160 & \tiny{  0.110} &   2.469 & \tiny{  0.117}\\
+ 26 & \tiny{  0.008} &   0.595 & \tiny{  0.008} &  71 & \tiny{  0.010} &   0.708 & \tiny{  0.010} & 116 & \tiny{  0.019} &   1.060 & \tiny{  0.019} & 161 & \tiny{  0.117} &   2.535 & \tiny{  0.125}\\
+ 27 & \tiny{  0.008} &   0.596 & \tiny{  0.008} &  72 & \tiny{  0.010} &   0.712 & \tiny{  0.011} & 117 & \tiny{  0.019} &   1.074 & \tiny{  0.020} & 162 & \tiny{  0.125} &   2.603 & \tiny{  0.134}\\
+ 28 & \tiny{  0.008} &   0.597 & \tiny{  0.008} &  73 & \tiny{  0.010} &   0.717 & \tiny{  0.011} & 118 & \tiny{  0.020} &   1.088 & \tiny{  0.020} & 163 & \tiny{  0.133} &   2.673 & \tiny{  0.144}\\
+ 29 & \tiny{  0.008} &   0.599 & \tiny{  0.008} &  74 & \tiny{  0.010} &   0.721 & \tiny{  0.011} & 119 & \tiny{  0.020} &   1.103 & \tiny{  0.021} & 164 & \tiny{  0.142} &   2.744 & \tiny{  0.155}\\
+ 30 & \tiny{  0.008} &   0.600 & \tiny{  0.008} &  75 & \tiny{  0.011} &   0.726 & \tiny{  0.011} & 120 & \tiny{  0.021} &   1.118 & \tiny{  0.021} & 165 & \tiny{  0.151} &   2.816 & \tiny{  0.166}\\
+ 31 & \tiny{  0.008} &   0.601 & \tiny{  0.008} &  76 & \tiny{  0.011} &   0.730 & \tiny{  0.011} & 121 & \tiny{  0.021} &   1.133 & \tiny{  0.022} & 166 & \tiny{  0.161} &   2.890 & \tiny{  0.178}\\
+ 32 & \tiny{  0.008} &   0.603 & \tiny{  0.008} &  77 & \tiny{  0.011} &   0.735 & \tiny{  0.011} & 122 & \tiny{  0.022} &   1.149 & \tiny{  0.022} & 167 & \tiny{  0.172} &   2.964 & \tiny{  0.191}\\
+ 33 & \tiny{  0.008} &   0.604 & \tiny{  0.008} &  78 & \tiny{  0.011} &   0.740 & \tiny{  0.011} & 123 & \tiny{  0.022} &   1.166 & \tiny{  0.023} & 168 & \tiny{  0.183} &   3.037 & \tiny{  0.204}\\
+ 34 & \tiny{  0.008} &   0.606 & \tiny{  0.008} &  79 & \tiny{  0.011} &   0.745 & \tiny{  0.011} & 124 & \tiny{  0.023} &   1.183 & \tiny{  0.023} & 169 & \tiny{  0.194} &   3.111 & \tiny{  0.218}\\
+ 35 & \tiny{  0.008} &   0.608 & \tiny{  0.009} &  80 & \tiny{  0.011} &   0.751 & \tiny{  0.011} & 125 & \tiny{  0.024} &   1.200 & \tiny{  0.024} & 170 & \tiny{  0.205} &   3.182 & \tiny{  0.232}\\
+ 36 & \tiny{  0.008} &   0.609 & \tiny{  0.009} &  81 & \tiny{  0.011} &   0.756 & \tiny{  0.011} & 126 & \tiny{  0.024} &   1.219 & \tiny{  0.025} & 171 & \tiny{  0.217} &   3.252 & \tiny{  0.247}\\
+ 37 & \tiny{  0.008} &   0.611 & \tiny{  0.009} &  82 & \tiny{  0.011} &   0.761 & \tiny{  0.012} & 127 & \tiny{  0.025} &   1.237 & \tiny{  0.025} & 172 & \tiny{  0.228} &   3.318 & \tiny{  0.262}\\
+ 38 & \tiny{  0.008} &   0.613 & \tiny{  0.009} &  83 & \tiny{  0.011} &   0.767 & \tiny{  0.012} & 128 & \tiny{  0.026} &   1.257 & \tiny{  0.026} & 173 & \tiny{  0.239} &   3.380 & \tiny{  0.276}\\
+ 39 & \tiny{  0.008} &   0.614 & \tiny{  0.009} &  84 & \tiny{  0.012} &   0.773 & \tiny{  0.012} & 129 & \tiny{  0.026} &   1.277 & \tiny{  0.027} & 174 & \tiny{  0.249} &   3.436 & \tiny{  0.290}\\
+ 40 & \tiny{  0.008} &   0.616 & \tiny{  0.009} &  85 & \tiny{  0.012} &   0.778 & \tiny{  0.012} & 130 & \tiny{  0.027} &   1.298 & \tiny{  0.028} & 175 & \tiny{  0.258} &   3.486 & \tiny{  0.302}\\
+ 41 & \tiny{  0.008} &   0.618 & \tiny{  0.009} &  86 & \tiny{  0.012} &   0.784 & \tiny{  0.012} & 131 & \tiny{  0.028} &   1.319 & \tiny{  0.029} & 176 & \tiny{  0.267} &   3.529 & \tiny{  0.313}\\
+ 42 & \tiny{  0.009} &   0.620 & \tiny{  0.009} &  87 & \tiny{  0.012} &   0.791 & \tiny{  0.012} & 132 & \tiny{  0.029} &   1.342 & \tiny{  0.030} & 177 & \tiny{  0.273} &   3.564 & \tiny{  0.322}\\
+ 43 & \tiny{  0.009} &   0.622 & \tiny{  0.009} &  88 & \tiny{  0.012} &   0.797 & \tiny{  0.012} & 133 & \tiny{  0.030} &   1.365 & \tiny{  0.031} & 178 & \tiny{  0.278} &   3.589 & \tiny{  0.329}\\
+ 44 & \tiny{  0.009} &   0.624 & \tiny{  0.009} &  89 & \tiny{  0.012} &   0.803 & \tiny{  0.012} & 134 & \tiny{  0.031} &   1.389 & \tiny{  0.032} & 179 & \tiny{  0.281} &   3.604 & \tiny{  0.333}\\
+ 45 & \tiny{  0.009} &   0.627 & \tiny{  0.009} &  90 & \tiny{  0.012} &   0.810 & \tiny{  0.013} & 135 & \tiny{  0.032} &   1.413 & \tiny{  0.033} & 180 & \tiny{  0.282} &   3.609 & \tiny{  0.334}\\
+\end{tabular}}
+\caption[\em  Deferential latitude correction factor for Venus. ]{\em Deferential latitude correction factor for Venus. $\mu$ is in degrees. Note that $\bar{h}(360^\circ-\mu) = \bar{h}(\mu)$, and $\delta h_{\pm}(360^\circ-\mu) = \delta h_{\pm}(\mu)$. }\label{tlat2v}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{crc}
+$F (^\circ)$ & $\beta_0(^\circ)$ &
+$F (^\circ)$ \\\hline
+&&\\[-1.75ex]
+000/180 &  0.000 & (180)/(360)\\
+002/178 &  0.093 & (182)/(358)\\
+004/176 &  0.186 & (184)/(356)\\
+006/174 &  0.279 & (186)/(354)\\
+008/172 &  0.372 & (188)/(352)\\
+010/170 &  0.464 & (190)/(350)\\
+012/168 &  0.556 & (192)/(348)\\
+014/166 &  0.646 & (194)/(346)\\
+016/164 &  0.736 & (196)/(344)\\
+018/162 &  0.826 & (198)/(342)\\
+020/160 &  0.914 & (200)/(340)\\
+022/158 &  1.001 & (202)/(338)\\
+024/156 &  1.087 & (204)/(336)\\
+026/154 &  1.171 & (206)/(334)\\
+028/152 &  1.254 & (208)/(332)\\
+030/150 &  1.336 & (210)/(330)\\
+032/148 &  1.416 & (212)/(328)\\
+034/146 &  1.494 & (214)/(326)\\
+036/144 &  1.570 & (216)/(324)\\
+038/142 &  1.645 & (218)/(322)\\
+040/140 &  1.717 & (220)/(320)\\
+042/138 &  1.788 & (222)/(318)\\
+044/136 &  1.856 & (224)/(316)\\
+046/134 &  1.922 & (226)/(314)\\
+048/132 &  1.986 & (228)/(312)\\
+050/130 &  2.047 & (230)/(310)\\
+052/128 &  2.105 & (232)/(308)\\
+054/126 &  2.162 & (234)/(306)\\
+056/124 &  2.215 & (236)/(304)\\
+058/122 &  2.266 & (238)/(302)\\
+060/120 &  2.314 & (240)/(300)\\
+062/118 &  2.359 & (242)/(298)\\
+064/116 &  2.401 & (244)/(296)\\
+066/114 &  2.441 & (246)/(294)\\
+068/112 &  2.477 & (248)/(292)\\
+070/110 &  2.511 & (250)/(290)\\
+072/108 &  2.541 & (252)/(288)\\
+074/106 &  2.568 & (254)/(286)\\
+076/104 &  2.592 & (256)/(284)\\
+078/102 &  2.613 & (258)/(282)\\
+080/100 &  2.631 & (260)/(280)\\
+082/098 &  2.646 & (262)/(278)\\
+084/096 &  2.657 & (264)/(276)\\
+086/094 &  2.665 & (266)/(274)\\
+088/092 &  2.670 & (268)/(272)\\
+090/090 &  2.672 & (270)/(270)\\
+\end{tabular}}
+\caption[\em Epicyclic ecliptic latitude of Mercury.]{\em Epicyclic  ecliptic latitude of Mercury.  The latitude is minus the value shown
+in the table if the argument is
+in parenthesies. }\label{tlat1mc}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrrr|rrrr|rrrr|crrr}
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ &
+$\mu$ & $\delta h_-$  & $\bar{h}~~~~$ & $\delta h_+$ \\\hline
+&&&&&&&&&&&&&&&\\[-1.75ex]
+  0 & \tiny{  0.099} &   0.719 & \tiny{  0.137} &  45 & \tiny{  0.110} &   0.765 & \tiny{  0.152} &  90 & \tiny{  0.152} &   0.930 & \tiny{  0.217} & 135 & \tiny{  0.274} &   1.283 & \tiny{  0.451}\\
+  1 & \tiny{  0.099} &   0.719 & \tiny{  0.137} &  46 & \tiny{  0.110} &   0.768 & \tiny{  0.153} &  91 & \tiny{  0.153} &   0.935 & \tiny{  0.220} & 136 & \tiny{  0.278} &   1.293 & \tiny{  0.461}\\
+  2 & \tiny{  0.099} &   0.719 & \tiny{  0.137} &  47 & \tiny{  0.111} &   0.770 & \tiny{  0.154} &  92 & \tiny{  0.155} &   0.941 & \tiny{  0.222} & 137 & \tiny{  0.282} &   1.303 & \tiny{  0.471}\\
+  3 & \tiny{  0.099} &   0.719 & \tiny{  0.137} &  48 & \tiny{  0.111} &   0.772 & \tiny{  0.154} &  93 & \tiny{  0.157} &   0.946 & \tiny{  0.225} & 138 & \tiny{  0.286} &   1.313 & \tiny{  0.481}\\
+  4 & \tiny{  0.099} &   0.719 & \tiny{  0.137} &  49 & \tiny{  0.112} &   0.774 & \tiny{  0.155} &  94 & \tiny{  0.158} &   0.952 & \tiny{  0.228} & 139 & \tiny{  0.290} &   1.324 & \tiny{  0.491}\\
+  5 & \tiny{  0.099} &   0.720 & \tiny{  0.137} &  50 & \tiny{  0.112} &   0.777 & \tiny{  0.156} &  95 & \tiny{  0.160} &   0.958 & \tiny{  0.231} & 140 & \tiny{  0.295} &   1.334 & \tiny{  0.501}\\
+  6 & \tiny{  0.099} &   0.720 & \tiny{  0.137} &  51 & \tiny{  0.113} &   0.779 & \tiny{  0.157} &  96 & \tiny{  0.162} &   0.964 & \tiny{  0.234} & 141 & \tiny{  0.299} &   1.344 & \tiny{  0.512}\\
+  7 & \tiny{  0.099} &   0.720 & \tiny{  0.137} &  52 & \tiny{  0.113} &   0.782 & \tiny{  0.158} &  97 & \tiny{  0.164} &   0.970 & \tiny{  0.237} & 142 & \tiny{  0.304} &   1.355 & \tiny{  0.523}\\
+  8 & \tiny{  0.099} &   0.720 & \tiny{  0.137} &  53 & \tiny{  0.114} &   0.784 & \tiny{  0.159} &  98 & \tiny{  0.165} &   0.976 & \tiny{  0.240} & 143 & \tiny{  0.308} &   1.365 & \tiny{  0.534}\\
+  9 & \tiny{  0.100} &   0.721 & \tiny{  0.137} &  54 & \tiny{  0.115} &   0.787 & \tiny{  0.160} &  99 & \tiny{  0.167} &   0.983 & \tiny{  0.243} & 144 & \tiny{  0.313} &   1.375 & \tiny{  0.546}\\
+ 10 & \tiny{  0.100} &   0.721 & \tiny{  0.138} &  55 & \tiny{  0.115} &   0.790 & \tiny{  0.161} & 100 & \tiny{  0.169} &   0.989 & \tiny{  0.246} & 145 & \tiny{  0.317} &   1.386 & \tiny{  0.558}\\
+ 11 & \tiny{  0.100} &   0.722 & \tiny{  0.138} &  56 & \tiny{  0.116} &   0.793 & \tiny{  0.162} & 101 & \tiny{  0.171} &   0.996 & \tiny{  0.250} & 146 & \tiny{  0.322} &   1.396 & \tiny{  0.570}\\
+ 12 & \tiny{  0.100} &   0.722 & \tiny{  0.138} &  57 & \tiny{  0.117} &   0.795 & \tiny{  0.163} & 102 & \tiny{  0.173} &   1.002 & \tiny{  0.253} & 147 & \tiny{  0.326} &   1.406 & \tiny{  0.582}\\
+ 13 & \tiny{  0.100} &   0.723 & \tiny{  0.138} &  58 & \tiny{  0.117} &   0.798 & \tiny{  0.164} & 103 & \tiny{  0.175} &   1.009 & \tiny{  0.257} & 148 & \tiny{  0.331} &   1.417 & \tiny{  0.594}\\
+ 14 & \tiny{  0.100} &   0.723 & \tiny{  0.138} &  59 & \tiny{  0.118} &   0.801 & \tiny{  0.165} & 104 & \tiny{  0.178} &   1.016 & \tiny{  0.261} & 149 & \tiny{  0.335} &   1.427 & \tiny{  0.607}\\
+ 15 & \tiny{  0.100} &   0.724 & \tiny{  0.138} &  60 & \tiny{  0.119} &   0.804 & \tiny{  0.166} & 105 & \tiny{  0.180} &   1.023 & \tiny{  0.264} & 150 & \tiny{  0.340} &   1.437 & \tiny{  0.620}\\
+ 16 & \tiny{  0.100} &   0.725 & \tiny{  0.139} &  61 & \tiny{  0.120} &   0.807 & \tiny{  0.167} & 106 & \tiny{  0.182} &   1.030 & \tiny{  0.268} & 151 & \tiny{  0.345} &   1.447 & \tiny{  0.633}\\
+ 17 & \tiny{  0.101} &   0.725 & \tiny{  0.139} &  62 & \tiny{  0.120} &   0.811 & \tiny{  0.168} & 107 & \tiny{  0.184} &   1.037 & \tiny{  0.272} & 152 & \tiny{  0.349} &   1.457 & \tiny{  0.646}\\
+ 18 & \tiny{  0.101} &   0.726 & \tiny{  0.139} &  63 & \tiny{  0.121} &   0.814 & \tiny{  0.169} & 108 & \tiny{  0.187} &   1.044 & \tiny{  0.276} & 153 & \tiny{  0.354} &   1.467 & \tiny{  0.659}\\
+ 19 & \tiny{  0.101} &   0.727 & \tiny{  0.139} &  64 & \tiny{  0.122} &   0.817 & \tiny{  0.170} & 109 & \tiny{  0.189} &   1.052 & \tiny{  0.281} & 154 & \tiny{  0.358} &   1.476 & \tiny{  0.672}\\
+ 20 & \tiny{  0.101} &   0.728 & \tiny{  0.140} &  65 & \tiny{  0.123} &   0.820 & \tiny{  0.172} & 110 & \tiny{  0.192} &   1.059 & \tiny{  0.285} & 155 & \tiny{  0.363} &   1.486 & \tiny{  0.686}\\
+ 21 & \tiny{  0.101} &   0.729 & \tiny{  0.140} &  66 & \tiny{  0.124} &   0.824 & \tiny{  0.173} & 111 & \tiny{  0.194} &   1.067 & \tiny{  0.290} & 156 & \tiny{  0.367} &   1.495 & \tiny{  0.699}\\
+ 22 & \tiny{  0.101} &   0.730 & \tiny{  0.140} &  67 & \tiny{  0.124} &   0.827 & \tiny{  0.174} & 112 & \tiny{  0.197} &   1.074 & \tiny{  0.294} & 157 & \tiny{  0.371} &   1.504 & \tiny{  0.713}\\
+ 23 & \tiny{  0.102} &   0.731 & \tiny{  0.141} &  68 & \tiny{  0.125} &   0.831 & \tiny{  0.176} & 113 & \tiny{  0.199} &   1.082 & \tiny{  0.299} & 158 & \tiny{  0.376} &   1.513 & \tiny{  0.726}\\
+ 24 & \tiny{  0.102} &   0.732 & \tiny{  0.141} &  69 & \tiny{  0.126} &   0.835 & \tiny{  0.177} & 114 & \tiny{  0.202} &   1.090 & \tiny{  0.304} & 159 & \tiny{  0.380} &   1.522 & \tiny{  0.739}\\
+ 25 & \tiny{  0.102} &   0.733 & \tiny{  0.141} &  70 & \tiny{  0.127} &   0.838 & \tiny{  0.179} & 115 & \tiny{  0.205} &   1.098 & \tiny{  0.309} & 160 & \tiny{  0.384} &   1.530 & \tiny{  0.753}\\
+ 26 & \tiny{  0.102} &   0.734 & \tiny{  0.142} &  71 & \tiny{  0.128} &   0.842 & \tiny{  0.180} & 116 & \tiny{  0.208} &   1.107 & \tiny{  0.315} & 161 & \tiny{  0.388} &   1.538 & \tiny{  0.766}\\
+ 27 & \tiny{  0.103} &   0.735 & \tiny{  0.142} &  72 & \tiny{  0.129} &   0.846 & \tiny{  0.182} & 117 & \tiny{  0.210} &   1.115 & \tiny{  0.320} & 162 & \tiny{  0.392} &   1.546 & \tiny{  0.779}\\
+ 28 & \tiny{  0.103} &   0.737 & \tiny{  0.142} &  73 & \tiny{  0.130} &   0.850 & \tiny{  0.183} & 118 & \tiny{  0.213} &   1.123 & \tiny{  0.326} & 163 & \tiny{  0.396} &   1.554 & \tiny{  0.791}\\
+ 29 & \tiny{  0.103} &   0.738 & \tiny{  0.143} &  74 & \tiny{  0.131} &   0.854 & \tiny{  0.185} & 119 & \tiny{  0.216} &   1.132 & \tiny{  0.331} & 164 & \tiny{  0.399} &   1.561 & \tiny{  0.804}\\
+ 30 & \tiny{  0.104} &   0.739 & \tiny{  0.143} &  75 & \tiny{  0.132} &   0.858 & \tiny{  0.186} & 120 & \tiny{  0.219} &   1.141 & \tiny{  0.337} & 165 & \tiny{  0.403} &   1.568 & \tiny{  0.816}\\
+ 31 & \tiny{  0.104} &   0.741 & \tiny{  0.144} &  76 & \tiny{  0.133} &   0.862 & \tiny{  0.188} & 121 & \tiny{  0.223} &   1.149 & \tiny{  0.343} & 166 & \tiny{  0.406} &   1.575 & \tiny{  0.827}\\
+ 32 & \tiny{  0.104} &   0.742 & \tiny{  0.144} &  77 & \tiny{  0.135} &   0.866 & \tiny{  0.190} & 122 & \tiny{  0.226} &   1.158 & \tiny{  0.350} & 167 & \tiny{  0.409} &   1.581 & \tiny{  0.838}\\
+ 33 & \tiny{  0.105} &   0.743 & \tiny{  0.145} &  78 & \tiny{  0.136} &   0.871 & \tiny{  0.192} & 123 & \tiny{  0.229} &   1.167 & \tiny{  0.356} & 168 & \tiny{  0.412} &   1.587 & \tiny{  0.849}\\
+ 34 & \tiny{  0.105} &   0.745 & \tiny{  0.145} &  79 & \tiny{  0.137} &   0.875 & \tiny{  0.193} & 124 & \tiny{  0.232} &   1.176 & \tiny{  0.363} & 169 & \tiny{  0.415} &   1.592 & \tiny{  0.858}\\
+ 35 & \tiny{  0.105} &   0.747 & \tiny{  0.146} &  80 & \tiny{  0.138} &   0.880 & \tiny{  0.195} & 125 & \tiny{  0.236} &   1.185 & \tiny{  0.370} & 170 & \tiny{  0.417} &   1.597 & \tiny{  0.868}\\
+ 36 & \tiny{  0.106} &   0.748 & \tiny{  0.146} &  81 & \tiny{  0.139} &   0.884 & \tiny{  0.197} & 126 & \tiny{  0.239} &   1.195 & \tiny{  0.377} & 171 & \tiny{  0.420} &   1.602 & \tiny{  0.876}\\
+ 37 & \tiny{  0.106} &   0.750 & \tiny{  0.147} &  82 & \tiny{  0.141} &   0.889 & \tiny{  0.199} & 127 & \tiny{  0.243} &   1.204 & \tiny{  0.384} & 172 & \tiny{  0.422} &   1.606 & \tiny{  0.884}\\
+ 38 & \tiny{  0.106} &   0.752 & \tiny{  0.147} &  83 & \tiny{  0.142} &   0.894 & \tiny{  0.201} & 128 & \tiny{  0.246} &   1.214 & \tiny{  0.392} & 173 & \tiny{  0.424} &   1.610 & \tiny{  0.891}\\
+ 39 & \tiny{  0.107} &   0.754 & \tiny{  0.148} &  84 & \tiny{  0.143} &   0.899 & \tiny{  0.203} & 129 & \tiny{  0.250} &   1.223 & \tiny{  0.400} & 174 & \tiny{  0.425} &   1.613 & \tiny{  0.897}\\
+ 40 & \tiny{  0.107} &   0.755 & \tiny{  0.149} &  85 & \tiny{  0.145} &   0.904 & \tiny{  0.206} & 130 & \tiny{  0.254} &   1.233 & \tiny{  0.408} & 175 & \tiny{  0.427} &   1.615 & \tiny{  0.903}\\
+ 41 & \tiny{  0.108} &   0.757 & \tiny{  0.149} &  86 & \tiny{  0.146} &   0.909 & \tiny{  0.208} & 131 & \tiny{  0.258} &   1.243 & \tiny{  0.416} & 176 & \tiny{  0.428} &   1.618 & \tiny{  0.907}\\
+ 42 & \tiny{  0.108} &   0.759 & \tiny{  0.150} &  87 & \tiny{  0.147} &   0.914 & \tiny{  0.210} & 132 & \tiny{  0.262} &   1.253 & \tiny{  0.424} & 177 & \tiny{  0.429} &   1.619 & \tiny{  0.911}\\
+ 43 & \tiny{  0.109} &   0.761 & \tiny{  0.151} &  88 & \tiny{  0.149} &   0.919 & \tiny{  0.212} & 133 & \tiny{  0.265} &   1.263 & \tiny{  0.433} & 178 & \tiny{  0.429} &   1.621 & \tiny{  0.913}\\
+ 44 & \tiny{  0.109} &   0.763 & \tiny{  0.151} &  89 & \tiny{  0.150} &   0.924 & \tiny{  0.215} & 134 & \tiny{  0.269} &   1.273 & \tiny{  0.442} & 179 & \tiny{  0.430} &   1.621 & \tiny{  0.914}\\
+ 45 & \tiny{  0.110} &   0.765 & \tiny{  0.152} &  90 & \tiny{  0.152} &   0.930 & \tiny{  0.217} & 135 & \tiny{  0.274} &   1.283 & \tiny{  0.451} & 180 & \tiny{  0.430} &   1.622 & \tiny{  0.915}\\
+\end{tabular}}
+\caption[\em  Deferential latitude correction factor for Mercury. ]{\em Deferential latitude correction factor for Mercury. $\mu$ is in degrees. Note that $\bar{h}(360^\circ-\mu) = \bar{h}(\mu)$, and $\delta h_{\pm}(360^\circ-\mu) = \delta h_{\pm}(\mu)$. }\label{tlat2mc}
+\end{table}
+
+

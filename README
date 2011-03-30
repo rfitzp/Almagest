@@ -1,0 +1,25 @@
+This repository contains the Latex files required to compile
+a modern version of Ptolemy's Almagest. This version was authored 
+by Prof. Richard Fitzpatrick (Department of Physics, University 
+of Texas at Austin).
+
+The files will only compile properly when the following
+standard Latex packages are installed:
+
+fullpage
+epsf
+charter
+euler
+fancyhdr
+wasysym
+parallel
+
+The document can be compiled by issuing the command
+
+latex Almagest
+
+in the base directory (containing Almagest.tex).
+
+The document will need to be compiled at least three times to
+update all of the internal references, and to generate the
+table of contents data.

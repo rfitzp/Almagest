@@ -1,0 +1,131 @@
+% A MODERN ALMAGEST
+% AN UPDATED VERSION OF PTOLEMY'S ALMAGEST
+% BY RICHARD FITZPATRICK
+% PROFESSOR OF PHYSICS
+% THE UNIVERSITY OF TEXAS AT AUSTIN
+
+%$$$$$$$$$$$$
+% Start preamble
+%$$$$$$$$$$$$
+
+\documentclass[11pt]{rfbook}
+\usepackage{fullpage}
+\usepackage{stmaryrd}
+
+%%%%%%%%%%%
+% Needed for figures
+%%%%%%%%%%%
+\usepackage{epsf}
+
+%%%%%%%%%
+% Customize fonts
+%%%%%%%%%
+\usepackage{charter}
+\usepackage{euler}
+
+%%%%%%%%%
+% Other packages
+%%%%%%%%%
+\usepackage{wasysym}
+\usepackage{parallel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Customize equation, figure, and table numbering
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\@addtoreset{equation}{chapter}
+\@addtoreset{figure}{chapter}
+\@addtoreset{table}{chapter}
+\def\theequation{\arabic{chapter}.\arabic{equation}}
+\def\thefigure{\arabic{chapter}.\arabic{figure}}
+\def\thetable{\arabic{chapter}.\arabic{table}}
+\makeatother
+
+%%%%%%%%%%%%%%%
+% Customize table of contents
+%%%%%%%%%%%%%%%
+\usepackage{rftocloft}
+\addtolength{\cftsubsecnumwidth}{1em}
+\addtolength{\cftsecnumwidth}{0.6em}
+
+%%%%%%%%%%%%%
+% Customize page headers
+%%%%%%%%%%%%%
+\setlength{\headheight}{14.5pt}
+\setlength{\headsep}{10pt}
+\usepackage{fancyhdr}
+
+%%%%%%%%%%%%%
+% Define custom symbols
+%%%%%%%%%%%%%
+\newcommand {\btau}{\mbox{\boldmath$\tau$}}
+\newcommand {\bOmega}{\mbox{\boldmath$\Omega$}}
+\newcommand {\bomega}{\mbox{\boldmath$\omega$}}
+
+%$$$$$$$$$$$$
+% End preamble
+%$$$$$$$$$$$$
+
+%$$$$$$$$$$$
+% Start content
+%$$$$$$$$$$$
+\begin{document}
+
+%%%%%%%
+% Titlepage
+%%%%%%%
+\thispagestyle{empty}
+\begin{center}
+{\Huge\bf A Modern Almagest}\\[2ex]
+{\Large\bf An Updated  Version of Ptolemy's Model of the Solar System}
+~\\
+~\\
+~\\
+~\\
+{\Large \sf Richard Fitzpatrick}\\[2ex]
+{\Large\sf  Professor  of Physics}\\[2ex]
+{\Large\sf  The University of Texas at Austin}\\
+~\\
+~\\
+\end{center}
+
+%%%%%%%%%%
+% Set page headers
+%%%%%%%%%%
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancyhf{}
+\fancyhead[LO,RE]{\sl \leftmark}
+\fancyhead[LE,RO]{\sl \thepage}
+\fancyhead[RE]{\sl MODERN ALMAGEST}
+
+%%%%%%%%%%%%%
+% Table of contents etc
+%%%%%%%%%%%%%
+%\setcounter{tocdepth}{1}
+\tableofcontents
+%\listoffigures
+%\listoftables
+\newpage
+
+%%%%
+% Body
+%%%%
+\include{Introduction/Introduction}
+\include{Spherical/Spherical}
+\include{Julian/Julian}
+\include{Kepler/Kepler}
+\include{Sun/Sun}
+\include{Moon/Moon}
+\include{Syzygy/Syzygy}
+\include{Superior/Superior}
+\include{Inferior/Inferior}
+\include{Latitude/Latitude}
+\include{Glossary/Glossary}
+\include{Symbol/Symbol}
+\include{Bibliography/Bibliography}
+
+\end{document}
+%$$$$$$$$$$
+% End content
+%$$$$$$$$$$

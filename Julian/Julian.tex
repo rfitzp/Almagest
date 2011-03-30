@@ -1,0 +1,160 @@
+\chapter{Dates}
+\section{Introduction}
+Following modern astronomical practice, in this treatise we shall specify dates
+by means of {\em Julian day numbers}. According to this
+scheme, days are numbered consecutively from January 1, 4713 BCE, which
+is designated day zero. For instance, October 14, 1066 CE (the date of the battle of Hastings) is
+day 2\,110\,701. Each Julian day commences at 12:00 universal time (UT). 
+
+\section{Determination of Julian Day Numbers}
+The Julian day number of a given day can be determined from Tables~\ref{kt1}--\ref{kt3}.  The
+date must be expressed in terms of the Gregorian calendar. 
+
+The procedure is as
+follows:
+\begin{enumerate}
+\item Enter the table of century years (Table~\ref{kt1}) with the century
+year immediately preceding the  date in question, and take out the tabular
+value. If the
+century year is marked with a $\dag$, note this fact for use in step 2.
+\item Enter the table of years of the century (Table~\ref{kt2}) with the
+last two digits of the year in question, and take out the tabular value.
+If the century year used in step 1 was marked with a $\dag$, diminish the tabular value
+by one day, unless the tabular value is zero. If the year in question
+is a leap year,  marked with a $\ast$, note this fact for use in step 3.
+
+\item Enter the table of the days of the year (Table~\ref{kt3}) with the
+day in question, and take out the tabular value. If the year in question
+is a leap year and the table entry falls after February 28, add
+one day to the tabular value. The sum of the values obtained
+in steps 1, 2, and 3 then gives the Julian day number of the date in question.
+\end{enumerate}
+
+~\\
+\noindent {\em Example~1}: June 10, 1992 CE:\\~\\
+\begin{tabular}{lrrr}
+1.~Century year & $^\dag$1900 &&2\,415\,020\\
+2.~Year of the century & $^\ast$92 & 33\,603 - 1 =& 33\,602\\
+3.~Day of the year & June 10 & 161+1 = & 162\\\cline{4-4}
+Julian day number&&&2\,448\,784\\
+&&&\\
+\end{tabular}\\
+Observe that in step 2 the tabular value has been diminished by 1 because 1900
+is a common year (marked with a $\dag$ in Table~\ref{kt1}). In step 3, the
+tabular value has been increased by 1 because 1992 is a leap year (marked with a $\ast$ in Table~\ref{kt2}), and the
+date falls after February 28.
+
+~\\
+\noindent {\em Example~2}: January 18, 1824 CE:\\~\\
+\begin{tabular}{lrrr}
+1.~Century year & $^\dag$1800 &&2\,378\,496\\
+2.~Year of the century & $^\ast$24 & 8\,766 - 1 =& 8\,765\\
+3.~Day of the year & January 18 & 18 = & 18\\\cline{4-4}
+Julian day number&&&2\,387\,279\\
+&&&\\
+\end{tabular}\\
+Observe that in step 2 the tabular value has been diminished by 1 because 1800
+is a common year (marked with a $\dag$ in Table~\ref{kt1}). In step 3, the
+tabular value has not been increased by 1, despite the fact that 1824 is a leap year (marked with an $\ast$ in Table~\ref{kt2}),  because the
+date falls before February 28.
+
+We can specify the time of day (in universal time), as well as the date, 
+by means of fractional Julian day numbers. For instance,
+$t=2\,448\,784.0$ JD corresponds to 12:00 UT  on  June 10, 1992 CE, whereas
+$t=2\,448\,784.5$ JD corresponds to 24:00 UT later the same day.
+
+\newpage
+\begin{table}\centering
+\begin{tabular}{rr}
+ $^\dag$1800 &  2\,378\,496\\
+ $^\dag$1900 & 2\,415\,020\\
+ 2000 & 2\,451\,544\\
+\end{tabular}
+\caption [\em Julian Day Number: Century Years.]{\em Julian Day Number: Century Years. $\dag$\,Common years. All years are CE. From ``The History
+and Practice of Ancient Astronomy", J.~Evans (Oxford University Press, Oxford UK, 1998).}\label{kt1}
+\end{table}
+
+\vspace*{1cm}
+
+\begin{table}[h]\centering
+\begin{tabular}{rr|rr|rr|rr|rr}
+$^\S$0 & 0 & $^\ast$20 & 7\,305 & $^\ast$40 & 14\,610 & $^\ast$60 &
+21\,915 & $^\ast$80 & 29\,220\\
+1 & 336 & 21 & 7\,671 & 41 & 14\,976 & 61 &22\,281 & 81& \,29\,586\\
+2 & 731 & 22 & 8\,036 & 42 & 15\,341 & 62 & 22\,646 & 82 & 29\,951\\
+3 & 1\,096 & 23 & 8\,401 & 43 & 15\,706 & 63 & 22\,011& 83 & 30\,316\\
+&&&&&&&\\
+$^\ast$4& 1\,461& $^\ast$24& 8\,766& $^\ast$44 & 16\,071 & $^\ast$64
+& 23\,376& $^\ast$84 & 30\,681\\
+5 & 1\,827 & 25 & 9\,132& 45 & 16\,437& 65& 23\,742& 85& 31\,047\\
+6& 2\,192& 26& 9\,497& 46& 16\,802& 66& 24\,107& 86& 31\,412\\
+7& 2\,557&27&9\,862 & 47 & 17\,167& 67& 24\,472& 87& 31\,777\\
+&&&&&&&\\
+$^\ast$8 & 2\,922& $^\ast$28 & 10\,227 & $^\ast 48$ & 17\,532 & $^\ast 68$ & 24\,837& $^\ast$88& 32\,142\\
+9 & 3\,288& 29 & 10\,593& 49& 17\,898& 69& 25\,203& 89& 32\,508\\
+10& 3\,653& 30 & 10\,958& 50& 18\,263& 70& 25\,568& 90& 32\,873\\
+11& 4\,018& 31& 11\,323& 51& 18\,628& 71& 25\,933& 91& 33\,238\\
+&&&&&&&\\
+$^\ast$12& 4\,383& $^\ast$32 & 11\,688 & $^\ast$52 & 18\,993 &
+$^\ast$72 & 26\,298 & $^\ast$92 & 33\,603\\
+13 & 4\,749 & 33 & 12\,054& 53& 19\,359 & 73& 26\,664 & 93& 33\,969\\
+14 & 5\,114 & 34 & 12\,419 & 54 & 19\,724 & 74& 27\,029 & 94&34\,334\\
+15& 5\,479 & 35& 12\,784& 55 & 20\,089 & 75& 27\,394 & 95 & 34\,699\\
+&&&&&&&\\
+$^\ast$16 & 5\,844& $^\ast$36& 13\,149& $^\ast$56 & 20\,454& $^\ast$76
+&27\,759 & $^\ast$96& 35\,064\\
+17& 6\,210& 37& 13\,515& 57& 20\,820& 77& 28\,125& 97& 35\,430\\
+18& 6\,575& 38& 13\,880& 58& 21\,185& 78& 28\,490& 98& 35\,795\\
+19& 6\,940& 39& 14\,245& 59& 21\,550& 79& 28\,855& 99&36\,160\\
+\end{tabular}
+\caption[\em Julian Day Number: Years of the Century. ]{\em Julian Day Number: Years of the Century. $\ast$\,Leap year. $\S$\,Leap year unless century is marked $\dag$. In centuries marked $\dag$, subtract one day from the tabulated values for the years 1 through 99.
+From ``The History
+and Practice of Ancient Astronomy", J.~Evans (Oxford University Press, Oxford UK, 1998).}\label{kt2}
+\end{table}
+
+\newpage
+\begin{table}[h]\centering
+\begin{tabular}{r|rrrrrrrrrrrr}
+Day & Jan & Feb & Mar & Apr & May & Jun & Jul & Aug & Sep & Oct& Nov & Dec\\\hline
+&&&&&&&&&&&&\\[-1.5ex]
+1 & 1 & 32 & 60 & 91 & 121& 152 & 182& 213& 244 & 274& 305& 335\\
+2 & 2 & 33 & 61 & 92 & 122& 153& 183& 214& 245& 275& 306& 336\\
+3 & 3&34 & 62& 93& 123& 154& 184& 215& 246& 276& 307& 337\\
+4& 4& 35& 63& 94& 124& 155& 185& 216& 247& 277& 308& 338\\
+5& 5&36& 64& 95& 125& 156& 186& 217& 248& 278& 309& 339\\
+&&&&&&&&&&&&\\
+6&6& 37& 65& 96& 126& 157& 187& 218& 249& 279& 310& 340\\
+7&7 & 38 & 66 & 97& 127& 158& 188& 219& 250& 280& 311& 341\\
+8& 8&39& 67& 98& 128& 159& 189& 220&251& 281& 312& 342\\
+9&9&40&68&99&129& 160& 190& 221& 252& 282& 313& 343\\
+10&10&41&69&100&130& 161& 191& 222& 253& 283&314&344\\
+&&&&&&&&&&&&\\
+11&11&42&70& 101& 131& 162& 192& 223& 254& 284& 315& 345\\
+12& 12&43&71&102& 132& 163& 193& 224& 255& 285& 316& 346\\
+13& 13& 44& 72& 103& 133&164& 194& 225& 256& 286& 317& 347\\
+14& 14&45& 73& 104& 134& 165& 195& 226& 257& 285& 318& 348\\
+15&15&46& 74& 105& 135& 166& 196& 227& 258& 288& 319& 349\\
+&&&&&&&&&&&&\\
+16& 16& 47& 75& 106& 136& 167& 197& 228& 259& 289& 320& 350\\
+17& 17 & 48& 76& 107& 137& 168& 198& 229& 260& 290& 321& 351\\
+18& 18& 49& 77& 108&138& 169& 199& 230& 261& 291& 322& 352\\
+19& 19& 50& 78& 109& 139&170& 200& 231& 262& 292& 323& 353\\
+20 & 20& 51& 79& 110& 140& 171& 201& 232& 263& 293& 324& 354\\
+&&&&&&&&&&&&\\
+21 & 21 & 52 & 80 & 111& 141& 172& 202& 233& 264& 294& 325& 355\\
+22& 22& 53& 81& 112& 142& 173& 203& 234& 265& 295& 326& 356\\
+23& 23& 54& 82& 113& 143& 174& 204& 235& 266&296& 327& 357\\
+24& 24& 55& 83& 114& 144& 175& 205& 236& 267& 297& 328& 358\\
+25&25&56& 84& 115& 145& 176& 206& 237& 268& 298& 329& 359\\
+&&&&&&&&&&&&\\
+26& 26& 57& 85& 116& 146& 177& 207& 238& 269& 299& 330& 360\\
+27& 27& 58& 86& 117& 147& 178& 208& 239& 270& 300& 331& 361\\
+28& 28& 59& 87& 118&148& 179& 209& 240& 271& 301& 332& 362\\
+29&29&$\ast$&88&119& 149& 180& 210& 241& 272& 302& 333& 363\\
+30&30&&89&120&150& 181& 211& 242& 273& 303& 334& 364\\
+31&31&&90&&151&&212&243&&304&&365\\
+\end{tabular}
+\caption[\em Julian Day Number: Days of the Year. ]{\em Julian Day Number: Days of the Year. $\ast$\,In leap year,
+after February 28, add 1 to the tabulated value. From ``The History
+and Practice of Ancient Astronomy", J.~Evans (Oxford University Press, Oxford UK, 1998).}\label{kt3}
+\end{table}
