@@ -1,116 +1,32 @@
-% A MODERN ALMAGEST
-% AN UPDATED VERSION OF PTOLEMY'S ALMAGEST
-% BY RICHARD FITZPATRICK
-% PROFESSOR OF PHYSICS
-% THE UNIVERSITY OF TEXAS AT AUSTIN
-
-%$$$$$$$$$$$$
-% Start preamble
-%$$$$$$$$$$$$
-
-\documentclass[11pt]{rfbook}
+\documentclass[11pt]{book}
 \usepackage{fullpage}
-\usepackage{stmaryrd}
-
-%%%%%%%%%%%
-% Needed for figures
-%%%%%%%%%%%
 \usepackage{epsf}
-
-%%%%%%%%%
-% Customize fonts
-%%%%%%%%%
-\usepackage{charter}
-\usepackage{euler}
-
-%%%%%%%%%
-% Other packages
-%%%%%%%%%
-\usepackage{wasysym}
+\usepackage{graphicx,epstopdf}	
 \usepackage{parallel}
+\usepackage{amsmath}
+%\pdfoutput = 1 
 
-%%%%%%%%%%%%%%%%%%%%%%%%% 
-% Customize equation, figure, and table numbering
-%%%%%%%%%%%%%%%%%%%%%%%%%
-\makeatletter
-\@addtoreset{equation}{chapter}
-\@addtoreset{figure}{chapter}
-\@addtoreset{table}{chapter}
-\def\theequation{\arabic{chapter}.\arabic{equation}}
-\def\thefigure{\arabic{chapter}.\arabic{figure}}
-\def\thetable{\arabic{chapter}.\arabic{table}}
-\makeatother
+\usepackage{fontspec}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{greek}
+\newfontfamily\greekfont{Times New Roman}
 
-%%%%%%%%%%%%%%%
-% Customize table of contents
-%%%%%%%%%%%%%%%
-\usepackage{rftocloft}
-\addtolength{\cftsubsecnumwidth}{1em}
-\addtolength{\cftsecnumwidth}{0.6em}
-
-%%%%%%%%%%%%%
-% Customize page headers
-%%%%%%%%%%%%%
-\setlength{\headheight}{14.5pt}
-\setlength{\headsep}{10pt}
-\usepackage{fancyhdr}
-
-%%%%%%%%%%%%%
-% Define custom symbols
-%%%%%%%%%%%%%
 \newcommand {\btau}{\mbox{\boldmath$\tau$}}
 \newcommand {\bOmega}{\mbox{\boldmath$\Omega$}}
 \newcommand {\bomega}{\mbox{\boldmath$\omega$}}
 
-%$$$$$$$$$$$$
-% End preamble
-%$$$$$$$$$$$$
+\includeonly{Introduction/Introduction,Spherical/Spherical}
 
-%$$$$$$$$$$$
-% Start content
-%$$$$$$$$$$$
 \begin{document}
 
-%%%%%%%
-% Titlepage
-%%%%%%%
-\thispagestyle{empty}
-\begin{center}
-{\Huge\bf A Modern Almagest}\\[2ex]
-{\Large\bf An Updated  Version of Ptolemy's Model of the Solar System}
-~\\
-~\\
-~\\
-~\\
-{\Large \sf Richard Fitzpatrick}\\[2ex]
-{\Large\sf  Professor  of Physics}\\[2ex]
-{\Large\sf  The University of Texas at Austin}\\
-~\\
-~\\
-\end{center}
+\title{{\bf A Modern Almagest}:\\[0.5ex]An Updated  Version of Ptolemy's Model of the Solar System}
+\author{Richard Fitzpatrick}
+\date{}
+\maketitle
 
-%%%%%%%%%%
-% Set page headers
-%%%%%%%%%%
-\pagestyle{fancy}
-\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-\fancyhf{}
-\fancyhead[LO,RE]{\sl \leftmark}
-\fancyhead[LE,RO]{\sl \thepage}
-\fancyhead[RE]{\sl MODERN ALMAGEST}
-
-%%%%%%%%%%%%%
-% Table of contents etc
-%%%%%%%%%%%%%
-%\setcounter{tocdepth}{1}
-\tableofcontents
-%\listoffigures
-%\listoftables
-\newpage
-
-%%%%
-% Body
-%%%%
 \include{Introduction/Introduction}
 \include{Spherical/Spherical}
 \include{Julian/Julian}
@@ -126,6 +42,3 @@
 \include{Bibliography/Bibliography}
 
 \end{document}
-%$$$$$$$$$$
-% End content
-%$$$$$$$$$$
