@@ -1,17 +1,19 @@
-\chapter{Dates}
+\chapter{Dates and Times}
+% !TEX root = ../Almagest.tex
+
 \section{Introduction}
-Following modern astronomical practice, in this treatise we shall specify dates
+Following modern astronomical practice, in this book we shall specify dates
 by means of {\em Julian day numbers}. According to this
-scheme, days are numbered consecutively from January 1, 4713 BCE, which
-is designated day zero. For instance, October 14, 1066 CE (the date of the battle of Hastings) is
-day 2\,110\,701. Each Julian day commences at 12:00 universal time (UT). 
+scheme, days are numbered consecutively from January 1, 4713 BC (in the Julian calendar), which
+is designated day zero. For instance, October 14, 1066 AD (the Julian date of the battle of Hastings) is
+day 2\,110\,701. Each Julian day commences at 12:00 universal time (UT). (Universal time is virtually identical to
+Greenwich mean time.)
 
 \section{Determination of Julian Day Numbers}
 The Julian day number of a given day can be determined from Tables~\ref{kt1}--\ref{kt3}.  The
 date must be expressed in terms of the Gregorian calendar. 
 
-The procedure is as
-follows:
+The procedure is as follows:
 \begin{enumerate}
 \item Enter the table of century years (Table~\ref{kt1}) with the century
 year immediately preceding the  date in question, and take out the tabular
@@ -31,7 +33,7 @@ in steps 1, 2, and 3 then gives the Julian day number of the date in question.
 \end{enumerate}
 
 ~\\
-\noindent {\em Example~1}: June 10, 1992 CE:\\~\\
+\noindent {\em Example~1}: June 10, 1992 AD:\\~\\
 \begin{tabular}{lrrr}
 1.~Century year & $^\dag$1900 &&2\,415\,020\\
 2.~Year of the century & $^\ast$92 & 33\,603 - 1 =& 33\,602\\
@@ -45,7 +47,7 @@ tabular value has been increased by 1 because 1992 is a leap year (marked with a
 date falls after February 28.
 
 ~\\
-\noindent {\em Example~2}: January 18, 1824 CE:\\~\\
+\noindent {\em Example~2}: January 18, 1824 AD:\\~\\
 \begin{tabular}{lrrr}
 1.~Century year & $^\dag$1800 &&2\,378\,496\\
 2.~Year of the century & $^\ast$24 & 8\,766 - 1 =& 8\,765\\
@@ -60,7 +62,7 @@ date falls before February 28.
 
 We can specify the time of day (in universal time), as well as the date, 
 by means of fractional Julian day numbers. For instance,
-$t=2\,448\,784.0$ JD corresponds to 12:00 UT  on  June 10, 1992 CE, whereas
+$t=2\,448\,784.0$ JD corresponds to 12:00 UT  on  June 10, 1992 AD, whereas
 $t=2\,448\,784.5$ JD corresponds to 24:00 UT later the same day.
 
 \newpage
@@ -69,8 +71,9 @@ $t=2\,448\,784.5$ JD corresponds to 24:00 UT later the same day.
  $^\dag$1800 &  2\,378\,496\\
  $^\dag$1900 & 2\,415\,020\\
  2000 & 2\,451\,544\\
+ $^\dag$2100 & 2\,488\,068
 \end{tabular}
-\caption [\em Julian Day Number: Century Years.]{\em Julian Day Number: Century Years. $\dag$\,Common years. All years are CE. From ``The History
+\caption {Julian Day Number: Century Years. $\dag$\,Common years. All years are AD. Table reproduced, with permission, from ``The History
 and Practice of Ancient Astronomy", J.~Evans (Oxford University Press, Oxford UK, 1998).}\label{kt1}
 \end{table}
 
@@ -107,8 +110,8 @@ $^\ast$16 & 5\,844& $^\ast$36& 13\,149& $^\ast$56 & 20\,454& $^\ast$76
 18& 6\,575& 38& 13\,880& 58& 21\,185& 78& 28\,490& 98& 35\,795\\
 19& 6\,940& 39& 14\,245& 59& 21\,550& 79& 28\,855& 99&36\,160\\
 \end{tabular}
-\caption[\em Julian Day Number: Years of the Century. ]{\em Julian Day Number: Years of the Century. $\ast$\,Leap year. $\S$\,Leap year unless century is marked $\dag$. In centuries marked $\dag$, subtract one day from the tabulated values for the years 1 through 99.
-From ``The History
+\caption{Julian Day Number: Years of the Century. $\ast$\,Leap year. $\S$\,Leap year unless century is marked $\dag$. In centuries marked $\dag$, subtract one day from the tabulated values for the years 1 through 99.
+Reproduced, with permission, from ``The History
 and Practice of Ancient Astronomy", J.~Evans (Oxford University Press, Oxford UK, 1998).}\label{kt2}
 \end{table}
 
@@ -154,7 +157,7 @@ Day & Jan & Feb & Mar & Apr & May & Jun & Jul & Aug & Sep & Oct& Nov & Dec\\\hli
 30&30&&89&120&150& 181& 211& 242& 273& 303& 334& 364\\
 31&31&&90&&151&&212&243&&304&&365\\
 \end{tabular}
-\caption[\em Julian Day Number: Days of the Year. ]{\em Julian Day Number: Days of the Year. $\ast$\,In leap year,
-after February 28, add 1 to the tabulated value. From ``The History
+\caption{Julian Day Number: Days of the Year. $\ast$\,In leap year,
+after February 28, add 1 to the tabulated value. Reproduced, with permission, from ``The History
 and Practice of Ancient Astronomy", J.~Evans (Oxford University Press, Oxford UK, 1998).}\label{kt3}
 \end{table}

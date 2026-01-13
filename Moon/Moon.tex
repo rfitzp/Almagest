@@ -1,57 +1,62 @@
 \chapter{The Moon}\label{cmoon}
+% !TEX root = ../Almagest.tex
+
 \section{Determination of Ecliptic Longitude}
-The orbit of the moon around the earth is strongly perturbed by the 
-gravitational influence of the sun. It follows that we cannot derive an accurate lunar longitude model
+The orbit of the Moon around the Earth is strongly perturbed by the 
+gravitational influence of the Sun. It follows that we cannot derive an accurate lunar longitude model
 from Keplerian orbit theory alone. Instead, we shall employ a
 greatly simplified version of modern lunar theory. According to such
-theory, the time variation of the ecliptic longitude of the moon is fairly
+theory, the time variation of the ecliptic longitude of the Moon is fairly
 well represented by the following
-formulae (see {\tt http://jgiesen.de/moonmotion/index.html}, or {\em Astronomical Algorithms}, J.~Meeus, Willmann-Bell, 1998):
-\begin{eqnarray}
-\bar{\lambda} &=&\bar{\lambda}_0  + n\,(t-t_0),\\[0.5ex]
-M &=& M_0 + \tilde{n}\,(t-t_0),\\[0.5ex]
-\bar{F} &=& \bar{F}_0 + \breve {n}\,(t-t_0),\\[0.5ex]
-\tilde{D} &=& \bar{\lambda} - \lambda_S,\\[0.5ex]
-q_1 &=& 2\,e\,\sin M + 1.430\,e^2\,\sin 2M,\\[0.5ex]
-q_2 &=& 0.422\,e\,\sin (2\tilde{D} - M),\\[0.5ex]
-q_3 &=& 0.211\,e\,(\sin 2\tilde{D} - 0.066\,\sin \tilde{D}),\\[0.5ex]
-q_4 &=& -0.051\,e\,\sin M_S,\\[0.5ex]
-q_5&=& -0.038\,e\,\sin 2 \bar{F},\\[0.5ex]
-\lambda &=& \bar{\lambda} + q_1+q_2+q_3+q_4+q_5.
-\end{eqnarray}
+formulae:\footnote {See {\tt http://jgiesen.de/moonmotion/index.html}, or {\em Astronomical Algorithms}, J.~Meeus, Willmann-Bell, 1998)}
+\begin{align}
+\bar{\lambda} &=\bar{\lambda}_0  + n\,(t-t_0),\\[0.5ex]
+M &= M_0 + \tilde{n}\,(t-t_0),\\[0.5ex]
+\bar{F} &= \bar{F}_0 + \breve {n}\,(t-t_0),\\[0.5ex]
+\tilde{D} &= \bar{\lambda} - \lambda_S,\\[0.5ex]
+q_1 &= 2\,e\,\sin M + 1.430\,e^2\,\sin 2M,\\[0.5ex]
+q_2 &= 0.422\,e\,\sin (2\tilde{D} - M),\\[0.5ex]
+q_3 &= 0.211\,e\,(\sin 2\tilde{D} - 0.066\,\sin \tilde{D}),\\[0.5ex]
+q_4 &= -0.051\,e\,\sin M_S,\\[0.5ex]
+q_5&= -0.038\,e\,\sin 2 \bar{F},\\[0.5ex]
+\lambda &= \bar{\lambda} + q_1+q_2+q_3+q_4+q_5.
+\end{align}
 Here, $\lambda_S$ and $M_S$ are the longitude and mean anomaly
-of the sun, respectively. Moreover, $e$, $\lambda$, $\bar{\lambda}$, $\bar{F}$,
+of the Sun, respectively. Moreover, $e$, $\lambda$, $\bar{\lambda}$, $\bar{F}$,
 and $q_i$ are the eccentricity, longitude, mean longitude, mean argument of latitude,
-and $i$th anomaly of the moon, respectively. The moon's first anomaly
-is due to the eccentricity of its orbit, and is very similar in form to that obtained from Keplerian orbit theory (see Cha.~\ref{ckep}). The
-moon's second, third, and fourth anomalies are knows as
+and $i$th anomaly of the Moon, respectively. The Moon's first anomaly
+is due to the eccentricity of its orbit, and is very similar in form to that obtained from Keplerian orbit theory. (See Chapter~\ref{ckep}.) The
+Moon's second, third, and fourth anomalies are knows as
 {\em evection}, {\em variation}, and the {\em annual inequality}, respectively, and originate from
-the perturbing influence of the sun. Finally, the moon's fifth anomaly is
-called the {\em reduction to the ecliptic}, and is a consequence of the fact that the moon's
+the perturbing influence of the Sun. Finally, the Moon's fifth anomaly is
+called the {\em reduction to the ecliptic}, and is a consequence of the fact that the Moon's
 orbit is slightly tilted with respect to the plane of the ecliptic.
 Note that Ptolemy's lunar theory only takes the first two
 lunar anomalies into account. 
-The moon's orbital elements---$e$, $n$, $\tilde{n}$, $\breve{n}$, 
+The Moon's orbital elements---$e$, $n$, $\tilde{n}$, $\breve{n}$, 
 $\bar{\lambda}_0$, $M_0$, and $F_0$---for the J2000 epoch are listed in Table~\ref{tmoon}. Note that the lunar perigee precesses in the
-direction of the moon's orbital motion at the rate of
-$n-\tilde{n} = 0.11140\, ^\circ $ per day, or $360^\circ$ in 8.85 years. This
+direction of the Moon's orbital motion at the rate of
+$n-\tilde{n} = 0.11140^\circ $ per day, or $360^\circ$ in 8.85 years. This
 very large precession rate (more than 2000 times the corresponding
-precession rate for the sun's apparent orbit) is another consequence of the strong
-perturbing influence of the sun on the moon's orbit.
-The above formulae are capable of matching NASA ephemeris
-data during the years 1995--2006 CE with a mean error of $5'$  and
+precession rate for the Sun's apparent orbit) is another consequence of the strong
+perturbing influence of the Sun on the Moon's orbit.
+The previous formulae are capable of matching NASA ephemeris
+data during the years 1995--2006 AD with a mean error of $5'$  and
 a maximum error of $14'$. 
 
-The ecliptic longitude of the moon can be calculated with the aid of Tables \ref{tmoonm} and \ref{tmoona}.
-Table~\ref{tmoonm} allows the lunar mean longitude, $\bar{\lambda}$,  mean anomaly, $M$, and  mean argument of latitude, $\bar{F}$, to be determined as functions of time.
+The ecliptic longitude of the Moon can be calculated with the aid of Tables~\ref{tmoonm} and \ref{tmoona}.
+Table~\ref{tmoonm} allows the lunar mean longitude, $\bar{\lambda}$,  the mean anomaly, $M$, and  the mean argument of latitude, $\bar{F}$, to be determined as functions of time.
 Table \ref{tmoona} specifies the lunar anomalies, $q_1$--$q_5$, as functions of their various arguments.
 
 The procedure for using the tables is as follows:
 \begin{enumerate}
+ 
  \item Determine the fractional Julian day number, $t$, corresponding to the date and time
-at which the moon's ecliptic longitude is to be calculated with the aid of Tables~\ref{kt1}--\ref{kt3}. Form $\Delta t = t-t_0$, where $t_0=2\,451\,545.0$ is the epoch. 
+at which the Moon's ecliptic longitude is to be calculated with the aid of Tables~\ref{kt1}--\ref{kt3}. Form $\Delta t = t-t_0$, where $t_0=2\,451\,545.0$ is the epoch. 
+
 \item Calculate the ecliptic longitude, $\lambda_S$, and the mean anomaly, $M_S$, of the
-sun using the procedure set out in Sect.~\ref{ssun}.
+Sun using the procedure set out in Section~\ref{ssun}.
+
 \item Enter Table~\ref{tmoonm} with the digit for each power of 10
 in ${\Delta} t$ and take out the corresponding values of $\Delta\bar{\lambda}$, $\Delta M$,
 and $\Delta\bar{F}$. If $\Delta t$ is negative then the 
@@ -62,13 +67,17 @@ the sum of all the $\Delta M$ values plus the value of $M$ at the epoch. Finally
 sum of all the $\Delta\bar{F}$ values plus the value of $\bar{F}$ at the epoch. 
 Add as many multiples of $360^\circ$ to $\bar{\lambda}$, $M$, and $\bar{F}$
 as is required to make them all fall in the range $0^\circ$ to $360^\circ$. 
+
 \item Form $\tilde{D}=\bar{\lambda}-\lambda_S$. 
+
 \item Form the five arguments $a_1=M$, $a_2=2\tilde{D} - M$, $a_3=\tilde{D}$, $a_4 = M_S$, $a_5=2\bar{F}$. Add as
 many multiples of $360^\circ$ to the arguments as is required to make them all fall in the range
 $0^\circ$ to $360^\circ$. Round each argument to the nearest degree.
+
 \item Enter Table~\ref{tmoona} with the value of each of the five arguments $a_1$--$a_5$ and take out the
 value of each of the five corresponding  anomalies $q_1$--$q_5$. It is necessary to interpolate if the arguments are odd.
-\item The moon's ecliptic longitude is given by $\lambda=\bar{\lambda} + q_1+q_2+q_3+q_4+q_5$.
+
+\item The Moon's ecliptic longitude is given by $\lambda=\bar{\lambda} + q_1+q_2+q_3+q_4+q_5$.
 If necessary, convert $\lambda$ into an angle in the range $0^\circ$ to $360^\circ$. 
 The decimal fraction can be converted into arc minutes
 using Table~\ref{lt6a}. Round to the nearest arc minute. 
@@ -76,9 +85,9 @@ using Table~\ref{lt6a}. Round to the nearest arc minute.
 Two examples of the use of this procedure are given below.
 
 \section{Example Longitude Calculations}
-\noindent {\em Example 1}: May 5, 2005 CE, 00:00 UT:\\
+\noindent {\em Example 1}: May 5, 2005 AD, 00:00 UT:\\
 ~\\
-From Sect.~\ref{ssun}, $t-t_0=1950.5$ JD, $\lambda_S = 44.602^\circ$, and $M_S= 120.001^\circ$. 
+From Section~\ref{ssun}, $t-t_0=1950.5$ JD, $\lambda_S = 44.602^\circ$, and $M_S= 120.001^\circ$. 
 Making use of Table~\ref{tmoonm}, we find:\\
 \begin{tabular}{rrrr}
 &&&\\
@@ -121,12 +130,12 @@ or
 $$
 \lambda =3.091\simeq 3^\circ 05'.
 $$
-Thus, the ecliptic longitude of the moon at 00:00 UT on May 5, 2005 CE was 3AR05.
+Thus, the ecliptic longitude of the Moon at 00:00 UT on May 5, 2005 AD was 3AR05.
 
 ~\\
-\noindent {\em Example 2}: December 25, 1800 CE, 00:00 UT:\\
+\noindent {\em Example 2}: December 25, 1800 AD, 00:00 UT:\\
 ~\\
-From Sect.~\ref{ssun}, $t-t_0=-72\,690.5$ JD, $\lambda_S = 273.055^\circ$, and $M_S= 353.814^\circ$. 
+From Section~\ref{ssun}, $t-t_0=-72\,690.5$ JD, $\lambda_S = 273.055^\circ$, and $M_S= 353.814^\circ$. 
 Making use of Table~\ref{tmoonm}, we find:\\
 \begin{tabular}{rrrr}
 &&&\\
@@ -169,168 +178,169 @@ or
 $$
 \lambda =25.950\simeq 25^\circ 57'.
 $$
-Thus, the ecliptic longitude of the moon at 00:00 UT on December 25, 1800 CE was 25AR57.
+Thus, the ecliptic longitude of the Moon at 00:00 UT on December 25, 1800 AD was 25AR57.
 
 \begin{figure}[h]
-\epsfysize=3in
-\centerline{\epsffile{epsfiles/moon.eps}}
-\caption[\em The orbit of the moon about the earth. ]{\em The orbit of the moon about the earth.  Here, $G$, $L$, $N$, $N'$,   $\Omega$, $F$, and $\Upsilon$
-represent the earth, moon, ascending node, descending node, longitude of the ascending node, argument of latitude, and vernal equinox, respectively. View is from northern ecliptic pole. The moon orbits counterclockwise.}\label{fmoon}
+\centerline{\includegraphics[height=3in]{epsfiles/moon.eps}}
+\caption{The orbit of the Moon about the Earth.  Here, $G$, $L$, $N$, $N'$,   $\Omega$, $F$, and $\Upsilon$
+represent the Earth, the Moon, the ascending node, the descending node, the longitude of the ascending node, the argument of latitude, and the vernal equinox, respectively. The view is from northern ecliptic pole. The Moon orbits counterclockwise.}\label{fmoon}
 \end{figure}
 
 \section{Determination of Ecliptic Latitude}
-A model of the moon's ecliptic latitude is needed in order to predict the
+A model of the Moon's ecliptic latitude is needed in order to predict the
 occurrence of solar and lunar eclipses. Figure~\ref{fmoon} shows the
-moon's orbit about the earth. The plane of this orbit is fixed, but slightly tilted with
-respect to the plane of the ecliptic ({\em i.e.}, the plane of the sun's
-apparent orbit about the earth). Let the two planes intersect along the
+Moon's orbit about the Earth. The plane of this orbit is fixed, but slightly tilted with
+respect to the plane of the ecliptic (that is, the plane of the Sun's
+apparent orbit about the Earth). Let the two planes intersect along the
 line of nodes, $NGN'$. Here, $N$ is the point at which the orbit crosses the
-ecliptic plane from south to north (in the direction of the moon's orbital
+ecliptic plane from south to north (in the direction of the Moon's orbital
 motion), and is termed the {\em ascending node}. Likewise, $N'$ is the
 point at which the orbit crosses the ecliptic plane from north to south,
-and is called the {\em descending node}. Incidentally, the line of nodes must pass through point $G$, since the earth is common to the ecliptic plane and the plane of the lunar orbit.
+and is called the {\em descending node}. Incidentally, the line of nodes must pass through point $G$, because the Earth is common to the ecliptic plane and the plane of the lunar orbit.
 The angle, $\Omega$, subtended between
- the radius vector $G\Upsilon$, connecting the earth to the vernal equinox,
+ the radius vector $G\Upsilon$, connecting the Earth to the vernal equinox,
 and the line $GN$, is known as the {\em longitude of the ascending node}. Note, incidentally, that
-the ascending node precessess in the opposite direction to the moon's orbital motion
-at the rate  $\breve{n}-n = 5.2954\times 10^{-2}\, ^\circ$ per day, or $360^\circ$ in 18.6 years. 
-This unusually large precession rate is another consequence of the sun's strong perturbing influence on the
-moon's orbit.
+the ascending node precesses in the opposite direction to the Moon's orbital motion
+at the rate  $\breve{n}-n = 5.2954\times 10^{-2}\,^\circ$ per day, or $360^\circ$ in 18.6 years. 
+This unusually large precession rate is another consequence of the Sun's strong perturbing influence on the
+Moon's orbit.
 Let the line $MGM'$ lie in the plane
-of the moon's orbit such that it is perpendicular to $NGN'$.
-The inclination, $i$,  of the moon's orbital plane is the angle
+of the Moon's orbit such that it is perpendicular to $NGN'$.
+The inclination, $i$,  of the Moon's orbital plane is the angle
 that $GM$ subtends with its projection onto the ecliptic plane. Likewise, the
-moon's ecliptic longitude, $\beta$, is the angle that $GL$ subtends with its
+Moon's ecliptic longitude, $\beta$, is the angle that $GL$ subtends with its
 projection onto the ecliptic plane.
 Simple geometry
 yields $\sin\beta = \sin i\,\sin F$, where $F$ is the angle
 between $GN$ and $GL$. This angle is termed the {\em argument of latitude.} 
 Now, it is easily seen that $F \simeq \lambda-\Omega$, where $\lambda$
-is the moon's ecliptic longitude ({\em i.e.}, the angle subtended
+is the Moon's ecliptic longitude (that is, the angle subtended
 between  $G\Upsilon$ and $GL$). Here, we are assuming that the orbital
 inclination $i$ is relatively
-small. The {\em mean argument of latitude} is defined $\bar{F} = \bar{\lambda}-\Omega$. 
- Hence, our model for the moon's ecliptic latitude becomes
-\begin{eqnarray}
-F &=&\bar{F}+q_1+q_2+q_3+q_4+q_5,\\[0.5ex]
-\sin\beta &=& \sin i\,\sin F.\label{emoonlat}
-\end{eqnarray}
+small. The {\em mean argument of latitude}\/ is defined $\bar{F} = \bar{\lambda}-\Omega$. 
+ Hence, our model for the Moon's ecliptic latitude becomes
+\begin{align}
+F &=\bar{F}+q_1+q_2+q_3+q_4+q_5,\\[0.5ex]
+\sin\beta &= \sin i\,\sin F.\label{emoonlat}
+\end{align}
 The value of the lunar orbital inclination, $i$,  for the
 J2000 epoch is specified in Table~\ref{tmoon}. The above model is capable of
-matching NASA ephemeris data during the years 1995-2006 CE with
+matching NASA ephemeris data during the years 1995-2006 AD with
 a mean error of $6'$, and a maximum error of $11'$.
 
-The ecliptic latitude of the moon can be calculated with the aid of Table~\ref{tmoonb}. The procedure for using this table is as follows:
+The ecliptic latitude of the Moon can be calculated with the aid of Table~\ref{tmoonb}. The procedure for using this table is as follows:
 \begin{enumerate}
+
  \item Determine the fractional Julian day number, $t$, corresponding to the date and time
-at which the moon's ecliptic latitude is to be calculated with the aid of Tables~\ref{kt1}--\ref{kt3}. Form $\Delta t = t-t_0$, where $t_0=2\,451\,545.0$ is the epoch. 
+at which the Moon's ecliptic latitude is to be calculated with the aid of Tables~\ref{kt1}--\ref{kt3}. Form $\Delta t = t-t_0$, where $t_0=2\,451\,545.0$ is the epoch. 
+
 \item Calculate the lunar mean argument of latitude, $\bar{F}$, 
 and the five lunar anomalies, $q_1$--$q_5$, using the procedure outlined earlier in this 
 section.
+
 \item Form the argument $F = \bar{F}+q_1+q_2+q_3+q_4+q_5$. Add as many multiples of $360^\circ$ to $F$ as is required to make it fall in the range
 $0^\circ$ to $360^\circ$. Round $F$ to the nearest degree.
+
 \item Enter Table~\ref{tmoonb} with the value of $F$
 and take out the lunar ecliptic latitude, $\beta$. It is necessary to
 interpolate if $F$ is odd.
 \end{enumerate}
 
-For example, we have already seen that at 00:00 UT on May 5, 2005 CE
+For example, we have already seen that at 00:00 UT on May 5, 2005 AD
 the lunar mean argument of latitude, and
 the lunar anomalies, were $\bar{F}=337.132^\circ$, and
 $q_1=5.555^\circ$, $q_2=-0.663^\circ$, $q_3=-0.631^\circ$, $q_4=-0.139^\circ$,
 and $q_5=0.086^\circ$, respectively. Hence, $F=\bar{F}+q_1+q_2+q_3+q_4+q_5
 =337.132+5.555-0.663-0.631-0.139+0.086\simeq 341^\circ$. Thus, according to Table~\ref{tmoonb}, the ecliptic latitude
-of the moon at  00:00 UT on May 5, 2005 CE was $-1.680^\circ\simeq -1^\circ 41'$.
+of the Moon at  00:00 UT on May 5, 2005 AD was $-1.680^\circ\simeq -1^\circ 41'$.
 
 \begin{figure}
-\epsfysize=3in
-\centerline{\epsffile{epsfiles/parallax.eps}}
-\caption[\em Lunar parallax.]{\em The moon, $L$, as viewed by a hypothetical observer, $C$,
-at the center of the earth,  and a real observer, $X$, on the
-surface of the earth.}\label{fpara}
+\centerline{\includegraphics[height=3in]{epsfiles/parallax.eps}}
+\caption{The Moon, $L$, as viewed by a hypothetical observer, $C$,
+at the center of the Earth,  and a real observer, $X$, on the
+surface of the Earth.}\label{fpara}
 \end{figure}
 
 \section{Lunar Parallax}\label{spara}
-Now, it turns out that the moon is sufficiently close to the earth that its position in the sky is
+Now, it turns out that the Moon is sufficiently close to the Earth that its position in the sky is
 significantly modified by {\em parallax}. All of our previous analysis
-applies to a hypothetical observer situated at the center of the earth.
-Consider a real observer situated on the earth's surface. It can
-be seen from Fig.~\ref{fpara} that the altitude of the moon is
+applies to a hypothetical observer situated at the center of the Earth.
+Consider a real observer situated on the Earth's surface. It can
+be seen from Figure~\ref{fpara} that the altitude of the Moon is
 $a'$ for the real observer, and $a$ for the hypothetical observer. Simple
 trigonometry reveals that $a' = a-\delta a$, which implies that the real
-observer sees the moon at a {\em lower}\/ altitude than the hypothetical observer.
-Let $R$ be the radius of the earth, and $r$ the distance from the center
-of the earth to the moon. More simple trigonometry yields
+observer sees the Moon at a  lower altitude than the hypothetical observer.
+Let $R$ be the radius of the Earth, and $r$ the distance from the center
+of the Earth to the Moon. More simple trigonometry yields
 \begin{equation}
 \sin \delta a = \frac{R}{r}\,\cos a'.
 \end{equation}
-Let us assume that the moon's orbit is elliptical to first order in its
-eccentricity. It follows, from Cha.~\ref{ckep}, that
+Let us assume that the Moon's orbit is elliptical to first order in its
+eccentricity. It follows, from Chapter~\ref{ckep}, that
 \begin{equation}
 r \simeq a_M\,(1 - e\,\cos M),
 \end{equation}
 where $a_M$, $e$, and $M$ are major radius, eccentricity, and mean
-anomaly of the lunar orbit. Assuming that $\delta a$ is small, we
+anomaly of the lunar orbit, respectively. Assuming that $\delta a$ is small, we
 obtain
 \begin{equation}\label{ea112}
 \delta a \simeq \delta a_0\,\cos a\,(1+e\,\cos M),
 \end{equation}
-where $\delta a_0 = R/a_M = 0.0166=56.98'$ (since $R=6371$ km and $a_M=384,399$ km). 
+where $\delta a_0 = R/a_M = 0.0166=56.98'$ (because $R=6371$ km and $a_M=384\,399$ km). 
 
-According to Eq.~(\ref{ea112}), lunar parallax can be written in the form
+According to Equation~(\ref{ea112}), lunar parallax can be written in the form
 \begin{equation}
 \delta a = \delta (a)\,[1+\zeta (M)],
 \end{equation}
-where $a$, $a-\delta a$, and $M$ are the moon's geocentric altitude ({\em i.e.}, the altitude seen from the center of the earth), true
+where $a$, $a-\delta a$, and $M$ are the Moon's geocentric altitude (that is, the altitude seen from the center of the Earth), true
 altitude, and mean anomaly, respectively. The functions $\delta(a)=\delta a_0\,\cos a$ and
 $\zeta (M)= e\,\cos M$ are tabulated in Table~\ref{tmoonc}. It can be seen from the
-table that lunar parallax increases with decreasing lunar altitude, reaching a maximum value of about $57'$ when the moon is close to the horizon.
+table that lunar parallax increases with decreasing lunar altitude, reaching a maximum value of about $57'$ when the Moon is close to the horizon.
 For example, if $a=44^\circ 00'$ and $M=100^\circ$ then Table~\ref{tmoonc}
-yields $\delta = 41.050'$ and $\zeta =- 0.00953$. Hence, $\delta a = 41.050\,(1-0.00953) \simeq 41'$, and the true altitude of the moon becomes
+yields $\delta = 41.050'$ and $\zeta =- 0.00953$. Hence, $\delta a = 41.050\,(1-0.00953) \simeq 41'$, and the true altitude of the Moon becomes
 $43^\circ 19'$. 
 
 \begin{figure}
-\epsfysize=3in
-\centerline{\epsffile{epsfiles/para.eps}}
-\caption[\em Parallactic shifts in the moon's ecliptic longitude and latitude.]{\em Parallactic shifts in the moon's ecliptic longitude and latitude.}\label{fpara1}
+\centerline{\includegraphics[height=3in]{epsfiles/para.eps}}
+\caption{ Parallactic shifts in the Moon's ecliptic longitude and latitude.}\label{fpara1}
 \end{figure}
 
-It now remains to investigate how parallax affects the moon's ecliptic
-longitude and latitude. Figure~\ref{fpara1} shows a detail of Fig.~\ref{f11}. Point $Y$ is the moon's geocentric position on the celestial sphere. $DB$ is a line passing through this point
-which is parallel to the local ecliptic circle, whereas $ZC$ is a small section of an
-altitude circle passing through $Y$. The angle subtended between the ecliptic and the altitude circle is the parallactic angle, $\mu$. Let $F$ be the true position of the moon.
-It follows that $\delta a = YF$. The changes in the moon's ecliptic longitude
-and latitude are $\delta\lambda = YE$ and  $-\delta\beta = EF$, respectively. Here, we are considering the case where  {\em increasing}\/
-altitude corresponds to {\em increasing}\/ ecliptic latitude.
+It now remains to investigate how parallax affects the Moon's ecliptic
+longitude and latitude. Figure~\ref{fpara1} shows a detail of Figure~\ref{f11}. Point $Y$ is the Moon's geocentric position on the celestial sphere. $DB$ is a line passing through this point
+that is parallel to the local ecliptic circle, whereas $ZC$ is a small section of an
+altitude circle passing through $Y$. The angle subtended between the ecliptic and the altitude circle is the parallactic angle, $\mu$. Let $F$ be the true position of the Moon.
+It follows that $\delta a = YF$. The changes in the Moon's ecliptic longitude
+and latitude are $\delta\lambda = YE$ and  $-\delta\beta = EF$, respectively. Here, we are considering the case where   increasing 
+altitude corresponds to  increasing ecliptic latitude.
 Assuming that the arcs $\delta a$, $\delta\lambda$, and $\delta\beta$ are
 all fairly small, the triangle $YEF$ can be treated as a plane triangle.
 Hence, we obtain
-\begin{eqnarray}\label{epara1}
-\delta\lambda &=& - \delta a\,\cos\mu,\\[0.5ex]
-\delta\beta &=& - \delta a\,\sin\mu.\label{epara2}
-\end{eqnarray}
-As is easily demonstrated, the above formulae also apply to the case in which {\em increasing}\/ altitude corresponds
-to {\em decreasing}\/ ecliptic latitude.
+\begin{align}\label{epara1}
+\delta\lambda &= - \delta a\,\cos\mu,\\[0.5ex]
+\delta\beta &= - \delta a\,\sin\mu.\label{epara2}
+\end{align}
+As is easily demonstrated, the previous formulae also apply to the case in which increasing  altitude corresponds
+to  decreasing  ecliptic latitude.
 
 For example, consider a day on which the geocentric ecliptic longitude  and mean anomaly
-of the moon are $\lambda=210^\circ$ ({\em i.e.}, 00SC00) and $M=90^\circ$, respectively. Suppose that the moon is
+of the Moon are $\lambda=210^\circ$ (that is, 00SC00) and $M=90^\circ$, respectively. Suppose that the Moon is
 viewed from an observation site located  at terrestrial latitude $+10^\circ$. 
-The ``Scorpio'' entry in Table~\ref{tscorp} gives the moon's geocentric altitude, $a$, as a function of time, as well as the
+The ``Scorpio'' entry in Table~\ref{tscorp} gives the Moon's geocentric altitude, $a$, as a function of time, as well as the
 value of the parallactic angle $\mu$. Making use of this data,
-in combination with Table~\ref{tmoonc} and Eqs.~(\ref{epara1}) and (\ref{epara2}), we can calculate the parallax-induced changes in the moon's ecliptic
+in combination with Table~\ref{tmoonc} and Equations~(\ref{epara1}) and (\ref{epara2}), we can calculate the parallax-induced changes in the Moon's ecliptic
 longitude and latitude as it transits the sky. 
 Data from such a calculation is given in the table below. The first column specifies
-time since the  moon's upper transit (thus, $t=+1$ hrs.\ means one hour {\em after}\/ the
-upper transit), the second column gives the moon's geocentric altitude, the third column the parallactic angle, 
+time because the  Moon's upper transit (thus, $t=+1$ hrs.\ means one hour after  the
+upper transit), the second column gives the Moon's geocentric altitude, the third column the parallactic angle, 
 the
-fourth column the decrease in the moon's real altitude due to parallax, and the fifth and
+fourth column the decrease in the Moon's real altitude due to parallax, and the fifth and
 sixth columns the parallax-induced changes in its ecliptic longitude and latitude, respectively. 
-It can be seen that parallax causes the moon's apparent location
+It can be seen that parallax causes the Moon's apparent location
  to shift by almost $2^\circ$ relative to the fixed stars as it transits the sky. Note that the
-above calculation is somewhat inaccurate because it does not take into account the moon's motion along the
+previous calculation is somewhat inaccurate because it does not take into account the Moon's motion along the
 ecliptic (which can easily amount to $6^\circ$ during the course of a night).
 However, the calculation does illustrate how the data contained in
-Tables~\ref{ltxx}--\ref{ltyy}, in combination with the data in Table~\ref{tmoonc}, permits the parallax-induced shift in the moon's ecliptic position
+Tables~\ref{ltxx}--\ref{ltyy}, in combination with the data in Table~\ref{tmoonc}, permits the parallax-induced shift in the Moon's ecliptic position
 to be calculated for a wide range of different lunar phases,
 observation sites, and observation times.
 
@@ -362,7 +372,7 @@ $e$ & $n(^\circ/{\rm day})$ &  $\tilde{n}(^\circ/{\rm day})$  & $\breve{n}(^\cir
 0.054881 & 13.17639646 & 13.06499295& $13.22935027$ &
 218.322 & 134.916 & 93.284& 5.161\\
 \end{tabular}
-\caption[\em Orbital elements of the moon.]{\em Orbital elements of the moon for the J2000 epoch ({\em i.e.}, 12:00 UT, January 1, 2000 CE,
+\caption{Orbital elements of the Moon for the J2000 epoch (that is, 12:00 UT, January 1, 2000 AD,
 which corresponds to $t_0 = 2\,451\,545.0$ JD).}\label{tmoon}
 \end{table}
 
@@ -373,15 +383,15 @@ which corresponds to $t_0 = 2\,451\,545.0$ JD).}\label{tmoon}
 $\Delta t$(JD)& $\Delta\bar{\lambda}(^\circ)$ &  $\Delta M(^\circ)$ & $\Delta \bar{F}(^\circ)$& $\Delta t$(JD) & $\Delta\bar{\lambda}(^\circ)$ & $\Delta M(^\circ)$ 
 &$\Delta \bar{F}(^\circ)$\\ \hline
 &&&&&&&\\[-1.75ex]
-10,000 &   3.965 & 329.930 & 173.503 & 1,000 & 216.396 & 104.993 & 269.350\\
-20,000 &   7.929 & 299.859 & 347.005 & 2,000 &  72.793 & 209.986 & 178.701\\
-30,000 &  11.894 & 269.788 & 160.508 & 3,000 & 289.189 & 314.979 &  88.051\\
-40,000 &  15.858 & 239.718 & 334.011 & 4,000 & 145.586 &  59.972 & 357.401\\
-50,000 &  19.823 & 209.648 & 147.513 & 5,000 &   1.982 & 164.965 & 266.751\\
-60,000 &  23.788 & 179.577 & 321.016 & 6,000 & 218.379 & 269.958 & 176.102\\
-70,000 &  27.752 & 149.506 & 134.519 & 7,000 &  74.775 &  14.951 &  85.452\\
-80,000 &  31.717 & 119.436 & 308.022 & 8,000 & 291.172 & 119.944 & 354.802\\
-90,000 &  35.681 &  89.366 & 121.524 & 9,000 & 147.568 & 224.937 & 264.152\\
+10\,000 &   3.965 & 329.930 & 173.503 & 1\,000 & 216.396 & 104.993 & 269.350\\
+20\,000 &   7.929 & 299.859 & 347.005 & 2\,000 &  72.793 & 209.986 & 178.701\\
+30\,000 &  11.894 & 269.788 & 160.508 & 3\,000 & 289.189 & 314.979 &  88.051\\
+40\,000 &  15.858 & 239.718 & 334.011 & 4\,000 & 145.586 &  59.972 & 357.401\\
+50\,000 &  19.823 & 209.648 & 147.513 & 5\,000 &   1.982 & 164.965 & 266.751\\
+60\,000 &  23.788 & 179.577 & 321.016 & 6\,000 & 218.379 & 269.958 & 176.102\\
+70\,000 &  27.752 & 149.506 & 134.519 & 7\,000 &  74.775 &  14.951 &  85.452\\
+80\,000 &  31.717 & 119.436 & 308.022 & 8\,000 & 291.172 & 119.944 & 354.802\\
+90\,000 &  35.681 &  89.366 & 121.524 & 9\,000 & 147.568 & 224.937 & 264.152\\
 &&&&&&&\\
 100 & 237.640 & 226.499 & 242.935 & 10 & 131.764 & 130.650 & 132.294\\
 200 & 115.279 &  92.999 & 125.870 & 20 & 263.528 & 261.300 & 264.587\\
@@ -403,7 +413,7 @@ $\Delta t$(JD)& $\Delta\bar{\lambda}(^\circ)$ &  $\Delta M(^\circ)$ & $\Delta \b
 8 & 105.411 & 104.520 & 105.835 & 0.8 &  10.541 &  10.452 &  10.583\\
 9 & 118.588 & 117.585 & 119.064 & 0.9 &  11.859 &  11.758 &  11.906\\
 \end{tabular}
-\caption[\em Mean motion of the moon.]{\em Mean motion of the moon.  Here, $\Delta t = t-t_0$, $\Delta\bar{\lambda} = \bar{\lambda}-\bar{\lambda}_0$, $\Delta M = M - M_0$, and $\Delta\bar{F}= \bar{F}-\bar{F}_0$. 
+\caption{Mean motion of the Moon.  Here, $\Delta t = t-t_0$, $\Delta\bar{\lambda} = \bar{\lambda}-\bar{\lambda}_0$, $\Delta M = M - M_0$, and $\Delta\bar{F}= \bar{F}-\bar{F}_0$. 
 At epoch  ($t_0 = 2\,451\,545.0$ JD), $\bar{\lambda}_0 = 218.322^\circ$, $M_0 = 134.916^\circ$,
 and $\bar{F}_0 = 93.284^\circ$.}\label{tmoonm}
 \end{table}
@@ -414,54 +424,54 @@ and $\bar{F}_0 = 93.284^\circ$.}\label{tmoonm}
 Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$  & $q_5(^\circ)$ &
 Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$  & $q_5(^\circ)$  \\\hline
 &&&&&&&&&&&\\[-1.75ex]
-000/(360) &  0.000 &  0.000 &  0.000 & -0.000 & -0.000 & 090/(270) &  6.289 &  1.327 & -0.044 & -0.160 & -0.119\\
-002/(358) &  0.237 &  0.046 &  0.045 & -0.006 & -0.004 & 092/(268) &  6.268 &  1.326 & -0.090 & -0.160 & -0.119\\
-004/(356) &  0.473 &  0.093 &  0.089 & -0.011 & -0.008 & 094/(266) &  6.239 &  1.324 & -0.136 & -0.160 & -0.119\\
-006/(354) &  0.709 &  0.139 &  0.133 & -0.017 & -0.012 & 096/(264) &  6.203 &  1.320 & -0.182 & -0.159 & -0.119\\
-008/(352) &  0.943 &  0.185 &  0.177 & -0.022 & -0.017 & 098/(262) &  6.160 &  1.314 & -0.226 & -0.159 & -0.118\\
-010/(350) &  1.176 &  0.230 &  0.219 & -0.028 & -0.021 & 100/(260) &  6.109 &  1.307 & -0.270 & -0.158 & -0.118\\
-012/(348) &  1.408 &  0.276 &  0.261 & -0.033 & -0.025 & 102/(258) &  6.051 &  1.298 & -0.313 & -0.157 & -0.117\\
-014/(346) &  1.637 &  0.321 &  0.301 & -0.039 & -0.029 & 104/(256) &  5.986 &  1.288 & -0.354 & -0.156 & -0.116\\
-016/(344) &  1.864 &  0.366 &  0.339 & -0.044 & -0.033 & 106/(254) &  5.915 &  1.276 & -0.394 & -0.154 & -0.115\\
-018/(342) &  2.088 &  0.410 &  0.376 & -0.050 & -0.037 & 108/(252) &  5.836 &  1.262 & -0.432 & -0.153 & -0.114\\
-020/(340) &  2.310 &  0.454 &  0.411 & -0.055 & -0.041 & 110/(250) &  5.751 &  1.247 & -0.468 & -0.151 & -0.112\\
-022/(338) &  2.527 &  0.497 &  0.444 & -0.060 & -0.045 & 112/(248) &  5.660 &  1.230 & -0.502 & -0.149 & -0.111\\
-024/(336) &  2.741 &  0.540 &  0.475 & -0.065 & -0.049 & 114/(246) &  5.562 &  1.212 & -0.533 & -0.147 & -0.109\\
-026/(334) &  2.951 &  0.582 &  0.504 & -0.070 & -0.052 & 116/(244) &  5.458 &  1.193 & -0.562 & -0.144 & -0.107\\
-028/(332) &  3.157 &  0.623 &  0.529 & -0.075 & -0.056 & 118/(242) &  5.348 &  1.172 & -0.589 & -0.142 & -0.106\\
-030/(330) &  3.358 &  0.663 &  0.553 & -0.080 & -0.060 & 120/(240) &  5.233 &  1.149 & -0.613 & -0.139 & -0.103\\
-032/(328) &  3.554 &  0.703 &  0.573 & -0.085 & -0.063 & 122/(238) &  5.111 &  1.125 & -0.634 & -0.136 & -0.101\\
-034/(326) &  3.746 &  0.742 &  0.591 & -0.090 & -0.067 & 124/(236) &  4.985 &  1.100 & -0.652 & -0.133 & -0.099\\
-036/(324) &  3.931 &  0.780 &  0.605 & -0.094 & -0.070 & 126/(234) &  4.853 &  1.074 & -0.667 & -0.130 & -0.097\\
-038/(322) &  4.111 &  0.817 &  0.617 & -0.099 & -0.074 & 128/(232) &  4.716 &  1.046 & -0.678 & -0.126 & -0.094\\
-040/(320) &  4.285 &  0.853 &  0.625 & -0.103 & -0.077 & 130/(230) &  4.575 &  1.017 & -0.687 & -0.123 & -0.092\\
-042/(318) &  4.454 &  0.888 &  0.630 & -0.107 & -0.080 & 132/(228) &  4.428 &  0.986 & -0.693 & -0.119 & -0.089\\
-044/(316) &  4.615 &  0.922 &  0.632 & -0.111 & -0.083 & 134/(226) &  4.277 &  0.955 & -0.695 & -0.115 & -0.086\\
-046/(314) &  4.770 &  0.955 &  0.631 & -0.115 & -0.086 & 136/(224) &  4.122 &  0.922 & -0.694 & -0.111 & -0.083\\
-048/(312) &  4.919 &  0.986 &  0.627 & -0.119 & -0.089 & 138/(222) &  3.963 &  0.888 & -0.689 & -0.107 & -0.080\\
-050/(310) &  5.061 &  1.017 &  0.620 & -0.123 & -0.092 & 140/(220) &  3.799 &  0.853 & -0.682 & -0.103 & -0.077\\
-052/(308) &  5.195 &  1.046 &  0.609 & -0.126 & -0.094 & 142/(218) &  3.632 &  0.817 & -0.671 & -0.099 & -0.074\\
-054/(306) &  5.323 &  1.074 &  0.595 & -0.130 & -0.097 & 144/(216) &  3.462 &  0.780 & -0.657 & -0.094 & -0.070\\
-056/(304) &  5.443 &  1.100 &  0.579 & -0.133 & -0.099 & 146/(214) &  3.288 &  0.742 & -0.640 & -0.090 & -0.067\\
-058/(302) &  5.555 &  1.125 &  0.559 & -0.136 & -0.101 & 148/(212) &  3.111 &  0.703 & -0.620 & -0.085 & -0.063\\
-060/(300) &  5.660 &  1.149 &  0.536 & -0.139 & -0.103 & 150/(210) &  2.931 &  0.663 & -0.597 & -0.080 & -0.060\\
-062/(298) &  5.757 &  1.172 &  0.511 & -0.142 & -0.106 & 152/(208) &  2.748 &  0.623 & -0.571 & -0.075 & -0.056\\
-064/(296) &  5.847 &  1.193 &  0.483 & -0.144 & -0.107 & 154/(206) &  2.562 &  0.582 & -0.542 & -0.070 & -0.052\\
-066/(294) &  5.929 &  1.212 &  0.453 & -0.147 & -0.109 & 156/(204) &  2.375 &  0.540 & -0.511 & -0.065 & -0.049\\
-068/(292) &  6.002 &  1.230 &  0.420 & -0.149 & -0.111 & 158/(202) &  2.184 &  0.497 & -0.477 & -0.060 & -0.045\\
-070/(290) &  6.068 &  1.247 &  0.385 & -0.151 & -0.112 & 160/(200) &  1.992 &  0.454 & -0.442 & -0.055 & -0.041\\
-072/(288) &  6.126 &  1.262 &  0.348 & -0.153 & -0.114 & 162/(198) &  1.798 &  0.410 & -0.404 & -0.050 & -0.037\\
-074/(286) &  6.176 &  1.276 &  0.309 & -0.154 & -0.115 & 164/(196) &  1.603 &  0.366 & -0.364 & -0.044 & -0.033\\
-076/(284) &  6.218 &  1.288 &  0.269 & -0.156 & -0.116 & 166/(194) &  1.406 &  0.321 & -0.322 & -0.039 & -0.029\\
-078/(282) &  6.252 &  1.298 &  0.227 & -0.157 & -0.117 & 168/(192) &  1.207 &  0.276 & -0.279 & -0.033 & -0.025\\
-080/(280) &  6.278 &  1.307 &  0.184 & -0.158 & -0.118 & 170/(190) &  1.008 &  0.230 & -0.235 & -0.028 & -0.021\\
-082/(278) &  6.296 &  1.314 &  0.139 & -0.159 & -0.118 & 172/(188) &  0.807 &  0.185 & -0.189 & -0.022 & -0.017\\
-084/(276) &  6.306 &  1.320 &  0.094 & -0.159 & -0.119 & 174/(186) &  0.606 &  0.139 & -0.143 & -0.017 & -0.012\\
-086/(274) &  6.308 &  1.324 &  0.048 & -0.160 & -0.119 & 176/(184) &  0.404 &  0.093 & -0.095 & -0.011 & -0.008\\
-088/(272) &  6.302 &  1.326 &  0.002 & -0.160 & -0.119 & 178/(182) &  0.202 &  0.046 & -0.048 & -0.006 & -0.004\\
-090/(270) &  6.289 &  1.327 & -0.044 & -0.160 & -0.119 & 180/(180) &  0.000 &  0.000 & -0.000 & -0.000 & -0.000\\
+000/(360) &  0.000 &  0.000 &  0.000 & $-$0.000 & $-$0.000 & 090/(270) &  6.289 &  1.327 & $-$0.044 & $-$0.160 & $-$0.119\\
+002/(358) &  0.237 &  0.046 &  0.045 & $-$0.006 & $-$0.004 & 092/(268) &  6.268 &  1.326 & $-$0.090 & $-$0.160 & $-$0.119\\
+004/(356) &  0.473 &  0.093 &  0.089 & $-$0.011 & $-$0.008 & 094/(266) &  6.239 &  1.324 & $-$0.136 & $-$0.160 & $-$0.119\\
+006/(354) &  0.709 &  0.139 &  0.133 & $-$0.017 & $-$0.012 & 096/(264) &  6.203 &  1.320 & $-$0.182 & $-$0.159 & $-$0.119\\
+008/(352) &  0.943 &  0.185 &  0.177 & $-$0.022 & $-$0.017 & 098/(262) &  6.160 &  1.314 & $-$0.226 & $-$0.159 & $-$0.118\\
+010/(350) &  1.176 &  0.230 &  0.219 & $-$0.028 & $-$0.021 & 100/(260) &  6.109 &  1.307 & $-$0.270 & $-$0.158 & $-$0.118\\
+012/(348) &  1.408 &  0.276 &  0.261 & $-$0.033 & $-$0.025 & 102/(258) &  6.051 &  1.298 & $-$0.313 & $-$0.157 & $-$0.117\\
+014/(346) &  1.637 &  0.321 &  0.301 & $-$0.039 & $-$0.029 & 104/(256) &  5.986 &  1.288 & $-$0.354 & $-$0.156 & $-$0.116\\
+016/(344) &  1.864 &  0.366 &  0.339 & $-$0.044 & $-$0.033 & 106/(254) &  5.915 &  1.276 & $-$0.394 & $-$0.154 & $-$0.115\\
+018/(342) &  2.088 &  0.410 &  0.376 & $-$0.050 & $-$0.037 & 108/(252) &  5.836 &  1.262 & $-$0.432 & $-$0.153 & $-$0.114\\
+020/(340) &  2.310 &  0.454 &  0.411 & $-$0.055 & $-$0.041 & 110/(250) &  5.751 &  1.247 & $-$0.468 & $-$0.151 & $-$0.112\\
+022/(338) &  2.527 &  0.497 &  0.444 & $-$0.060 & $-$0.045 & 112/(248) &  5.660 &  1.230 & $-$0.502 & $-$0.149 & $-$0.111\\
+024/(336) &  2.741 &  0.540 &  0.475 & $-$0.065 & $-$0.049 & 114/(246) &  5.562 &  1.212 & $-$0.533 & $-$0.147 & $-$0.109\\
+026/(334) &  2.951 &  0.582 &  0.504 & $-$0.070 & $-$0.052 & 116/(244) &  5.458 &  1.193 & $-$0.562 & $-$0.144 & $-$0.107\\
+028/(332) &  3.157 &  0.623 &  0.529 & $-$0.075 & $-$0.056 & 118/(242) &  5.348 &  1.172 & $-$0.589 & $-$0.142 & $-$0.106\\
+030/(330) &  3.358 &  0.663 &  0.553 & $-$0.080 & $-$0.060 & 120/(240) &  5.233 &  1.149 & $-$0.613 & $-$0.139 & $-$0.103\\
+032/(328) &  3.554 &  0.703 &  0.573 & $-$0.085 & $-$0.063 & 122/(238) &  5.111 &  1.125 & $-$0.634 & $-$0.136 & $-$0.101\\
+034/(326) &  3.746 &  0.742 &  0.591 & $-$0.090 & $-$0.067 & 124/(236) &  4.985 &  1.100 & $-$0.652 & $-$0.133 & $-$0.099\\
+036/(324) &  3.931 &  0.780 &  0.605 & $-$0.094 & $-$0.070 & 126/(234) &  4.853 &  1.074 & $-$0.667 & $-$0.130 & $-$0.097\\
+038/(322) &  4.111 &  0.817 &  0.617 & $-$0.099 & $-$0.074 & 128/(232) &  4.716 &  1.046 & $-$0.678 & $-$0.126 & $-$0.094\\
+040/(320) &  4.285 &  0.853 &  0.625 & $-$0.103 & $-$0.077 & 130/(230) &  4.575 &  1.017 & $-$0.687 & $-$0.123 & $-$0.092\\
+042/(318) &  4.454 &  0.888 &  0.630 & $-$0.107 & $-$0.080 & 132/(228) &  4.428 &  0.986 & $-$0.693 & $-$0.119 & $-$0.089\\
+044/(316) &  4.615 &  0.922 &  0.632 & $-$0.111 & $-$0.083 & 134/(226) &  4.277 &  0.955 & $-$0.695 & $-$0.115 & $-$0.086\\
+046/(314) &  4.770 &  0.955 &  0.631 & $-$0.115 & $-$0.086 & 136/(224) &  4.122 &  0.922 & $-$0.694 & $-$0.111 & $-$0.083\\
+048/(312) &  4.919 &  0.986 &  0.627 & $-$0.119 & $-$0.089 & 138/(222) &  3.963 &  0.888 & $-$0.689 & $-$0.107 & $-$0.080\\
+050/(310) &  5.061 &  1.017 &  0.620 & $-$0.123 & $-$0.092 & 140/(220) &  3.799 &  0.853 & $-$0.682 & $-$0.103 & $-$0.077\\
+052/(308) &  5.195 &  1.046 &  0.609 & $-$0.126 & $-$0.094 & 142/(218) &  3.632 &  0.817 & $-$0.671 & $-$0.099 & $-$0.074\\
+054/(306) &  5.323 &  1.074 &  0.595 & $-$0.130 & $-$0.097 & 144/(216) &  3.462 &  0.780 & $-$0.657 & $-$0.094 & $-$0.070\\
+056/(304) &  5.443 &  1.100 &  0.579 & $-$0.133 & $-$0.099 & 146/(214) &  3.288 &  0.742 & $-$0.640 & $-$0.090 & $-$0.067\\
+058/(302) &  5.555 &  1.125 &  0.559 & $-$0.136 & $-$0.101 & 148/(212) &  3.111 &  0.703 & $-$0.620 & $-$0.085 & $-$0.063\\
+060/(300) &  5.660 &  1.149 &  0.536 & $-$0.139 & $-$0.103 & 150/(210) &  2.931 &  0.663 & $-$0.597 & $-$0.080 & $-$0.060\\
+062/(298) &  5.757 &  1.172 &  0.511 & $-$0.142 & $-$0.106 & 152/(208) &  2.748 &  0.623 & $-$0.571 & $-$0.075 & $-$0.056\\
+064/(296) &  5.847 &  1.193 &  0.483 & $-$0.144 & $-$0.107 & 154/(206) &  2.562 &  0.582 & $-$0.542 & $-$0.070 & $-$0.052\\
+066/(294) &  5.929 &  1.212 &  0.453 & $-$0.147 & $-$0.109 & 156/(204) &  2.375 &  0.540 & $-$0.511 & $-$0.065 & $-$0.049\\
+068/(292) &  6.002 &  1.230 &  0.420 & $-$0.149 & $-$0.111 & 158/(202) &  2.184 &  0.497 & $-$0.477 & $-$0.060 & $-$0.045\\
+070/(290) &  6.068 &  1.247 &  0.385 & $-$0.151 & $-$0.112 & 160/(200) &  1.992 &  0.454 & $-$0.442 & $-$0.055 & $-$0.041\\
+072/(288) &  6.126 &  1.262 &  0.348 & $-$0.153 & $-$0.114 & 162/(198) &  1.798 &  0.410 & $-$0.404 & $-$0.050 & $-$0.037\\
+074/(286) &  6.176 &  1.276 &  0.309 & $-$0.154 & $-$0.115 & 164/(196) &  1.603 &  0.366 & $-$0.364 & $-$0.044 & $-$0.033\\
+076/(284) &  6.218 &  1.288 &  0.269 & $-$0.156 & $-$0.116 & 166/(194) &  1.406 &  0.321 & $-$0.322 & $-$0.039 & $-$0.029\\
+078/(282) &  6.252 &  1.298 &  0.227 & $-$0.157 & $-$0.117 & 168/(192) &  1.207 &  0.276 & $-$0.279 & $-$0.033 & $-$0.025\\
+080/(280) &  6.278 &  1.307 &  0.184 & $-$0.158 & $-$0.118 & 170/(190) &  1.008 &  0.230 & $-$0.235 & $-$0.028 & $-$0.021\\
+082/(278) &  6.296 &  1.314 &  0.139 & $-$0.159 & $-$0.118 & 172/(188) &  0.807 &  0.185 & $-$0.189 & $-$0.022 & $-$0.017\\
+084/(276) &  6.306 &  1.320 &  0.094 & $-$0.159 & $-$0.119 & 174/(186) &  0.606 &  0.139 & $-$0.143 & $-$0.017 & $-$0.012\\
+086/(274) &  6.308 &  1.324 &  0.048 & $-$0.160 & $-$0.119 & 176/(184) &  0.404 &  0.093 & $-$0.095 & $-$0.011 & $-$0.008\\
+088/(272) &  6.302 &  1.326 &  0.002 & $-$0.160 & $-$0.119 & 178/(182) &  0.202 &  0.046 & $-$0.048 & $-$0.006 & $-$0.004\\
+090/(270) &  6.289 &  1.327 & $-$0.044 & $-$0.160 & $-$0.119 & 180/(180) &  0.000 &  0.000 & $-$0.000 & $-$0.000 & $-$0.000\\
 \end{tabular}}
-\caption[\em Anomalies of the moon.]{\em Anomalies of the moon. The common argument corresponds to
+\caption{Anomalies of the Moon. The common argument corresponds to
 $M$, $2\tilde{D}-M$, $\tilde{D}$, $M_S$, and $2\bar{F}$ for the case of
 $q_1$, $q_2$, $q_3$, $q_4$, and $q_5$, respectively. If the argument is
 in parenthesies then the anomalies are minus the values shown
@@ -521,7 +531,7 @@ $F (^\circ)$ \\\hline
 088/092 &  5.164 & (268)/(272)\\
 090/090 &  5.167 & (270)/(270)\\
 \end{tabular}}
-\caption[\em Ecliptic latitude of the moon.]{\em Ecliptic latitude of the moon.  The latitude is minus the value shown
+\caption{Ecliptic latitude of the Moon.  The latitude is minus the value shown
 in the table if the argument is
 in parenthesies. }\label{tmoonb}
 \end{table}
@@ -578,7 +588,7 @@ Arg. ($^\circ$) & $\delta(')$~~ &  $100\,\zeta$ & Arg. ($^\circ$) \\\hline
 088/272 &  1.992 &  0.192 & (092)/(268)\\
 090/270 &  0.000 &  0.000 & (090)/(270)\\
 \end{tabular}}
-\caption[\em Parallax of the moon.]{\em Parallax of the moon. The  arguments of $\delta$ and $\zeta$ are $a$
+\caption{Parallax of the Moon. The  arguments of $\delta$ and $\zeta$ are $a$
 and $M$, respectively.  $\delta$ and $\zeta$ take minus the values shown
 in the table if their arguments are
 in parenthesies. }\label{tmoonc}

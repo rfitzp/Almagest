@@ -1,76 +1,77 @@
 \chapter{The Inferior Planets}\label{cinf}
+% !TEX root = ../Almagest.tex
+
 \section{Determination of Ecliptic Longitude}
 Figure~\ref{vf8} compares and contrasts heliocentric and geocentric models of the
-motion  of an inferior planet ({\em i.e.}, a planet which is closer to the sun than the earth), $P$,  as seen from the earth, $G$. The sun is
+motion  of an inferior planet (that is, a planet which is closer to the Sun than the Earth), $P$,  as seen from the Earth, $G$. The Sun is
 at $S$.
 As before, in the heliocentric
-model  the earth-planet displacement vector, ${\bf P}$,
-is the sum of the earth-sun displacement vector, ${\bf S}$, and
-the sun-planet displacement vector, ${\bf P}'$.  
+model  the Earth-planet displacement vector, ${\bf P}$,
+is the sum of the Earth-Sun displacement vector, ${\bf S}$, and
+the Sun-planet displacement vector, ${\bf P}'$.  
 On the other hand, in the geocentric model ${\bf S}$ gives the displacement of
-the guide-point, $G'$, from the earth. Since ${\bf S}$ is also the displacement of the sun, $S$,
-from the earth, $G$, it is clear that $G'$ executes a Keplerian orbit about the earth whose elements
-are the same as those of the apparent orbit of the sun about the earth. This implies that the sun is {\em coincident}\/
+the guide-point, $G'$, from the Earth. Because ${\bf S}$ is also the displacement of the Sun, $S$,
+from the Earth, $G$, it is clear that $G'$ executes a Keplerian orbit about the Earth whose elements
+are the same as those of the apparent orbit of the Sun about the Earth. This implies that the Sun is  coincident 
 with $G'$. The ellipse traced out by $G'$ is termed the deferent.
 The vector
 ${\bf P}'$ gives the displacement of the planet, $P$, from the
 guide-point, $G'$. 
-Since ${\bf P'}$ is also the displacement of the planet, $P$, from the sun, $S$, it is clear
+Because ${\bf P'}$ is also the displacement of the planet, $P$, from the Sun, $S$, it is clear
 that $P$ executes a Keplerian orbit about the guide-point whose elements are the same as
-those of the orbit of the planet about the sun. The ellipse traced out by $P$ about $G'$ is
+those of the orbit of the planet about the Sun. The ellipse traced out by $P$ about $G'$ is
 termed the epicycle.
 
 \begin{figure}[h]
-\epsfysize=2.75in
-\centerline{\epsffile{epsfiles/fig8.eps}}
-\caption[\em Heliocentric and geocentric models of the motion of an inferior planet.]{\em Heliocentric and geocentric models of the motion of an inferior planet. Here, $S$ is the sun, $G$ the earth, and $P$ the planet. View is from the northern ecliptic pole.}\label{vf8}   
+\centerline{\includegraphics[height=2.75in]{epsfiles/fig8.eps}}
+\caption{Heliocentric and geocentric models of the motion of an inferior planet. Here, $S$ is the Sun, $G$ the Earth, and $P$ the planet. View is from the northern ecliptic pole.}\label{vf8}   
 \end{figure}
 
-As we have seen,  the deferent of a superior planet has the same elements as the planet's orbit about the sun,
-whereas the epicycle has the same elements as the sun's apparent orbit about the earth. On the other
-hand, the deferent of an inferior planet has the same elements as the sun's apparent orbit about the earth,
-whereas the epicycle has the same elements as the planet's  orbit about the sun. It follows that we can
+As we have seen,  the deferent of a superior planet has the same elements as the planet's orbit about the Sun,
+whereas the epicycle has the same elements as the Sun's apparent orbit about the Earth. On the other
+hand, the deferent of an inferior planet has the same elements as the Sun's apparent orbit about the Earth,
+whereas the epicycle has the same elements as the planet's  orbit about the Sun. It follows that we can
 formulate a procedure for determining the ecliptic longitude of an inferior planet by simply taking the
 procedure  used in the  previous section for determining the ecliptic longitude
-of a superior planet and exchanging the roles of the sun and the planet.
+of a superior planet and exchanging the roles of the Sun and the planet.
 
 Our procedure  is described below. As before, it is assumed that the ecliptic longitude, $\lambda_S$, and the
-radial anomaly, $\zeta_S$, of the sun have already been calculated.
+radial anomaly, $\zeta_S$, of the Sun have already been calculated.
 In the following, $a$, $e$, $n$, $\tilde{n}$, $\bar{\lambda}_0$, and $M_0$ represent  elements of the orbit of the planet in question
-about the sun, whereas  $e_S$ is the eccentricity 
-of the sun's apparent orbit about the earth.
+about the Sun, whereas  $e_S$ is the eccentricity 
+of the Sun's apparent orbit about the Earth.
 Again, $a$ is the major radius of the planetary orbit in
-units in which the major radius of the sun's apparent orbit about the
-earth is unity. The requisite elements for all of the inferior planets at the J2000 epoch ($t_0=2\,451\,545.0$ JD)
+units in which the major radius of the Sun's apparent orbit about the
+Earth is unity. The requisite elements for all of the inferior planets at the J2000 epoch ($t_0=2\,451\,545.0$ JD)
 are listed in Table~\ref{lt4}. The ecliptic longitude of an inferior planet
 is specified by the following formulae:
-\begin{eqnarray}
-\bar{\lambda}&=&  \bar{\lambda}_0+ n\,(t-t_0) ,\\[0.5ex]
-M &=& M_{0}  +\tilde{n}\,(t-t_0),\\[0.5ex]
-q&=& 2\,e\,\sin \,M + (5/4)\,e^{\,2}\,\sin\,2M,\\[0.5ex]
-\zeta &=& e\,\cos M - e^{\,2}\,\sin^2 M,\\[0.5ex]
-\mu&=& \bar{\lambda}+q-\lambda_S,\\[0.5ex]
-\bar{\theta} &=& \theta(\mu,\bar{z})\equiv \tan^{-1} \left(\frac{\sin\mu}{a^{-1}\,\bar{z}+\cos\mu}\right),\\[0.5ex]
-\delta\theta_- &=& \theta(\mu,\bar{z}) - \theta(\mu,z_{\rm max}),\\[0.5ex]
-\delta\theta_+&=& \theta(\mu,z_{\rm min}) - \theta(\mu,\bar{z}),\\[0.5ex]
-z &=& \frac{1-\zeta_S}{1-\zeta},\label{e182x}\\[0.5ex]
-\xi &=& \frac{\bar{z}-z}{\delta z},\\[0.5ex]
-\theta  &=&\Theta_-(\xi)\,\delta\theta_-+ \bar{\theta}
+\begin{align}
+\bar{\lambda}&=  \bar{\lambda}_0+ n\,(t-t_0) ,\\[0.5ex]
+M &= M_{0}  +\tilde{n}\,(t-t_0),\\[0.5ex]
+q&= 2\,e\,\sin \,M + (5/4)\,e^{\,2}\,\sin\,2M,\\[0.5ex]
+\zeta &= e\,\cos M - e^{\,2}\,\sin^2 M,\\[0.5ex]
+\mu&= \bar{\lambda}+q-\lambda_S,\\[0.5ex]
+\bar{\theta} &= \theta(\mu,\bar{z})\equiv \tan^{-1} \left(\frac{\sin\mu}{a^{-1}\,\bar{z}+\cos\mu}\right),\\[0.5ex]
+\delta\theta_- &= \theta(\mu,\bar{z}) - \theta(\mu,z_{\rm max}),\\[0.5ex]
+\delta\theta_+&= \theta(\mu,z_{\rm min}) - \theta(\mu,\bar{z}),\\[0.5ex]
+z &= \frac{1-\zeta_S}{1-\zeta},\label{e182x}\\[0.5ex]
+\xi &= \frac{\bar{z}-z}{\delta z},\\[0.5ex]
+\theta  &=\Theta_-(\xi)\,\delta\theta_-+ \bar{\theta}
 + \Theta_+(\xi)\,\delta\theta_+,\\[0.5ex]
-\lambda &=&\lambda_S+ \theta.
-\end{eqnarray}
+\lambda &=\lambda_S+ \theta.
+\end{align}
 Here, $\bar{z} = (1+e\,e_S)/(1-e^{\,2})$, $\delta z = (e+e_S)/(1-e^{\,2})$, $z_{\rm min} = \bar{z}-\delta z$,
 and $z_{\rm max} = \bar{z}+\delta z$. The constants $\bar{z}$, $\delta z$, $z_{\rm min}$, and $z_{\rm max}$ 
 for  each of the inferior planets are listed in Table.~\ref{tx}. Finally, the functions $\Theta_\pm$ are tabulated in Table~\ref{ty}.
 
-For the case of Venus, the above formulae are capable of matching NASA ephemeris data during the years 1995--2006 CE
+For the case of Venus, the previous formulae are capable of matching NASA ephemeris data during the years 1995--2006 AD
 with a mean error of $2'$ and a maximum error of $10'$. For the case of Mercury, given its relatively large eccentricity of
 $0.205636$, it is necessary to modify the formulae slightly by expressing $q$ and $\zeta$ to
 third-order in the eccentricity:
-\begin{eqnarray}
-q &=& [2\,e - (1/4)\,e^3]\,\sin \,M + (5/4) \,e^2\,sin\,2M + (13/12)\,e^3\,\sin \,3M,\\[0.5ex]
-\zeta &=& -(1/2)\,e^2+ [e-(3/8)\,e^3]\,\cos\,M + (1/2)\,e^2\,\cos\,2M + (3/8)\,e^3\,\cos\,3M.
-\end{eqnarray}
+\begin{align}
+q &= [2\,e - (1/4)\,e^3]\,\sin \,M + (5/4) \,e^2\,sin\,2M + (13/12)\,e^3\,\sin \,3M,\\[0.5ex]
+\zeta &= -(1/2)\,e^2+ [e-(3/8)\,e^3]\,\cos\,M + (1/2)\,e^2\,\cos\,2M + (3/8)\,e^3\,\cos\,3M.
+\end{align}
 With this modification, the mean error is $6'$ and the maximum error $28'$. 
 
 \section{Venus}
@@ -83,10 +84,13 @@ anomaly, $\mu$.
 
 The procedure for using the tables is as follows:
 \begin{enumerate}
+
 \item Determine the fractional Julian day number, $t$, corresponding to the date and time
 at which the  ecliptic longitude is to be calculated  with the aid of Tables~\ref{kt1}--\ref{kt3}. Form $\Delta t = t-t_0$, where $t_0=2\,451\,545.0$ is the epoch. 
+
 \item Calculate the ecliptic longitude, $\lambda_S$, and radial anomaly,
-$\zeta_S$, of the sun using the procedure set out in Sect.~\ref{ssun}.
+$\zeta_S$, of the Sun using the procedure set out in Section~\ref{ssun}.
+
 \item Enter Table~\ref{vt17} with the digit for each power of 10
 in ${\Delta} t$ and take out the corresponding values of $\Delta\bar{\lambda}$ and $\Delta M$. If $\Delta t$ is negative then the corresponding
 values are also negative.
@@ -95,36 +99,44 @@ sum of all the $\Delta\bar{\lambda}$ values plus value of $\bar{\lambda}$ at the
 the sum of all the $\Delta M$ values plus the value of $M$ at the epoch. 
 Add as many multiples of $360^\circ$ to $\bar{\lambda}$ and $M$
 as is required to make them both fall in the range $0^\circ$ to $360^\circ$. Round $M$ to the nearest degree. 
+
 \item Enter Table~\ref{vt18} with the value of $M$ and take out the
 corresponding value of the equation of center, $q$, and the radial anomaly, $\zeta$. It is necessary to interpolate if $M$ is odd.
+
 \item Form the epicyclic anomaly, $\mu = \bar{\lambda}+q-\lambda_S$. Add as many multiples of $360^\circ$ to $\mu$ as is required to make it fall in the range $0^\circ$ to $360^\circ$. Round $\mu$ to the nearest degree.
+
 \item Enter Table~\ref{vt19} with the value of $\mu$ and take
 out the corresponding values of $\delta\theta_-$, $\bar{\theta}$, and
 $\delta\theta_+$. If $\mu > 180^\circ$ then it is necessary to make use
 of the identities $\delta\theta_\pm(360^\circ - \mu) =-\delta\theta_\pm(\mu)$
 and $\bar{\theta}(360^\circ - \mu) =-\bar{\theta}(\mu)$.
+
 \item Form $z = (1-\zeta_S)/(1-\zeta)$.
+
 \item Obtain the values of $\bar{z}$ and $\delta z$ from Table~\ref{tx}.
 Form $\xi = (\bar{z}-z)/\delta z$.
+
 \item Enter Table~\ref{ty} with the value of $\xi$ and take out
 the corresponding values of $\Theta_-$ and $\Theta_+$. If $\xi<0$ then
 it is necessary to use the identities $\Theta_+(\xi)=-\Theta_-(-\xi)$
 and $\Theta_-(\xi)=-\Theta_+(-\xi)$. 
+
 \item Form the equation of the epicycle, $\theta = \Theta_-\,\delta\theta_-+ \bar{\theta}
 + \Theta_+\,\delta\theta_+$.
-\item The ecliptic longitude, $\lambda$, is the sum of the ecliptic longitude of the sun, $\lambda_S$,   and the equation
+
+\item The ecliptic longitude, $\lambda$, is the sum of the ecliptic longitude of the Sun, $\lambda_S$,   and the equation
 of the epicycle, $\theta$. If necessary convert $\lambda$
 into  an angle in the range $0^\circ$ to $360^\circ$. The decimal fraction can
 be converted into arc minutes
 using Table~\ref{lt6a}. Round to the nearest arc minute. The final result
-can be written in terms of the signs of the zodiac using the table in Sect.~\ref{szod}.
+can be written in terms of the signs of the zodiac using the table in Section~\ref{szod}.
 \end{enumerate}
 Two examples of this procedure are given below.
 
 ~\\
-\noindent {\em Example 1}: May 5,  2005 CE, 00:00 UT:\\
+\noindent {\em Example 1}: May 5,  2005 AD, 00:00 UT:\\
 ~\\
-From Cha.~\ref{csup}, $t-t_0=1\,950.5$ JD, $\lambda_S= 44.602^\circ$, and
+From Chapter~\ref{csup}, $t-t_0=1\,950.5$ JD, $\lambda_S= 44.602^\circ$, and
 $\zeta_S= -8.56\times 10^{-3}$. Making use of
 Table~\ref{vt17}, we find:\\
 \begin{tabular}{rrr}
@@ -176,12 +188,12 @@ $$
 \lambda=\bar{\lambda}_S + \theta= 44.602+9.151=53.753 \simeq 53^\circ 45'. 
 $$
 Thus,
-the ecliptic longitude of Venus at 00:00 UT on May 5, 2005 CE was 23TA45.
+the ecliptic longitude of Venus at 00:00 UT on May 5, 2005 AD was 23TA45.
 
 ~\\
-\noindent {\em Example 2}: December 25,  1800 CE, 00:00 UT:\\
+\noindent {\em Example 2}: December 25,  1800 AD, 00:00 UT:\\
 ~\\
-From Cha.~\ref{csup}, $t-t_0=-72\,690.5$ JD, $\lambda_S= 273.055^\circ$, and $\zeta_S= 1.662\times 10^{-2}$. Making use of
+From Chapter~\ref{csup}, $t-t_0=-72\,690.5$ JD, $\lambda_S= 273.055^\circ$, and $\zeta_S= 1.662\times 10^{-2}$. Making use of
 Table~\ref{vt17}, we find:\\
 \begin{tabular}{rrr}
 &&\\
@@ -232,34 +244,34 @@ $$
 \lambda=\bar{\lambda}_S  + \theta= 273.055+35.027= 308.082 \simeq 308^\circ 5'.
 $$
 Thus,
-the ecliptic longitude of Venus at 00:00 UT on December 25, 1800 CE was 8AQ5.
+the ecliptic longitude of Venus at 00:00 UT on December 25, 1800 AD was 8AQ5.
 
 \section{Determination of Conjunction and Greatest Elongation Dates}
 The geocentric orbit of an inferior planet is similar to that of the
-superior planet shown in Fig.~\ref{vf5x}, except for the fact that the sun
+superior planet shown in Figure~\ref{vf5x}, except for the fact that the Sun
 is coincident with guide-point $G'$ in the former case.
 It follows that it is impossible
-for an inferior planet to have an opposition with the sun ({\em i.e}, for the
-earth to lie directly between the planet and the sun). However, inferior planets
-do have two different kinds of conjunctions with the sun. A {\em superior
-conjuction}\/ takes place when the sun lies directly between the planet and the earth.
+for an inferior planet to have an opposition with the Sun (that is, for the
+Earth to lie directly between the planet and the Sun). However, inferior planets
+do have two different kinds of conjunctions with the Sun. A {\em superior
+conjunction}\/ takes place when the Sun lies directly between the planet and the Earth.
 Conversely, an {\em inferior conjunction}\/ takes place when the planet lies
-directly between the sun and the earth. It is clear from Fig.~\ref{vf5x}
+directly between the Sun and the Earth. It is clear from Fig.~\ref{vf5x}
 that a superior conjunction corresponds to $\mu=0^\circ$, and
 an inferior conjunction to $\mu=180^\circ$. Now, the equation of the epicycle,
  $\theta$, measures the
-angular separation between the planet and the sun (since the sun lies at
+angular separation between the planet and the Sun (because the Sun lies at
 the guide-point). It is evident from Figure~\ref{vf5x} that $\theta$ attains
 a maximum and a minimum value each time the planet revolves
 around its epicycle.
 In other words, there is a limit to how large the angular separation between
-an inferior planet and the sun can become.
+an inferior planet and the Sun can become.
 The maximum value is termed the {\em greatest eastern elongation}\/
 of the planet, whereas the modulus of the minimum value is
 termed the {\em greatest western elongation}. 
 
 Tables~\ref{vt17}--\ref{vt19} can be used to determine the dates of the conjunctions  and greatest  elongations
-of Venus. Consider the first superior conjunction after the epoch (January 1, 2000 CE). We can estimate the
+of Venus. Consider the first superior conjunction after the epoch (January 1, 2000 AD). We can estimate the
 time at which this event occurs by approximating the epicyclic anomaly as the 
 mean epicyclic anomaly: 
 $$
@@ -277,7 +289,7 @@ Hence, our final estimate is
 $$
 t=t_0+160+1.267/0.61652137= t_0 + 162.1\,{\rm JD}, 
 $$
-which corresponds to June 11, 2000 CE.
+which corresponds to June 11, 2000 AD.
 
 Consider the first inferior conjunction of Venus after the epoch. Our first estimate of the time at which this
 event takes place is 
@@ -292,8 +304,8 @@ $$
 t = t_0 +452+1.100/0.61652137 = t_0+453.8\,{\rm JD},
 $$
 which corresponds to
-March 30, 2001 CE. Incidentally, it is clear from the above analysis that the
-{\em mean}\/ time period between successive superior, or  inferior, conjunctions of Venus is $360/0.61652137= 583.9$ JD, which is
+March 30, 2001 AD. Incidentally, it is clear from the previous analysis that the
+mean  time period between successive superior, or  inferior, conjunctions of Venus is $360/0.61652137= 583.9$ JD, which is
 equivalent to $1.60$ years.
 
 Consider the greatest elongations of Venus. We can approximate the
@@ -314,7 +326,7 @@ $d\bar{\theta}/d\bar{\mu}=0$: {\em i.e.}, when
 \end{equation}
 For the case of Venus, we obtain $\bar{\mu} = 136.3^\circ$ or $223.7^\circ$. 
 The first solution corresponds to the greatest eastern elongation, and the
-second to the greatest western elongation. Substituting back into Eq.~(\ref{vexyz}), we find that $\bar{\theta} = \pm 46.3^\circ$.
+second to the greatest western elongation. Substituting back into Equation~(\ref{vexyz}), we find that $\bar{\theta} = \pm 46.3^\circ$.
 Hence, the mean value of the greatest eastern or western
 elongation of Venus is $46.3^\circ$. The mean time period
 between a greatest eastern elongation and the following
@@ -324,7 +336,7 @@ following greatest western elongation, is $(180-136.3)/0.61652137\simeq
 the equation of the epicycle of Venus over a range of days centered 71 days  before and after an inferior conjunction.
 
 Table~\ref{vtvenus} shows the conjunctions, and greatest elongations
-of Venus for the years 2000--2015 CE, calculated using the
+of Venus for the years 2000--2015 AD, calculated using the
 techniques described above.
 
 \section{Mercury}
@@ -338,9 +350,9 @@ using the Venus tables.
 One example of this procedure is given below.
 
 ~\\
-\noindent {\em Example}: May 5,  2005 CE, 00:00 UT:\\
+\noindent {\em Example}: May 5,  2005 AD, 00:00 UT:\\
 ~\\
-From Cha.~\ref{csup}, $t-t_0=1\,950.5$ JD, $\lambda_S= 44.602^\circ$, and
+From Chapter~\ref{csup}, $t-t_0=1\,950.5$ JD, $\lambda_S= 44.602^\circ$, and
 $\zeta_S= -8.56\times 10^{-3}$. Making use of
 Table~\ref{vt20}, we find:\\
 \begin{tabular}{rrr}
@@ -392,7 +404,7 @@ $$
 \lambda=\bar{\lambda}_S + \theta= 44.602-25.642=18.960 \simeq 18^\circ 58'. 
 $$
 Thus,
-the ecliptic longitude of Mercury at 00:00 UT on May 5, 2005 CE was 18AR58.
+the ecliptic longitude of Mercury at 00:00 UT on May 5, 2005 AD was 18AR58.
 
 The conjunctions  and elongations of Mercury can be investigated
 using analogous methods to those employed earlier to examine the
@@ -405,7 +417,7 @@ the mean value of the greatest eastern or western elongation is $21.7^\circ$.
  Finally,
 the mean time period between a greatest eastern elongation  and the following
 inferior conjunction, or between the inferior conjunction and the following greatest western elongation, is 22 JD. The conjunctions and elongations of Mercury
-during the years 2000--2002 CE are shown in Table~\ref{vtmercury}.
+during the years 2000--2002 AD are shown in Table~\ref{vtmercury}.
 
 \clearpage
 \newpage
@@ -445,7 +457,7 @@ $\Delta t$(JD)& $\Delta\bar{\lambda}(^\circ)$ &  $\Delta M(^\circ)$ & $\Delta \b
 8 &  12.817 &  12.817 &  12.817 & 0.8 &   1.282 &   1.282 &   1.282\\
 9 &  14.420 &  14.419 &  14.419 & 0.9 &   1.442 &   1.442 &   1.442\\
 \end{tabular}
-\caption[\em Mean motion of Venus. ]{\em Mean motion of Venus.  Here, $\Delta t = t-t_0$, $\Delta\bar{\lambda} = \bar{\lambda}-\bar{\lambda}_0$,  $\Delta M = M - M_0$, and $\Delta\bar{F} = \bar{F}-\bar{F}_0$.  At epoch  ($t_0 = 2\,451\,545.0$ JD), $\bar{\lambda}_0 = 181.973^\circ$, $M_0 = 49.237^\circ$, and
+\caption{Mean motion of Venus.  Here, $\Delta t = t-t_0$, $\Delta\bar{\lambda} = \bar{\lambda}-\bar{\lambda}_0$,  $\Delta M = M - M_0$, and $\Delta\bar{F} = \bar{F}-\bar{F}_0$.  At epoch  ($t_0 = 2\,451\,545.0$ JD), $\bar{\lambda}_0 = 181.973^\circ$, $M_0 = 49.237^\circ$, and
 $\bar{F}_0 =105.253^\circ$. }\label{vt17}
 \end{table}
 
@@ -454,54 +466,54 @@ $\bar{F}_0 =105.253^\circ$. }\label{vt17}
 \small{ \begin{tabular}{rrr|rrr|rrr|rrr}
 $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$& $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$\\\hline
 &&&&&&&&&&&\\[-1.75ex]
-   0 &   0.000 &  0.678 &  90 &   0.777 & -0.005 & 180 &   0.000 & -0.678 & 270 &  -0.777 & -0.005\\
-  2 &   0.027 &  0.677 &  92 &   0.776 & -0.028 & 182 &  -0.027 & -0.677 & 272 &  -0.776 &  0.019\\
-  4 &   0.055 &  0.676 &  94 &   0.774 & -0.052 & 184 &  -0.054 & -0.676 & 274 &  -0.775 &  0.043\\
-  6 &   0.082 &  0.674 &  96 &   0.772 & -0.075 & 186 &  -0.080 & -0.674 & 276 &  -0.773 &  0.066\\
-  8 &   0.109 &  0.671 &  98 &   0.768 & -0.099 & 188 &  -0.107 & -0.671 & 278 &  -0.770 &  0.090\\
- 10 &   0.136 &  0.667 & 100 &   0.764 & -0.122 & 190 &  -0.134 & -0.668 & 280 &  -0.766 &  0.113\\
- 12 &   0.163 &  0.663 & 102 &   0.758 & -0.145 & 192 &  -0.160 & -0.663 & 282 &  -0.761 &  0.137\\
- 14 &   0.189 &  0.657 & 104 &   0.752 & -0.168 & 194 &  -0.186 & -0.658 & 284 &  -0.755 &  0.160\\
- 16 &   0.216 &  0.651 & 106 &   0.745 & -0.191 & 196 &  -0.212 & -0.652 & 286 &  -0.748 &  0.183\\
- 18 &   0.242 &  0.644 & 108 &   0.737 & -0.214 & 198 &  -0.238 & -0.645 & 288 &  -0.741 &  0.205\\
- 20 &   0.268 &  0.636 & 110 &   0.728 & -0.236 & 200 &  -0.263 & -0.637 & 290 &  -0.732 &  0.228\\
- 22 &   0.293 &  0.628 & 112 &   0.718 & -0.258 & 202 &  -0.289 & -0.629 & 292 &  -0.722 &  0.250\\
- 24 &   0.318 &  0.618 & 114 &   0.707 & -0.279 & 204 &  -0.313 & -0.620 & 294 &  -0.712 &  0.272\\
- 26 &   0.343 &  0.608 & 116 &   0.695 & -0.301 & 206 &  -0.338 & -0.610 & 296 &  -0.701 &  0.293\\
- 28 &   0.367 &  0.597 & 118 &   0.683 & -0.322 & 208 &  -0.362 & -0.599 & 298 &  -0.688 &  0.315\\
- 30 &   0.391 &  0.586 & 120 &   0.670 & -0.342 & 210 &  -0.385 & -0.588 & 300 &  -0.675 &  0.335\\
- 32 &   0.414 &  0.573 & 122 &   0.656 & -0.362 & 212 &  -0.409 & -0.576 & 302 &  -0.662 &  0.356\\
- 34 &   0.437 &  0.560 & 124 &   0.641 & -0.382 & 214 &  -0.431 & -0.563 & 304 &  -0.647 &  0.376\\
- 36 &   0.460 &  0.547 & 126 &   0.625 & -0.401 & 216 &  -0.453 & -0.550 & 306 &  -0.631 &  0.395\\
- 38 &   0.481 &  0.532 & 128 &   0.609 & -0.420 & 218 &  -0.475 & -0.536 & 308 &  -0.615 &  0.414\\
- 40 &   0.502 &  0.517 & 130 &   0.592 & -0.438 & 220 &  -0.496 & -0.521 & 310 &  -0.598 &  0.433\\
- 42 &   0.523 &  0.502 & 132 &   0.574 & -0.456 & 222 &  -0.516 & -0.506 & 312 &  -0.580 &  0.451\\
- 44 &   0.543 &  0.485 & 134 &   0.555 & -0.473 & 224 &  -0.536 & -0.490 & 314 &  -0.562 &  0.468\\
- 46 &   0.562 &  0.468 & 136 &   0.536 & -0.490 & 226 &  -0.555 & -0.473 & 316 &  -0.543 &  0.485\\
- 48 &   0.580 &  0.451 & 138 &   0.516 & -0.506 & 228 &  -0.574 & -0.456 & 318 &  -0.523 &  0.502\\
- 50 &   0.598 &  0.433 & 140 &   0.496 & -0.521 & 230 &  -0.592 & -0.438 & 320 &  -0.502 &  0.517\\
- 52 &   0.615 &  0.414 & 142 &   0.475 & -0.536 & 232 &  -0.609 & -0.420 & 322 &  -0.481 &  0.532\\
- 54 &   0.631 &  0.395 & 144 &   0.453 & -0.550 & 234 &  -0.625 & -0.401 & 324 &  -0.460 &  0.547\\
- 56 &   0.647 &  0.376 & 146 &   0.431 & -0.563 & 236 &  -0.641 & -0.382 & 326 &  -0.437 &  0.560\\
- 58 &   0.662 &  0.356 & 148 &   0.409 & -0.576 & 238 &  -0.656 & -0.362 & 328 &  -0.414 &  0.573\\
- 60 &   0.675 &  0.335 & 150 &   0.385 & -0.588 & 240 &  -0.670 & -0.342 & 330 &  -0.391 &  0.586\\
- 62 &   0.688 &  0.315 & 152 &   0.362 & -0.599 & 242 &  -0.683 & -0.322 & 332 &  -0.367 &  0.597\\
- 64 &   0.701 &  0.293 & 154 &   0.338 & -0.610 & 244 &  -0.695 & -0.301 & 334 &  -0.343 &  0.608\\
- 66 &   0.712 &  0.272 & 156 &   0.313 & -0.620 & 246 &  -0.707 & -0.279 & 336 &  -0.318 &  0.618\\
- 68 &   0.722 &  0.250 & 158 &   0.289 & -0.629 & 248 &  -0.718 & -0.258 & 338 &  -0.293 &  0.628\\
- 70 &   0.732 &  0.228 & 160 &   0.263 & -0.637 & 250 &  -0.728 & -0.236 & 340 &  -0.268 &  0.636\\
- 72 &   0.741 &  0.205 & 162 &   0.238 & -0.645 & 252 &  -0.737 & -0.214 & 342 &  -0.242 &  0.644\\
- 74 &   0.748 &  0.183 & 164 &   0.212 & -0.652 & 254 &  -0.745 & -0.191 & 344 &  -0.216 &  0.651\\
- 76 &   0.755 &  0.160 & 166 &   0.186 & -0.658 & 256 &  -0.752 & -0.168 & 346 &  -0.189 &  0.657\\
- 78 &   0.761 &  0.137 & 168 &   0.160 & -0.663 & 258 &  -0.758 & -0.145 & 348 &  -0.163 &  0.663\\
- 80 &   0.766 &  0.113 & 170 &   0.134 & -0.668 & 260 &  -0.764 & -0.122 & 350 &  -0.136 &  0.667\\
- 82 &   0.770 &  0.090 & 172 &   0.107 & -0.671 & 262 &  -0.768 & -0.099 & 352 &  -0.109 &  0.671\\
- 84 &   0.773 &  0.066 & 174 &   0.080 & -0.674 & 264 &  -0.772 & -0.075 & 354 &  -0.082 &  0.674\\
- 86 &   0.775 &  0.043 & 176 &   0.054 & -0.676 & 266 &  -0.774 & -0.052 & 356 &  -0.055 &  0.676\\
- 88 &   0.776 &  0.019 & 178 &   0.027 & -0.677 & 268 &  -0.776 & -0.028 & 358 &  -0.027 &  0.677\\
- 90 &   0.777 & -0.005 & 180 &   0.000 & -0.678 & 270 &  -0.777 & -0.005 & 360 &  -0.000 &  0.678\\
+   0 &   0.000 &  0.678 &  90 &   0.777 & $-$0.005 & 180 &   0.000 & $-$0.678 & 270 &  $-$0.777 & $-$0.005\\
+  2 &   0.027 &  0.677 &  92 &   0.776 & $-$0.028 & 182 &  $-$0.027 & $-$0.677 & 272 &  $-$0.776 &  0.019\\
+  4 &   0.055 &  0.676 &  94 &   0.774 & $-$0.052 & 184 &  $-$0.054 & $-$0.676 & 274 &  $-$0.775 &  0.043\\
+  6 &   0.082 &  0.674 &  96 &   0.772 & $-$0.075 & 186 &  $-$0.080 & $-$0.674 & 276 &  $-$0.773 &  0.066\\
+  8 &   0.109 &  0.671 &  98 &   0.768 & $-$0.099 & 188 &  $-$0.107 & $-$0.671 & 278 &  $-$0.770 &  0.090\\
+ 10 &   0.136 &  0.667 & 100 &   0.764 & $-$0.122 & 190 &  $-$0.134 & $-$0.668 & 280 &  $-$0.766 &  0.113\\
+ 12 &   0.163 &  0.663 & 102 &   0.758 & $-$0.145 & 192 &  $-$0.160 & $-$0.663 & 282 &  $-$0.761 &  0.137\\
+ 14 &   0.189 &  0.657 & 104 &   0.752 & $-$0.168 & 194 &  $-$0.186 & $-$0.658 & 284 &  $-$0.755 &  0.160\\
+ 16 &   0.216 &  0.651 & 106 &   0.745 & $-$0.191 & 196 &  $-$0.212 & $-$0.652 & 286 &  $-$0.748 &  0.183\\
+ 18 &   0.242 &  0.644 & 108 &   0.737 & $-$0.214 & 198 &  $-$0.238 & $-$0.645 & 288 &  $-$0.741 &  0.205\\
+ 20 &   0.268 &  0.636 & 110 &   0.728 & $-$0.236 & 200 &  $-$0.263 & $-$0.637 & 290 &  $-$0.732 &  0.228\\
+ 22 &   0.293 &  0.628 & 112 &   0.718 & $-$0.258 & 202 &  $-$0.289 & $-$0.629 & 292 &  $-$0.722 &  0.250\\
+ 24 &   0.318 &  0.618 & 114 &   0.707 & $-$0.279 & 204 &  $-$0.313 & $-$0.620 & 294 &  $-$0.712 &  0.272\\
+ 26 &   0.343 &  0.608 & 116 &   0.695 & $-$0.301 & 206 &  $-$0.338 & $-$0.610 & 296 &  $-$0.701 &  0.293\\
+ 28 &   0.367 &  0.597 & 118 &   0.683 & $-$0.322 & 208 &  $-$0.362 & $-$0.599 & 298 &  $-$0.688 &  0.315\\
+ 30 &   0.391 &  0.586 & 120 &   0.670 & $-$0.342 & 210 &  $-$0.385 & $-$0.588 & 300 &  $-$0.675 &  0.335\\
+ 32 &   0.414 &  0.573 & 122 &   0.656 & $-$0.362 & 212 &  $-$0.409 & $-$0.576 & 302 &  $-$0.662 &  0.356\\
+ 34 &   0.437 &  0.560 & 124 &   0.641 & $-$0.382 & 214 &  $-$0.431 & $-$0.563 & 304 &  $-$0.647 &  0.376\\
+ 36 &   0.460 &  0.547 & 126 &   0.625 & $-$0.401 & 216 &  $-$0.453 & $-$0.550 & 306 &  $-$0.631 &  0.395\\
+ 38 &   0.481 &  0.532 & 128 &   0.609 & $-$0.420 & 218 &  $-$0.475 & $-$0.536 & 308 &  $-$0.615 &  0.414\\
+ 40 &   0.502 &  0.517 & 130 &   0.592 & $-$0.438 & 220 &  $-$0.496 & $-$0.521 & 310 &  $-$0.598 &  0.433\\
+ 42 &   0.523 &  0.502 & 132 &   0.574 & $-$0.456 & 222 &  $-$0.516 & $-$0.506 & 312 &  $-$0.580 &  0.451\\
+ 44 &   0.543 &  0.485 & 134 &   0.555 & $-$0.473 & 224 &  $-$0.536 & $-$0.490 & 314 &  $-$0.562 &  0.468\\
+ 46 &   0.562 &  0.468 & 136 &   0.536 & $-$0.490 & 226 &  $-$0.555 & $-$0.473 & 316 &  $-$0.543 &  0.485\\
+ 48 &   0.580 &  0.451 & 138 &   0.516 & $-$0.506 & 228 &  $-$0.574 & $-$0.456 & 318 &  $-$0.523 &  0.502\\
+ 50 &   0.598 &  0.433 & 140 &   0.496 & $-$0.521 & 230 &  $-$0.592 & $-$0.438 & 320 &  $-$0.502 &  0.517\\
+ 52 &   0.615 &  0.414 & 142 &   0.475 & $-$0.536 & 232 &  $-$0.609 & $-$0.420 & 322 &  $-$0.481 &  0.532\\
+ 54 &   0.631 &  0.395 & 144 &   0.453 & $-$0.550 & 234 &  $-$0.625 & $-$0.401 & 324 &  $-$0.460 &  0.547\\
+ 56 &   0.647 &  0.376 & 146 &   0.431 & $-$0.563 & 236 &  $-$0.641 & $-$0.382 & 326 &  $-$0.437 &  0.560\\
+ 58 &   0.662 &  0.356 & 148 &   0.409 & $-$0.576 & 238 &  $-$0.656 & $-$0.362 & 328 &  $-$0.414 &  0.573\\
+ 60 &   0.675 &  0.335 & 150 &   0.385 & $-$0.588 & 240 &  $-$0.670 & $-$0.342 & 330 &  $-$0.391 &  0.586\\
+ 62 &   0.688 &  0.315 & 152 &   0.362 & $-$0.599 & 242 &  $-$0.683 & $-$0.322 & 332 &  $-$0.367 &  0.597\\
+ 64 &   0.701 &  0.293 & 154 &   0.338 & $-$0.610 & 244 &  $-$0.695 & $-$0.301 & 334 &  $-$0.343 &  0.608\\
+ 66 &   0.712 &  0.272 & 156 &   0.313 & $-$0.620 & 246 &  $-$0.707 & $-$0.279 & 336 &  $-$0.318 &  0.618\\
+ 68 &   0.722 &  0.250 & 158 &   0.289 & $-$0.629 & 248 &  $-$0.718 & $-$0.258 & 338 &  $-$0.293 &  0.628\\
+ 70 &   0.732 &  0.228 & 160 &   0.263 & $-$0.637 & 250 &  $-$0.728 & $-$0.236 & 340 &  $-$0.268 &  0.636\\
+ 72 &   0.741 &  0.205 & 162 &   0.238 & $-$0.645 & 252 &  $-$0.737 & $-$0.214 & 342 &  $-$0.242 &  0.644\\
+ 74 &   0.748 &  0.183 & 164 &   0.212 & $-$0.652 & 254 &  $-$0.745 & $-$0.191 & 344 &  $-$0.216 &  0.651\\
+ 76 &   0.755 &  0.160 & 166 &   0.186 & $-$0.658 & 256 &  $-$0.752 & $-$0.168 & 346 &  $-$0.189 &  0.657\\
+ 78 &   0.761 &  0.137 & 168 &   0.160 & $-$0.663 & 258 &  $-$0.758 & $-$0.145 & 348 &  $-$0.163 &  0.663\\
+ 80 &   0.766 &  0.113 & 170 &   0.134 & $-$0.668 & 260 &  $-$0.764 & $-$0.122 & 350 &  $-$0.136 &  0.667\\
+ 82 &   0.770 &  0.090 & 172 &   0.107 & $-$0.671 & 262 &  $-$0.768 & $-$0.099 & 352 &  $-$0.109 &  0.671\\
+ 84 &   0.773 &  0.066 & 174 &   0.080 & $-$0.674 & 264 &  $-$0.772 & $-$0.075 & 354 &  $-$0.082 &  0.674\\
+ 86 &   0.775 &  0.043 & 176 &   0.054 & $-$0.676 & 266 &  $-$0.774 & $-$0.052 & 356 &  $-$0.055 &  0.676\\
+ 88 &   0.776 &  0.019 & 178 &   0.027 & $-$0.677 & 268 &  $-$0.776 & $-$0.028 & 358 &  $-$0.027 &  0.677\\
+ 90 &   0.777 & $-$0.005 & 180 &   0.000 & $-$0.678 & 270 &  $-$0.777 & $-$0.005 & 360 &  $-$0.000 &  0.678\\
 \end{tabular}}
-\caption{\em Deferential anomalies of Venus.}\label{vt18}
+\caption{Deferential anomalies of Venus.}\label{vt18}
 \end{table}
 
 \newpage
@@ -559,7 +571,7 @@ $\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ \\\hline
  44 & \tiny{  0.260} &  18.287 & \tiny{  0.267} &  89 & \tiny{  0.619} &  35.530 & \tiny{  0.638} & 134 & \tiny{  1.321} &  46.274 & \tiny{  1.382} & 179 & \tiny{  0.204} &   2.610 & \tiny{  0.242}\\
  45 & \tiny{  0.267} &  18.694 & \tiny{  0.274} &  90 & \tiny{  0.629} &  35.875 & \tiny{  0.649} & 135 & \tiny{  1.344} &  46.305 & \tiny{  1.408} & 180 & \tiny{  0.000} &   0.000 & \tiny{  0.000}\\
 \end{tabular}}
-\caption[\em Epicyclic anomalies of Venus. ]{\em Epicyclic anomalies of Venus. All quantities are in degrees. Note that $\bar{\theta}(360^\circ-\mu) = -\bar{\theta}(\mu)$, and $\delta\theta_{\pm}(360^\circ-\mu) = -\delta\theta_{\pm}(\mu)$. }\label{vt19}
+\caption{Epicyclic anomalies of Venus. All quantities are in degrees. Note that $\bar{\theta}(360^\circ-\mu) = -\bar{\theta}(\mu)$, and $\delta\theta_{\pm}(360^\circ-\mu) = -\delta\theta_{\pm}(\mu)$. }\label{vt19}
 \end{table}
 
 \newpage
@@ -608,8 +620,8 @@ Greatest Elongation & 06/06/2015 & 01LE09 & $45.4^\circ$ E\\
 Inferior Conjunction & 15/08/2015 & 22LE33&\\
 Greatest Elongation & 26/10/2015 & 16VI02 & $46.4^\circ$ W\\
 \end{tabular}}
-\caption{\em The conjunctions and greatest elongations of Venus
-during the years 2000--2015 CE.}\label{vtvenus}
+\caption{The conjunctions and greatest elongations of Venus
+during the years 2000--2015 AD.}\label{vtvenus}
 \end{table}
 
 \clearpage
@@ -650,7 +662,7 @@ $\Delta t$(JD)& $\Delta\bar{\lambda}(^\circ)$ &  $\Delta M(^\circ)$ & $\Delta \b
 8 &  32.739 &  32.739 &  32.739 & 0.8 &   3.274 &   3.274 &   3.274\\
 9 &  36.831 &  36.831 &  36.831 & 0.9 &   3.683 &   3.683 &   3.683\\
 \end{tabular}
-\caption[\em Mean motion of Mercury.]{\em Mean motion of Mercury.  Here, $\Delta t = t-t_0$, $\Delta\bar{\lambda} = \bar{\lambda}-\bar{\lambda}_0$, $\Delta M = M - M_0$, and $\Delta \bar{F} = \bar{F} - \bar{F}_0$. At epoch  ($t_0 = 2\,451\,545.0$ JD), $\bar{\lambda}_0 = 252.087^\circ$,  $M_0 = 174.693^\circ$,
+\caption{Mean motion of Mercury.  Here, $\Delta t = t-t_0$, $\Delta\bar{\lambda} = \bar{\lambda}-\bar{\lambda}_0$, $\Delta M = M - M_0$, and $\Delta \bar{F} = \bar{F} - \bar{F}_0$. At epoch  ($t_0 = 2\,451\,545.0$ JD), $\bar{\lambda}_0 = 252.087^\circ$,  $M_0 = 174.693^\circ$,
 and $\bar{F}_0 = 204.436^\circ$. }\label{vt20}
 \end{table}
 
@@ -659,54 +671,54 @@ and $\bar{F}_0 = 204.436^\circ$. }\label{vt20}
 \small{ \begin{tabular}{rrr|rrr|rrr|rrr}
 $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$& $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$\\\hline
 &&&&&&&&&&&\\[-1.75ex]
-  0 &   0.000 & 20.564 &  90 &  22.900 & -4.229 & 180 &   0.000 & -20.564 & 270 & -22.900 & -4.229\\
-  2 &   1.086 & 20.544 &  92 &  22.677 & -4.896 & 182 &  -0.663 & -20.555 & 272 & -23.100 & -3.551\\
-  4 &   2.169 & 20.487 &  94 &  22.433 & -5.552 & 184 &  -1.326 & -20.528 & 274 & -23.276 & -2.864\\
-  6 &   3.247 & 20.391 &  96 &  22.168 & -6.197 & 186 &  -1.987 & -20.483 & 276 & -23.428 & -2.168\\
-  8 &   4.316 & 20.257 &  98 &  21.884 & -6.831 & 188 &  -2.647 & -20.420 & 278 & -23.553 & -1.463\\
- 10 &   5.376 & 20.085 & 100 &  21.580 & -7.452 & 190 &  -3.304 & -20.340 & 280 & -23.652 & -0.750\\
- 12 &   6.422 & 19.876 & 102 &  21.259 & -8.062 & 192 &  -3.959 & -20.242 & 282 & -23.723 & -0.030\\
- 14 &   7.454 & 19.631 & 104 &  20.920 & -8.659 & 194 &  -4.610 & -20.126 & 284 & -23.764 &  0.697\\
- 16 &   8.467 & 19.350 & 106 &  20.566 & -9.243 & 196 &  -5.257 & -19.993 & 286 & -23.775 &  1.429\\
- 18 &   9.460 & 19.035 & 108 &  20.195 & -9.815 & 198 &  -5.900 & -19.842 & 288 & -23.755 &  2.165\\
- 20 &  10.431 & 18.685 & 110 &  19.809 & -10.373 & 200 &  -6.538 & -19.675 & 290 & -23.703 &  2.905\\
- 22 &  11.377 & 18.303 & 112 &  19.409 & -10.918 & 202 &  -7.170 & -19.490 & 292 & -23.617 &  3.648\\
- 24 &  12.298 & 17.889 & 114 &  18.996 & -11.450 & 204 &  -7.796 & -19.288 & 294 & -23.497 &  4.392\\
- 26 &  13.190 & 17.445 & 116 &  18.569 & -11.969 & 206 &  -8.417 & -19.070 & 296 & -23.342 &  5.137\\
- 28 &  14.052 & 16.971 & 118 &  18.129 & -12.473 & 208 &  -9.030 & -18.835 & 298 & -23.150 &  5.880\\
- 30 &  14.882 & 16.469 & 120 &  17.677 & -12.964 & 210 &  -9.637 & -18.583 & 300 & -22.922 &  6.621\\
- 32 &  15.680 & 15.941 & 122 &  17.212 & -13.441 & 212 & -10.236 & -18.316 & 302 & -22.656 &  7.359\\
- 34 &  16.443 & 15.388 & 124 &  16.737 & -13.904 & 214 & -10.827 & -18.032 & 304 & -22.353 &  8.091\\
- 36 &  17.171 & 14.811 & 126 &  16.250 & -14.353 & 216 & -11.410 & -17.733 & 306 & -22.010 &  8.818\\
- 38 &  17.862 & 14.212 & 128 &  15.752 & -14.787 & 218 & -11.985 & -17.418 & 308 & -21.629 &  9.536\\
- 40 &  18.517 & 13.593 & 130 &  15.243 & -15.207 & 220 & -12.552 & -17.087 & 310 & -21.208 & 10.245\\
- 42 &  19.133 & 12.954 & 132 &  14.724 & -15.613 & 222 & -13.109 & -16.741 & 312 & -20.748 & 10.942\\
- 44 &  19.710 & 12.299 & 134 &  14.196 & -16.004 & 224 & -13.657 & -16.380 & 314 & -20.249 & 11.628\\
- 46 &  20.249 & 11.628 & 136 &  13.657 & -16.380 & 226 & -14.196 & -16.004 & 316 & -19.710 & 12.299\\
- 48 &  20.748 & 10.942 & 138 &  13.109 & -16.741 & 228 & -14.724 & -15.613 & 318 & -19.133 & 12.954\\
- 50 &  21.208 & 10.245 & 140 &  12.552 & -17.087 & 230 & -15.243 & -15.207 & 320 & -18.517 & 13.593\\
- 52 &  21.629 &  9.536 & 142 &  11.985 & -17.418 & 232 & -15.752 & -14.787 & 322 & -17.862 & 14.212\\
- 54 &  22.010 &  8.818 & 144 &  11.410 & -17.733 & 234 & -16.250 & -14.353 & 324 & -17.171 & 14.811\\
- 56 &  22.353 &  8.091 & 146 &  10.827 & -18.032 & 236 & -16.737 & -13.904 & 326 & -16.443 & 15.388\\
- 58 &  22.656 &  7.359 & 148 &  10.236 & -18.316 & 238 & -17.212 & -13.441 & 328 & -15.680 & 15.941\\
- 60 &  22.922 &  6.621 & 150 &   9.637 & -18.583 & 240 & -17.677 & -12.964 & 330 & -14.882 & 16.469\\
- 62 &  23.150 &  5.880 & 152 &   9.030 & -18.835 & 242 & -18.129 & -12.473 & 332 & -14.052 & 16.971\\
- 64 &  23.342 &  5.137 & 154 &   8.417 & -19.070 & 244 & -18.569 & -11.969 & 334 & -13.190 & 17.445\\
- 66 &  23.497 &  4.392 & 156 &   7.796 & -19.288 & 246 & -18.996 & -11.450 & 336 & -12.298 & 17.889\\
- 68 &  23.617 &  3.648 & 158 &   7.170 & -19.490 & 248 & -19.409 & -10.918 & 338 & -11.377 & 18.303\\
- 70 &  23.703 &  2.905 & 160 &   6.538 & -19.675 & 250 & -19.809 & -10.373 & 340 & -10.431 & 18.685\\
- 72 &  23.755 &  2.165 & 162 &   5.900 & -19.842 & 252 & -20.195 & -9.815 & 342 &  -9.460 & 19.035\\
- 74 &  23.775 &  1.429 & 164 &   5.257 & -19.993 & 254 & -20.566 & -9.243 & 344 &  -8.467 & 19.350\\
- 76 &  23.764 &  0.697 & 166 &   4.610 & -20.126 & 256 & -20.920 & -8.659 & 346 &  -7.454 & 19.631\\
- 78 &  23.723 & -0.030 & 168 &   3.959 & -20.242 & 258 & -21.259 & -8.062 & 348 &  -6.422 & 19.876\\
- 80 &  23.652 & -0.750 & 170 &   3.304 & -20.340 & 260 & -21.580 & -7.452 & 350 &  -5.376 & 20.085\\
- 82 &  23.553 & -1.463 & 172 &   2.647 & -20.420 & 262 & -21.884 & -6.831 & 352 &  -4.316 & 20.257\\
- 84 &  23.428 & -2.168 & 174 &   1.987 & -20.483 & 264 & -22.168 & -6.197 & 354 &  -3.247 & 20.391\\
- 86 &  23.276 & -2.864 & 176 &   1.326 & -20.528 & 266 & -22.433 & -5.552 & 356 &  -2.169 & 20.487\\
- 88 &  23.100 & -3.551 & 178 &   0.663 & -20.555 & 268 & -22.677 & -4.896 & 358 &  -1.086 & 20.544\\
- 90 &  22.900 & -4.229 & 180 &   0.000 & -20.564 & 270 & -22.900 & -4.229 & 360 &  -0.000 & 20.564\\
+  0 &   0.000 & 20.564 &  90 &  22.900 & $-$4.229 & 180 &   0.000 & $-$20.564 & 270 & $-$22.900 & $-$4.229\\
+  2 &   1.086 & 20.544 &  92 &  22.677 & $-$4.896 & 182 &  $-$0.663 & $-$20.555 & 272 & $-$23.100 & $-$3.551\\
+  4 &   2.169 & 20.487 &  94 &  22.433 & $-$5.552 & 184 &  $-$1.326 & $-$20.528 & 274 & $-$23.276 & $-$2.864\\
+  6 &   3.247 & 20.391 &  96 &  22.168 & $-$6.197 & 186 &  $-$1.987 & $-$20.483 & 276 & $-$23.428 & $-$2.168\\
+  8 &   4.316 & 20.257 &  98 &  21.884 & $-$6.831 & 188 &  $-$2.647 & $-$20.420 & 278 & $-$23.553 & $-$1.463\\
+ 10 &   5.376 & 20.085 & 100 &  21.580 & $-$7.452 & 190 &  $-$3.304 & $-$20.340 & 280 & $-$23.652 & $-$0.750\\
+ 12 &   6.422 & 19.876 & 102 &  21.259 & $-$8.062 & 192 &  $-$3.959 & $-$20.242 & 282 & $-$23.723 & $-$0.030\\
+ 14 &   7.454 & 19.631 & 104 &  20.920 & $-$8.659 & 194 &  $-$4.610 & $-$20.126 & 284 & $-$23.764 &  0.697\\
+ 16 &   8.467 & 19.350 & 106 &  20.566 & $-$9.243 & 196 &  $-$5.257 & $-$19.993 & 286 & $-$23.775 &  1.429\\
+ 18 &   9.460 & 19.035 & 108 &  20.195 & $-$9.815 & 198 &  $-$5.900 & $-$19.842 & 288 & $-$23.755 &  2.165\\
+ 20 &  10.431 & 18.685 & 110 &  19.809 & $-$10.373 & 200 &  $-$6.538 & $-$19.675 & 290 & $-$23.703 &  2.905\\
+ 22 &  11.377 & 18.303 & 112 &  19.409 & $-$10.918 & 202 &  $-$7.170 & $-$19.490 & 292 & $-$23.617 &  3.648\\
+ 24 &  12.298 & 17.889 & 114 &  18.996 & $-$11.450 & 204 &  $-$7.796 & $-$19.288 & 294 & $-$23.497 &  4.392\\
+ 26 &  13.190 & 17.445 & 116 &  18.569 & $-$11.969 & 206 &  $-$8.417 & $-$19.070 & 296 & $-$23.342 &  5.137\\
+ 28 &  14.052 & 16.971 & 118 &  18.129 & $-$12.473 & 208 &  $-$9.030 & $-$18.835 & 298 & $-$23.150 &  5.880\\
+ 30 &  14.882 & 16.469 & 120 &  17.677 & $-$12.964 & 210 &  $-$9.637 & $-$18.583 & 300 & $-$22.922 &  6.621\\
+ 32 &  15.680 & 15.941 & 122 &  17.212 & $-$13.441 & 212 & $-$10.236 & $-$18.316 & 302 & $-$22.656 &  7.359\\
+ 34 &  16.443 & 15.388 & 124 &  16.737 & $-$13.904 & 214 & $-$10.827 & $-$18.032 & 304 & $-$22.353 &  8.091\\
+ 36 &  17.171 & 14.811 & 126 &  16.250 & $-$14.353 & 216 & $-$11.410 & $-$17.733 & 306 & $-$22.010 &  8.818\\
+ 38 &  17.862 & 14.212 & 128 &  15.752 & $-$14.787 & 218 & $-$11.985 & $-$17.418 & 308 & $-$21.629 &  9.536\\
+ 40 &  18.517 & 13.593 & 130 &  15.243 & $-$15.207 & 220 & $-$12.552 & $-$17.087 & 310 & $-$21.208 & 10.245\\
+ 42 &  19.133 & 12.954 & 132 &  14.724 & $-$15.613 & 222 & $-$13.109 & $-$16.741 & 312 & $-$20.748 & 10.942\\
+ 44 &  19.710 & 12.299 & 134 &  14.196 & $-$16.004 & 224 & $-$13.657 & $-$16.380 & 314 & $-$20.249 & 11.628\\
+ 46 &  20.249 & 11.628 & 136 &  13.657 & $-$16.380 & 226 & $-$14.196 & $-$16.004 & 316 & $-$19.710 & 12.299\\
+ 48 &  20.748 & 10.942 & 138 &  13.109 & $-$16.741 & 228 & $-$14.724 & $-$15.613 & 318 & $-$19.133 & 12.954\\
+ 50 &  21.208 & 10.245 & 140 &  12.552 & $-$17.087 & 230 & $-$15.243 & $-$15.207 & 320 & $-$18.517 & 13.593\\
+ 52 &  21.629 &  9.536 & 142 &  11.985 & $-$17.418 & 232 & $-$15.752 & $-$14.787 & 322 & $-$17.862 & 14.212\\
+ 54 &  22.010 &  8.818 & 144 &  11.410 & $-$17.733 & 234 & $-$16.250 & $-$14.353 & 324 & $-$17.171 & 14.811\\
+ 56 &  22.353 &  8.091 & 146 &  10.827 & $-$18.032 & 236 & $-$16.737 & $-$13.904 & 326 & $-$16.443 & 15.388\\
+ 58 &  22.656 &  7.359 & 148 &  10.236 & $-$18.316 & 238 & $-$17.212 & $-$13.441 & 328 & $-$15.680 & 15.941\\
+ 60 &  22.922 &  6.621 & 150 &   9.637 & $-$18.583 & 240 & $-$17.677 & $-$12.964 & 330 & $-$14.882 & 16.469\\
+ 62 &  23.150 &  5.880 & 152 &   9.030 & $-$18.835 & 242 & $-$18.129 & $-$12.473 & 332 & $-$14.052 & 16.971\\
+ 64 &  23.342 &  5.137 & 154 &   8.417 & $-$19.070 & 244 & $-$18.569 & $-$11.969 & 334 & $-$13.190 & 17.445\\
+ 66 &  23.497 &  4.392 & 156 &   7.796 & $-$19.288 & 246 & $-$18.996 & $-$11.450 & 336 & $-$12.298 & 17.889\\
+ 68 &  23.617 &  3.648 & 158 &   7.170 & $-$19.490 & 248 & $-$19.409 & $-$10.918 & 338 & $-$11.377 & 18.303\\
+ 70 &  23.703 &  2.905 & 160 &   6.538 & $-$19.675 & 250 & $-$19.809 & $-$10.373 & 340 & $-$10.431 & 18.685\\
+ 72 &  23.755 &  2.165 & 162 &   5.900 & $-$19.842 & 252 & $-$20.195 & $-$9.815 & 342 &  $-$9.460 & 19.035\\
+ 74 &  23.775 &  1.429 & 164 &   5.257 & $-$19.993 & 254 & $-$20.566 & $-$9.243 & 344 &  $-$8.467 & 19.350\\
+ 76 &  23.764 &  0.697 & 166 &   4.610 & $-$20.126 & 256 & $-$20.920 & $-$8.659 & 346 &  $-$7.454 & 19.631\\
+ 78 &  23.723 & $-$0.030 & 168 &   3.959 & $-$20.242 & 258 & $-$21.259 & $-$8.062 & 348 &  $-$6.422 & 19.876\\
+ 80 &  23.652 & $-$0.750 & 170 &   3.304 & $-$20.340 & 260 & $-$21.580 & $-$7.452 & 350 &  $-$5.376 & 20.085\\
+ 82 &  23.553 & $-$1.463 & 172 &   2.647 & $-$20.420 & 262 & $-$21.884 & $-$6.831 & 352 &  $-$4.316 & 20.257\\
+ 84 &  23.428 & $-$2.168 & 174 &   1.987 & $-$20.483 & 264 & $-$22.168 & $-$6.197 & 354 &  $-$3.247 & 20.391\\
+ 86 &  23.276 & $-$2.864 & 176 &   1.326 & $-$20.528 & 266 & $-$22.433 & $-$5.552 & 356 &  $-$2.169 & 20.487\\
+ 88 &  23.100 & $-$3.551 & 178 &   0.663 & $-$20.555 & 268 & $-$22.677 & $-$4.896 & 358 &  $-$1.086 & 20.544\\
+ 90 &  22.900 & $-$4.229 & 180 &   0.000 & $-$20.564 & 270 & $-$22.900 & $-$4.229 & 360 &  $-$0.000 & 20.564\\
 \end{tabular}}
-\caption{\em Deferential anomalies of Mercury.}\label{vt21}
+\caption{Deferential anomalies of Mercury.}\label{vt21}
 \end{table}
 
 \newpage
@@ -764,7 +776,7 @@ $\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ \\\hline
  44 & \tiny{  1.672} &  11.462 & \tiny{  2.347} &  89 & \tiny{  3.413} &  20.155 & \tiny{  5.049} & 134 & \tiny{  4.274} &  19.673 & \tiny{  7.319} & 179 & \tiny{  0.152} &   0.586 & \tiny{  0.317}\\
  45 & \tiny{  1.711} &  11.702 & \tiny{  2.403} &  90 & \tiny{  3.450} &  20.277 & \tiny{  5.113} & 135 & \tiny{  4.257} &  19.475 & \tiny{  7.325} & 180 & \tiny{  0.000} &   0.000 & \tiny{  0.000}\\
 \end{tabular}}
-\caption[\em Epicyclic anomalies of Mercury.]{\em Epicyclic anomalies of Mercury. All quantities are in degrees. Note that $\bar{\theta}(360^\circ-\mu) = -\bar{\theta}(\mu)$, and $\delta\theta_{\pm}(360^\circ-\mu) = -\delta\theta_{\pm}(\mu)$. }\label{vt22}
+\caption{Epicyclic anomalies of Mercury. All quantities are in degrees. Note that $\bar{\theta}(360^\circ-\mu) = -\bar{\theta}(\mu)$, and $\delta\theta_{\pm}(360^\circ-\mu) = -\delta\theta_{\pm}(\mu)$. }\label{vt22}
 \end{table}
 
 
@@ -813,5 +825,5 @@ Superior Conjunction & 14/11/2002 & 21SC39&\\
 Greatest Elongation & 26/12/2002 & 24CP01 & $19.8^\circ$ E\\
 \end{tabular}}
 \caption{\em The conjunctions and greatest elongations of Mercury
-during the years 2000--2002 CE.}\label{vtmercury}
+during the years 2000--2002 AD.}\label{vtmercury}
 \end{table}
