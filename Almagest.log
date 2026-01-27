@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  13 JAN 2026 16:50
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  27 JAN 2026 14:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -785,178 +785,178 @@ LaTeX Info: Redefining \rmfamily on input line 64.
 LaTeX Info: Redefining \sffamily on input line 64.
 LaTeX Info: Redefining \ttfamily on input line 64.
  [4]
-LaTeX Info: Redefining \rmfamily on input line 128.
-LaTeX Info: Redefining \sffamily on input line 128.
-LaTeX Info: Redefining \ttfamily on input line 128.
 LaTeX Info: Redefining \rmfamily on input line 129.
 LaTeX Info: Redefining \sffamily on input line 129.
 LaTeX Info: Redefining \ttfamily on input line 129.
+LaTeX Info: Redefining \rmfamily on input line 130.
+LaTeX Info: Redefining \sffamily on input line 130.
+LaTeX Info: Redefining \ttfamily on input line 130.
 File: epsfiles/sun.eps Graphic file (type eps)
 <epsfiles/sun.eps>
 
-Underfull \vbox (badness 1152) has occurred while \output is active []
+Underfull \vbox (badness 1990) has occurred while \output is active []
 
  [5]
-Underfull \vbox (badness 2875) has occurred while \output is active []
+Underfull \vbox (badness 1210) has occurred while \output is active []
 
  [6]
-Underfull \vbox (badness 3895) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
 [8]
 File: epsfiles/fig1.2x.eps Graphic file (type eps)
 <epsfiles/fig1.2x.eps>
- [9]) [10]
+ [9]) [10] [11]
 \openout2 = `Spherical/Spherical.aux'.
 
- (./Spherical/Spherical.tex
-Chapter 2.
-File: epsfiles/sphere1.eps Graphic file (type eps)
-<epsfiles/sphere1.eps>
-[11
+ (./Spherical/Spherical.tex [12
 
 
 
 
 ]
+Chapter 2.
+File: epsfiles/sphere1.eps Graphic file (type eps)
+<epsfiles/sphere1.eps>
+[13]
 File: epsfiles/sphere2.eps Graphic file (type eps)
 <epsfiles/sphere2.eps>
- [12]
+ [14]
 File: epsfiles/sphere3.eps Graphic file (type eps)
 <epsfiles/sphere3.eps>
- [13]
+ [15]
 File: epsfiles/sphere4.eps Graphic file (type eps)
 <epsfiles/sphere4.eps>
 
 Underfull \vbox (badness 2150) has occurred while \output is active []
 
- [14]
-[15]
+ [16]
+[17]
 File: epsfiles/sphere5.eps Graphic file (type eps)
 <epsfiles/sphere5.eps>
 File: epsfiles/sphere6.eps Graphic file (type eps)
 <epsfiles/sphere6.eps>
 File: epsfiles/sphere8.eps Graphic file (type eps)
 <epsfiles/sphere8.eps>
- [16] [17]
+ [18] [19]
 File: epsfiles/sphere9.eps Graphic file (type eps)
 <epsfiles/sphere9.eps>
- [18] [19]
+ [20] [21]
 File: epsfiles/sphere7.eps Graphic file (type eps)
 <epsfiles/sphere7.eps>
- [20]
+ [22]
 File: epsfiles/sphere10.eps Graphic file (type eps)
 <epsfiles/sphere10.eps>
- [21] [22] [23]
+ [23] [24] [25]
 Underfull \vbox (badness 1990) has occurred while \output is active []
 
- [24]
-[25]
+ [26]
+[27]
 File: epsfiles/altitude1.eps Graphic file (type eps)
 <epsfiles/altitude1.eps>
 File: epsfiles/altitude2.eps Graphic file (type eps)
 <epsfiles/altitude2.eps>
- [26] [27] [28] [29]
+ [28] [29] [30] [31]
 File: epsfiles/ecliptic2.eps Graphic file (type eps)
 <epsfiles/ecliptic2.eps>
- [30]
+ [32]
 File: epsfiles/ecliptic1.eps Graphic file (type eps)
 <epsfiles/ecliptic1.eps>
- [31] [32] [33] [34] [35] [36] [37] [38] [39]
-[40] [41] [42] [43] [44] [45] [46] [47] [48]
-Overfull \vbox (292.41997pt too high) detected at line 1735
+ [33] [34] [35] [36] [37] [38] [39] [40] [41]
+[42] [43] [44] [45] [46] [47] [48] [49] [50]
+Overfull \vbox (292.41997pt too high) detected at line 1737
  []
 
 
-Overfull \vbox (286.41997pt too high) detected at line 1735
+Overfull \vbox (286.41997pt too high) detected at line 1737
  []
 
 
-Overfull \vbox (304.41997pt too high) detected at line 1851
+Overfull \vbox (304.41997pt too high) detected at line 1853
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 1851
+Overfull \vbox (298.41997pt too high) detected at line 1853
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 1853.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 1855.
 
 
-Overfull \vbox (304.41997pt too high) detected at line 1967
+Overfull \vbox (304.41997pt too high) detected at line 1969
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 1967
+Overfull \vbox (298.41997pt too high) detected at line 1969
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 1969.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 1971.
 
 
-Overfull \vbox (304.41997pt too high) detected at line 2083
+Overfull \vbox (304.41997pt too high) detected at line 2085
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2083
+Overfull \vbox (298.41997pt too high) detected at line 2085
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2085.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 2087.
 
 
-Overfull \vbox (304.41997pt too high) detected at line 2199
+Overfull \vbox (304.41997pt too high) detected at line 2201
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2199
+Overfull \vbox (298.41997pt too high) detected at line 2201
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2201.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 2203.
 
 
-Overfull \vbox (304.41997pt too high) detected at line 2315
+Overfull \vbox (304.41997pt too high) detected at line 2317
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2315
+Overfull \vbox (298.41997pt too high) detected at line 2317
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2317.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 2319.
 
 
-Overfull \vbox (304.41997pt too high) detected at line 2431
+Overfull \vbox (304.41997pt too high) detected at line 2433
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2431
+Overfull \vbox (298.41997pt too high) detected at line 2433
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2433.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 2435.
 
 
-Overfull \vbox (274.41997pt too high) detected at line 2538
+Overfull \vbox (274.41997pt too high) detected at line 2540
  []
 
 
-Overfull \vbox (274.41997pt too high) detected at line 2538
+Overfull \vbox (274.41997pt too high) detected at line 2540
  []
 
 
-Overfull \vbox (268.41997pt too high) detected at line 2642
+Overfull \vbox (268.41997pt too high) detected at line 2644
  []
 
 
-Overfull \vbox (262.41997pt too high) detected at line 2642
+Overfull \vbox (262.41997pt too high) detected at line 2644
  []
 
-) [49] [50] [51] [52] [53] [54] [55] [56] [57]
+) [51] [52] [53] [54] [55] [56] [57] [58] [59]
 \openout2 = `Julian/Julian.aux'.
 
- (./Julian/Julian.tex [58
+ (./Julian/Julian.tex [60
 
 
 
@@ -972,23 +972,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--48
 
  []
 
-[59]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 49--62
 
  []
 
-[60]
+[62]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[61]
+[63]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [62] [63]
+) [64] [65]
 \openout2 = `Kepler/Kepler.aux'.
 
- (./Kepler/Kepler.tex [64
+ (./Kepler/Kepler.tex [66
 
 
 
@@ -997,32 +997,32 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Chapter 4.
 File: epsfiles/fig1.eps Graphic file (type eps)
 <epsfiles/fig1.eps>
-[65] [66] [67]
+[67] [68] [69]
 File: epsfiles/hipp1.eps Graphic file (type eps)
 <epsfiles/hipp1.eps>
- [68]
+ [70]
 File: epsfiles/ptol1.eps Graphic file (type eps)
 <epsfiles/ptol1.eps>
 
 Underfull \vbox (badness 1142) has occurred while \output is active []
 
- [69]
+ [71]
 File: epsfiles/cop1.eps Graphic file (type eps)
 <epsfiles/cop1.eps>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[70])
+[72])
 Overfull \hbox (1.22379pt too wide) in paragraph at lines 254--33
 \TU/TimesNewRoman(0)/m/n/10.95 It can be seen, by comparison with Equations (4.
 22[])–(4.23[]) and (4.30[])–(4.31[]), that, as is the case for Ptolemy’s
  []
 
-[71]
+[73]
 \openout2 = `Sun/Sun.aux'.
 
- (./Sun/Sun.tex [72
+ (./Sun/Sun.tex [74
 
 
 
@@ -1034,29 +1034,29 @@ File: epsfiles/fig3.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[73] [74]
+[75] [76]
 Underfull \hbox (badness 10000) in paragraph at lines 122--142
 
  []
 
-[75]
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 160--182
 
  []
 
-[76]
+[78]
 File: epsfiles/solstice.eps Graphic file (type eps)
 <epsfiles/solstice.eps>
- [77] [78] [79] [80]
+ [79] [80] [81] [82]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [81] [82] [83] [84]
+) [83] [84] [85] [86]
 \openout2 = `Moon/Moon.aux'.
 
  (./Moon/Moon.tex
 Chapter 6.
-[85
+[87
 
 
 
@@ -1068,21 +1068,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--106
 
  []
 
-[86]
+[88]
 Underfull \hbox (badness 10000) in paragraph at lines 135--154
 
  []
 
-[87]
+[89]
 File: epsfiles/moon.eps Graphic file (type eps)
 <epsfiles/moon.eps>
- [88]
+ [90]
 File: epsfiles/parallax.eps Graphic file (type eps)
 <epsfiles/parallax.eps>
- [89]
+ [91]
 File: epsfiles/para.eps Graphic file (type eps)
 <epsfiles/para.eps>
- [90] [91]
+ [92] [93]
 Underfull \hbox (badness 10000) in paragraph at lines 347--366
 
  []
@@ -1102,15 +1102,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--366
 
  []
 
-[92] [93]
+[94] [95]
 Overfull \hbox (24.78893pt too wide) in paragraph at lines 423--478
  [][][][] 
  []
 
-) [94] [95] [96] [97]
+) [96] [97] [98] [99]
 \openout2 = `Syzygy/Syzygy.aux'.
 
- (./Syzygy/Syzygy.tex [98
+ (./Syzygy/Syzygy.tex [100
 
 
 
@@ -1123,8 +1123,8 @@ File: epsfiles/phase.eps Graphic file (type eps)
 
 Underfull \vbox (badness 3386) has occurred while \output is active []
 
- [99]
-[100]
+ [101]
+[102]
 Underfull \hbox (badness 10000) in paragraph at lines 82--105
 
  []
@@ -1134,19 +1134,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--151
 
  []
 
-[101] [102]
+[103] [104]
 File: epsfiles/umbra.eps Graphic file (type eps)
 <epsfiles/umbra.eps>
 File: epsfiles/totalm.eps Graphic file (type eps)
 <epsfiles/totalm.eps>
- [103] [104]
+ [105] [106]
 Underfull \vbox (badness 2150) has occurred while \output is active []
 
- [105]
+ [107]
 
-LaTeX Warning: Reference `eps' on page 106 undefined on input line 389.
+LaTeX Warning: Reference `eps' on page 108 undefined on input line 389.
 
-[106] [107]
+[108] [109]
 Overfull \hbox (27.72298pt too wide) in paragraph at lines 422--459
  [][][][] 
  []
@@ -1156,10 +1156,10 @@ Overfull \hbox (24.78893pt too wide) in paragraph at lines 464--519
  [][][][] 
  []
 
-) [108] [109] [110] [111]
+) [110] [111] [112] [113]
 \openout2 = `Superior/Superior.aux'.
 
- (./Superior/Superior.tex [112
+ (./Superior/Superior.tex [114
 
 
 
@@ -1179,7 +1179,7 @@ File: epsfiles/figv5.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[113] [114] [115] [116] [117]
+[115] [116] [117] [118] [119]
 Underfull \hbox (badness 10000) in paragraph at lines 229--249
 
  []
@@ -1189,24 +1189,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--308
 
  []
 
-[118]
+[120]
 File: epsfiles/epicycle.eps Graphic file (type eps)
 <epsfiles/epicycle.eps>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[119] [120] [121]
+[121] [122] [123]
 Underfull \hbox (badness 10000) in paragraph at lines 456--475
 
  []
 
-[122]
+[124]
 Underfull \hbox (badness 10000) in paragraph at lines 536--556
 
  []
 
-[123] [124]
+[125] [126]
 Overfull \hbox (13.57872pt too wide) in paragraph at lines 701--751
  [][][][] 
  []
@@ -1221,11 +1221,11 @@ Overfull \hbox (1.93974pt too wide) in paragraph at lines 960--1013
  [][][][] 
  []
 
-) [125] [126] [127] [128] [129] [130] [131] [132] [133] [134] [135] [136]
-[137]
+) [127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138]
+[139]
 \openout2 = `Inferior/Inferior.aux'.
 
- (./Inferior/Inferior.tex [138
+ (./Inferior/Inferior.tex [140
 
 
 
@@ -1238,28 +1238,28 @@ File: epsfiles/fig8.eps Graphic file (type eps)
 
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
- [139]
-[140]
+ [141]
+[142]
 Underfull \hbox (badness 10000) in paragraph at lines 136--156
 
  []
 
-[141]
+[143]
 Underfull \hbox (badness 10000) in paragraph at lines 193--213
 
  []
 
-[142] [143] [144]
+[144] [145] [146]
 Underfull \hbox (badness 10000) in paragraph at lines 352--372
 
  []
 
-[145] [146]
+[147] [148]
 Overfull \hbox (11.93974pt too wide) in paragraph at lines 521--574
  [][][][] 
  []
 
-[147] [148] [149] [150]
+[149] [150] [151] [152]
 Overfull \hbox (23.57872pt too wide) in paragraph at lines 671--721
  [][][][] 
  []
@@ -1269,12 +1269,12 @@ Overfull \hbox (11.93974pt too wide) in paragraph at lines 726--779
  [][][][] 
  []
 
-) [151] [152] [153] [154]
+) [153] [154] [155] [156]
 \openout2 = `Latitude/Latitude.aux'.
 
  (./Latitude/Latitude.tex
 Chapter 10.
-[155
+[157
 
 
 
@@ -1284,12 +1284,12 @@ Chapter 10.
 ]
 File: epsfiles/long.eps Graphic file (type eps)
 <epsfiles/long.eps>
- [156] [157]
+ [158] [159]
 Underfull \hbox (badness 10000) in paragraph at lines 157--179
 
  []
 
-[158]
+[160]
 Underfull \hbox (badness 10000) in paragraph at lines 211--233
 
  []
@@ -1299,7 +1299,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--287
 
  []
 
-[159] [160]
+[161] [162]
 File: epsfiles/long1.eps Graphic file (type eps)
 <epsfiles/long1.eps>
 
@@ -1309,13 +1309,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 7047) has occurred while \output is active []
 
- [161]
-[162]
+ [163]
+[164]
 Underfull \hbox (badness 10000) in paragraph at lines 454--476
 
  []
 
-[163]
+[165]
 Underfull \hbox (badness 10000) in paragraph at lines 509--531
 
  []
@@ -1323,8 +1323,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 509--531
 
 Underfull \vbox (badness 1231) has occurred while \output is active []
 
- [164]
-[165]
+ [166]
+[167]
 Overfull \hbox (21.46948pt too wide) in paragraph at lines 629--682
  [][][][] 
  []
@@ -1339,36 +1339,36 @@ Overfull \hbox (21.46948pt too wide) in paragraph at lines 861--914
  [][][][] 
  []
 
-) [166] [167] [168] [169] [170] [171] [172] [173] [174] [175] [176]
+) [168] [169] [170] [171] [172] [173] [174] [175] [176] [177] [178]
 \openout2 = `Glossary/Glossary.aux'.
 
 
-(./Glossary/Glossary.tex [177
+(./Glossary/Glossary.tex [179
 
 
 
 
 
-] [178] [179] [180]) [181]
+] [180] [181] [182]) [183]
 \openout2 = `Symbol/Symbol.aux'.
 
  (./Symbol/Symbol.tex
-[182
+[184
 
 
 
 
 
-] [183])
+] [185])
 \openout2 = `Bibliography/Bibliography.aux'.
 
- (./Bibliography/Bibliography.tex [184
+ (./Bibliography/Bibliography.tex [186
 
 
 
 
 
-]) [185]
+]) [187]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1627,10 +1627,10 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  7324 strings out of 476683
  185291 string characters out of 5804047
- 2164018 words of memory out of 5000000
+ 2165018 words of memory out of 5000000
  27298 multiletter control sequences out of 15000+600000
  518764 words of font info for 96 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,11n,77p,642b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Almagest.pdf (185 pages).
+Output written on Almagest.pdf (187 pages).
