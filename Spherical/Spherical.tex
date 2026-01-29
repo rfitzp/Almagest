@@ -158,6 +158,10 @@ be used
  to convert ecliptic longitude and latitude into approximate position
 in the sky against the backdrop of the fixed stars.
 
+Figures~\ref{map1} and \ref{map2}  and   Table~\ref{tstar}  contain more or less the same information that is contained in Section~5 of Book VII of the Almagest
+(although we have restricted our attention to stars that lie relatively close to the ecliptic). Incidentally, the ancient Greeks did not individually name stars, describing them instead 
+in figurative terms, such as ``the bright, reddish star on the right shoulder of Orion" (Betelgeuse). 
+
 \section{Signs of the Zodiac}\label{szod}
 The {\em signs of the zodiac}  are a well-known set of names given
 to $30^\circ$ long segments of the ecliptic circle. Thus, the sign of Aries extends
@@ -174,12 +178,18 @@ Sagittarius, et cetera.
 \begin{tabular}{lcl|lcl|lcl}
 Sign & Abbr.\ & Longitude & Sign & Abbr.\ &Longitude & Sign & Abbr.\ &  Longitude\\[-0.0ex]\hline
 &&&&&&&&\\[-1.8ex]
-Aries & AR & $~~0^\circ$--$30^\circ$ & Leo & LE & $120^\circ$--$150^\circ$&Sagittarius & SG & $240^\circ$--$270^\circ$\\
-Taurus & TA & $30^\circ$--$60^\circ$ & Virgo & VI & $150^\circ$--$180^\circ$ & Capricorn & CP & $270^\circ$--$300^\circ$\\
-Gemini & GE & $60^\circ$--$90^\circ$ & Libra & LI & $180^\circ$--$210^\circ$ & Aquarius & AQ & $300^\circ$--$330^\circ$\\
-Cancer & CN & $90^\circ$--$120^\circ$ & Scorpio & SC & $210^\circ$--$240^\circ$ & Pisces & PI & $330^\circ$--$360^\circ$\\
+Aries & AR & $000^\circ$--$030^\circ$ & Leo & LE & $120^\circ$--$150^\circ$&Sagittarius & SG & $240^\circ$--$270^\circ$\\
+Taurus & TA & $030^\circ$--$060^\circ$ & Virgo & VI & $150^\circ$--$180^\circ$ & Capricorn & CP & $270^\circ$--$300^\circ$\\
+Gemini & GE & $060^\circ$--$090^\circ$ & Libra & LI & $180^\circ$--$210^\circ$ & Aquarius & AQ & $300^\circ$--$330^\circ$\\
+Cancer & CN & $090^\circ$--$120^\circ$ & Scorpio & SC & $210^\circ$--$240^\circ$ & Pisces & PI & $330^\circ$--$360^\circ$\\
 \end{tabular}
 \end{table}
+
+Incidentally, the term zodiac comes from the Greek ζῳδιακός κύκλος, meaning ``circle of little animals".  The Greek names for the
+zodiacal signs were  Κριός (Ram),  Ταῦρος (Bull), Δίδυμοι (Twins), Κάρκινος (Crab), 
+Λέων (Lion), Παρθένος (Virgin), Ζυγός (Balance/scale), Σκορπιός (Scorpion),
+Τοξότης (Archer), Αἰγόκερως (Goat-horned), Ὑδροχόος (Water-pourer), and  Ἰχθύες  (Fish). The familiar names listed in the previous table are
+merely latinized versions of the Greek names. 
 
 \section{Ecliptic Declinations and Right Ascensions.}
 According to Equations~(\ref{e10}) and (\ref{e11}), the celestial coordinates of a point on the ecliptic circle (which corresponds to $\beta = 0$) that has ecliptic
@@ -191,6 +201,11 @@ longitude $\lambda$ are specified by
 The previous formulae have been used to construct
 Tables~\ref{tec1} and \ref{tec2}, which  list the declinations and right ascensions of a set of equally spaced points on the ecliptic circle.
 Note that $\lambda$ is measured relative to the start of the appropriate zodiacal sign. 
+
+ Tables ~\ref{tec1} and \ref{tec2}  contain essentially the same information
+as is contained in the ``Table of inclinations" (Κανόνιoν λοξώσεως) that appears in Section~15 of Book~I of the Almagest. The slight difference between the values appearing in our
+tables  and those appearing in Ptolemy's table is due to the fact that Ptolemy adopted the value $23^\circ 51' 20''$ for the obliquity of the ecliptic, whereas we
+are using the modern (and correct) value $23^\circ26'$. 
 
 \section{Local Horizon and Meridian}
 Consider a general observation site $X$ located on the surface of the Earth. (Note that, in the following, it is
@@ -401,7 +416,7 @@ solstice is given by $\sin a = \sin L\,\sin \epsilon + \cos L\,\cos\epsilon\,\si
 Thus, the Sun rises when $\alpha_0=-\sin^{-1}(\tan L\,\tan\epsilon)$, 
 culminates at an altitude of $90^\circ - |L- \epsilon|$ when $\alpha_0=90^\circ$, and sets when $\alpha_0=180^\circ + \sin ^{-1}(\tan L\,\tan\epsilon)$. We conclude that the length  of the longest day of the year in the Earth's northern hemisphere
 (which, of course, occurs when the Sun reaches the summer solstice)
-is $180 +2\,\sin ^{-1}(\tan L\,\tan\epsilon)$ time-degrees. Likewise, the
+is $180^\circ +2\,\sin ^{-1}(\tan L\,\tan\epsilon)$ time-degrees. Likewise, the
 length of the shortest night (which also occurs at the summer solstice) is $180-2\, \sin^{-1}(\tan L\,\tan\epsilon)$ time-degrees.
 These formulae are only valid for northern latitudes below the arctic circle. 
 At higher latitudes, the Sun never sets for part of the year, and the longest
@@ -435,6 +450,8 @@ using the formulae in the previous section.  The table can be adapted to observa
 southern hemisphere via the following simple transformation: $L\rightarrow -L$, Summer $\leftrightarrow$ Winter, N $\leftrightarrow$ S. For instance, at a latitude of $-10^\circ$, the longest day, which corresponds
 to the winter solstice, is of length $12^h35^m$. Moreover, on this day, the Sun's upper transit
 is  south  of the zenith, at an altitude of $+76^\circ 34'$. 
+
+Table~\ref{t3} contains essentially the same information as is contained in the discussion that appears in Section~6 of Book~II of the Almagest. 
 
 \section{Ecliptic Ascensions}
 Consider the rising, or {\em ascension}, of celestial objects at the eastern
@@ -598,6 +615,9 @@ right ascension of the point on the celestial equator that culminates
 simultaneously with the point is question is $35^\circ 38' + 105^\circ00'= 
  140^\circ 38'$. Consulting Table~\ref{tx} again, we find that, to the nearest degree,  the
  ecliptic longitude of the point in question is 18LE00.
+ 
+ Note that Tables~\ref{tx}--\ref{ty} contain essentially the same information as is contained in the ``Table of ascensions by tenth parts'' (Κανόνιον τῶν κατὰ δεκαμοιρίαν ἀναφορῶν)
+ that appears in Section~8 of Book~II of the Almagest. 
  
 \section{Azimuth of  Ecliptic Ascension Point}
 Consider the azimuth of the point on the ecliptic circle that is ascending at the
@@ -779,7 +799,10 @@ $\mu=360^\circ -162^\circ 11'=197^\circ 49'$, respectively (because $a\rightarro
 $L\rightarrow-L$).
 This row also tells us that, $t=$\,\,03:00 hours after culmination, the altitude and
 parallactic angle of the first point of Gemini are $a=36^\circ 26'$ and
-$\mu=360^\circ -042^\circ 17'=317^\circ 43'$, respectively
+$\mu=360^\circ -042^\circ 17'=317^\circ 43'$, respectively. 
+
+Note that Tables \ref{ltxx}--\ref{ltyy} contain essentially the same information as is contained in the ``Tabulation of angles and arcs according to parallels"
+(῎Εκθεσις τῶν κατὰ παράλληλον γωνιῶν καὶ περιφερειῶν) that appears in Section~13 of Book~II of the Almagest. 
 
 \newpage
 \begin{figure}[h]
@@ -1612,7 +1635,7 @@ $06^\circ$ & $213^\circ54'$ & $06^\circ$ & --- & $06^\circ$ & --- & $06^\circ$ &
 $08^\circ$ & $226^\circ40'$ & $08^\circ$ & --- & $08^\circ$ & --- & $08^\circ$ & --- &  $08^\circ$ & --- & $08^\circ$ & ---\\
 $10^\circ$ & $241^\circ29'$ & $10^\circ$ & --- & $10^\circ$ & --- & $10^\circ$ & --- &  $10^\circ$ & --- & $10^\circ$ & ---\\
 $12^\circ$ & $262^\circ32'$ & $12^\circ$ & --- & $12^\circ$ & --- & $12^\circ$ & --- &  $12^\circ$ & --- & $12^\circ$ & ---\\
-$12^\circ39'$ & $281^\circ40'$ & $14^\circ$ & --- & $14^\circ$ & --- & $14^\circ$ & --- &  $14^\circ$ & --- & $14^\circ$ & ---\\
+$12^\circ39'$ & $281^\circ39'$ & $14^\circ$ & --- & $14^\circ$ & --- & $14^\circ$ & --- &  $14^\circ$ & --- & $14^\circ$ & ---\\
 $16^\circ$ & --- & $16^\circ$ & --- & $16^\circ$ & --- & $16^\circ$ & --- &  $16^\circ$ & --- & $17^\circ20'$ &$078^\circ21'$\\
 $18^\circ$ & --- & $18^\circ$ & --- & $18^\circ$ & --- & $18^\circ$ & --- &  $18^\circ$ & --- & $18^\circ$ & $060^\circ28'$\\
 $20^\circ$ & --- & $20^\circ$ & --- & $20^\circ$ & --- & $20^\circ$ & --- &  $20^\circ$ & --- & $20^\circ$ & $043^\circ07'$\\
@@ -1632,106 +1655,105 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 {\small
 \begin{tabular}{l|lll}
 \multicolumn{4}{c}{Aries}\\
-00:00& $90^\circ 00'$ & $314^\circ 53'$& $178^\circ 15'$ \\
-01:00 & $75^\circ 00'$ & $156^\circ 34'$& $336^\circ 34'$ \\
-02:00 & $60^\circ 00'$ & $156^\circ 34'$& $336^\circ 34'$ \\
-03:00 & $45^\circ 00'$ & $156^\circ 34'$& $336^\circ 34'$ \\
-04:00 & $30^\circ 00'$ & $156^\circ 34'$& $336^\circ 34'$ \\
-05:00 & $15^\circ 00'$ & $156^\circ 34'$& $336^\circ 34'$ \\
-06:00 & $00^\circ 00'$ & $156^\circ 34'$& $336^\circ 34'$ \\
+00:00 & $90^\circ 00'$ & $156^\circ 34'$ & $336^\circ 34'$\\
+01:00 & $75^\circ 00'$ & $156^\circ 34'$ & $336^\circ 34'$\\
+02:00 & $60^\circ 00'$ & $156^\circ 34'$ & $336^\circ 34'$\\
+03:00 & $45^\circ 00'$ & $156^\circ 34'$ & $336^\circ 34'$\\
+04:00 & $30^\circ 00'$ & $156^\circ 34'$ & $336^\circ 34'$\\
+05:00 & $15^\circ 00'$ & $156^\circ 34'$ & $336^\circ 34'$\\
+06:00 & $00^\circ 00'$ & $156^\circ 34'$ & $336^\circ 34'$\\
 \multicolumn{4}{c}{Taurus}\\ 
-00:00 & $78^\circ 32'$ & $249^\circ 26'$& $249^\circ 26'$ \\
-01:00 & $71^\circ 12'$ & $196^\circ 00'$& $302^\circ 51'$ \\
-02:00 & $58^\circ 04'$ & $178^\circ 26'$& $320^\circ 25'$ \\
-03:00 & $43^\circ 52'$ & $170^\circ 40'$& $328^\circ 11'$ \\
-04:00 & $29^\circ 20'$ & $165^\circ 58'$& $332^\circ 53'$ \\
-05:00 & $14^\circ 42'$ & $162^\circ 29'$& $336^\circ 23'$ \\
-06:00 & $00^\circ 00'$ & $159^\circ 26'$& $339^\circ 26'$ \\
+00:00 & $78^\circ 32'$ & $249^\circ 26'$ & $249^\circ 26'$\\
+01:00 & $71^\circ 12'$ & $196^\circ 00'$ & $302^\circ 51'$\\
+02:00 & $58^\circ 04'$ & $178^\circ 26'$ & $320^\circ 25'$\\
+03:00 & $43^\circ 52'$ & $170^\circ 40'$ & $328^\circ 11'$\\
+04:00 & $29^\circ 20'$ & $165^\circ 58'$ & $332^\circ 53'$\\
+05:00 & $14^\circ 42'$ & $162^\circ 29'$ & $336^\circ 23'$\\
+06:00 & $00^\circ 00'$ & $159^\circ 26'$ & $339^\circ 26'$\\
 \multicolumn{4}{c}{Gemini}\\
-00:00 & $69^\circ 51'$ & $257^\circ 46'$& $257^\circ 46'$ \\
-01:00 & $65^\circ 04'$ & $219^\circ 53'$& $295^\circ 39'$ \\
-02:00 & $54^\circ 24'$ & $198^\circ 35'$& $316^\circ 57'$ \\
-03:00 & $41^\circ 36'$ & $186^\circ 47'$& $328^\circ 46'$ \\
-04:00 & $28^\circ 00'$ & $179^\circ 01'$& $336^\circ 32'$ \\
-05:00 & $14^\circ 04'$ & $173^\circ 03'$& $342^\circ 30'$ \\
-06:00 & $00^\circ 00'$ & $167^\circ 46'$& $347^\circ 46'$ \\
+00:00 & $69^\circ 51'$ & $257^\circ 46'$ & $257^\circ 46'$\\
+01:00 & $65^\circ 04'$ & $219^\circ 53'$ & $295^\circ 39'$\\
+02:00 & $54^\circ 24'$ & $198^\circ 35'$ & $316^\circ 57'$\\
+03:00 & $41^\circ 36'$ & $186^\circ 47'$ & $328^\circ 46'$\\
+04:00 & $28^\circ 00'$ & $179^\circ 01'$ & $336^\circ 32'$\\
+05:00 & $14^\circ 04'$ & $173^\circ 03'$ & $342^\circ 30'$\\
+06:00 & $00^\circ 00'$ & $167^\circ 46'$ & $347^\circ 46'$\\
 \multicolumn{4}{c}{Cancer}\\
-00:00 & $69^\circ 51'$ & $282^\circ 14'$& $282^\circ 14'$ \\
-01:00 & $65^\circ 04'$ & $244^\circ 21'$& $320^\circ 07'$ \\
-02:00 & $54^\circ 24'$ & $223^\circ 03'$& $341^\circ 25'$ \\
-03:00 & $41^\circ 36'$ & $211^\circ 14'$& $353^\circ 13'$ \\
-04:00 & $28^\circ 00'$ & $203^\circ 28'$& $000^\circ 59'$ \\
-05:00 & $14^\circ 04'$ & $197^\circ 30'$& $006^\circ 57'$ \\
-06:00 & $00^\circ 00'$ & $192^\circ 14'$& $012^\circ 14'$ \\
-06:00 & $00^\circ 00'$ & $192^\circ 14'$& $012^\circ 14'$ \\
+00:00 & $66^\circ 34'$ & $270^\circ 00'$ & $270^\circ 00'$\\
+01:00 & $62^\circ 24'$ & $236^\circ 02'$ & $303^\circ 58'$\\
+02:00 & $52^\circ 37'$ & $214^\circ 34'$ & $325^\circ 26'$\\
+03:00 & $40^\circ 27'$ & $201^\circ 41'$ & $338^\circ 19'$\\
+04:00 & $27^\circ 18'$ & $192^\circ 56'$ & $347^\circ 04'$\\
+05:00 & $13^\circ 44'$ & $186^\circ 05'$ & $353^\circ 55'$\\
+06:00 & $00^\circ 00'$ & $180^\circ 00'$ & $000^\circ 00'$\\
 \multicolumn{4}{c}{Leo}\\
-00:00 & $69^\circ 51'$ & $282^\circ 14'$& $282^\circ 14'$ \\
-01:00 & $65^\circ 04'$ & $244^\circ 21'$& $320^\circ 07'$ \\
-02:00 & $54^\circ 24'$ & $223^\circ 03'$& $341^\circ 25'$ \\
-03:00 & $41^\circ 36'$ & $211^\circ 14'$& $353^\circ 13'$ \\
-04:00 & $28^\circ 00'$ & $203^\circ 28'$& $000^\circ 59'$ \\
-05:00 & $14^\circ 04'$ & $197^\circ 30'$& $006^\circ 57'$ \\
-06:00 & $00^\circ 00'$ & $192^\circ 14'$& $012^\circ 14'$ \\
+00:00 & $69^\circ 51'$ & $282^\circ 14'$ & $282^\circ 14'$\\
+01:00 & $65^\circ 04'$ & $244^\circ 21'$ & $320^\circ 07'$\\
+02:00 & $54^\circ 24'$ & $223^\circ 03'$ & $341^\circ 25'$\\
+03:00 & $41^\circ 36'$ & $211^\circ 14'$ & $353^\circ 13'$\\
+04:00 & $28^\circ 00'$ & $203^\circ 28'$ & $000^\circ 59'$\\
+05:00 & $14^\circ 04'$ & $197^\circ 30'$ & $006^\circ 57'$\\
+06:00 & $00^\circ 00'$ & $192^\circ 14'$ & $012^\circ 14'$\\
 \multicolumn{4}{c}{Virgo}\\
-00:00 & $78^\circ 32'$ & $290^\circ 34'$& $290^\circ 34'$ \\
-01:00 & $71^\circ 12'$ & $237^\circ 09'$& $344^\circ 00'$ \\
-02:00 & $58^\circ 04'$ & $219^\circ 35'$& $001^\circ 34'$ \\
-03:00 & $43^\circ 52'$ & $211^\circ 49'$& $009^\circ 20'$ \\
-04:00 & $29^\circ 20'$ & $207^\circ 07'$& $014^\circ 02'$ \\
-05:00 & $14^\circ 42'$ & $203^\circ 37'$& $017^\circ 31'$ \\
-06:00 & $00^\circ 00'$ & $200^\circ 34'$& $020^\circ 34'$ \\
+00:00 & $78^\circ 32'$ & $290^\circ 34'$ & $290^\circ 34'$\\
+01:00 & $71^\circ 12'$ & $237^\circ 09'$ & $344^\circ 00'$\\
+02:00 & $58^\circ 04'$ & $219^\circ 35'$ & $001^\circ 34'$\\
+03:00 & $43^\circ 52'$ & $211^\circ 49'$ & $009^\circ 20'$\\
+04:00 & $29^\circ 20'$ & $207^\circ 07'$ & $014^\circ 02'$\\
+05:00 & $14^\circ 42'$ & $203^\circ 37'$ & $017^\circ 31'$\\
+06:00 & $00^\circ 00'$ & $200^\circ 34'$ & $020^\circ 34'$\\
 \end{tabular}
 }}
 \ParallelRText{{\small
 \begin{tabular}{l|lll}
 \multicolumn{4}{c}{Libra}\\
-00:00 & $90^\circ 00'$ & $045^\circ 07'$& $181^\circ 45'$ \\
-01:00 & $75^\circ 00'$ & $203^\circ 26'$& $023^\circ 26'$ \\
-02:00 & $60^\circ 00'$ & $203^\circ 26'$& $023^\circ 26'$ \\
-03:00 & $45^\circ 00'$ & $203^\circ 26'$& $023^\circ 26'$ \\
-04:00 & $30^\circ 00'$ & $203^\circ 26'$& $023^\circ 26'$ \\
-05:00 & $15^\circ 00'$ & $203^\circ 26'$& $023^\circ 26'$ \\
-06:00 & $00^\circ 00'$ & $203^\circ 26'$& $023^\circ 26'$ \\
+00:00 & $90^\circ 00'$ & $203^\circ 26'$ & $023^\circ 26'$\\
+01:00 & $75^\circ 00'$ & $203^\circ 26'$ & $023^\circ 26'$\\
+02:00 & $60^\circ 00'$ & $203^\circ 26'$ & $023^\circ 26'$\\
+03:00 & $45^\circ 00'$ & $203^\circ 26'$ & $023^\circ 26'$\\
+04:00 & $30^\circ 00'$ & $203^\circ 26'$ & $023^\circ 26'$\\
+05:00 & $15^\circ 00'$ & $203^\circ 26'$ & $023^\circ 26'$\\
+06:00 & $00^\circ 00'$ & $203^\circ 26'$ & $023^\circ 26'$\\
 \multicolumn{4}{c}{Scorpio}\\
-00:00 & $78^\circ 32'$ & $110^\circ 34'$& $110^\circ 34'$ \\
-01:00 & $71^\circ 12'$ & $164^\circ 00'$& $057^\circ 09'$ \\
-02:00 & $58^\circ 04'$ & $181^\circ 34'$& $039^\circ 35'$ \\
-03:00 & $43^\circ 52'$ & $189^\circ 20'$& $031^\circ 49'$ \\
-04:00 & $29^\circ 20'$ & $194^\circ 02'$& $027^\circ 07'$ \\
-05:00 & $14^\circ 42'$ & $197^\circ 31'$& $023^\circ 37'$ \\
-06:00 & $00^\circ 00'$ & $200^\circ 34'$& $020^\circ 34'$ \\
+00:00 & $78^\circ 32'$ & $110^\circ 34'$ & $110^\circ 34'$\\
+01:00 & $71^\circ 12'$ & $164^\circ 00'$ & $057^\circ 09'$\\
+02:00 & $58^\circ 04'$ & $181^\circ 34'$ & $039^\circ 35'$\\
+03:00 & $43^\circ 52'$ & $189^\circ 20'$ & $031^\circ 49'$\\
+04:00 & $29^\circ 20'$ & $194^\circ 02'$ & $027^\circ 07'$\\
+05:00 & $14^\circ 42'$ & $197^\circ 31'$ & $023^\circ 37'$\\
+06:00 & $00^\circ 00'$ & $200^\circ 34'$ & $020^\circ 34'$\\
 \multicolumn{4}{c}{Sagittarius}\\
-00:00 & $69^\circ 51'$ & $102^\circ 14'$& $102^\circ 14'$ \\
-01:00 & $65^\circ 04'$ & $140^\circ 07'$& $064^\circ 21'$ \\
-02:00 & $54^\circ 24'$ & $161^\circ 25'$& $043^\circ 03'$ \\
-03:00 & $41^\circ 36'$ & $173^\circ 13'$& $031^\circ 14'$ \\
-04:00 & $28^\circ 00'$ & $180^\circ 59'$& $023^\circ 28'$ \\
-05:00 & $14^\circ 04'$ & $186^\circ 57'$& $017^\circ 30'$ \\
-06:00 & $00^\circ 00'$ & $192^\circ 14'$& $012^\circ 14'$ \\
+00:00 & $69^\circ 51'$ & $102^\circ 14'$ & $102^\circ 14'$\\
+01:00 & $65^\circ 04'$ & $140^\circ 07'$ & $064^\circ 21'$\\
+02:00 & $54^\circ 24'$ & $161^\circ 25'$ & $043^\circ 03'$\\
+03:00 & $41^\circ 36'$ & $173^\circ 13'$ & $031^\circ 14'$\\
+04:00 & $28^\circ 00'$ & $180^\circ 59'$ & $023^\circ 28'$\\
+05:00 & $14^\circ 04'$ & $186^\circ 57'$ & $017^\circ 30'$\\
+06:00 & $00^\circ 00'$ & $192^\circ 14'$ & $012^\circ 14'$\\
 \multicolumn{4}{c}{Capricorn}\\
-00:00 & $66^\circ 34'$ & $090^\circ 00'$& $090^\circ 00'$ \\
-01:00 & $62^\circ 24'$ & $123^\circ 58'$& $056^\circ 02'$ \\
-02:00 & $52^\circ 37'$ & $145^\circ 26'$& $034^\circ 34'$ \\
-03:00 & $40^\circ 27'$ & $158^\circ 19'$& $021^\circ 41'$ \\
-04:00 & $27^\circ 18'$ & $167^\circ 04'$& $012^\circ 56'$ \\
-05:00 & $13^\circ 44'$ & $173^\circ 55'$& $006^\circ 05'$ \\
-06:00 & $00^\circ 00'$ & $180^\circ 00'$& $360^\circ 00'$ \\
+00:00 & $66^\circ 34'$ & $090^\circ 00'$ & $090^\circ 00'$\\
+01:00 & $62^\circ 24'$ & $123^\circ 58'$ & $056^\circ 02'$\\
+02:00 & $52^\circ 37'$ & $145^\circ 26'$ & $034^\circ 34'$\\
+03:00 & $40^\circ 27'$ & $158^\circ 19'$ & $021^\circ 41'$\\
+04:00 & $27^\circ 18'$ & $167^\circ 04'$ & $012^\circ 56'$\\
+05:00 & $13^\circ 44'$ & $173^\circ 55'$ & $006^\circ 05'$\\
+06:00 & $00^\circ 00'$ & $180^\circ 00'$ & $000^\circ 00'$\\
 \multicolumn{4}{c}{Aquarius}\\
-00:00 & $69^\circ 51'$ & $077^\circ 46'$& $077^\circ 46'$ \\
-01:00 & $65^\circ 04'$ & $115^\circ 39'$& $039^\circ 53'$ \\
-02:00 & $54^\circ 24'$ & $136^\circ 57'$& $018^\circ 35'$ \\
-03:00 & $41^\circ 36'$ & $148^\circ 46'$& $006^\circ 47'$ \\
-04:00 & $28^\circ 00'$ & $156^\circ 32'$& $359^\circ 01'$ \\
-05:00 & $14^\circ 04'$ & $162^\circ 30'$& $353^\circ 03'$ \\
-06:00 & $00^\circ 00'$ & $167^\circ 46'$& $347^\circ 46'$ \\
+00:00 & $69^\circ 51'$ & $077^\circ 46'$ & $077^\circ 46'$\\
+01:00 & $65^\circ 04'$ & $115^\circ 39'$ & $039^\circ 53'$\\
+02:00 & $54^\circ 24'$ & $136^\circ 57'$ & $018^\circ 35'$\\
+03:00 & $41^\circ 36'$ & $148^\circ 46'$ & $006^\circ 47'$\\
+04:00 & $28^\circ 00'$ & $156^\circ 32'$ & $359^\circ 01'$\\
+05:00 & $14^\circ 04'$ & $162^\circ 30'$ & $353^\circ 03'$\\
+06:00 & $00^\circ 00'$ & $167^\circ 46'$ & $347^\circ 46'$\\
 \multicolumn{4}{c}{Pisces}\\
-00:00 & $78^\circ 32'$ & $069^\circ 26'$& $069^\circ 26'$ \\
-01:00 & $71^\circ 12'$ & $122^\circ 51'$& $016^\circ 00'$ \\
-02:00 & $58^\circ 04'$ & $140^\circ 25'$& $358^\circ 26'$ \\
-03:00 & $43^\circ 52'$ & $148^\circ 11'$& $350^\circ 40'$ \\
-04:00 & $29^\circ 20'$ & $152^\circ 53'$& $345^\circ 58'$ \\
-05:00 & $14^\circ 42'$ & $156^\circ 23'$& $342^\circ 29'$ \\
-06:00 & $00^\circ 00'$ & $159^\circ 26'$& $339^\circ 26'$ \\
+00:00 & $78^\circ 32'$ & $069^\circ 26'$ & $069^\circ 26'$\\
+01:00 & $71^\circ 12'$ & $122^\circ 51'$ & $016^\circ 00'$\\
+02:00 & $58^\circ 04'$ & $140^\circ 25'$ & $358^\circ 26'$\\
+03:00 & $43^\circ 52'$ & $148^\circ 11'$ & $350^\circ 40'$\\
+04:00 & $29^\circ 20'$ & $152^\circ 53'$ & $345^\circ 58'$\\
+05:00 & $14^\circ 42'$ & $156^\circ 23'$ & $342^\circ 29'$\\
+06:00 & $00^\circ 00'$ & $159^\circ 26'$ & $339^\circ 26'$\\
 \end{tabular}
 }}
 \end{Parallel}
@@ -1744,110 +1766,110 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 {\small
 \begin{tabular}{l|lll}
 \multicolumn{4}{c}{Aries}\\
-00:00 & $80^\circ 00'$ & $066^\circ 34'$& $066^\circ 34'$ \\
-01:00 & $72^\circ 02'$ & $122^\circ 18'$& $010^\circ 50'$ \\
-02:00 & $58^\circ 32'$ & $137^\circ 08'$& $356^\circ 00'$ \\
-03:00 & $44^\circ 08'$ & $142^\circ 34'$& $350^\circ 34'$ \\
-04:00 & $29^\circ 30'$ & $145^\circ 03'$& $348^\circ 05'$ \\
-05:00 & $14^\circ 46'$ & $146^\circ 13'$& $346^\circ 55'$ \\
-06:00 & $00^\circ 00'$ & $146^\circ 34'$& $346^\circ 34'$ \\
+00:00 & $80^\circ 00'$ & $066^\circ 34'$ & $066^\circ 34'$\\
+01:00 & $72^\circ 02'$ & $122^\circ 18'$ & $010^\circ 50'$\\
+02:00 & $58^\circ 32'$ & $137^\circ 08'$ & $356^\circ 00'$\\
+03:00 & $44^\circ 08'$ & $142^\circ 34'$ & $350^\circ 34'$\\
+04:00 & $29^\circ 30'$ & $145^\circ 03'$ & $348^\circ 05'$\\
+05:00 & $14^\circ 46'$ & $146^\circ 13'$ & $346^\circ 55'$\\
+06:00 & $00^\circ 00'$ & $146^\circ 34'$ & $346^\circ 34'$\\
 \multicolumn{4}{c}{Taurus}\\
-00:00 & $88^\circ 32'$ & $249^\circ 26'$& $249^\circ 26'$ \\
-01:00 & $75^\circ 11'$ & $163^\circ 41'$& $335^\circ 10'$ \\
-02:00 & $60^\circ 30'$ & $159^\circ 21'$& $339^\circ 30'$ \\
-03:00 & $45^\circ 48'$ & $156^\circ 49'$& $342^\circ 02'$ \\
-04:00 & $31^\circ 08'$ & $154^\circ 35'$& $344^\circ 16'$ \\
-05:00 & $16^\circ 31'$ & $152^\circ 16'$& $346^\circ 35'$ \\
-06:00 & $01^\circ 59'$ & $149^\circ 37'$& $349^\circ 14'$ \\
-06:08 & $00^\circ 00'$ & $149^\circ 13'$& $349^\circ 38'$ \\
+00:00 & $88^\circ 32'$ & $249^\circ 26'$ & $249^\circ 26'$\\
+01:00 & $75^\circ 11'$ & $163^\circ 41'$ & $335^\circ 10'$\\
+02:00 & $60^\circ 30'$ & $159^\circ 21'$ & $339^\circ 30'$\\
+03:00 & $45^\circ 48'$ & $156^\circ 49'$ & $342^\circ 02'$\\
+04:00 & $31^\circ 08'$ & $154^\circ 35'$ & $344^\circ 16'$\\
+05:00 & $16^\circ 31'$ & $152^\circ 16'$ & $346^\circ 35'$\\
+06:00 & $01^\circ 59'$ & $149^\circ 37'$ & $349^\circ 14'$\\
+06:08 & $00^\circ 00'$ & $149^\circ 13'$ & $349^\circ 38'$\\
 \multicolumn{4}{c}{Gemini}\\
-00:00 & $79^\circ 51'$ & $257^\circ 46'$& $257^\circ 46'$ \\
-01:00 & $72^\circ 20'$ & $200^\circ 37'$& $314^\circ 55'$ \\
-02:00 & $59^\circ 22'$ & $182^\circ 38'$& $332^\circ 54'$ \\
-03:00 & $45^\circ 32'$ & $174^\circ 04'$& $341^\circ 29'$ \\
-04:00 & $31^\circ 28'$ & $168^\circ 13'$& $347^\circ 20'$ \\
-05:00 & $17^\circ 24'$ & $163^\circ 15'$& $352^\circ 18'$ \\
-06:00 & $03^\circ 26'$ & $158^\circ 22'$& $357^\circ 10'$ \\
-06:14 & $00^\circ 00'$ & $157^\circ 07'$& $358^\circ 26'$ \\
+00:00 & $79^\circ 51'$ & $257^\circ 46'$ & $257^\circ 46'$\\
+01:00 & $72^\circ 20'$ & $200^\circ 37'$ & $314^\circ 55'$\\
+02:00 & $59^\circ 22'$ & $182^\circ 38'$ & $332^\circ 54'$\\
+03:00 & $45^\circ 32'$ & $174^\circ 04'$ & $341^\circ 29'$\\
+04:00 & $31^\circ 28'$ & $168^\circ 13'$ & $347^\circ 20'$\\
+05:00 & $17^\circ 24'$ & $163^\circ 15'$ & $352^\circ 18'$\\
+06:00 & $03^\circ 26'$ & $158^\circ 22'$ & $357^\circ 10'$\\
+06:15 & $00^\circ 00'$ & $157^\circ 07'$ & $358^\circ 26'$\\
 \multicolumn{4}{c}{Cancer}\\
-00:00 & $76^\circ 34'$ & $270^\circ 00'$& $270^\circ 00'$ \\
-01:00 & $70^\circ 22'$ & $220^\circ 40'$& $319^\circ 20'$ \\
-02:00 & $58^\circ 23'$ & $200^\circ 04'$& $339^\circ 56'$ \\
-03:00 & $45^\circ 04'$ & $189^\circ 35'$& $350^\circ 25'$ \\
-04:00 & $31^\circ 23'$ & $182^\circ 27'$& $357^\circ 33'$ \\
-05:00 & $17^\circ 38'$ & $176^\circ 31'$& $003^\circ 29'$ \\
-06:00 & $03^\circ 58'$ & $170^\circ 49'$& $009^\circ 11'$ \\
-06:17 & $00^\circ 00'$ & $169^\circ 05'$& $010^\circ 55'$ \\
+00:00 & $76^\circ 34'$ & $270^\circ 00'$ & $270^\circ 00'$\\
+01:00 & $70^\circ 22'$ & $220^\circ 40'$ & $319^\circ 20'$\\
+02:00 & $58^\circ 23'$ & $200^\circ 04'$ & $339^\circ 56'$\\
+03:00 & $45^\circ 04'$ & $189^\circ 35'$ & $350^\circ 25'$\\
+04:00 & $31^\circ 23'$ & $182^\circ 27'$ & $357^\circ 33'$\\
+05:00 & $17^\circ 38'$ & $176^\circ 31'$ & $003^\circ 29'$\\
+06:00 & $03^\circ 58'$ & $170^\circ 49'$ & $009^\circ 11'$\\
+06:18 & $00^\circ 00'$ & $169^\circ 05'$ & $010^\circ 55'$\\
 \multicolumn{4}{c}{Leo}\\
-00:00 & $79^\circ 51'$ & $282^\circ 14'$& $282^\circ 14'$ \\
-01:00 & $72^\circ 20'$ & $225^\circ 05'$& $339^\circ 23'$ \\
-02:00 & $59^\circ 22'$ & $207^\circ 06'$& $357^\circ 22'$ \\
-03:00 & $45^\circ 32'$ & $198^\circ 31'$& $005^\circ 56'$ \\
-04:00 & $31^\circ 28'$ & $192^\circ 40'$& $011^\circ 47'$ \\
-05:00 & $17^\circ 24'$ & $187^\circ 42'$& $016^\circ 45'$ \\
-06:00 & $03^\circ 26'$ & $182^\circ 50'$& $021^\circ 38'$ \\
-06:14 & $00^\circ 00'$ & $181^\circ 34'$& $022^\circ 53'$ \\
+00:00 & $79^\circ 51'$ & $282^\circ 14'$ & $282^\circ 14'$\\
+01:00 & $72^\circ 20'$ & $225^\circ 05'$ & $339^\circ 23'$\\
+02:00 & $59^\circ 22'$ & $207^\circ 06'$ & $357^\circ 22'$\\
+03:00 & $45^\circ 32'$ & $198^\circ 31'$ & $005^\circ 56'$\\
+04:00 & $31^\circ 28'$ & $192^\circ 40'$ & $011^\circ 47'$\\
+05:00 & $17^\circ 24'$ & $187^\circ 42'$ & $016^\circ 45'$\\
+06:00 & $03^\circ 26'$ & $182^\circ 50'$ & $021^\circ 38'$\\
+06:15 & $00^\circ 00'$ & $181^\circ 34'$ & $022^\circ 53'$\\
 \multicolumn{4}{c}{Virgo}\\
-00:00 & $88^\circ 32'$ & $290^\circ 34'$& $290^\circ 34'$ \\
-01:00 & $75^\circ 11'$ & $204^\circ 50'$& $016^\circ 19'$ \\
-02:00 & $60^\circ 30'$ & $200^\circ 30'$& $020^\circ 39'$ \\
-03:00 & $45^\circ 48'$ & $197^\circ 58'$& $023^\circ 11'$ \\
-04:00 & $31^\circ 08'$ & $195^\circ 44'$& $025^\circ 25'$ \\
-05:00 & $16^\circ 31'$ & $193^\circ 25'$& $027^\circ 44'$ \\
+00:00 & $88^\circ 32'$ & $290^\circ 34'$ & $290^\circ 34'$\\
+01:00 & $75^\circ 11'$ & $204^\circ 50'$ & $016^\circ 19'$\\
+02:00 & $60^\circ 30'$ & $200^\circ 30'$ & $020^\circ 39'$\\
+03:00 & $45^\circ 48'$ & $197^\circ 58'$ & $023^\circ 11'$\\
+04:00 & $31^\circ 08'$ & $195^\circ 44'$ & $025^\circ 25'$\\
+05:00 & $16^\circ 31'$ & $193^\circ 25'$ & $027^\circ 44'$\\
 \end{tabular}
 }}
 \ParallelRText{{\small
 \begin{tabular}{l|lll}
-06:00 & $01^\circ 59'$ & $190^\circ 46'$& $030^\circ 23'$ \\
-06:08 & $00^\circ 00'$ & $190^\circ 22'$& $030^\circ 47'$ \\
+06:00 & $01^\circ 59'$ & $190^\circ 46'$ & $030^\circ 23'$\\
+06:08 & $00^\circ 00'$ & $190^\circ 22'$ & $030^\circ 47'$\\
 \multicolumn{4}{c}{Libra}\\
-00:00 & $80^\circ 00'$ & $113^\circ 26'$& $113^\circ 26'$ \\
-01:00 & $72^\circ 02'$ & $169^\circ 10'$& $057^\circ 42'$ \\
-02:00 & $58^\circ 32'$ & $184^\circ 00'$& $042^\circ 52'$ \\
-03:00 & $44^\circ 08'$ & $189^\circ 26'$& $037^\circ 26'$ \\
-04:00 & $29^\circ 30'$ & $191^\circ 55'$& $034^\circ 57'$ \\
-05:00 & $14^\circ 46'$ & $193^\circ 05'$& $033^\circ 47'$ \\
-06:00 & $00^\circ 00'$ & $193^\circ 26'$& $033^\circ 26'$ \\
+00:00 & $80^\circ 00'$ & $113^\circ 26'$ & $113^\circ 26'$\\
+01:00 & $72^\circ 02'$ & $169^\circ 10'$ & $057^\circ 42'$\\
+02:00 & $58^\circ 32'$ & $184^\circ 00'$ & $042^\circ 52'$\\
+03:00 & $44^\circ 08'$ & $189^\circ 26'$ & $037^\circ 26'$\\
+04:00 & $29^\circ 30'$ & $191^\circ 55'$ & $034^\circ 57'$\\
+05:00 & $14^\circ 46'$ & $193^\circ 05'$ & $033^\circ 47'$\\
+06:00 & $00^\circ 00'$ & $193^\circ 26'$ & $033^\circ 26'$\\
 \multicolumn{4}{c}{Scorpio}\\
-00:00 & $68^\circ 32'$ & $110^\circ 34'$& $110^\circ 34'$ \\
-01:00 & $63^\circ 52'$ & $145^\circ 55'$& $075^\circ 13'$ \\
-02:00 & $53^\circ 15'$ & $165^\circ 58'$& $055^\circ 11'$ \\
-03:00 & $40^\circ 23'$ & $176^\circ 40'$& $044^\circ 29'$ \\
-04:00 & $26^\circ 37'$ & $183^\circ 07'$& $038^\circ 01'$ \\
-05:00 & $12^\circ 26'$ & $187^\circ 30'$& $033^\circ 39'$ \\
-05:51 & $00^\circ 00'$ & $190^\circ 22'$& $030^\circ 47'$ \\
+00:00 & $68^\circ 32'$ & $110^\circ 34'$ & $110^\circ 34'$\\
+01:00 & $63^\circ 52'$ & $145^\circ 55'$ & $075^\circ 13'$\\
+02:00 & $53^\circ 15'$ & $165^\circ 58'$ & $055^\circ 11'$\\
+03:00 & $40^\circ 23'$ & $176^\circ 40'$ & $044^\circ 29'$\\
+04:00 & $26^\circ 37'$ & $183^\circ 07'$ & $038^\circ 01'$\\
+05:00 & $12^\circ 26'$ & $187^\circ 30'$ & $033^\circ 39'$\\
+05:52 & $00^\circ 00'$ & $190^\circ 22'$ & $030^\circ 47'$\\
 \multicolumn{4}{c}{Sagittarius}\\
-00:00 & $59^\circ 51'$ & $102^\circ 14'$& $102^\circ 14'$ \\
-01:00 & $56^\circ 26'$ & $129^\circ 41'$& $074^\circ 47'$ \\
-02:00 & $47^\circ 48'$ & $149^\circ 23'$& $055^\circ 05'$ \\
-03:00 & $36^\circ 26'$ & $162^\circ 11'$& $042^\circ 17'$ \\
-04:00 & $23^\circ 44'$ & $170^\circ 55'$& $033^\circ 32'$ \\
-05:00 & $10^\circ 20'$ & $177^\circ 27'$& $027^\circ 00'$ \\
-05:45 & $00^\circ 00'$ & $181^\circ 34'$& $022^\circ 53'$ \\
+00:00 & $59^\circ 51'$ & $102^\circ 14'$ & $102^\circ 14'$\\
+01:00 & $56^\circ 26'$ & $129^\circ 41'$ & $074^\circ 47'$\\
+02:00 & $47^\circ 48'$ & $149^\circ 23'$ & $055^\circ 05'$\\
+03:00 & $36^\circ 26'$ & $162^\circ 11'$ & $042^\circ 17'$\\
+04:00 & $23^\circ 44'$ & $170^\circ 55'$ & $033^\circ 32'$\\
+05:00 & $10^\circ 20'$ & $177^\circ 27'$ & $027^\circ 00'$\\
+05:45 & $00^\circ 00'$ & $181^\circ 34'$ & $022^\circ 53'$\\
 \multicolumn{4}{c}{Capricorn}\\
-00:00 & $56^\circ 34'$ & $090^\circ 00'$& $090^\circ 00'$ \\
-01:00 & $53^\circ 29'$ & $115^\circ 22'$& $064^\circ 38'$ \\
-02:00 & $45^\circ 31'$ & $134^\circ 39'$& $045^\circ 21'$ \\
-03:00 & $34^\circ 44'$ & $147^\circ 56'$& $032^\circ 04'$ \\
-04:00 & $22^\circ 30'$ & $157^\circ 24'$& $022^\circ 36'$ \\
-05:00 & $09^\circ 29'$ & $164^\circ 40'$& $015^\circ 20'$ \\
-05:42 & $00^\circ 00'$ & $169^\circ 05'$& $010^\circ 55'$ \\
+00:00 & $56^\circ 34'$ & $090^\circ 00'$ & $090^\circ 00'$\\
+01:00 & $53^\circ 29'$ & $115^\circ 22'$ & $064^\circ 38'$\\
+02:00 & $45^\circ 31'$ & $134^\circ 39'$ & $045^\circ 21'$\\
+03:00 & $34^\circ 44'$ & $147^\circ 56'$ & $032^\circ 04'$\\
+04:00 & $22^\circ 30'$ & $157^\circ 24'$ & $022^\circ 36'$\\
+05:00 & $09^\circ 29'$ & $164^\circ 40'$ & $015^\circ 20'$\\
+05:42 & $00^\circ 00'$ & $169^\circ 05'$ & $010^\circ 55'$\\
 \multicolumn{4}{c}{Aquarius}\\
-00:00 & $59^\circ 51'$ & $077^\circ 46'$& $077^\circ 46'$ \\
-01:00 & $56^\circ 26'$ & $105^\circ 13'$& $050^\circ 19'$ \\
-02:00 & $47^\circ 48'$ & $124^\circ 55'$& $030^\circ 37'$ \\
-03:00 & $36^\circ 26'$ & $137^\circ 43'$& $017^\circ 49'$ \\
-04:00 & $23^\circ 44'$ & $146^\circ 28'$& $009^\circ 05'$ \\
-05:00 & $10^\circ 20'$ & $153^\circ 00'$& $002^\circ 33'$ \\
-05:45 & $00^\circ 00'$ & $157^\circ 07'$& $358^\circ 26'$ \\
+00:00 & $59^\circ 51'$ & $077^\circ 46'$ & $077^\circ 46'$\\
+01:00 & $56^\circ 26'$ & $105^\circ 13'$ & $050^\circ 19'$\\
+02:00 & $47^\circ 48'$ & $124^\circ 55'$ & $030^\circ 37'$\\
+03:00 & $36^\circ 26'$ & $137^\circ 43'$ & $017^\circ 49'$\\
+04:00 & $23^\circ 44'$ & $146^\circ 28'$ & $009^\circ 05'$\\
+05:00 & $10^\circ 20'$ & $153^\circ 00'$ & $002^\circ 33'$\\
+05:45 & $00^\circ 00'$ & $157^\circ 07'$ & $358^\circ 26'$\\
 \multicolumn{4}{c}{Pisces}\\
-00:00 & $68^\circ 32'$ & $069^\circ 26'$& $069^\circ 26'$ \\
-01:00 & $63^\circ 52'$ & $104^\circ 47'$& $034^\circ 05'$ \\
-02:00 & $53^\circ 15'$ & $124^\circ 49'$& $014^\circ 02'$ \\
-03:00 & $40^\circ 23'$ & $135^\circ 31'$& $003^\circ 20'$ \\
-04:00 & $26^\circ 37'$ & $141^\circ 59'$& $356^\circ 53'$ \\
-05:00 & $12^\circ 26'$ & $146^\circ 21'$& $352^\circ 30'$ \\
-05:51 & $00^\circ 00'$ & $149^\circ 13'$& $349^\circ 38'$ \\
+00:00 & $68^\circ 32'$ & $069^\circ 26'$ & $069^\circ 26'$\\
+01:00 & $63^\circ 52'$ & $104^\circ 47'$ & $034^\circ 05'$\\
+02:00 & $53^\circ 15'$ & $124^\circ 49'$ & $014^\circ 02'$\\
+03:00 & $40^\circ 23'$ & $135^\circ 31'$ & $003^\circ 20'$\\
+04:00 & $26^\circ 37'$ & $141^\circ 59'$ & $356^\circ 53'$\\
+05:00 & $12^\circ 26'$ & $146^\circ 21'$ & $352^\circ 30'$\\
+05:52 & $00^\circ 00'$ & $149^\circ 13'$ & $349^\circ 38'$\\
 \end{tabular}
 }}
 \end{Parallel}
@@ -1860,110 +1882,110 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 {\small
 \begin{tabular}{l|lll}
 \multicolumn{4}{c}{Aries}\\
-00:00 & $70^\circ 00'$ & $066^\circ 34'$& $066^\circ 34'$ \\
-01:00 & $65^\circ 11'$ & $101^\circ 59'$& $031^\circ 09'$ \\
-02:00 & $54^\circ 28'$ & $120^\circ 31'$& $012^\circ 37'$ \\
-03:00 & $41^\circ 38'$ & $129^\circ 20'$& $003^\circ 48'$ \\
-04:00 & $28^\circ 01'$ & $133^\circ 46'$& $359^\circ 22'$ \\
-05:00 & $14^\circ 05'$ & $135^\circ 55'$& $357^\circ 13'$ \\
-06:00 & $00^\circ 00'$ & $136^\circ 34'$& $356^\circ 34'$ \\
+00:00 & $70^\circ 00'$ & $066^\circ 34'$ & $066^\circ 34'$\\
+01:00 & $65^\circ 11'$ & $101^\circ 59'$ & $031^\circ 09'$\\
+02:00 & $54^\circ 28'$ & $120^\circ 31'$ & $012^\circ 37'$\\
+03:00 & $41^\circ 38'$ & $129^\circ 20'$ & $003^\circ 48'$\\
+04:00 & $28^\circ 01'$ & $133^\circ 46'$ & $359^\circ 22'$\\
+05:00 & $14^\circ 05'$ & $135^\circ 55'$ & $357^\circ 13'$\\
+06:00 & $00^\circ 00'$ & $136^\circ 34'$ & $356^\circ 34'$\\
 \multicolumn{4}{c}{Taurus}\\
-00:00 & $81^\circ 28'$ & $069^\circ 26'$& $069^\circ 26'$ \\
-01:00 & $73^\circ 15'$ & $126^\circ 58'$& $011^\circ 53'$ \\
-02:00 & $59^\circ 57'$ & $139^\circ 10'$& $359^\circ 41'$ \\
-03:00 & $45^\circ 59'$ & $142^\circ 26'$& $356^\circ 25'$ \\
-04:00 & $31^\circ 54'$ & $142^\circ 53'$& $355^\circ 58'$ \\
-05:00 & $17^\circ 50'$ & $141^\circ 53'$& $356^\circ 58'$ \\
-06:00 & $03^\circ 54'$ & $139^\circ 48'$& $359^\circ 03'$ \\
-06:16 & $00^\circ 00'$ & $139^\circ 00'$& $359^\circ 51'$ \\
+00:00 & $81^\circ 28'$ & $069^\circ 26'$ & $069^\circ 26'$\\
+01:00 & $73^\circ 15'$ & $126^\circ 58'$ & $011^\circ 53'$\\
+02:00 & $59^\circ 57'$ & $139^\circ 10'$ & $359^\circ 41'$\\
+03:00 & $45^\circ 59'$ & $142^\circ 26'$ & $356^\circ 25'$\\
+04:00 & $31^\circ 54'$ & $142^\circ 53'$ & $355^\circ 58'$\\
+05:00 & $17^\circ 50'$ & $141^\circ 53'$ & $356^\circ 58'$\\
+06:00 & $03^\circ 54'$ & $139^\circ 48'$ & $359^\circ 03'$\\
+06:17 & $00^\circ 00'$ & $139^\circ 00'$ & $359^\circ 51'$\\
 \multicolumn{4}{c}{Gemini}\\
-00:00 & $89^\circ 51'$ & $257^\circ 46'$& $257^\circ 46'$ \\
-01:00 & $75^\circ 55'$ & $165^\circ 46'$& $349^\circ 46'$ \\
-02:00 & $61^\circ 52'$ & $162^\circ 48'$& $352^\circ 44'$ \\
-03:00 & $47^\circ 52'$ & $159^\circ 52'$& $355^\circ 41'$ \\
-04:00 & $33^\circ 59'$ & $156^\circ 42'$& $358^\circ 51'$ \\
-05:00 & $20^\circ 15'$ & $153^\circ 07'$& $002^\circ 26'$ \\
-06:00 & $06^\circ 46'$ & $148^\circ 54'$& $006^\circ 38'$ \\
-06:30 & $00^\circ 00'$ & $146^\circ 24'$& $009^\circ 08'$ \\
+00:00 & $89^\circ 51'$ & $257^\circ 46'$ & $257^\circ 46'$\\
+01:00 & $75^\circ 55'$ & $165^\circ 46'$ & $349^\circ 46'$\\
+02:00 & $61^\circ 52'$ & $162^\circ 48'$ & $352^\circ 44'$\\
+03:00 & $47^\circ 52'$ & $159^\circ 52'$ & $355^\circ 41'$\\
+04:00 & $33^\circ 59'$ & $156^\circ 42'$ & $358^\circ 51'$\\
+05:00 & $20^\circ 15'$ & $153^\circ 07'$ & $002^\circ 26'$\\
+06:00 & $06^\circ 46'$ & $148^\circ 54'$ & $006^\circ 38'$\\
+06:31 & $00^\circ 00'$ & $146^\circ 24'$ & $009^\circ 08'$\\
 \multicolumn{4}{c}{Cancer}\\
-00:00 & $86^\circ 34'$ & $270^\circ 00'$& $270^\circ 00'$ \\
-01:00 & $75^\circ 39'$ & $190^\circ 58'$& $349^\circ 02'$ \\
-02:00 & $61^\circ 58'$ & $181^\circ 12'$& $358^\circ 48'$ \\
-03:00 & $48^\circ 13'$ & $175^\circ 44'$& $004^\circ 16'$ \\
-04:00 & $34^\circ 33'$ & $171^\circ 08'$& $008^\circ 52'$ \\
-05:00 & $21^\circ 03'$ & $166^\circ 33'$& $013^\circ 27'$ \\
-06:00 & $07^\circ 49'$ & $161^\circ 32'$& $018^\circ 28'$ \\
-06:36 & $00^\circ 00'$ & $158^\circ 07'$& $021^\circ 53'$ \\
+00:00 & $86^\circ 34'$ & $270^\circ 00'$ & $270^\circ 00'$\\
+01:00 & $75^\circ 39'$ & $190^\circ 58'$ & $202^\circ 37'$\\
+02:00 & $61^\circ 58'$ & $181^\circ 12'$ & $204^\circ 00'$\\
+03:00 & $48^\circ 13'$ & $175^\circ 44'$ & $150^\circ 21'$\\
+04:00 & $34^\circ 33'$ & $171^\circ 08'$ & $143^\circ 47'$\\
+05:00 & $21^\circ 03'$ & $166^\circ 33'$ & $137^\circ 02'$\\
+06:00 & $07^\circ 49'$ & $161^\circ 32'$ & $130^\circ 26'$\\
+06:36 & $00^\circ 00'$ & $158^\circ 07'$ & $126^\circ 33'$\\
 \multicolumn{4}{c}{Leo}\\
-00:00 & $89^\circ 51'$ & $282^\circ 14'$& $282^\circ 14'$ \\
-01:00 & $75^\circ 55'$ & $190^\circ 14'$& $014^\circ 14'$ \\
-02:00 & $61^\circ 52'$ & $187^\circ 16'$& $017^\circ 12'$ \\
-03:00 & $47^\circ 52'$ & $184^\circ 19'$& $020^\circ 08'$ \\
-04:00 & $33^\circ 59'$ & $181^\circ 09'$& $023^\circ 18'$ \\
-05:00 & $20^\circ 15'$ & $177^\circ 34'$& $026^\circ 53'$ \\
-06:00 & $06^\circ 46'$ & $173^\circ 22'$& $031^\circ 06'$ \\
-06:30 & $00^\circ 00'$ & $170^\circ 52'$& $033^\circ 36'$ \\
+00:00 & $89^\circ 51'$ & $282^\circ 14'$ & $282^\circ 14'$\\
+01:00 & $75^\circ 55'$ & $190^\circ 14'$ & $014^\circ 14'$\\
+02:00 & $61^\circ 52'$ & $187^\circ 16'$ & $017^\circ 12'$\\
+03:00 & $47^\circ 52'$ & $184^\circ 19'$ & $020^\circ 08'$\\
+04:00 & $33^\circ 59'$ & $181^\circ 09'$ & $023^\circ 18'$\\
+05:00 & $20^\circ 15'$ & $177^\circ 34'$ & $026^\circ 53'$\\
+06:00 & $06^\circ 46'$ & $173^\circ 22'$ & $031^\circ 06'$\\
+06:31 & $00^\circ 00'$ & $170^\circ 52'$ & $033^\circ 36'$\\
 \multicolumn{4}{c}{Virgo}\\
-00:00 & $81^\circ 28'$ & $110^\circ 34'$& $110^\circ 34'$ \\
-01:00 & $73^\circ 15'$ & $168^\circ 07'$& $053^\circ 02'$ \\
-02:00 & $59^\circ 57'$ & $180^\circ 19'$& $040^\circ 50'$ \\
-03:00 & $45^\circ 59'$ & $183^\circ 35'$& $037^\circ 34'$ \\
-04:00 & $31^\circ 54'$ & $184^\circ 02'$& $037^\circ 07'$ \\
-05:00 & $17^\circ 50'$ & $183^\circ 02'$& $038^\circ 07'$ \\
+00:00 & $81^\circ 28'$ & $110^\circ 34'$ & $110^\circ 34'$\\
+01:00 & $73^\circ 15'$ & $168^\circ 07'$ & $053^\circ 02'$\\
+02:00 & $59^\circ 57'$ & $180^\circ 19'$ & $040^\circ 50'$\\
+03:00 & $45^\circ 59'$ & $183^\circ 35'$ & $037^\circ 34'$\\
+04:00 & $31^\circ 54'$ & $184^\circ 02'$ & $037^\circ 07'$\\
+05:00 & $17^\circ 50'$ & $183^\circ 02'$ & $038^\circ 07'$\\
 \end{tabular}
 }}
 \ParallelRText{{\small
 \begin{tabular}{l|lll}
-06:00 & $03^\circ 54'$ & $180^\circ 57'$& $040^\circ 12'$ \\
-06:16 & $00^\circ 00'$ & $180^\circ 09'$& $041^\circ 00'$ \\
+06:00 & $03^\circ 54'$ & $180^\circ 57'$ & $040^\circ 12'$\\
+06:17 & $00^\circ 00'$ & $180^\circ 09'$ & $041^\circ 00'$\\
 \multicolumn{4}{c}{Libra}\\
-00:00 & $70^\circ 00'$ & $113^\circ 26'$& $113^\circ 26'$ \\
-01:00 & $65^\circ 11'$ & $148^\circ 51'$& $078^\circ 01'$ \\
-02:00 & $54^\circ 28'$ & $167^\circ 23'$& $059^\circ 29'$ \\
-03:00 & $41^\circ 38'$ & $176^\circ 12'$& $050^\circ 40'$ \\
-04:00 & $28^\circ 01'$ & $180^\circ 38'$& $046^\circ 14'$ \\
-05:00 & $14^\circ 05'$ & $182^\circ 47'$& $044^\circ 05'$ \\
-06:00 & $00^\circ 00'$ & $183^\circ 26'$& $043^\circ 26'$ \\
+00:00 & $70^\circ 00'$ & $113^\circ 26'$ & $113^\circ 26'$\\
+01:00 & $65^\circ 11'$ & $148^\circ 51'$ & $078^\circ 01'$\\
+02:00 & $54^\circ 28'$ & $167^\circ 23'$ & $059^\circ 29'$\\
+03:00 & $41^\circ 38'$ & $176^\circ 12'$ & $050^\circ 40'$\\
+04:00 & $28^\circ 01'$ & $180^\circ 38'$ & $046^\circ 14'$\\
+05:00 & $14^\circ 05'$ & $182^\circ 47'$ & $044^\circ 05'$\\
+06:00 & $00^\circ 00'$ & $183^\circ 26'$ & $043^\circ 26'$\\
 \multicolumn{4}{c}{Scorpio}\\
-00:00 & $58^\circ 32'$ & $110^\circ 34'$& $110^\circ 34'$ \\
-01:00 & $55^\circ 14'$ & $135^\circ 49'$& $085^\circ 19'$ \\
-02:00 & $46^\circ 51'$ & $153^\circ 58'$& $067^\circ 11'$ \\
-03:00 & $35^\circ 41'$ & $165^\circ 27'$& $055^\circ 42'$ \\
-04:00 & $23^\circ 06'$ & $172^\circ 48'$& $048^\circ 21'$ \\
-05:00 & $09^\circ 48'$ & $177^\circ 40'$& $043^\circ 29'$ \\
-05:43 & $00^\circ 00'$ & $180^\circ 09'$& $041^\circ 00'$ \\
+00:00 & $58^\circ 32'$ & $110^\circ 34'$ & $110^\circ 34'$\\
+01:00 & $55^\circ 14'$ & $135^\circ 49'$ & $085^\circ 19'$\\
+02:00 & $46^\circ 51'$ & $153^\circ 58'$ & $067^\circ 11'$\\
+03:00 & $35^\circ 41'$ & $165^\circ 27'$ & $055^\circ 42'$\\
+04:00 & $23^\circ 06'$ & $172^\circ 48'$ & $048^\circ 21'$\\
+05:00 & $09^\circ 48'$ & $177^\circ 40'$ & $043^\circ 29'$\\
+05:43 & $00^\circ 00'$ & $180^\circ 09'$ & $041^\circ 00'$\\
 \multicolumn{4}{c}{Sagittarius}\\
-00:00 & $49^\circ 51'$ & $102^\circ 14'$& $102^\circ 14'$ \\
-01:00 & $47^\circ 15'$ & $123^\circ 13'$& $081^\circ 14'$ \\
-02:00 & $40^\circ 15'$ & $140^\circ 14'$& $064^\circ 14'$ \\
-03:00 & $30^\circ 24'$ & $152^\circ 37'$& $051^\circ 50'$ \\
-04:00 & $18^\circ 52'$ & $161^\circ 33'$& $042^\circ 55'$ \\
-05:00 & $06^\circ 21'$ & $168^\circ 11'$& $036^\circ 16'$ \\
-05:29 & $00^\circ 00'$ & $170^\circ 52'$& $033^\circ 36'$ \\
+00:00 & $49^\circ 51'$ & $102^\circ 14'$ & $102^\circ 14'$\\
+01:00 & $47^\circ 15'$ & $123^\circ 13'$ & $081^\circ 14'$\\
+02:00 & $40^\circ 15'$ & $140^\circ 14'$ & $064^\circ 14'$\\
+03:00 & $30^\circ 24'$ & $152^\circ 37'$ & $051^\circ 50'$\\
+04:00 & $18^\circ 52'$ & $161^\circ 33'$ & $042^\circ 55'$\\
+05:00 & $06^\circ 21'$ & $168^\circ 11'$ & $036^\circ 16'$\\
+05:29 & $00^\circ 00'$ & $170^\circ 52'$ & $033^\circ 36'$\\
 \multicolumn{4}{c}{Capricorn}\\
-00:00 & $46^\circ 34'$ & $090^\circ 00'$& $090^\circ 00'$ \\
-01:00 & $44^\circ 10'$ & $109^\circ 49'$& $070^\circ 11'$ \\
-02:00 & $37^\circ 38'$ & $126^\circ 24'$& $053^\circ 36'$ \\
-03:00 & $28^\circ 16'$ & $138^\circ 59'$& $041^\circ 01'$ \\
-04:00 & $17^\circ 10'$ & $148^\circ 24'$& $031^\circ 36'$ \\
-05:00 & $05^\circ 00'$ & $155^\circ 40'$& $024^\circ 20'$ \\
-05:23 & $00^\circ 00'$ & $158^\circ 07'$& $021^\circ 53'$ \\
+00:00 & $46^\circ 34'$ & $090^\circ 00'$ & $090^\circ 00'$\\
+01:00 & $44^\circ 10'$ & $109^\circ 49'$ & $070^\circ 11'$\\
+02:00 & $37^\circ 38'$ & $126^\circ 24'$ & $053^\circ 36'$\\
+03:00 & $28^\circ 16'$ & $138^\circ 59'$ & $041^\circ 01'$\\
+04:00 & $17^\circ 10'$ & $148^\circ 24'$ & $031^\circ 36'$\\
+05:00 & $05^\circ 00'$ & $155^\circ 40'$ & $024^\circ 20'$\\
+05:24 & $00^\circ 00'$ & $158^\circ 07'$ & $021^\circ 53'$\\
 \multicolumn{4}{c}{Aquarius}\\
-00:00 & $49^\circ 51'$ & $077^\circ 46'$& $077^\circ 46'$ \\
-01:00 & $47^\circ 15'$ & $098^\circ 46'$& $056^\circ 47'$ \\
-02:00 & $40^\circ 15'$ & $115^\circ 46'$& $039^\circ 46'$ \\
-03:00 & $30^\circ 24'$ & $128^\circ 10'$& $027^\circ 23'$ \\
-04:00 & $18^\circ 52'$ & $137^\circ 05'$& $018^\circ 27'$ \\
-05:00 & $06^\circ 21'$ & $143^\circ 44'$& $011^\circ 49'$ \\
-05:29 & $00^\circ 00'$ & $146^\circ 24'$& $009^\circ 08'$ \\
+00:00 & $49^\circ 51'$ & $077^\circ 46'$ & $077^\circ 46'$\\
+01:00 & $47^\circ 15'$ & $098^\circ 46'$ & $056^\circ 47'$\\
+02:00 & $40^\circ 15'$ & $115^\circ 46'$ & $039^\circ 46'$\\
+03:00 & $30^\circ 24'$ & $128^\circ 10'$ & $027^\circ 23'$\\
+04:00 & $18^\circ 52'$ & $137^\circ 05'$ & $018^\circ 27'$\\
+05:00 & $06^\circ 21'$ & $143^\circ 44'$ & $011^\circ 49'$\\
+05:29 & $00^\circ 00'$ & $146^\circ 24'$ & $009^\circ 08'$\\
 \multicolumn{4}{c}{Pisces}\\
-00:00 & $58^\circ 32'$ & $069^\circ 26'$& $069^\circ 26'$ \\
-01:00 & $55^\circ 14'$ & $094^\circ 41'$& $044^\circ 11'$ \\
-02:00 & $46^\circ 51'$ & $112^\circ 49'$& $026^\circ 02'$ \\
-03:00 & $35^\circ 41'$ & $124^\circ 18'$& $014^\circ 33'$ \\
-04:00 & $23^\circ 06'$ & $131^\circ 39'$& $007^\circ 12'$ \\
-05:00 & $09^\circ 48'$ & $136^\circ 31'$& $002^\circ 20'$ \\
-05:43 & $00^\circ 00'$ & $139^\circ 00'$& $359^\circ 51'$ \\
+00:00 & $58^\circ 32'$ & $069^\circ 26'$ & $069^\circ 26'$\\
+01:00 & $55^\circ 14'$ & $094^\circ 41'$ & $044^\circ 11'$\\
+02:00 & $46^\circ 51'$ & $112^\circ 49'$ & $026^\circ 02'$\\
+03:00 & $35^\circ 41'$ & $124^\circ 18'$ & $014^\circ 33'$\\
+04:00 & $23^\circ 06'$ & $131^\circ 39'$ & $007^\circ 12'$\\
+05:00 & $09^\circ 48'$ & $136^\circ 31'$ & $002^\circ 20'$\\
+05:43 & $00^\circ 00'$ & $139^\circ 00'$ & $359^\circ 51'$\\
 \end{tabular}
 }}
 \end{Parallel}
@@ -1976,110 +1998,110 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 {\small
 \begin{tabular}{l|lll}
 \multicolumn{4}{c}{Aries}\\
-00:00 & $60^\circ 00'$ & $066^\circ 34'$& $066^\circ 34'$ \\
-01:00 & $56^\circ 46'$ & $090^\circ 43'$& $042^\circ 25'$ \\
-02:00 & $48^\circ 35'$ & $107^\circ 28'$& $025^\circ 40'$ \\
-03:00 & $37^\circ 46'$ & $117^\circ 20'$& $015^\circ 48'$ \\
-04:00 & $25^\circ 40'$ & $122^\circ 53'$& $010^\circ 15'$ \\
-05:00 & $12^\circ 57'$ & $125^\circ 42'$& $007^\circ 26'$ \\
-06:00 & $00^\circ 00'$ & $126^\circ 34'$& $006^\circ 34'$ \\
+00:00 & $60^\circ 00'$ & $066^\circ 34'$ & $066^\circ 34'$\\
+01:00 & $56^\circ 46'$ & $090^\circ 43'$ & $042^\circ 25'$\\
+02:00 & $48^\circ 35'$ & $107^\circ 28'$ & $025^\circ 40'$\\
+03:00 & $37^\circ 46'$ & $117^\circ 20'$ & $015^\circ 48'$\\
+04:00 & $25^\circ 40'$ & $122^\circ 53'$ & $010^\circ 15'$\\
+05:00 & $12^\circ 57'$ & $125^\circ 42'$ & $007^\circ 26'$\\
+06:00 & $00^\circ 00'$ & $126^\circ 34'$ & $006^\circ 34'$\\
 \multicolumn{4}{c}{Taurus}\\
-00:00 & $71^\circ 28'$ & $069^\circ 26'$& $069^\circ 26'$ \\
-01:00 & $66^\circ 49'$ & $104^\circ 08'$& $034^\circ 43'$ \\
-02:00 & $56^\circ 33'$ & $121^\circ 13'$& $017^\circ 38'$ \\
-03:00 & $44^\circ 24'$ & $128^\circ 24'$& $010^\circ 27'$ \\
-04:00 & $31^\circ 35'$ & $131^\circ 07'$& $007^\circ 44'$ \\
-05:00 & $18^\circ 36'$ & $131^\circ 23'$& $007^\circ 28'$ \\
-06:00 & $05^\circ 42'$ & $129^\circ 55'$& $008^\circ 56'$ \\
-06:26 & $00^\circ 00'$ & $128^\circ 45'$& $010^\circ 06'$ \\
+00:00 & $71^\circ 28'$ & $069^\circ 26'$ & $069^\circ 26'$\\
+01:00 & $66^\circ 49'$ & $104^\circ 08'$ & $034^\circ 43'$\\
+02:00 & $56^\circ 33'$ & $121^\circ 13'$ & $017^\circ 38'$\\
+03:00 & $44^\circ 24'$ & $128^\circ 24'$ & $010^\circ 27'$\\
+04:00 & $31^\circ 35'$ & $131^\circ 07'$ & $007^\circ 44'$\\
+05:00 & $18^\circ 36'$ & $131^\circ 23'$ & $007^\circ 28'$\\
+06:00 & $05^\circ 42'$ & $129^\circ 55'$ & $008^\circ 56'$\\
+06:27 & $00^\circ 00'$ & $128^\circ 45'$ & $010^\circ 06'$\\
 \multicolumn{4}{c}{Gemini}\\
-00:00 & $80^\circ 09'$ & $077^\circ 46'$& $077^\circ 46'$ \\
-01:00 & $73^\circ 15'$ & $128^\circ 48'$& $026^\circ 45'$ \\
-02:00 & $61^\circ 12'$ & $141^\circ 47'$& $013^\circ 46'$ \\
-03:00 & $48^\circ 20'$ & $144^\circ 53'$& $010^\circ 40'$ \\
-04:00 & $35^\circ 22'$ & $144^\circ 39'$& $010^\circ 54'$ \\
-05:00 & $22^\circ 30'$ & $142^\circ 39'$& $012^\circ 54'$ \\
-06:00 & $09^\circ 55'$ & $139^\circ 19'$& $016^\circ 14'$ \\
-06:48 & $00^\circ 00'$ & $135^\circ 36'$& $019^\circ 57'$ \\
+00:00 & $80^\circ 09'$ & $077^\circ 46'$ & $077^\circ 46'$\\
+01:00 & $73^\circ 15'$ & $128^\circ 48'$ & $026^\circ 45'$\\
+02:00 & $61^\circ 12'$ & $141^\circ 47'$ & $013^\circ 46'$\\
+03:00 & $48^\circ 20'$ & $144^\circ 53'$ & $010^\circ 40'$\\
+04:00 & $35^\circ 22'$ & $144^\circ 39'$ & $010^\circ 54'$\\
+05:00 & $22^\circ 30'$ & $142^\circ 39'$ & $012^\circ 54'$\\
+06:00 & $09^\circ 55'$ & $139^\circ 19'$ & $016^\circ 14'$\\
+06:49 & $00^\circ 00'$ & $135^\circ 36'$ & $019^\circ 57'$\\
 \multicolumn{4}{c}{Cancer}\\
-00:00 & $83^\circ 26'$ & $090^\circ 00'$& $090^\circ 00'$ \\
-01:00 & $75^\circ 06'$ & $150^\circ 38'$& $029^\circ 22'$ \\
-02:00 & $62^\circ 30'$ & $159^\circ 40'$& $020^\circ 20'$ \\
-03:00 & $49^\circ 32'$ & $160^\circ 38'$& $019^\circ 22'$ \\
-04:00 & $36^\circ 36'$ & $159^\circ 05'$& $020^\circ 55'$ \\
-05:00 & $23^\circ 52'$ & $156^\circ 10'$& $023^\circ 50'$ \\
-06:00 & $11^\circ 28'$ & $152^\circ 05'$& $027^\circ 55'$ \\
-06:57 & $00^\circ 00'$ & $146^\circ 59'$& $033^\circ 01'$ \\
+00:00 & $83^\circ 26'$ & $090^\circ 00'$ & $090^\circ 00'$\\
+01:00 & $75^\circ 06'$ & $150^\circ 38'$ & $029^\circ 22'$\\
+02:00 & $62^\circ 30'$ & $159^\circ 40'$ & $020^\circ 20'$\\
+03:00 & $49^\circ 32'$ & $160^\circ 38'$ & $019^\circ 22'$\\
+04:00 & $36^\circ 36'$ & $159^\circ 05'$ & $020^\circ 55'$\\
+05:00 & $23^\circ 52'$ & $156^\circ 10'$ & $023^\circ 50'$\\
+06:00 & $11^\circ 28'$ & $152^\circ 05'$ & $027^\circ 55'$\\
+06:58 & $00^\circ 00'$ & $146^\circ 59'$ & $033^\circ 01'$\\
 \multicolumn{4}{c}{Leo}\\
-00:00 & $80^\circ 09'$ & $102^\circ 14'$& $102^\circ 14'$ \\
-01:00 & $73^\circ 15'$ & $153^\circ 15'$& $051^\circ 12'$ \\
-02:00 & $61^\circ 12'$ & $166^\circ 14'$& $038^\circ 13'$ \\
-03:00 & $48^\circ 20'$ & $169^\circ 20'$& $035^\circ 07'$ \\
-04:00 & $35^\circ 22'$ & $169^\circ 06'$& $035^\circ 21'$ \\
-05:00 & $22^\circ 30'$ & $167^\circ 06'$& $037^\circ 21'$ \\
-06:00 & $09^\circ 55'$ & $163^\circ 46'$& $040^\circ 41'$ \\
-06:48 & $00^\circ 00'$ & $160^\circ 03'$& $044^\circ 24'$ \\
+00:00 & $80^\circ 09'$ & $102^\circ 14'$ & $102^\circ 14'$\\
+01:00 & $73^\circ 15'$ & $153^\circ 15'$ & $051^\circ 12'$\\
+02:00 & $61^\circ 12'$ & $166^\circ 14'$ & $038^\circ 13'$\\
+03:00 & $48^\circ 20'$ & $169^\circ 20'$ & $035^\circ 07'$\\
+04:00 & $35^\circ 22'$ & $169^\circ 06'$ & $035^\circ 21'$\\
+05:00 & $22^\circ 30'$ & $167^\circ 06'$ & $037^\circ 21'$\\
+06:00 & $09^\circ 55'$ & $163^\circ 46'$ & $040^\circ 41'$\\
+06:49 & $00^\circ 00'$ & $160^\circ 03'$ & $044^\circ 24'$\\
 \multicolumn{4}{c}{Virgo}\\
-00:00 & $71^\circ 28'$ & $110^\circ 34'$& $110^\circ 34'$ \\
-01:00 & $66^\circ 49'$ & $145^\circ 17'$& $075^\circ 52'$ \\
-02:00 & $56^\circ 33'$ & $162^\circ 22'$& $058^\circ 47'$ \\
-03:00 & $44^\circ 24'$ & $169^\circ 33'$& $051^\circ 36'$ \\
-04:00 & $31^\circ 35'$ & $172^\circ 16'$& $048^\circ 53'$ \\
-05:00 & $18^\circ 36'$ & $172^\circ 32'$& $048^\circ 37'$ \\
+00:00 & $71^\circ 28'$ & $110^\circ 34'$ & $110^\circ 34'$\\
+01:00 & $66^\circ 49'$ & $145^\circ 17'$ & $075^\circ 52'$\\
+02:00 & $56^\circ 33'$ & $162^\circ 22'$ & $058^\circ 47'$\\
+03:00 & $44^\circ 24'$ & $169^\circ 33'$ & $051^\circ 36'$\\
+04:00 & $31^\circ 35'$ & $172^\circ 16'$ & $048^\circ 53'$\\
+05:00 & $18^\circ 36'$ & $172^\circ 32'$ & $048^\circ 37'$\\
 \end{tabular}
 }}
 \ParallelRText{{\small
 \begin{tabular}{l|lll}
-06:00 & $05^\circ 42'$ & $171^\circ 04'$& $050^\circ 05'$ \\
-06:26 & $00^\circ 00'$ & $169^\circ 54'$& $051^\circ 15'$ \\
+06:00 & $05^\circ 42'$ & $171^\circ 04'$ & $050^\circ 05'$\\
+06:27 & $00^\circ 00'$ & $169^\circ 54'$ & $051^\circ 15'$\\
 \multicolumn{4}{c}{Libra}\\
-00:00 & $60^\circ 00'$ & $113^\circ 26'$& $113^\circ 26'$ \\
-01:00 & $56^\circ 46'$ & $137^\circ 35'$& $089^\circ 17'$ \\
-02:00 & $48^\circ 35'$ & $154^\circ 20'$& $072^\circ 32'$ \\
-03:00 & $37^\circ 46'$ & $164^\circ 12'$& $062^\circ 40'$ \\
-04:00 & $25^\circ 40'$ & $169^\circ 45'$& $057^\circ 07'$ \\
-05:00 & $12^\circ 57'$ & $172^\circ 34'$& $054^\circ 18'$ \\
-06:00 & $00^\circ 00'$ & $173^\circ 26'$& $053^\circ 26'$ \\
+00:00 & $60^\circ 00'$ & $113^\circ 26'$ & $113^\circ 26'$\\
+01:00 & $56^\circ 46'$ & $137^\circ 35'$ & $089^\circ 17'$\\
+02:00 & $48^\circ 35'$ & $154^\circ 20'$ & $072^\circ 32'$\\
+03:00 & $37^\circ 46'$ & $164^\circ 12'$ & $062^\circ 40'$\\
+04:00 & $25^\circ 40'$ & $169^\circ 45'$ & $057^\circ 07'$\\
+05:00 & $12^\circ 57'$ & $172^\circ 34'$ & $054^\circ 18'$\\
+06:00 & $00^\circ 00'$ & $173^\circ 26'$ & $053^\circ 26'$\\
 \multicolumn{4}{c}{Scorpio}\\
-00:00 & $48^\circ 32'$ & $110^\circ 34'$& $110^\circ 34'$ \\
-01:00 & $46^\circ 05'$ & $129^\circ 26'$& $091^\circ 43'$ \\
-02:00 & $39^\circ 28'$ & $144^\circ 41'$& $076^\circ 27'$ \\
-03:00 & $30^\circ 03'$ & $155^\circ 36'$& $065^\circ 33'$ \\
-04:00 & $18^\circ 58'$ & $163^\circ 03'$& $058^\circ 06'$ \\
-05:00 & $06^\circ 54'$ & $168^\circ 00'$& $053^\circ 09'$ \\
-05:33 & $00^\circ 00'$ & $169^\circ 54'$& $051^\circ 15'$ \\
+00:00 & $48^\circ 32'$ & $110^\circ 34'$ & $110^\circ 34'$\\
+01:00 & $46^\circ 05'$ & $129^\circ 26'$ & $091^\circ 43'$\\
+02:00 & $39^\circ 28'$ & $144^\circ 41'$ & $076^\circ 27'$\\
+03:00 & $30^\circ 03'$ & $155^\circ 36'$ & $065^\circ 33'$\\
+04:00 & $18^\circ 58'$ & $163^\circ 03'$ & $058^\circ 06'$\\
+05:00 & $06^\circ 54'$ & $168^\circ 00'$ & $053^\circ 09'$\\
+05:33 & $00^\circ 00'$ & $169^\circ 54'$ & $051^\circ 15'$\\
 \multicolumn{4}{c}{Sagittarius}\\
-00:00 & $39^\circ 51'$ & $102^\circ 14'$& $102^\circ 14'$ \\
-01:00 & $37^\circ 49'$ & $118^\circ 43'$& $085^\circ 45'$ \\
-02:00 & $32^\circ 08'$ & $132^\circ 59'$& $071^\circ 28'$ \\
-03:00 & $23^\circ 45'$ & $144^\circ 13'$& $060^\circ 14'$ \\
-04:00 & $13^\circ 33'$ & $152^\circ 43'$& $051^\circ 44'$ \\
-05:00 & $02^\circ 11'$ & $159^\circ 04'$& $045^\circ 23'$ \\
-05:11 & $00^\circ 00'$ & $160^\circ 03'$& $044^\circ 24'$ \\
+00:00 & $39^\circ 51'$ & $102^\circ 14'$ & $102^\circ 14'$\\
+01:00 & $37^\circ 49'$ & $118^\circ 43'$ & $085^\circ 45'$\\
+02:00 & $32^\circ 08'$ & $132^\circ 59'$ & $071^\circ 28'$\\
+03:00 & $23^\circ 45'$ & $144^\circ 13'$ & $060^\circ 14'$\\
+04:00 & $13^\circ 33'$ & $152^\circ 43'$ & $051^\circ 44'$\\
+05:00 & $02^\circ 11'$ & $159^\circ 04'$ & $045^\circ 23'$\\
+05:11 & $00^\circ 00'$ & $160^\circ 03'$ & $044^\circ 24'$\\
 \multicolumn{4}{c}{Capricorn}\\
-00:00 & $36^\circ 34'$ & $090^\circ 00'$& $090^\circ 00'$ \\
-01:00 & $34^\circ 40'$ & $105^\circ 49'$& $074^\circ 11'$ \\
-02:00 & $29^\circ 18'$ & $119^\circ 46'$& $060^\circ 14'$ \\
-03:00 & $21^\circ 17'$ & $131^\circ 05'$& $048^\circ 55'$ \\
-04:00 & $11^\circ 27'$ & $139^\circ 56'$& $040^\circ 04'$ \\
-05:00 & $00^\circ 23'$ & $146^\circ 47'$& $033^\circ 13'$ \\
-05:02 & $00^\circ 00'$ & $146^\circ 59'$& $033^\circ 01'$ \\
+00:00 & $36^\circ 34'$ & $090^\circ 00'$ & $090^\circ 00'$\\
+01:00 & $34^\circ 40'$ & $105^\circ 49'$ & $074^\circ 11'$\\
+02:00 & $29^\circ 18'$ & $119^\circ 46'$ & $060^\circ 14'$\\
+03:00 & $21^\circ 17'$ & $131^\circ 05'$ & $048^\circ 55'$\\
+04:00 & $11^\circ 27'$ & $139^\circ 56'$ & $040^\circ 04'$\\
+05:00 & $00^\circ 23'$ & $146^\circ 47'$ & $033^\circ 13'$\\
+05:02 & $00^\circ 00'$ & $146^\circ 59'$ & $033^\circ 01'$\\
 \multicolumn{4}{c}{Aquarius}\\
-00:00 & $39^\circ 51'$ & $077^\circ 46'$& $077^\circ 46'$ \\
-01:00 & $37^\circ 49'$ & $094^\circ 15'$& $061^\circ 17'$ \\
-02:00 & $32^\circ 08'$ & $108^\circ 32'$& $047^\circ 01'$ \\
-03:00 & $23^\circ 45'$ & $119^\circ 46'$& $035^\circ 47'$ \\
-04:00 & $13^\circ 33'$ & $128^\circ 16'$& $027^\circ 17'$ \\
-05:00 & $02^\circ 11'$ & $134^\circ 37'$& $020^\circ 56'$ \\
-05:11 & $00^\circ 00'$ & $135^\circ 36'$& $019^\circ 57'$ \\
+00:00 & $39^\circ 51'$ & $077^\circ 46'$ & $077^\circ 46'$\\
+01:00 & $37^\circ 49'$ & $094^\circ 15'$ & $061^\circ 17'$\\
+02:00 & $32^\circ 08'$ & $108^\circ 32'$ & $047^\circ 01'$\\
+03:00 & $23^\circ 45'$ & $119^\circ 46'$ & $035^\circ 47'$\\
+04:00 & $13^\circ 33'$ & $128^\circ 16'$ & $027^\circ 17'$\\
+05:00 & $02^\circ 11'$ & $134^\circ 37'$ & $020^\circ 56'$\\
+05:11 & $00^\circ 00'$ & $135^\circ 36'$ & $019^\circ 57'$\\
 \multicolumn{4}{c}{Pisces}\\
-00:00 & $48^\circ 32'$ & $069^\circ 26'$& $069^\circ 26'$ \\
-01:00 & $46^\circ 05'$ & $088^\circ 17'$& $050^\circ 34'$ \\
-02:00 & $39^\circ 28'$ & $103^\circ 33'$& $035^\circ 19'$ \\
-03:00 & $30^\circ 03'$ & $114^\circ 27'$& $024^\circ 24'$ \\
-04:00 & $18^\circ 58'$ & $121^\circ 54'$& $016^\circ 57'$ \\
-05:00 & $06^\circ 54'$ & $126^\circ 51'$& $012^\circ 00'$ \\
-05:33 & $00^\circ 00'$ & $128^\circ 45'$& $010^\circ 06'$ \\
+00:00 & $48^\circ 32'$ & $069^\circ 26'$ & $069^\circ 26'$\\
+01:00 & $46^\circ 05'$ & $088^\circ 17'$ & $050^\circ 34'$\\
+02:00 & $39^\circ 28'$ & $103^\circ 33'$ & $035^\circ 19'$\\
+03:00 & $30^\circ 03'$ & $114^\circ 27'$ & $024^\circ 24'$\\
+04:00 & $18^\circ 58'$ & $121^\circ 54'$ & $016^\circ 57'$\\
+05:00 & $06^\circ 54'$ & $126^\circ 51'$ & $012^\circ 00'$\\
+05:33 & $00^\circ 00'$ & $128^\circ 45'$ & $010^\circ 06'$\\
 \end{tabular}
 }}
 \end{Parallel}
@@ -2092,110 +2114,110 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 {\small
 \begin{tabular}{l|lll}
 \multicolumn{4}{c}{Aries}\\
-00:00 & $50^\circ 00'$ & $066^\circ 34'$& $066^\circ 34'$ \\
-01:00 & $47^\circ 44'$ & $083^\circ 43'$& $049^\circ 25'$ \\
-02:00 & $41^\circ 34'$ & $097^\circ 21'$& $035^\circ 47'$ \\
-03:00 & $32^\circ 48'$ & $106^\circ 41'$& $026^\circ 27'$ \\
-04:00 & $22^\circ 31'$ & $112^\circ 28'$& $020^\circ 40'$ \\
-05:00 & $11^\circ 26'$ & $115^\circ 35'$& $017^\circ 33'$ \\
-06:00 & $00^\circ 00'$ & $116^\circ 34'$& $016^\circ 34'$ \\
+00:00 & $50^\circ 00'$ & $066^\circ 34'$ & $066^\circ 34'$\\
+01:00 & $47^\circ 44'$ & $083^\circ 43'$ & $049^\circ 25'$\\
+02:00 & $41^\circ 34'$ & $097^\circ 21'$ & $035^\circ 47'$\\
+03:00 & $32^\circ 48'$ & $106^\circ 41'$ & $026^\circ 27'$\\
+04:00 & $22^\circ 31'$ & $112^\circ 28'$ & $020^\circ 40'$\\
+05:00 & $11^\circ 26'$ & $115^\circ 35'$ & $017^\circ 33'$\\
+06:00 & $00^\circ 00'$ & $116^\circ 34'$ & $016^\circ 34'$\\
 \multicolumn{4}{c}{Taurus}\\
-00:00 & $61^\circ 28'$ & $069^\circ 26'$& $069^\circ 26'$ \\
-01:00 & $58^\circ 32'$ & $091^\circ 45'$& $047^\circ 06'$ \\
-02:00 & $51^\circ 05'$ & $106^\circ 59'$& $031^\circ 52'$ \\
-03:00 & $41^\circ 12'$ & $115^\circ 28'$& $023^\circ 23'$ \\
-04:00 & $30^\circ 13'$ & $119^\circ 34'$& $019^\circ 17'$ \\
-05:00 & $18^\circ 47'$ & $120^\circ 50'$& $018^\circ 01'$ \\
-06:00 & $07^\circ 21'$ & $120^\circ 00'$& $018^\circ 51'$ \\
-06:39 & $00^\circ 00'$ & $118^\circ 26'$& $020^\circ 25'$ \\
+00:00 & $61^\circ 28'$ & $069^\circ 26'$ & $069^\circ 26'$\\
+01:00 & $58^\circ 32'$ & $091^\circ 45'$ & $047^\circ 06'$\\
+02:00 & $51^\circ 05'$ & $106^\circ 59'$ & $031^\circ 52'$\\
+03:00 & $41^\circ 12'$ & $115^\circ 28'$ & $023^\circ 23'$\\
+04:00 & $30^\circ 13'$ & $119^\circ 34'$ & $019^\circ 17'$\\
+05:00 & $18^\circ 47'$ & $120^\circ 50'$ & $018^\circ 01'$\\
+06:00 & $07^\circ 21'$ & $120^\circ 00'$ & $018^\circ 51'$\\
+06:39 & $00^\circ 00'$ & $118^\circ 26'$ & $020^\circ 25'$\\
 \multicolumn{4}{c}{Gemini}\\
-00:00 & $70^\circ 09'$ & $077^\circ 46'$& $077^\circ 46'$ \\
-01:00 & $66^\circ 21'$ & $107^\circ 24'$& $048^\circ 09'$ \\
-02:00 & $57^\circ 35'$ & $123^\circ 23'$& $032^\circ 10'$ \\
-03:00 & $46^\circ 53'$ & $130^\circ 11'$& $025^\circ 21'$ \\
-04:00 & $35^\circ 31'$ & $132^\circ 22'$& $023^\circ 11'$ \\
-05:00 & $24^\circ 03'$ & $131^\circ 54'$& $023^\circ 39'$ \\
-06:00 & $12^\circ 47'$ & $129^\circ 33'$& $026^\circ 00'$ \\
-07:00 & $02^\circ 01'$ & $125^\circ 32'$& $030^\circ 00'$ \\
-07:11 & $00^\circ 00'$ & $124^\circ 34'$& $030^\circ 59'$ \\
+00:00 & $70^\circ 09'$ & $077^\circ 46'$ & $077^\circ 46'$\\
+01:00 & $66^\circ 21'$ & $107^\circ 24'$ & $048^\circ 09'$\\
+02:00 & $57^\circ 35'$ & $123^\circ 23'$ & $032^\circ 10'$\\
+03:00 & $46^\circ 53'$ & $130^\circ 11'$ & $025^\circ 21'$\\
+04:00 & $35^\circ 31'$ & $132^\circ 22'$ & $023^\circ 11'$\\
+05:00 & $24^\circ 03'$ & $131^\circ 54'$ & $023^\circ 39'$\\
+06:00 & $12^\circ 47'$ & $129^\circ 33'$ & $026^\circ 00'$\\
+07:00 & $02^\circ 01'$ & $125^\circ 32'$ & $030^\circ 00'$\\
+07:12 & $00^\circ 00'$ & $124^\circ 34'$ & $030^\circ 59'$\\
 \multicolumn{4}{c}{Cancer}\\
-00:00 & $73^\circ 26'$ & $090^\circ 00'$& $090^\circ 00'$ \\
-01:00 & $69^\circ 09'$ & $123^\circ 52'$& $056^\circ 08'$ \\
-02:00 & $59^\circ 48'$ & $139^\circ 36'$& $040^\circ 24'$ \\
-03:00 & $48^\circ 49'$ & $145^\circ 21'$& $034^\circ 39'$ \\
-04:00 & $37^\circ 23'$ & $146^\circ 36'$& $033^\circ 24'$ \\
-05:00 & $25^\circ 57'$ & $145^\circ 23'$& $034^\circ 37'$ \\
-06:00 & $14^\circ 49'$ & $142^\circ 24'$& $037^\circ 36'$ \\
-07:00 & $04^\circ 14'$ & $137^\circ 54'$& $042^\circ 06'$ \\
-07:25 & $00^\circ 00'$ & $135^\circ 32'$& $044^\circ 28'$ \\
+00:00 & $73^\circ 26'$ & $090^\circ 00'$ & $090^\circ 00'$\\
+01:00 & $69^\circ 09'$ & $123^\circ 52'$ & $056^\circ 08'$\\
+02:00 & $59^\circ 48'$ & $139^\circ 36'$ & $040^\circ 24'$\\
+03:00 & $48^\circ 49'$ & $145^\circ 21'$ & $034^\circ 39'$\\
+04:00 & $37^\circ 23'$ & $146^\circ 36'$ & $033^\circ 24'$\\
+05:00 & $25^\circ 57'$ & $145^\circ 23'$ & $034^\circ 37'$\\
+06:00 & $14^\circ 49'$ & $142^\circ 24'$ & $037^\circ 36'$\\
+07:00 & $04^\circ 14'$ & $137^\circ 54'$ & $042^\circ 06'$\\
+07:25 & $00^\circ 00'$ & $135^\circ 32'$ & $044^\circ 28'$\\
 \multicolumn{4}{c}{Leo}\\
-00:00 & $70^\circ 09'$ & $102^\circ 14'$& $102^\circ 14'$ \\
-01:00 & $66^\circ 21'$ & $131^\circ 51'$& $072^\circ 36'$ \\
-02:00 & $57^\circ 35'$ & $147^\circ 50'$& $056^\circ 37'$ \\
-03:00 & $46^\circ 53'$ & $154^\circ 39'$& $049^\circ 49'$ \\
-04:00 & $35^\circ 31'$ & $156^\circ 49'$& $047^\circ 38'$ \\
-05:00 & $24^\circ 03'$ & $156^\circ 21'$& $048^\circ 06'$ \\
-06:00 & $12^\circ 47'$ & $154^\circ 00'$& $050^\circ 27'$ \\
-07:00 & $02^\circ 01'$ & $150^\circ 00'$& $054^\circ 28'$ \\
-07:11 & $00^\circ 00'$ & $149^\circ 01'$& $055^\circ 26'$ \\
+00:00 & $70^\circ 09'$ & $102^\circ 14'$ & $102^\circ 14'$\\
+01:00 & $66^\circ 21'$ & $131^\circ 51'$ & $072^\circ 36'$\\
+02:00 & $57^\circ 35'$ & $147^\circ 50'$ & $056^\circ 37'$\\
+03:00 & $46^\circ 53'$ & $154^\circ 39'$ & $049^\circ 49'$\\
+04:00 & $35^\circ 31'$ & $156^\circ 49'$ & $047^\circ 38'$\\
+05:00 & $24^\circ 03'$ & $156^\circ 21'$ & $048^\circ 06'$\\
+06:00 & $12^\circ 47'$ & $154^\circ 00'$ & $050^\circ 27'$\\
+07:00 & $02^\circ 01'$ & $150^\circ 00'$ & $054^\circ 28'$\\
+07:12 & $00^\circ 00'$ & $149^\circ 01'$ & $055^\circ 26'$\\
 \multicolumn{4}{c}{Virgo}\\
-00:00 & $61^\circ 28'$ & $110^\circ 34'$& $110^\circ 34'$ \\
-01:00 & $58^\circ 32'$ & $132^\circ 54'$& $088^\circ 15'$ \\
-02:00 & $51^\circ 05'$ & $148^\circ 08'$& $073^\circ 01'$ \\
+00:00 & $61^\circ 28'$ & $110^\circ 34'$ & $110^\circ 34'$\\
+01:00 & $58^\circ 32'$ & $132^\circ 54'$ & $088^\circ 15'$\\
+02:00 & $51^\circ 05'$ & $148^\circ 08'$ & $073^\circ 01'$\\
 \end{tabular}
 }}
 \ParallelRText{{\small
 \begin{tabular}{l|lll}
-03:00 & $41^\circ 12'$ & $156^\circ 37'$& $064^\circ 32'$ \\
-04:00 & $30^\circ 13'$ & $160^\circ 43'$& $060^\circ 26'$ \\
-05:00 & $18^\circ 47'$ & $161^\circ 59'$& $059^\circ 10'$ \\
-06:00 & $07^\circ 21'$ & $161^\circ 09'$& $060^\circ 00'$ \\
-06:39 & $00^\circ 00'$ & $159^\circ 35'$& $061^\circ 34'$ \\
+03:00 & $41^\circ 12'$ & $156^\circ 37'$ & $064^\circ 32'$\\
+04:00 & $30^\circ 13'$ & $160^\circ 43'$ & $060^\circ 26'$\\
+05:00 & $18^\circ 47'$ & $161^\circ 59'$ & $059^\circ 10'$\\
+06:00 & $07^\circ 21'$ & $161^\circ 09'$ & $060^\circ 00'$\\
+06:39 & $00^\circ 00'$ & $159^\circ 35'$ & $061^\circ 34'$\\
 \multicolumn{4}{c}{Libra}\\
-00:00 & $50^\circ 00'$ & $113^\circ 26'$& $113^\circ 26'$ \\
-01:00 & $47^\circ 44'$ & $130^\circ 35'$& $096^\circ 17'$ \\
-02:00 & $41^\circ 34'$ & $144^\circ 13'$& $082^\circ 39'$ \\
-03:00 & $32^\circ 48'$ & $153^\circ 33'$& $073^\circ 19'$ \\
-04:00 & $22^\circ 31'$ & $159^\circ 20'$& $067^\circ 32'$ \\
-05:00 & $11^\circ 26'$ & $162^\circ 27'$& $064^\circ 25'$ \\
-06:00 & $00^\circ 00'$ & $163^\circ 26'$& $063^\circ 26'$ \\
+00:00 & $50^\circ 00'$ & $113^\circ 26'$ & $113^\circ 26'$\\
+01:00 & $47^\circ 44'$ & $130^\circ 35'$ & $096^\circ 17'$\\
+02:00 & $41^\circ 34'$ & $144^\circ 13'$ & $082^\circ 39'$\\
+03:00 & $32^\circ 48'$ & $153^\circ 33'$ & $073^\circ 19'$\\
+04:00 & $22^\circ 31'$ & $159^\circ 20'$ & $067^\circ 32'$\\
+05:00 & $11^\circ 26'$ & $162^\circ 27'$ & $064^\circ 25'$\\
+06:00 & $00^\circ 00'$ & $163^\circ 26'$ & $063^\circ 26'$\\
 \multicolumn{4}{c}{Scorpio}\\
-00:00 & $38^\circ 32'$ & $110^\circ 34'$& $110^\circ 34'$ \\
-01:00 & $36^\circ 41'$ & $124^\circ 53'$& $096^\circ 16'$ \\
-02:00 & $31^\circ 29'$ & $137^\circ 16'$& $083^\circ 53'$ \\
-03:00 & $23^\circ 46'$ & $146^\circ 52'$& $074^\circ 17'$ \\
-04:00 & $14^\circ 20'$ & $153^\circ 47'$& $067^\circ 22'$ \\
-05:00 & $03^\circ 49'$ & $158^\circ 26'$& $062^\circ 42'$ \\
-05:20 & $00^\circ 00'$ & $159^\circ 35'$& $061^\circ 34'$ \\
+00:00 & $38^\circ 32'$ & $110^\circ 34'$ & $110^\circ 34'$\\
+01:00 & $36^\circ 41'$ & $124^\circ 53'$ & $096^\circ 16'$\\
+02:00 & $31^\circ 29'$ & $137^\circ 16'$ & $083^\circ 53'$\\
+03:00 & $23^\circ 46'$ & $146^\circ 52'$ & $074^\circ 17'$\\
+04:00 & $14^\circ 20'$ & $153^\circ 47'$ & $067^\circ 22'$\\
+05:00 & $03^\circ 49'$ & $158^\circ 26'$ & $062^\circ 42'$\\
+05:21 & $00^\circ 00'$ & $159^\circ 35'$ & $061^\circ 34'$\\
 \multicolumn{4}{c}{Sagittarius}\\
-00:00 & $29^\circ 51'$ & $102^\circ 14'$& $102^\circ 14'$ \\
-01:00 & $28^\circ 15'$ & $115^\circ 14'$& $089^\circ 13'$ \\
-02:00 & $23^\circ 40'$ & $126^\circ 57'$& $077^\circ 30'$ \\
-03:00 & $16^\circ 41'$ & $136^\circ 40'$& $067^\circ 47'$ \\
-04:00 & $07^\circ 57'$ & $144^\circ 17'$& $060^\circ 10'$ \\
-04:48 & $00^\circ 00'$ & $149^\circ 01'$& $055^\circ 26'$ \\
+00:00 & $29^\circ 51'$ & $102^\circ 14'$ & $102^\circ 14'$\\
+01:00 & $28^\circ 15'$ & $115^\circ 14'$ & $089^\circ 13'$\\
+02:00 & $23^\circ 40'$ & $126^\circ 57'$ & $077^\circ 30'$\\
+03:00 & $16^\circ 41'$ & $136^\circ 40'$ & $067^\circ 47'$\\
+04:00 & $07^\circ 57'$ & $144^\circ 17'$ & $060^\circ 10'$\\
+04:48 & $00^\circ 00'$ & $149^\circ 01'$ & $055^\circ 26'$\\
 \multicolumn{4}{c}{Capricorn}\\
-00:00 & $26^\circ 34'$ & $090^\circ 00'$& $090^\circ 00'$ \\
-01:00 & $25^\circ 03'$ & $102^\circ 38'$& $077^\circ 22'$ \\
-02:00 & $20^\circ 41'$ & $114^\circ 10'$& $065^\circ 50'$ \\
-03:00 & $13^\circ 58'$ & $123^\circ 56'$& $056^\circ 04'$ \\
-04:00 & $05^\circ 30'$ & $131^\circ 48'$& $048^\circ 12'$ \\
-04:34 & $00^\circ 00'$ & $135^\circ 32'$& $044^\circ 28'$ \\
+00:00 & $26^\circ 34'$ & $090^\circ 00'$ & $090^\circ 00'$\\
+01:00 & $25^\circ 03'$ & $102^\circ 38'$ & $077^\circ 22'$\\
+02:00 & $20^\circ 41'$ & $114^\circ 10'$ & $065^\circ 50'$\\
+03:00 & $13^\circ 58'$ & $123^\circ 56'$ & $056^\circ 04'$\\
+04:00 & $05^\circ 30'$ & $131^\circ 48'$ & $048^\circ 12'$\\
+04:35 & $00^\circ 00'$ & $135^\circ 32'$ & $044^\circ 28'$\\
 \multicolumn{4}{c}{Aquarius}\\
-00:00 & $29^\circ 51'$ & $077^\circ 46'$& $077^\circ 46'$ \\
-01:00 & $28^\circ 15'$ & $090^\circ 47'$& $064^\circ 46'$ \\
-02:00 & $23^\circ 40'$ & $102^\circ 30'$& $053^\circ 03'$ \\
-03:00 & $16^\circ 41'$ & $112^\circ 13'$& $043^\circ 20'$ \\
-04:00 & $07^\circ 57'$ & $119^\circ 50'$& $035^\circ 43'$ \\
-04:48 & $00^\circ 00'$ & $124^\circ 34'$& $030^\circ 59'$ \\
+00:00 & $29^\circ 51'$ & $077^\circ 46'$ & $077^\circ 46'$\\
+01:00 & $28^\circ 15'$ & $090^\circ 47'$ & $064^\circ 46'$\\
+02:00 & $23^\circ 40'$ & $102^\circ 30'$ & $053^\circ 03'$\\
+03:00 & $16^\circ 41'$ & $112^\circ 13'$ & $043^\circ 20'$\\
+04:00 & $07^\circ 57'$ & $119^\circ 50'$ & $035^\circ 43'$\\
+04:48 & $00^\circ 00'$ & $124^\circ 34'$ & $030^\circ 59'$\\
 \multicolumn{4}{c}{Pisces}\\
-00:00 & $38^\circ 32'$ & $069^\circ 26'$& $069^\circ 26'$ \\
-01:00 & $36^\circ 41'$ & $083^\circ 44'$& $055^\circ 07'$ \\
-02:00 & $31^\circ 29'$ & $096^\circ 07'$& $042^\circ 44'$ \\
-03:00 & $23^\circ 46'$ & $105^\circ 43'$& $033^\circ 08'$ \\
-04:00 & $14^\circ 20'$ & $112^\circ 38'$& $026^\circ 13'$ \\
-05:00 & $03^\circ 49'$ & $117^\circ 18'$& $021^\circ 34'$ \\
-05:20 & $00^\circ 00'$ & $118^\circ 26'$& $020^\circ 25'$ \\
+00:00 & $38^\circ 32'$ & $069^\circ 26'$ & $069^\circ 26'$\\
+01:00 & $36^\circ 41'$ & $083^\circ 44'$ & $055^\circ 07'$\\
+02:00 & $31^\circ 29'$ & $096^\circ 07'$ & $042^\circ 44'$\\
+03:00 & $23^\circ 46'$ & $105^\circ 43'$ & $033^\circ 08'$\\
+04:00 & $14^\circ 20'$ & $112^\circ 38'$ & $026^\circ 13'$\\
+05:00 & $03^\circ 49'$ & $117^\circ 18'$ & $021^\circ 34'$\\
+05:21 & $00^\circ 00'$ & $118^\circ 26'$ & $020^\circ 25'$\\
 \end{tabular}
 }}
 \end{Parallel}
@@ -2208,110 +2230,111 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 {\small
 \begin{tabular}{l|lll}
 \multicolumn{4}{c}{Aries}\\
-00:00 & $40^\circ 00'$ & $066^\circ 34'$& $066^\circ 34'$ \\
-01:00 & $38^\circ 23'$ & $078^\circ 49'$& $054^\circ 19'$ \\
-02:00 & $33^\circ 50'$ & $089^\circ 20'$& $043^\circ 48'$ \\
-03:00 & $27^\circ 02'$ & $097^\circ 15'$& $035^\circ 53'$ \\
-04:00 & $18^\circ 45'$ & $102^\circ 34'$& $030^\circ 34'$ \\
-05:00 & $09^\circ 35'$ & $105^\circ 36'$& $027^\circ 32'$ \\
-06:00 & $00^\circ 00'$ & $106^\circ 34'$& $026^\circ 34'$ \\
+00:00 & $40^\circ 00'$ & $066^\circ 34'$ & $066^\circ 34'$\\
+01:00 & $38^\circ 23'$ & $078^\circ 49'$ & $054^\circ 19'$\\
+02:00 & $33^\circ 50'$ & $089^\circ 20'$ & $043^\circ 48'$\\
+03:00 & $27^\circ 02'$ & $097^\circ 15'$ & $035^\circ 53'$\\
+04:00 & $18^\circ 45'$ & $102^\circ 34'$ & $030^\circ 34'$\\
+05:00 & $09^\circ 35'$ & $105^\circ 36'$ & $027^\circ 32'$\\
+06:00 & $00^\circ 00'$ & $106^\circ 34'$ & $026^\circ 34'$\\
 \multicolumn{4}{c}{Taurus}\\
-00:00 & $51^\circ 28'$ & $069^\circ 26'$& $069^\circ 26'$ \\
-01:00 & $49^\circ 32'$ & $084^\circ 17'$& $054^\circ 34'$ \\
-02:00 & $44^\circ 15'$ & $096^\circ 05'$& $042^\circ 46'$ \\
-03:00 & $36^\circ 43'$ & $103^\circ 58'$& $034^\circ 53'$ \\
-04:00 & $27^\circ 52'$ & $108^\circ 27'$& $030^\circ 24'$ \\
-05:00 & $18^\circ 23'$ & $110^\circ 17'$& $028^\circ 34'$ \\
-06:00 & $08^\circ 46'$ & $110^\circ 00'$& $028^\circ 51'$ \\
-06:55 & $00^\circ 00'$ & $108^\circ 01'$& $030^\circ 50'$ \\
+00:00 & $51^\circ 28'$ & $069^\circ 26'$ & $069^\circ 26'$\\
+01:00 & $49^\circ 32'$ & $084^\circ 17'$ & $054^\circ 34'$\\
+02:00 & $44^\circ 15'$ & $096^\circ 05'$ & $042^\circ 46'$\\
+03:00 & $36^\circ 43'$ & $103^\circ 58'$ & $034^\circ 53'$\\
+04:00 & $27^\circ 52'$ & $108^\circ 27'$ & $030^\circ 24'$\\
+05:00 & $18^\circ 23'$ & $110^\circ 17'$ & $028^\circ 34'$\\
+06:00 & $08^\circ 46'$ & $110^\circ 00'$ & $028^\circ 51'$\\
+06:56 & $00^\circ 00'$ & $108^\circ 01'$ & $030^\circ 50'$\\
 \multicolumn{4}{c}{Gemini}\\
-00:00 & $60^\circ 09'$ & $077^\circ 46'$& $077^\circ 46'$ \\
-01:00 & $57^\circ 51'$ & $096^\circ 00'$& $059^\circ 33'$ \\
-02:00 & $51^\circ 51'$ & $109^\circ 08'$& $046^\circ 25'$ \\
-03:00 & $43^\circ 40'$ & $116^\circ 42'$& $038^\circ 50'$ \\
-04:00 & $34^\circ 26'$ & $120^\circ 14'$& $035^\circ 19'$ \\
-05:00 & $24^\circ 50'$ & $120^\circ 57'$& $034^\circ 36'$ \\
-06:00 & $15^\circ 18'$ & $119^\circ 34'$& $035^\circ 59'$ \\
-07:00 & $06^\circ 11'$ & $116^\circ 25'$& $039^\circ 08'$ \\
-07:43 & $00^\circ 00'$ & $113^\circ 05'$& $042^\circ 27'$ \\
+00:00 & $60^\circ 09'$ & $077^\circ 46'$ & $077^\circ 46'$\\
+01:00 & $57^\circ 51'$ & $096^\circ 00'$ & $059^\circ 33'$\\
+02:00 & $51^\circ 51'$ & $109^\circ 08'$ & $046^\circ 25'$\\
+03:00 & $43^\circ 40'$ & $116^\circ 42'$ & $038^\circ 50'$\\
+04:00 & $34^\circ 26'$ & $120^\circ 14'$ & $035^\circ 19'$\\
+05:00 & $24^\circ 50'$ & $120^\circ 57'$ & $034^\circ 36'$\\
+06:00 & $15^\circ 18'$ & $119^\circ 34'$ & $035^\circ 59'$\\
+07:00 & $06^\circ 11'$ & $116^\circ 25'$ & $039^\circ 08'$\\
+07:44 & $00^\circ 00'$ & $113^\circ 05'$ & $042^\circ 27'$\\
 \multicolumn{4}{c}{Cancer}\\
-00:00 & $63^\circ 26'$ & $090^\circ 00'$& $090^\circ 00'$ \\
-01:00 & $60^\circ 58'$ & $110^\circ 03'$& $069^\circ 57'$ \\
-02:00 & $54^\circ 38'$ & $123^\circ 43'$& $056^\circ 17'$ \\
-03:00 & $46^\circ 12'$ & $131^\circ 02'$& $048^\circ 58'$ \\
-04:00 & $36^\circ 50'$ & $134^\circ 04'$& $045^\circ 56'$ \\
-05:00 & $27^\circ 13'$ & $134^\circ 17'$& $045^\circ 43'$ \\
-06:00 & $17^\circ 44'$ & $132^\circ 27'$& $047^\circ 33'$ \\
-07:00 & $08^\circ 45'$ & $128^\circ 55'$& $051^\circ 05'$ \\
-08:00 & $00^\circ 34'$ & $123^\circ 50'$& $056^\circ 10'$ \\
-08:04 & $00^\circ 00'$ & $123^\circ 24'$& $056^\circ 36'$ \\
+00:00 & $63^\circ 26'$ & $090^\circ 00'$ & $090^\circ 00'$\\
+01:00 & $60^\circ 58'$ & $110^\circ 03'$ & $069^\circ 57'$\\
+02:00 & $54^\circ 38'$ & $123^\circ 43'$ & $056^\circ 17'$\\
+03:00 & $46^\circ 12'$ & $131^\circ 02'$ & $048^\circ 58'$\\
+04:00 & $36^\circ 50'$ & $134^\circ 04'$ & $045^\circ 56'$\\
+05:00 & $27^\circ 13'$ & $134^\circ 17'$ & $045^\circ 43'$\\
+06:00 & $17^\circ 44'$ & $132^\circ 27'$ & $047^\circ 33'$\\
+07:00 & $08^\circ 45'$ & $128^\circ 55'$ & $051^\circ 05'$\\
+08:00 & $00^\circ 34'$ & $123^\circ 50'$ & $056^\circ 10'$\\
+08:04 & $00^\circ 00'$ & $123^\circ 24'$ & $056^\circ 36'$\\
 \multicolumn{4}{c}{Leo}\\
-00:00 & $60^\circ 09'$ & $102^\circ 14'$& $102^\circ 14'$ \\
-01:00 & $57^\circ 51'$ & $120^\circ 27'$& $084^\circ 00'$ \\
-02:00 & $51^\circ 51'$ & $133^\circ 35'$& $070^\circ 52'$ \\
-03:00 & $43^\circ 40'$ & $141^\circ 10'$& $063^\circ 18'$ \\
-04:00 & $34^\circ 26'$ & $144^\circ 41'$& $059^\circ 46'$ \\
-05:00 & $24^\circ 50'$ & $145^\circ 24'$& $059^\circ 03'$ \\
-06:00 & $15^\circ 18'$ & $144^\circ 01'$& $060^\circ 26'$ \\
-07:00 & $06^\circ 11'$ & $140^\circ 52'$& $063^\circ 35'$ \\
-07:43 & $00^\circ 00'$ & $137^\circ 33'$& $066^\circ 55'$ \\
+00:00 & $60^\circ 09'$ & $102^\circ 14'$ & $102^\circ 14'$\\
+01:00 & $57^\circ 51'$ & $120^\circ 27'$ & $084^\circ 00'$\\
+02:00 & $51^\circ 51'$ & $133^\circ 35'$ & $070^\circ 52'$\\
+03:00 & $43^\circ 40'$ & $141^\circ 10'$ & $063^\circ 18'$\\
+04:00 & $34^\circ 26'$ & $144^\circ 41'$ & $059^\circ 46'$\\
+05:00 & $24^\circ 50'$ & $145^\circ 24'$ & $059^\circ 03'$\\
+06:00 & $15^\circ 18'$ & $144^\circ 01'$ & $060^\circ 26'$\\
+07:00 & $06^\circ 11'$ & $140^\circ 52'$ & $063^\circ 35'$\\
+07:44 & $00^\circ 00'$ & $137^\circ 33'$ & $066^\circ 55'$\\
 \multicolumn{4}{c}{Virgo}\\
-00:00 & $51^\circ 28'$ & $110^\circ 34'$& $110^\circ 34'$ \\
-01:00 & $49^\circ 32'$ & $125^\circ 26'$& $095^\circ 43'$ \\
+00:00 & $51^\circ 28'$ & $110^\circ 34'$ & $110^\circ 34'$\\
+01:00 & $49^\circ 32'$ & $125^\circ 26'$ & $095^\circ 43'$\\
 \end{tabular}
 }}
 \ParallelRText{{\small
 \begin{tabular}{l|lll}
-02:00 & $44^\circ 15'$ & $137^\circ 14'$& $083^\circ 55'$ \\
-03:00 & $36^\circ 43'$ & $145^\circ 07'$& $076^\circ 02'$ \\
-04:00 & $27^\circ 52'$ & $149^\circ 36'$& $071^\circ 33'$ \\
-05:00 & $18^\circ 23'$ & $151^\circ 26'$& $069^\circ 43'$ \\
-06:00 & $08^\circ 46'$ & $151^\circ 09'$& $070^\circ 00'$ \\
-06:55 & $00^\circ 00'$ & $149^\circ 10'$& $071^\circ 59'$ \\
+02:00 & $44^\circ 15'$ & $137^\circ 14'$ & $083^\circ 55'$\\
+03:00 & $36^\circ 43'$ & $145^\circ 07'$ & $076^\circ 02'$\\
+04:00 & $27^\circ 52'$ & $149^\circ 36'$ & $071^\circ 33'$\\
+05:00 & $18^\circ 23'$ & $151^\circ 26'$ & $069^\circ 43'$\\
+06:00 & $08^\circ 46'$ & $151^\circ 09'$ & $070^\circ 00'$\\
+06:56 & $00^\circ 00'$ & $149^\circ 10'$ & $071^\circ 59'$\\
 \multicolumn{4}{c}{Libra}\\
-00:00 & $40^\circ 00'$ & $113^\circ 26'$& $113^\circ 26'$ \\
-01:00 & $38^\circ 23'$ & $125^\circ 41'$& $101^\circ 11'$ \\
-02:00 & $33^\circ 50'$ & $136^\circ 12'$& $090^\circ 40'$ \\
-03:00 & $27^\circ 02'$ & $144^\circ 07'$& $082^\circ 45'$ \\
-04:00 & $18^\circ 45'$ & $149^\circ 26'$& $077^\circ 26'$ \\
-05:00 & $09^\circ 35'$ & $152^\circ 28'$& $074^\circ 24'$ \\
-06:00 & $00^\circ 00'$ & $153^\circ 26'$& $073^\circ 26'$ \\
+00:00 & $40^\circ 00'$ & $113^\circ 26'$ & $113^\circ 26'$\\
+01:00 & $38^\circ 23'$ & $125^\circ 41'$ & $101^\circ 11'$\\
+02:00 & $33^\circ 50'$ & $136^\circ 12'$ & $090^\circ 40'$\\
+03:00 & $27^\circ 02'$ & $144^\circ 07'$ & $082^\circ 45'$\\
+04:00 & $18^\circ 45'$ & $149^\circ 26'$ & $077^\circ 26'$\\
+05:00 & $09^\circ 35'$ & $152^\circ 28'$ & $074^\circ 24'$\\
+06:00 & $00^\circ 00'$ & $153^\circ 26'$ & $073^\circ 26'$\\
+06:00 & $00^\circ 00'$ & $153^\circ 26'$ & $073^\circ 26'$\\
 \multicolumn{4}{c}{Scorpio}\\
-00:00 & $28^\circ 32'$ & $110^\circ 34'$& $110^\circ 34'$ \\
-01:00 & $27^\circ 08'$ & $121^\circ 21'$& $099^\circ 48'$ \\
-02:00 & $23^\circ 09'$ & $131^\circ 02'$& $090^\circ 07'$ \\
-03:00 & $17^\circ 03'$ & $138^\circ 58'$& $082^\circ 11'$ \\
-04:00 & $09^\circ 22'$ & $144^\circ 55'$& $076^\circ 14'$ \\
-05:00 & $00^\circ 37'$ & $148^\circ 57'$& $072^\circ 11'$ \\
-05:04 & $00^\circ 00'$ & $149^\circ 10'$& $071^\circ 59'$ \\
+00:00 & $28^\circ 32'$ & $110^\circ 34'$ & $110^\circ 34'$\\
+01:00 & $27^\circ 08'$ & $121^\circ 21'$ & $099^\circ 48'$\\
+02:00 & $23^\circ 09'$ & $131^\circ 02'$ & $090^\circ 07'$\\
+03:00 & $17^\circ 03'$ & $138^\circ 58'$ & $082^\circ 11'$\\
+04:00 & $09^\circ 22'$ & $144^\circ 55'$ & $076^\circ 14'$\\
+05:00 & $00^\circ 37'$ & $148^\circ 57'$ & $072^\circ 11'$\\
+05:04 & $00^\circ 00'$ & $149^\circ 10'$ & $071^\circ 59'$\\
 \multicolumn{4}{c}{Sagittarius}\\
-00:00 & $19^\circ 51'$ & $102^\circ 14'$& $102^\circ 14'$ \\
-01:00 & $18^\circ 36'$ & $112^\circ 20'$& $092^\circ 07'$ \\
-02:00 & $15^\circ 00'$ & $121^\circ 40'$& $082^\circ 48'$ \\
-03:00 & $09^\circ 22'$ & $129^\circ 39'$& $074^\circ 48'$ \\
-04:00 & $02^\circ 10'$ & $136^\circ 05'$& $068^\circ 22'$ \\
-04:16 & $00^\circ 00'$ & $137^\circ 33'$& $066^\circ 55'$ \\
+00:00 & $19^\circ 51'$ & $102^\circ 14'$ & $102^\circ 14'$\\
+01:00 & $18^\circ 36'$ & $112^\circ 20'$ & $092^\circ 07'$\\
+02:00 & $15^\circ 00'$ & $121^\circ 40'$ & $082^\circ 48'$\\
+03:00 & $09^\circ 22'$ & $129^\circ 39'$ & $074^\circ 48'$\\
+04:00 & $02^\circ 10'$ & $136^\circ 05'$ & $068^\circ 22'$\\
+04:16 & $00^\circ 00'$ & $137^\circ 33'$ & $066^\circ 55'$\\
 \multicolumn{4}{c}{Capricorn}\\
-00:00 & $16^\circ 34'$ & $090^\circ 00'$& $090^\circ 00'$ \\
-01:00 & $15^\circ 22'$ & $099^\circ 56'$& $080^\circ 04'$ \\
-02:00 & $11^\circ 54'$ & $109^\circ 10'$& $070^\circ 50'$ \\
-03:00 & $06^\circ 27'$ & $117^\circ 13'$& $062^\circ 47'$ \\
-03:55 & $00^\circ 00'$ & $123^\circ 24'$& $056^\circ 36'$ \\
+00:00 & $16^\circ 34'$ & $090^\circ 00'$ & $090^\circ 00'$\\
+01:00 & $15^\circ 22'$ & $099^\circ 56'$ & $080^\circ 04'$\\
+02:00 & $11^\circ 54'$ & $109^\circ 10'$ & $070^\circ 50'$\\
+03:00 & $06^\circ 27'$ & $117^\circ 13'$ & $062^\circ 47'$\\
+03:56 & $00^\circ 00'$ & $123^\circ 24'$ & $056^\circ 36'$\\
 \multicolumn{4}{c}{Aquarius}\\
-00:00 & $19^\circ 51'$ & $077^\circ 46'$& $077^\circ 46'$ \\
-01:00 & $18^\circ 36'$ & $087^\circ 53'$& $067^\circ 40'$ \\
-02:00 & $15^\circ 00'$ & $097^\circ 12'$& $058^\circ 20'$ \\
-03:00 & $09^\circ 22'$ & $105^\circ 12'$& $050^\circ 21'$ \\
-04:00 & $02^\circ 10'$ & $111^\circ 38'$& $043^\circ 55'$ \\
-04:16 & $00^\circ 00'$ & $113^\circ 05'$& $042^\circ 27'$ \\
+00:00 & $19^\circ 51'$ & $077^\circ 46'$ & $077^\circ 46'$\\
+01:00 & $18^\circ 36'$ & $087^\circ 53'$ & $067^\circ 40'$\\
+02:00 & $15^\circ 00'$ & $097^\circ 12'$ & $058^\circ 20'$\\
+03:00 & $09^\circ 22'$ & $105^\circ 12'$ & $050^\circ 21'$\\
+04:00 & $02^\circ 10'$ & $111^\circ 38'$ & $043^\circ 55'$\\
+04:16 & $00^\circ 00'$ & $113^\circ 05'$ & $042^\circ 27'$\\
 \multicolumn{4}{c}{Pisces}\\
-00:00 & $28^\circ 32'$ & $069^\circ 26'$& $069^\circ 26'$ \\
-01:00 & $27^\circ 08'$ & $080^\circ 12'$& $058^\circ 39'$ \\
-02:00 & $23^\circ 09'$ & $089^\circ 53'$& $048^\circ 58'$ \\
-03:00 & $17^\circ 03'$ & $097^\circ 49'$& $041^\circ 02'$ \\
-04:00 & $09^\circ 22'$ & $103^\circ 46'$& $035^\circ 05'$ \\
-05:00 & $00^\circ 37'$ & $107^\circ 49'$& $031^\circ 03'$ \\
-05:04 & $00^\circ 00'$ & $108^\circ 01'$& $030^\circ 50'$ \\
+00:00 & $28^\circ 32'$ & $069^\circ 26'$ & $069^\circ 26'$\\
+01:00 & $27^\circ 08'$ & $080^\circ 12'$ & $058^\circ 39'$\\
+02:00 & $23^\circ 09'$ & $089^\circ 53'$ & $048^\circ 58'$\\
+03:00 & $17^\circ 03'$ & $097^\circ 49'$ & $041^\circ 02'$\\
+04:00 & $09^\circ 22'$ & $103^\circ 46'$ & $035^\circ 05'$\\
+05:00 & $00^\circ 37'$ & $107^\circ 49'$ & $031^\circ 03'$\\
+05:04 & $00^\circ 00'$ & $108^\circ 01'$ & $030^\circ 50'$\\
 \end{tabular}
 }}
 \end{Parallel}
@@ -2351,7 +2374,7 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 06:00 & $17^\circ 21'$ & $109^\circ 22'$& $046^\circ 11'$ \\
 07:00 & $10^\circ 11'$ & $107^\circ 09'$& $048^\circ 23'$ \\
 08:00 & $03^\circ 39'$ & $103^\circ 29'$& $052^\circ 03'$ \\
-08:37 & $00^\circ 00'$ & $100^\circ 29'$& $055^\circ 04'$ \\
+08:38 & $00^\circ 00'$ & $100^\circ 29'$& $055^\circ 04'$ \\
 \multicolumn{4}{c}{Cancer}\\
 00:00 & $53^\circ 26'$ & $090^\circ 00'$& $090^\circ 00'$ \\
 01:00 & $51^\circ 57'$ & $102^\circ 07'$& $077^\circ 53'$ \\
@@ -2363,7 +2386,7 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 07:00 & $13^\circ 03'$ & $119^\circ 43'$& $060^\circ 17'$ \\
 08:00 & $06^\circ 36'$ & $115^\circ 51'$& $064^\circ 09'$ \\
 09:00 & $01^\circ 09'$ & $110^\circ 43'$& $069^\circ 17'$ \\
-09:14 & $00^\circ 00'$ & $109^\circ 17'$& $070^\circ 43'$ \\
+09:15 & $00^\circ 00'$ & $109^\circ 17'$& $070^\circ 43'$ \\
 \multicolumn{4}{c}{Leo}\\
 00:00 & $50^\circ 09'$ & $102^\circ 14'$& $102^\circ 14'$ \\
 01:00 & $48^\circ 44'$ & $113^\circ 33'$& $090^\circ 55'$ \\
@@ -2378,7 +2401,7 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 }}
 \ParallelRText{{\small
 \begin{tabular}{l|lll}
-08:37 & $00^\circ 00'$ & $124^\circ 56'$& $079^\circ 31'$ \\
+08:38 & $00^\circ 00'$ & $124^\circ 56'$& $079^\circ 31'$ \\
 \multicolumn{4}{c}{Virgo}\\
 00:00 & $41^\circ 28'$ & $110^\circ 34'$& $110^\circ 34'$ \\
 01:00 & $40^\circ 12'$ & $120^\circ 20'$& $100^\circ 49'$ \\
@@ -2403,7 +2426,7 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 02:00 & $14^\circ 36'$ & $125^\circ 33'$& $095^\circ 36'$ \\
 03:00 & $10^\circ 02'$ & $131^\circ 37'$& $089^\circ 32'$ \\
 04:00 & $04^\circ 11'$ & $136^\circ 18'$& $084^\circ 51'$ \\
-04:37 & $00^\circ 00'$ & $138^\circ 29'$& $082^\circ 40'$ \\
+04:38 & $00^\circ 00'$ & $138^\circ 29'$& $082^\circ 40'$ \\
 \multicolumn{4}{c}{Sagittarius}\\
 00:00 & $09^\circ 51'$ & $102^\circ 14'$& $102^\circ 14'$ \\
 01:00 & $08^\circ 56'$ & $109^\circ 45'$& $094^\circ 42'$ \\
@@ -2427,7 +2450,7 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 02:00 & $14^\circ 36'$ & $084^\circ 24'$& $054^\circ 27'$ \\
 03:00 & $10^\circ 02'$ & $090^\circ 28'$& $048^\circ 23'$ \\
 04:00 & $04^\circ 11'$ & $095^\circ 09'$& $043^\circ 42'$ \\
-04:37 & $00^\circ 00'$ & $097^\circ 20'$& $041^\circ 31'$ \\
+04:38 & $00^\circ 00'$ & $097^\circ 20'$& $041^\circ 31'$ \\
 \end{tabular}
 }}
 \end{Parallel}
@@ -2457,7 +2480,7 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 06:00 & $10^\circ 46'$ & $089^\circ 48'$& $049^\circ 03'$ \\
 07:00 & $05^\circ 45'$ & $088^\circ 49'$& $050^\circ 02'$ \\
 08:00 & $01^\circ 06'$ & $086^\circ 40'$& $052^\circ 12'$ \\
-08:15 & $00^\circ 00'$ & $085^\circ 55'$& $052^\circ 56'$ \\
+08:16 & $00^\circ 00'$ & $085^\circ 55'$& $052^\circ 56'$ \\
 \multicolumn{4}{c}{Gemini}\\
 00:00 & $40^\circ 09'$ & $077^\circ 46'$& $077^\circ 46'$ \\
 01:00 & $39^\circ 20'$ & $084^\circ 21'$& $071^\circ 12'$ \\
@@ -2514,7 +2537,7 @@ $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- & $30^\circ$ & --- &  $30
 06:00 & $10^\circ 46'$ & $130^\circ 57'$& $090^\circ 12'$ \\
 07:00 & $05^\circ 45'$ & $129^\circ 58'$& $091^\circ 11'$ \\
 08:00 & $01^\circ 06'$ & $127^\circ 48'$& $093^\circ 20'$ \\
-08:15 & $00^\circ 00'$ & $127^\circ 04'$& $094^\circ 05'$ \\
+08:16 & $00^\circ 00'$ & $127^\circ 04'$& $094^\circ 05'$ \\
 \multicolumn{4}{c}{Libra}\\
 00:00 & $20^\circ 00'$ & $113^\circ 26'$& $113^\circ 26'$ \\
 01:00 & $19^\circ 17'$ & $118^\circ 49'$& $108^\circ 03'$ \\

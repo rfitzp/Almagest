@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  27 JAN 2026 14:09
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  29 JAN 2026 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -582,91 +582,91 @@ LaTeX Info: Redefining \ttfamily on input line 244.
 (./Bibliography/Bibliography.aux))
 \openout1 = `Almagest.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-3.
+1.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 23.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 23.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 23.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 23.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 23.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 23.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 23.
-LaTeX Font Info:    Redeclaring math accent \check on input line 23.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 23.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 23.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 23.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 23.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 21.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 21.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 21.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 21.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 21.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 21.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 21.
+LaTeX Font Info:    Redeclaring math accent \check on input line 21.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 21.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 21.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 21.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 23.
+(Font)              `operators' in the math version `normal' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 2
-3.
+1.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 23.
+(Font)              `operators' in the math version `bold' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
-23.
+21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
-input line 23.
+input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
- 23.
+ 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
-23.
+21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 23.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 23.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
-input line 23.
+input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
-e 23.
+e 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 23.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 23.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 21.
 The property list \__xpg_alias contains the pairs (without outer braces):
 >  {latex/target}  =>  {latex}
 >  {english/target}  =>  {english}
@@ -714,9 +714,9 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {polutonikogreek/target}  =>  {greek}
 >  {polutonikogreek/variant}  =>  {polytonic}
 >  {polutonikogreek/options}  =>  {variant=polytonic}.
-LaTeX Info: Redefining \rmfamily on input line 23.
-LaTeX Info: Redefining \sffamily on input line 23.
-LaTeX Info: Redefining \ttfamily on input line 23.
+LaTeX Info: Redefining \rmfamily on input line 21.
+LaTeX Info: Redefining \sffamily on input line 21.
+LaTeX Info: Redefining \ttfamily on input line 21.
  [1
 
 
@@ -794,13 +794,13 @@ LaTeX Info: Redefining \ttfamily on input line 130.
 File: epsfiles/sun.eps Graphic file (type eps)
 <epsfiles/sun.eps>
 
-Underfull \vbox (badness 1990) has occurred while \output is active []
+Underfull \vbox (badness 3895) has occurred while \output is active []
 
  [5]
-Underfull \vbox (badness 1210) has occurred while \output is active []
+Underfull \vbox (badness 2875) has occurred while \output is active []
 
  [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3895) has occurred while \output is active []
 
  [7]
 [8]
@@ -831,126 +831,125 @@ File: epsfiles/sphere4.eps Graphic file (type eps)
 Underfull \vbox (badness 2150) has occurred while \output is active []
 
  [16]
-[17]
+[17] [18]
 File: epsfiles/sphere5.eps Graphic file (type eps)
 <epsfiles/sphere5.eps>
 File: epsfiles/sphere6.eps Graphic file (type eps)
 <epsfiles/sphere6.eps>
 File: epsfiles/sphere8.eps Graphic file (type eps)
 <epsfiles/sphere8.eps>
- [18] [19]
 File: epsfiles/sphere9.eps Graphic file (type eps)
 <epsfiles/sphere9.eps>
- [20] [21]
+ [19] [20] [21]
 File: epsfiles/sphere7.eps Graphic file (type eps)
 <epsfiles/sphere7.eps>
- [22]
+ [22] [23]
 File: epsfiles/sphere10.eps Graphic file (type eps)
 <epsfiles/sphere10.eps>
- [23] [24] [25]
-Underfull \vbox (badness 1990) has occurred while \output is active []
+ [24] [25] [26]
+Underfull \vbox (badness 7291) has occurred while \output is active []
 
- [26]
-[27]
+ [27]
 File: epsfiles/altitude1.eps Graphic file (type eps)
 <epsfiles/altitude1.eps>
 File: epsfiles/altitude2.eps Graphic file (type eps)
 <epsfiles/altitude2.eps>
- [28] [29] [30] [31]
+
+[28] [29] [30] [31]
 File: epsfiles/ecliptic2.eps Graphic file (type eps)
 <epsfiles/ecliptic2.eps>
  [32]
 File: epsfiles/ecliptic1.eps Graphic file (type eps)
 <epsfiles/ecliptic1.eps>
- [33] [34] [35] [36] [37] [38] [39] [40] [41]
-[42] [43] [44] [45] [46] [47] [48] [49] [50]
-Overfull \vbox (292.41997pt too high) detected at line 1737
+ [33] [34] [35] [36] [37] [38] [39] [40] [41] [42]
+[43] [44] [45] [46] [47] [48] [49] [50]
+Overfull \vbox (286.41997pt too high) detected at line 1759
  []
 
 
-Overfull \vbox (286.41997pt too high) detected at line 1737
+Overfull \vbox (286.41997pt too high) detected at line 1759
  []
 
 
-Overfull \vbox (304.41997pt too high) detected at line 1853
+Overfull \vbox (304.41997pt too high) detected at line 1875
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 1853
+Overfull \vbox (298.41997pt too high) detected at line 1875
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 1855.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 1877.
 
 
-Overfull \vbox (304.41997pt too high) detected at line 1969
+Overfull \vbox (304.41997pt too high) detected at line 1991
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 1969
+Overfull \vbox (298.41997pt too high) detected at line 1991
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 1971.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 1993.
 
 
-Overfull \vbox (304.41997pt too high) detected at line 2085
+Overfull \vbox (304.41997pt too high) detected at line 2107
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2085
+Overfull \vbox (298.41997pt too high) detected at line 2107
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2087.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 2109.
 
 
-Overfull \vbox (304.41997pt too high) detected at line 2201
+Overfull \vbox (304.41997pt too high) detected at line 2223
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2201
+Overfull \vbox (298.41997pt too high) detected at line 2223
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2203.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 2225.
 
 
-Overfull \vbox (304.41997pt too high) detected at line 2317
+Overfull \vbox (304.41997pt too high) detected at line 2340
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2317
+Overfull \vbox (304.41997pt too high) detected at line 2340
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2319.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 2342.
 
 
-Overfull \vbox (304.41997pt too high) detected at line 2433
+Overfull \vbox (304.41997pt too high) detected at line 2456
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2433
+Overfull \vbox (298.41997pt too high) detected at line 2456
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2435.
+LaTeX Warning: Float too large for page by 10.02263pt on input line 2458.
 
 
-Overfull \vbox (274.41997pt too high) detected at line 2540
+Overfull \vbox (274.41997pt too high) detected at line 2563
  []
 
 
-Overfull \vbox (274.41997pt too high) detected at line 2540
+Overfull \vbox (274.41997pt too high) detected at line 2563
  []
 
 
-Overfull \vbox (268.41997pt too high) detected at line 2644
+Overfull \vbox (268.41997pt too high) detected at line 2667
  []
 
 
-Overfull \vbox (262.41997pt too high) detected at line 2644
+Overfull \vbox (262.41997pt too high) detected at line 2667
  []
 
 ) [51] [52] [53] [54] [55] [56] [57] [58] [59]
@@ -967,13 +966,13 @@ Overfull \vbox (262.41997pt too high) detected at line 2644
 
 ]
 Chapter 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--48
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 43--56
 
  []
 
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 49--62
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--70
 
  []
 
@@ -1014,7 +1013,7 @@ File: epsfiles/cop1.eps Graphic file (type eps)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [72])
-Overfull \hbox (1.22379pt too wide) in paragraph at lines 254--33
+Overfull \hbox (1.22379pt too wide) in paragraph at lines 254--31
 \TU/TimesNewRoman(0)/m/n/10.95 It can be seen, by comparison with Equations (4.
 22[])–(4.23[]) and (4.30[])–(4.31[]), that, as is the case for Ptolemy’s
  []
@@ -1035,12 +1034,12 @@ File: epsfiles/fig3.eps Graphic file (type eps)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [75] [76]
-Underfull \hbox (badness 10000) in paragraph at lines 122--142
+Underfull \hbox (badness 10000) in paragraph at lines 128--148
 
  []
 
 [77]
-Underfull \hbox (badness 10000) in paragraph at lines 160--182
+Underfull \hbox (badness 10000) in paragraph at lines 166--188
 
  []
 

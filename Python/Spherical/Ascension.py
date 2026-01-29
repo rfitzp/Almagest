@@ -218,8 +218,8 @@ with open("Ascension85.txt", "w") as f:
    
 cosL = math.cos (L)
 
-h  = cosL/sine
-x  = 1. /tanL/tane
+h = cosL/sine
+x = 1. /tanL/tane
 
 if abs(h) < 1.:
 
@@ -229,4 +229,4 @@ if abs(h) < 1.:
     deg, mnt = rad_to_deg_min (lambdac)
     dex, mnx = rad_to_deg_min (alphac)
 
-    print ("lambda_c =  %03d°%02d′ %03d°%02d′  %03d°%02d′ %03d°%02d′" % (deg, mnt, 360-dex-1, 60-mnx, 30-deg-1, 60-mnt, dex, mnx))
+    print ("%03d°%02d′ %03d°%02d′  %03d°%02d′ %03d°%02d′" % (deg, mnt, 360-dex-1, 60-mnx, 30-deg-1, 60-mnt, dex, mnx))
