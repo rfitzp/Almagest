@@ -1,7 +1,7 @@
 \chapter{Lunar-Solar Syzygies and Eclipses}
 % !TEX root = ../Almagest.tex
 
-\section{Introduction}
+\section{Syzygies}
 Let $\lambda_S$ and $\lambda_M$ represent the ecliptic longitudes
 of the Sun and the Moon, respectively. The lunar-solar {\em elongation}\/  is defined
 \begin{equation}
@@ -9,14 +9,15 @@ D = \lambda_M - \lambda_S.
 \end{equation}
 Because the  Moon is only visible because of light reflected from the Sun, there is a fairly obvious relationship between lunar-solar elongation and lunar
 phase. See Figure~\ref{fphase}. For instance, a {\em new moon}\/ corresponds to 
-$D = 0^\circ$, a {\em quarter moon}\/ to $D = 90^\circ$ or $270^\circ$, and a {\em full moon}\/ to $D = 180^\circ$. New moons and full moons are collectively known as lunar-solar {\em syzygies}. 
+$D = 0^\circ$, a {\em quarter moon}\/ to $D = 90^\circ$ or $270^\circ$, and a {\em full moon}\/ to $D = 180^\circ$. New moons and full moons are collectively known as lunar-solar {\em syzygies}. (From the Greek
+συζυγία, meaning ``yoking together'' or conjuction.)
 
 \begin{figure}[h]
 \centerline{\includegraphics[height=3in]{epsfiles/phase.eps}}
 \caption{The phases of the Moon.}\label{fphase}
 \end{figure}
 
-\section{Determination of Lunar-Solar Elongation}
+\section{Lunar-Solar Elongation Model}
 We can determine the  lunar-solar elongation  by combining the solar and
 lunar models described in the previous two chapters. Our elongation model is as
 follows:
@@ -41,7 +42,11 @@ and the mean anomaly of the Moon, $M_M$, to be determined as functions of time.
 Table~\ref{telona} specifies the anomalies $q_1$--$q_5$ as functions of their
 various arguments.
 
-The procedure for using the tables is as follows:
+Tables~\ref{telon} and \ref{telona} contain equivalent information to that contained in the ``Table of conjunctions" (Συνόδων κανόνιον) and the ``Table of full moons" (Πανσελήνων κανόνιον)
+that appear in Section~3 of Book~VI of the Almagest.
+
+\section{Determination of Lunar-Solar Elongation}\label{sxxc}
+The procedure for using Tables~\ref{telon} and \ref{telona}  to determine the lunar-solar elongation is as follows:
 \begin{enumerate}
 
  \item Determine the fractional Julian day number, $t$, corresponding to the date and time
@@ -76,14 +81,14 @@ using Table~\ref{lt6a}.
 
 In order to facilitate the calculation of syzygies, the previous model has been used to contruct Table~\ref{tnewmoon}, which lists
 the dates and fractional Julian day numbers of the first new moons of the years 1900--2099 CE. Two examples
-of syzygy calculations are given below.
+of syzygy calculations are given in the following section.
 
 \section{Example Syzygy Calculations}
 \noindent {\em Example 1}: Sixth new moon in 2004 AD:\\
 ~\\
 From Table~\ref{tnewmoon}, the date of first new moon in 2004 AD is 2453026.4 JD. Now, the
 lunar-solar elongation increases at the mean rate $n_M - n_S = 13.17639646-0.98564735=12.1907491^\circ$ per day, or
-$360^\circ$ in $29.53$ days; the latter  time period is known as a {\em synodic month}. Hence, a rough estimate for the
+$360^\circ$ in $29.53$ days; the latter  time period is known as a synodic month. Hence, a rough estimate for the
 date of the sixth new moon in 2004 AD is five synodic months after that of the first: that is, $2453026.4
 + 5\times 29.53\simeq 2453174.1$ JD. It follows that $\Delta t = 2453174.1-2451545.0=1629.1$ JD. Let us calculate the lunar-solar elongation at this date.
 From Table~\ref{telon}:\\
@@ -91,11 +96,11 @@ From Table~\ref{telon}:\\
 &&&&\\
 $t$(JD) & $ \bar{D}(^\circ)$ & $\bar{F}_M(^\circ)$ & $M_S(^\circ)$ & $M_M(^\circ)$\\[-2ex]
 &&&&\\
-+1000 & $310.749$ & $269.350$ & $265.600$ & $104.993$\\
-+600 & $114.449$ & $17.610$ & $231.360$ & $278.996$\\
-+20 & $243.815$ & $264.587$ & $19.712$ & $261.300$\\
-+9 & $109.717$ & $119.064$ & $8.870$ & $117.585$\\
-+.1 & $1.219$ & $1.323$ & $0.099$ & $1.306$\\
+$+1\,000$ & $310.749$ & $269.350$ & $265.600$ & $104.993$\\
+$+600$ & $114.449$ & $17.610$ & $231.360$ & $278.996$\\
+$+20$ & $243.815$ & $264.587$ & $19.712$ & $261.300$\\
+$+9$ & $109.717$ & $119.064$ & $8.870$ & $117.585$\\
+$+.1$ & $1.219$ & $1.323$ & $0.099$ & $1.306$\\
 Epoch & $297.864$ & $93.284$ & $357.588$ & $134.916$\\\cline{2-5}
 &$1077.813$ & $765.218$ & $883.229$ & $899.096$\\\cline{2-5}
 Modulus & $357.813$ & $45.218$ &$163.229$ & $179.096$\\ 
@@ -139,9 +144,9 @@ From Table~\ref{telon}:\\
 &&&&\\
 $t$(JD) & $ \bar{D}(^\circ)$ & $\bar{F}_M(^\circ)$ & $M_S(^\circ)$ & $M_M(^\circ)$\\[-2ex]
 &&&&\\
--6000 & $-64.495$ & $-176.102$ & $-153.601$ & $-269.958$\\
--500 & $-335.375$ & $-134.675$ & $-132.800$ & $-52.496$\\
--6 & $-73.144$ & $-79.376$ & $-5.914$ & $-78.390$\\
+$-6\,000$ & $-64.495$ & $-176.102$ & $-153.601$ & $-269.958$\\
+$-500$ & $-335.375$ & $-134.675$ & $-132.800$ & $-52.496$\\
+$-6$ & $-73.144$ & $-79.376$ & $-5.914$ & $-78.390$\\
 Epoch & $297.864$ & $93.284$ & $357.588$ & $134.916$\\\cline{2-5}
 &$-175.150$ & $-296.869$ & $65.273$ & $-265.928$\\\cline{2-5}
 Modulus & $184.131$ & $63.062$ &$65.273$ & $94.072$\\ 
@@ -194,7 +199,7 @@ Likewise, the angular radius of the Moon is
 \begin{equation}
 \rho_M\simeq  \rho_{M\,0}\,(1+e_M\,\cos M_M),
 \end{equation}
-where $\rho_{M\,0} = R_M/a_M =1743\,{\rm km}/384,399\,{\rm km}\simeq 15.59'$. Here,
+where $\rho_{M\,0} = R_M/a_M =1743\,{\rm km}/384\,399\,{\rm km}\simeq 15.59'$. Here,
 $R_M$, $a_M$, $e_M$, and $M_M$ are the radius of the Moon, and the major radius, eccentricity, and mean anomaly of the Moon's orbit, respectively.
 As was shown in the previous chapter, lunar parallax causes the
 angular position of the Moon in the sky to shift by up to
@@ -221,10 +226,10 @@ because $R_S\gg R_E$.
 
 A solar eclipse does not take place every new moon,
 nor a lunar eclipse every full moon, because of the inclination of the
-Moon's orbit to the ecliptic plane, which causes the moon to
+Moon's orbit to the ecliptic plane, which causes the Moon to
 pass either above or below the Sun, or the Earth's shadow, respectively, in the majority of cases. It follows
-that the critical parameter which determines the occurrence of eclipses is
-the ecliptic latitude of the moon at syzygy, $\beta_{syz}$. Of course, once
+that the critical parameter that determines the occurrence of eclipses is
+the ecliptic latitude of the Moon at syzygy, $\beta_{syz}$. Of course, once
 the date  and time of a syzygy has been established, $\beta_{syz}$
 can be calculated from Table~\ref{tmoonb}. However, the lunar argument of latitude, $F$, must first be determined using
 \begin{equation}\label{moonla}
@@ -252,7 +257,7 @@ or equivalently
 \end{equation}
 and either a total or a {\em partial lunar eclipse}, in which the Moon is only
 partially immersed in the Earth's shadow, must take place if
-$ |\beta_{syz}| < \rho_U+\rho_M$ (see Fig.~\ref{fmoonec}),
+$ |\beta_{syz}| < \rho_U+\rho_M$ (see Figure~\ref{fmoonec}),
 or  equivalently
 \begin{equation}
 |\beta_{syz}| < \delta_M+\rho_M-\rho_S.
@@ -265,7 +270,7 @@ above the horizon, because the Earth's shadow is larger than the Moon, and the r
  The criterion for a solar eclipse is modified by lunar parallax, which causes the angular position of the Moon relative to the Sun to shift by up to $\delta_M$ from its geocentric position. The amount of the shift
  depends on the observation site. However, a site can always be found
  at which the shift takes its maximum value in any particular direction.
- Note that the Sun has negligible parallax, because it is much further from the Earth than the Moon. Taking parallactic shifts into account, a {\em total solar eclipse}, in which the Sun is totally obscured by the Moon,
+ Note that the Sun has negligible parallax, because it is much further away from the Earth than the Moon. Taking parallactic shifts into account, a {\em total solar eclipse}, in which the Sun is totally obscured by the Moon,
 must take place if $\rho_M>\rho_S$ and
  \begin{equation}
  |\beta_{syz}| < \delta_M + \rho_M - \rho_S,
@@ -321,13 +326,12 @@ type of solar eclipse is $|\beta_{syz}|< \beta_{S}$, where
 \section{Example Eclipse Calculations}
 Let us use our model to examine the lunar-solar syzygies of the year
 1992 AD in order to see whether any of them were associated with solar or
-lunar eclipses. The table below shows the dates and times of the new moons
-of 1992 AD, calculated using the method described at the beginning of
-this section. Also shown is the magnitude of the Moon's ecliptic latitude
-at each syzygy, $|\beta_{syz}|$, calculated from Eqs.~(\ref{emoonlat}) and
-(\ref{moonla}), as well as the critical values of
+lunar eclipses. The following  table  shows the dates and times of the new moons
+of 1992 AD, calculated using the method described in Section~\ref{sxxc}. Also shown is the magnitude of the Moon's ecliptic latitude
+at each syzygy, $|\beta_{syz}|$, calculated from 
+Eqaution~(\ref{moonla}) and Table~\ref{tmoonb}, as well as the critical values of
 this parameter for a general,  total, and annular solar eclipse. The latter are calculated from
-Equations~(\ref{est})--(\ref{esp}). It can be seen that
+Equations~(\ref{est})--(\ref{esp}) with the aid of Table~\ref{tsyzb}. It can be seen that
 the criterion for a total solar eclipse (that is, $|\beta_{syz}|< \beta_{St}$ and $\beta_{St}>\beta_{Sa}$) is satisfied for the syzygy marked with a T,  the criterion for an annular solar eclipse (that is, $|\beta_{syz}|< \beta_{Sa}$ and $\beta_{Sa}>\beta_{St}$) for the syzygy marked with an A,
 and
 the criterion for a partial solar eclipse  (that is, $\beta_{St},\beta_{Sa}<|\beta_{syz}|< \beta_{S}$)  for the syzygy marked with a P. It is easily verified
@@ -352,11 +356,11 @@ Date & Time (UT) & $\beta_{S}(')$ & $\beta_{St}(')$ & $\beta_{Sa}(')$ & $|\beta_
 &&&&&&\\
 \end{tabular}
 
-The table below shows the dates and times of the full moons
+The following table shows the dates and times of the full moons
 of 1992 AD. Also shown is the magnitude of the Moon's ecliptic latitude
 at each syzygy, as well as the critical values of
 this parameter for a general and a total lunar eclipse. The latter are calculated from
-Equations~(\ref{elp}) and (\ref{elt}), respectively. It can be seen that
+Equations~(\ref{elp}) and (\ref{elt}), respectively, with the aid of Table~\ref{tsyzb}. It can be seen that
 the criterion for a total lunar eclipse (that is, $|\beta_{syz}|< \beta_{Mt}$) is satisfied for the syzygy  marked with a T, whereas
 the criterion for a partial lunar eclipse  (that is, $\beta_{Mt}<|\beta_{syz}|< \beta_{M}$) is satisfied for the syzygy marked with a P. It is easily verified
 that a total lunar eclipse, and a partial lunar eclipse did indeed
@@ -386,7 +390,7 @@ and the solar mean anomaly, $M_S$, to be statistically independent of one anothe
 the range $0^\circ$ to $360^\circ$. Using this
 insight, we can easily calculate the probability that a new moon is coincident with a
 solar eclipse, or a full moon with a lunar eclipse, using Equation~(\ref{emoonlat})
-and the criteria (\ref{elt})--(\ref{eps}).
+and the criteria (\ref{elt})--(\ref{esp}).
 For a new moon we find:\\
 \begin{tabular}{lr}
 &\\
@@ -413,8 +417,18 @@ mean number of solar eclipses per year is approximately $12.37\times 0.185\simeq
 whereas the mean number of lunar eclipses per year is about $12.37\times 0.117\simeq 1.4$. Clearly, solar eclipses are more  common that lunar
 eclipses. On the other hand, at a given observation site on the Earth, lunar eclipses
 are much more common than solar eclipses, because the former are visible
-all over the Earth, whereas the latter are only visible in a very localized
+ over all regions of the Earth for which the Moon is above the horizon, whereas the latter are only visible in a very localized
 region.
+
+\section{Eclipse Cycles}
+Now, $223$ synodic months corresponds to $6585.413$ days, which corresponds to $238.99$ anomalistic months and $242.00$ draconic months. 
+This implies that if a solar eclipse takes place at a given new moon then, $223$ new moons later, the Moon's perigee and ascending node will be found in almost
+the exact same positions, which 
+ implies that the Moon's ecliptic latitude, as well as $\beta_{St}$, $\beta_{Sa}$, and $\beta_S$, will take almost exactly the same values. Hence, another solar eclipse is almost
+certain to happen $223$ new moons after a given eclipse. The same reasoning leads to the conclusion that if a lunar eclipse takes place at
+a given full moon then another eclipse is almost certain to occur 223 full moons later. It can easily be demonstrated that there is no number of
+synodic months less than $233$ that corresponds to integer numbers of both anomalistic and draconic months. Hence, the time period
+of $223$ synodic months, which is (mistakenly) called the {\em saros}, is the minimum (almost) guaranteed period on which solar and lunar eclipses repeat. 
 
 \clearpage
 \begin{table}
@@ -423,15 +437,15 @@ region.
 $\Delta t$(JD)& $\Delta \bar{D}(^\circ)$ &  $\Delta \bar{F}_M(^\circ)$ & $\Delta M_S(^\circ)$& $\Delta M_M (^\circ)$ & $\Delta t$(JD) & $\Delta \bar{D}(^\circ)$ & $\Delta \bar{F}_M(^\circ)$ 
 &$\Delta M_S(^\circ)$ & $\Delta M_M(^\circ)$\\ \hline
 &&&&&&&&&\\[-1.75ex]
-10\,000 & 227.491 & 173.503 & 136.002 & 329.930 & 1,000 & 310.749 & 269.350 & 265.600 & 104.993\\
-20\,000 &  94.982 & 347.005 & 272.005 & 299.859 & 2,000 & 261.498 & 178.701 & 171.200 & 209.986\\
-30\,000 & 322.473 & 160.508 &  48.007 & 269.788 & 3,000 & 212.247 &  88.051 &  76.801 & 314.979\\
-40\,000 & 189.964 & 334.011 & 184.010 & 239.718 & 4,000 & 162.996 & 357.401 & 342.401 &  59.972\\
-50\,000 &  57.455 & 147.513 & 320.012 & 209.648 & 5,000 & 113.746 & 266.751 & 248.001 & 164.965\\
-60\,000 & 284.947 & 321.016 &  96.015 & 179.577 & 6,000 &  64.495 & 176.102 & 153.601 & 269.958\\
-70\,000 & 152.438 & 134.519 & 232.017 & 149.506 & 7,000 &  15.244 &  85.452 &  59.202 &  14.951\\
-80\,000 &  19.929 & 308.022 &   8.020 & 119.436 & 8,000 & 325.993 & 354.802 & 324.802 & 119.944\\
-90\,000 & 247.420 & 121.524 & 144.022 &  89.366 & 9,000 & 276.742 & 264.152 & 230.402 & 224.937\\
+10\,000 & 227.491 & 173.503 & 136.002 & 329.930 & 1\,000 & 310.749 & 269.350 & 265.600 & 104.993\\
+20\,000 &  94.982 & 347.005 & 272.005 & 299.859 & 2\,000 & 261.498 & 178.701 & 171.200 & 209.986\\
+30\,000 & 322.473 & 160.508 &  48.007 & 269.788 & 3\,000 & 212.247 &  88.051 &  76.801 & 314.979\\
+40\,000 & 189.964 & 334.011 & 184.010 & 239.718 & 4\,000 & 162.996 & 357.401 & 342.401 &  59.972\\
+50\,000 &  57.455 & 147.513 & 320.012 & 209.648 & 5\,000 & 113.746 & 266.751 & 248.001 & 164.965\\
+60\,000 & 284.947 & 321.016 &  96.015 & 179.577 & 6\,000 &  64.495 & 176.102 & 153.601 & 269.958\\
+70\,000 & 152.438 & 134.519 & 232.017 & 149.506 & 7\,000 &  15.244 &  85.452 &  59.202 &  14.951\\
+80\,000 &  19.929 & 308.022 &   8.020 & 119.436 & 8\,000 & 325.993 & 354.802 & 324.802 & 119.944\\
+90\,000 & 247.420 & 121.524 & 144.022 &  89.366 & 9\,000 & 276.742 & 264.152 & 230.402 & 224.937\\
 &&&&&&&&&\\
 100 & 139.075 & 242.935 &  98.560 & 226.499 & 10 & 121.907 & 132.294 &   9.856 & 130.650\\
 200 & 278.150 & 125.870 & 197.120 &  92.999 & 20 & 243.815 & 264.587 &  19.712 & 261.300\\

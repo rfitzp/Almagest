@@ -1,7 +1,7 @@
 \chapter{The Sun}\label{csun}
 % !TEX root = ../Almagest.tex
 
-\section{Determination of Ecliptic Longitude}\label{ssun}
+\section{Solar Ecliptic Longitude Model}
 Our solar longitude model is sketched in Figure~\ref{lf3}. From a geocentric point of view, the Sun, $S$,  appears to execute
 a (counterclockwise) Keplerian orbit of major radius $a$, and eccentricity $e$, about the
 Earth, $G$. As has already been mentioned, the circle traced out by the Sun on the celestial sphere is
@@ -69,9 +69,10 @@ is called the {\em mean anomaly at epoch}, and
 \tilde{n} = n - \varpi_1
 \end{equation}
  the {\em rate of motion in mean anomaly}. 
-
+ 
+\section{Determination of Solar Ecliptic Longitude}\label{ssun}
 Our procedure for determining the ecliptic longitude of the Sun is described
-below. 
+in the following.
 The requisite orbital elements (that is, $e$, $n$, $\tilde{n}$, $\bar{\lambda}_0$, and $M_0$) for the J2000 epoch (that is, 12:00 UT on January 1, 2000 CE, which corresponds to $t_0= 2\,451\,545.0$ JD) are listed
 in Table~\ref{lt4}. These elements are calculated
 on the assumption that the vernal equinox  precesses at the uniform
@@ -93,13 +94,11 @@ The ecliptic longitude of the Sun can be calculated with the aid of Tables~\ref{
 Sun to be determined as  functions of time. Table~\ref{lt6} specifies the equation of center, $q$, as a
 function of the mean anomaly. 
 
-
  Note that Table~\ref{lt5} contains essentially the same information as that contained in the ``Table of the Sun's mean motion" (Κανόνιον τῆς ὁμαλῆς τοῦ ἡλίου κινήσεως) that appears in
  Section~2 of Book~III of the Almagest. Likewise, Table~\ref{lt6} contains essentially the same information as that contained in the ``Table of the solar anomaly'' (Κανόνιον τῆς  ἡλιακῆς ἀνωμαλίας)
  that appears in Section~6 of Book~III of the Almagest.
 
-
-The procedure for using Tables~\ref{lt5} and \ref{lt6} is as follows:
+The procedure for using Tables~\ref{lt5} and \ref{lt6} to determine solar longitude  is as follows:
 \begin{enumerate}
 
 \item Determine the fractional Julian day number, $t$, corresponding to the date and time
@@ -122,9 +121,9 @@ to be used to determine that of a planet.) It is necessary to interpolate if $M$
 The decimal fraction can be converted into arc minutes
 using Table~\ref{lt6a}. Round to the nearest arc minute. 
 \end{enumerate}
-Two examples of the use of this procedure are given below.
+Two examples of the use of this procedure are given in the next section.
 
-\section{Example Longitude Calculations}
+\section{Example Solar Longitude Calculations}
 \noindent {\em Example 1}: May 5, 2005 AD, 00:00 UT:\\
 ~\\
 According to Tables~\ref{kt1}--\ref{kt3}, $t = 2\,453\,495.5$ JD. Hence,
@@ -134,10 +133,10 @@ Table~\ref{lt5}, we find:\\
 &&\\
 $t$(JD) & $ \bar{\lambda}(^\circ)$ & $M(^\circ)$\\[-2ex]
 &&\\
-+1\,000 & $265.647$ & $265.600$\\
-+900 & $167.083$ & $167.040$\\
-+50 & $49.280$ & $49.280$\\
-+.5 & $0.493$ & $0.493$\\
+$+1\,000$ & $265.647$ & $265.600$\\
+$+900$ & $167.083$ & $167.040$\\
+$+50$ & $49.280$ & $49.280$\\
+$+.5$ & $0.493$ & $0.493$\\
 Epoch & $280.458$ & $357.588$\\\cline{2-3}
 &$762.961$ & $840.001$\\\cline{2-3}
 Modulus & $42.961$ & $120.001$\\ 
@@ -173,11 +172,11 @@ Table~\ref{lt5}, we find:\\
 &&\\
 $t$(JD) & $\bar{\lambda}(^\circ)$ & $ M(^\circ)$\\[-2ex]
 &&\\
-$-$70\,000 & $-235.315$ & $-232.017$\\
-$-$2\,000 & $-171.295$ & $-171.200$\\
-$-$600 & $-231.388$ & $-231.360$\\
-$-$90 & $-88.708$ & $-88.704$\\
-$-$.5 & $-0.493$ & $-0.493$\\
+$-70\,000 $& $-235.315$ & $-232.017$\\
+$-2\,000$ & $-171.295$ & $-171.200$\\
+$-600$ & $-231.388$ & $-231.360$\\
+$-90$ & $-88.708$ & $-88.704$\\
+$-.5$ & $-0.493$ & $-0.493$\\
 Epoch & $280.458$ & $357.588$\\\cline{2-3}
 &$-446.741$ & $-366.186$\\\cline{2-3}
 Modulus & $273.259$ & $353.814$\\
@@ -269,15 +268,16 @@ former season. Both of these effects tend to lengthen summer, and
 shorten winter. Hence, summer is presently the longest season, and winter the shortest.
 
 In Section~4 of Book~III of the Almagest, Ptolemy effectively performed the calculation described in this section in reverse, in order to determine the eccentricity of the Sun's
-apparent orbit about the Earth, as well as the location of the perigee,  from the observed differences in the lengths of the seasons. However, in Ptolemy's day the lengths of spring, summer, autumn, and winter were
-94.5, 92.5, 88.125, and 90.125 days, respectively. The lengths of the seasons have changed since the time of Ptolemy because the perigee has
-rotated by about $30^\circ$ over the last 2000 years. 
+apparent orbit about the Earth, as well as the location of the solar perigee,  from the observed differences in the lengths of the seasons. However, Ptolemy's figures for the lengths of spring, summer, autumn, and winter,
+which he inherited from Hipparchus,  were
+94.5, 92.5, 88.125, and 90.125 days, respectively. The lengths of the seasons have changed since the time of Hipparchus because the solar perigee has
+rotated by about $38^\circ$ (in the direction of the Sun's apparent motion) over the last 2200 years. 
 
 \section{Equation of Time}
 At any particular observation site on the Earth's surface, {\em local noon}\/
 is defined as the instant in time when the Sun culminates at the
 meridian. However, as a consequence of the inclination of the
-ecliptic to the celestial equatior, as well as the uneven motion of the
+ecliptic to the celestial equator, as well as the uneven motion of the
 Sun around the ecliptic, the time interval  between successive local noons, which
 is known as a {\em solar day}, 
 is not constant, but varies throughout the year. Hence, if we were to

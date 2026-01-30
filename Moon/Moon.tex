@@ -1,14 +1,14 @@
 \chapter{The Moon}\label{cmoon}
 % !TEX root = ../Almagest.tex
 
-\section{Determination of Ecliptic Longitude}
+\section{Lunar Ecliptic Longitude Model}
 The orbit of the Moon around the Earth is strongly perturbed by the 
 gravitational influence of the Sun. It follows that we cannot derive an accurate lunar longitude model
 from Keplerian orbit theory alone. Instead, we shall employ a
 greatly simplified version of modern lunar theory. According to such
 theory, the time variation of the ecliptic longitude of the Moon is fairly
 well represented by the following
-formulae:\footnote {See {\tt http://jgiesen.de/moonmotion/index.html}, or {\em Astronomical Algorithms}, J.~Meeus, (Willmann-Bell, Richmond VA, 1998)}
+formulae:\footnote {See {\tt http://jgiesen.de/moonmotion/index.html}, or {\em Astronomical Algorithms}, J.~Meeus, (Willmann-Bell, Richmond VA, 1998).}
 \begin{align}
 \bar{\lambda} &=\bar{\lambda}_0  + n\,(t-t_0),\\[0.5ex]
 M &= M_0 + \tilde{n}\,(t-t_0),\\[0.5ex]
@@ -48,7 +48,12 @@ The ecliptic longitude of the Moon can be calculated with the aid of Tables~\ref
 Table~\ref{tmoonm} allows the lunar mean longitude, $\bar{\lambda}$,  the mean anomaly, $M$, and  the mean argument of latitude, $\bar{F}$, to be determined as functions of time.
 Table \ref{tmoona} specifies the lunar anomalies, $q_1$--$q_5$, as functions of their various arguments.
 
-The procedure for using the tables is as follows:
+Incidentally, Table~\ref{tmoonm} contains essentially the same information as is contained in the ``Table of the Moon's mean motion'' (Κανόνες τῶν τῆς σελήνης μέσων κινήσεων) that
+appears in Section~4 of Book~IV of the Almagest. Moreover, Table~\ref{tmoona} contains equivalent information to that contained in the ``Table of the whole lunar anomaly" (Κανόνιον τῆς καθόλου σεληνακῆς ἀνωμαλίας)
+that appears in Section~8 of Book~V of the Almagest. 
+
+\section{Determination of Lunar Ecliptic Longitude}
+The procedure for using Tables~\ref{tmoon} and \ref{tmoona} to determine lunar longitude is as follows:
 \begin{enumerate}
  
  \item Determine the fractional Julian day number, $t$, corresponding to the date and time
@@ -82,9 +87,11 @@ If necessary, convert $\lambda$ into an angle in the range $0^\circ$ to $360^\ci
 The decimal fraction can be converted into arc minutes
 using Table~\ref{lt6a}. Round to the nearest arc minute. 
 \end{enumerate}
-Two examples of the use of this procedure are given below.
 
-\section{Example Longitude Calculations}
+
+Two examples of the use of the procedure that has just been described are given in the following section.
+
+\section{Example Lunar Longitude Calculations}
 \noindent {\em Example 1}: May 5, 2005 AD, 00:00 UT:\\
 ~\\
 From Section~\ref{ssun}, $t-t_0=1950.5$ JD, $\lambda_S = 44.602^\circ$, and $M_S= 120.001^\circ$. 
@@ -93,10 +100,10 @@ Making use of Table~\ref{tmoonm}, we find:\\
 &&&\\
 $t$(JD) & $ \bar{\lambda}(^\circ)$ & $M(^\circ)$ & $\bar{F}(^\circ)$\\[-2ex]
 &&&\\
-+1000 & $216.396$ & $104.993$ & $269.350$\\
-+900 & $338.757$ & $238.494$ & $26.415$\\
-+50 & $298.820$ & $293.250$ & $301.468$\\
-+.5 & $6.588$ & $6.532$ & $6.615$\\
+$+1\,000$ & $216.396$ & $104.993$ & $269.350$\\
+$+900$ & $338.757$ & $238.494$ & $26.415$\\
+$+50$ & $298.820$ & $293.250$ & $301.468$\\
+$+.5$ & $6.588$ & $6.532$ & $6.615$\\
 Epoch & $218.322$ & $134.916$ & $93.284$\\\cline{2-4}
 &$1078.883$ & $778.185$ & $697.132$\\\cline{2-4}
 Modulus & $358.883$ & $58.185$ &$337.132$\\ 
@@ -141,11 +148,11 @@ Making use of Table~\ref{tmoonm}, we find:\\
 &&&\\
 $t$(JD) & $ \bar{\lambda}(^\circ)$ & $M(^\circ)$ & $\bar{F}(^\circ)$\\[-2ex]
 &&&\\
--70,000 & $-27.752$ & $-149.506$ & $-134.519$\\
--2,000 & $-72.793$ & $-209.986$ & $-178.701$\\
--600 & $-345.838$ & $-278.996$ & $-17.610$\\
--90 & $-105.876$ & $-95.849$ & $-110.642$\\
--.5 & $-6.588$ & $-6.532$ & $-6.615$\\
+$-70\,000 $& $-27.752$ & $-149.506$ & $-134.519$\\
+$-2\,000$ & $-72.793$ & $-209.986$ & $-178.701$\\
+$-600$ & $-345.838$ & $-278.996$ & $-17.610$\\
+$-90$ & $-105.876$ & $-95.849$ & $-110.642$\\
+$-.5$ & $-6.588$ & $-6.532$ & $-6.615$\\
 Epoch & $218.322$ & $134.916$ & $93.284$\\\cline{2-4}
 &$-340.525$ & $-605.953$ & $-354.803$\\\cline{2-4}
 Modulus & $19.475$ & $114.047$ &$5.197$\\ 
@@ -186,7 +193,7 @@ Thus, the ecliptic longitude of the Moon at 00:00 UT on December 25, 1800 AD was
 represent the Earth, the Moon, the ascending node, the descending node, the longitude of the ascending node, the argument of latitude, and the vernal equinox, respectively. The view is from northern ecliptic pole. The Moon orbits counterclockwise.}\label{fmoon}
 \end{figure}
 
-\section{Determination of Ecliptic Latitude}
+\section{Lunar Ecliptic Latitude Model}
 A model of the Moon's ecliptic latitude is needed in order to predict the
 occurrence of solar and lunar eclipses. Figure~\ref{fmoon} shows the
 Moon's orbit about the Earth. The plane of this orbit is fixed, but slightly tilted with
@@ -224,10 +231,11 @@ F &=\bar{F}+q_1+q_2+q_3+q_4+q_5,\\[0.5ex]
 \sin\beta &= \sin i\,\sin F.\label{emoonlat}
 \end{align}
 The value of the lunar orbital inclination, $i$,  for the
-J2000 epoch is specified in Table~\ref{tmoon}. The above model is capable of
+J2000 epoch is specified in Table~\ref{tmoon}. The previous model is capable of
 matching NASA ephemeris data during the years 1995-2006 AD with
 a mean error of $6'$, and a maximum error of $11'$.
 
+\section{Determination of Lunar Ecliptic Latitude}
 The ecliptic latitude of the Moon can be calculated with the aid of Table~\ref{tmoonb}. The procedure for using this table is as follows:
 \begin{enumerate}
 
@@ -253,6 +261,14 @@ $q_1=5.555^\circ$, $q_2=-0.663^\circ$, $q_3=-0.631^\circ$, $q_4=-0.139^\circ$,
 and $q_5=0.086^\circ$, respectively. Hence, $F=\bar{F}+q_1+q_2+q_3+q_4+q_5
 =337.132+5.555-0.663-0.631-0.139+0.086\simeq 341^\circ$. Thus, according to Table~\ref{tmoonb}, the ecliptic latitude
 of the Moon at  00:00 UT on May 5, 2005 AD was $-1.680^\circ\simeq -1^\circ 41'$.
+
+\section{Length of Month}
+A {\em sidereal month}\/ is the mean period of time between successive passages of the Moon through the vernal equinox, and is
+$360/n= 360/13.17639646=27.326$ days in length, where $n$ comes from Table~\ref{tmoon}. A {\em synodic month}\/ is the mean period of time between successive new moons, or
+successive full moons, and is $360/(n-n_S)= 360/(13.17639646-0.98564735)=29.531$ days in length, where $n_S$ (which is the mean motion of the Sun) comes from Table~\ref{lt4}. 
+An {\em anomalistic month}\/ is the mean period of time between successive passages of the Moon through its perigee, and is $360/\tilde{n}=360/13.06499295=27.555$ days
+in length, where $\tilde{n}$ comes from Table~\ref{tmoon}. Finally, a {\em draconic month}\/ is the mean period of time between successive passages of the Moon
+through its ascending node, and is $360/\breve{n} =360/13.22935027 = 27.212$ days in length, where $\breve{n}$ comes from Table~\ref{tmoon}. 
 
 \begin{figure}
 \centerline{\includegraphics[height=3in]{epsfiles/parallax.eps}}
@@ -300,6 +316,12 @@ For example, if $a=44^\circ 00'$ and $M=100^\circ$ then Table~\ref{tmoonc}
 yields $\delta = 41.050'$ and $\zeta =- 0.00953$. Hence, $\delta a = 41.050\,(1-0.00953) \simeq 41'$, and the true altitude of the Moon becomes
 $43^\circ 19'$. 
 
+Incidentally, the information contained in Table~\ref{tmoonc} is equivalent to that contained in the ``Parallax table" (Κανὼν παραλλακτικός) that appears in Section~18 of
+Book~V of the Almagest. Moreover, in Section~15 of the same book, Ptolemy uses the measured lunar parallax to determine the distance of the Moon from
+the Earth. Ptolemy finds that the Moon is 59 Earth radii from the center of the Earth. (The correct Earth-Moon distance  is 60.33 Earth radii.) Furthermore, in Section~16
+of the same book, Ptolemy uses his Earth-Moon distance, in combination with the apparent size of the Moon in the sky, to estimate that the Earth's radius is $3.4$ times
+that of the Moon. (The correct answer is that the Earth's radius is 3.67 times that of the Moon.)
+
 \begin{figure}
 \centerline{\includegraphics[height=3in]{epsfiles/para.eps}}
 \caption{ Parallactic shifts in the Moon's ecliptic longitude and latitude.}\label{fpara1}
@@ -329,8 +351,8 @@ The ``Scorpio'' entry in Table~\ref{tscorp} gives the Moon's geocentric altitude
 value of the parallactic angle $\mu$. Making use of this data,
 in combination with Table~\ref{tmoonc} and Equations~(\ref{epara1}) and (\ref{epara2}), we can calculate the parallax-induced changes in the Moon's ecliptic
 longitude and latitude as it transits the sky. 
-Data from such a calculation is given in the table below. The first column specifies
-time because the  Moon's upper transit (thus, $t=+1$ hrs.\ means one hour after  the
+Data from such a calculation is given in the following table. The first column specifies
+time since the  Moon's upper transit (thus, $t=+1$ hrs.\ means one hour after  the
 upper transit), the second column gives the Moon's geocentric altitude, the third column the parallactic angle, 
 the
 fourth column the decrease in the Moon's real altitude due to parallax, and the fifth and
@@ -348,7 +370,7 @@ observation sites, and observation times.
 \begin{tabular}{r|ccccc}\centering
 $t$ (hrs.) & $a $ & $\mu$ & $\delta a $ & $\delta\lambda $ & $\delta\beta$\\\hline
 &&&\\[-1.75ex]
-$-5.51$ & $00^\circ 00'$  & $190^\circ 22'$ & $57'$ &$+56'$ & $+10'$\\
+$-5.52$ & $00^\circ 00'$  & $190^\circ 22'$ & $57'$ &$+56'$ & $+10'$\\
 $-5.00$ & $12^\circ 26'$ & $187^\circ 30'$ & $56'$ & $+55'$ & $+07'$\\
 $-4.00$ & $26^\circ  37'$ & $183^\circ 07'$ & $51'$ & $+51'$&$+03'$\\
 $-3.00$ & $40^\circ 23'$ & $176^\circ 40'$ & $43'$ &$+43'$ & $-03'$\\
@@ -360,7 +382,7 @@ $+2.00$ & $53^\circ 15'$ & $055^\circ 11'$ & $34'$ & $-20'$&$-28'$\\
 $+3.00$ & $40^\circ 23'$ & $044^\circ 29'$ & $43'$ & $-31'$&$-30'$\\
 $+4.00$ & $26^\circ 37'$ & $038^\circ01'$ & $51'$ & $-40'$&$-32'$\\
 $+5.00$& $12^\circ 26'$ & $033^\circ 39'$ & $56'$ & $- 46'$&$-31'$\\
-$+5.51$ & $00^\circ 00'$ & $030^\circ 47'$ & $57'$ & $-49'$&$-29'$\\
+$+5.52$ & $00^\circ 00'$ & $030^\circ 47'$ & $57'$ & $-49'$&$-29'$\\
 \end{tabular}\\
 ~\\~\\~\\
 
