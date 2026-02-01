@@ -88,10 +88,9 @@ The decimal fraction can be converted into arc minutes
 using Table~\ref{lt6a}. Round to the nearest arc minute. 
 \end{enumerate}
 
-
 Two examples of the use of the procedure that has just been described are given in the following section.
 
-\section{Example Lunar Longitude Calculations}
+\section{Example Lunar Longitude Calculations}\label{exllat}
 \noindent {\em Example 1}: May 5, 2005 AD, 00:00 UT:\\
 ~\\
 From Section~\ref{ssun}, $t-t_0=1950.5$ JD, $\lambda_S = 44.602^\circ$, and $M_S= 120.001^\circ$. 
@@ -254,13 +253,29 @@ and take out the lunar ecliptic latitude, $\beta$. It is necessary to
 interpolate if $F$ is odd.
 \end{enumerate}
 
-For example, we have already seen that at 00:00 UT on May 5, 2005 AD
+Two examples of the use of the procedure that has just been described are given in the following section.
+
+\section{Example Lunar Latitude Calculations}
+\noindent {\em Example 1}: May 5, 2005 AD, 00:00 UT:\\
+~\\
+We have already seen in Section~\ref{exllat} that at 00:00 UT on May 5, 2005 AD
 the lunar mean argument of latitude, and
 the lunar anomalies, were $\bar{F}=337.132^\circ$, and
 $q_1=5.555^\circ$, $q_2=-0.663^\circ$, $q_3=-0.631^\circ$, $q_4=-0.139^\circ$,
 and $q_5=0.086^\circ$, respectively. Hence, $F=\bar{F}+q_1+q_2+q_3+q_4+q_5
 =337.132+5.555-0.663-0.631-0.139+0.086\simeq 341^\circ$. Thus, according to Table~\ref{tmoonb}, the ecliptic latitude
 of the Moon at  00:00 UT on May 5, 2005 AD was $-1.680^\circ\simeq -1^\circ 41'$.
+
+~\\
+\noindent {\em Example 2}: December 25, 1800 AD, 00:00 UT:\\
+~\\
+We have already seen in Section~\ref{exllat} that at 00:00 UT on December 25, 1800 AD
+the lunar mean argument of latitude, and
+the lunar anomalies, were $\bar{F}=5.197^\circ$, and
+$q_1=5.562^\circ$, $q_2=1.311^\circ$, $q_3=-0.394^\circ$, $q_4=-0.017^\circ$,
+and $q_5=-0.021^\circ$, respectively. Hence, $F=\bar{F}+q_1+q_2+q_3+q_4+q_5
+=5.197+5.562+1.311-0.394-0.017-0.021\simeq 12^\circ$. Thus, according to Table~\ref{tmoonb}, the ecliptic latitude
+of the Moon at  00:00 UT on December 25, 1800 AD was $+1.073^\circ\simeq +1^\circ 04'$.
 
 \section{Length of Month}
 A {\em sidereal month}\/ is the mean period of time between successive passages of the Moon through the vernal equinox, and is
@@ -302,7 +317,7 @@ obtain
 \begin{equation}\label{ea112}
 \delta a \simeq \delta a_0\,\cos a\,(1+e\,\cos M),
 \end{equation}
-where $\delta a_0 = R/a_M = 0.0166=56.98'$ (because $R=6371$ km and $a_M=384\,399$ km). 
+where $\delta a_0 = R/a_M = 0.016574=56.98'$ (because $R=6371$ km and $a_M=384\,399$ km). 
 
 According to Equation~(\ref{ea112}), lunar parallax can be written in the form
 \begin{equation}

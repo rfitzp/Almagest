@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  30 JAN 2026 16:07
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  31 JAN 2026 17:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -615,7 +615,7 @@ File: epsfiles/fig1.2x.eps Graphic file (type eps)
 ]
 Chapter 2.
 
-Underfull \vbox (badness 4913) has occurred while \output is active []
+Underfull \vbox (badness 2772) has occurred while \output is active []
 
  [13]
 File: epsfiles/sphere1.eps Graphic file (type eps)
@@ -834,12 +834,12 @@ File: epsfiles/fig3.eps Graphic file (type eps)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [75] [76]
-Underfull \hbox (badness 10000) in paragraph at lines 127--147
+Underfull \hbox (badness 10000) in paragraph at lines 126--146
 
  []
 
 [77]
-Underfull \hbox (badness 10000) in paragraph at lines 165--187
+Underfull \hbox (badness 10000) in paragraph at lines 164--186
 
  []
 
@@ -863,12 +863,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ]
 Chapter 6.
 [89]
-Underfull \hbox (badness 10000) in paragraph at lines 95--113
+Underfull \hbox (badness 10000) in paragraph at lines 94--112
 
  []
 
 [90]
-Underfull \hbox (badness 10000) in paragraph at lines 142--161
+Underfull \hbox (badness 10000) in paragraph at lines 141--160
 
  []
 
@@ -880,37 +880,42 @@ File: epsfiles/moon.eps Graphic file (type eps)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [92] [93]
+Underfull \hbox (badness 10000) in paragraph at lines 259--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--279
+
+ []
+
 File: epsfiles/parallax.eps Graphic file (type eps)
 <epsfiles/parallax.eps>
- [94]
+[94] [95]
 File: epsfiles/para.eps Graphic file (type eps)
 <epsfiles/para.eps>
- [95]
-Underfull \hbox (badness 10000) in paragraph at lines 369--388
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 369--388
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 369--388
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 369--388
-
- []
-
-
-Underfull \vbox (badness 1142) has occurred while \output is active []
-
  [96]
+Underfull \hbox (badness 10000) in paragraph at lines 384--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--403
+
+ []
+
 [97] [98]
-Overfull \hbox (24.78893pt too wide) in paragraph at lines 445--500
+Overfull \hbox (24.78893pt too wide) in paragraph at lines 460--515
  [][][][] 
  []
 
@@ -937,27 +942,28 @@ rmation to that contained in the “Table of conjunctions” (Συνόδων
  []
 
 [104]
-Underfull \hbox (badness 10000) in paragraph at lines 86--109
+Underfull \hbox (badness 10000) in paragraph at lines 87--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--155
+Underfull \hbox (badness 10000) in paragraph at lines 133--156
 
  []
 
 [105] [106]
 File: epsfiles/umbra.eps Graphic file (type eps)
 <epsfiles/umbra.eps>
+ [107]
 File: epsfiles/totalm.eps Graphic file (type eps)
 <epsfiles/totalm.eps>
- [107] [108] [109] [110] [111]
-Overfull \hbox (27.72298pt too wide) in paragraph at lines 435--472
+ [108] [109] [110] [111]
+Overfull \hbox (27.72298pt too wide) in paragraph at lines 436--473
  [][][][] 
  []
 
 
-Overfull \hbox (24.78893pt too wide) in paragraph at lines 477--532
+Overfull \hbox (24.78893pt too wide) in paragraph at lines 478--533
  [][][][] 
  []
 
@@ -985,7 +991,7 @@ File: epsfiles/figv5.eps Graphic file (type eps)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [117] [118] [119] [120] [121]
-Underfull \hbox (badness 10000) in paragraph at lines 229--249
+Underfull \hbox (badness 10000) in paragraph at lines 230--249
 
  []
 
@@ -1285,10 +1291,10 @@ LaTeX Info: Redefining \ttfamily on input line 3.
 (./Latitude/Latitude.aux) (./Glossary/Glossary.aux) (./Symbol/Symbol.aux)
 (./Bibliography/Bibliography.aux)) ) 
 Here is how much of TeX's memory you used:
- 7320 strings out of 476683
- 185148 string characters out of 5804047
+ 7321 strings out of 476683
+ 185156 string characters out of 5804047
  2165018 words of memory out of 5000000
- 27296 multiletter control sequences out of 15000+600000
+ 27297 multiletter control sequences out of 15000+600000
  518748 words of font info for 94 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,11n,77p,642b,318s stack positions out of 10000i,1000n,20000p,200000b,200000s

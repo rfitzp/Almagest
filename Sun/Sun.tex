@@ -70,10 +70,8 @@ is called the {\em mean anomaly at epoch}, and
 \end{equation}
  the {\em rate of motion in mean anomaly}. 
  
-\section{Determination of Solar Ecliptic Longitude}\label{ssun}
-Our procedure for determining the ecliptic longitude of the Sun is described
-in the following.
-The requisite orbital elements (that is, $e$, $n$, $\tilde{n}$, $\bar{\lambda}_0$, and $M_0$) for the J2000 epoch (that is, 12:00 UT on January 1, 2000 CE, which corresponds to $t_0= 2\,451\,545.0$ JD) are listed
+ Our procedure for determining the ecliptic longitude of the Sun is as follows.
+ The requisite orbital elements (that is, $e$, $n$, $\tilde{n}$, $\bar{\lambda}_0$, and $M_0$) for the J2000 epoch (that is, 12:00 UT on January 1, 2000 CE, which corresponds to $t_0= 2\,451\,545.0$ JD) are listed
 in Table~\ref{lt4}. These elements are calculated
 on the assumption that the vernal equinox  precesses at the uniform
 rate of $-3.8246\times 10^{-5}\,\,^\circ/{\rm day}$. 
@@ -97,7 +95,8 @@ function of the mean anomaly.
  Note that Table~\ref{lt5} contains essentially the same information as that contained in the ``Table of the Sun's mean motion" (Κανόνιον τῆς ὁμαλῆς τοῦ ἡλίου κινήσεως) that appears in
  Section~2 of Book~III of the Almagest. Likewise, Table~\ref{lt6} contains essentially the same information as that contained in the ``Table of the solar anomaly'' (Κανόνιον τῆς  ἡλιακῆς ἀνωμαλίας)
  that appears in Section~6 of Book~III of the Almagest.
-
+ 
+\section{Determination of Solar Ecliptic Longitude}\label{ssun}
 The procedure for using Tables~\ref{lt5} and \ref{lt6} to determine solar longitude  is as follows:
 \begin{enumerate}
 
@@ -135,11 +134,11 @@ $t$(JD) & $ \bar{\lambda}(^\circ)$ & $M(^\circ)$\\[-2ex]
 &&\\
 $+1\,000$ & $265.647$ & $265.600$\\
 $+900$ & $167.083$ & $167.040$\\
-$+50$ & $49.280$ & $49.280$\\
+$+50$ & $49.282$ & $49.280$\\
 $+.5$ & $0.493$ & $0.493$\\
 Epoch & $280.458$ & $357.588$\\\cline{2-3}
-&$762.961$ & $840.001$\\\cline{2-3}
-Modulus & $42.961$ & $120.001$\\ 
+&$762.963$ & $840.001$\\\cline{2-3}
+Modulus & $42.963$ & $120.001$\\ 
 &&\\
 \end{tabular}\\
 Rounding the mean anomaly to the nearest degree, we obtain $M\simeq 120^\circ$.
@@ -514,42 +513,42 @@ $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\
 \multicolumn{2}{c}{Leo}\vline & \multicolumn{2}{c}{Virgo}\\\hline
 $\lambda$& $\Delta t~~~~~$& $\lambda$& $\Delta t~~~~~$& $\lambda$& $\Delta t~~~~~$& $\lambda$& $\Delta t~~~~~$& $\lambda$& $\Delta t~~~~~$& $\lambda$& $\Delta t~~~~~$\\\hline
 &&&&&&&&&&&\\[-2ex]
-$00^\circ$ & $-07^m28^s$ & 00$^\circ$ & $+01^m02^s$ & $00^\circ$ & $+03^m30^s$ & $00^\circ$ & $-01^m42^s$ & $00^\circ$ & $-06^m27^s$ & $00^\circ$ & $-02^m44^s$\\
-$02^\circ$ & $-06^m51^s$ & 02$^\circ$ & $+01^m27^s$ & $02^\circ$ & $+03^m21^s$ & $02^\circ$ & $-02^m09^s$ & $02^\circ$ & $-06^m30^s$ & $02^\circ$ & $-02^m11^s$\\
-$04^\circ$ & $-06^m15^s$ & 04$^\circ$ & $+01^m50^s$ & $04^\circ$ & $+03^m10^s$ & $04^\circ$ & $-02^m36^s$ & $04^\circ$ & $-06^m31^s$ & $04^\circ$ & $-01^m36^s$\\
-$06^\circ$ & $-05^m38^s$ & 06$^\circ$ & $+02^m12^s$ & $06^\circ$ & $+02^m56^s$ & $06^\circ$ & $-03^m03^s$ & $06^\circ$ & $-06^m29^s$ & $06^\circ$ & $+00^m59^s$\\
-$08^\circ$ & $-05^m01^s$ & 08$^\circ$ & $+02^m31^s$ & $08^\circ$ & $+02^m41^s$ & $08^\circ$ & $-03^m29^s$ & $08^\circ$ & $-06^m24^s$ & $08^\circ$ & $+00^m21^s$\\
-$10^\circ$ & $-04^m24^s$ & 10$^\circ$ & $+02^m48^s$ & $10^\circ$ & $+02^m23^s$ & $10^\circ$ & $-03^m53^s$ & $10^\circ$ & $-06^m16^s$ & $10^\circ$ & $+00^m18^s$\\
-$12^\circ$ & $-03^m48^s$ & 12$^\circ$ & $+03^m03^s$ & $12^\circ$ & $+02^m04^s$ & $12^\circ$ & $-04^m17^s$ & $12^\circ$ & $-06^m06^s$ & $12^\circ$ & $+00^m58^s$\\
-$14^\circ$ & $-03^m12^s$ & 14$^\circ$ & $+03^m16^s$ & $14^\circ$ & $+01^m43^s$ & $14^\circ$ & $-04^m39^s$ & $14^\circ$ & $-05^m54^s$ & $14^\circ$ & $+01^m40^s$\\
-$16^\circ$ & $-02^m36^s$ & 16$^\circ$ & $+03^m26^s$ & $16^\circ$ & $+01^m20^s$ & $16^\circ$ & $-05^m00^s$ & $16^\circ$ & $-05^m38^s$ & $16^\circ$ & $+02^m22^s$\\
-$18^\circ$ & $-02^m01^s$ & 18$^\circ$ & $+03^m34^s$ & $18^\circ$ & $+00^m57^s$ & $18^\circ$ & $-05^m19^s$ & $18^\circ$ & $-05^m20^s$ & $18^\circ$ & $+03^m05^s$\\
-$20^\circ$ & $-01^m28^s$ & 20$^\circ$ & $+03^m40^s$ & $20^\circ$ & $+00^m32^s$ & $20^\circ$ & $-05^m35^s$ & $20^\circ$ & $-05^m00^s$ & $20^\circ$ & $+03^m49^s$\\
-$22^\circ$ & $+00^m55^s$ & 22$^\circ$ & $+03^m43^s$ & $22^\circ$ & $+00^m06^s$ & $22^\circ$ & $-05^m50^s$ & $22^\circ$ & $-04^m37^s$ & $22^\circ$ & $+04^m32^s$\\
-$24^\circ$ & $+00^m23^s$ & 24$^\circ$ & $+03^m43^s$ & $24^\circ$ & $+00^m20^s$ & $24^\circ$ & $-06^m03^s$ & $24^\circ$ & $-04^m12^s$ & $24^\circ$ & $+05^m16^s$\\
-$26^\circ$ & $+00^m06^s$ & 26$^\circ$ & $+03^m41^s$ & $26^\circ$ & $+00^m47^s$ & $26^\circ$ & $-06^m14^s$ & $26^\circ$ & $-03^m45^s$ & $26^\circ$ & $+06^m00^s$\\
-$28^\circ$ & $+00^m34^s$ & 28$^\circ$ & $+03^m37^s$ & $28^\circ$ & $-01^m14^s$ & $28^\circ$ & $-06^m22^s$ & $28^\circ$ & $-03^m15^s$ & $28^\circ$ & $+06^m44^s$\\
-$30^\circ$ & $+01^m02^s$ & 30$^\circ$ & $+03^m30^s$ & $30^\circ$ & $-01^m42^s$ & $30^\circ$ & $-06^m27^s$ & $30^\circ$ & $-02^m44^s$ & $30^\circ$ & $+07^m28^s$\\
+$00^\circ$ & $-07^m28^s$ & 00$^\circ$ & $+01^m02^s$ & $00^\circ$ & $+03^m31^s$ & $00^\circ$ & $-01^m42^s$ & $00^\circ$ & $-06^m27^s$ & $00^\circ$ & $-02^m44^s$\\
+$02^\circ$ & $-06^m52^s$ & 02$^\circ$ & $+01^m28^s$ & $02^\circ$ & $+03^m22^s$ & $02^\circ$ & $-02^m09^s$ & $02^\circ$ & $-06^m30^s$ & $02^\circ$ & $-02^m11^s$\\
+$04^\circ$ & $-06^m15^s$ & 04$^\circ$ & $+01^m51^s$ & $04^\circ$ & $+03^m11^s$ & $04^\circ$ & $-02^m36^s$ & $04^\circ$ & $-06^m31^s$ & $04^\circ$ & $-01^m36^s$\\
+$06^\circ$ & $-05^m38^s$ & 06$^\circ$ & $+02^m12^s$ & $06^\circ$ & $+02^m57^s$ & $06^\circ$ & $-03^m03^s$ & $06^\circ$ & $-06^m29^s$ & $06^\circ$ & $+00^m59^s$\\
+$08^\circ$ & $-05^m01^s$ & 08$^\circ$ & $+02^m32^s$ & $08^\circ$ & $+02^m42^s$ & $08^\circ$ & $-03^m28^s$ & $08^\circ$ & $-06^m24^s$ & $08^\circ$ & $+00^m21^s$\\
+$10^\circ$ & $-04^m25^s$ & 10$^\circ$ & $+02^m49^s$ & $10^\circ$ & $+02^m24^s$ & $10^\circ$ & $-03^m53^s$ & $10^\circ$ & $-06^m16^s$ & $10^\circ$ & $+00^m18^s$\\
+$12^\circ$ & $-03^m48^s$ & 12$^\circ$ & $+03^m04^s$ & $12^\circ$ & $+02^m05^s$ & $12^\circ$ & $-04^m17^s$ & $12^\circ$ & $-06^m06^s$ & $12^\circ$ & $+00^m59^s$\\
+$14^\circ$ & $-03^m12^s$ & 14$^\circ$ & $+03^m17^s$ & $14^\circ$ & $+01^m44^s$ & $14^\circ$ & $-04^m39^s$ & $14^\circ$ & $-05^m53^s$ & $14^\circ$ & $+01^m40^s$\\
+$16^\circ$ & $-02^m37^s$ & 16$^\circ$ & $+03^m27^s$ & $16^\circ$ & $+01^m21^s$ & $16^\circ$ & $-04^m59^s$ & $16^\circ$ & $-05^m38^s$ & $16^\circ$ & $+02^m23^s$\\
+$18^\circ$ & $-02^m02^s$ & 18$^\circ$ & $+03^m35^s$ & $18^\circ$ & $+00^m58^s$ & $18^\circ$ & $-05^m18^s$ & $18^\circ$ & $-05^m20^s$ & $18^\circ$ & $+03^m06^s$\\
+$20^\circ$ & $-01^m28^s$ & 20$^\circ$ & $+03^m40^s$ & $20^\circ$ & $+00^m33^s$ & $20^\circ$ & $-05^m35^s$ & $20^\circ$ & $-05^m00^s$ & $20^\circ$ & $+03^m49^s$\\
+$22^\circ$ & $+00^m55^s$ & 22$^\circ$ & $+03^m43^s$ & $22^\circ$ & $+00^m07^s$ & $22^\circ$ & $-05^m50^s$ & $22^\circ$ & $-04^m37^s$ & $22^\circ$ & $+04^m33^s$\\
+$24^\circ$ & $+00^m24^s$ & 24$^\circ$ & $+03^m44^s$ & $24^\circ$ & $+00^m20^s$ & $24^\circ$ & $-06^m03^s$ & $24^\circ$ & $-04^m12^s$ & $24^\circ$ & $+05^m17^s$\\
+$26^\circ$ & $+00^m06^s$ & 26$^\circ$ & $+03^m42^s$ & $26^\circ$ & $+00^m47^s$ & $26^\circ$ & $-06^m14^s$ & $26^\circ$ & $-03^m45^s$ & $26^\circ$ & $+06^m01^s$\\
+$28^\circ$ & $+00^m35^s$ & 28$^\circ$ & $+03^m38^s$ & $28^\circ$ & $-01^m14^s$ & $28^\circ$ & $-06^m22^s$ & $28^\circ$ & $-03^m15^s$ & $28^\circ$ & $+06^m45^s$\\
+$30^\circ$ & $+01^m02^s$ & 30$^\circ$ & $+03^m31^s$ & $30^\circ$ & $-01^m42^s$ & $30^\circ$ & $-06^m27^s$ & $30^\circ$ & $-02^m44^s$ & $30^\circ$ & $+07^m28^s$\\
 \multicolumn{12}{c}{}\\
 \multicolumn{2}{c}{Libra}\vline & \multicolumn{2}{c}{Scorpio} \vline& \multicolumn{2}{c}{Sagittarius} \vline& \multicolumn{2}{c}{Capricorn}\vline &
 \multicolumn{2}{c}{Aquarius}\vline & \multicolumn{2}{c}{Pisces}\\\hline
 $\lambda$& $\Delta t~~~~~$& $\lambda$& $\Delta t~~~~~$& $\lambda$& $\Delta t~~~~~$& $\lambda$& $\Delta t~~~~~$& $\lambda$& $\Delta t~~~~~$& $\lambda$& $\Delta t~~~~~$\\\hline
 &&&&&&&&&&&\\[-2ex]
 $00^\circ$ & $+07^m28^s$ & $00^\circ$ & $+15^m40^s$ & $00^\circ$ & $+13^m55^s$ & $00^\circ$ & $+01^m42^s$ & $00^\circ$ & $-10^m58^s$ & $00^\circ$ &$ -13^m58^s$\\
-$02^\circ$ & $+08^m10^s$ & $02^\circ$ & $+15^m55^s$ & $02^\circ$ & $+13^m22^s$ & $02^\circ$ & $+00^m43^s$ & $02^\circ$ & $-11^m32^s$ & $02^\circ$ & $-13^m46^s$\\
-$04^\circ$ & $+08^m53^s$ & $04^\circ$ & $+16^m08^s$ & $04^\circ$ & $+12^m46^s$ & $04^\circ$ & $+00^m15^s$ & $04^\circ$ & $-12^m02^s$ & $04^\circ$ & $-13^m31^s$\\
-$06^\circ$ & $+09^m34^s$ & $06^\circ$ & $+16^m17^s$ & $06^\circ$ & $+12^m08^s$ & $06^\circ$ & $-01^m13^s$ & $06^\circ$ & $-12^m30^s$ & $06^\circ$ & $-13^m14^s$\\
-$08^\circ$ & $+10^m14^s$ & $08^\circ$ & $+16^m23^s$ & $08^\circ$ & $+11^m26^s$ & $08^\circ$ & $-02^m11^s$ & $08^\circ$ & $-12^m54^s$ & $08^\circ$ & $-12^m55^s$\\
-$10^\circ$ & $+10^m53^s$ & $10^\circ$ & $+16^m26^s$ & $10^\circ$ & $+10^m42^s$ & $10^\circ$ & $-03^m07^s$ & $10^\circ$ & $-13^m16^s$ & $10^\circ$ & $-12^m33^s$\\
-$12^\circ$ & $+11^m30^s$ & $12^\circ$ & $+16^m26^s$ & $12^\circ$ & $+09^m55^s$ & $12^\circ$ & $-04^m03^s$ & $12^\circ$ & $-13^m34^s$ & $12^\circ$ & $-12^m10^s$\\
-$14^\circ$ & $+12^m06^s$ & $14^\circ$ & $+16^m23^s$ & $14^\circ$ & $+09^m07^s$ & $14^\circ$ & $-04^m57^s$ & $14^\circ$ & $-13^m49^s$ & $14^\circ$ & $-11^m44^s$\\
-$16^\circ$ & $+12^m41^s$ & $16^\circ$ & $+16^m16^s$ & $16^\circ$ & $+08^m16^s$ & $16^\circ$ & $-05^m50^s$ & $16^\circ$ & $-14^m01^s$ & $16^\circ$ & $-11^m17^s$\\
-$18^\circ$ & $+13^m13^s$ & $18^\circ$ & $+16^m06^s$ & $18^\circ$ & $+07^m23^s$ & $18^\circ$ & $-06^m41^s$ & $18^\circ$ & $-14^m09^s$ & $18^\circ$ & $-10^m48^s$\\
-$20^\circ$ & $+13^m43^s$ & $20^\circ$ & $+15^m52^s$ & $20^\circ$ & $+06^m29^s$ & $20^\circ$ & $-07^m30^s$ & $20^\circ$ & $-14^m15^s$ & $20^\circ$ & $-10^m17^s$\\
-$22^\circ$ & $+14^m12^s$ & $22^\circ$ & $+15^m36^s$ & $22^\circ$ & $+05^m33^s$ & $22^\circ$ & $-08^m16^s$ & $22^\circ$ & $-14^m17^s$ & $22^\circ$ & $-09^m45^s$\\
-$24^\circ$ & $+14^m38^s$ & $24^\circ$ & $+15^m15^s$ & $24^\circ$ & $+04^m37^s$ & $24^\circ$ & $-09^m01^s$ & $24^\circ$ & $-14^m17^s$ & $24^\circ$ & $-09^m12^s$\\
-$26^\circ$ & $+15^m01^s$ & $26^\circ$ & $+14^m52^s$ & $26^\circ$ & $+03^m39^s$ & $26^\circ$ & $-09^m42^s$ & $26^\circ$ & $-14^m13^s$ & $26^\circ$ & $-08^m38^s$\\
-$28^\circ$ & $+15^m22^s$ & $28^\circ$ & $+14^m25^s$ & $28^\circ$ & $+02^m41^s$ & $28^\circ$ & $-10^m22^s$ & $28^\circ$ & $-14^m07^s$ & $28^\circ$ & $-08^m03^s$\\
+$02^\circ$ & $+08^m11^s$ & $02^\circ$ & $+15^m55^s$ & $02^\circ$ & $+13^m22^s$ & $02^\circ$ & $+00^m43^s$ & $02^\circ$ & $-11^m33^s$ & $02^\circ$ & $-13^m47^s$\\
+$04^\circ$ & $+08^m53^s$ & $04^\circ$ & $+16^m08^s$ & $04^\circ$ & $+12^m46^s$ & $04^\circ$ & $+00^m16^s$ & $04^\circ$ & $-12^m03^s$ & $04^\circ$ & $-13^m32^s$\\
+$06^\circ$ & $+09^m34^s$ & $06^\circ$ & $+16^m17^s$ & $06^\circ$ & $+12^m08^s$ & $06^\circ$ & $-01^m14^s$ & $06^\circ$ & $-12^m31^s$ & $06^\circ$ & $-13^m15^s$\\
+$08^\circ$ & $+10^m15^s$ & $08^\circ$ & $+16^m23^s$ & $08^\circ$ & $+11^m26^s$ & $08^\circ$ & $-02^m12^s$ & $08^\circ$ & $-12^m55^s$ & $08^\circ$ & $-12^m56^s$\\
+$10^\circ$ & $+10^m53^s$ & $10^\circ$ & $+16^m27^s$ & $10^\circ$ & $+10^m42^s$ & $10^\circ$ & $-03^m08^s$ & $10^\circ$ & $-13^m17^s$ & $10^\circ$ & $-12^m34^s$\\
+$12^\circ$ & $+11^m31^s$ & $12^\circ$ & $+16^m26^s$ & $12^\circ$ & $+09^m55^s$ & $12^\circ$ & $-04^m04^s$ & $12^\circ$ & $-13^m35^s$ & $12^\circ$ & $-12^m11^s$\\
+$14^\circ$ & $+12^m07^s$ & $14^\circ$ & $+16^m23^s$ & $14^\circ$ & $+09^m07^s$ & $14^\circ$ & $-04^m58^s$ & $14^\circ$ & $-13^m50^s$ & $14^\circ$ & $-11^m45^s$\\
+$16^\circ$ & $+12^m41^s$ & $16^\circ$ & $+16^m16^s$ & $16^\circ$ & $+08^m16^s$ & $16^\circ$ & $-05^m51^s$ & $16^\circ$ & $-14^m02^s$ & $16^\circ$ & $-11^m18^s$\\
+$18^\circ$ & $+13^m14^s$ & $18^\circ$ & $+16^m06^s$ & $18^\circ$ & $+07^m23^s$ & $18^\circ$ & $-06^m42^s$ & $18^\circ$ & $-14^m10^s$ & $18^\circ$ & $-10^m49^s$\\
+$20^\circ$ & $+13^m44^s$ & $20^\circ$ & $+15^m53^s$ & $20^\circ$ & $+06^m29^s$ & $20^\circ$ & $-07^m31^s$ & $20^\circ$ & $-14^m16^s$ & $20^\circ$ & $-10^m18^s$\\
+$22^\circ$ & $+14^m12^s$ & $22^\circ$ & $+15^m36^s$ & $22^\circ$ & $+05^m33^s$ & $22^\circ$ & $-08^m17^s$ & $22^\circ$ & $-14^m18^s$ & $22^\circ$ & $-09^m46^s$\\
+$24^\circ$ & $+14^m38^s$ & $24^\circ$ & $+15^m15^s$ & $24^\circ$ & $+04^m36^s$ & $24^\circ$ & $-09^m02^s$ & $24^\circ$ & $-14^m18^s$ & $24^\circ$ & $-09^m13^s$\\
+$26^\circ$ & $+15^m01^s$ & $26^\circ$ & $+14^m52^s$ & $26^\circ$ & $+03^m39^s$ & $26^\circ$ & $-09^m44^s$ & $26^\circ$ & $-14^m14^s$ & $26^\circ$ & $-08^m39^s$\\
+$28^\circ$ & $+15^m22^s$ & $28^\circ$ & $+14^m25^s$ & $28^\circ$ & $+02^m40^s$ & $28^\circ$ & $-10^m23^s$ & $28^\circ$ & $-14^m08^s$ & $28^\circ$ & $-08^m04^s$\\
 $30^\circ$ & $+15^m40^s$ & $30^\circ$ & $+13^m55^s$ & $30^\circ$ & $+01^m42^s$ & $30^\circ$ & $-10^m58^s$ & $30^\circ$ & $-13^m58^s$ & $30^\circ$ & $-07^m28^s$\\
 \end{tabular}}
 \caption{The equation of time. The superscripts $m$ and $s$ denote minutes and seconds.}\label{ttime}

@@ -1,7 +1,7 @@
 \chapter{The Superior Planets}\label{csup}
 % !TEX root = ../Almagest.tex
 
-\section{Determination of Ecliptic Longitude}
+\section{Ecliptic Longitude Model}
 Figure~\ref{vf7} compares and contrasts heliocentric and geocentric
 models of the
 motion  of a superior planet (that is, a planet which is further from the
@@ -162,12 +162,12 @@ Here, $\bar{z} = (1+e\,e_S)/(1-e_S^{\,2})$, $\delta z = (e+e_S)/(1-e_S^{\,2})$, 
 and $z_{\rm max} = \bar{z}+\delta z$.  The constants $\bar{z}$, $\delta z$, $z_{\rm min}$, and $z_{\rm max}$ 
 for each of the superior planets are listed in Table~\ref{vtx}.  Finally, the functions $\Theta_\pm$ are  tabulated in Table~\ref{vty}.
 
-For the case of Mars, the previousformulae are capable of matching NASA ephemeris data during the years 1995--2006 AD
+For the case of Mars, the previous formulae are capable of matching NASA ephemeris data during the years 1995--2006 AD
 with a mean error of $3'$ and a maximum error of $14'$. For the case of Jupiter, the mean error is
 $1.6'$ and the maximum error $4'$. Finally, for the case of Saturn, the mean error is $0.5'$ and the
 maximum error $1'$. 
 
-\section{Mars}
+\section{Determination of the Ecliptic Longitude of Mars}
 The ecliptic longitude of Mars can be determined with the aid of Tables~\ref{vt8}--\ref{vt10}. Table~\ref{vt8} allows
 the mean longitude, $\bar{\lambda}$, and the mean anomaly, $M$, of Mars to be calculated as functions of
 time. Next, Table~\ref{vt9} permits the equation of center, $q$, and the radial anomaly, $\zeta$, to
@@ -224,9 +224,9 @@ be converted into arc minutes
 using Table~\ref{lt6a}. Round to the nearest arc minute. The final result
 can be written in terms of the signs of the zodiac using the table in Section~\ref{szod}.
 \end{enumerate}
-Two examples of this procedure are given below.
+Two examples of this procedure are given in the following section
 
-~\\
+\section{Example Martian Ecliptic Longitude Calculations}
 \noindent {\em Example 1}: May 5, 2005 AD, 00:00 UT:\\
 ~\\
 From Section~\ref{ssun}, $t-t_0=1\,950.5$ JD, $\lambda_S= 44.602^\circ$, $M_S\simeq 120^\circ$. Hence, it follows from Table~\ref{lt6} that
@@ -236,10 +236,10 @@ Table~\ref{vt8}, we find:\\
 &&\\
 $t$(JD) & $ \bar{\lambda}(^\circ)$ & $M(^\circ)$\\[-2ex]
 &&\\
-+1000 & $164.071$ & $164.021$\\
-+900 & $111.664$ & $111.619$\\
-+50 & $26.204$ & $26.201$\\
-+.5 & $0.262$ & $0.262$\\
+$+1000$ & $164.071$ & $164.021$\\
+$+900$ & $111.664$ & $111.619$\\
+$+50$ & $26.204$ & $26.201$\\
+$+.5$ & $0.262$ & $0.262$\\
 Epoch & $355.460$ & $19.388$\\\cline{2-3}
 &$657.661$ & $321.491$\\\cline{2-3}
 Modulus & $297.661$ & $321.491$\\ 
@@ -701,7 +701,7 @@ $\bar{F}_0 =305.796^\circ$. }\label{vt8}
 \small{ \begin{tabular}{rrr|rrr|rrr|rrr}
 $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$& $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$\\\hline
 &&&&&&&&&&&\\[-1.75ex]
- 0 &   0.000 &  9.339 &  90 &  10.702 & $$-$$0.872 & 180 &   0.000 & $-$9.339 & 270 & $-$10.702 & $-$0.872\\
+ 0 &   0.000 &  9.339 &  90 &  10.702 & $-$0.872 & 180 &   0.000 & $-$9.339 & 270 & $-$10.702 & $-$0.872\\
   2 &   0.417 &  9.333 &  92 &  10.652 & $-$1.197 & 182 &  $-$0.330 & $-$9.335 & 272 & $-$10.739 & $-$0.545\\
   4 &   0.833 &  9.312 &  94 &  10.589 & $-$1.519 & 184 &  $-$0.660 & $-$9.321 & 274 & $-$10.763 & $-$0.217\\
   6 &   1.249 &  9.279 &  96 &  10.514 & $-$1.839 & 186 &  $-$0.989 & $-$9.298 & 276 & $-$10.773 &  0.114\\
@@ -748,7 +748,7 @@ $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\
  88 &  10.739 & $-$0.545 & 178 &   0.330 & $-$9.335 & 268 & $-$10.652 & $-$1.197 & 358 &  $-$0.417 &  9.333\\
  90 &  10.702 & $-$0.872 & 180 &   0.000 & $-$9.339 & 270 & $-$10.702 & $-$0.872 & 360 &  $-$0.000 &  9.339\\ 
 \end{tabular}}
-\caption{\em Deferential anomalies of Mars.}\label{vt9}
+\caption{Deferential anomalies of Mars.}\label{vt9}
 \end{table}
 
 \newpage

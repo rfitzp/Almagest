@@ -5,12 +5,12 @@
 The Julian calendar was instituted by Julius Caesar in 45 BC. However, it was not correctly implemented until
 8 AD. The Julian calendar assumes that the length of a tropical year (that is, the time between successive passages of the Sun through the vernal equinox) is $365.25$ days. 
 Unfortunately, the true length of the tropical year is $365.2422$ days. This slight error caused the date of the vernal equinox to regress through the calendar over the course
-of many centuries. The Gregorian calendar was promulgated by Pope Gregory XIII in 1582. The new calendar was immediately adopted by all of the Catholic counties in Europe, and was eventually
+of many centuries. In order to correct this problem, the Gregorian calendar was promulgated by Pope Gregory XIII in 1582. The new calendar was immediately adopted by all of the Catholic counties in Europe, and was eventually
 (in some cases, after a delay of hundreds of years)
 also adopted by all of the Protestant countries. According to the Gregorian calendar, the length of a tropical year is $365.2425$ days, which is very close to the correct length. 
 
 \section{Julian Day Number}
-Following modern astronomical practice, in this book we shall specify dates
+Following modern astronomical practice, we shall specify dates  in this treatise 
 by means of {\em Julian day numbers}. According to this
 scheme, days are numbered consecutively from January 1, 4713 BC (in the Julian calendar), which
 is designated day zero. For instance, October 14, 1066 AD (the Julian date of the battle of Hastings) is
@@ -43,10 +43,10 @@ in steps 1, 2, and 3 then gives the Julian day number of the date in question.
 ~\\
 \noindent {\em Example~1}: June 10, 1992 AD:\\~\\
 \begin{tabular}{lrrr}
-1.~Century year & $^\dag$1900 &&2\,415\,020\\
-2.~Year of the century & $^\ast$92 & 33\,603 - 1 =& 33\,602\\
-3.~Day of the year & June 10 & 161+1 = & 162\\\cline{4-4}
-Julian day number&&&2\,448\,784\\
+1.~Century year & $^\dag1900$ &&$2\,415\,020$\\
+2.~Year of the century & $^\ast92$ & $33\,603 - 1 =$& $33\,602$\\
+3.~Day of the year & June 10 & $161+1 =$ & $162$\\\cline{4-4}
+Julian day number&&&$2\,448\,784$\\
 &&&\\
 \end{tabular}\\
 Observe that in step 2 the tabular value has been diminished by 1 because 1900
@@ -57,10 +57,10 @@ date falls after February 28.
 ~\\
 \noindent {\em Example~2}: January 18, 1824 AD:\\~\\
 \begin{tabular}{lrrr}
-1.~Century year & $^\dag$1800 &&2\,378\,496\\
-2.~Year of the century & $^\ast$24 & 8\,766 - 1 =& 8\,765\\
-3.~Day of the year & January 18 & 18 = & 18\\\cline{4-4}
-Julian day number&&&2\,387\,279\\
+1.~Century year & $^\dag1800$ &&$2\,378\,496$\\
+2.~Year of the century & $^\ast24$ & $8\,766 - 1=$ & 8\,765\\
+3.~Day of the year & January 18 & $18 =$ & $18$\\\cline{4-4}
+Julian day number&&&$2\,387\,279$\\
 &&&\\
 \end{tabular}\\
 Observe that in step 2 the tabular value has been diminished by 1 because 1800
@@ -76,12 +76,12 @@ $t=2\,448\,784.5$ JD corresponds to 24:00 UT later the same day.
 \newpage
 \begin{table}\centering
 \begin{tabular}{rr}
- $^\dag$1800 &  2\,378\,496\\
- $^\dag$1900 & 2\,415\,020\\
- 2000 & 2\,451\,544\\
- $^\dag$2100 & 2\,488\,068
+ $^\dag$1800 &  $2\,378\,496$\\
+ $^\dag$1900 & $2\,415\,020$\\
+ 2000 & $2\,451\,544$\\
+ $^\dag$2100 & $2\,488\,068$
 \end{tabular}
-\caption {Julian Day Number: Century Years. $\dag$\,Common years. All years are AD. Table reproduced, with permission, from ``The History
+\caption {Julian Day Number: Century Years. $^\dag$\,Common years. All years are AD. Table reproduced, with permission, from ``The History
 and Practice of Ancient Astronomy", J.~Evans (Oxford University Press, Oxford UK, 1998).}\label{kt1}
 \end{table}
 
@@ -89,36 +89,33 @@ and Practice of Ancient Astronomy", J.~Evans (Oxford University Press, Oxford UK
 
 \begin{table}[h]\centering
 \begin{tabular}{rr|rr|rr|rr|rr}
-$^\S$0 & 0 & $^\ast$20 & 7\,305 & $^\ast$40 & 14\,610 & $^\ast$60 &
-21\,915 & $^\ast$80 & 29\,220\\
-1 & 336 & 21 & 7\,671 & 41 & 14\,976 & 61 &22\,281 & 81& \,29\,586\\
-2 & 731 & 22 & 8\,036 & 42 & 15\,341 & 62 & 22\,646 & 82 & 29\,951\\
-3 & 1\,096 & 23 & 8\,401 & 43 & 15\,706 & 63 & 22\,011& 83 & 30\,316\\
+$^\S$0 & $0$ & $^\ast$20 & $7\,305$ & $^\ast$40 & $14$\,610 & $^\ast$60 &$21\,915$ & $^\ast$80 & $29\,220$\\
+1 & $336$ & 21 & $7\,671$ & 41 & $14\,976$ & 61 &$22\,281$ & 81& $\,29\,586$\\
+2 & $731$ & 22 & $8\,036$ & 42 & $15\,341$ & 62 & $22\,646$ & 82 & $29\,951$\\
+3 & $1\,096$ & 23 & $8\,401$ & 43 & $15\,706$ & 63 & $22\,011$& 83 &$ 30\,316$\\
 &&&&&&&\\
-$^\ast$4& 1\,461& $^\ast$24& 8\,766& $^\ast$44 & 16\,071 & $^\ast$64
-& 23\,376& $^\ast$84 & 30\,681\\
-5 & 1\,827 & 25 & 9\,132& 45 & 16\,437& 65& 23\,742& 85& 31\,047\\
-6& 2\,192& 26& 9\,497& 46& 16\,802& 66& 24\,107& 86& 31\,412\\
-7& 2\,557&27&9\,862 & 47 & 17\,167& 67& 24\,472& 87& 31\,777\\
+$^\ast$4& $1\,461$& $^\ast$24& $8\,766$& $^\ast$44 & $16\,071$ & $^\ast$64 & $23\,376$& $^\ast$84 & $30\,681$\\
+5 & $1\,827$ & 25 & $9\,132$& 45 & $16\,437$& 65& $23\,742$& 85& $31\,047$\\
+6& $2\,192$& 26& $9\,497$& 46& $16\,802$& 66& $24\,107$& 86& $31\,412$\\
+7& $2\,557$&27&$9\,862$ & 47 & $17\,167$& 67& $24\,472$& 87& $31\,777$\\
 &&&&&&&\\
-$^\ast$8 & 2\,922& $^\ast$28 & 10\,227 & $^\ast 48$ & 17\,532 & $^\ast 68$ & 24\,837& $^\ast$88& 32\,142\\
-9 & 3\,288& 29 & 10\,593& 49& 17\,898& 69& 25\,203& 89& 32\,508\\
-10& 3\,653& 30 & 10\,958& 50& 18\,263& 70& 25\,568& 90& 32\,873\\
-11& 4\,018& 31& 11\,323& 51& 18\,628& 71& 25\,933& 91& 33\,238\\
+$^\ast$8 & $2\,922$& $^\ast$28 & $10\,227$ & $^\ast 48$ & $17\,532$ & $^\ast 68$ & $24\,837$& $^\ast$88& $32\,142$\\
+9 & $3\,288$& 29 & $10\,593$& 49& $17\,898$& 69& $25\,203$& 89& $32\,508$\\
+10& $3\,653$& 30 & $10\,958$& 50& $18\,263$& 70& $25\,568$& 90& $32\,873$\\
+11& $4\,018$& 31& $11\,323$& 51& $18\,628$& 71& $25\,933$& 91& $33\,238$\\
 &&&&&&&\\
-$^\ast$12& 4\,383& $^\ast$32 & 11\,688 & $^\ast$52 & 18\,993 &
-$^\ast$72 & 26\,298 & $^\ast$92 & 33\,603\\
-13 & 4\,749 & 33 & 12\,054& 53& 19\,359 & 73& 26\,664 & 93& 33\,969\\
-14 & 5\,114 & 34 & 12\,419 & 54 & 19\,724 & 74& 27\,029 & 94&34\,334\\
-15& 5\,479 & 35& 12\,784& 55 & 20\,089 & 75& 27\,394 & 95 & 34\,699\\
+$^\ast$12& $4\,383$& $^\ast$32 & $11\,688$ & $^\ast$52 & $18\,993$ &
+$^\ast$72 & $26\,298$ & $^\ast$92 & $33\,603$\\
+13 & $4\,749$ & 33 & $12\,054$& 53& $19\,359$ & 73& $26\,664$ & 93& $33\,969$\\
+14 & $5\,114$ & 34 & $12\,419$ & 54 & $19\,724$ & 74& $27\,029$ & 94&$34\,334$\\
+15& $5\,479$ & 35& $12\,784$& 55 & $20\,089$ & 75& $27\,394$ & 95 & $34\,699$\\
 &&&&&&&\\
-$^\ast$16 & 5\,844& $^\ast$36& 13\,149& $^\ast$56 & 20\,454& $^\ast$76
-&27\,759 & $^\ast$96& 35\,064\\
-17& 6\,210& 37& 13\,515& 57& 20\,820& 77& 28\,125& 97& 35\,430\\
-18& 6\,575& 38& 13\,880& 58& 21\,185& 78& 28\,490& 98& 35\,795\\
-19& 6\,940& 39& 14\,245& 59& 21\,550& 79& 28\,855& 99&36\,160\\
+$^\ast$16 & $5\,844$& $^\ast$36& $13\,149$& $^\ast$56 & $20\,454$& $^\ast$76&$27\,759$ & $^\ast$96& $35\,064$\\
+17& $6\,210$& 37& $13\,515$& 57& $20\,820$& 77& $28\,125$& 97& $35\,430$\\
+18& $6\,575$& 38& $13\,880$& 58& $21\,185$& 78& $28\,490$& 98& $35\,795$\\
+19& $6\,940$& 39& $14\,245$& 59& $21\,550$& 79& $28\,855$& 99&$36\,160$\\
 \end{tabular}
-\caption{Julian Day Number: Years of the Century. $\ast$\,Leap year. $\S$\,Leap year unless century is marked $\dag$. In centuries marked $\dag$, subtract one day from the tabulated values for the years 1 through 99.
+\caption{Julian Day Number: Years of the Century. $^\ast$\,Leap year. $^\S$\,Leap year unless century is marked $^\dag$. In centuries marked $^\dag$, subtract one day from the tabulated values for the years 1 through 99.
 Reproduced, with permission, from ``The History
 and Practice of Ancient Astronomy", J.~Evans (Oxford University Press, Oxford UK, 1998).}\label{kt2}
 \end{table}

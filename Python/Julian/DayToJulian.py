@@ -20,5 +20,7 @@ def julian_day_number(day, month, year):
 
     return jdn
 
+day, month, year = map (int, input ("\nday month year ?? ").split())
 
-print julian_day_number(10, 6, 1992))
+print ("\n%02d/%02d/%4d is Julian day %d\n" % (day, month, year, julian_day_number(day, month, year)))
+       
