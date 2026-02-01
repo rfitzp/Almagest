@@ -1,4 +1,4 @@
-# Script to determine syzygies in given year
+# Script to determine full moons in given year
 
 import math
 
@@ -14,6 +14,7 @@ ntS  = 0.98560025
 lb0S = 280.458
 M0S  = 357.588
 eS   = 0.016711
+rS0  = 15.99380
 
 # Lunar parameters
 eM   = 0.054881
@@ -24,6 +25,8 @@ lb0M = 218.322
 M0M  = 134.916
 F0M  = 93.284
 iM   = 5.161
+dM0  = 56.98585
+rM0  = 15.58795
 
 def julian_day_number(day, month, year):
     """
@@ -46,6 +49,53 @@ def julian_day_number(day, month, year):
            - 32045)
 
     return jdn
+
+def jd_to_gregorian_utc_hour(jd):
+    """
+    Convert fractional Julian Day Number to Gregorian date and time (UTC),
+    rounding time to nearest hour.
+
+    Returns: (year, month, day, hour)
+    """
+
+    # Shift so day starts at midnight
+    jd += 0.5
+    Z = int(jd)
+    F = jd - Z
+
+    # Gregorian calendar correction
+    alpha = int((Z - 1867216.25) / 36524.25)
+    A = Z + 1 + alpha - alpha // 4
+
+    B = A + 1524
+    C = int((B - 122.1) / 365.25)
+    D = int(365.25 * C)
+    E = int((B - D) / 30.6001)
+
+    day = B - D - int(30.6001 * E) + F
+
+    if E < 14:
+        month = E - 1
+    else:
+        month = E - 13
+
+    if month > 2:
+        year = C - 4716
+    else:
+        year = C - 4715
+
+    # Separate fractional day → hours
+    day_int = int(day)
+    frac_day = day - day_int
+
+    hour = int(round(frac_day * 24))
+
+    # handle rounding overflow
+    if hour == 24:
+        hour = 0
+        day_int += 1
+
+    return year, month, day_int, hour
 
 def deg_to_degmin(angle):
     """
@@ -76,7 +126,7 @@ def Get_Lambda_Sun (t):
     """
 
     lab = lb0S + nS  * (t - t0)
-    M   = (M0S  + ntS * (t - t0)) % 360.
+    M   = M0S  + ntS * (t - t0)
 
     labr = lab * degtorad
     Mr   = M   * degtorad
@@ -95,8 +145,8 @@ def Get_Lambda_Moon (t):
     """
 
     labM = lb0M + nM  * (t - t0)
-    MM   = (M0M  + ntM * (t - t0)) % 360.
-    FbM  = (F0M  + nbM * (t - t0)) % 360.
+    MM   = M0M  + ntM * (t - t0)
+    FbM  = F0M  + nbM * (t - t0)
 
     lamS, MS = Get_Lambda_Sun (t)
 
@@ -114,35 +164,69 @@ def Get_Lambda_Moon (t):
 
     betaM = math.sin (math.sin (iM*degtorad) * math.sin (FM*degtorad)) * radtodeg
 
-    return lamM, betaM
+    db1 = dM0 * eM * math.cos (MM*degtorad)
+    db2 = rM0 * eM * math.cos (MM*degtorad)
+    db3 = rS0 * eS * math.cos (MM*degtorad)
+
+    bM  = 56.59 + db1 + db2 - db3
+    bMt = 25.41 + db1 - db2 - db3
+
+    return lamM, betaM*60., bM, bMt
 
 def Get_DMS (t):
 
-    lamS, SM    = Get_Lambda_Sun  (t)
-    lamM, betaM = Get_Lambda_Moon (t)
+    lamS, SM            = Get_Lambda_Sun  (t)
+    lamM, bsyz, bM, bMt = Get_Lambda_Moon (t)
 
     D = lamM - lamS
 
     return D
 
-def Get_D (t0, t):
+def Get_D (tx, t):
 
-    return Get_DMS (t0 + t) - Get_DMS (t0)
+    D0 = Get_DMS (tx)
 
-def Get_New_Moon (t0, t, i):
+    offset = math.atan2 (math.sin (D0*degtorad), math.cos (D0*degtorad)) * radtodeg
+    
+    return offset, offset + Get_DMS (tx + t) - Get_DMS (tx)
 
-    target = 360.*i
+def Get_New_Moon (tx, i):
 
-    D = Get_D (t0, 0.)
+    off, D = Get_D (tx, 0.)
+
+    #if off < 0:
+    #    i -= 1
+    target = 180.*(2.*i-1.)
+
     t = (target - D) /(nM - nS)
 
     for j in range (10):
-        D  = Get_D (t0, t)
+        off, D  = Get_D (tx, t)
         t += (target - D) /(nM - nS)
- 
+        
+    return t, abs(D)
+
 yr   = input ("\nyear ? ")
 year = int (yr)
-t0   = julian_day_number (1, 1, year)
-t    = 0.
+tx   = julian_day_number (1, 1, year) * 1.0
 
-Get_New_Moon (t0, t, 1)
+print ("\n")
+for i in range (1, 14):
+
+    t, eps = Get_New_Moon (tx, i)
+
+    jd = tx + t
+
+    year, month, day, hour = jd_to_gregorian_utc_hour (jd)
+    lamM, bsyz, bM, bMt    = Get_Lambda_Moon (jd)
+
+    if abs (bsyz) < bMt:
+        c = 'T'
+    elif bMt < abs (bsyz) and abs (bsyz) < bM:
+        c = 'P'
+    else:
+        c = ' '
+     
+    print ("%02d:  %02d/%02d/%4d:  %02d:00  %.1f  %.1f  %05.1f  %s" % (i, day, month, year, hour, bM, bMt, abs (bsyz), c))
+
+print ("\n")
