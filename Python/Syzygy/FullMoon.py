@@ -50,6 +50,61 @@ def julian_day_number(day, month, year):
 
     return jdn
 
+def jd_to_gregorian_datetime(jd):
+    """
+    Convert Julian Day Number (fractional) to
+    Gregorian date and time: year, month, day, hour, minute
+    Minutes are rounded to nearest integer.
+    """
+    # Separate integer and fractional part
+    jd_int = int(jd + 0.5)
+    frac_day = jd + 0.5 - jd_int
+
+    # --- Gregorian calendar conversion ---
+    l = jd_int + 68569
+    n = (4 * l) // 146097
+    l = l - (146097 * n + 3) // 4
+    i = (4000 * (l + 1)) // 1461001
+    l = l - (1461 * i) // 4 + 31
+    j = (80 * l) // 2447
+    day = l - (2447 * j) // 80
+    l = j // 11
+    month = j + 2 - 12 * l
+    year = 100 * (n - 49) + i + l
+
+    # --- Convert fractional day to hours and minutes ---
+    total_hours = frac_day * 24
+    hour = int(total_hours)
+    minute = round((total_hours - hour) * 60)
+
+    # Handle minute overflow
+    if minute == 60:
+        hour += 1
+        minute = 0
+    if hour == 24:
+        hour = 0
+        # increment date by 1
+        # simple fix (naive, works for most purposes)
+        day += 1
+        # month/year adjustment
+        if month in [1,3,5,7,8,10,12]:
+            if day > 31:
+                day = 1
+                month += 1
+        elif month in [4,6,9,11]:
+            if day > 30:
+                day = 1
+                month += 1
+        else:  # February, ignore leap-year correction for simplicity
+            if day > 28:
+                day = 1
+                month += 1
+        if month > 12:
+            month = 1
+            year += 1
+
+    return year, month, day, hour, minute
+
 def jd_to_gregorian_utc_hour(jd):
     """
     Convert fractional Julian Day Number to Gregorian date and time (UTC),
@@ -152,17 +207,25 @@ def Get_Lambda_Moon (t):
 
     Db = labM - lamS
 
+    """
     q1 = (2.*eM * math.sin (MM*degtorad) + 1.430 * eM*eM * math.sin (2.*MM*degtorad)) * radtodeg
     q2 = (0.422 * eM * math.sin ((2.*Db - MM)*degtorad)) * radtodeg
     q3 = (0.211 * eM * (math.sin (2.*Db*degtorad) - 0.066 * math.sin (Db*degtorad))) * radtodeg
     q4 = - 0.051 * eM * math.sin (MS*degtorad) * radtodeg
     q5 = - 0.038 * eM * math.sin (2.*FbM*degtorad) * radtodeg
+    """
 
+    q1 =   (2.*eM * math.sin (MM*degtorad) + 1.2379 * eM*eM * math.sin (2.*MM*degtorad)) * radtodeg
+    q2 =   (0.4052 * eM * math.sin ((2.*Db-MM)*degtorad))                                * radtodeg
+    q3 =   (0.2094 * eM * (math.sin (2.*Db*degtorad) - 0.0527 * math.sin (Db*degtorad))) * radtodeg
+    q4 = -  0.0589 * eM * math.sin (MS*degtorad)                                         * radtodeg
+    q5 = -  0.0364 * eM * math.sin (2.*FbM*degtorad)                                     * radtodeg
+ 
     lamM = labM + q1 + q2 + q3 + q4 + q5
 
     FM = FbM + q1 + q2 + q3 + q4 + q5
 
-    betaM = math.sin (math.sin (iM*degtorad) * math.sin (FM*degtorad)) * radtodeg
+    betaM = math.asin (math.sin (iM*degtorad) * math.sin (FM*degtorad)) * radtodeg
 
     db1 = dM0 * eM * math.cos (MM*degtorad)
     db2 = rM0 * eM * math.cos (MM*degtorad)
@@ -210,6 +273,8 @@ yr   = input ("\nyear ? ")
 year = int (yr)
 tx   = julian_day_number (1, 1, year) * 1.0
 
+f = open ("FullMoon.txt", "w")
+
 print ("\n")
 for i in range (1, 14):
 
@@ -217,8 +282,8 @@ for i in range (1, 14):
 
     jd = tx + t
 
-    year, month, day, hour = jd_to_gregorian_utc_hour (jd)
-    lamM, bsyz, bM, bMt    = Get_Lambda_Moon (jd)
+    year, month, day, hour, minute = jd_to_gregorian_datetime (jd)
+    lamM, bsyz, bM, bMt            = Get_Lambda_Moon (jd)
 
     if abs (bsyz) < bMt:
         c = 'T'
@@ -227,6 +292,10 @@ for i in range (1, 14):
     else:
         c = ' '
      
-    print ("%02d:  %02d/%02d/%4d:  %02d:00  %.1f  %.1f  %05.1f  %s" % (i, day, month, year, hour, bM, bMt, abs (bsyz), c))
+    print ("%02d:  %02d/%02d/%4d:  %02d:%02d  %.1f  %.1f  %05.1f  %s" % (i, day, month, year, hour, minute, bM, bMt, abs (bsyz), c))
+
+    print ("%02d/%02d/%4d &  %02d:%02d & %.1f & %.1f & %05.1f & %s\\\\" % (day, month, year, hour, minute, bM, bMt, abs (bsyz), c), file=f)
 
 print ("\n")
+
+f.close ()

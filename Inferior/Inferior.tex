@@ -32,10 +32,10 @@ whereas the epicycle has the same elements as the Sun's apparent orbit about the
 hand, the deferent of an inferior planet has the same elements as the Sun's apparent orbit about the Earth,
 whereas the epicycle has the same elements as the planet's  orbit about the Sun. It follows that we can
 formulate a procedure for determining the ecliptic longitude of an inferior planet by simply taking the
-procedure  used in the  previous section for determining the ecliptic longitude
+procedure  used in the  previous chapter for determining the ecliptic longitude
 of a superior planet and exchanging the roles of the Sun and the planet.
 
-Our procedure  is described below. As before, it is assumed that the ecliptic longitude, $\lambda_S$, and the
+Our procedure  is described in the following. As before, it is assumed that the ecliptic longitude, $\lambda_S$, and the
 radial anomaly, $\zeta_S$, of the Sun have already been calculated.
 In the following, $a$, $e$, $n$, $\tilde{n}$, $\bar{\lambda}_0$, and $M_0$ represent  elements of the orbit of the planet in question
 about the Sun, whereas  $e_S$ is the eccentricity 
@@ -69,7 +69,7 @@ with a mean error of $2'$ and a maximum error of $10'$. For the case of Mercury,
 $0.205636$, it is necessary to modify the formulae slightly by expressing $q$ and $\zeta$ to
 third-order in the eccentricity:
 \begin{align}
-q &= [2\,e - (1/4)\,e^3]\,\sin \,M + (5/4) \,e^2\,sin\,2M + (13/12)\,e^3\,\sin \,3M,\\[0.5ex]
+q &= [2\,e - (1/4)\,e^3]\,\sin \,M + (5/4) \,e^2\,\sin\,2M + (13/12)\,e^3\,\sin \,3M,\\[0.5ex]
 \zeta &= -(1/2)\,e^2+ [e-(3/8)\,e^3]\,\cos\,M + (1/2)\,e^2\,\cos\,2M + (3/8)\,e^3\,\cos\,3M.
 \end{align}
 With this modification, the mean error is $6'$ and the maximum error $28'$. 
@@ -131,7 +131,7 @@ be converted into arc minutes
 using Table~\ref{lt6a}. Round to the nearest arc minute. The final result
 can be written in terms of the signs of the zodiac using the table in Section~\ref{szod}.
 \end{enumerate}
-Two examples of this procedure are given below.
+Two examples of this procedure are given in the following.
 
 ~\\
 \noindent {\em Example 1}: May 5,  2005 AD, 00:00 UT:\\
@@ -336,8 +336,8 @@ following greatest western elongation, is $(180-136.3)/0.61652137\simeq
 the equation of the epicycle of Venus over a range of days centered 71 days  before and after an inferior conjunction.
 
 Table~\ref{vtvenus} shows the conjunctions, and greatest elongations
-of Venus for the years 2000--2015 AD, calculated using the
-techniques described above.
+of Venus for the years 2000--2015 AD, calculated using the previously 
+described techniques.
 
 \section{Mercury}
 The ecliptic longitude of Mercury can be determined with the aid of Tables~\ref{vt20}--\ref{vt22}. Table~\ref{vt20} allows
@@ -347,7 +347,7 @@ be determined as functions of the mean anomaly. Finally, Table~\ref{vt22} allows
 $\delta\theta_-$, $\bar{\theta}$, and $\delta\theta_+$ to be calculated as functions of the epicyclic
 anomaly, $\mu$.  The procedure for using the tables is analogous to the previously described procedure for
 using the Venus tables.
-One example of this procedure is given below.
+One example of this procedure is given in the following.
 
 ~\\
 \noindent {\em Example}: May 5,  2005 AD, 00:00 UT:\\
@@ -418,6 +418,12 @@ the mean value of the greatest eastern or western elongation is $21.7^\circ$.
 the mean time period between a greatest eastern elongation  and the following
 inferior conjunction, or between the inferior conjunction and the following greatest western elongation, is 22 JD. The conjunctions and elongations of Mercury
 during the years 2000--2002 AD are shown in Table~\ref{vtmercury}.
+
+As before, the information contained in the mean motion tables, \ref{vt17}  and \ref{vt20}, is essentially equivalent to that contained in the tables
+that appear in Section~4 of Book~IX of the Almagest. Likewise, the information contained in the anomaly tables, \ref{vt18}  and \ref{vt21}, is equivalent
+to that contained in the tables that appear in Section~11 of Book~XI of the Almagest. The computation of the greatest elongations of the inferior planets is
+discussed in Book~XII of the Almagest. 
+
 
 \clearpage
 \newpage
@@ -824,6 +830,6 @@ Greatest Elongation & 13/10/2002 & 01LI44 & $18.0^\circ$ W\\
 Superior Conjunction & 14/11/2002 & 21SC39&\\
 Greatest Elongation & 26/12/2002 & 24CP01 & $19.8^\circ$ E\\
 \end{tabular}}
-\caption{\em The conjunctions and greatest elongations of Mercury
+\caption{The conjunctions and greatest elongations of Mercury
 during the years 2000--2002 AD.}\label{vtmercury}
 \end{table}

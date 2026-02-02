@@ -105,12 +105,20 @@ def Get_Lambda_Moon (t):
 
     Db = labM - lamS
 
+    """
     q1 = (2.*eM * math.sin (MM*degtorad) + 1.430 * eM*eM * math.sin (2.*MM*degtorad)) * radtodeg
     q2 = (0.422 * eM * math.sin ((2.*Db - MM)*degtorad)) * radtodeg
     q3 = (0.211 * eM * (math.sin (2.*Db*degtorad) - 0.066 * math.sin (Db*degtorad))) * radtodeg
     q4 = - 0.051 * eM * math.sin (MS*degtorad) * radtodeg
     q5 = - 0.038 * eM * math.sin (2.*FbM*degtorad) * radtodeg
-
+    """
+    
+    q1 =   (2.*eM * math.sin (MM*degtorad) + 1.2379 * eM*eM * math.sin (2.*MM*degtorad)) * radtodeg
+    q2 =   (0.4052 * eM * math.sin ((2.*Db-MM)*degtorad))                                * radtodeg
+    q3 =   (0.2094 * eM * (math.sin (2.*Db*degtorad) - 0.0527 * math.sin (Db*degtorad))) * radtodeg
+    q4 = -  0.0589 * eM * math.sin (MS*degtorad)                                         * radtodeg
+    q5 = -  0.0364 * eM * math.sin (2.*FbM*degtorad)                                     * radtodeg
+ 
     lamM = (labM + q1 + q2 + q3 + q4 + q5) % 360.
 
     FM = (FbM + q1 + q2 + q3 + q4 + q5) % 360.
