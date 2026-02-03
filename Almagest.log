@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  2 FEB 2026 16:43
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  3 FEB 2026 12:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -25,28 +25,46 @@ File: bk11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/preprint/fullpage.sty
-Package: fullpage 1999/02/23 1.1 (PWD)
-\FP@margin=\skip50
-)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/epsf/epsf.sty
-This is `epsf.tex' v2.7.4 <14 February 2011>
-\epsffilein=\read2
-\epsfframemargin=\dimen141
-\epsfframethickness=\dimen142
-\epsfrsize=\dimen143
-\epsftmp=\dimen144
-\epsftsize=\dimen145
-\epsfxsize=\dimen146
-\epsfysize=\dimen147
-\pspoints=\dimen148
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
+(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count190
+\Gm@cntv=\count191
+\c@Gm@tempcnt=\count192
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks17
+)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/epsf/epsf.sty
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read2
+\epsfframemargin=\dimen149
+\epsfframethickness=\dimen150
+\epsfrsize=\dimen151
+\epsftmp=\dimen152
+\epsftsize=\dimen153
+\epsfxsize=\dimen154
+\epsfysize=\dimen155
+\pspoints=\dimen156
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
@@ -61,8 +79,8 @@ Package graphics Info: Driver file: xetex.def on input line 107.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
@@ -87,10 +105,6 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
@@ -106,30 +120,30 @@ orted.
 Package: parallel 2003/04/13, setting two texts parallel (me)
 
 `parallel': setting two texts parallel, (beta 4) 2003/04/13.
-\ParallelLWidth=\dimen151
-\ParallelRWidth=\dimen152
-\ParallelTextWidth=\dimen153
-\ParallelLeftMargin=\dimen154
-\ParallelUserMidSkip=\dimen155
-\ParallelMainMidSkip=\dimen156
+\ParallelLWidth=\dimen159
+\ParallelRWidth=\dimen160
+\ParallelTextWidth=\dimen161
+\ParallelLeftMargin=\dimen162
+\ParallelUserMidSkip=\dimen163
+\ParallelMainMidSkip=\dimen164
 \ParallelLBox=\box51
 \ParallelRBox=\box52
 \ParallelBoxVar=\box53
 \ParallelLTok=\box54
 \ParallelRTok=\box55
-\ParallelBoolVar=\count190
-\ParallelBoolMid=\count191
-\ParallelWhichBox=\count192
-\ParallelMainMode=\count193
-\ParallelFNMode=\count194
-\ParallelLFNCounter=\count195
-\ParallelRFNCounter=\count196
-\ParallelMaxFN=\count197
-\ParallelFNNumMode=\count198
+\ParallelBoolVar=\count193
+\ParallelBoolMid=\count194
+\ParallelWhichBox=\count195
+\ParallelMainMode=\count196
+\ParallelFNMode=\count197
+\ParallelLFNCounter=\count198
+\ParallelRFNCounter=\count199
+\ParallelMaxFN=\count266
+\ParallelFNNumMode=\count267
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip51
+\@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -137,24 +151,24 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen157
+\@emptytoks=\toks18
+\ex@=\dimen165
 ))
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen158
+\pmbraise@=\dimen166
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count199
+\inf@bad=\count268
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count266
-\leftroot@=\count267
+\uproot@=\count269
+\leftroot@=\count270
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count268
-\DOTSCASE@=\count269
+\classnum@=\count271
+\DOTSCASE@=\count272
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -164,34 +178,34 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen159
+\big@size=\dimen167
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count270
+\macc@depth=\count273
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count271
+\c@MaxMatrixCols=\count274
 \dotsspace@=\muskip16
-\c@parentequation=\count272
-\dspbrk@lvl=\count273
-\tag@help=\toks18
-\row@=\count274
-\column@=\count275
-\maxfields@=\count276
-\andhelp@=\toks19
-\eqnshift@=\dimen160
-\alignsep@=\dimen161
-\tagshift@=\dimen162
-\tagwidth@=\dimen163
-\totwidth@=\dimen164
-\lineht@=\dimen165
-\@envbody=\toks20
-\multlinegap=\skip52
-\multlinetaggap=\skip53
-\mathdisplay@stack=\toks21
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
+\tag@help=\toks19
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
+\andhelp@=\toks20
+\eqnshift@=\dimen168
+\alignsep@=\dimen169
+\tagshift@=\dimen170
+\tagwidth@=\dimen171
+\totwidth@=\dimen172
+\lineht@=\dimen173
+\@envbody=\toks21
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
@@ -202,11 +216,11 @@ Package: expl3 2023-02-22 L3 programming layer (loader)
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
-\g__graphics_track_int=\count277
+\g__graphics_track_int=\count280
 \l__pdf_internal_box=\box58
-\g__pdf_backend_object_int=\count278
-\g__pdf_backend_annotation_int=\count279
-\g__pdf_backend_link_int=\count280
+\g__pdf_backend_object_int=\count281
+\g__pdf_backend_annotation_int=\count282
+\g__pdf_backend_link_int=\count283
 ))
 Package: xparse 2023-02-02 L3 Experimental document command parser
 )
@@ -215,20 +229,20 @@ Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count281
-\l__fontspec_language_int=\count282
-\l__fontspec_strnum_int=\count283
-\l__fontspec_tmp_int=\count284
-\l__fontspec_tmpa_int=\count285
-\l__fontspec_tmpb_int=\count286
-\l__fontspec_tmpc_int=\count287
-\l__fontspec_em_int=\count288
-\l__fontspec_emdef_int=\count289
-\l__fontspec_strong_int=\count290
-\l__fontspec_strongdef_int=\count291
-\l__fontspec_tmpa_dim=\dimen166
-\l__fontspec_tmpb_dim=\dimen167
-\l__fontspec_tmpc_dim=\dimen168
+\l__fontspec_script_int=\count284
+\l__fontspec_language_int=\count285
+\l__fontspec_strnum_int=\count286
+\l__fontspec_tmp_int=\count287
+\l__fontspec_tmpa_int=\count288
+\l__fontspec_tmpb_int=\count289
+\l__fontspec_tmpc_int=\count290
+\l__fontspec_em_int=\count291
+\l__fontspec_emdef_int=\count292
+\l__fontspec_strong_int=\count293
+\l__fontspec_strongdef_int=\count294
+\l__fontspec_tmpa_dim=\dimen174
+\l__fontspec_tmpb_dim=\dimen175
+\l__fontspec_tmpc_dim=\dimen176
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -262,7 +276,7 @@ TeX and LuaLaTeX
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count292
+\etb@tempcnta=\count295
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/makecmds/makecmds.sty
 Package: makecmds 2009/09/03 v1.0a extra command making commands
@@ -272,10 +286,10 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks22
-\XKV@tempa@toks=\toks23
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
 )
-\XKV@depth=\count293
+\XKV@depth=\count296
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
@@ -407,7 +421,7 @@ braces):
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/polyglossia/xgreek-fixes.def)
 Package polyglossia Info: Option: Monotonic Greek.
-\@attic@num=\count294
+\@attic@num=\count297
 )
 
 Package fontspec Info: Font family 'TimesNewRoman(1)' created for font 'Times
@@ -430,6 +444,19 @@ Package fontspec Info: Font family 'TimesNewRoman(1)' created for font 'Times
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip53
+\f@nch@O@elh=\skip54
+\f@nch@O@erh=\skip55
+\f@nch@O@olh=\skip56
+\f@nch@O@orh=\skip57
+\f@nch@O@elf=\skip58
+\f@nch@O@erf=\skip59
+\f@nch@O@olf=\skip60
+\f@nch@O@orf=\skip61
+)
 (./Almagest.aux
 LaTeX Info: Redefining \rmfamily on input line 3.
 LaTeX Info: Redefining \sffamily on input line 3.
@@ -441,91 +468,126 @@ LaTeX Info: Redefining \ttfamily on input line 3.
 (./Bibliography/Bibliography.aux))
 \openout1 = `Almagest.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-1.
+8.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-49.8738pt
+* \headheight=30.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=20.0pt
+* \marginparwidth=116.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 21.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 21.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 21.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 21.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 21.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 21.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 21.
-LaTeX Font Info:    Redeclaring math accent \check on input line 21.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 21.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 21.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 21.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 28.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 28.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 28.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 28.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 28.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 28.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 28.
+LaTeX Font Info:    Redeclaring math accent \check on input line 28.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 28.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 28.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 21.
+(Font)              `operators' in the math version `normal' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 2
-1.
+8.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 21.
+(Font)              `operators' in the math version `bold' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
-21.
+28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
-input line 21.
+input line 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
- 21.
+ 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
-21.
+28.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 21.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 21.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
-input line 21.
+input line 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
-e 21.
+e 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 21.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 21.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 28.
 The property list \__xpg_alias contains the pairs (without outer braces):
 >  {latex/target}  =>  {latex}
 >  {english/target}  =>  {english}
@@ -573,255 +635,219 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {polutonikogreek/target}  =>  {greek}
 >  {polutonikogreek/variant}  =>  {polytonic}
 >  {polutonikogreek/options}  =>  {variant=polytonic}.
-LaTeX Info: Redefining \rmfamily on input line 21.
-LaTeX Info: Redefining \sffamily on input line 21.
-LaTeX Info: Redefining \ttfamily on input line 21.
- [1
+LaTeX Info: Redefining \rmfamily on input line 28.
+LaTeX Info: Redefining \sffamily on input line 28.
+LaTeX Info: Redefining \ttfamily on input line 28.
+[1
 
 
-]
+] [2
+
+] (./Almagest.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+ [3])
+\tf@toc=\write3
+\openout3 = `Almagest.toc'.
+
+ [4]
 \openout2 = `Introduction/Introduction.aux'.
 
-
-(./Introduction/Introduction.tex [2
-
-
-]
+ (./Introduction/Introduction.tex
 Chapter 1.
-[3] [4]
+[5
+
+
+] [6]
 File: epsfiles/sun.eps Graphic file (type eps)
 <epsfiles/sun.eps>
-
-Underfull \vbox (badness 3895) has occurred while \output is active []
-
- [5]
-Underfull \vbox (badness 2875) has occurred while \output is active []
-
- [6]
-Underfull \vbox (badness 3895) has occurred while \output is active []
-
- [7]
-[8]
+ [7] [8] [9]
 File: epsfiles/fig1.2x.eps Graphic file (type eps)
 <epsfiles/fig1.2x.eps>
- [9]) [10] [11]
+ [10] [11]) [12]
 \openout2 = `Spherical/Spherical.aux'.
 
- (./Spherical/Spherical.tex [12
+ (./Spherical/Spherical.tex
+Chapter 2.
+File: epsfiles/sphere1.eps Graphic file (type eps)
+<epsfiles/sphere1.eps>
+[13
 
 
 
 
 ]
-Chapter 2.
-
-Underfull \vbox (badness 2772) has occurred while \output is active []
-
- [13]
-File: epsfiles/sphere1.eps Graphic file (type eps)
-<epsfiles/sphere1.eps>
 File: epsfiles/sphere2.eps Graphic file (type eps)
 <epsfiles/sphere2.eps>
-
-[14]
+ [14]
 File: epsfiles/sphere3.eps Graphic file (type eps)
 <epsfiles/sphere3.eps>
- [15]
 File: epsfiles/sphere4.eps Graphic file (type eps)
 <epsfiles/sphere4.eps>
- [16] [17] [18]
+ [15] [16]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
 File: epsfiles/sphere5.eps Graphic file (type eps)
 <epsfiles/sphere5.eps>
 File: epsfiles/sphere6.eps Graphic file (type eps)
 <epsfiles/sphere6.eps>
 File: epsfiles/sphere8.eps Graphic file (type eps)
 <epsfiles/sphere8.eps>
-
-Underfull \vbox (badness 1742) has occurred while \output is active []
-
- [19]
-[20]
+ [18] [19]
 File: epsfiles/sphere9.eps Graphic file (type eps)
 <epsfiles/sphere9.eps>
- [21]
+ [20]
 File: epsfiles/sphere7.eps Graphic file (type eps)
 <epsfiles/sphere7.eps>
- [22] [23]
+ [21] [22]
 File: epsfiles/sphere10.eps Graphic file (type eps)
 <epsfiles/sphere10.eps>
- [24] [25] [26] [27]
+ [23] [24] [25] [26]
 File: epsfiles/altitude1.eps Graphic file (type eps)
 <epsfiles/altitude1.eps>
+ [27]
 File: epsfiles/altitude2.eps Graphic file (type eps)
 <epsfiles/altitude2.eps>
- [28] [29] [30] [31]
+ [28] [29] [30]
 File: epsfiles/ecliptic2.eps Graphic file (type eps)
 <epsfiles/ecliptic2.eps>
- [32]
+ [31]
 File: epsfiles/ecliptic1.eps Graphic file (type eps)
 <epsfiles/ecliptic1.eps>
- [33] [34]
-[35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49]
-[50]
-Overfull \vbox (286.41997pt too high) detected at line 1763
+
+[32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46]
+[47] [48] [49]
+Overfull \vbox (286.41997pt too high) detected at line 1764
  []
 
 
-Overfull \vbox (286.41997pt too high) detected at line 1763
+Overfull \vbox (286.41997pt too high) detected at line 1764
  []
 
 
-Overfull \vbox (304.41997pt too high) detected at line 1879
+Overfull \vbox (304.41997pt too high) detected at line 1880
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 1879
+Overfull \vbox (298.41997pt too high) detected at line 1880
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 1881.
-
-
-Overfull \vbox (304.41997pt too high) detected at line 1995
+Overfull \vbox (304.41997pt too high) detected at line 1996
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 1995
+Overfull \vbox (298.41997pt too high) detected at line 1996
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 1997.
-
-
-Overfull \vbox (304.41997pt too high) detected at line 2111
+Overfull \vbox (304.41997pt too high) detected at line 2112
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2111
+Overfull \vbox (298.41997pt too high) detected at line 2112
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2113.
-
-
-Overfull \vbox (304.41997pt too high) detected at line 2227
+Overfull \vbox (304.41997pt too high) detected at line 2228
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2227
+Overfull \vbox (298.41997pt too high) detected at line 2228
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2229.
-
-
-Overfull \vbox (304.41997pt too high) detected at line 2344
+Overfull \vbox (304.41997pt too high) detected at line 2345
  []
 
 
-Overfull \vbox (304.41997pt too high) detected at line 2344
+Overfull \vbox (304.41997pt too high) detected at line 2345
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2346.
-
-
-Overfull \vbox (304.41997pt too high) detected at line 2460
+Overfull \vbox (304.41997pt too high) detected at line 2461
  []
 
 
-Overfull \vbox (298.41997pt too high) detected at line 2460
+Overfull \vbox (298.41997pt too high) detected at line 2461
  []
 
 
-LaTeX Warning: Float too large for page by 10.02263pt on input line 2462.
-
-
-Overfull \vbox (274.41997pt too high) detected at line 2567
+Overfull \vbox (274.41997pt too high) detected at line 2568
  []
 
 
-Overfull \vbox (274.41997pt too high) detected at line 2567
+Overfull \vbox (274.41997pt too high) detected at line 2568
  []
 
 
-Overfull \vbox (268.41997pt too high) detected at line 2671
+Overfull \vbox (268.41997pt too high) detected at line 2672
  []
 
 
-Overfull \vbox (262.41997pt too high) detected at line 2671
+Overfull \vbox (262.41997pt too high) detected at line 2672
  []
 
-) [51] [52] [53] [54] [55] [56] [57] [58] [59]
+) [50] [51] [52] [53] [54] [55] [56] [57] [58]
 \openout2 = `Julian/Julian.aux'.
 
- (./Julian/Julian.tex [60
-
-
-
-
-
-
-
-
-]
+ (./Julian/Julian.tex
 Chapter 3.
-[61]
+
 Underfull \hbox (badness 10000) in paragraph at lines 43--56
 
  []
 
+[59
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--70
 
- []
 
-[62]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[63]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [64] [65]
-\openout2 = `Kepler/Kepler.aux'.
-
- (./Kepler/Kepler.tex [66
 
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 57--70
+
+ []
+
+[60] [61]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [62]
+\openout2 = `Kepler/Kepler.aux'.
+
+ (./Kepler/Kepler.tex
 Chapter 4.
 File: epsfiles/fig1.eps Graphic file (type eps)
 <epsfiles/fig1.eps>
-[67] [68] [69]
+[63
+
+
+
+
+] [64]
 File: epsfiles/hipp1.eps Graphic file (type eps)
 <epsfiles/hipp1.eps>
- [70]
-File: epsfiles/ptol1.eps Graphic file (type eps)
-<epsfiles/ptol1.eps>
-
-Underfull \vbox (badness 1142) has occurred while \output is active []
-
- [71]
-File: epsfiles/cop1.eps Graphic file (type eps)
-<epsfiles/cop1.eps>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[72])
-Overfull \hbox (1.22379pt too wide) in paragraph at lines 254--31
-\TU/TimesNewRoman(0)/m/n/10.95 It can be seen, by comparison with Equations (4.
-22[])–(4.23[]) and (4.30[])–(4.31[]), that, as is the case for Ptolemy’s
- []
-
-[73]
+[65]
+File: epsfiles/ptol1.eps Graphic file (type eps)
+<epsfiles/ptol1.eps>
+ [66] [67]
+File: epsfiles/cop1.eps Graphic file (type eps)
+<epsfiles/cop1.eps>
+) [68] [69]
 \openout2 = `Sun/Sun.aux'.
 
- (./Sun/Sun.tex [74
+ (./Sun/Sun.tex [70
 
 
 
@@ -830,30 +856,46 @@ Overfull \hbox (1.22379pt too wide) in paragraph at lines 254--31
 Chapter 5.
 File: epsfiles/fig3.eps Graphic file (type eps)
 <epsfiles/fig3.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[75] [76]
+[71] [72]
 Underfull \hbox (badness 10000) in paragraph at lines 126--146
 
  []
 
-[77]
+
 Underfull \hbox (badness 10000) in paragraph at lines 164--186
 
  []
 
-[78]
+[73] [74]
 File: epsfiles/solstice.eps Graphic file (type eps)
 <epsfiles/solstice.eps>
- [79] [80] [81] [82] [83]
+
+
+! LaTeX Error: File `Sun.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/.tex File ignored) [75]
+[76] [77]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [84] [85] [86] [87]
+
+Overfull \hbox (12.58862pt too wide) in paragraph at lines 457--507
+ [][][][] 
+ []
+
+
+Overfull \hbox (16.50565pt too wide) in paragraph at lines 512--555
+ [][][][] 
+ []
+
+) [78] [79] [80] [81]
 \openout2 = `Moon/Moon.aux'.
 
- (./Moon/Moon.tex [88
+ (./Moon/Moon.tex [82
 
 
 
@@ -862,24 +904,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ]
 Chapter 6.
-[89]
+[83]
 Underfull \hbox (badness 10000) in paragraph at lines 94--112
 
  []
 
-[90]
+[84]
 Underfull \hbox (badness 10000) in paragraph at lines 141--160
 
  []
 
-[91]
+[85]
 File: epsfiles/Node.eps Graphic file (type eps)
 <epsfiles/Node.eps>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[92] [93]
+ [86]
 Underfull \hbox (badness 10000) in paragraph at lines 259--268
 
  []
@@ -889,12 +927,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--279
 
  []
 
+[87]
 File: epsfiles/parallax.eps Graphic file (type eps)
 <epsfiles/parallax.eps>
-[94] [95]
+ [88]
 File: epsfiles/para.eps Graphic file (type eps)
 <epsfiles/para.eps>
- [96]
+ [89]
 Underfull \hbox (badness 10000) in paragraph at lines 384--403
 
  []
@@ -914,34 +953,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--403
 
  []
 
-[97] [98]
-Overfull \hbox (53.12196pt too wide) in paragraph at lines 460--515
+[90] [91]
+Overfull \hbox (69.90909pt too wide) in paragraph at lines 460--515
  [][][][] 
  []
 
-) [99] [100] [101] [102]
+) [92] [93] [94] [95]
 \openout2 = `Syzygy/Syzygy.aux'.
 
- (./Syzygy/Syzygy.tex
-Chapter 7.
-File: epsfiles/phase.eps Graphic file (type eps)
-<epsfiles/phase.eps>
-
-Underfull \vbox (badness 1210) has occurred while \output is active []
-
- [103
+ (./Syzygy/Syzygy.tex [96
 
 
 
 
 
 ]
-Overfull \hbox (7.30548pt too wide) in paragraph at lines 45--47
-[]\TU/TimesNewRoman(0)/m/n/10.95 Tables 7.1[] and 7.2[] contain equivalent info
-rmation to that contained in the “Table of conjunctions” (Συνόδων
- []
+Chapter 7.
+File: epsfiles/phase.eps Graphic file (type eps)
+<epsfiles/phase.eps>
 
-[104]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [97]
+[98]
 Underfull \hbox (badness 10000) in paragraph at lines 87--110
 
  []
@@ -951,145 +985,154 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--156
 
  []
 
-[105] [106]
+[99] [100]
 File: epsfiles/umbra.eps Graphic file (type eps)
 <epsfiles/umbra.eps>
- [107]
 File: epsfiles/totalm.eps Graphic file (type eps)
 <epsfiles/totalm.eps>
- [108] [109] [110]
+ [101] [102]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [111]
-[112]
-Overfull \hbox (27.72298pt too wide) in paragraph at lines 471--508
+ [103]
+[104] [105]
+Overfull \hbox (44.5101pt too wide) in paragraph at lines 471--508
  [][][][] 
  []
 
 
-Overfull \hbox (53.12196pt too wide) in paragraph at lines 513--568
+Overfull \hbox (69.90909pt too wide) in paragraph at lines 513--568
  [][][][] 
  []
 
-) [113] [114] [115] [116]
+
+Overfull \hbox (5.75877pt too wide) in paragraph at lines 573--625
+[][][][] 
+ []
+
+) [106] [107] [108] [109]
 \openout2 = `Superior/Superior.aux'.
 
- (./Superior/Superior.tex
+ (./Superior/Superior.tex [110
+
+
+
+
+
+]
 Chapter 8.
 File: epsfiles/figv7.eps Graphic file (type eps)
 <epsfiles/figv7.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: epsfiles/figv4.eps Graphic file (type eps)
 <epsfiles/figv4.eps>
+[111]
 File: epsfiles/figv5.eps Graphic file (type eps)
 <epsfiles/figv5.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[117
-
-
-
-
-
-] [118] [119] [120] [121]
+ [112] [113] [114]
 Underfull \hbox (badness 10000) in paragraph at lines 230--249
 
  []
 
-
+[115]
 Underfull \hbox (badness 10000) in paragraph at lines 287--308
 
  []
 
-[122]
+[116]
 File: epsfiles/epicycle.eps Graphic file (type eps)
 <epsfiles/epicycle.eps>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[123] [124] [125]
+ [117] [118]
 Underfull \hbox (badness 10000) in paragraph at lines 456--475
 
  []
 
-[126]
+[119]
 Underfull \hbox (badness 10000) in paragraph at lines 536--556
 
  []
 
-[127] [128]
-Overfull \hbox (13.57872pt too wide) in paragraph at lines 706--756
+[120] [121]
+Overfull \hbox (30.36584pt too wide) in paragraph at lines 707--757
  [][][][] 
  []
 
 
-Overfull \hbox (11.93974pt too wide) in paragraph at lines 761--814
+Overfull \hbox (28.72687pt too wide) in paragraph at lines 762--815
  [][][][] 
  []
 
 
-Overfull \hbox (1.93974pt too wide) in paragraph at lines 965--1018
+Overfull \hbox (10.36584pt too wide) in paragraph at lines 911--961
  [][][][] 
  []
 
-) [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139] [140]
-[141]
+
+Overfull \hbox (18.72687pt too wide) in paragraph at lines 966--1019
+ [][][][] 
+ []
+
+
+Overfull \hbox (10.36584pt too wide) in paragraph at lines 1116--1166
+ [][][][] 
+ []
+
+
+Overfull \hbox (8.72687pt too wide) in paragraph at lines 1171--1224
+ [][][][] 
+ []
+
+) [122] [123] [124] [125] [126] [127] [128] [129] [130] [131] [132] [133]
+[134]
 \openout2 = `Inferior/Inferior.aux'.
 
- (./Inferior/Inferior.tex [142
-
-
-
-
-
-]
+ (./Inferior/Inferior.tex
 Chapter 9.
 File: epsfiles/fig8.eps Graphic file (type eps)
 <epsfiles/fig8.eps>
+[135
 
-Underfull \vbox (badness 1082) has occurred while \output is active []
 
- [143]
-[144]
+
+
+
+] [136]
 Underfull \hbox (badness 10000) in paragraph at lines 136--156
 
  []
 
-[145]
+[137]
 Underfull \hbox (badness 10000) in paragraph at lines 193--213
 
  []
 
-[146] [147] [148]
+[138] [139]
 Underfull \hbox (badness 10000) in paragraph at lines 352--372
 
  []
 
-[149] [150]
-Overfull \hbox (11.93974pt too wide) in paragraph at lines 527--580
- [][][][] 
- []
-
-[151] [152] [153] [154]
-Overfull \hbox (23.57872pt too wide) in paragraph at lines 677--727
+[140] [141]
+Overfull \hbox (10.36584pt too wide) in paragraph at lines 471--521
  [][][][] 
  []
 
 
-Overfull \hbox (11.93974pt too wide) in paragraph at lines 732--785
+Overfull \hbox (28.72687pt too wide) in paragraph at lines 526--579
  [][][][] 
  []
 
-) [155] [156] [157] [158]
+[142] [143] [144] [145]
+Overfull \hbox (40.36584pt too wide) in paragraph at lines 676--726
+ [][][][] 
+ []
+
+
+Overfull \hbox (28.72687pt too wide) in paragraph at lines 731--784
+ [][][][] 
+ []
+
+) [146] [147] [148] [149]
 \openout2 = `Latitude/Latitude.aux'.
 
- (./Latitude/Latitude.tex
-Chapter 10.
-[159
+ (./Latitude/Latitude.tex [150
 
 
 
@@ -1097,93 +1140,111 @@ Chapter 10.
 
 
 ]
+Chapter 10.
+[151]
 File: epsfiles/long.eps Graphic file (type eps)
 <epsfiles/long.eps>
- [160] [161]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [152]
+[153]
 Underfull \hbox (badness 10000) in paragraph at lines 157--179
 
  []
 
-[162]
+
 Underfull \hbox (badness 10000) in paragraph at lines 211--233
 
  []
 
-
+[154]
 Underfull \hbox (badness 10000) in paragraph at lines 265--287
 
  []
 
-[163] [164]
+
+Underfull \vbox (badness 1609) has occurred while \output is active []
+
+ [155]
+[156]
 File: epsfiles/long1.eps Graphic file (type eps)
 <epsfiles/long1.eps>
 
+Underfull \vbox (badness 6842) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 7047) has occurred while \output is active []
-
- [165]
-[166]
+ [157]
+[158]
 Underfull \hbox (badness 10000) in paragraph at lines 454--476
 
  []
 
-[167]
+
 Underfull \hbox (badness 10000) in paragraph at lines 509--531
 
  []
 
-
-Underfull \vbox (badness 1231) has occurred while \output is active []
-
- [168]
-[169]
-Overfull \hbox (21.46948pt too wide) in paragraph at lines 629--682
+[159] [160]
+Overfull \hbox (38.2566pt too wide) in paragraph at lines 631--684
  [][][][] 
  []
 
 
-Overfull \hbox (21.46948pt too wide) in paragraph at lines 745--798
+Overfull \hbox (38.2566pt too wide) in paragraph at lines 747--800
  [][][][] 
  []
 
 
-Overfull \hbox (21.46948pt too wide) in paragraph at lines 861--914
+Overfull \hbox (38.2566pt too wide) in paragraph at lines 863--916
  [][][][] 
  []
 
-) [170] [171] [172] [173] [174] [175] [176] [177] [178] [179] [180]
+
+Overfull \hbox (17.26398pt too wide) in paragraph at lines 979--1032
+ [][][][] 
+ []
+
+
+Overfull \hbox (17.26398pt too wide) in paragraph at lines 1095--1148
+ [][][][] 
+ []
+
+) [161] [162] [163] [164] [165] [166] [167] [168] [169] [170] [171]
 \openout2 = `Glossary/Glossary.aux'.
 
 
-(./Glossary/Glossary.tex [181
+(./Glossary/Glossary.tex [172
 
 
 
 
 
-] [182] [183] [184]) [185]
+]
+Overfull \hbox (3.41429pt too wide) in paragraph at lines 13--16
+[]\TU/TimesNewRoman(0)/m/n/10 Any deviation in an orbit from uniform circular m
+otion that is concentric with the central body. Anomaly
+ []
+
+[173] [174] [175] [176]) [177]
 \openout2 = `Symbol/Symbol.aux'.
 
- (./Symbol/Symbol.tex
-[186
+ (./Symbol/Symbol.tex [178
 
 
 
 
 
-] [187])
+] [179])
 \openout2 = `Bibliography/Bibliography.aux'.
 
- (./Bibliography/Bibliography.tex [188
+
+(./Bibliography/Bibliography.tex [180
 
 
 
 
 
-]) [189]
+]) [181]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1295,12 +1356,12 @@ LaTeX Info: Redefining \ttfamily on input line 3.
 (./Latitude/Latitude.aux) (./Glossary/Glossary.aux) (./Symbol/Symbol.aux)
 (./Bibliography/Bibliography.aux)) ) 
 Here is how much of TeX's memory you used:
- 7321 strings out of 476683
- 185156 string characters out of 5804047
- 2165018 words of memory out of 5000000
- 27297 multiletter control sequences out of 15000+600000
+ 7975 strings out of 476683
+ 194967 string characters out of 5804047
+ 2166018 words of memory out of 5000000
+ 27938 multiletter control sequences out of 15000+600000
  518748 words of font info for 94 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,11n,77p,642b,318s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,77p,642b,322s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Almagest.pdf (189 pages).
+Output written on Almagest.pdf (181 pages).

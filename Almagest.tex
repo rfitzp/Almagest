@@ -1,5 +1,6 @@
 \documentclass[11pt]{book}
-\usepackage{fullpage}
+%\usepackage{fullpage}
+\usepackage[a4paper, margin=1in,headheight=30pt,footskip=20pt]{geometry}
 \usepackage{epsf}
 \usepackage{graphicx,epstopdf}	
 \usepackage{parallel}
@@ -7,12 +8,18 @@
 %\pdfoutput = 1 
 
 \usepackage{fontspec}
-\usepackage{fontspec}
 \setmainfont{Times New Roman}
 \usepackage{polyglossia}
 \setmainlanguage{english}
 \setotherlanguage{greek}
 \newfontfamily\greekfont{Times New Roman}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[LE]{\leftmark}  % left header, even pages
+\fancyhead[RO]{\rightmark}   % right header, odd pages
+\fancyhead[RE]{}     % right header, even pages
+\fancyhead[LO]{}  
 
 \newcommand {\btau}{\mbox{\boldmath$\tau$}}
 \newcommand {\bOmega}{\mbox{\boldmath$\Omega$}}
@@ -25,18 +32,22 @@
 \date{}
 \maketitle
 
-\include{Introduction/Introduction}
-\include{Spherical/Spherical}
-\include{Julian/Julian}
-\include{Kepler/Kepler}
-\include{Sun/Sun}
-\include{Moon/Moon}
-\include{Syzygy/Syzygy}
-\include{Superior/Superior}
-\include{Inferior/Inferior}
-\include{Latitude/Latitude}
-\include{Glossary/Glossary}
-\include{Symbol/Symbol}
-\include{Bibliography/Bibliography}
+\tableofcontents
+
+\include{Introduction/Introduction.tex}
+\include{Spherical/Spherical.tex}
+\include{Julian/Julian.tex}
+\include{Kepler/Kepler.tex}
+\include{Sun/Sun.tex}
+\include{Moon/Moon.tex}
+\include{Syzygy/Syzygy.tex}
+\include{Superior/Superior.tex}
+\include{Inferior/Inferior.tex}
+\include{Latitude/Latitude.tex}
+
+\pagestyle{plain} 
+\include{Glossary/Glossary.tex}
+\include{Symbol/Symbol.tex}
+\include{Bibliography/Bibliography.tex}
 
 \end{document}
