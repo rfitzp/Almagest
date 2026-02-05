@@ -14,7 +14,7 @@ ntS  = 0.98560025
 lb0S = 280.458
 M0S  = 357.588
 eS   = 0.016711
-rS0  = 15.99380
+rS0  = 15.987
 
 # Lunar parameters
 eM   = 0.054881
@@ -25,8 +25,8 @@ lb0M = 218.322
 M0M  = 134.916
 F0M  = 93.284
 iM   = 5.161
-dM0  = 56.98585
-rM0  = 15.58795
+dM0  = 56.976
+rM0  = 15.534
 
 def julian_day_number(day, month, year):
     """
@@ -207,14 +207,6 @@ def Get_Lambda_Moon (t):
 
     Db = labM - lamS
 
-    """
-    q1 = (2.*eM * math.sin (MM*degtorad) + 1.430 * eM*eM * math.sin (2.*MM*degtorad)) * radtodeg
-    q2 = (0.422 * eM * math.sin ((2.*Db - MM)*degtorad)) * radtodeg
-    q3 = (0.211 * eM * (math.sin (2.*Db*degtorad) - 0.066 * math.sin (Db*degtorad))) * radtodeg
-    q4 = - 0.051 * eM * math.sin (MS*degtorad) * radtodeg
-    q5 = - 0.038 * eM * math.sin (2.*FbM*degtorad) * radtodeg
-    """
-
     q1 =   (2.*eM * math.sin (MM*degtorad) + 1.2379 * eM*eM * math.sin (2.*MM*degtorad)) * radtodeg
     q2 =   (0.4052 * eM * math.sin ((2.*Db-MM)*degtorad))                                * radtodeg
     q3 =   (0.2094 * eM * (math.sin (2.*Db*degtorad) - 0.0527 * math.sin (Db*degtorad))) * radtodeg
@@ -229,17 +221,19 @@ def Get_Lambda_Moon (t):
 
     db1 = dM0 * eM * math.cos (MM*degtorad)
     db2 = rM0 * eM * math.cos (MM*degtorad)
-    db3 = rS0 * eS * math.cos (MM*degtorad)
+    db3 = rS0 * eS * math.cos (MS*degtorad)
 
-    bM  = 56.59 + db1 + db2 - db3
-    bMt = 25.41 + db1 - db2 - db3
+    bM  = dM0 + rM0 - rS0 + db1 + db2 - db3
+    bMt = dM0 - rM0 - rS0 + db1 - db2 - db3
 
-    return lamM, betaM*60., bM, bMt
+    mag = (bM - abs (betaM*60.)) /(bM - bMt)
+
+    return lamM, betaM*60., bM, bMt, mag
 
 def Get_DMS (t):
 
-    lamS, SM            = Get_Lambda_Sun  (t)
-    lamM, bsyz, bM, bMt = Get_Lambda_Moon (t)
+    lamS, SM                 = Get_Lambda_Sun  (t)
+    lamM, bsyz, bM, bMt, mag = Get_Lambda_Moon (t)
 
     D = lamM - lamS
 
@@ -283,7 +277,7 @@ for i in range (1, 14):
     jd = tx + t
 
     year, month, day, hour, minute = jd_to_gregorian_datetime (jd)
-    lamM, bsyz, bM, bMt            = Get_Lambda_Moon (jd)
+    lamM, bsyz, bM, bMt, mag       = Get_Lambda_Moon (jd)
 
     if abs (bsyz) < bMt:
         c = 'T'
@@ -291,8 +285,11 @@ for i in range (1, 14):
         c = 'P'
     else:
         c = ' '
-     
-    print ("%02d:  %02d/%02d/%4d:  %02d:%02d  %.1f  %.1f  %05.1f  %s" % (i, day, month, year, hour, minute, bM, bMt, abs (bsyz), c))
+
+    if (mag > 0.):    
+        print ("%02d:  %02d/%02d/%4d:  %02d:%02d  %.1f  %.1f  %05.1f  %s  %.3f" % (i, day, month, year, hour, minute, bM, bMt, abs (bsyz), c, mag))
+    else:
+        print ("%02d:  %02d/%02d/%4d:  %02d:%02d  %.1f  %.1f  %05.1f  %s" % (i, day, month, year, hour, minute, bM, bMt, abs (bsyz), c))
 
     print ("%02d/%02d/%4d &  %02d:%02d & %.1f & %.1f & %05.1f & %s\\\\" % (day, month, year, hour, minute, bM, bMt, abs (bsyz), c), file=f)
 

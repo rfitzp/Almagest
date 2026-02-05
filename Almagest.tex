@@ -1,11 +1,20 @@
 \documentclass[11pt]{book}
-%\usepackage{fullpage}
-\usepackage[a4paper, margin=1in,headheight=30pt,footskip=20pt]{geometry}
+\usepackage{fullpage}
+%\usepackage[a4paper, margin=1in,headheight=30pt,footskip=20pt]{geometry}
 \usepackage{epsf}
 \usepackage{graphicx,epstopdf}	
 \usepackage{parallel}
 \usepackage{amsmath}
 %\pdfoutput = 1 
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
+\setlength{\headsep}{10pt}
+\pagestyle{fancy}
+\fancyhead[LE]{\leftmark}  
+\fancyhead[RO]{\rightmark} 
+\fancyhead[RE]{}     
+\fancyhead[LO]{}  
 
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
@@ -13,13 +22,6 @@
 \setmainlanguage{english}
 \setotherlanguage{greek}
 \newfontfamily\greekfont{Times New Roman}
-
-\usepackage{fancyhdr}
-\pagestyle{fancy} 
-\fancyhead[LE]{\leftmark}  % left header, even pages
-\fancyhead[RO]{\rightmark}   % right header, odd pages
-\fancyhead[RE]{}     % right header, even pages
-\fancyhead[LO]{}  
 
 \newcommand {\btau}{\mbox{\boldmath$\tau$}}
 \newcommand {\bOmega}{\mbox{\boldmath$\Omega$}}
