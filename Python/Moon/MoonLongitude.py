@@ -23,7 +23,7 @@ nbM  = 13.22935027
 lb0M = 218.322
 M0M  = 134.916
 F0M  = 93.284
-iM   = 5.161
+iM   = 5.128122
 
 def julian_day_number(day, month, year):
     """
@@ -104,14 +104,6 @@ def Get_Lambda_Moon (t):
     lamS, MS = Get_Lambda_Sun (t)
 
     Db = labM - lamS
-
-    """
-    q1 = (2.*eM * math.sin (MM*degtorad) + 1.430 * eM*eM * math.sin (2.*MM*degtorad)) * radtodeg
-    q2 = (0.422 * eM * math.sin ((2.*Db - MM)*degtorad)) * radtodeg
-    q3 = (0.211 * eM * (math.sin (2.*Db*degtorad) - 0.066 * math.sin (Db*degtorad))) * radtodeg
-    q4 = - 0.051 * eM * math.sin (MS*degtorad) * radtodeg
-    q5 = - 0.038 * eM * math.sin (2.*FbM*degtorad) * radtodeg
-    """
     
     q1 =   (2.*eM * math.sin (MM*degtorad) + 1.2379 * eM*eM * math.sin (2.*MM*degtorad)) * radtodeg
     q2 =   (0.4052 * eM * math.sin ((2.*Db-MM)*degtorad))                                * radtodeg
@@ -123,7 +115,7 @@ def Get_Lambda_Moon (t):
 
     FM = (FbM + q1 + q2 + q3 + q4 + q5) % 360.
 
-    betaM = math.sin (math.sin (iM*degtorad) * math.sin (FM*degtorad)) * radtodeg
+    betaM = math.asin (math.sin (iM*degtorad) * math.sin (FM*degtorad)) * radtodeg
 
     return lamS, MS, labM, MM, FbM, Db, q1, q2, q3, q4, q5, lamM, FM, betaM
 

@@ -5,7 +5,7 @@ import math
 degtorad = math.pi/180.
 radtodeg = 180./math.pi
 
-i = 5.161
+i = 5.128122
 
 f = open("Latitude.txt", "w")
 

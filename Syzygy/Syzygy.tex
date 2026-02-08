@@ -23,7 +23,7 @@ lunar models described in the previous two chapters. Our elongation model is as
 follows:
 \begin{align}
 \bar{D} &= \bar{\lambda}_M - \bar{\lambda}_S,\\[0.5ex]
-q_1 &= 2\,e_M\,\sin M_M + 1.2379\,e^2\,\sin 2M_M,\\[0.5ex]
+q_1 &= 2\,e_M\,\sin M_M + 1.2379\,e_M^{\,2}\,\sin 2M_M,\\[0.5ex]
 q_2 &= 0.4052\,e_M\,\sin (2\bar{D} - M_M),\\[0.5ex]
 q_3 &= 0.2094\,e_M\,(\sin 2\bar{D} - 0.0527\,\sin \bar{D}),\\[0.5ex]
 q_4 &= -(0.0589\,e_M+2\,e_S)\,\sin M_S - (5/4)\,e_S^{\,2}\,\sin 2 M_S,\\[0.5ex]
@@ -178,42 +178,28 @@ of the third full moon in 1982 AD is $2445039.0 +(180.00-187.93)/12.1907491= 244
 This corresponds to 20:04  UT on March 9th.
 
 \section{Solar and Lunar Eclipses}
+Eclipses are discussed in Book~VI of the Almagest. 
 A {\em solar eclipse}---or, more accurately, a lunar-solar occultation---occurs
 when the Moon blocks the light of the Sun. Clearly, this is
 only possible at a new moon. See Figure~\ref{fphase}. On the other hand,
-a {\em lunar eclipse}\/ occurs when the Moon falls into the
-shadow of the Earth. Of course, this is only possible at a full moon. It follows that eclipses
+an umbral {\em lunar eclipse}\/ occurs when the Moon falls into the
+umbra of the Earth. Of course, this is only possible at a full moon. It follows that eclipses
 can only take place at  lunar-solar syzygies.
 
 In order to determine whether a particular lunar-solar syzygy coincides with an eclipse, we first need to calculate the angular radii of the
-Sun, the Moon, and the Earth's shadow in the sky. Using the small angle approximation, the
-angular radius of the  Sun is given by $\rho_S = R_S/r_S$, where
-$R_S$ is the solar radius, and $r_S$ the Earth-Sun distance. However,
-$r_S\simeq a_S\,(1-e_S\,\cos M_S)$, where $a_S$, $e_S$, and $M_S$
-are the major radius, eccentricity, and mean anomaly of the Sun's apparent
-orbit around the Earth, respectively. (See Chapter~\ref{ckep}.) Hence,
-\begin{equation}
-\rho_S \simeq \rho_{S\,0}\,(1+e_S\,\cos M_S),
-\end{equation}
-where $\rho_{S\,0}=R_S/a_S=6.960\times10^5\,{\rm km}/1.496\times 10^8\,{\rm km}\simeq 15.99'$.
-Likewise, the angular radius of the Moon is
-\begin{equation}
-\rho_M\simeq  \rho_{M\,0}\,(1+e_M\,\cos M_M),
-\end{equation}
-where $\rho_{M\,0} = R_M/a_M =1743\,{\rm km}/384\,399\,{\rm km}\simeq 15.59'$. Here,
-$R_M$, $a_M$, $e_M$, and $M_M$ are the radius of the Moon, and the major radius, eccentricity, and mean anomaly of the Moon's orbit, respectively.
-As was shown in the previous chapter, lunar parallax causes the
-angular position of the Moon in the sky to shift by up to
-\begin{equation}
-\delta_M = \frac{R_E}{r_M}= \delta_{M\,0}\,(1+e_M\,\cos M_M),
-\end{equation}
-where $\delta_{M\,0} = R_E/a_M = 6371\,{\rm km}/384\,399\,{\rm km}=56.98'$. Here, $R_E$ is the
-radius of the Earth. Finally, simple trigonometry reveals that
-the angular size of the Earth's shadow (that is, umbra) at the radius of the Moon's orbit is
+Sun, the Moon, and the Earth's umbra in the sky. 
+We have already seen that the angular radius of the Sun, $\rho_M$, is given by formula (\ref{rhos}). Likewise, the
+angular radius of the Moon, $\rho_M$, is given by formula (\ref{rhom}). 
+ Let $R_S$ and $R_E$ be the physical radii of the Sun and the Earth, respectively. 
+Moreover, let $r_S$ and $r_M$ be cthe Earth-Sun and the Earth-Moon distances, respectively. 
+The ratio $\delta_M=R_E/r_M$ is the maximum parallax of the Moon, and is
+specified in formula (\ref{deltam}).
+Simple trigonometry reveals that
+the angular size of the Earth's umbra at the radius of the Moon's orbit is
 \begin{equation}
 \rho_U = \delta_M-\rho_S.
 \end{equation}
-This can be seen from Figure~\ref{fumbra}.
+This can be seen from Figure~\ref{fumbra}. 
 The radius of the umbra at the position of the Moon is $R_U = R_E-x=
 R_E - r_M\,\rho_S$. Hence, the angular radius of the umbra is
 $\rho_U = R_U/r_M = \delta_M-\rho_S$. Incidentally,
@@ -228,7 +214,7 @@ because $R_S\gg R_E$.
 A solar eclipse does not take place every new moon,
 nor a lunar eclipse every full moon, because of the inclination of the
 Moon's orbit to the ecliptic plane, which causes the Moon to
-pass either above or below the Sun, or the Earth's shadow, respectively, in the majority of cases. It follows
+pass either above or below the Sun, or the Earth's umbra, respectively, in the majority of cases. It follows
 that the critical parameter that determines the occurrence of eclipses is
 the ecliptic latitude of the Moon at syzygy, $\beta_{syz}$. Of course, once
 the date  and time of a syzygy has been established, $\beta_{syz}$
@@ -248,81 +234,70 @@ It follows from Table~\ref{tmoonb} that $\beta_{syz} = 4.784^\circ\simeq 4^\circ
 \end{figure}
 
 The criterion for
-a lunar eclipse is particularly simple, because it is not
+an umbral lunar eclipse is particularly simple, because it is not
 complicated by lunar parallax. A {\em total lunar eclipse}, in which the Moon is
-completely immersed in the Earth's shadow, must take place at a
+completely immersed in the Earth's umbra, must take place at a
 full moon if $|\beta_{syz}| < \rho_U-\rho_M$ (see Figure~\ref{fmoonec}),
 or equivalently
-\begin{equation}
-|\beta_{syz}| < \delta_M-\rho_M-\rho_S,
+\begin{equation}\label{elp}
+|\beta_{syz}| < \beta_{M\,t}\equiv \delta_M-\rho_M-\rho_S,
 \end{equation}
 and either a total or a {\em partial lunar eclipse}, in which the Moon is only
-partially immersed in the Earth's shadow, must take place if
+partially immersed in the Earth's umbra, must take place if
 $ |\beta_{syz}| < \rho_U+\rho_M$ (see Figure~\ref{fmoonec}),
 or  equivalently
-\begin{equation}
-|\beta_{syz}| < \delta_M+\rho_M-\rho_S.
+\begin{equation}\label{elt}
+|\beta_{syz}| < \beta_M\equiv \delta_M+\rho_M-\rho_S.
 \end{equation}
  Note that lunar eclipses are simultaneously
 visible at all observation sites on the Earth for which the Moon is
-above the horizon, because the Earth's shadow is larger than the Moon, and the relative position of the Moon and the Earth's shadow is not affected by parallax
-(because both the Moon and the shadow are the same distance from the Earth).
+above the horizon, because the Earth's umbra is larger than the Moon, and the relative position of the Moon and the Earth's umbra is not affected by parallax
+(because both the Moon and the umbra are the same distance from the Earth). The {\em magnitude}\/ of a lunar eclipse is
+defined as the linear fraction of the Moon's diameter that lies in the Earth's umbra at maximum eclipse. It follows
+that
+\begin{equation}
+m = \frac{\rho_U+\rho_M-|\beta_{syz}|}{2\,\rho_M} = \frac{\beta_{M\,t}- |\beta_{syz}|}{\beta_M-\beta_{M\,t}}.
+\end{equation}
 
  The criterion for a solar eclipse is modified by lunar parallax, which causes the angular position of the Moon relative to the Sun to shift by up to $\delta_M$ from its geocentric position. The amount of the shift
  depends on the observation site. However, a site can always be found
  at which the shift takes its maximum value in any particular direction.
  Note that the Sun has negligible parallax, because it is much farther away from the Earth than the Moon. Taking parallactic shifts into account, a {\em total solar eclipse}, in which the Sun is totally obscured by the Moon,
 must take place if $\rho_M>\rho_S$ and
- \begin{equation}
- |\beta_{syz}| < \delta_M + \rho_M - \rho_S,
+ \begin{equation}\label{est}
+ |\beta_{syz}| < \beta_{S\,t}\equiv \delta_M + \rho_M - \rho_S,
  \end{equation}
  an {\em annular solar eclipse}, in which all of the Sun apart from
  a thin outer ring is obscured by the Moon, must take place if
  $\rho_S>\rho_M$ and
  \begin{equation}
- |\beta_{syz}| < \delta_M +  \rho_S-\rho_M,
+ |\beta_{syz}| <\beta_{S\,a}\equiv \delta_M - \rho_M+\rho_S,
  \end{equation}
  and either a total, an annular,  or a {\em partial solar eclipse}, in which the
  Sun is only partially obscured by the Moon,  must take place if
- \begin{equation}
-    |\beta_{syz}|< \delta_M + \rho_M + \rho_S.
+ \begin{equation}\label{esp}
+    |\beta_{syz}|<\beta_S\equiv  \delta_M + \rho_M + \rho_S.
   \end{equation}
-As a consequence of lunar parallax, and the fact that the angular sizes of the Sun and Moon in the sky are very similar, solar eclipses are only visible in very localized regions of the Earth. Note, finally, that the previous criteria represent
+As a consequence of lunar parallax, and the fact that the angular sizes of the Sun and Moon in the sky are very similar, solar eclipses are only visible in very localized regions of the Earth. 
+The magnitude of a solar eclipse is defined as the linear fraction of the Sun's diameter that is obscured by the Moon at maximum eclipse. It follows that
+\begin{equation}
+m = \frac{\rho_M}{\rho_S} = \frac{\beta_S-\beta_{S\,a}}{\beta_S-\beta_{S\,t}}
+\end{equation}
+for a total or annular eclipse, and 
+\begin{equation}
+m= \frac{\delta_M+\rho_S+\rho_M-|\beta_{syz}|}{2\,\rho_S} = \frac{\beta_S -|\beta_{syz}|}{\beta_S-\beta_{S\,t}}.
+\end{equation}
+for a partial eclipse. 
+
+Note  that the previous criteria represent
 necessary, but not sufficient, conditions for the occurrence of the various eclipses with which
 they are associated. This is the case because the point of closest
-approach of the Moon and the Earth's shadow, in the case of a
+approach of the Moon and the Earth's umbra, in the case of a
 lunar eclipse, and the Moon and Sun, in the case of a solar eclipse, does
 not necessarily occur exactly at the syzygy, due to the inclination
 of the Moon's orbit to the ecliptic. However, because the said inclination
 is fairly gentle, the previous criteria turn out to be very accurate
 predictors of eclipses. 
-
-The criterion for a total lunar eclipse can be written $|\beta_{syz}|< \beta_{Mt}$, where
-\begin{equation}\label{elt}
-\beta_{Mt} = 25.41' + \delta\beta_1(M_M)-\delta\beta_2 (M_M)-\delta\beta_3(M_S).%\label{ae137}
-\end{equation}
-Here, the functions $\delta\beta_1=\delta_{M\,0}\,e_M\,\cos M_M$, $\delta\beta_2= \rho_{M\,0}\,e_M\,\cos M_M$, and $\delta\beta_3=\rho_{S\,0}\,e_S\,\cos M_S$
-are tabulated in Table~\ref{tsyzb}. The criterion for any type of
-lunar eclipse becomes $|\beta_{syz}|< \beta_{M}$, where
-\begin{equation}\label{elp}
-\beta_{M} = 56.59' +  \delta\beta_1(M_M)+\delta\beta_2 (M_M)-\delta\beta_3(M_S).
-\end{equation}
-The criterion for a total  solar eclipse can
-be written $|\beta_{syz}|<\beta_{St}$ and $\beta_{St}>\beta_{Sa}$, where
-\begin{equation}\label{est}
-\beta_{St} = 56.59' +  \delta\beta_1(M_M)+\delta\beta_2 (M_M)-\delta\beta_3(M_S),
-\end{equation}
-and
-\begin{equation}\label{esa}
-\beta_{Sa} = 57.39' +  \delta\beta_1(M_M)-\delta\beta_2 (M_M)+\delta\beta_3(M_S),
-\end{equation}
-The criterion for an annular  solar eclipse is $|\beta_{syz}|<\beta_{Sa}$ and $\beta_{Sa}>\beta_{St}$.
-Finally, 
-the criterion for any
-type of solar eclipse is $|\beta_{syz}|< \beta_{S}$, where
-\begin{equation}\label{esp}
-\beta_{S} = 88.57' +  \delta\beta_1(M_M)+\delta\beta_2 (M_M)+\delta\beta_3(M_S).%\label{ae140}
-\end{equation}
 
 \section{Example Eclipse Calculations}
 Let us use our model to examine the lunar-solar syzygies of the year
@@ -330,57 +305,58 @@ Let us use our model to examine the lunar-solar syzygies of the year
 lunar eclipses. The following  table  shows the dates and times of the new moons
 of 1992 AD, calculated using the method described in Section~\ref{sxxc}. Also shown is the magnitude of the Moon's ecliptic latitude
 at each syzygy, $|\beta_{syz}|$, calculated from 
-Eqaution~(\ref{moonla}) and Table~\ref{tmoonb}, as well as the critical values of
+Equation~(\ref{moonla}) and Table~\ref{tmoonb}, as well as the critical values of
 this parameter for a general,  total, and annular solar eclipse. The latter are calculated from
-Equations~(\ref{est})--(\ref{esp}) with the aid of Table~\ref{tsyzb}. It can be seen that
+Equations~(\ref{est})--(\ref{esp}), with the aid of Table~\ref{tmoonaa}.  The eclipse magnitude is also shown. It can be seen that
 the criterion for a total solar eclipse (that is, $|\beta_{syz}|< \beta_{St}$ and $\beta_{St}>\beta_{Sa}$) is satisfied for the syzygy marked with a T,  the criterion for an annular solar eclipse (that is, $|\beta_{syz}|< \beta_{Sa}$ and $\beta_{Sa}>\beta_{St}$) for the syzygy marked with an A,
 and
 the criterion for a partial solar eclipse  (that is, $\beta_{St},\beta_{Sa}<|\beta_{syz}|< \beta_{S}$)  for the syzygy marked with a P. It is easily verified
 that a total solar eclipse, an annular solar eclipse, and a partial solar eclipse did indeed
 take place in 1992 AD at the dates and times indicated.\\
-\begin{tabular}{ccccccc}
-&&&&&&\\
-Date & Time (UT) & $\beta_{S}(')$ & $\beta_{St}(')$ & $\beta_{Sa}(')$ & $|\beta_{syz}|(')$\\\hline
-04/01/1992 &  23:15 & 84.5 & 53.0 & 54.9 & 023.0 & A\\
-03/02/1992 &  18:58 & 84.4 & 53.0 & 54.9 & 182.7 &  \\
-04/03/1992 &  13:14 & 85.4 & 53.9 & 55.5 & 286.6 &  \\
-03/04/1992 &  04:52 & 87.1 & 55.3 & 56.5 & 306.0 &  \\
-02/05/1992 &  17:39 & 89.0 & 57.0 & 57.7 & 239.7 &  \\
-01/06/1992 &  03:55 & 90.7 & 58.5 & 58.7 & 110.0 &  \\
-30/06/1992 &  12:18 & 92.0 & 59.6 & 59.4 & 047.1 & T\\
-29/07/1992 &  19:35 & 92.7 & 60.2 & 59.9 & 191.6 &  \\
-28/08/1992 &  02:43 & 92.8 & 60.3 & 59.9 & 287.0 &  \\
-26/09/1992 &  10:44 & 92.1 & 59.7 & 59.5 & 306.6 &  \\
-25/10/1992 &  20:38 & 90.9 & 58.6 & 58.8 & 241.5 &  \\
-24/11/1992 &  09:14 & 89.1 & 57.1 & 57.7 & 106.1 &  \\
-24/12/1992 &  00:49 & 87.1 & 55.3 & 56.5 & 062.3 & P\\
-&&&&&&\\
+\begin{tabular}{cccccccc}
+&&&&&&&\\
+Date & Time (UT) & $\beta_{S}(')$ & $\beta_{St}(')$ & $\beta_{Sa}(')$ & $|\beta_{syz}|(')$ & Type & $m$\\\hline
+04/01/1992 &  23:15 & 85.0 & 52.5 & 55.5 & 022.9 & A & 0.91\\
+03/02/1992 &  18:58 & 84.9 & 52.5 & 55.5 & 181.5 &   &\\
+04/03/1992 &  13:14 & 85.7 & 53.5 & 55.9 & 284.8 &   &\\
+03/04/1992 &  04:52 & 87.2 & 55.2 & 56.7 & 304.0 &   &\\
+02/05/1992 &  17:39 & 89.1 & 57.3 & 57.7 & 238.1 &   &\\
+01/06/1992 &  03:55 & 91.0 & 59.5 & 58.8 & 109.3 &   &\\
+30/06/1992 &  12:18 & 92.7 & 61.2 & 59.7 & 046.8 & T & 1.05\\
+29/07/1992 &  19:35 & 93.7 & 62.2 & 60.3 & 190.4 &   &\\
+28/08/1992 &  02:43 & 93.8 & 62.2 & 60.4 & 285.2 &   &\\
+26/09/1992 &  10:44 & 93.1 & 61.2 & 60.0 & 304.6 &   &\\
+25/10/1992 &  20:38 & 91.5 & 59.3 & 59.2 & 240.0 &   &\\
+24/11/1992 &  09:14 & 89.5 & 57.1 & 58.1 & 105.4 &   &\\
+24/12/1992 &  00:49 & 87.4 & 54.9 & 56.9 & 061.9 & P & 0.78\\
+&&&&&&&\\
 \end{tabular}
 
 The following table shows the dates and times of the full moons
 of 1992 AD. Also shown is the magnitude of the Moon's ecliptic latitude
 at each syzygy, as well as the critical values of
 this parameter for a general and a total lunar eclipse. The latter are calculated from
-Equations~(\ref{elp}) and (\ref{elt}), respectively, with the aid of Table~\ref{tsyzb}. It can be seen that
+Equations~(\ref{elp}) and (\ref{elt}), with the aid of Table~\ref{tmoonaa}.  The eclipse magnitude is also shown.. It can be seen that
 the criterion for a total lunar eclipse (that is, $|\beta_{syz}|< \beta_{Mt}$) is satisfied for the syzygy  marked with a T, whereas
 the criterion for a partial lunar eclipse  (that is, $\beta_{Mt}<|\beta_{syz}|< \beta_{M}$) is satisfied for the syzygy marked with a P. It is easily verified
 that a total lunar eclipse, and a partial lunar eclipse did indeed
 take place in 1992 AD at the dates and times indicated.\\
-\begin{tabular}{cccccc}
-&&&&&\\
-Date & Time (UT) & $\beta_{M}(')$ & $\beta_{Mt}(')$ & $|\beta_{syz}|(')$\\\hline
-19/01/1992 &  21:25 & 60.3 & 27.4 & 107.1 &  \\
-18/02/1992 &  07:51 & 60.0 & 27.2 & 242.8 &  \\
-18/03/1992 &  18:07 & 59.1 & 26.7 & 307.2 &  \\
-17/04/1992 &  04:43 & 57.7 & 26.0 & 284.3 &  \\
-16/05/1992 &  16:14 & 56.1 & 25.1 & 184.2 &  \\
-15/06/1992 &  05:06 & 54.5 & 24.3 & 035.8 & P\\
-14/07/1992 &  19:18 & 53.4 & 23.7 & 121.6 &  \\
-13/08/1992 &  10:26 & 52.9 & 23.4 & 247.3 &  \\
-12/09/1992 &  02:02 & 53.2 & 23.6 & 307.5 &  \\
-11/10/1992 &  17:49 & 54.3 & 24.2 & 283.0 &  \\
-10/11/1992 &  09:17 & 55.9 & 25.1 & 177.1 &  \\
-09/12/1992 &  23:47 & 57.7 & 26.0 & 018.4 & T\\
+\begin{tabular}{ccccccc}
+&&&&&&\\
+Date & Time (UT) & $\beta_{M}(')$ & $\beta_{Mt}(')$ & $|\beta_{syz}|(')$& Type & $m$\\\hline
+19/01/1992 &  21:25 & 61.9 & 28.4 & 106.4 &   &\\
+18/02/1992 &  07:51 & 61.4 & 28.2 & 241.2 &   &\\
+18/03/1992 &  18:07 & 60.1 & 27.5 & 305.2 &   &\\
+17/04/1992 &  04:43 & 58.2 & 26.5 & 282.5 &   &\\
+16/05/1992 &  16:14 & 56.3 & 25.4 & 183.0 &   &\\
+15/06/1992 &  05:06 & 54.6 & 24.5 & 035.6 & P & 0.63\\
+14/07/1992 &  19:18 & 53.4 & 23.8 & 120.8 &   &\\
+13/08/1992 &  10:26 & 52.9 & 23.5 & 245.8 &   &\\
+12/09/1992 &  02:02 & 53.1 & 23.6 & 305.6 &   &\\
+11/10/1992 &  17:49 & 54.1 & 24.1 & 281.2 &   &\\
+10/11/1992 &  09:17 & 55.8 & 25.0 & 176.0 &   &\\
+09/12/1992 &  23:47 & 57.9 & 26.1 & 018.3 & T & 1.25\\
+08/01/1993 &  12:43 & 59.9 & 27.3 & 145.4 &   &\\
 \end{tabular}
 
 \section{Eclipse Statistics}
@@ -390,7 +366,7 @@ and the solar mean anomaly, $M_S$, to be statistically independent of one anothe
 the range $0^\circ$ to $360^\circ$. Using this
 insight, we can easily calculate the probability that a new moon is coincident with a
 solar eclipse, or a full moon with a lunar eclipse, using Equation~(\ref{emoonlat})
-and the criteria (\ref{elt})--(\ref{esp}).
+and the criteria (\ref{elp}), (\ref{elt}), and (\ref{est})--(\ref{esp}).
 For a new moon we find:\\
 \begin{tabular}{lr}
 &\\
@@ -430,40 +406,38 @@ a given full moon then another eclipse is almost certain to occur 223 full moons
 synodic months less than $233$ that corresponds to integer numbers of both anomalistic and draconic months. Hence, the time period
 of $223$ synodic months, which is (mistakenly) called the {\em saros}, is the minimum (almost) guaranteed period on which solar and lunar eclipses repeat. 
 
-The following table gives details of a series of solar eclipses that take place at regular intervals of 223 new moons. \\
+The following table gives details of a series of solar eclipses that take place at regular intervals of 223 new moons. This particular series, which is known as saros cycle 146, started in 1541 AD and will end in 2893 AD. \\
+\begin{tabular}{cccccccc}
+&&&&&&&\\
+Date & Time (UT) & $\beta_{S}(')$ & $\beta_{St}(')$ & $\beta_{Sa}(')$ & $|\beta_{syz}|(')$ & Type & $m$\\\hline
+18/05/1920 &  06:20 & 93.3 & 61.7 & 60.1 & 063.5 & P & 0.94\\
+29/05/1938 &  13:56 & 93.2 & 61.6 & 60.0 & 059.6 & T & 1.05\\
+08/06/1956 &  21:27 & 93.0 & 61.5 & 59.9 & 055.5 & T & 1.05\\
+20/06/1974 &  04:53 & 92.8 & 61.4 & 59.8 & 051.2 & T & 1.05\\
+30/06/1992 &  12:18 & 92.7 & 61.2 & 59.7 & 046.8 & T & 1.05\\
+11/07/2010 &  19:40 & 92.5 & 61.0 & 59.6 & 042.3 & T & 1.05\\
+22/07/2028 &  03:03 & 92.3 & 60.8 & 59.5 & 037.9 & T & 1.04\\
+02/08/2046 &  10:26 & 92.1 & 60.6 & 59.4 & 033.6 & T & 1.04\\
+12/08/2064 &  17:52 & 91.9 & 60.4 & 59.3 & 029.5 & T & 1.03\\
+24/08/2082 &  01:21 & 91.7 & 60.1 & 59.2 & 025.5 & T & 1.03\\
+&&&&&&&\\
+\end{tabular}
+
+Likewise, the following table gives details of a series of lunar eclipses that take place at regular intervals of 223 full moons. This particular series, which is known as saros cycle 125, started in 1163 AD and will end in 2443 AD. \\
 \begin{tabular}{ccccccc}
 &&&&&&\\
-Date & Time (UT) & $\beta_{S}(')$ & $\beta_{St}(')$ & $\beta_{Sa}(')$ & $|\beta_{syz}|(')$\\\hline
-18/05/1920 & 06:20 & 92.4 & 60.0 & 59.7 & 63.9 & P\\
-29/05/1938 & 13:56 & 92.4&  59.9&  59.6&  60.0 & P\\
-08/06/1956 & 21:27 & 92.2  &59.8  &59.6&  55.8  &T\\
-20/06/1974 &  04:53  & 92.1 & 59.7 & 59.5&  51.5  &T\\
-30/06/1992 &  12:18 & 92.0 & 59.6 & 59.4 & 47.1 & T\\
-11/07/2010 &  19:40 & 91.9 & 59.5 & 59.4 & 42.6&  T\\
-22/07/2028 & 03:03  &91.7&  59.3 & 59.3 & 38.2 & T\\
- 02/08/2046 &  10:26 & 91.6 & 59.2 & 59.2&  33.8&  T\\
-  12/08/2064&  17:52 & 91.4 & 59.1 & 59.1 & 29.6 & A\\
-  24/08/2082 & 01:21 & 91.2 & 58.9&  59.0&  25.7 & A\\
-&&&&&&\\
+Date & Time (UT) & $\beta_{M}(')$ & $\beta_{Mt}(')$ & $|\beta_{syz}|(')$& Type & $m$\\\hline
+27/10/1920 &  14:17 & 58.9 & 26.7 & 013.9 & T & 1.40\\
+07/11/1938 &  22:32 & 58.6 & 26.6 & 015.4 & T & 1.35\\
+18/11/1956 &  06:52 & 58.4 & 26.4 & 016.6 & T & 1.31\\
+29/11/1974 &  15:18 & 58.1 & 26.3 & 017.6 & T & 1.27\\
+09/12/1992 &  23:47 & 57.9 & 26.1 & 018.3 & T & 1.25\\
+21/12/2010 &  08:19 & 57.7 & 26.0 & 018.8 & T & 1.23\\
+31/12/2028 &  16:52 & 57.5 & 25.9 & 019.3 & T & 1.21\\
+12/01/2047 &  01:25 & 57.3 & 25.8 & 019.7 & T & 1.19\\
+22/01/2065 &  09:55 & 57.1 & 25.7 & 020.2 & T & 1.17\\
+02/02/2083 &  18:22 & 56.9 & 25.6 & 020.9 & T & 1.15\\
 \end{tabular}
-
-Likewise, the following table gives details of a series of lunar eclipses that take place at regular intervals of 223 full moons. \\
-\begin{tabular}{cccccc}
-&&&&&\\
-Date & Time (UT) & $\beta_{M}(')$ & $\beta_{Mt}(')$ & $|\beta_{syz}|(')$\\\hline
-27/10/1920&  14:17&  58.3&  26.3&  14.0 & T\\
- 07/11/1938&  22:32  &58.1 & 26.2&  15.5&  T\\
-18/11/1956&  06:52 & 58.0 & 26.1&  16.7&  T\\
-29/11/1974&  15:18&  57.8&  26.1&  17.7 & T\\
-09/12/1992 &  23:47 & 57.7 & 26.0 &18.4 & T\\
-21/12/2010&  08:19 & 57.5&  25.9&  18.9 & T\\
-31/12/2028&  16:52 & 57.4 & 25.8&  19.4&  T\\
-12/01/2047 & 01:25 & 57.2&  25.7&  19.9 & T\\
-22/01/2065 & 09:55&  57.1&  25.7&  20.4 & T\\
-02/02/2083 &18:22 & 56.9&  25.6 &21.0 & T\\
-\end{tabular}
-
-
 
 \clearpage
 \begin{table}
@@ -510,7 +484,7 @@ $M_{S\,0} = 357.588^\circ$, and $M_{M\,0} = 134.916^\circ$. }\label{telon}
 
 \newpage
 \begin{table}\centering
-\small{ \begin{tabular}{crrrrr|crrrrr}
+\scriptsize{ \begin{tabular}{crrrrr|crrrrr}
 Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$  & $q_5(^\circ)$ &
 Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$  & $q_5(^\circ)$  \\\hline
 &&&&&&&&&&&\\[-1.75ex]
@@ -623,64 +597,6 @@ in the table. }\label{telona}
 29/01/1949 &  2432945.62 &  17/01/1999 &  2451196.16 & 04/01/2049 &  2469445.60 21/01/2099 & 2487724.89\\
 \end{tabular}}
 \caption{Dates and fractional Julian day numbers of the first new moons of the years 1900--2099 AD.}\label{tnewmoon}
-\end{table}
-
-\newpage
-\begin{table}\centering
-\small{ \begin{tabular}{rrrrc}
-Arg. ($^\circ$) & $\delta\beta_1(')$ &  $\delta\beta_2(')$ &
- $\delta\beta_3(')$& Arg. ($^\circ$) \\\hline
-&&&&\\[-1.75ex]
-000/360 &  3.128 &  0.856 &  0.267 & (180)/(180)\\
-002/358 &  3.126 &  0.855 &  0.267 & (178)/(182)\\
-004/356 &  3.120 &  0.854 &  0.267 & (176)/(184)\\
-006/354 &  3.111 &  0.851 &  0.266 & (174)/(186)\\
-008/352 &  3.097 &  0.847 &  0.265 & (172)/(188)\\
-010/350 &  3.080 &  0.843 &  0.263 & (170)/(190)\\
-012/348 &  3.059 &  0.837 &  0.261 & (168)/(192)\\
-014/346 &  3.035 &  0.830 &  0.259 & (166)/(194)\\
-016/344 &  3.007 &  0.822 &  0.257 & (164)/(196)\\
-018/342 &  2.975 &  0.814 &  0.254 & (162)/(198)\\
-020/340 &  2.939 &  0.804 &  0.251 & (160)/(200)\\
-022/338 &  2.900 &  0.793 &  0.248 & (158)/(202)\\
-024/336 &  2.857 &  0.782 &  0.244 & (156)/(204)\\
-026/334 &  2.811 &  0.769 &  0.240 & (154)/(206)\\
-028/332 &  2.762 &  0.755 &  0.236 & (152)/(208)\\
-030/330 &  2.709 &  0.741 &  0.231 & (150)/(210)\\
-032/328 &  2.652 &  0.726 &  0.227 & (148)/(212)\\
-034/326 &  2.593 &  0.709 &  0.222 & (146)/(214)\\
-036/324 &  2.530 &  0.692 &  0.216 & (144)/(216)\\
-038/322 &  2.465 &  0.674 &  0.211 & (142)/(218)\\
-040/320 &  2.396 &  0.655 &  0.205 & (140)/(220)\\
-042/318 &  2.324 &  0.636 &  0.199 & (138)/(222)\\
-044/316 &  2.250 &  0.615 &  0.192 & (136)/(224)\\
-046/314 &  2.173 &  0.594 &  0.186 & (134)/(226)\\
-048/312 &  2.093 &  0.573 &  0.179 & (132)/(228)\\
-050/310 &  2.010 &  0.550 &  0.172 & (130)/(230)\\
-052/308 &  1.926 &  0.527 &  0.165 & (128)/(232)\\
-054/306 &  1.838 &  0.503 &  0.157 & (126)/(234)\\
-056/304 &  1.749 &  0.478 &  0.149 & (124)/(236)\\
-058/302 &  1.657 &  0.453 &  0.142 & (122)/(238)\\
-060/300 &  1.564 &  0.428 &  0.134 & (120)/(240)\\
-062/298 &  1.468 &  0.402 &  0.125 & (118)/(242)\\
-064/296 &  1.371 &  0.375 &  0.117 & (116)/(244)\\
-066/294 &  1.272 &  0.348 &  0.109 & (114)/(246)\\
-068/292 &  1.172 &  0.321 &  0.100 & (112)/(248)\\
-070/290 &  1.070 &  0.293 &  0.091 & (110)/(250)\\
-072/288 &  0.967 &  0.264 &  0.083 & (108)/(252)\\
-074/286 &  0.862 &  0.236 &  0.074 & (106)/(254)\\
-076/284 &  0.757 &  0.207 &  0.065 & (104)/(256)\\
-078/282 &  0.650 &  0.178 &  0.056 & (102)/(258)\\
-080/280 &  0.543 &  0.149 &  0.046 & (100)/(260)\\
-082/278 &  0.435 &  0.119 &  0.037 & (098)/(262)\\
-084/276 &  0.327 &  0.089 &  0.028 & (096)/(264)\\
-086/274 &  0.218 &  0.060 &  0.019 & (094)/(266)\\
-088/272 &  0.109 &  0.030 &  0.009 & (092)/(268)\\
-090/270 &  0.000 &  0.000 &  0.000 & (090)/(270)\\
-\end{tabular}}
-\caption{Lunar-solar eclipse functions. The  arguments of $\delta\beta_1$, $\delta\beta_2$, and $\delta\beta_3$ are $M_M$, $M_M$, and $M_S$, respectively.  $\delta\beta_1$, $\delta\beta_2$, and  $\delta\beta_3$ take minus the values shown
-in the table if their arguments are
-in parentheses. }\label{tsyzb}
 \end{table}
 
 

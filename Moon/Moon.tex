@@ -32,7 +32,8 @@ the perturbing influence of the Sun. Finally, the Moon's fifth anomaly is
 called the {\em reduction to the ecliptic}, and is a consequence of the fact that the Moon's
 orbit is slightly tilted with respect to the plane of the ecliptic.
 Note that Ptolemy's lunar theory only takes the first two
-lunar anomalies into account. 
+lunar anomalies into account. (Variation was discovered in the 1580s by Tycho Brahe, who also discovered the annual inequality about a decade later.)
+
 The Moon's orbital elements---$e$, $n$, $\tilde{n}$, $\breve{n}$, 
 $\bar{\lambda}_0$, $M_0$, and $F_0$---for the J2000 epoch are listed in Table~\ref{tmoon}. Note that the lunar perigee precesses in the
 direction of the Moon's orbital motion at the rate of
@@ -264,7 +265,7 @@ the lunar anomalies, were $\bar{F}=337.132^\circ$, and
 $q_1=5.525^\circ$, $q_2=-0.637^\circ$, $q_3=-0.633^\circ$, $q_4=-0.160^\circ$,
 and $q_5=0.082^\circ$, respectively. Hence, $F=\bar{F}+q_1+q_2+q_3+q_4+q_5
 =337.132+5.525-0.637-0.633-0.160+0.082\simeq 341^\circ$. Thus, according to Table~\ref{tmoonb}, the ecliptic latitude
-of the Moon at  00:00 UT on May 5, 2005 AD was $-1.678^\circ\simeq -1^\circ 41'$.
+of the Moon at  00:00 UT on May 5, 2005 AD was $-1.668^\circ\simeq -1^\circ 40'$.
 
 ~\\
 \noindent {\em Example 2}: December 25, 1800 AD, 00:00 UT:\\
@@ -275,7 +276,7 @@ the lunar anomalies, were $\bar{F}=5.197^\circ$, and
 $q_1=5.586^\circ$, $q_2=1.259^\circ$, $q_3=-0.382^\circ$, $q_4=-0.019^\circ$,
 and $q_5=-0.020^\circ$, respectively. Hence, $F=\bar{F}+q_1+q_2+q_3+q_4+q_5
 =5.197+5.586+1.259-0.382+0.019-0.020\simeq 12^\circ$. Thus, according to Table~\ref{tmoonb}, the ecliptic latitude
-of the Moon at  00:00 UT on December 25, 1800 AD was $+1.072^\circ\simeq +1^\circ 04'$.
+of the Moon at  00:00 UT on December 25, 1800 AD was $+1.065^\circ\simeq +1^\circ 04'$.
 
 \section{Length of Month}
 A {\em sidereal month}\/ is the mean period of time between successive passages of the Moon through the vernal equinox, and is
@@ -284,6 +285,74 @@ successive full moons, and is $360/(n-n_S)= 360/(13.17639646-0.98564735)=29.531$
 An {\em anomalistic month}\/ is the mean period of time between successive passages of the Moon through its perigee, and is $360/\tilde{n}=360/13.06499295=27.555$ days
 in length, where $\tilde{n}$ comes from Table~\ref{tmoon}. Finally, a {\em draconic month}\/ is the mean period of time between successive passages of the Moon
 through its ascending node, and is $360/\breve{n} =360/13.22935027 = 27.212$ days in length, where $\breve{n}$ comes from Table~\ref{tmoon}. 
+
+\section{Lunar Distance Model}
+According to a simplified version of modern lunar theory, the variation of the distance, $r$, of the Moon from the Earth is
+fairly well represented by the following formulae:\,\footnote {See  {\em Astronomical Algorithms}, J.~Meeus, (Willmann-Bell, Richmond VA, 1998).}
+\begin{align}\label{e6.13h}
+\frac{r}{a_M} &= 1-\zeta_1-\zeta_2-\zeta_3-\zeta_4-\zeta_5,\\[0.5ex]
+\zeta_1 &= 0.9894\,e\,\cos M + 0.4915\,e^2\,\cos 2M,\\[0.5ex]
+\zeta_2 &= 0.1751\,e\,\cos (2\tilde{D} - M),\\[0.5ex]
+\zeta_3 &= 0.1399\,e\,(\cos 2\tilde{D} - 0.0368\,\cos \tilde{D}),\\[0.5ex]
+\zeta_4 &= -0.0023\,e\,\cos M_S,\\[0.5ex]
+\zeta_5&=  0.0001\,e\,\cos 2 \bar{F},
+\end{align}
+where $a_M=3.850\times 10^5$ km is the mean Earth-Moon radius, and $\zeta_i$ is termed the $i$th radial anomaly of the Moon. 
+As before, the first anomaly is due to the eccentricity of the lunar orbit, and is very similar to that obtained from Keplerian orbit theory.
+The second, third, and fourth anomalies are due to the perturbing action of the Sun. Finally, the fifth anomaly is due to the slight inclination of
+the lunar orbit to the ecliptic plane.  The radial anomalies of the Moon are specified as functions of their arguments in Table~\ref{tmoonaa}. 
+
+Our lunar distance model can be used to calculate the apparent radius of the Moon's disk (were it fully illuminated) in the Earth's sky. 
+In fact, the apparent radius is
+\begin{equation}
+\rho_M= \frac{R_M}{r},
+\end{equation}
+where $R_M= 1737$\,km is the mean radius of the Moon, and use has been made of the small angle approximation. It follows that
+\begin{equation}\label{rhom}
+\rho_M= \frac{15.510'}{1-\zeta_1-\zeta_2-\zeta_3-\zeta_4-\zeta_5}.
+\end{equation}
+Clearly, the mean diameter of the (illuminated) lunar disk is about half a degree. 
+
+As an example of an apparent lunar radius calculation, we have seen that at 00:00\,UT on May 5, 2005 AD the arguments of the
+lunar radial anomalies took the values 
+$$
+a_1=M\simeq 58^\circ,~~~a_2=2\tilde{D}-M \simeq 210^\circ,
+$$ 
+$$
+a_3=\tilde{D}\simeq 314^\circ,~~~a_4=M_S\simeq 120^\circ~~~a_5=2\bar{F} \simeq 314^\circ,
+$$ 
+Table~\ref{tmoonaa} 
+yields 
+$$
+100\,\zeta_1(a_1)=2.813,~~100\,\zeta_2(a_2)= -0.832,~~100\,\zeta_3(a_3) = 0.046,
+$$
+$$100\,\zeta_4(a_4)=0.006,~~100\,\zeta_5(a_5)= -0.001.
+$$
+Hence, we deduce that the apparent lunar radius was
+\begin{equation}
+\rho_M = \frac{15.510'}{1-(2.813-0.832+0.046+0.006-0.001)/100}= 15.83'.
+\end{equation}
+
+As a second example of a  lunar radius calculation, we have seen that at 00:00\,UT on December 25, 1800 AD the
+ arguments of the
+lunar radial anomalies took the values 
+$$
+a_1=M\simeq 114^\circ,~~~a_2=2\tilde{D}-M \simeq 99^\circ,
+$$ 
+$$
+a_3=\tilde{D}\simeq 106^\circ,~~~a_4=M_S\simeq 354^\circ~~~a_5=2\bar{F} \simeq 10^\circ,
+$$ 
+Table~\ref{tmoonaa} 
+yields 
+$$
+100\,\zeta_1(a_1)=-2.308,~~100\,\zeta_2(a_2)= 0.151,~~100\,\zeta_3(a_3) = -0.643,
+$$
+$$100\,\zeta_4(a_4)=0.013,~~100\,\zeta_5(a_5)=0.001.
+$$
+Hence, we deduce that the apparent lunar radius was
+\begin{equation}
+\rho_M = \frac{15.510'}{1-(-2.308+0.151-0.643+0.013+0.001)/100}= 15.09'.
+\end{equation}
 
 \begin{figure}
 \centerline{\includegraphics[height=3in]{epsfiles/parallax.eps}}
@@ -301,37 +370,34 @@ be seen from Figure~\ref{fpara} that the altitude of the Moon is
 $a'$ for the real observer, and $a$ for the hypothetical observer. Simple
 trigonometry reveals that $a' = a-\delta a$, which implies that the real
 observer sees the Moon at a  lower altitude than the hypothetical observer.
-Let $R$ be the radius of the Earth, and $r$ the distance from the center
+Let $R_E= 6371$ km be the mean radius of the Earth, and $r$ the distance from the center
 of the Earth to the Moon. More simple trigonometry yields
 \begin{equation}
-\sin \delta a = \frac{R}{r}\,\cos a'.
+\sin \delta a = \frac{R_E}{r}\,\cos a'.
 \end{equation}
-Let us assume that the Moon's orbit is elliptical to first order in its
-eccentricity. It follows, from Chapter~\ref{ckep}, that
-\begin{equation}
-r \simeq a_M\,(1 - e\,\cos M),
+Making use of Equation~(\ref{e6.13h}), as well as the small angle approximation, we deduce that
+\begin{equation}\label{eccv}
+\delta a \simeq \delta_M\,\cos a,
 \end{equation}
-where $a_M$, $e$, and $M$ are major radius, eccentricity, and mean
-anomaly of the lunar orbit, respectively. Assuming that $\delta a$ is small, we
-obtain
-\begin{equation}\label{ea112}
-\delta a \simeq \delta a_0\,\cos a\,(1+e\,\cos M),
+where
+\begin{equation}\label{deltam}
+\delta_M = \frac{56.888'}{1-\zeta_1-\zeta_2-\zeta_3-\zeta_4-\zeta_5}.
 \end{equation}
-where $\delta a_0 = R/a_M = 0.016574=56.98'$ (because $R=6371$ km and $a_M=384\,399$ km). 
+Note that lunar parallax increases with decreasing lunar altitude, reaching a maximum value of about $57'$ when the Moon is close to the horizon.
 
-According to Equation~(\ref{ea112}), lunar parallax can be written in the form
+We have seen that at 00:00\,UT on May 5, 2005 AD the lunar radial anomalies were $100\,\zeta_1=2.813$, $100\,\zeta_2=-0.832$, $100\,\zeta_3= 0.046$,
+$100\,\zeta_4=0.006$, and $100\,\zeta_5= -0.001$. Thus, the maximum lunar parallax was
 \begin{equation}
-\delta a = \delta (a)\,[1+\zeta (M)],
+\delta_M = \frac{56.888'}{1-(2.813-0.832+0.046+0.006-0.001)/100}= 58.08'.
 \end{equation}
-where $a$, $a-\delta a$, and $M$ are the Moon's geocentric altitude (that is, the altitude seen from the center of the Earth), true
-altitude, and mean anomaly, respectively. The functions $\delta(a)=\delta a_0\,\cos a$ and
-$\zeta (M)= e\,\cos M$ are tabulated in Table~\ref{tmoonc}. It can be seen from the
-table that lunar parallax increases with decreasing lunar altitude, reaching a maximum value of about $57'$ when the Moon is close to the horizon.
-For example, if $a=44^\circ 00'$ and $M=100^\circ$ then Table~\ref{tmoonc}
-yields $\delta = 40.988'$ and $\zeta =- 0.00953$. Hence, $\delta a = 40.988\,(1-0.00953) \simeq 41'$, and the true altitude of the Moon becomes
-$43^\circ 19'$. 
+Likewise, we have also seen that at 00:00\,UT on December 15, 1800 AD the lunar radial anomalies were $100\,\zeta_1=-2.308$, $100\,\zeta_2= 0.151$, $100\,\zeta_3= -0.0643$,
+$100\,\zeta_4=0.013$, and $100\,\zeta_5=0.001$. 
+Thus, the maximum lunar parallax was
+\begin{equation}
+\delta_M = \frac{56.888'}{1-(-2.308+0.151-0.643+0.013+0.001)/100}= 55.35'.
+\end{equation}
 
-Incidentally, the information contained in Table~\ref{tmoonc} is equivalent to that contained in the ``Parallax table" (Κανὼν παραλλακτικός) that appears in Section~18 of
+Incidentally, the information contained in  this section is equivalent to that contained in the ``Parallax table" (Κανὼν παραλλακτικός) that appears in Section~18 of
 Book~V of the Almagest. Moreover, in Section~15 of the same book, Ptolemy uses the measured lunar parallax to determine the distance of the Moon from
 the Earth. Ptolemy finds that the Moon is $59$ Earth radii from the center of the Earth. (The correct Earth-Moon distance  is $60.33$ Earth radii.) Furthermore, in Section~16
 of the same book, Ptolemy uses his Earth-Moon distance, in combination with the apparent size of the Moon in the sky, to estimate that the Earth's radius is $3.4$ times
@@ -359,12 +425,13 @@ Hence, we obtain
 As is easily demonstrated, the previous formulae also apply to the case in which increasing  altitude corresponds
 to  decreasing  ecliptic latitude.
 
-For example, consider a day on which the geocentric ecliptic longitude  and mean anomaly
-of the Moon are $\lambda=210^\circ$ (that is, 00SC00) and $M=90^\circ$, respectively. Suppose that the Moon is
+For example, consider a day on which the geocentric ecliptic longitude of the Moon is $\lambda=210^\circ$ (that is, 00SC00). 
+Let the maximum lunar parallax be $\delta_M = 56.89'$.
+Suppose that the Moon is
 viewed from an observation site located  at terrestrial latitude $+10^\circ$. 
 The ``Scorpio'' entry in Table~\ref{tscorp} gives the Moon's geocentric altitude, $a$, as a function of time, as well as the
 value of the parallactic angle $\mu$. Making use of this data,
-in combination with Table~\ref{tmoonc} and Equations~(\ref{epara1}) and (\ref{epara2}), we can calculate the parallax-induced changes in the Moon's ecliptic
+in combination with  Equations~(\ref{eccv}), (\ref{epara1}),  and (\ref{epara2}), we can calculate the parallax-induced changes in the Moon's ecliptic
 longitude and latitude as it transits the sky. 
 Data from such a calculation is given in the following table. The first column specifies
 time since the  Moon's upper transit (thus, $t=+1$ hrs.\ means one hour after  the
@@ -377,7 +444,7 @@ It can be seen that parallax causes the Moon's apparent location
 previous calculation is somewhat inaccurate because it does not take into account the Moon's motion along the
 ecliptic (which can easily amount to $6^\circ$ during the course of a night).
 However, the calculation does illustrate how the data contained in
-Tables~\ref{ltxx}--\ref{ltyy}, in combination with the data in Table~\ref{tmoonc}, permits the parallax-induced shift in the Moon's ecliptic position
+Tables~\ref{ltxx}--\ref{ltyy}, in combination with the data in Table~\ref{tmoonaa}, permits the parallax-induced shift in the Moon's ecliptic position
 to be calculated for a wide range of different lunar phases,
 observation sites, and observation times.
 
@@ -407,7 +474,7 @@ $+5.52$ & $00^\circ 00'$ & $030^\circ 47'$ & $57'$ & $-49'$&$-29'$\\
 $e$ & $n(^\circ/{\rm day})$ &  $\tilde{n}(^\circ/{\rm day})$  & $\breve{n}(^\circ/{\rm day})$
 & $ \bar{\lambda}_0(^\circ)$ & $M_0(^\circ)$ & $ F_0(^\circ)$ & $i(^\circ)$ \\\hline
 0.054881 & 13.17639646 & 13.06499295& $13.22935027$ &
-218.322 & 134.916 & 93.284& 5.161\\
+218.322 & 134.916 & 93.284& 5.128\\
 \end{tabular}
 \caption{Orbital elements of the Moon for the J2000 epoch (that is, 12:00 UT, January 1, 2000 AD,
 which corresponds to $t_0 = 2\,451\,545.0$ JD).}\label{tmoon}
@@ -457,7 +524,7 @@ and $\bar{F}_0 = 93.284^\circ$.}\label{tmoonm}
 
 \newpage
 \begin{table}\centering
-\small{ \begin{tabular}{rrrrrr|rrrrrr}
+\scriptsize{ \begin{tabular}{rrrrrr|rrrrrr}
 Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$  & $q_5(^\circ)$ &
 Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$  & $q_5(^\circ)$  \\\hline
 &&&&&&&&&&&\\[-1.75ex]
@@ -508,7 +575,7 @@ Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$
 088(272) & $+6.300$ & $+1.273$ & $+0.011$ & $-0.185$ & $-0.114$ & 178(182) & $+0.205$ & $+0.044$ & $-0.047$ & $-0.006$ & $-0.004$\\
 090(270) & $+6.289$ & $+1.274$ & $-0.035$ & $-0.185$ & $-0.114$ & 180(180) & $+0.000$ & $+0.000$ & $-0.000$ & $-0.000$ & $-0.000$\\
 \end{tabular}}
-\caption{Anomalies of the Moon. The common argument corresponds to
+\caption{Longitudinal anomalies of the Moon. The common argument corresponds to
 $M$, $2\tilde{D}-M$, $\tilde{D}$, $M_S$, and $2\bar{F}$ for the case of
 $q_1$, $q_2$, $q_3$, $q_4$, and $q_5$, respectively. If the argument is
 in parentheses then the anomalies are minus the values shown
@@ -522,51 +589,51 @@ $F (^\circ)$ & $\beta(^\circ)$ &
 $F (^\circ)$ \\\hline
 &&\\[-1.75ex]
 000/180 & $0.000$ & (180)/(360)\\
-002/178 & $0.180$ & (182)/(358)\\
-004/176 & $0.360$ & (184)/(356)\\
-006/174 & $0.539$ & (186)/(354)\\
-008/172 & $0.717$ & (188)/(352)\\
-010/170 & $0.895$ & (190)/(350)\\
-012/168 & $1.072$ & (192)/(348)\\
-014/166 & $1.247$ & (194)/(346)\\
-016/164 & $1.421$ & (196)/(344)\\
-018/162 & $1.593$ & (198)/(342)\\
-020/160 & $1.763$ & (200)/(340)\\
-022/158 & $1.931$ & (202)/(338)\\
-024/156 & $2.097$ & (204)/(336)\\
-026/154 & $2.260$ & (206)/(334)\\
-028/152 & $2.420$ & (208)/(332)\\
-030/150 & $2.578$ & (210)/(330)\\
-032/148 & $2.732$ & (212)/(328)\\
-034/146 & $2.883$ & (214)/(326)\\
-036/144 & $3.031$ & (216)/(324)\\
-038/142 & $3.175$ & (218)/(322)\\
-040/140 & $3.315$ & (220)/(320)\\
-042/138 & $3.451$ & (222)/(318)\\
-044/136 & $3.583$ & (224)/(316)\\
-046/134 & $3.710$ & (226)/(314)\\
-048/132 & $3.833$ & (228)/(312)\\
-050/130 & $3.951$ & (230)/(310)\\
-052/128 & $4.065$ & (232)/(308)\\
-054/126 & $4.173$ & (234)/(306)\\
-056/124 & $4.277$ & (236)/(304)\\
-058/122 & $4.375$ & (238)/(302)\\
-060/120 & $4.468$ & (240)/(300)\\
-062/118 & $4.556$ & (242)/(298)\\
-064/116 & $4.637$ & (244)/(296)\\
-066/114 & $4.714$ & (246)/(294)\\
-068/112 & $4.784$ & (248)/(292)\\
-070/110 & $4.849$ & (250)/(290)\\
-072/108 & $4.908$ & (252)/(288)\\
-074/106 & $4.961$ & (254)/(286)\\
-076/104 & $5.007$ & (256)/(284)\\
-078/102 & $5.048$ & (258)/(282)\\
-080/100 & $5.082$ & (260)/(280)\\
-082/098 & $5.111$ & (262)/(278)\\
-084/096 & $5.133$ & (264)/(276)\\
-086/094 & $5.148$ & (266)/(274)\\
-088/092 & $5.158$ & (268)/(272)\\
-090/090 & $5.161$ & (270)/(270)\\
+002/178 & $0.179$ & (182)/(358)\\
+004/176 & $0.357$ & (184)/(356)\\
+006/174 & $0.535$ & (186)/(354)\\
+008/172 & $0.713$ & (188)/(352)\\
+010/170 & $0.889$ & (190)/(350)\\
+012/168 & $1.065$ & (192)/(348)\\
+014/166 & $1.239$ & (194)/(346)\\
+016/164 & $1.412$ & (196)/(344)\\
+018/162 & $1.583$ & (198)/(342)\\
+020/160 & $1.752$ & (200)/(340)\\
+022/158 & $1.919$ & (202)/(338)\\
+024/156 & $2.083$ & (204)/(336)\\
+026/154 & $2.246$ & (206)/(334)\\
+028/152 & $2.405$ & (208)/(332)\\
+030/150 & $2.561$ & (210)/(330)\\
+032/148 & $2.715$ & (212)/(328)\\
+034/146 & $2.865$ & (214)/(326)\\
+036/144 & $3.012$ & (216)/(324)\\
+038/142 & $3.155$ & (218)/(322)\\
+040/140 & $3.294$ & (220)/(320)\\
+042/138 & $3.429$ & (222)/(318)\\
+044/136 & $3.560$ & (224)/(316)\\
+046/134 & $3.686$ & (226)/(314)\\
+048/132 & $3.809$ & (228)/(312)\\
+050/130 & $3.926$ & (230)/(310)\\
+052/128 & $4.039$ & (232)/(308)\\
+054/126 & $4.147$ & (234)/(306)\\
+056/124 & $4.250$ & (236)/(304)\\
+058/122 & $4.347$ & (238)/(302)\\
+060/120 & $4.440$ & (240)/(300)\\
+062/118 & $4.527$ & (242)/(298)\\
+064/116 & $4.608$ & (244)/(296)\\
+066/114 & $4.684$ & (246)/(294)\\
+068/112 & $4.754$ & (248)/(292)\\
+070/110 & $4.818$ & (250)/(290)\\
+072/108 & $4.877$ & (252)/(288)\\
+074/106 & $4.929$ & (254)/(286)\\
+076/104 & $4.975$ & (256)/(284)\\
+078/102 & $5.016$ & (258)/(282)\\
+080/100 & $5.050$ & (260)/(280)\\
+082/098 & $5.078$ & (262)/(278)\\
+084/096 & $5.100$ & (264)/(276)\\
+086/094 & $5.116$ & (266)/(274)\\
+088/092 & $5.125$ & (268)/(272)\\
+090/090 & $5.128$ & (270)/(270)\\
 \end{tabular}}
 \caption{Ecliptic latitude of the Moon.  The latitude is minus the value shown
 in the table if the argument is
@@ -575,59 +642,63 @@ in parentheses. }\label{tmoonb}
 
 \newpage
 \begin{table}\centering
-\small{ \begin{tabular}{rrrc}
-Arg. ($^\circ$) & $\delta(')$~~ &  $100\,\zeta$ & Arg. ($^\circ$) \\\hline
-&&&\\[-1.75ex]
-000/180 & $56.980$ & $5.488$ & (180)/(360)\\
-002/178 & $56.945$ & $5.485$ & (182)/(358)\\
-004/176 & $56.841$ & $5.475$ & (184)/(356)\\
-006/174 & $56.668$ & $5.458$ & (186)/(354)\\
-008/172 & $56.425$ & $5.435$ & (188)/(352)\\
-010/170 & $56.114$ & $5.405$ & (190)/(350)\\
-012/168 & $55.735$ & $5.368$ & (192)/(348)\\
-014/166 & $55.287$ & $5.325$ & (194)/(346)\\
-016/164 & $54.773$ & $5.276$ & (196)/(344)\\
-018/162 & $54.191$ & $5.219$ & (198)/(342)\\
-020/160 & $53.544$ & $5.157$ & (200)/(340)\\
-022/158 & $52.831$ & $5.088$ & (202)/(338)\\
-024/156 & $52.054$ & $5.014$ & (204)/(336)\\
-026/154 & $51.213$ & $4.933$ & (206)/(334)\\
-028/152 & $50.310$ & $4.846$ & (208)/(332)\\
-030/150 & $49.346$ & $4.753$ & (210)/(330)\\
-032/148 & $48.322$ & $4.654$ & (212)/(328)\\
-034/146 & $47.239$ & $4.550$ & (214)/(326)\\
-036/144 & $46.098$ & $4.440$ & (216)/(324)\\
-038/142 & $44.901$ & $4.325$ & (218)/(322)\\
-040/140 & $43.649$ & $4.204$ & (220)/(320)\\
-042/138 & $42.344$ & $4.078$ & (222)/(318)\\
-044/136 & $40.988$ & $3.948$ & (224)/(316)\\
-046/134 & $39.582$ & $3.812$ & (226)/(314)\\
-048/132 & $38.127$ & $3.672$ & (228)/(312)\\
-050/130 & $36.626$ & $3.528$ & (230)/(310)\\
-052/128 & $35.080$ & $3.379$ & (232)/(308)\\
-054/126 & $33.492$ & $3.226$ & (234)/(306)\\
-056/124 & $31.863$ & $3.069$ & (236)/(304)\\
-058/122 & $30.195$ & $2.908$ & (238)/(302)\\
-060/120 & $28.490$ & $2.744$ & (240)/(300)\\
-062/118 & $26.750$ & $2.577$ & (242)/(298)\\
-064/116 & $24.978$ & $2.406$ & (244)/(296)\\
-066/114 & $23.176$ & $2.232$ & (246)/(294)\\
-068/112 & $21.345$ & $2.056$ & (248)/(292)\\
-070/110 & $19.488$ & $1.877$ & (250)/(290)\\
-072/108 & $17.608$ & $1.696$ & (252)/(288)\\
-074/106 & $15.706$ & $1.513$ & (254)/(286)\\
-076/104 & $13.785$ & $1.328$ & (256)/(284)\\
-078/102 & $11.847$ & $1.141$ & (258)/(282)\\
-080/100 & $09.894$ & $0.953$ & (260)/(280)\\
-082/098 & $07.930$ & $0.764$ & (262)/(278)\\
-084/096 & $05.956$ & $0.574$ & (264)/(276)\\
-086/094 & $03.975$ & $0.383$ & (266)/(274)\\
-088/092 & $01.989$ & $0.192$ & (268)/(272)\\
-090/090 & $00.000$ & $0.000$ & (270)/(270)\\
+\scriptsize{ \begin{tabular}{rrrrrr|rrrrrr}
+Arg. ($^\circ$) & $100\,\zeta_1$  & $100\,\zeta_2$ & $100\,\zeta_3$ & $100\,\zeta_4$  & $100\,\zeta_5$ &
+Arg. ($^\circ$) & $100\,\zeta_1$  & $100\,\zeta_2$ & $100\,\zeta_3$ & $100\,\zeta_4$  & $100\,\zeta_5$  \\\hline
+&&&&&&&&&&&\\[-1.75ex]
+000(360) & $+5.578$ & $-0.961$ & $+0.740$ & $-0.013$ & $+0.001$ & 090(270) & $-0.148$ & $-0.000$ & $-0.768$ & $-0.000$ & $+0.000$\\
+002(358) & $+5.574$ & $-0.960$ & $+0.738$ & $-0.013$ & $+0.001$ & 092(268) & $-0.337$ & $+0.034$ & $-0.765$ & $+0.000$ & $-0.000$\\
+004(356) & $+5.563$ & $-0.959$ & $+0.732$ & $-0.013$ & $+0.001$ & 094(266) & $-0.525$ & $+0.067$ & $-0.758$ & $+0.001$ & $-0.000$\\
+006(354) & $+5.545$ & $-0.956$ & $+0.723$ & $-0.013$ & $+0.001$ & 096(264) & $-0.712$ & $+0.100$ & $-0.748$ & $+0.001$ & $-0.000$\\
+008(352) & $+5.519$ & $-0.952$ & $+0.710$ & $-0.012$ & $+0.001$ & 098(262) & $-0.898$ & $+0.134$ & $-0.734$ & $+0.002$ & $-0.000$\\
+010(350) & $+5.487$ & $-0.946$ & $+0.694$ & $-0.012$ & $+0.001$ & 100(260) & $-1.082$ & $+0.167$ & $-0.717$ & $+0.002$ & $-0.000$\\
+012(348) & $+5.447$ & $-0.940$ & $+0.674$ & $-0.012$ & $+0.001$ & 102(258) & $-1.264$ & $+0.200$ & $-0.696$ & $+0.003$ & $-0.000$\\
+014(346) & $+5.399$ & $-0.932$ & $+0.650$ & $-0.012$ & $+0.001$ & 104(256) & $-1.444$ & $+0.232$ & $-0.671$ & $+0.003$ & $-0.000$\\
+016(344) & $+5.345$ & $-0.924$ & $+0.624$ & $-0.012$ & $+0.001$ & 106(254) & $-1.622$ & $+0.265$ & $-0.643$ & $+0.003$ & $-0.000$\\
+018(342) & $+5.284$ & $-0.914$ & $+0.594$ & $-0.012$ & $+0.001$ & 108(252) & $-1.798$ & $+0.297$ & $-0.612$ & $+0.004$ & $-0.000$\\
+020(340) & $+5.216$ & $-0.903$ & $+0.562$ & $-0.012$ & $+0.001$ & 110(250) & $-1.971$ & $+0.329$ & $-0.578$ & $+0.004$ & $-0.000$\\
+022(338) & $+5.141$ & $-0.891$ & $+0.526$ & $-0.012$ & $+0.001$ & 112(248) & $-2.141$ & $+0.360$ & $-0.542$ & $+0.005$ & $-0.000$\\
+024(336) & $+5.060$ & $-0.878$ & $+0.488$ & $-0.012$ & $+0.001$ & 114(246) & $-2.308$ & $+0.391$ & $-0.502$ & $+0.005$ & $-0.000$\\
+026(334) & $+4.972$ & $-0.864$ & $+0.447$ & $-0.011$ & $+0.001$ & 116(244) & $-2.471$ & $+0.421$ & $-0.460$ & $+0.006$ & $-0.000$\\
+028(332) & $+4.877$ & $-0.848$ & $+0.404$ & $-0.011$ & $+0.001$ & 118(242) & $-2.632$ & $+0.451$ & $-0.416$ & $+0.006$ & $-0.000$\\
+030(330) & $+4.776$ & $-0.832$ & $+0.359$ & $-0.011$ & $+0.001$ & 120(240) & $-2.789$ & $+0.480$ & $-0.370$ & $+0.006$ & $-0.000$\\
+032(328) & $+4.670$ & $-0.815$ & $+0.313$ & $-0.011$ & $+0.001$ & 122(238) & $-2.942$ & $+0.509$ & $-0.322$ & $+0.007$ & $-0.000$\\
+034(326) & $+4.557$ & $-0.797$ & $+0.264$ & $-0.010$ & $+0.001$ & 124(236) & $-3.092$ & $+0.537$ & $-0.272$ & $+0.007$ & $-0.000$\\
+036(324) & $+4.439$ & $-0.777$ & $+0.214$ & $-0.010$ & $+0.001$ & 126(234) & $-3.237$ & $+0.565$ & $-0.221$ & $+0.007$ & $-0.000$\\
+038(322) & $+4.315$ & $-0.757$ & $+0.163$ & $-0.010$ & $+0.001$ & 128(232) & $-3.379$ & $+0.592$ & $-0.168$ & $+0.008$ & $-0.001$\\
+040(320) & $+4.185$ & $-0.736$ & $+0.112$ & $-0.010$ & $+0.001$ & 130(230) & $-3.516$ & $+0.618$ & $-0.115$ & $+0.008$ & $-0.001$\\
+042(318) & $+4.051$ & $-0.714$ & $+0.059$ & $-0.009$ & $+0.001$ & 132(228) & $-3.649$ & $+0.643$ & $-0.061$ & $+0.008$ & $-0.001$\\
+044(316) & $+3.911$ & $-0.691$ & $+0.006$ & $-0.009$ & $+0.001$ & 134(226) & $-3.777$ & $+0.668$ & $-0.007$ & $+0.009$ & $-0.001$\\
+046(314) & $+3.767$ & $-0.668$ & $-0.046$ & $-0.009$ & $+0.001$ & 136(224) & $-3.901$ & $+0.691$ & $+0.047$ & $+0.009$ & $-0.001$\\
+048(312) & $+3.618$ & $-0.643$ & $-0.099$ & $-0.008$ & $+0.001$ & 138(222) & $-4.020$ & $+0.714$ & $+0.101$ & $+0.009$ & $-0.001$\\
+050(310) & $+3.465$ & $-0.618$ & $-0.151$ & $-0.008$ & $+0.001$ & 140(220) & $-4.134$ & $+0.736$ & $+0.155$ & $+0.010$ & $-0.001$\\
+052(308) & $+3.307$ & $-0.592$ & $-0.203$ & $-0.008$ & $+0.001$ & 142(218) & $-4.243$ & $+0.757$ & $+0.208$ & $+0.010$ & $-0.001$\\
+054(306) & $+3.146$ & $-0.565$ & $-0.254$ & $-0.007$ & $+0.000$ & 144(216) & $-4.347$ & $+0.777$ & $+0.260$ & $+0.010$ & $-0.001$\\
+056(304) & $+2.981$ & $-0.537$ & $-0.303$ & $-0.007$ & $+0.000$ & 146(214) & $-4.446$ & $+0.797$ & $+0.311$ & $+0.010$ & $-0.001$\\
+058(302) & $+2.813$ & $-0.509$ & $-0.352$ & $-0.007$ & $+0.000$ & 148(212) & $-4.540$ & $+0.815$ & $+0.361$ & $+0.011$ & $-0.001$\\
+060(300) & $+2.641$ & $-0.480$ & $-0.398$ & $-0.006$ & $+0.000$ & 150(210) & $-4.628$ & $+0.832$ & $+0.408$ & $+0.011$ & $-0.001$\\
+062(298) & $+2.466$ & $-0.451$ & $-0.443$ & $-0.006$ & $+0.000$ & 152(208) & $-4.712$ & $+0.848$ & $+0.454$ & $+0.011$ & $-0.001$\\
+064(296) & $+2.289$ & $-0.421$ & $-0.485$ & $-0.006$ & $+0.000$ & 154(206) & $-4.789$ & $+0.864$ & $+0.498$ & $+0.011$ & $-0.001$\\
+066(294) & $+2.109$ & $-0.391$ & $-0.525$ & $-0.005$ & $+0.000$ & 156(204) & $-4.861$ & $+0.878$ & $+0.540$ & $+0.012$ & $-0.001$\\
+068(292) & $+1.928$ & $-0.360$ & $-0.563$ & $-0.005$ & $+0.000$ & 158(202) & $-4.928$ & $+0.891$ & $+0.578$ & $+0.012$ & $-0.001$\\
+070(290) & $+1.744$ & $-0.329$ & $-0.598$ & $-0.004$ & $+0.000$ & 160(200) & $-4.989$ & $+0.903$ & $+0.615$ & $+0.012$ & $-0.001$\\
+072(288) & $+1.558$ & $-0.297$ & $-0.630$ & $-0.004$ & $+0.000$ & 162(198) & $-5.044$ & $+0.914$ & $+0.648$ & $+0.012$ & $-0.001$\\
+074(286) & $+1.371$ & $-0.265$ & $-0.659$ & $-0.003$ & $+0.000$ & 164(196) & $-5.094$ & $+0.924$ & $+0.678$ & $+0.012$ & $-0.001$\\
+076(284) & $+1.183$ & $-0.232$ & $-0.685$ & $-0.003$ & $+0.000$ & 166(194) & $-5.138$ & $+0.932$ & $+0.705$ & $+0.012$ & $-0.001$\\
+078(282) & $+0.994$ & $-0.200$ & $-0.707$ & $-0.003$ & $+0.000$ & 168(192) & $-5.176$ & $+0.940$ & $+0.729$ & $+0.012$ & $-0.001$\\
+080(280) & $+0.804$ & $-0.167$ & $-0.726$ & $-0.002$ & $+0.000$ & 170(190) & $-5.208$ & $+0.946$ & $+0.749$ & $+0.012$ & $-0.001$\\
+082(278) & $+0.613$ & $-0.134$ & $-0.742$ & $-0.002$ & $+0.000$ & 172(188) & $-5.235$ & $+0.952$ & $+0.766$ & $+0.012$ & $-0.001$\\
+084(276) & $+0.423$ & $-0.100$ & $-0.754$ & $-0.001$ & $+0.000$ & 174(186) & $-5.255$ & $+0.956$ & $+0.779$ & $+0.013$ & $-0.001$\\
+086(274) & $+0.232$ & $-0.067$ & $-0.762$ & $-0.001$ & $+0.000$ & 176(184) & $-5.270$ & $+0.959$ & $+0.788$ & $+0.013$ & $-0.001$\\
+088(272) & $+0.042$ & $-0.034$ & $-0.767$ & $-0.000$ & $+0.000$ & 178(182) & $-5.279$ & $+0.960$ & $+0.794$ & $+0.013$ & $-0.001$\\
+090(270) & $-0.148$ & $-0.000$ & $-0.768$ & $-0.000$ & $+0.000$ & 180(180) & $-5.282$ & $+0.961$ & $+0.796$ & $+0.013$ & $-0.001$\\
 \end{tabular}}
-\caption{Parallax of the Moon. The  arguments of $\delta$ and $\zeta$ are $a$
-and $M$, respectively.  $\delta$ and $\zeta$ take minus the values shown
-in the table if their arguments are
-in parentheses. }\label{tmoonc}
+\caption{Radial anomalies of the Moon. The common argument corresponds to
+$M$, $2\tilde{D}-M$, $\tilde{D}$, $M_S$, and $2\bar{F}$ for the case of
+$\zeta_1$, $\zeta_2$, $\zeta_3$, $\zeta_4$, and $\zeta_5$, respectively. If the argument is
+in parentheses then the anomalies are minus the values shown
+in the table. }\label{tmoonaa}
 \end{table}
+
+
 

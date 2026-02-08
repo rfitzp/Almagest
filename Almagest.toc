@@ -38,6 +38,7 @@
 \contentsline {section}{\numberline {5.3}Example Solar Longitude Calculations}{81}{}%
 \contentsline {section}{\numberline {5.4}Determination of Equinox and Solstice Dates}{82}{}%
 \contentsline {section}{\numberline {5.5}Equation of Time}{85}{}%
+\contentsline {section}{\numberline {5.6}Solar Distance Model}{86}{}%
 \contentsline {chapter}{\numberline {6}The Moon}{93}{}%
 \contentsline {section}{\numberline {6.1}Lunar Ecliptic Longitude Model}{93}{}%
 \contentsline {section}{\numberline {6.2}Determination of Lunar Ecliptic Longitude}{94}{}%
@@ -46,34 +47,35 @@
 \contentsline {section}{\numberline {6.5}Determination of Lunar Ecliptic Latitude}{97}{}%
 \contentsline {section}{\numberline {6.6}Example Lunar Latitude Calculations}{98}{}%
 \contentsline {section}{\numberline {6.7}Length of Month}{98}{}%
-\contentsline {section}{\numberline {6.8}Lunar Parallax}{99}{}%
-\contentsline {chapter}{\numberline {7}Lunar-Solar Syzygies and Eclipses}{107}{}%
-\contentsline {section}{\numberline {7.1}Syzygies}{107}{}%
-\contentsline {section}{\numberline {7.2}Lunar-Solar Elongation Model}{108}{}%
-\contentsline {section}{\numberline {7.3}Determination of Lunar-Solar Elongation}{108}{}%
-\contentsline {section}{\numberline {7.4}Example Syzygy Calculations}{109}{}%
-\contentsline {section}{\numberline {7.5}Solar and Lunar Eclipses}{110}{}%
-\contentsline {section}{\numberline {7.6}Example Eclipse Calculations}{113}{}%
-\contentsline {section}{\numberline {7.7}Eclipse Statistics}{114}{}%
-\contentsline {section}{\numberline {7.8}Eclipse Cycles}{115}{}%
-\contentsline {chapter}{\numberline {8}The Superior Planets}{121}{}%
-\contentsline {section}{\numberline {8.1}Ecliptic Longitude Model}{121}{}%
-\contentsline {section}{\numberline {8.2}Determination of the Ecliptic Longitude of Mars}{125}{}%
-\contentsline {section}{\numberline {8.3}Example Martian Ecliptic Longitude Calculations}{126}{}%
-\contentsline {section}{\numberline {8.4}Determination of Conjunction, Opposition, and Station Dates}{128}{}%
-\contentsline {section}{\numberline {8.5}Determination of Ecliptic Longitude of Jupiter}{130}{}%
-\contentsline {section}{\numberline {8.6}Determination of Ecliptic Longitude of Saturn}{131}{}%
-\contentsline {chapter}{\numberline {9}The Inferior Planets}{147}{}%
-\contentsline {section}{\numberline {9.1}Determination of Ecliptic Longitude}{147}{}%
-\contentsline {section}{\numberline {9.2}Determination of Ecliptic Longitude of Venus}{149}{}%
-\contentsline {section}{\numberline {9.3}Determination of Conjunction and Greatest Elongation Dates}{151}{}%
-\contentsline {section}{\numberline {9.4}Determination of Ecliptic Longitude of Mercury}{153}{}%
-\contentsline {chapter}{\numberline {10}Planetary Latitudes}{163}{}%
-\contentsline {section}{\numberline {10.1}Introduction}{163}{}%
-\contentsline {section}{\numberline {10.2}Determination of Ecliptic Latitude of Superior Planet}{163}{}%
-\contentsline {section}{\numberline {10.3}Determination of Ecliptic Latitude of Mars}{165}{}%
-\contentsline {section}{\numberline {10.4}Determination of Ecliptic Latitude of Jupiter}{167}{}%
-\contentsline {section}{\numberline {10.5}Determination of Ecliptic Latitude of Saturn}{167}{}%
-\contentsline {section}{\numberline {10.6}Determination of Ecliptic Latitude of Inferior Planet}{168}{}%
-\contentsline {section}{\numberline {10.7}Determination of Ecliptic Latitude of Venus}{171}{}%
-\contentsline {section}{\numberline {10.8}Determination of Ecliptic Latitude of Mercury}{172}{}%
+\contentsline {section}{\numberline {6.8}Lunar Distance Model}{99}{}%
+\contentsline {section}{\numberline {6.9}Lunar Parallax}{100}{}%
+\contentsline {chapter}{\numberline {7}Lunar-Solar Syzygies and Eclipses}{109}{}%
+\contentsline {section}{\numberline {7.1}Syzygies}{109}{}%
+\contentsline {section}{\numberline {7.2}Lunar-Solar Elongation Model}{110}{}%
+\contentsline {section}{\numberline {7.3}Determination of Lunar-Solar Elongation}{110}{}%
+\contentsline {section}{\numberline {7.4}Example Syzygy Calculations}{111}{}%
+\contentsline {section}{\numberline {7.5}Solar and Lunar Eclipses}{112}{}%
+\contentsline {section}{\numberline {7.6}Example Eclipse Calculations}{115}{}%
+\contentsline {section}{\numberline {7.7}Eclipse Statistics}{116}{}%
+\contentsline {section}{\numberline {7.8}Eclipse Cycles}{117}{}%
+\contentsline {chapter}{\numberline {8}The Superior Planets}{123}{}%
+\contentsline {section}{\numberline {8.1}Ecliptic Longitude Model}{123}{}%
+\contentsline {section}{\numberline {8.2}Determination of the Ecliptic Longitude of Mars}{127}{}%
+\contentsline {section}{\numberline {8.3}Example Martian Ecliptic Longitude Calculations}{128}{}%
+\contentsline {section}{\numberline {8.4}Determination of Conjunction, Opposition, and Station Dates}{130}{}%
+\contentsline {section}{\numberline {8.5}Determination of Ecliptic Longitude of Jupiter}{132}{}%
+\contentsline {section}{\numberline {8.6}Determination of Ecliptic Longitude of Saturn}{133}{}%
+\contentsline {chapter}{\numberline {9}The Inferior Planets}{149}{}%
+\contentsline {section}{\numberline {9.1}Determination of Ecliptic Longitude}{149}{}%
+\contentsline {section}{\numberline {9.2}Determination of Ecliptic Longitude of Venus}{151}{}%
+\contentsline {section}{\numberline {9.3}Determination of Conjunction and Greatest Elongation Dates}{153}{}%
+\contentsline {section}{\numberline {9.4}Determination of Ecliptic Longitude of Mercury}{155}{}%
+\contentsline {chapter}{\numberline {10}Planetary Latitudes}{165}{}%
+\contentsline {section}{\numberline {10.1}Introduction}{165}{}%
+\contentsline {section}{\numberline {10.2}Determination of Ecliptic Latitude of Superior Planet}{165}{}%
+\contentsline {section}{\numberline {10.3}Determination of Ecliptic Latitude of Mars}{167}{}%
+\contentsline {section}{\numberline {10.4}Determination of Ecliptic Latitude of Jupiter}{169}{}%
+\contentsline {section}{\numberline {10.5}Determination of Ecliptic Latitude of Saturn}{169}{}%
+\contentsline {section}{\numberline {10.6}Determination of Ecliptic Latitude of Inferior Planet}{170}{}%
+\contentsline {section}{\numberline {10.7}Determination of Ecliptic Latitude of Venus}{173}{}%
+\contentsline {section}{\numberline {10.8}Determination of Ecliptic Latitude of Mercury}{174}{}%

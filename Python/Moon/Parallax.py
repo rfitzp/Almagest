@@ -166,7 +166,7 @@ if abs (tanL * tand) < 1.:
                   
     thh, thm = frac_hours_to_hm (th)
 
-    dap = 56.98 * math.cos (alt)
+    dap = 56.888 * math.cos (alt)
     dlp = - dap * math.cos (mup)
     dbp = - dap * math.sin (mup)
     dlm = - dap * math.cos (mum)

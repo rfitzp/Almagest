@@ -270,7 +270,7 @@ In Section~4 of Book~III of the Almagest, Ptolemy effectively performs the calcu
 apparent orbit about the Earth, as well as the location of the solar perigee,  from the observed differences in the lengths of the seasons. However, Ptolemy's figures for the lengths of spring, summer, autumn, and winter,
 which he inherited from Hipparchus,  were
 94.5, 92.5, 88.125, and 90.125 days, respectively. The lengths of the seasons have changed since the time of Hipparchus because the solar perigee has
-rotated by about $38^\circ$ (in the direction of the Sun's apparent motion) over the last 2200 years. 
+rotated by about $38^\circ$ (in the direction of the Sun's apparent motion) over the last 2\,200 years. 
 
 \section{Equation of Time}
 At any particular observation site on the Earth's surface, {\em local noon}\/
@@ -346,10 +346,51 @@ minimum value between the winter solstice and vernal equinox.
 
 The equation of time is discussed in Section~9 of Book~III of the Almagest. 
 
+\section{Solar Distance Model}
+The distance, $r$,  of the Sun from the Earth varies slightly over the course of a year because the Earth is not quite at the geometric center of the Sun's apparent orbit. 
+It follows that the apparent angular size of the solar disk in the Earth's sky also exhibits an annual variation. We need to understand this variation in order to
+accurately predict lunar and solar eclipses. 
+According to Equation~(\ref{je22}), 
+\begin{equation}\label{e5.20j}
+\frac{r}{a} = 1 -\zeta
+\end{equation}
+where
+\begin{equation}
+\zeta = e\,\cos\,M -e^{\,2}\,\sin^2\,M.
+\end{equation}
+Here, $a=1.498\times 10^8$ km is the Sun's (apparent) major radius, and $\zeta$ is known as a {\em radial anomaly}. The solar radial anomaly
+is tabulated as a function of its argument ($M$) in Table~\ref{lt6}. 
+
+The apparent radius of the solar disk is
+\begin{equation}\label{e5.22j}
+\rho_S = \frac{R}{r},
+\end{equation}
+where $R= 6.957\times 10^5$\,km is the mean physical radius of the Sun. Here, use has been made of the small angle approximation.
+It follows  from Equations~(\ref{e5.20j}) and (\ref{e5.22j}) that
+\begin{equation}\label{rhos}
+\rho_S = \frac{15.987'}{1-\zeta}.
+\end{equation}
+Clearly, the mean diameter of the solar disk is about half a degree. 
+
+As an example of a solar apparent radius calculation, we have already seen that at 00:00 UT on May 5, 2005 AD the  mean anomaly of the Sun was
+$M\simeq 120^\circ$. It follows from Table~\ref{lt6} that the solar radial anomaly was $\zeta=-0.856\times 10^{-2}$. Hence, the
+apparent radius of the solar disk was
+\begin{equation}
+\rho_S = \frac{15.987}{1+0.856\times 10^{-2}}\simeq 15.85'.
+\end{equation}
+
+As a second example of a solar radius calculation, we have also seen that at 00:00 UT on December 25, 1800 AD the mean anomaly
+of the Sun was $M\simeq 354^\circ$. It follows from Table~\ref{lt6} that the solar radial anomaly was $\zeta=1.662\times 10^{-2}$. 
+Hence, the
+apparent radius of the solar disk was
+\begin{equation}
+\rho_S = \frac{15.987}{1-1.662\times 10^{-2}}\simeq 16.26'.
+\end{equation}
+
 \clearpage
 \begin{table}\centering
 \begin{tabular}{l|rcrrrr}
-Object &  $a\,(AU)$ & $e$ & $n\,(^\circ/{\rm day})$ & $\tilde{n}\,(^\circ/{\rm day})$ & $\bar{\lambda}_0\,(^\circ)$ & $M_0\,(^\circ)$\\\hline
+Object &  $a\,({\rm AU})$ & $e$ & $n\,(^\circ/{\rm day})$ & $\tilde{n}\,(^\circ/{\rm day})$ & $\bar{\lambda}_0\,(^\circ)$ & $M_0\,(^\circ)$\\\hline
 &&&&&&\\[-2.2ex]
 Mercury & $0.387098$  & $0.205636$ & $4.09237703$     & $4.09233439$    & $252.087$ & $174.693$  \\
 Venus     & $0.723334$  & $0.006777$  & $1.60216872$    & $1.60213040$  & $181.973$ & $49.237$ \\
@@ -361,7 +402,7 @@ Saturn   & $9.536651$  & $0.053862$    & $0.03350830$     & $0.03348152$   & $50
 \caption{Keplerian orbital elements for the Sun and the five visible planets at the J2000 epoch (that is, 12:00 UT, January 1, 2000 AD,
 which corresponds to $t_0 = 2\,451\,545.0$ JD). The elements are optimized for use in the
 time period 1800 AD to 2050 AD. Source: Jet Propulsion Laboratory (NASA), {\tt http://ssd.jpl.nasa.gov/}.  The motion rates have been converted into tropical motion rates assuming a uniform precession of the equinoxes
- of $3.8246\times 10^{-5}\,\,^\circ$ per day.}\label{lt4}
+ of $3.8246\times 10^{-5}\,\,^\circ$ per day. An astronomical unit (AU) is $1.496\times 10^8$\,km.}\label{lt4}
 \end{table}
 
 \clearpage

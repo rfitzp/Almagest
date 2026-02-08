@@ -225,7 +225,7 @@ def Get_Lambda_Moon (t):
 
     FM = FbM + q1 + q2 + q3 + q4 + q5
 
-    betaM = math.asin (math.sin (iM*degtorad) * math.sin (FM*degtorad)) * radtodeg
+    betaM = 60. * math.asin (math.sin (iM*degtorad) * math.sin (FM*degtorad)) * radtodeg
 
     db1 = dM0 * eM * math.cos (MM*degtorad)
     db2 = rM0 * eM * math.cos (MM*degtorad)
@@ -234,9 +234,13 @@ def Get_Lambda_Moon (t):
     bS  = 88.57 + db1 + db2 + db3
     bSt = 56.59 + db1 + db2 - db3
     bSa = 57.39 + db1 - db2 + db3
-    mag = ((rM0 + db2)/(rS0 + db3))**2.
 
-    return lamM, betaM*60., bS, bSt, bSa, mag
+    if betaM < bSt or betaM < bSa:
+        mag = (bS - bSa) /(bS - bSt)
+    else:
+        mag = (bS - abs(betaM)) /(bS - bSt)
+
+    return lamM, betaM, bS, bSt, bSa, mag
 
 def Get_DMS (t):
 
@@ -296,8 +300,12 @@ for i in range (1, 14):
         c = 'P'
     else:
         c = ' '
-     
-    print ("%02d:  %02d/%02d/%4d:  %02d:%02d  %.1f  %.1f  %.1f  %05.1f  %s  %.3f" % (i, day, month, year, hour, minute, bS, bSt, bSa, abs (bsyz), c, mag))
+
+    if c == ' ':
+        print ("%02d:  %02d/%02d/%4d:  %02d:%02d  %.1f  %.1f  %.1f  %05.1f  %s" % (i, day, month, year, hour, minute, bS, bSt, bSa, abs (bsyz), c))
+    else:
+        print ("%02d:  %02d/%02d/%4d:  %02d:%02d  %.1f  %.1f  %.1f  %05.1f  %s  %.2f" % (i, day, month, year, hour, minute, bS, bSt, bSa, abs (bsyz), c, mag))
+            
     print ("%02d/%02d/%4d &  %02d:%02d & %.1f & %.1f & %.1f & %05.1f & %s\\\\" % (day, month, year, hour, minute, bS, bSt, bSa, abs (bsyz), c), file=f)
 
 print ("\n")

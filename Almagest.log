@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  3 FEB 2026 20:30
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  8 FEB 2026 14:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -883,12 +883,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ]
 Chapter 6.
 [93]
-Underfull \hbox (badness 10000) in paragraph at lines 94--112
+Underfull \hbox (badness 10000) in paragraph at lines 95--113
 
  []
 
 [94]
-Underfull \hbox (badness 10000) in paragraph at lines 141--160
+Underfull \hbox (badness 10000) in paragraph at lines 142--161
 
  []
 
@@ -900,46 +900,46 @@ File: epsfiles/Node.eps Graphic file (type eps)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [96] [97]
-Underfull \hbox (badness 10000) in paragraph at lines 259--268
+Underfull \hbox (badness 10000) in paragraph at lines 260--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--279
+Underfull \hbox (badness 10000) in paragraph at lines 270--280
 
  []
 
+[98] [99]
 File: epsfiles/parallax.eps Graphic file (type eps)
 <epsfiles/parallax.eps>
-[98] [99]
+ [100]
 File: epsfiles/para.eps Graphic file (type eps)
 <epsfiles/para.eps>
- [100]
-Underfull \hbox (badness 10000) in paragraph at lines 384--403
+ [101]
+Underfull \hbox (badness 10000) in paragraph at lines 451--470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--403
+Underfull \hbox (badness 10000) in paragraph at lines 451--470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--403
+Underfull \hbox (badness 10000) in paragraph at lines 451--470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--403
+Underfull \hbox (badness 10000) in paragraph at lines 451--470
 
  []
 
-[101] [102]
-Overfull \hbox (53.12196pt too wide) in paragraph at lines 460--515
- [][][][] 
- []
 
-) [103] [104] [105] [106]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102]
+[103] [104]) [105] [106] [107] [108]
 \openout2 = `Syzygy/Syzygy.aux'.
 
  (./Syzygy/Syzygy.tex
@@ -949,7 +949,7 @@ File: epsfiles/phase.eps Graphic file (type eps)
 
 Underfull \vbox (badness 1210) has occurred while \output is active []
 
- [107
+ [109
 
 
 
@@ -961,7 +961,7 @@ Overfull \hbox (7.30548pt too wide) in paragraph at lines 45--47
 rmation to that contained in the “Table of conjunctions” (Συνόδων
  []
 
-[108]
+[110]
 Underfull \hbox (badness 10000) in paragraph at lines 87--110
 
  []
@@ -971,30 +971,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--156
 
  []
 
-[109] [110]
+[111] [112]
 File: epsfiles/umbra.eps Graphic file (type eps)
 <epsfiles/umbra.eps>
- [111]
 File: epsfiles/totalm.eps Graphic file (type eps)
 <epsfiles/totalm.eps>
- [112] [113] [114]
+ [113] [114] [115] [116]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [115]
-[116]
-Overfull \hbox (27.72298pt too wide) in paragraph at lines 471--508
+ [117]
+[118]
+Overfull \hbox (27.72298pt too wide) in paragraph at lines 445--482
  [][][][] 
  []
 
-
-Overfull \hbox (53.12196pt too wide) in paragraph at lines 513--568
- [][][][] 
- []
-
-) [117] [118] [119] [120]
+) [119] [120] [121]
 \openout2 = `Superior/Superior.aux'.
 
- (./Superior/Superior.tex
+ (./Superior/Superior.tex [122
+
+
+
+
+
+]
 Chapter 8.
 File: epsfiles/figv7.eps Graphic file (type eps)
 <epsfiles/figv7.eps>
@@ -1008,13 +1008,7 @@ File: epsfiles/figv5.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[121
-
-
-
-
-
-] [122] [123] [124] [125]
+[123] [124] [125] [126] [127]
 Underfull \hbox (badness 10000) in paragraph at lines 230--249
 
  []
@@ -1024,24 +1018,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--308
 
  []
 
-[126]
+[128]
 File: epsfiles/epicycle.eps Graphic file (type eps)
 <epsfiles/epicycle.eps>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[127] [128] [129]
+[129] [130] [131]
 Underfull \hbox (badness 10000) in paragraph at lines 456--475
 
  []
 
-[130]
+[132]
 Underfull \hbox (badness 10000) in paragraph at lines 536--556
 
  []
 
-[131] [132]
+[133] [134]
 Overfull \hbox (13.57872pt too wide) in paragraph at lines 707--757
  [][][][] 
  []
@@ -1056,11 +1050,11 @@ Overfull \hbox (1.93974pt too wide) in paragraph at lines 966--1019
  [][][][] 
  []
 
-) [133] [134] [135] [136] [137] [138] [139] [140] [141] [142] [143] [144]
-[145]
+) [135] [136] [137] [138] [139] [140] [141] [142] [143] [144] [145] [146]
+[147]
 \openout2 = `Inferior/Inferior.aux'.
 
- (./Inferior/Inferior.tex [146
+ (./Inferior/Inferior.tex [148
 
 
 
@@ -1073,28 +1067,28 @@ File: epsfiles/fig8.eps Graphic file (type eps)
 
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
- [147]
-[148]
+ [149]
+[150]
 Underfull \hbox (badness 10000) in paragraph at lines 136--156
 
  []
 
-[149]
+[151]
 Underfull \hbox (badness 10000) in paragraph at lines 193--213
 
  []
 
-[150] [151] [152]
+[152] [153] [154]
 Underfull \hbox (badness 10000) in paragraph at lines 352--372
 
  []
 
-[153] [154]
+[155] [156]
 Overfull \hbox (11.93974pt too wide) in paragraph at lines 526--579
  [][][][] 
  []
 
-[155] [156] [157] [158]
+[157] [158] [159] [160]
 Overfull \hbox (23.57872pt too wide) in paragraph at lines 676--726
  [][][][] 
  []
@@ -1104,12 +1098,12 @@ Overfull \hbox (11.93974pt too wide) in paragraph at lines 731--784
  [][][][] 
  []
 
-) [159] [160] [161] [162]
+) [161] [162] [163] [164]
 \openout2 = `Latitude/Latitude.aux'.
 
  (./Latitude/Latitude.tex
 Chapter 10.
-[163
+[165
 
 
 
@@ -1119,12 +1113,12 @@ Chapter 10.
 ]
 File: epsfiles/long.eps Graphic file (type eps)
 <epsfiles/long.eps>
- [164] [165]
+ [166] [167]
 Underfull \hbox (badness 10000) in paragraph at lines 157--179
 
  []
 
-[166]
+[168]
 Underfull \hbox (badness 10000) in paragraph at lines 211--233
 
  []
@@ -1134,7 +1128,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--287
 
  []
 
-[167] [168]
+[169] [170]
 File: epsfiles/long1.eps Graphic file (type eps)
 <epsfiles/long1.eps>
 
@@ -1144,13 +1138,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 7047) has occurred while \output is active []
 
- [169]
-[170]
+ [171]
+[172]
 Underfull \hbox (badness 10000) in paragraph at lines 454--476
 
  []
 
-[171]
+[173]
 Underfull \hbox (badness 10000) in paragraph at lines 509--531
 
  []
@@ -1158,8 +1152,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 509--531
 
 Underfull \vbox (badness 1231) has occurred while \output is active []
 
- [172]
-[173]
+ [174]
+[175]
 Overfull \hbox (21.46948pt too wide) in paragraph at lines 631--684
  [][][][] 
  []
@@ -1174,36 +1168,36 @@ Overfull \hbox (21.46948pt too wide) in paragraph at lines 863--916
  [][][][] 
  []
 
-) [174] [175] [176] [177] [178] [179] [180] [181] [182] [183] [184]
+) [176] [177] [178] [179] [180] [181] [182] [183] [184] [185] [186]
 \openout2 = `Glossary/Glossary.aux'.
 
 
-(./Glossary/Glossary.tex [185
+(./Glossary/Glossary.tex [187
 
 
 
 
 
-] [186] [187] [188]) [189]
+] [188] [189] [190]) [191]
 \openout2 = `Symbol/Symbol.aux'.
 
  (./Symbol/Symbol.tex
-[190
+[192
 
 
 
 
 
-] [191])
+] [193])
 \openout2 = `Bibliography/Bibliography.aux'.
 
- (./Bibliography/Bibliography.tex [192
+ (./Bibliography/Bibliography.tex [194
 
 
 
 
 
-]) [193]
+]) [195]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1315,12 +1309,12 @@ LaTeX Info: Redefining \ttfamily on input line 3.
 (./Latitude/Latitude.aux) (./Glossary/Glossary.aux) (./Symbol/Symbol.aux)
 (./Bibliography/Bibliography.aux)) ) 
 Here is how much of TeX's memory you used:
- 7509 strings out of 476683
- 187870 string characters out of 5804047
+ 7513 strings out of 476683
+ 187902 string characters out of 5804047
  2166018 words of memory out of 5000000
- 27478 multiletter control sequences out of 15000+600000
+ 27482 multiletter control sequences out of 15000+600000
  518748 words of font info for 94 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,12n,77p,642b,378s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,77p,695b,378s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Almagest.pdf (193 pages).
+Output written on Almagest.pdf (195 pages).

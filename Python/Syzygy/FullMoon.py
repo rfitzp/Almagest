@@ -287,7 +287,7 @@ for i in range (1, 14):
         c = ' '
 
     if (mag > 0.):    
-        print ("%02d:  %02d/%02d/%4d:  %02d:%02d  %.1f  %.1f  %05.1f  %s  %.3f" % (i, day, month, year, hour, minute, bM, bMt, abs (bsyz), c, mag))
+        print ("%02d:  %02d/%02d/%4d:  %02d:%02d  %.1f  %.1f  %05.1f  %s  %.2f" % (i, day, month, year, hour, minute, bM, bMt, abs (bsyz), c, mag))
     else:
         print ("%02d:  %02d/%02d/%4d:  %02d:%02d  %.1f  %.1f  %05.1f  %s" % (i, day, month, year, hour, minute, bM, bMt, abs (bsyz), c))
 
