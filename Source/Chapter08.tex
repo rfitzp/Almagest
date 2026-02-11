@@ -1,0 +1,1277 @@
+\chapter{The Superior Planets}\label{csup}
+% !TEX root = ./Almagest.tex
+
+\section{Ecliptic Longitude Model}
+Figure~\ref{vf7} compares and contrasts heliocentric and geocentric
+models of the
+motion  of a superior planet (that is, a planet that is farther from the
+Sun than the Earth), $P$,  as seen from the Earth, $G$. The Sun is
+at $S$. In the heliocentric
+model, we can write the Earth-planet displacement vector, ${\bf P}$,
+as the sum of the Earth-Sun displacement vector, ${\bf S}$, and
+the Sun-planet displacement vector, ${\bf P}'$.  The geocentric model,
+which is entirely equivalent to the heliocentric model as far as
+the  relative motion, of the planet with respect to the
+Earth is concerned, and is much more convenient,  relies on the simple vector identity
+\begin{equation}\label{ve2.15}
+{\bf P} = {\bf S}+{\bf P}' \equiv{\bf P}'+{\bf S}.
+\end{equation}
+In other words, we can get from the Earth to the planet by one of two
+different routes. The first route corresponds to the heliocentric model, and
+the second to the geocentric model.
+In the latter model, ${\bf P}'$ gives the displacement of
+the so-called {\em guide-point}, $G'$, from the Earth. 
+Because ${\bf P}'$ is also the displacement of the planet, $P$, from the
+Sun, $S$, it is clear that  $G'$ executes a
+Keplerian orbit about the Earth whose  elements are the
+same as those of the orbit of the planet about the Sun.
+ The ellipse traced out by $G'$ is termed the {\em deferent}. The vector ${\bf S}$ gives
+the displacement of the planet from the guide-point.
+However, ${\bf S}$ is also the displacement of the Sun from the Earth.
+Hence, it is clear that the planet, $P$,
+executes a Keplerian orbit about the guide-point, $G'$, whose
+ elements are the same as the Sun's apparent orbit about the Earth.
+ The ellipse traced out by $P$ about $G'$ is termed the {\em epicycle}. 
+
+\begin{figure}[h]
+\centerline{\includegraphics[height=2.75in]{Fig8-1.eps}}
+\caption{Heliocentric and geocentric models of the motion of a superior planet. Here, $S$ is the Sun, $G$ the Earth, and $P$ the planet.  The view is from the northern ecliptic pole.}\label{vf7}   
+\end{figure}
+ 
+\begin{figure}
+\centerline{\includegraphics[height=3in]{Fig8-2.eps}}
+\caption{Planetary longitude model. View is from northern ecliptic pole. }\label{vf4}
+\end{figure}
+
+Figure~\ref{vf4} illustrates in more detail how the deferent-epicycle model
+is used to determine the ecliptic longitude of a superior planet.
+The planet $P$  orbits (counterclockwise) on a small Keplerian orbit $\Pi'PA'$
+about  guide-point $G'$, which, in turn, orbits the Earth, $G$, (counterclockwise) on a large
+Keplerian orbit $\Pi G'A$. As has already been mentioned, the small orbit is termed the epicycle, and the large orbit  the deferent. Both orbits are assumed to lie in the plane of the ecliptic. This approximation does not
+introduce a large error into our calculations because the orbital inclinations  of the visible planets to
+the ecliptic plane are all fairly small.
+ Let $C$, $A$, $\Pi$, $a$, $e$, $\varpi$,
+and $T$ denote the geometric center, apocenter (that is, the point of
+farthest distance from the central object), pericenter (that is, the
+point of closest approach to the central object), major radius, eccentricity, longitude
+of the pericenter, and true anomaly of the deferent, respectively. Let $C'$, $A'$, $\Pi'$, $a'$, $e'$, $\varpi'$, and $T'$ denote the corresponding
+quantities for the epicycle.
+
+\begin{figure}[h]
+\centerline{\includegraphics[height=2.5in]{Fig8-3.eps}}
+\caption{The triangle $GBP$.}\label{vf5xx}
+\end{figure}
+
+Let the line $GG'$ be produced, and let the perpendicular $PB$ be
+dropped to it from $P$, as shown in Figure~\ref{vf5xx}. The angle $\mu\equiv PG'B$
+is termed the {\em epicyclic anomaly}\/ (see Figures~\ref{vf5x}), and takes the form
+\begin{equation}
+\mu =T'+\varpi' - T - \varpi = \bar{\lambda}' + q' - \bar{\lambda}-q,
+\end{equation}
+where $\bar{\lambda}$ and $q$ are the mean longitude and equation of center for the
+deferent, whereas $\bar{\lambda}'$ and $q'$ are the corresponding quantities for  the
+epicycle. See Chapter~\ref{csun}. The epicyclic anomaly is generally written in the 
+range $0^\circ$ to $360^\circ$. 
+ The angle $\theta\equiv PGG'$ is termed the {\em equation of the epicycle}, and is usually written in the range $-180^\circ$ to $+180^\circ$.
+It is clear from the figure that
+\begin{equation}
+\tan\theta = \frac{\sin\mu}{r/r'+ \cos\mu},
+\end{equation}
+where $r\equiv GG'$ and $r'\equiv G'P$ are the radial polar coordinates for the deferent and epicycle,
+respectively. 
+Moreover, according to Equation~(\ref{je22}), $r/r' = (a/a')\,z$, where
+\begin{equation}\label{ezdef}
+z = \frac{1-\zeta}{1-\zeta'},
+\end{equation}
+and
+\begin{align}
+\zeta &= e\,\cos\,M -e^{\,2}\,\sin^2\,M,\\[0.5ex]
+\zeta' &= e'\cos\,M' -e'^{\,2}\sin^2\,M'
+\end{align}
+are termed {\em radial anomalies}. 
+Finally, the ecliptic longitude of the planet is given by  (see Figure~\ref{vf5x})
+\begin{equation}
+\lambda = \bar{\lambda} + q + \theta.
+\end{equation}
+
+Now, 
+\begin{equation}
+\theta(\mu,z) \equiv \tan^{-1}\left[ \frac{\sin\mu}{(a/a')\,z+ \cos\mu}\right]
+\end{equation}
+is a function of two variables, $\mu$ and $z$. It is impractical to tabulate
+such a function directly. Fortunately, while $\theta(\mu,z)$
+has a strong dependence on $\mu$, it only has a fairly weak dependence on $z$.
+In fact, it is easily seen that $z$ varies between $z_{\rm min} = \bar{z} - \delta z$
+and $z_{\rm max} = \bar{z}+\delta z$, where
+\begin{align}
+\bar{z}& = \frac{1+e\,e'}{1-e'^{\,2}},\\[0.5ex]
+\delta z& = \frac{e+e'}{1-e'^{\,2}}.
+\end{align}
+Let us define
+\begin{equation}
+\xi = \frac{\bar{z}-z}{\delta z}.
+\end{equation}
+This variable takes the value $-1$ when $z=z_{\rm max}$, the value $0$ when
+$z=\bar{z}$, and the value $+1$ when $z=z_{\rm min}$. 
+Thus, using quadratic interpolation, we can write
+\begin{equation}
+\theta(\mu,z)\simeq \Theta_-(\xi)\,\delta\theta_-(\mu) + \bar{\theta}(\mu)
++ \Theta_+(\xi)\,\delta\theta_+(\mu),
+\end{equation}
+where
+\begin{align}
+\bar{\theta}(\mu)  &= \theta(\mu,\bar{z}),\\[0.5ex]
+\delta\theta_-(\mu) &= \theta(\mu,\bar{z}) - \theta(\mu,z_{\rm max}),\\[0.5ex]
+\delta\theta_+(\mu) &= \theta(\mu,z_{\rm min}) - \theta(\mu,\bar{z}),
+\end{align}
+and
+\begin{align}\label{ve52}
+\Theta_-(\xi) &= - (1/2)\,\xi\,(\xi-1),\\[0.5ex]
+\Theta_+(\xi) &=+ (1/2)\,\xi\,(\xi+1).\label{ve53}
+\end{align}
+This scheme allows us to avoid having to tabulate a
+two-dimensional function, while ensuring that the exact value of $\theta(\mu,z)$ is obtained
+when $z=\bar{z}$, $z_{\rm min}$, or $z_{\rm max}$. The previous interpolation
+scheme is very similar to that adopted by Ptolemy in the Almagest.
+
+Our procedure for determining the ecliptic longitude of a superior planet is described in the following. It is assumed that the ecliptic longitude, $\lambda_S$, and the
+radial anomaly, $\zeta_S$, of the Sun have already been calculated. The latter quantity is tabulated as a function of the solar mean anomaly
+in Table~\ref{lt6}. In the following, $a$, $e$, $n$, $\tilde{n}$, $\bar{\lambda}_0$, and $M_0$ represent  elements of the orbit of the planet in question
+about the Sun, and $e_S$  represents the eccentricity of the Sun's apparent orbit
+about the Earth. (In general, the subscript $S$ denotes the Sun.) In particular, $a$ is the major radius of the planetary orbit in
+units in which the major radius of the Sun's apparent orbit about the
+Earth is unity. The requisite elements for all of the superior planets at the J2000 epoch ($t_0=2\,451\,545.0$ JD)
+are listed in Table~\ref{lt4}. The ecliptic longitude of a superior
+planet is specified by the following formulae:
+\begin{align}
+\bar{\lambda}&=  \bar{\lambda}_0 + n\,(t-t_0) ,\\[0.5ex]
+M &= M_0  +\tilde{n}\,(t-t_0),\\[0.5ex]
+q&= 2\,e\,\sin \,M + (5/4)\,e^2\,\sin\,2M,\label{ve3.8}\\[0.5ex]
+\zeta &= e\,\cos M - e^2\,\sin^2 M,\\[0.5ex]
+\mu&= \lambda_S - \bar{\lambda}-q,\\[0.5ex]
+\bar{\theta} &= \theta(\mu,\bar{z})\equiv \tan^{-1} \left(\frac{\sin\mu}{a\,\bar{z}+\cos\mu}\right),\\[0.5ex]
+\delta\theta_- &= \theta(\mu,\bar{z}) - \theta(\mu,z_{\rm max}),\\[0.5ex]
+\delta\theta_+&= \theta(\mu,z_{\rm min}) - \theta(\mu,\bar{z}),\\[0.5ex]
+z &= \frac{1-\zeta}{1-\zeta_S},\\[0.5ex]
+\xi &= \frac{\bar{z}-z}{\delta z},\\[0.5ex]
+\theta  &=\Theta_-(\xi)\,\delta\theta_-+ \bar{\theta}
++ \Theta_+(\xi)\,\delta\theta_+,\\[0.5ex]
+\lambda &=\bar{\lambda} + q+ \theta.
+\end{align}
+Here, $\bar{z} = (1+e\,e_S)/(1-e_S^{\,2})$, $\delta z = (e+e_S)/(1-e_S^{\,2})$, $z_{\rm min} = \bar{z}-\delta z$,
+and $z_{\rm max} = \bar{z}+\delta z$.  The constants $\bar{z}$, $\delta z$, $z_{\rm min}$, and $z_{\rm max}$ 
+for each of the superior planets are listed in Table~\ref{vtx}.  Finally, the functions $\Theta_\pm$ are  tabulated in Table~\ref{vty}.
+
+For the case of Mars, the previous formulae are capable of matching NASA ephemeris data during the years 1995--2006 AD
+with a mean error of $3'$ and a maximum error of $14'$. For the case of Jupiter, the mean error is
+$1.6'$ and the maximum error $4'$. Finally, for the case of Saturn, the mean error is $0.5'$ and the
+maximum error $1'$. 
+
+\section{Determination of the Ecliptic Longitude of Mars}
+The ecliptic longitude of Mars can be determined with the aid of Tables~\ref{vt8}--\ref{vt10}. Table~\ref{vt8} allows
+the mean longitude, $\bar{\lambda}$, and the mean anomaly, $M$, of Mars to be calculated as functions of
+time. Next, Table~\ref{vt9} permits the equation of center, $q$, and the radial anomaly, $\zeta$, to
+be determined as functions of the mean anomaly. Finally, Table~\ref{vt10} allows the quantities
+$\delta\theta_-$, $\bar{\theta}$, and $\delta\theta_+$ to be calculated as functions of the epicyclic
+anomaly, $\mu$. 
+
+The procedure for using the tables is as follows:
+\begin{enumerate}
+
+\item Determine the fractional Julian day number, $t$, corresponding to the date and time
+at which the ecliptic longitude is to be calculated with the aid of Tables~\ref{kt1}--\ref{kt3}. Form $\Delta t = t-t_0$, where $t_0=2\,451\,545.0$ is the epoch. 
+
+\item Calculate the ecliptic longitude, $\lambda_S$, and radial anomaly,
+$\zeta_S$, of the Sun using the procedure set out in Section~\ref{ssun}.
+
+\item Enter Table~\ref{vt8} with the digit for each power of 10
+in ${\Delta} t$ and take out the corresponding values of $\Delta\bar{\lambda}$ and $\Delta M$. If $\Delta t$ is negative then the corresponding
+values are also negative.
+The value of the mean longitude, $\bar{\lambda}$, is the
+sum of all the $\Delta\bar{\lambda}$ values plus the value of $\bar{\lambda}$ at the epoch. Likewise, the value of the mean anomaly, $M$, is
+the sum of all the $\Delta M$ values plus the value of $M$ at the epoch. 
+Add as many multiples of $360^\circ$ to $\bar{\lambda}$ and $M$
+as is required to make them both fall in the range $0^\circ$ to $360^\circ$. Round $M$ to the nearest degree. 
+
+\item Enter Table~\ref{vt9} with the value of $M$ and take out the
+corresponding value of the equation of center, $q$, and the radial anomaly, $\zeta$. It is necessary to interpolate if $M$ is odd.
+
+\item Form the epicyclic anomaly, $\mu = \lambda_S-\bar{\lambda}-q$. Add as many multiples of $360^\circ$ to $\mu$ as is required to make it fall in the range $0^\circ$ to $360^\circ$. Round $\mu$ to the nearest degree.
+
+\item Enter Table~\ref{vt10} with the value of $\mu$ and take
+out the corresponding values of $\delta\theta_-$, $\bar{\theta}$, and
+$\delta\theta_+$. If $\mu > 180^\circ$ then it is necessary to make use
+of the identities $\delta\theta_\pm(360^\circ - \mu) =-\delta\theta_\pm(\mu)$
+and $\bar{\theta}(360^\circ - \mu) =-\bar{\theta}(\mu)$.
+
+\item Form $z = (1-\zeta)/(1-\zeta_S)$.
+
+\item Obtain the values of $\bar{z}$ and $\delta z$ from Table~\ref{vtx}.
+Form $\xi = (\bar{z}-z)/\delta z$.
+
+\item Enter Table~\ref{vty} with the value of $\xi$ and take out
+the corresponding values of $\Theta_-$ and $\Theta_+$. If $\xi<0$ then
+it is necessary to use the identities $\Theta_+(\xi)=-\Theta_-(-\xi)$
+and $\Theta_-(\xi)=-\Theta_+(-\xi)$. 
+
+\item Form the equation of the epicycle, $\theta = \Theta_-\,\delta\theta_-+ \bar{\theta}
++ \Theta_+\,\delta\theta_+$.
+
+\item The ecliptic longitude, $\lambda$, is the sum of the mean longitude, $\bar{\lambda}$,  the equation of center, $q$, and the equation
+of the epicycle, $\theta$. If necessary convert $\lambda$
+into  an angle in the range $0^\circ$ to $360^\circ$. The decimal fraction can
+be converted into arc minutes
+using Table~\ref{lt6a}. Round to the nearest arc minute. The final result
+can be written in terms of the signs of the zodiac using the table in Section~\ref{szod}.
+\end{enumerate}
+Two examples of this procedure are given in the following section
+
+\section{Example Martian Ecliptic Longitude Calculations}
+\noindent {\em Example 1}: May 5, 2005 AD, 00:00 UT:\\
+~\\
+From Section~\ref{ssun}, $t-t_0=1\,950.5$ JD, $\lambda_S= 44.602^\circ$, $M_S\simeq 120^\circ$. Hence, it follows from Table~\ref{lt6} that
+$\zeta_S(M_S)= -8.56\times 10^{-3}$. Making use of
+Table~\ref{vt8}, we find:\\
+\begin{tabular}{rrr}
+&&\\
+$t$(JD) & $ \bar{\lambda}(^\circ)$ & $M(^\circ)$\\[-2ex]
+&&\\
+$+1000$ & $164.071$ & $164.021$\\
+$+900$ & $111.664$ & $111.619$\\
+$+50$ & $26.204$ & $26.201$\\
+$+.5$ & $0.262$ & $0.262$\\
+Epoch & $355.460$ & $19.388$\\\cline{2-3}
+&$657.661$ & $321.491$\\\cline{2-3}
+Modulus & $297.661$ & $321.491$\\ 
+&&\\
+\end{tabular}\\
+Given that $M\simeq 321^\circ$, Table~\ref{vt9} yields 
+$$
+q(321^\circ)= -7.345^\circ,\mbox{\hspace{0.5cm}}\zeta(321^\circ)=6.912\times 10^{-2}.
+$$
+Thus, 
+$$
+\mu=\lambda_S - \bar{\lambda}-q = 44.602-297.661 + 7.345= 114.286\simeq
+114^\circ,
+$$
+where we have rounded the epicyclic anomaly to the nearest degree. It follows from Table~\ref{vt10}
+that 
+$$
+\delta\theta_-(114^\circ) = 3.853^\circ,\mbox{\hspace{0.5cm}}\bar{\theta}(114^\circ)=39.209^\circ, \mbox{\hspace{0.5cm}}\delta\theta_+(114^\circ) = 4.612^\circ.
+$$
+Now,
+$$ 
+z= (1-\zeta)/(1-\zeta_S) = (1-6.912\times 10^{-2})/(1+8.56\times 10^{-3}) =
+0.9230.
+$$
+However, from Table~\ref{vtx}, $\bar{z}= 1.00184$ and $\delta z = 0.11014$,
+so
+$$
+\xi = (\bar{z}-z)/\delta z = (1.00184-0.9230)/0.11014 \simeq 0.72.
+$$
+According to Table~\ref{vty}, 
+$$
+\Theta_-(0.72) = 0.101, \mbox{\hspace{0.5cm}}\Theta_+(0.72) = 0.619,
+$$
+so
+$$
+\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = 0.101\times 3.853+39.209+0.619\times 4.612 = 42.453^\circ.
+$$ 
+Finally,
+$$
+\lambda=\bar{\lambda} + q + \theta= 297.661-7.345+42.453=332.769 \simeq 332^\circ 46'.
+$$
+Thus,
+the ecliptic longitude of Mars at 00:00 UT on May 5, 2005 AD was 2PI46.
+
+~\\
+\noindent {\em Example 2}: December 25, 1800 AD, 00:00 UT:\\
+~\\
+From Section~\ref{ssun}, $t-t_0=-72,690.5$ JD, $\lambda_S= 273.055^\circ$, $M_S\simeq 354^\circ$. Hence, it follows from Table~\ref{lt6} that
+$\zeta_S(M_S)= 1.662\times 10^{-2}$. Making use of
+Table~\ref{vt8}, we find:\\
+\begin{tabular}{rrr}
+&&\\
+$t$(JD) & $\bar{\lambda}(^\circ)$ & $ M(^\circ)$\\[-2ex]
+&&\\
+-70,000 & $-324.983$ & $-321.453$\\
+-2,000 & $-328.142$ & $-328.042$\\
+-600 & $-314.443$ & $-314.412$\\
+-90 & $-47.166$ & $-47.162$\\
+-.5 & $-0.262$ & $-0.262$\\
+Epoch & $355.460$ & $19.388$\\\cline{2-3}
+&$-659.536$ & $-991.943$\\\cline{2-3}
+Modulus & $60.464$ & $88.057$\\
+&&\\
+\end{tabular}\\
+Given that $M\simeq 88^\circ$, Table~\ref{vt9} yields 
+$$
+q(88^\circ)= 10.739^\circ, \mbox{\hspace{0.5cm}}\zeta(88^\circ)=-5.45\times 10^{-3},
+$$
+so
+$$
+\mu=\lambda_S - \bar{\lambda}-q = 273.055-60.464-10.739= 201.852\simeq202^\circ.
+$$
+It follows from Table~\ref{vt10}
+that 
+$$
+\delta\theta_-(202^\circ) = -5.980^\circ,\mbox{\hspace{0.5cm}}\bar{\theta}(202^\circ)=-32.007^\circ,\mbox{\hspace{0.5cm}}\delta\theta_+(202^\circ) = -8.955^\circ.
+$$
+Now, 
+$$
+z= (1-\zeta)/(1-\zeta_S) = (1+5.45\times 10^{-3})/(1-1.662\times 10^{-2}) =
+1.02244,
+$$
+so
+$$
+\xi = (\bar{z}-z)/\delta z = (1.00184-1.02244)/0.11014 \simeq -0.19.
+$$ 
+According to Table~\ref{vty}, 
+$$
+\Theta_-(-0.19) = -0.113, \mbox{\hspace{0.5cm}}
+\Theta_+(-0.19) = -0.077,
+$$
+so
+$$
+\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = -0.113\times 5.980-32.007-0.077\times 8.955 = -30.642^\circ.
+$$
+Finally,
+$$
+\lambda=\bar{\lambda} + q + \theta= 60.464+10.739-30.642 = 40.561 \simeq 40^\circ 34'.
+$$ 
+Thus,
+the ecliptic longitude of Mars at 00:00 UT on December 25, 1800 AD was 10TA34.
+
+\begin{figure}[h]
+\centerline{\includegraphics[height=3in]{Fig8-4.eps}}
+\caption{The geocentric orbit of a superior planet. Here, $G$, $G'$, $P$,  $\mu$,  $\theta$, $\bar{\lambda}$, $q$, and $\Upsilon$ represent
+the Earth, guide-point, planet,  epicyclic anomaly, equation of the epicycle, mean longitude, equation of center, and spring equinox, respectively. The view is
+from northern ecliptic pole. Both $G'$ and $P$ orbit counterclockwise.}\label{vf5x}
+\end{figure}
+
+\section{Determination of Conjunction, Opposition, and Station Dates}
+Figure~\ref{vf5x} shows the geocentric orbit of a superior planet. Recall that the vector $G'P$ is always parallel to the vector connecting the Earth to the Sun. It follows that
+a so-called {\em conjunction}, at which the Sun lies
+directly between the planet and the Earth, occurs whenever the epicyclic anomaly, $\mu$, takes the value $0^\circ$. At
+a conjunction, the planet is farthest from the Earth, and has the same ecliptic longitude as the
+Sun, and is, therefore, invisible. Conversely, a so-called {\em opposition}, at which the Earth lies directly between the planet and the Sun, occurs whenever $\mu=180^\circ$. At an opposition, the planet is closest to the Earth, and also directly opposite the 
+Sun in the sky, and, therefore, at its brightest. Now, a superior planet rotates around the epicycle at a
+faster angular velocity than its guide-point rotates around the deferent. Moreover, both the planet and guide-point rotate
+in the same direction. It follows that the planet is traveling  backward in the sky (relative to the direction
+of its mean motion) at opposition. This phenomenon is called {\em retrograde motion}. The period of
+retrograde motion begins and ends at  {\em stations}; so-called because when the planet reaches them
+it appears to stand still in the sky for a few days while it reverses direction.
+
+Tables~\ref{vt8}--\ref{vt10} can be used to determine the dates of the conjunctions, oppositions, and
+stations of Mars. Consider the first conjunction after the epoch (January 1, 2000 AD). We can estimate the
+time at which this event occurs by approximating the epicyclic anomaly as the so-called
+{\em mean epicyclic anomaly}: 
+$$
+\mu \simeq \bar{\mu} = \bar{\lambda}_S-\bar{\lambda} = \bar{\lambda}_{0\,S}-\bar{\lambda}_0 +(n_S-n)\,(t-t_0) = 284.998 + 0.46157617\,(t-t_0).
+$$
+ We obtain
+$$
+t\simeq t_0 + (360-284.998)/0.46157617\simeq t_0 + 162\, {\rm JD}.
+$$ 
+A calculation of the epicyclic anomaly at this time, using Tables~\ref{vt8}--\ref{vt10}, yields $\mu=-9.583^\circ$. Now, the
+actual conjunction occurs when $\mu=0^\circ$. Hence, our next estimate is 
+$$
+t\simeq t_0+162+9.583/0.46157617\simeq t_0 + 183\,{\rm JD}.
+$$
+A
+calculation of the epicyclic anomaly at this time gives $0.294^\circ$. Thus, our final estimate is
+$$
+t=t_0 +183-0.294/0.461557617=t_0+182.4\, {\rm JD},
+$$
+which corresponds to July 1, 2000 AD.
+
+Consider the first opposition of Mars after the epoch. Our first estimate of the time at which this
+event takes place is 
+$$
+t\simeq t_0+(540-284.998)/0.46157617\simeq t_0 + 552\, {\rm JD}.
+$$
+A calculation of
+the epicyclic anomaly at this time yields $\mu=188.649^\circ$. Now, the actual
+opposition occurs when $\mu=180^\circ$. 
+Hence, our second estimate is
+$$
+t\simeq t_0 +552-8.649/0.46157617\simeq t_0+533\,{\rm JD}.
+$$
+A calculation of the epicyclic anomaly
+at this time  gives $181.455^\circ$. Thus, our third estimate is 
+$$
+t\simeq t_0+533-1.455/0.46157617 \simeq t_0+ 530\,{\rm JD}.
+$$ A calculation of the epicyclic anomaly at this time yields $180.244^\circ$.
+Hence, our final estimate is 
+$$
+t=t_0+530-0.244/0.46157617=t_0+529.5\,{\rm JD},
+$$ 
+which corresponds to
+June 13, 2001 AD. Incidentally, it is clear from the previous analysis that the
+mean  time period between successive conjunctions,  or  oppositions, of Mars is $360/0.46157617= 779.9$ JD, which is
+equivalent to $2.14$ years.
+
+Let us now consider the stations of Mars. We can approximate the ecliptic longitude of a superior
+planet
+as
+\begin{equation}
+\lambda \simeq \bar{\lambda} + \bar{\theta},
+\end{equation}
+where
+\begin{equation}
+\bar{\theta} = \tan^{-1}\left(\frac{\sin \bar{\mu}}{\bar{a}+\cos\bar{\mu}}\right),
+\end{equation}
+and $\bar{a} = a\,\bar{z}$. 
+Note that $d\bar{\lambda}/dt= n$ and $d\bar{\mu}/dt = n_S-n$. It follows that
+\begin{equation}
+\frac{d\lambda}{dt} \simeq n + \left(\frac{\bar{a}\, \cos\bar{\mu}+1}{1+2\,\bar{a}\,\cos\bar{\mu}+\bar{a}^2}\right) (n_S-n).
+\end{equation}
+Now, a station corresponds to $d\lambda/dt = 0$ (that is, a local maximum or minimum of $\lambda$), which gives
+\begin{equation}
+\cos\bar{\mu} \simeq - \frac{(\bar{a}^2 + n_S/n)}{\bar{a}\,(1+n_S/n)}.
+\end{equation}
+For the case of Mars, we find that $\bar{\mu}=163.3^\circ$ or $196.7^\circ$. The first solution corresponds
+to the so-called {\em retrograde station}, at which the planet switches from direct to retrograde motion.
+The second solution corresponds to the so-called {\em direct station}, at which the planet switches
+from retrograde to direct motion. The mean time interval between a retrograde station and the following
+opposition, or between an opposition and the following direct station, is $(180-163.3)/0.46157617\simeq 36$ JD. 
+Unfortunately, the only option for accurately determining the  dates at which the stations occur is to calculate
+the ecliptic longitude of Mars over a range of days centered 36 days  before and after its opposition.
+
+Table~\ref{vtmars} shows the conjunctions, oppositions, and
+stations of Mars for the years 2000--2020 AD, calculated using the
+previously described techniques.
+
+\section{Determination of Ecliptic Longitude of Jupiter}
+The ecliptic longitude of Jupiter can be determined with the aid of Tables~\ref{vt11}--\ref{vt13}. Table~\ref{vt11} allows
+the mean longitude, $\bar{\lambda}$, and the mean anomaly, $M$, of Jupiter to be calculated as functions of
+time. Next, Table~\ref{vt12} permits the equation of center, $q$, and the radial anomaly, $\zeta$, to
+be determined as functions of the mean anomaly. Finally, Table~\ref{vt13} allows the quantities
+$\delta\theta_-$, $\bar{\theta}$, and $\delta\theta_+$ to be calculated as functions of the epicyclic
+anomaly, $\mu$. 
+The procedure for using the tables is analogous to the previously described procedure for
+using the Mars tables.
+One example of this procedure is given in the following.
+
+~\\
+\noindent {\em Example}: May 5,  2005 AD, 00:00 UT:\\
+~\\
+From before, $t-t_0=1\,950.5$ JD, $\lambda_S= 44.602^\circ$, $M_S\simeq 120^\circ$, and $\zeta_S= -8.56\times 10^{-3}$. Making use of
+Table~\ref{vt11}, we find:\\
+\begin{tabular}{rrr}
+&&\\
+$t$(JD) & $ \bar{\lambda}(^\circ)$ & $M(^\circ)$\\[-2ex]
+&&\\
++1000 & $83.125$ & $83.081$\\
++900 & $74.813$ & $74.773$\\
++50 & $4.156$ & $4.154$\\
++.5 & $0.042$ & $0.042$\\
+Epoch & $34.365$ & $19.348$\\\cline{2-3}
+&$196.501$ & $181.398$\\\cline{2-3}
+Modulus & $196.501$ & $181.398$\\ 
+&&\\
+\end{tabular}\\
+Given that $M\simeq 181^\circ$, Table~\ref{vt12} yields 
+$$
+q(181^\circ)= -0.091^\circ,\mbox{\hspace{0.5cm}}\zeta(181^\circ)=-4.838\times 10^{-2}.
+$$
+Thus, 
+$$
+\mu=\lambda_S - \bar{\lambda}-q = 44.602-196.501 + 0.091= -151.808\simeq
+208^\circ,
+$$
+where we have rounded the epicyclic anomaly to the nearest degree. It follows from Table~\ref{vt13}
+that 
+$$
+\delta\theta_-(208^\circ) = -0.447^\circ,\mbox{\hspace{0.5cm}}\bar{\theta}(208^\circ)=-6.194^\circ, \mbox{\hspace{0.5cm}}\delta\theta_+(208^\circ) = -0.522^\circ.
+$$
+Now,
+$$ 
+z= (1-\zeta)/(1-\zeta_S) = (1+4.838\times 10^{-2})/(1+8.56\times 10^{-3}) =
+1.0395.
+$$
+However, from Table~\ref{vtx}, $\bar{z}= 1.00109$ and $\delta z = 0.06512$,
+so
+$$
+\xi = (\bar{z}-z)/\delta z = (1.00109-1.0395)/0.06512 \simeq -0.59.
+$$
+According to Table~\ref{vty}, 
+$$
+\Theta_-(-0.59) = -0.469, \mbox{\hspace{0.5cm}}\Theta_+(-0.59) = -0.121,
+$$
+so
+$$
+\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = 0.469\times 0.447-6.194+0.121\times 0.522 =- 5.921^\circ.
+$$ 
+Finally,
+$$
+\lambda=\bar{\lambda} + q + \theta= 196.501-0.091-5.921=190.489 \simeq 190^\circ 29'.
+$$
+Thus,
+the ecliptic longitude of Jupiter at 00:00 UT on May 5, 2005 AD was 10LI29.
+
+The conjunctions, oppositions, and stations of Jupiter can be investigated
+using analogous methods to those employed earlier to examine the
+conjunctions, oppositions, and stations of Mars. We find that the mean
+time period between successive oppositions or conjunctions of
+Jupiter is 1.09 yr. Furthermore, on average, the retrograde and direct
+stations of Jupiter occur when the epicyclic anomaly takes the
+values $\mu=125.6^\circ$ and $234.4^\circ$, respectively. Finally,
+the mean time period between a retrograde station and the following
+opposition, or between the opposition and the following direct
+station, is 60 JD. The conjunctions, oppositions, and stations of Jupiter
+during the years 2000--2010 AD are shown in Table~\ref{vtjupiter}.
+
+\section{Determination of Ecliptic Longitude of Saturn}
+The ecliptic longitude of Saturn can be determined with the aid of Tables~\ref{vt14}--\ref{vt16}. Table~\ref{vt14} allows
+the mean longitude, $\bar{\lambda}$, and the mean anomaly, $M$, of Saturn to be calculated as functions of
+time. Next, Table~\ref{vt15} permits the equation of center, $q$, and the radial anomaly, $\zeta$, to
+be determined as functions of the mean anomaly. Finally, Table~\ref{vt16} allows the quantities
+$\delta\theta_-$, $\bar{\theta}$, and $\delta\theta_+$ to be calculated as functions of the epicyclic
+anomaly, $\mu$. 
+The procedure for using the tables is analogous to the previously described procedure for
+using the Mars tables.
+One example of this procedure is given in the following.
+
+~\\
+\noindent {\em Example}: May 5,  2005 AD, 00:00 UT:\\
+~\\
+From before, $t-t_0=1\,950.5$ JD, $\lambda_S= 44.602^\circ$, $M_S\simeq 120^\circ$, and
+$\zeta_S= -8.56\times 10^{-3}$. Making use of
+Table~\ref{vt14}, we find:\\
+\begin{tabular}{rrr}
+&&\\
+$t$(JD) & $ \bar{\lambda}(^\circ)$ & $M(^\circ)$\\[-2ex]
+&&\\
++1000 & $33.508$ & $33.482$\\
++900 & $30.157$ & $30.133$\\
++50 & $1.675$ & $1.674$\\
++.5 & $0.017$ & $0.017$\\
+Epoch & $50.059$ & $317.857$\\\cline{2-3}
+&$115.416$ & $383.163$\\\cline{2-3}
+Modulus & $115.416$ & $23.163$\\ 
+&&\\
+\end{tabular}\\
+Given that $M\simeq 23^\circ$, Table~\ref{vt15} yields 
+$$
+q(23^\circ)= 2.561^\circ,\mbox{\hspace{0.5cm}}\zeta(23^\circ)=4.913\times 10^{-2}.
+$$
+Thus, 
+$$
+\mu=\lambda_S - \bar{\lambda}-q = 44.602-115.416 -2.561= -73.375\simeq
+287^\circ,
+$$
+where we have rounded the epicyclic anomaly to the nearest degree. It follows from Table~\ref{vt16}
+that 
+$$
+\delta\theta_-(287^\circ) = -0.353^\circ,\mbox{\hspace{0.5cm}}\bar{\theta}(287^\circ)=-5.551^\circ, \mbox{\hspace{0.5cm}}\delta\theta_+(287^\circ) = -0.405^\circ.
+$$
+Now,
+$$ 
+z= (1-\zeta)/(1-\zeta_S) = (1-4.913\times 10^{-2})/(1+8.56\times 10^{-3}) =
+0.9428.
+$$
+However, from Table~\ref{vtx}, $\bar{z}= 1.00118$ and $\delta z = 0.07059$,
+so
+$$
+\xi = (\bar{z}-z)/\delta z = (1.00118-0.9428)/0.07059 \simeq 0.83.
+$$
+According to Table~\ref{vty}, 
+$$
+\Theta_-(0.83) = 0.071, \mbox{\hspace{0.5cm}}\Theta_+(0.83) = 0.759,
+$$
+so
+$$
+\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = -0.071\times 0.353-5.551-0.759\times 0.405 =- 5.883^\circ.
+$$ 
+Finally,
+$$
+\lambda=\bar{\lambda} + q + \theta= 115.416+2.561-5.883=112.094 \simeq 112^\circ 06'.
+$$
+Thus,
+the ecliptic longitude of Saturn at 00:00 UT on May 5, 2005 AD was 22CN06.
+
+The conjunctions, oppositions, and stations of Saturn can be investigated
+using analogous methods to those employed earlier to examine the
+conjunctions, oppositions, and stations of Mars. We find that the mean
+time period between successive oppositions or conjunctions of
+Saturn is 1.035 yr. Furthermore, on average, the retrograde and direct
+stations of Saturn occur when the epicyclic anomaly takes the
+values $\mu=114.5^\circ$ and $245.5^\circ$, respectively. Finally,
+the mean time period between a retrograde station and the following
+opposition, or between the opposition and the following direct
+station, is 69 JD. The conjunctions, oppositions, and stations of Saturn
+during the years 2000--2010 AD are shown in Table~\ref{vtsaturn}.
+
+Incidentally, the information contained in the mean motion tables, \ref{vt8}, \ref{vt11}, and \ref{vt14}, as well as the deferential anomaly tables, \ref{vt9}, \ref{vt12}, and \ref{vt15}, is essentially equivalent to that contained in 
+the ``Tables of the mean longitudinal motion and anomalies of the five stars" (Κανόνες μέσων κινήσεων μήκους τε καὶ ἀνωμαλίας τῶν πέντε ἀστέρων)
+that appear in Section~4 of Book~IX of the Almagest. Likewise, the information contained in the epicyclic anomaly tables, \ref{vt10}, \ref{vt13}, and \ref{vt16}, is equivalent
+to that contained in the ``Tables of the longitudinal corrections of the five planets" (Κανόνες τῆς κατὰ μῆκος τῶν πέντε πλανωμένων διευκρινήσεως) that appear in Section~11 of Book~XI of the Almagest. The computation of the stations of the superior planets is
+discussed in Book~XII of the Almagest. 
+
+\section{Tables}
+\begin{table}
+\centering
+\begin{tabular}{l|cccc}
+Planet & $\bar{z}$ & $\delta z$ & $z_{\rm min}$ & $z_{\rm max}$\\\hline
+&&&&\\[-2ex]
+Mercury & 1.04774 & 0.23216 & 0.81558 & 1.27990\\
+Venus & 1.00016 & 0.02349 & 0.97667 & 1.02365\\
+Mars & 1.00184 & 0.11014 & 0.89170 & 1.11198\\
+Jupiter & 1.00109 & 0.06512 & 0.93597 & 1.06602\\
+Saturn & 1.00118 & 0.07059 & 0.93059 & 1.07177\\
+\end{tabular}
+\caption{Constants associated with the epicycles of the inferior and superior planets.}\label{vtx}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{ccc|ccc|ccc|ccc}
+$\xi$ & $\Theta_-$ & $\Theta_+$ & $\xi$ & $\Theta_-$ & $\Theta_+$ & $\xi$ & $\Theta_-$ & $\Theta_+$
+&$\xi$ & $\Theta_-$ & $\Theta_+$\\\hline
+&&&&&&&&&&&\\[-2ex]
+  0.00 &   0.000 &   0.000 &   0.25 &   0.094 &   0.156 &   0.50 &   0.125 &   0.375 &   0.75 &   0.094 &   0.656\\
+  0.01 &   0.005 &   0.005 &   0.26 &   0.096 &   0.164 &   0.51 &   0.125 &   0.385 &   0.76 &   0.091 &   0.669\\
+  0.02 &   0.010 &   0.010 &   0.27 &   0.099 &   0.171 &   0.52 &   0.125 &   0.395 &   0.77 &   0.089 &   0.681\\
+  0.03 &   0.015 &   0.015 &   0.28 &   0.101 &   0.179 &   0.53 &   0.125 &   0.405 &   0.78 &   0.086 &   0.694\\
+  0.04 &   0.019 &   0.021 &   0.29 &   0.103 &   0.187 &   0.54 &   0.124 &   0.416 &   0.79 &   0.083 &   0.707\\
+  0.05 &   0.024 &   0.026 &   0.30 &   0.105 &   0.195 &   0.55 &   0.124 &   0.426 &   0.80 &   0.080 &   0.720\\
+  0.06 &   0.028 &   0.032 &   0.31 &   0.107 &   0.203 &   0.56 &   0.123 &   0.437 &   0.81 &   0.077 &   0.733\\
+  0.07 &   0.033 &   0.037 &   0.32 &   0.109 &   0.211 &   0.57 &   0.123 &   0.447 &   0.82 &   0.074 &   0.746\\
+  0.08 &   0.037 &   0.043 &   0.33 &   0.111 &   0.219 &   0.58 &   0.122 &   0.458 &   0.83 &   0.071 &   0.759\\
+  0.09 &   0.041 &   0.049 &   0.34 &   0.112 &   0.228 &   0.59 &   0.121 &   0.469 &   0.84 &   0.067 &   0.773\\
+  0.10 &   0.045 &   0.055 &   0.35 &   0.114 &   0.236 &   0.60 &   0.120 &   0.480 &   0.85 &   0.064 &   0.786\\
+  0.11 &   0.049 &   0.061 &   0.36 &   0.115 &   0.245 &   0.61 &   0.119 &   0.491 &   0.86 &   0.060 &   0.800\\
+  0.12 &   0.053 &   0.067 &   0.37 &   0.117 &   0.253 &   0.62 &   0.118 &   0.502 &   0.87 &   0.057 &   0.813\\
+  0.13 &   0.057 &   0.073 &   0.38 &   0.118 &   0.262 &   0.63 &   0.117 &   0.513 &   0.88 &   0.053 &   0.827\\
+  0.14 &   0.060 &   0.080 &   0.39 &   0.119 &   0.271 &   0.64 &   0.115 &   0.525 &   0.89 &   0.049 &   0.841\\
+  0.15 &   0.064 &   0.086 &   0.40 &   0.120 &   0.280 &   0.65 &   0.114 &   0.536 &   0.90 &   0.045 &   0.855\\
+  0.16 &   0.067 &   0.093 &   0.41 &   0.121 &   0.289 &   0.66 &   0.112 &   0.548 &   0.91 &   0.041 &   0.869\\
+  0.17 &   0.071 &   0.099 &   0.42 &   0.122 &   0.298 &   0.67 &   0.111 &   0.559 &   0.92 &   0.037 &   0.883\\
+  0.18 &   0.074 &   0.106 &   0.43 &   0.123 &   0.307 &   0.68 &   0.109 &   0.571 &   0.93 &   0.033 &   0.897\\
+  0.19 &   0.077 &   0.113 &   0.44 &   0.123 &   0.317 &   0.69 &   0.107 &   0.583 &   0.94 &   0.028 &   0.912\\
+  0.20 &   0.080 &   0.120 &   0.45 &   0.124 &   0.326 &   0.70 &   0.105 &   0.595 &   0.95 &   0.024 &   0.926\\
+  0.21 &   0.083 &   0.127 &   0.46 &   0.124 &   0.336 &   0.71 &   0.103 &   0.607 &   0.96 &   0.019 &   0.941\\
+  0.22 &   0.086 &   0.134 &   0.47 &   0.125 &   0.345 &   0.72 &   0.101 &   0.619 &   0.97 &   0.015 &   0.955\\
+  0.23 &   0.089 &   0.141 &   0.48 &   0.125 &   0.355 &   0.73 &   0.099 &   0.631 &   0.98 &   0.010 &   0.970\\
+  0.24 &   0.091 &   0.149 &   0.49 &   0.125 &   0.365 &   0.74 &   0.096 &   0.644 &   0.99 &   0.005 &   0.985\\
+  0.25 &   0.094 &   0.156 &   0.50 &   0.125 &   0.375 &   0.75 &   0.094 &   0.656 &   1.00 &  0.000 &   1.000\\
+\end{tabular}
+\caption{Epicyclic interpolation coefficients. Note that $\Theta_\pm (\xi) = - \Theta_\mp (-\xi)$.}\label{vty}
+\end{table}
+
+\newpage
+\begin{table}
+\centering
+\begin{tabular}{rrrr|rrrr}
+$\Delta t$(JD)& $\Delta\bar{\lambda}(^\circ)$ &  $\Delta M(^\circ)$ & $\Delta \bar{F}(^\circ)$& $\Delta t$(JD) & $\Delta\bar{\lambda}(^\circ)$ & $\Delta M(^\circ)$ 
+&$\Delta \bar{F}(^\circ)$\\ \hline
+&&&&&&&\\[-1.75ex]
+10\,000 & 200.712 & 200.208 & 200.409 & 1\,000 & 164.071 & 164.021 & 164.041\\
+20\,000 &  41.424 &  40.415 &  40.819 & 2\,000 & 328.142 & 328.042 & 328.082\\
+30\,000 & 242.135 & 240.623 & 241.228 & 3\,000 & 132.214 & 132.062 & 132.123\\
+40\,000 &  82.847 &  80.830 &  81.638 & 4\,000 & 296.285 & 296.083 & 296.164\\
+50\,000 & 283.559 & 281.038 & 282.047 & 5\,000 & 100.356 & 100.104 & 100.205\\
+60\,000 & 124.271 & 121.246 & 122.456 & 6\,000 & 264.427 & 264.125 & 264.246\\
+70\,000 & 324.983 & 321.453 & 322.866 & 7\,000 &  68.498 &  68.145 &  68.287\\
+80\,000 & 165.694 & 161.661 & 163.275 & 8\,000 & 232.569 & 232.166 & 232.328\\
+90\,000 &   6.406 &   1.868 &   3.685 & 9\,000 &  36.641 &  36.187 &  36.368\\
+&&&&&&&\\
+100 &  52.407 &  52.402 &  52.404 & 10 &   5.241 &   5.240 &   5.240\\
+200 & 104.814 & 104.804 & 104.808 & 20 &  10.481 &  10.480 &  10.481\\
+300 & 157.221 & 157.206 & 157.212 & 30 &  15.722 &  15.721 &  15.721\\
+400 & 209.628 & 209.608 & 209.616 & 40 &  20.963 &  20.961 &  20.962\\
+500 & 262.036 & 262.010 & 262.020 & 50 &  26.204 &  26.201 &  26.202\\
+600 & 314.443 & 314.412 & 314.425 & 60 &  31.444 &  31.441 &  31.442\\
+700 &   6.850 &   6.815 &   6.829 & 70 &  36.685 &  36.681 &  36.683\\
+800 &  59.257 &  59.217 &  59.233 & 80 &  41.926 &  41.922 &  41.923\\
+900 & 111.664 & 111.619 & 111.637 & 90 &  47.166 &  47.162 &  47.164\\
+&&&&&&&\\
+1 &   0.524 &   0.524 &   0.524 & 0.1 &   0.052 &   0.052 &   0.052\\
+2 &   1.048 &   1.048 &   1.048 & 0.2 &   0.105 &   0.105 &   0.105\\
+3 &   1.572 &   1.572 &   1.572 & 0.3 &   0.157 &   0.157 &   0.157\\
+4 &   2.096 &   2.096 &   2.096 & 0.4 &   0.210 &   0.210 &   0.210\\
+5 &   2.620 &   2.620 &   2.620 & 0.5 &   0.262 &   0.262 &   0.262\\
+6 &   3.144 &   3.144 &   3.144 & 0.6 &   0.314 &   0.314 &   0.314\\
+7 &   3.668 &   3.668 &   3.668 & 0.7 &   0.367 &   0.367 &   0.367\\
+8 &   4.193 &   4.192 &   4.192 & 0.8 &   0.419 &   0.419 &   0.419\\
+9 &   4.717 &   4.716 &   4.716 & 0.9 &   0.472 &   0.472 &   0.472\\
+\end{tabular}
+\caption{ Mean motion of Mars.  Here, $\Delta t = t-t_0$, $\Delta\bar{\lambda} = \bar{\lambda}-\bar{\lambda}_0$, $\Delta M = M - M_0$,
+and $\Delta\bar{F} = \bar{F}-\bar{F}_0$.  At epoch  ($t_0 = 2\,451\,545.0$ JD), $\bar{\lambda}_0 = 355.460^\circ$, $M_0 = 19.388^\circ$, and
+$\bar{F}_0 =305.796^\circ$. }\label{vt8}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrr|rrr|rrr|rrr}
+$M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$& $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$\\\hline
+&&&&&&&&&&&\\[-1.75ex]
+ 0 &   0.000 &  9.339 &  90 &  10.702 & $-$0.872 & 180 &   0.000 & $-$9.339 & 270 & $-$10.702 & $-$0.872\\
+  2 &   0.417 &  9.333 &  92 &  10.652 & $-$1.197 & 182 &  $-$0.330 & $-$9.335 & 272 & $-$10.739 & $-$0.545\\
+  4 &   0.833 &  9.312 &  94 &  10.589 & $-$1.519 & 184 &  $-$0.660 & $-$9.321 & 274 & $-$10.763 & $-$0.217\\
+  6 &   1.249 &  9.279 &  96 &  10.514 & $-$1.839 & 186 &  $-$0.989 & $-$9.298 & 276 & $-$10.773 &  0.114\\
+  8 &   1.662 &  9.232 &  98 &  10.426 & $-$2.155 & 188 &  $-$1.317 & $-$9.265 & 278 & $-$10.770 &  0.444\\
+ 10 &   2.072 &  9.171 & 100 &  10.326 & $-$2.468 & 190 &  $-$1.645 & $-$9.224 & 280 & $-$10.753 &  0.776\\
+ 12 &   2.479 &  9.098 & 102 &  10.214 & $-$2.776 & 192 &  $-$1.971 & $-$9.173 & 282 & $-$10.722 &  1.107\\
+ 14 &   2.882 &  9.011 & 104 &  10.091 & $-$3.081 & 194 &  $-$2.296 & $-$9.113 & 284 & $-$10.678 &  1.438\\
+ 16 &   3.281 &  8.911 & 106 &   9.957 & $-$3.380 & 196 &  $-$2.619 & $-$9.044 & 286 & $-$10.619 &  1.768\\
+ 18 &   3.674 &  8.799 & 108 &   9.811 & $-$3.675 & 198 &  $-$2.940 & $-$8.966 & 288 & $-$10.546 &  2.097\\
+ 20 &   4.062 &  8.674 & 110 &   9.655 & $-$3.964 & 200 &  $-$3.259 & $-$8.878 & 290 & $-$10.458 &  2.424\\
+ 22 &   4.443 &  8.537 & 112 &   9.489 & $-$4.248 & 202 &  $-$3.575 & $-$8.782 & 292 & $-$10.357 &  2.749\\
+ 24 &   4.817 &  8.388 & 114 &   9.313 & $-$4.527 & 204 &  $-$3.889 & $-$8.676 & 294 & $-$10.241 &  3.071\\
+ 26 &   5.184 &  8.227 & 116 &   9.127 & $-$4.799 & 206 &  $-$4.199 & $-$8.562 & 296 & $-$10.111 &  3.389\\
+ 28 &   5.542 &  8.054 & 118 &   8.932 & $-$5.065 & 208 &  $-$4.506 & $-$8.438 & 298 &  $-$9.967 &  3.705\\
+ 30 &   5.892 &  7.870 & 120 &   8.727 & $-$5.324 & 210 &  $-$4.810 & $-$8.306 & 300 &  $-$9.809 &  4.016\\
+ 32 &   6.233 &  7.675 & 122 &   8.514 & $-$5.576 & 212 &  $-$5.110 & $-$8.165 & 302 &  $-$9.637 &  4.322\\
+ 34 &   6.564 &  7.470 & 124 &   8.293 & $-$5.822 & 214 &  $-$5.405 & $-$8.015 & 304 &  $-$9.452 &  4.623\\
+ 36 &   6.885 &  7.254 & 126 &   8.064 & $-$6.060 & 216 &  $-$5.696 & $-$7.857 & 306 &  $-$9.252 &  4.919\\
+ 38 &   7.195 &  7.029 & 128 &   7.827 & $-$6.292 & 218 &  $-$5.983 & $-$7.690 & 308 &  $-$9.040 &  5.208\\
+ 40 &   7.494 &  6.794 & 130 &   7.583 & $-$6.515 & 220 &  $-$6.264 & $-$7.515 & 310 &  $-$8.814 &  5.491\\
+ 42 &   7.782 &  6.550 & 132 &   7.332 & $-$6.731 & 222 &  $-$6.540 & $-$7.331 & 312 &  $-$8.575 &  5.768\\
+ 44 &   8.059 &  6.297 & 134 &   7.074 & $-$6.939 & 224 &  $-$6.810 & $-$7.139 & 314 &  $-$8.323 &  6.036\\
+ 46 &   8.323 &  6.036 & 136 &   6.810 & $-$7.139 & 226 &  $-$7.074 & $-$6.939 & 316 &  $-$8.059 &  6.297\\
+ 48 &   8.575 &  5.768 & 138 &   6.540 & $-$7.331 & 228 &  $-$7.332 & $-$6.731 & 318 &  $-$7.782 &  6.550\\
+ 50 &   8.814 &  5.491 & 140 &   6.264 & $-$7.515 & 230 &  $-$7.583 & $-$6.515 & 320 &  $-$7.494 &  6.794\\
+ 52 &   9.040 &  5.208 & 142 &   5.983 & $-$7.690 & 232 &  $-$7.827 & $-$6.292 & 322 &  $-$7.195 &  7.029\\
+ 54 &   9.252 &  4.919 & 144 &   5.696 & $-$7.857 & 234 &  $-$8.064 & $-$6.060 & 324 &  $-$6.885 &  7.254\\
+ 56 &   9.452 &  4.623 & 146 &   5.405 & $-$8.015 & 236 &  $-$8.293 & $-$5.822 & 326 &  $-$6.564 &  7.470\\
+ 58 &   9.637 &  4.322 & 148 &   5.110 & $-$8.165 & 238 &  $-$8.514 & $-$5.576 & 328 &  $-$6.233 &  7.675\\
+ 60 &   9.809 &  4.016 & 150 &   4.810 & $-$8.306 & 240 &  $-$8.727 & $-$5.324 & 330 &  $-$5.892 &  7.870\\
+ 62 &   9.967 &  3.705 & 152 &   4.506 & $-$8.438 & 242 &  $-$8.932 & $-$5.065 & 332 &  $-$5.542 &  8.054\\
+ 64 &  10.111 &  3.389 & 154 &   4.199 & $-$8.562 & 244 &  $-$9.127 & $-$4.799 & 334 &  $-$5.184 &  8.227\\
+ 66 &  10.241 &  3.071 & 156 &   3.889 & $-$8.676 & 246 &  $-$9.313 & $-$4.527 & 336 &  $-$4.817 &  8.388\\
+ 68 &  10.357 &  2.749 & 158 &   3.575 & $-$8.782 & 248 &  $-$9.489 & $-$4.248 & 338 &  $-$4.443 &  8.537\\
+ 70 &  10.458 &  2.424 & 160 &   3.259 & $-$8.878 & 250 &  $-$9.655 & $-$3.964 & 340 &  $-$4.062 &  8.674\\
+ 72 &  10.546 &  2.097 & 162 &   2.940 & $-$8.966 & 252 &  $-$9.811 & $-$3.675 & 342 &  $-$3.674 &  8.799\\
+ 74 &  10.619 &  1.768 & 164 &   2.619 & $-$9.044 & 254 &  $-$9.957 & $-$3.380 & 344 &  $-$3.281 &  8.911\\
+ 76 &  10.678 &  1.438 & 166 &   2.296 & $-$9.113 & 256 & $-$10.091 & $-$3.081 & 346 &  $-$2.882 &  9.011\\
+ 78 &  10.722 &  1.107 & 168 &   1.971 & $-$9.173 & 258 & $-$10.214 & $-$2.776 & 348 &  $-$2.479 &  9.098\\
+ 80 &  10.753 &  0.776 & 170 &   1.645 & $-$9.224 & 260 & $-$10.326 & $-$2.468 & 350 &  $-$2.072 &  9.171\\
+ 82 &  10.770 &  0.444 & 172 &   1.317 & $-$9.265 & 262 & $-$10.426 & $-$2.155 & 352 &  $-$1.662 &  9.232\\
+ 84 &  10.773 &  0.114 & 174 &   0.989 & $-$9.298 & 264 & $-$10.514 & $-$1.839 & 354 &  $-$1.249 &  9.279\\
+ 86 &  10.763 & $-$0.217 & 176 &   0.660 & $-$9.321 & 266 & $-$10.589 & $-$1.519 & 356 &  $-$0.833 &  9.312\\
+ 88 &  10.739 & $-$0.545 & 178 &   0.330 & $-$9.335 & 268 & $-$10.652 & $-$1.197 & 358 &  $-$0.417 &  9.333\\
+ 90 &  10.702 & $-$0.872 & 180 &   0.000 & $-$9.339 & 270 & $-$10.702 & $-$0.872 & 360 &  $-$0.000 &  9.339\\ 
+\end{tabular}}
+\caption{Deferential anomalies of Mars.}\label{vt9}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrrr|rrrr|rrrr|rrrr}
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ &
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ &
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ &
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ \\\hline
+&&&&&&&&&&&&&&&\\[-1.75ex]
+    0 & \tiny{  0.000} &   0.000 & \tiny{  0.000} &  45 & \tiny{  1.159} &  17.566 & \tiny{  1.329} &  90 & \tiny{  2.679} &  33.228 & \tiny{  3.125} & 135 & \tiny{  5.180} &  40.793 & \tiny{  6.547}\\
+  1 & \tiny{  0.025} &   0.396 & \tiny{  0.028} &  46 & \tiny{  1.187} &  17.945 & \tiny{  1.362} &  91 & \tiny{  2.721} &  33.527 & \tiny{  3.176} & 136 & \tiny{  5.246} &  40.716 & \tiny{  6.658}\\
+  2 & \tiny{  0.049} &   0.792 & \tiny{  0.056} &  47 & \tiny{  1.216} &  18.322 & \tiny{  1.394} &  92 & \tiny{  2.764} &  33.822 & \tiny{  3.228} & 137 & \tiny{  5.312} &  40.619 & \tiny{  6.771}\\
+  3 & \tiny{  0.074} &   1.187 & \tiny{  0.084} &  48 & \tiny{  1.244} &  18.699 & \tiny{  1.427} &  93 & \tiny{  2.807} &  34.114 & \tiny{  3.281} & 138 & \tiny{  5.378} &  40.503 & \tiny{  6.885}\\
+  4 & \tiny{  0.099} &   1.583 & \tiny{  0.113} &  49 & \tiny{  1.273} &  19.075 & \tiny{  1.461} &  94 & \tiny{  2.851} &  34.403 & \tiny{  3.335} & 139 & \tiny{  5.442} &  40.366 & \tiny{  7.001}\\
+  5 & \tiny{  0.123} &   1.979 & \tiny{  0.141} &  50 & \tiny{  1.302} &  19.450 & \tiny{  1.494} &  95 & \tiny{  2.895} &  34.688 & \tiny{  3.390} & 140 & \tiny{  5.506} &  40.206 & \tiny{  7.118}\\
+  6 & \tiny{  0.148} &   2.374 & \tiny{  0.169} &  51 & \tiny{  1.331} &  19.824 & \tiny{  1.528} &  96 & \tiny{  2.940} &  34.969 & \tiny{  3.445} & 141 & \tiny{  5.568} &  40.024 & \tiny{  7.235}\\
+  7 & \tiny{  0.173} &   2.770 & \tiny{  0.197} &  52 & \tiny{  1.360} &  20.196 & \tiny{  1.562} &  97 & \tiny{  2.985} &  35.246 & \tiny{  3.501} & 142 & \tiny{  5.628} &  39.817 & \tiny{  7.354}\\
+  8 & \tiny{  0.197} &   3.165 & \tiny{  0.226} &  53 & \tiny{  1.390} &  20.568 & \tiny{  1.596} &  98 & \tiny{  3.031} &  35.519 & \tiny{  3.558} & 143 & \tiny{  5.687} &  39.584 & \tiny{  7.474}\\
+  9 & \tiny{  0.222} &   3.560 & \tiny{  0.254} &  54 & \tiny{  1.419} &  20.939 & \tiny{  1.630} &  99 & \tiny{  3.078} &  35.788 & \tiny{  3.616} & 144 & \tiny{  5.744} &  39.325 & \tiny{  7.594}\\
+ 10 & \tiny{  0.247} &   3.955 & \tiny{  0.282} &  55 & \tiny{  1.449} &  21.309 & \tiny{  1.665} & 100 & \tiny{  3.125} &  36.053 & \tiny{  3.675} & 145 & \tiny{  5.797} &  39.038 & \tiny{  7.714}\\
+ 11 & \tiny{  0.272} &   4.350 & \tiny{  0.311} &  56 & \tiny{  1.479} &  21.677 & \tiny{  1.700} & 101 & \tiny{  3.173} &  36.313 & \tiny{  3.735} & 146 & \tiny{  5.848} &  38.721 & \tiny{  7.833}\\
+ 12 & \tiny{  0.297} &   4.745 & \tiny{  0.339} &  57 & \tiny{  1.510} &  22.045 & \tiny{  1.735} & 102 & \tiny{  3.221} &  36.568 & \tiny{  3.796} & 147 & \tiny{  5.895} &  38.373 & \tiny{  7.952}\\
+ 13 & \tiny{  0.322} &   5.140 & \tiny{  0.368} &  58 & \tiny{  1.540} &  22.411 & \tiny{  1.771} & 103 & \tiny{  3.270} &  36.819 & \tiny{  3.857} & 148 & \tiny{  5.938} &  37.992 & \tiny{  8.069}\\
+ 14 & \tiny{  0.347} &   5.534 & \tiny{  0.396} &  59 & \tiny{  1.571} &  22.776 & \tiny{  1.807} & 104 & \tiny{  3.320} &  37.065 & \tiny{  3.920} & 149 & \tiny{  5.976} &  37.577 & \tiny{  8.184}\\
+ 15 & \tiny{  0.372} &   5.928 & \tiny{  0.425} &  60 & \tiny{  1.602} &  23.139 & \tiny{  1.843} & 105 & \tiny{  3.370} &  37.306 & \tiny{  3.984} & 150 & \tiny{  6.009} &  37.126 & \tiny{  8.297}\\
+ 16 & \tiny{  0.397} &   6.322 & \tiny{  0.453} &  61 & \tiny{  1.633} &  23.502 & \tiny{  1.879} & 106 & \tiny{  3.421} &  37.541 & \tiny{  4.049} & 151 & \tiny{  6.036} &  36.638 & \tiny{  8.405}\\
+ 17 & \tiny{  0.422} &   6.716 & \tiny{  0.482} &  62 & \tiny{  1.665} &  23.863 & \tiny{  1.916} & 107 & \tiny{  3.472} &  37.771 & \tiny{  4.115} & 152 & \tiny{  6.056} &  36.110 & \tiny{  8.509}\\
+ 18 & \tiny{  0.447} &   7.110 & \tiny{  0.511} &  63 & \tiny{  1.696} &  24.222 & \tiny{  1.953} & 108 & \tiny{  3.525} &  37.996 & \tiny{  4.182} & 153 & \tiny{  6.069} &  35.541 & \tiny{  8.607}\\
+ 19 & \tiny{  0.472} &   7.503 & \tiny{  0.540} &  64 & \tiny{  1.728} &  24.581 & \tiny{  1.991} & 109 & \tiny{  3.578} &  38.214 & \tiny{  4.251} & 154 & \tiny{  6.072} &  34.929 & \tiny{  8.698}\\
+ 20 & \tiny{  0.497} &   7.896 & \tiny{  0.568} &  65 & \tiny{  1.761} &  24.938 & \tiny{  2.029} & 110 & \tiny{  3.631} &  38.426 & \tiny{  4.321} & 155 & \tiny{  6.066} &  34.271 & \tiny{  8.780}\\
+ 21 & \tiny{  0.523} &   8.288 & \tiny{  0.597} &  66 & \tiny{  1.793} &  25.293 & \tiny{  2.067} & 111 & \tiny{  3.686} &  38.632 & \tiny{  4.391} & 156 & \tiny{  6.050} &  33.567 & \tiny{  8.852}\\
+ 22 & \tiny{  0.548} &   8.680 & \tiny{  0.626} &  67 & \tiny{  1.826} &  25.647 & \tiny{  2.106} & 112 & \tiny{  3.741} &  38.831 & \tiny{  4.464} & 157 & \tiny{  6.022} &  32.813 & \tiny{  8.911}\\
+ 23 & \tiny{  0.573} &   9.072 & \tiny{  0.656} &  68 & \tiny{  1.859} &  25.999 & \tiny{  2.145} & 113 & \tiny{  3.796} &  39.023 & \tiny{  4.537} & 158 & \tiny{  5.980} &  32.007 & \tiny{  8.955}\\
+ 24 & \tiny{  0.599} &   9.464 & \tiny{  0.685} &  69 & \tiny{  1.893} &  26.349 & \tiny{  2.184} & 114 & \tiny{  3.853} &  39.209 & \tiny{  4.612} & 159 & \tiny{  5.925} &  31.149 & \tiny{  8.982}\\
+ 25 & \tiny{  0.625} &   9.855 & \tiny{  0.714} &  70 & \tiny{  1.927} &  26.698 & \tiny{  2.224} & 115 & \tiny{  3.910} &  39.386 & \tiny{  4.688} & 160 & \tiny{  5.854} &  30.235 & \tiny{  8.988}\\
+ 26 & \tiny{  0.650} &  10.246 & \tiny{  0.744} &  71 & \tiny{  1.961} &  27.045 & \tiny{  2.264} & 116 & \tiny{  3.968} &  39.556 & \tiny{  4.765} & 161 & \tiny{  5.766} &  29.265 & \tiny{  8.972}\\
+ 27 & \tiny{  0.676} &  10.636 & \tiny{  0.773} &  72 & \tiny{  1.995} &  27.390 & \tiny{  2.305} & 117 & \tiny{  4.026} &  39.718 & \tiny{  4.844} & 162 & \tiny{  5.660} &  28.236 & \tiny{  8.929}\\
+ 28 & \tiny{  0.702} &  11.026 & \tiny{  0.803} &  73 & \tiny{  2.030} &  27.734 & \tiny{  2.346} & 118 & \tiny{  4.086} &  39.872 & \tiny{  4.925} & 163 & \tiny{  5.535} &  27.146 & \tiny{  8.855}\\
+ 29 & \tiny{  0.728} &  11.415 & \tiny{  0.833} &  74 & \tiny{  2.065} &  28.075 & \tiny{  2.387} & 119 & \tiny{  4.146} &  40.017 & \tiny{  5.007} & 164 & \tiny{  5.389} &  25.996 & \tiny{  8.747}\\
+ 30 & \tiny{  0.754} &  11.804 & \tiny{  0.863} &  75 & \tiny{  2.100} &  28.415 & \tiny{  2.429} & 120 & \tiny{  4.206} &  40.153 & \tiny{  5.091} & 165 & \tiny{  5.221} &  24.783 & \tiny{  8.601}\\
+ 31 & \tiny{  0.780} &  12.192 & \tiny{  0.893} &  76 & \tiny{  2.136} &  28.753 & \tiny{  2.472} & 121 & \tiny{  4.268} &  40.279 & \tiny{  5.176} & 166 & \tiny{  5.030} &  23.506 & \tiny{  8.411}\\
+ 32 & \tiny{  0.806} &  12.580 & \tiny{  0.923} &  77 & \tiny{  2.172} &  29.088 & \tiny{  2.515} & 122 & \tiny{  4.330} &  40.396 & \tiny{  5.262} & 167 & \tiny{  4.815} &  22.167 & \tiny{  8.174}\\
+ 33 & \tiny{  0.833} &  12.968 & \tiny{  0.953} &  78 & \tiny{  2.209} &  29.421 & \tiny{  2.558} & 123 & \tiny{  4.393} &  40.502 & \tiny{  5.351} & 168 & \tiny{  4.576} &  20.764 & \tiny{  7.886}\\
+ 34 & \tiny{  0.859} &  13.354 & \tiny{  0.984} &  79 & \tiny{  2.246} &  29.752 & \tiny{  2.602} & 124 & \tiny{  4.456} &  40.598 & \tiny{  5.441} & 169 & \tiny{  4.311} &  19.299 & \tiny{  7.541}\\
+ 35 & \tiny{  0.886} &  13.741 & \tiny{  1.014} &  80 & \tiny{  2.283} &  30.081 & \tiny{  2.647} & 125 & \tiny{  4.520} &  40.683 & \tiny{  5.533} & 170 & \tiny{  4.021} &  17.774 & \tiny{  7.138}\\
+ 36 & \tiny{  0.913} &  14.126 & \tiny{  1.045} &  81 & \tiny{  2.321} &  30.408 & \tiny{  2.692} & 126 & \tiny{  4.584} &  40.756 & \tiny{  5.626} & 171 & \tiny{  3.707} &  16.189 & \tiny{  6.673}\\
+ 37 & \tiny{  0.939} &  14.511 & \tiny{  1.076} &  82 & \tiny{  2.359} &  30.732 & \tiny{  2.737} & 127 & \tiny{  4.649} &  40.816 & \tiny{  5.721} & 172 & \tiny{  3.368} &  14.549 & \tiny{  6.145}\\
+ 38 & \tiny{  0.966} &  14.896 & \tiny{  1.107} &  83 & \tiny{  2.397} &  31.054 & \tiny{  2.784} & 128 & \tiny{  4.715} &  40.864 & \tiny{  5.818} & 173 & \tiny{  3.005} &  12.857 & \tiny{  5.553}\\
+ 39 & \tiny{  0.994} &  15.279 & \tiny{  1.138} &  84 & \tiny{  2.436} &  31.373 & \tiny{  2.830} & 129 & \tiny{  4.780} &  40.899 & \tiny{  5.917} & 174 & \tiny{  2.621} &  11.116 & \tiny{  4.899}\\
+ 40 & \tiny{  1.021} &  15.662 & \tiny{  1.169} &  85 & \tiny{  2.475} &  31.689 & \tiny{  2.878} & 130 & \tiny{  4.847} &  40.920 & \tiny{  6.018} & 175 & \tiny{  2.217} &   9.333 & \tiny{  4.186}\\
+ 41 & \tiny{  1.048} &  16.045 & \tiny{  1.201} &  86 & \tiny{  2.515} &  32.003 & \tiny{  2.926} & 131 & \tiny{  4.913} &  40.926 & \tiny{  6.120} & 176 & \tiny{  1.796} &   7.513 & \tiny{  3.420}\\
+ 42 & \tiny{  1.076} &  16.426 & \tiny{  1.233} &  87 & \tiny{  2.555} &  32.314 & \tiny{  2.975} & 132 & \tiny{  4.980} &  40.918 & \tiny{  6.224} & 177 & \tiny{  1.360} &   5.662 & \tiny{  2.608}\\
+ 43 & \tiny{  1.103} &  16.807 & \tiny{  1.265} &  88 & \tiny{  2.596} &  32.622 & \tiny{  3.024} & 133 & \tiny{  5.047} &  40.893 & \tiny{  6.330} & 178 & \tiny{  0.913} &   3.788 & \tiny{  1.760}\\
+ 44 & \tiny{  1.131} &  17.187 & \tiny{  1.297} &  89 & \tiny{  2.637} &  32.927 & \tiny{  3.074} & 134 & \tiny{  5.113} &  40.851 & \tiny{  6.438} & 179 & \tiny{  0.458} &   1.898 & \tiny{  0.886}\\
+ 45 & \tiny{  1.159} &  17.566 & \tiny{  1.329} &  90 & \tiny{  2.679} &  33.228 & \tiny{  3.125} & 135 & \tiny{  5.180} &  40.793 & \tiny{  6.547} & 180 & \tiny{  0.000} &   0.000 & \tiny{  0.000}\\ 
+\end{tabular}}
+\caption{Epicyclic anomalies of Mars. All quantities are in degrees. Note that $\bar{\theta}(360^\circ-\mu) = -\bar{\theta}(\mu)$, and $\delta\theta_{\pm}(360^\circ-\mu) = -\delta\theta_{\pm}(\mu)$. }\label{vt10}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\begin{tabular}{lcl}
+Event & Date & $\lambda$ \\\hline
+&&\\[-1.75ex]
+Conjunction & 01/07/2000 & 10CN13\\
+Station (R) & 12/05/2001 & 29SG00\\
+Opposition & 13/06/2001 & 22SG44\\
+Station (D) & 19/07/2001 & 15SG02\\
+Conjunction & 10/08/2002 & 18LE05\\
+Station (R) & 29/07/2003 & 10PI20\\
+Opposition & 28/08/2003 & 05PI03\\
+Station (D) & 27/09/2003 & 29AQ55\\
+Conjunction & 15/09/2004 & 23VI06\\
+Station (R) & 02/10/2005 & 23TA31\\
+Opposition & 07/11/2005 & 15TA06\\
+Station (D) & 09/12/2005 & 08TA24\\
+Conjunction & 23/10/2006 & 29LI44\\
+Station (R) & 15/11/2007 & 12CN36\\
+Opposition & 24/12/2007 & 02CN45\\
+Station (D) & 31/01/2008 & 24GE15\\
+Conjunction & 05/12/2008 & 14SG08\\
+Station (R) & 20/12/2009 & 19LE35\\
+Opposition & 29/01/2010 & 09LE45\\
+Station (D) & 10/03/2010 & 00LE20\\
+Conjunction & 04/02/2011 & 15AQ42\\
+Station (R) & 24/01/2012 & 23VI01\\
+Opposition & 03/03/2012 & 13VI42\\
+Station (D) & 14/04/2012 & 03VI51\\
+Conjunction & 17/04/2013 & 28AR06\\
+Station (R) & 01/03/2014 & 27LI31\\
+Opposition & 08/04/2014 & 19LI00\\
+Station (D) & 20/05/2014 & 09LI04\\
+Conjunction & 14/06/2015 & 23GE28\\
+Station (R) & 17/04/2016 & 08SG45\\
+Opposition & 22/05/2016 & 01SG43\\
+Station (D) & 29/06/2016 & 22SC55\\
+Conjunction & 27/07/2017 & 04LE11\\
+Station (R) & 27/06/2018 & 09AQ35\\
+Opposition & 27/07/2018 & 04AQ22\\
+Station (D) & 27/08/2018 & 28CP43\\
+Conjunction & 02/09/2019 & 09VI43\\
+Station (R) & 10/09/2020 & 28AR08\\
+Opposition & 13/10/2020 & 20AR59\\
+Station (D) & 13/11/2020 & 15AR05\\
+\end{tabular}
+\caption{The conjunctions, oppositions, and stations of Mars
+during the years 2000--2020 AD. (R) indicates a retrograde station, and (D)
+a direct station.}\label{vtmars}
+\end{table}
+
+\newpage
+\begin{table}
+\centering
+\begin{tabular}{rrrr|rrrr}
+$\Delta t$(JD)& $\Delta\bar{\lambda}(^\circ)$ &  $\Delta M(^\circ)$ & $\Delta \bar{F}(^\circ)$& $\Delta t$(JD) & $\Delta\bar{\lambda}(^\circ)$ & $\Delta M(^\circ)$ 
+&$\Delta \bar{F}(^\circ)$\\ \hline
+&&&&&&&\\[-1.75ex]
+10\,000 & 111.251 & 110.810 & 110.812 & 1\,000 &  83.125 &  83.081 &  83.081\\
+20\,000 & 222.501 & 221.620 & 221.624 & 2\,000 & 166.250 & 166.162 & 166.162\\
+30\,000 & 333.752 & 332.430 & 332.437 & 3\,000 & 249.375 & 249.243 & 249.244\\
+40\,000 &  85.003 &  83.240 &  83.249 & 4\,000 & 332.500 & 332.324 & 332.325\\
+50\,000 & 196.253 & 194.050 & 194.061 & 5\,000 &  55.625 &  55.405 &  55.406\\
+60\,000 & 307.504 & 304.860 & 304.873 & 6\,000 & 138.750 & 138.486 & 138.487\\
+70\,000 &  58.755 &  55.670 &  55.685 & 7\,000 & 221.875 & 221.567 & 221.569\\
+80\,000 & 170.006 & 166.480 & 166.498 & 8\,000 & 305.001 & 304.648 & 304.650\\
+90\,000 & 281.256 & 277.290 & 277.310 & 9\,000 &  28.126 &  27.729 &  27.731\\
+&&&&&&&\\
+100 &   8.313 &   8.308 &   8.308 & 10 &   0.831 &   0.831 &   0.831\\
+200 &  16.625 &  16.616 &  16.616 & 20 &   1.663 &   1.662 &   1.662\\
+300 &  24.938 &  24.924 &  24.924 & 30 &   2.494 &   2.492 &   2.492\\
+400 &  33.250 &  33.232 &  33.232 & 40 &   3.325 &   3.323 &   3.323\\
+500 &  41.563 &  41.541 &  41.541 & 50 &   4.156 &   4.154 &   4.154\\
+600 &  49.875 &  49.849 &  49.849 & 60 &   4.988 &   4.985 &   4.985\\
+700 &  58.188 &  58.157 &  58.157 & 70 &   5.819 &   5.816 &   5.816\\
+800 &  66.500 &  66.465 &  66.465 & 80 &   6.650 &   6.646 &   6.646\\
+900 &  74.813 &  74.773 &  74.773 & 90 &   7.481 &   7.477 &   7.477\\
+&&&&&&&\\
+1 &   0.083 &   0.083 &   0.083 & 0.1 &   0.008 &   0.008 &   0.008\\
+2 &   0.166 &   0.166 &   0.166 & 0.2 &   0.017 &   0.017 &   0.017\\
+3 &   0.249 &   0.249 &   0.249 & 0.3 &   0.025 &   0.025 &   0.025\\
+4 &   0.333 &   0.332 &   0.332 & 0.4 &   0.033 &   0.033 &   0.033\\
+5 &   0.416 &   0.415 &   0.415 & 0.5 &   0.042 &   0.042 &   0.042\\
+6 &   0.499 &   0.498 &   0.498 & 0.6 &   0.050 &   0.050 &   0.050\\
+7 &   0.582 &   0.582 &   0.582 & 0.7 &   0.058 &   0.058 &   0.058\\
+8 &   0.665 &   0.665 &   0.665 & 0.8 &   0.067 &   0.066 &   0.066\\
+9 &   0.748 &   0.748 &   0.748 & 0.9 &   0.075 &   0.075 &   0.075\\
+\end{tabular}
+\caption{Mean motion of Jupiter.  Here, $\Delta t = t-t_0$, $\Delta\bar{\lambda} = \bar{\lambda}-\bar{\lambda}_0$, $\Delta M = M - M_0$, and $\Delta\bar{F} = \bar{F} - \bar{F}_0$. At epoch  ($t_0 = 2\,451\,545.0$ JD), $\bar{\lambda}_0 = 34.365^\circ$,  $M_0 = 19.348^\circ$, and $\bar{F}_0=293.660^\circ$. }\label{vt11}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrr|rrr|rrr|rrr}
+$M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$& $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$\\\hline
+&&&&&&&&&&&\\[-1.75ex]
+  0 &   0.000 &  4.839 &  90 &   5.545 & $-$0.234 & 180 &   0.000 & $-$4.839 & 270 &  $-$5.545 & $-$0.234\\
+  2 &   0.205 &  4.835 &  92 &   5.530 & $-$0.403 & 182 &  $-$0.182 & $-$4.836 & 272 &  $-$5.553 & $-$0.065\\
+  4 &   0.410 &  4.826 &  94 &   5.508 & $-$0.571 & 184 &  $-$0.363 & $-$4.828 & 274 &  $-$5.554 &  0.105\\
+  6 &   0.614 &  4.810 &  96 &   5.479 & $-$0.737 & 186 &  $-$0.545 & $-$4.815 & 276 &  $-$5.549 &  0.274\\
+  8 &   0.818 &  4.787 &  98 &   5.444 & $-$0.903 & 188 &  $-$0.725 & $-$4.796 & 278 &  $-$5.537 &  0.444\\
+ 10 &   1.020 &  4.758 & 100 &   5.403 & $-$1.067 & 190 &  $-$0.905 & $-$4.772 & 280 &  $-$5.518 &  0.613\\
+ 12 &   1.221 &  4.723 & 102 &   5.355 & $-$1.230 & 192 &  $-$1.085 & $-$4.743 & 282 &  $-$5.492 &  0.782\\
+ 14 &   1.420 &  4.681 & 104 &   5.301 & $-$1.391 & 194 &  $-$1.263 & $-$4.709 & 284 &  $-$5.459 &  0.950\\
+ 16 &   1.617 &  4.633 & 106 &   5.241 & $-$1.550 & 196 &  $-$1.439 & $-$4.669 & 286 &  $-$5.419 &  1.117\\
+ 18 &   1.812 &  4.579 & 108 &   5.175 & $-$1.707 & 198 &  $-$1.615 & $-$4.624 & 288 &  $-$5.372 &  1.283\\
+ 20 &   2.004 &  4.519 & 110 &   5.102 & $-$1.862 & 200 &  $-$1.789 & $-$4.574 & 290 &  $-$5.318 &  1.448\\
+ 22 &   2.194 &  4.453 & 112 &   5.024 & $-$2.014 & 202 &  $-$1.961 & $-$4.519 & 292 &  $-$5.257 &  1.611\\
+ 24 &   2.380 &  4.382 & 114 &   4.941 & $-$2.163 & 204 &  $-$2.131 & $-$4.459 & 294 &  $-$5.190 &  1.773\\
+ 26 &   2.563 &  4.304 & 116 &   4.851 & $-$2.310 & 206 &  $-$2.298 & $-$4.394 & 296 &  $-$5.116 &  1.932\\
+ 28 &   2.742 &  4.221 & 118 &   4.757 & $-$2.454 & 208 &  $-$2.464 & $-$4.324 & 298 &  $-$5.035 &  2.089\\
+ 30 &   2.918 &  4.132 & 120 &   4.657 & $-$2.595 & 210 &  $-$2.627 & $-$4.249 & 300 &  $-$4.947 &  2.244\\
+ 32 &   3.089 &  4.038 & 122 &   4.551 & $-$2.732 & 212 &  $-$2.787 & $-$4.169 & 302 &  $-$4.853 &  2.396\\
+ 34 &   3.256 &  3.938 & 124 &   4.441 & $-$2.867 & 214 &  $-$2.945 & $-$4.085 & 304 &  $-$4.752 &  2.545\\
+ 36 &   3.419 &  3.834 & 126 &   4.326 & $-$2.997 & 216 &  $-$3.100 & $-$3.995 & 306 &  $-$4.645 &  2.691\\
+ 38 &   3.576 &  3.724 & 128 &   4.207 & $-$3.124 & 218 &  $-$3.251 & $-$3.902 & 308 &  $-$4.532 &  2.834\\
+ 40 &   3.729 &  3.610 & 130 &   4.082 & $-$3.248 & 220 &  $-$3.399 & $-$3.803 & 310 &  $-$4.413 &  2.973\\
+ 42 &   3.877 &  3.491 & 132 &   3.954 & $-$3.367 & 222 &  $-$3.543 & $-$3.701 & 312 &  $-$4.287 &  3.108\\
+ 44 &   4.019 &  3.368 & 134 &   3.821 & $-$3.482 & 224 &  $-$3.684 & $-$3.594 & 314 &  $-$4.156 &  3.240\\
+ 46 &   4.156 &  3.240 & 136 &   3.684 & $-$3.594 & 226 &  $-$3.821 & $-$3.482 & 316 &  $-$4.019 &  3.368\\
+ 48 &   4.287 &  3.108 & 138 &   3.543 & $-$3.701 & 228 &  $-$3.954 & $-$3.367 & 318 &  $-$3.877 &  3.491\\
+ 50 &   4.413 &  2.973 & 140 &   3.399 & $-$3.803 & 230 &  $-$4.082 & $-$3.248 & 320 &  $-$3.729 &  3.610\\
+ 52 &   4.532 &  2.834 & 142 &   3.251 & $-$3.902 & 232 &  $-$4.207 & $-$3.124 & 322 &  $-$3.576 &  3.724\\
+ 54 &   4.645 &  2.691 & 144 &   3.100 & $-$3.995 & 234 &  $-$4.326 & $-$2.997 & 324 &  $-$3.419 &  3.834\\
+ 56 &   4.752 &  2.545 & 146 &   2.945 & $-$4.085 & 236 &  $-$4.441 & $-$2.867 & 326 &  $-$3.256 &  3.938\\
+ 58 &   4.853 &  2.396 & 148 &   2.787 & $-$4.169 & 238 &  $-$4.551 & $-$2.732 & 328 &  $-$3.089 &  4.038\\
+ 60 &   4.947 &  2.244 & 150 &   2.627 & $-$4.249 & 240 &  $-$4.657 & $-$2.595 & 330 &  $-$2.918 &  4.132\\
+ 62 &   5.035 &  2.089 & 152 &   2.464 & $-$4.324 & 242 &  $-$4.757 & $-$2.454 & 332 &  $-$2.742 &  4.221\\
+ 64 &   5.116 &  1.932 & 154 &   2.298 & $-$4.394 & 244 &  $-$4.851 & $-$2.310 & 334 &  $-$2.563 &  4.304\\
+ 66 &   5.190 &  1.773 & 156 &   2.131 & $-$4.459 & 246 &  $-$4.941 & $-$2.163 & 336 &  $-$2.380 &  4.382\\
+ 68 &   5.257 &  1.611 & 158 &   1.961 & $-$4.519 & 248 &  $-$5.024 & $-$2.014 & 338 &  $-$2.194 &  4.453\\
+ 70 &   5.318 &  1.448 & 160 &   1.789 & $-$4.574 & 250 &  $-$5.102 & $-$1.862 & 340 &  $-$2.004 &  4.519\\
+ 72 &   5.372 &  1.283 & 162 &   1.615 & $-$4.624 & 252 &  $-$5.175 & $-$1.707 & 342 &  $-$1.812 &  4.579\\
+ 74 &   5.419 &  1.117 & 164 &   1.439 & $-$4.669 & 254 &  $-$5.241 & $-$1.550 & 344 &  $-$1.617 &  4.633\\
+ 76 &   5.459 &  0.950 & 166 &   1.263 & $-$4.709 & 256 &  $-$5.301 & $-$1.391 & 346 &  $-$1.420 &  4.681\\
+ 78 &   5.492 &  0.782 & 168 &   1.085 & $-$4.743 & 258 &  $-$5.355 & $-$1.230 & 348 &  $-$1.221 &  4.723\\
+ 80 &   5.518 &  0.613 & 170 &   0.905 & $-$4.772 & 260 &  $-$5.403 & $-$1.067 & 350 &  $-$1.020 &  4.758\\
+ 82 &   5.537 &  0.444 & 172 &   0.725 & $-$4.796 & 262 &  $-$5.444 & $-$0.903 & 352 &  $-$0.818 &  4.787\\
+ 84 &   5.549 &  0.274 & 174 &   0.545 & $-$4.815 & 264 &  $-$5.479 & $-$0.737 & 354 &  $-$0.614 &  4.810\\
+ 86 &   5.554 &  0.105 & 176 &   0.363 & $-$4.828 & 266 &  $-$5.508 & $-$0.571 & 356 &  $-$0.410 &  4.826\\
+ 88 &   5.553 & $-$0.065 & 178 &   0.182 & $-$4.836 & 268 &  $-$5.530 & $-$0.403 & 358 &  $-$0.205 &  4.835\\
+ 90 &   5.545 & $-$0.234 & 180 &   0.000 & $-$4.839 & 270 &  $-$5.545 & $-$0.234 & 360 &  $-$0.000 &  4.839\\
+\end{tabular}}
+\caption{Deferential anomalies of Jupiter.}\label{vt12}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrrr|rrrr|rrrr|rrrr}
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ &
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ &
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ &
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ \\\hline
+&&&&&&&&&&&&&&&\\[-1.75ex]
+  0 & \tiny{  0.000} &   0.000 & \tiny{  0.000} &  45 & \tiny{  0.366} &   6.816 & \tiny{  0.410} &  90 & \tiny{  0.649} &  10.868 & \tiny{  0.736} & 135 & \tiny{  0.616} &   8.927 & \tiny{  0.713}\\
+  1 & \tiny{  0.008} &   0.161 & \tiny{  0.009} &  46 & \tiny{  0.374} &   6.948 & \tiny{  0.418} &  91 & \tiny{  0.653} &  10.902 & \tiny{  0.741} & 136 & \tiny{  0.609} &   8.796 & \tiny{  0.705}\\
+  2 & \tiny{  0.017} &   0.322 & \tiny{  0.019} &  47 & \tiny{  0.381} &   7.077 & \tiny{  0.427} &  92 & \tiny{  0.657} &  10.933 & \tiny{  0.746} & 137 & \tiny{  0.601} &   8.661 & \tiny{  0.697}\\
+  3 & \tiny{  0.025} &   0.483 & \tiny{  0.028} &  48 & \tiny{  0.389} &   7.206 & \tiny{  0.436} &  93 & \tiny{  0.661} &  10.961 & \tiny{  0.750} & 138 & \tiny{  0.593} &   8.522 & \tiny{  0.688}\\
+  4 & \tiny{  0.033} &   0.644 & \tiny{  0.037} &  49 & \tiny{  0.396} &   7.333 & \tiny{  0.444} &  94 & \tiny{  0.664} &  10.986 & \tiny{  0.755} & 139 & \tiny{  0.585} &   8.380 & \tiny{  0.679}\\
+  5 & \tiny{  0.042} &   0.805 & \tiny{  0.046} &  50 & \tiny{  0.404} &   7.459 & \tiny{  0.453} &  95 & \tiny{  0.668} &  11.008 & \tiny{  0.759} & 140 & \tiny{  0.576} &   8.233 & \tiny{  0.669}\\
+  6 & \tiny{  0.050} &   0.965 & \tiny{  0.056} &  51 & \tiny{  0.411} &   7.583 & \tiny{  0.461} &  96 & \tiny{  0.671} &  11.026 & \tiny{  0.763} & 141 & \tiny{  0.567} &   8.083 & \tiny{  0.659}\\
+  7 & \tiny{  0.058} &   1.126 & \tiny{  0.065} &  52 & \tiny{  0.419} &   7.705 & \tiny{  0.470} &  97 & \tiny{  0.674} &  11.041 & \tiny{  0.766} & 142 & \tiny{  0.558} &   7.929 & \tiny{  0.649}\\
+  8 & \tiny{  0.067} &   1.286 & \tiny{  0.074} &  53 & \tiny{  0.426} &   7.826 & \tiny{  0.478} &  98 & \tiny{  0.677} &  11.053 & \tiny{  0.770} & 143 & \tiny{  0.548} &   7.771 & \tiny{  0.638}\\
+  9 & \tiny{  0.075} &   1.446 & \tiny{  0.084} &  54 & \tiny{  0.434} &   7.946 & \tiny{  0.486} &  99 & \tiny{  0.680} &  11.062 & \tiny{  0.773} & 144 & \tiny{  0.538} &   7.610 & \tiny{  0.627}\\
+ 10 & \tiny{  0.083} &   1.606 & \tiny{  0.093} &  55 & \tiny{  0.441} &   8.063 & \tiny{  0.495} & 100 & \tiny{  0.682} &  11.067 & \tiny{  0.777} & 145 & \tiny{  0.528} &   7.445 & \tiny{  0.615}\\
+ 11 & \tiny{  0.092} &   1.766 & \tiny{  0.102} &  56 & \tiny{  0.448} &   8.180 & \tiny{  0.503} & 101 & \tiny{  0.684} &  11.069 & \tiny{  0.780} & 146 & \tiny{  0.517} &   7.276 & \tiny{  0.603}\\
+ 12 & \tiny{  0.100} &   1.925 & \tiny{  0.111} &  57 & \tiny{  0.455} &   8.294 & \tiny{  0.511} & 102 & \tiny{  0.686} &  11.068 & \tiny{  0.782} & 147 & \tiny{  0.506} &   7.104 & \tiny{  0.590}\\
+ 13 & \tiny{  0.108} &   2.084 & \tiny{  0.121} &  58 & \tiny{  0.462} &   8.407 & \tiny{  0.519} & 103 & \tiny{  0.688} &  11.063 & \tiny{  0.785} & 148 & \tiny{  0.495} &   6.929 & \tiny{  0.577}\\
+ 14 & \tiny{  0.116} &   2.242 & \tiny{  0.130} &  59 & \tiny{  0.470} &   8.517 & \tiny{  0.527} & 104 & \tiny{  0.690} &  11.054 & \tiny{  0.787} & 149 & \tiny{  0.484} &   6.750 & \tiny{  0.564}\\
+ 15 & \tiny{  0.125} &   2.400 & \tiny{  0.139} &  60 & \tiny{  0.477} &   8.626 & \tiny{  0.535} & 105 & \tiny{  0.692} &  11.042 & \tiny{  0.789} & 150 & \tiny{  0.472} &   6.568 & \tiny{  0.550}\\
+ 16 & \tiny{  0.133} &   2.558 & \tiny{  0.148} &  61 & \tiny{  0.484} &   8.734 & \tiny{  0.543} & 106 & \tiny{  0.693} &  11.027 & \tiny{  0.791} & 151 & \tiny{  0.459} &   6.383 & \tiny{  0.536}\\
+ 17 & \tiny{  0.141} &   2.715 & \tiny{  0.158} &  62 & \tiny{  0.490} &   8.839 & \tiny{  0.551} & 107 & \tiny{  0.694} &  11.008 & \tiny{  0.793} & 152 & \tiny{  0.447} &   6.194 & \tiny{  0.522}\\
+ 18 & \tiny{  0.149} &   2.872 & \tiny{  0.167} &  63 & \tiny{  0.497} &   8.942 & \tiny{  0.559} & 108 & \tiny{  0.695} &  10.985 & \tiny{  0.794} & 153 & \tiny{  0.434} &   6.003 & \tiny{  0.507}\\
+ 19 & \tiny{  0.158} &   3.028 & \tiny{  0.176} &  64 & \tiny{  0.504} &   9.044 & \tiny{  0.567} & 109 & \tiny{  0.695} &  10.959 & \tiny{  0.795} & 154 & \tiny{  0.421} &   5.808 & \tiny{  0.492}\\
+ 20 & \tiny{  0.166} &   3.184 & \tiny{  0.185} &  65 & \tiny{  0.511} &   9.143 & \tiny{  0.574} & 110 & \tiny{  0.696} &  10.929 & \tiny{  0.796} & 155 & \tiny{  0.407} &   5.610 & \tiny{  0.476}\\
+ 21 & \tiny{  0.174} &   3.339 & \tiny{  0.194} &  66 & \tiny{  0.517} &   9.240 & \tiny{  0.582} & 111 & \tiny{  0.696} &  10.895 & \tiny{  0.796} & 156 & \tiny{  0.393} &   5.410 & \tiny{  0.460}\\
+ 22 & \tiny{  0.182} &   3.494 & \tiny{  0.204} &  67 & \tiny{  0.524} &   9.336 & \tiny{  0.590} & 112 & \tiny{  0.696} &  10.858 & \tiny{  0.797} & 157 & \tiny{  0.379} &   5.206 & \tiny{  0.444}\\
+ 23 & \tiny{  0.191} &   3.648 & \tiny{  0.213} &  68 & \tiny{  0.531} &   9.429 & \tiny{  0.597} & 113 & \tiny{  0.695} &  10.817 & \tiny{  0.797} & 158 & \tiny{  0.365} &   5.000 & \tiny{  0.427}\\
+ 24 & \tiny{  0.199} &   3.801 & \tiny{  0.222} &  69 & \tiny{  0.537} &   9.520 & \tiny{  0.605} & 114 & \tiny{  0.695} &  10.772 & \tiny{  0.796} & 159 & \tiny{  0.350} &   4.792 & \tiny{  0.410}\\
+ 25 & \tiny{  0.207} &   3.954 & \tiny{  0.231} &  70 & \tiny{  0.543} &   9.609 & \tiny{  0.612} & 115 & \tiny{  0.694} &  10.723 & \tiny{  0.796} & 160 & \tiny{  0.336} &   4.581 & \tiny{  0.393}\\
+ 26 & \tiny{  0.215} &   4.106 & \tiny{  0.240} &  71 & \tiny{  0.550} &   9.696 & \tiny{  0.619} & 116 & \tiny{  0.693} &  10.671 & \tiny{  0.795} & 161 & \tiny{  0.320} &   4.367 & \tiny{  0.375}\\
+ 27 & \tiny{  0.223} &   4.257 & \tiny{  0.249} &  72 & \tiny{  0.556} &   9.780 & \tiny{  0.626} & 117 & \tiny{  0.691} &  10.614 & \tiny{  0.794} & 162 & \tiny{  0.305} &   4.151 & \tiny{  0.357}\\
+ 28 & \tiny{  0.231} &   4.407 & \tiny{  0.258} &  73 & \tiny{  0.562} &   9.862 & \tiny{  0.633} & 118 & \tiny{  0.690} &  10.554 & \tiny{  0.792} & 163 & \tiny{  0.289} &   3.933 & \tiny{  0.339}\\
+ 29 & \tiny{  0.239} &   4.557 & \tiny{  0.268} &  74 & \tiny{  0.568} &   9.942 & \tiny{  0.640} & 119 & \tiny{  0.688} &  10.490 & \tiny{  0.790} & 164 & \tiny{  0.274} &   3.713 & \tiny{  0.321}\\
+ 30 & \tiny{  0.248} &   4.705 & \tiny{  0.277} &  75 & \tiny{  0.574} &  10.019 & \tiny{  0.647} & 120 & \tiny{  0.686} &  10.422 & \tiny{  0.788} & 165 & \tiny{  0.258} &   3.491 & \tiny{  0.302}\\
+ 31 & \tiny{  0.256} &   4.853 & \tiny{  0.286} &  76 & \tiny{  0.580} &  10.094 & \tiny{  0.654} & 121 & \tiny{  0.683} &  10.350 & \tiny{  0.786} & 166 & \tiny{  0.241} &   3.267 & \tiny{  0.283}\\
+ 32 & \tiny{  0.264} &   5.000 & \tiny{  0.295} &  77 & \tiny{  0.585} &  10.167 & \tiny{  0.661} & 122 & \tiny{  0.680} &  10.274 & \tiny{  0.783} & 167 & \tiny{  0.225} &   3.041 & \tiny{  0.264}\\
+ 33 & \tiny{  0.272} &   5.146 & \tiny{  0.304} &  78 & \tiny{  0.591} &  10.237 & \tiny{  0.667} & 123 & \tiny{  0.677} &  10.194 & \tiny{  0.780} & 168 & \tiny{  0.208} &   2.814 & \tiny{  0.244}\\
+ 34 & \tiny{  0.280} &   5.292 & \tiny{  0.313} &  79 & \tiny{  0.596} &  10.304 & \tiny{  0.674} & 124 & \tiny{  0.674} &  10.110 & \tiny{  0.776} & 169 & \tiny{  0.192} &   2.585 & \tiny{  0.225}\\
+ 35 & \tiny{  0.288} &   5.436 & \tiny{  0.322} &  80 & \tiny{  0.602} &  10.369 & \tiny{  0.680} & 125 & \tiny{  0.670} &  10.023 & \tiny{  0.772} & 170 & \tiny{  0.175} &   2.354 & \tiny{  0.205}\\
+ 36 & \tiny{  0.296} &   5.579 & \tiny{  0.331} &  81 & \tiny{  0.607} &  10.431 & \tiny{  0.686} & 126 & \tiny{  0.666} &   9.931 & \tiny{  0.768} & 171 & \tiny{  0.158} &   2.123 & \tiny{  0.185}\\
+ 37 & \tiny{  0.304} &   5.721 & \tiny{  0.339} &  82 & \tiny{  0.612} &  10.491 & \tiny{  0.692} & 127 & \tiny{  0.662} &   9.835 & \tiny{  0.764} & 172 & \tiny{  0.140} &   1.890 & \tiny{  0.165}\\
+ 38 & \tiny{  0.311} &   5.862 & \tiny{  0.348} &  83 & \tiny{  0.617} &  10.548 & \tiny{  0.698} & 128 & \tiny{  0.657} &   9.736 & \tiny{  0.759} & 173 & \tiny{  0.123} &   1.656 & \tiny{  0.145}\\
+ 39 & \tiny{  0.319} &   6.002 & \tiny{  0.357} &  84 & \tiny{  0.622} &  10.602 & \tiny{  0.704} & 129 & \tiny{  0.652} &   9.632 & \tiny{  0.753} & 174 & \tiny{  0.106} &   1.421 & \tiny{  0.124}\\
+ 40 & \tiny{  0.327} &   6.141 & \tiny{  0.366} &  85 & \tiny{  0.627} &  10.654 & \tiny{  0.710} & 130 & \tiny{  0.647} &   9.524 & \tiny{  0.748} & 175 & \tiny{  0.088} &   1.185 & \tiny{  0.104}\\
+ 41 & \tiny{  0.335} &   6.278 & \tiny{  0.375} &  86 & \tiny{  0.632} &  10.702 & \tiny{  0.715} & 131 & \tiny{  0.641} &   9.413 & \tiny{  0.742} & 176 & \tiny{  0.071} &   0.949 & \tiny{  0.083}\\
+ 42 & \tiny{  0.343} &   6.415 & \tiny{  0.384} &  87 & \tiny{  0.636} &  10.748 & \tiny{  0.721} & 132 & \tiny{  0.636} &   9.297 & \tiny{  0.735} & 177 & \tiny{  0.053} &   0.712 & \tiny{  0.062}\\
+ 43 & \tiny{  0.351} &   6.550 & \tiny{  0.392} &  88 & \tiny{  0.641} &  10.791 & \tiny{  0.726} & 133 & \tiny{  0.629} &   9.178 & \tiny{  0.728} & 178 & \tiny{  0.035} &   0.475 & \tiny{  0.042}\\
+ 44 & \tiny{  0.358} &   6.684 & \tiny{  0.401} &  89 & \tiny{  0.645} &  10.831 & \tiny{  0.731} & 134 & \tiny{  0.623} &   9.055 & \tiny{  0.721} & 179 & \tiny{  0.018} &   0.238 & \tiny{  0.021}\\
+ 45 & \tiny{  0.366} &   6.816 & \tiny{  0.410} &  90 & \tiny{  0.649} &  10.868 & \tiny{  0.736} & 135 & \tiny{  0.616} &   8.927 & \tiny{  0.713} & 180 & \tiny{  0.000} &   0.000 & \tiny{  0.000}\\
+\end{tabular}}
+\caption{Epicyclic anomalies of Jupiter. All quantities are in degrees. Note that $\bar{\theta}(360^\circ-\mu) = -\bar{\theta}(\mu)$, and $\delta\theta_{\pm}(360^\circ-\mu) = -\delta\theta_{\pm}(\mu)$. }\label{vt13}
+\end{table}
+
+\newpage
+\begin{table}\centering
+{\small\begin{tabular}{lcl}
+Event & Date & $\lambda$ \\\hline
+&&\\[-1.75ex]
+Conjunction & 08/05/2000 & 17TA53\\
+Station (R) & 29/09/2000 & 11GE13\\
+Opposition & 28/11/2000 & 06GE08\\
+Station (D) & 25/01/2001 & 01GE10\\
+Conjunction & 14/06/2001 & 23GE30\\
+Station (R) & 02/11/2001 & 15CN41\\
+Opposition & 01/01/2002 & 10CN37\\
+Station (D) & 01/03/2002 & 05CN37\\
+Conjunction & 20/07/2002 & 27CN11\\
+Station (R) & 04/12/2002 & 18LE06\\
+Opposition & 02/02/2003 & 13LE06\\
+Station (D) & 04/04/2003 & 08LE03\\
+Conjunction & 22/08/2003 & 28LE55\\
+Station (R) & 04/01/2004 & 18VI54\\
+Opposition & 04/03/2004 & 13VI58\\
+Station (D) & 05/05/2004 & 08VI55\\
+Conjunction & 22/09/2004 & 29VI21\\
+Station (R) & 02/02/2005 & 18LI53\\
+Opposition & 03/04/2005 & 14LI00\\
+Station (D) & 05/06/2005 & 08LI58\\
+Conjunction & 22/10/2005 & 29LI16\\
+Station (R) & 04/03/2006 & 18SC54\\
+Opposition & 04/05/2006 & 14SC03\\
+Station (D) & 06/07/2006 & 09SC02\\
+Conjunction & 22/11/2006 & 29SC34\\
+Station (R) & 06/04/2007 & 19SG49\\
+Opposition & 06/06/2007 & 14SG57\\
+Station (D) & 07/08/2007 & 09SG58\\
+Conjunction & 23/12/2007 & 01CP03\\
+Station (R) & 09/05/2008 & 22CP23\\
+Opposition & 09/07/2008 & 17CP30\\
+Station (D) & 08/09/2008 & 12CP33\\
+Conjunction & 24/01/2009 & 04AQ23\\
+Station (R) & 15/06/2009 & 27AQ01\\
+Opposition & 14/08/2009 & 22AQ04\\
+Station (D) & 13/10/2009 & 17AQ10\\
+Conjunction & 28/02/2010 & 09PI43\\
+Station (R) & 23/07/2010 & 03AR20\\
+Opposition & 21/09/2010 & 28PI19\\
+Station (D) & 18/11/2010 & 23PI26\\
+\end{tabular}}
+\caption{The conjunctions, oppositions, and stations of Jupiter
+during the years 2000--2010 AD. (R) indicates a retrograde station, and (D)
+a direct station.}\label{vtjupiter}
+\end{table}
+
+\newpage
+\begin{table}
+\centering
+\begin{tabular}{rrrr|rrrr}
+$\Delta t$(JD)& $\Delta\bar{\lambda}(^\circ)$ &  $\Delta M(^\circ)$ & $\Delta \bar{F}(^\circ)$& $\Delta t$(JD) & $\Delta\bar{\lambda}(^\circ)$ & $\Delta M(^\circ)$ 
+&$\Delta \bar{F}(^\circ)$\\ \hline
+&&&&&&&\\[-1.75ex]
+10\,000 & 335.083 & 334.815 & 334.779 & 1\,000 &  33.508 &  33.482 &  33.478\\
+20\,000 & 310.166 & 309.630 & 309.559 & 2\,000 &  67.017 &  66.963 &  66.956\\
+30\,000 & 285.249 & 284.446 & 284.338 & 3\,000 & 100.525 & 100.445 & 100.434\\
+40\,000 & 260.332 & 259.261 & 259.118 & 4\,000 & 134.033 & 133.926 & 133.912\\
+50\,000 & 235.415 & 234.076 & 233.897 & 5\,000 & 167.541 & 167.408 & 167.390\\
+60\,000 & 210.498 & 208.891 & 208.677 & 6\,000 & 201.050 & 200.889 & 200.868\\
+70\,000 & 185.581 & 183.706 & 183.456 & 7\,000 & 234.558 & 234.371 & 234.346\\
+80\,000 & 160.664 & 158.522 & 158.236 & 8\,000 & 268.066 & 267.852 & 267.824\\
+90\,000 & 135.747 & 133.337 & 133.015 & 9\,000 & 301.575 & 301.334 & 301.302\\
+&&&&&&&\\
+100 &   3.351 &   3.348 &   3.348 & 10 &   0.335 &   0.335 &   0.335\\
+200 &   6.702 &   6.696 &   6.696 & 20 &   0.670 &   0.670 &   0.670\\
+300 &  10.052 &  10.044 &  10.043 & 30 &   1.005 &   1.004 &   1.004\\
+400 &  13.403 &  13.393 &  13.391 & 40 &   1.340 &   1.339 &   1.339\\
+500 &  16.754 &  16.741 &  16.739 & 50 &   1.675 &   1.674 &   1.674\\
+600 &  20.105 &  20.089 &  20.087 & 60 &   2.010 &   2.009 &   2.009\\
+700 &  23.456 &  23.437 &  23.435 & 70 &   2.346 &   2.344 &   2.343\\
+800 &  26.807 &  26.785 &  26.782 & 80 &   2.681 &   2.679 &   2.678\\
+900 &  30.157 &  30.133 &  30.130 & 90 &   3.016 &   3.013 &   3.013\\
+&&&&&&&\\
+1 &   0.034 &   0.033 &   0.033 & 0.1 &   0.003 &   0.003 &   0.003\\
+2 &   0.067 &   0.067 &   0.067 & 0.2 &   0.007 &   0.007 &   0.007\\
+3 &   0.101 &   0.100 &   0.100 & 0.3 &   0.010 &   0.010 &   0.010\\
+4 &   0.134 &   0.134 &   0.134 & 0.4 &   0.013 &   0.013 &   0.013\\
+5 &   0.168 &   0.167 &   0.167 & 0.5 &   0.017 &   0.017 &   0.017\\
+6 &   0.201 &   0.201 &   0.201 & 0.6 &   0.020 &   0.020 &   0.020\\
+7 &   0.235 &   0.234 &   0.234 & 0.7 &   0.023 &   0.023 &   0.023\\
+8 &   0.268 &   0.268 &   0.268 & 0.8 &   0.027 &   0.027 &   0.027\\
+9 &   0.302 &   0.301 &   0.301 & 0.9 &   0.030 &   0.030 &   0.030\\
+\end{tabular}
+\caption{Mean motion of Saturn.  Here, $\Delta t = t-t_0$, $\Delta\bar{\lambda} = \bar{\lambda}-\bar{\lambda}_0$,  $\Delta M = M - M_0$, and $\Delta\bar{F} = \bar{F} - \bar{F}_0$.  At epoch  ($t_0 = 2\,451\,545.0$ JD), $\bar{\lambda}_0 = 50.059^\circ$,  $M_0 = 317.857^\circ$, and
+$\bar{F}_0 =296.482^\circ$. }\label{vt14}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrr|rrr|rrr|rrr}
+$M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$& $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$\\\hline
+&&&&&&&&&&&\\[-1.75ex]
+  0 &   0.000 &  5.386 &  90 &   6.172 & $-$0.290 & 180 &   0.000 & $-$5.386 & 270 &  $-$6.172 & $-$0.290\\
+  2 &   0.230 &  5.383 &  92 &   6.154 & $-$0.478 & 182 &  $-$0.201 & $-$5.383 & 272 &  $-$6.183 & $-$0.102\\
+  4 &   0.459 &  5.372 &  94 &   6.128 & $-$0.664 & 184 &  $-$0.402 & $-$5.374 & 274 &  $-$6.186 &  0.087\\
+  6 &   0.688 &  5.354 &  96 &   6.095 & $-$0.850 & 186 &  $-$0.602 & $-$5.360 & 276 &  $-$6.182 &  0.276\\
+  8 &   0.916 &  5.328 &  98 &   6.055 & $-$1.034 & 188 &  $-$0.802 & $-$5.339 & 278 &  $-$6.169 &  0.465\\
+ 10 &   1.143 &  5.296 & 100 &   6.007 & $-$1.217 & 190 &  $-$1.001 & $-$5.313 & 280 &  $-$6.149 &  0.654\\
+ 12 &   1.368 &  5.256 & 102 &   5.953 & $-$1.397 & 192 &  $-$1.199 & $-$5.281 & 282 &  $-$6.122 &  0.842\\
+ 14 &   1.591 &  5.209 & 104 &   5.891 & $-$1.576 & 194 &  $-$1.396 & $-$5.243 & 284 &  $-$6.086 &  1.030\\
+ 16 &   1.811 &  5.156 & 106 &   5.823 & $-$1.753 & 196 &  $-$1.591 & $-$5.200 & 286 &  $-$6.043 &  1.217\\
+ 18 &   2.029 &  5.095 & 108 &   5.748 & $-$1.927 & 198 &  $-$1.785 & $-$5.150 & 288 &  $-$5.992 &  1.402\\
+ 20 &   2.245 &  5.027 & 110 &   5.666 & $-$2.098 & 200 &  $-$1.977 & $-$5.095 & 290 &  $-$5.933 &  1.586\\
+ 22 &   2.456 &  4.953 & 112 &   5.578 & $-$2.267 & 202 &  $-$2.168 & $-$5.035 & 292 &  $-$5.867 &  1.768\\
+ 24 &   2.665 &  4.873 & 114 &   5.484 & $-$2.433 & 204 &  $-$2.356 & $-$4.969 & 294 &  $-$5.793 &  1.949\\
+ 26 &   2.869 &  4.785 & 116 &   5.384 & $-$2.596 & 206 &  $-$2.542 & $-$4.897 & 296 &  $-$5.711 &  2.127\\
+ 28 &   3.070 &  4.692 & 118 &   5.277 & $-$2.755 & 208 &  $-$2.725 & $-$4.820 & 298 &  $-$5.622 &  2.302\\
+ 30 &   3.266 &  4.592 & 120 &   5.165 & $-$2.911 & 210 &  $-$2.906 & $-$4.737 & 300 &  $-$5.525 &  2.476\\
+ 32 &   3.457 &  4.486 & 122 &   5.048 & $-$3.063 & 212 &  $-$3.084 & $-$4.649 & 302 &  $-$5.421 &  2.646\\
+ 34 &   3.644 &  4.375 & 124 &   4.924 & $-$3.211 & 214 &  $-$3.259 & $-$4.556 & 304 &  $-$5.310 &  2.813\\
+ 36 &   3.825 &  4.257 & 126 &   4.796 & $-$3.356 & 216 &  $-$3.430 & $-$4.458 & 306 &  $-$5.191 &  2.976\\
+ 38 &   4.002 &  4.134 & 128 &   4.662 & $-$3.496 & 218 &  $-$3.598 & $-$4.354 & 308 &  $-$5.065 &  3.136\\
+ 40 &   4.172 &  4.006 & 130 &   4.524 & $-$3.632 & 220 &  $-$3.763 & $-$4.246 & 310 &  $-$4.933 &  3.292\\
+ 42 &   4.337 &  3.873 & 132 &   4.380 & $-$3.764 & 222 &  $-$3.923 & $-$4.133 & 312 &  $-$4.793 &  3.444\\
+ 44 &   4.495 &  3.735 & 134 &   4.232 & $-$3.892 & 224 &  $-$4.080 & $-$4.015 & 314 &  $-$4.648 &  3.591\\
+ 46 &   4.648 &  3.591 & 136 &   4.080 & $-$4.015 & 226 &  $-$4.232 & $-$3.892 & 316 &  $-$4.495 &  3.735\\
+ 48 &   4.793 &  3.444 & 138 &   3.923 & $-$4.133 & 228 &  $-$4.380 & $-$3.764 & 318 &  $-$4.337 &  3.873\\
+ 50 &   4.933 &  3.292 & 140 &   3.763 & $-$4.246 & 230 &  $-$4.524 & $-$3.632 & 320 &  $-$4.172 &  4.006\\
+ 52 &   5.065 &  3.136 & 142 &   3.598 & $-$4.354 & 232 &  $-$4.662 & $-$3.496 & 322 &  $-$4.002 &  4.134\\
+ 54 &   5.191 &  2.976 & 144 &   3.430 & $-$4.458 & 234 &  $-$4.796 & $-$3.356 & 324 &  $-$3.825 &  4.257\\
+ 56 &   5.310 &  2.813 & 146 &   3.259 & $-$4.556 & 236 &  $-$4.924 & $-$3.211 & 326 &  $-$3.644 &  4.375\\
+ 58 &   5.421 &  2.646 & 148 &   3.084 & $-$4.649 & 238 &  $-$5.048 & $-$3.063 & 328 &  $-$3.457 &  4.486\\
+ 60 &   5.525 &  2.476 & 150 &   2.906 & $-$4.737 & 240 &  $-$5.165 & $-$2.911 & 330 &  $-$3.266 &  4.592\\
+ 62 &   5.622 &  2.302 & 152 &   2.725 & $-$4.820 & 242 &  $-$5.277 & $-$2.755 & 332 &  $-$3.070 &  4.692\\
+ 64 &   5.711 &  2.127 & 154 &   2.542 & $-$4.897 & 244 &  $-$5.384 & $-$2.596 & 334 &  $-$2.869 &  4.785\\
+ 66 &   5.793 &  1.949 & 156 &   2.356 & $-$4.969 & 246 &  $-$5.484 & $-$2.433 & 336 &  $-$2.665 &  4.873\\
+ 68 &   5.867 &  1.768 & 158 &   2.168 & $-$5.035 & 248 &  $-$5.578 & $-$2.267 & 338 &  $-$2.456 &  4.953\\
+ 70 &   5.933 &  1.586 & 160 &   1.977 & $-$5.095 & 250 &  $-$5.666 & $-$2.098 & 340 &  $-$2.245 &  5.027\\
+ 72 &   5.992 &  1.402 & 162 &   1.785 & $-$5.150 & 252 &  $-$5.748 & $-$1.927 & 342 &  $-$2.029 &  5.095\\
+ 74 &   6.043 &  1.217 & 164 &   1.591 & $-$5.200 & 254 &  $-$5.823 & $-$1.753 & 344 &  $-$1.811 &  5.156\\
+ 76 &   6.086 &  1.030 & 166 &   1.396 & $-$5.243 & 256 &  $-$5.891 & $-$1.576 & 346 &  $-$1.591 &  5.209\\
+ 78 &   6.122 &  0.842 & 168 &   1.199 & $-$5.281 & 258 &  $-$5.953 & $-$1.397 & 348 &  $-$1.368 &  5.256\\
+ 80 &   6.149 &  0.654 & 170 &   1.001 & $-$5.313 & 260 &  $-$6.007 & $-$1.217 & 350 &  $-$1.143 &  5.296\\
+ 82 &   6.169 &  0.465 & 172 &   0.802 & $-$5.339 & 262 &  $-$6.055 & $-$1.034 & 352 &  $-$0.916 &  5.328\\
+ 84 &   6.182 &  0.276 & 174 &   0.602 & $-$5.360 & 264 &  $-$6.095 & $-$0.850 & 354 &  $-$0.688 &  5.354\\
+ 86 &   6.186 &  0.087 & 176 &   0.402 & $-$5.374 & 266 &  $-$6.128 & $-$0.664 & 356 &  $-$0.459 &  5.372\\
+ 88 &   6.183 & $-$0.102 & 178 &   0.201 & $-$5.383 & 268 &  $-$6.154 & $-$0.478 & 358 &  $-$0.230 &  5.383\\
+ 90 &   6.172 & $-$0.290 & 180 &   0.000 & $-$5.386 & 270 &  $-$6.172 & $-$0.290 & 360 &  $-$0.000 &  5.386\\
+\end{tabular}}
+\caption{Deferential anomalies of Saturn.}\label{vt15}
+\end{table}
+
+\newpage
+\begin{table}\centering
+\small{ \begin{tabular}{rrrr|rrrr|rrrr|rrrr}
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ &
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ &
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ &
+$\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ \\\hline
+&&&&&&&&&&&&&&&\\[-1.75ex]
+  0 & \tiny{  0.000} &   0.000 & \tiny{  0.000} &  45 & \tiny{  0.242} &   3.944 & \tiny{  0.276} &  90 & \tiny{  0.391} &   5.979 & \tiny{  0.450} & 135 & \tiny{  0.322} &   4.573 & \tiny{  0.375}\\
+  1 & \tiny{  0.006} &   0.095 & \tiny{  0.006} &  46 & \tiny{  0.247} &   4.017 & \tiny{  0.282} &  91 & \tiny{  0.393} &   5.989 & \tiny{  0.452} & 136 & \tiny{  0.318} &   4.499 & \tiny{  0.370}\\
+  2 & \tiny{  0.011} &   0.190 & \tiny{  0.013} &  47 & \tiny{  0.252} &   4.089 & \tiny{  0.287} &  92 & \tiny{  0.394} &   5.997 & \tiny{  0.453} & 137 & \tiny{  0.313} &   4.423 & \tiny{  0.364}\\
+  3 & \tiny{  0.017} &   0.284 & \tiny{  0.019} &  48 & \tiny{  0.256} &   4.160 & \tiny{  0.292} &  93 & \tiny{  0.395} &   6.004 & \tiny{  0.454} & 138 & \tiny{  0.308} &   4.346 & \tiny{  0.358}\\
+  4 & \tiny{  0.023} &   0.379 & \tiny{  0.026} &  49 & \tiny{  0.261} &   4.230 & \tiny{  0.298} &  94 & \tiny{  0.396} &   6.008 & \tiny{  0.456} & 139 & \tiny{  0.302} &   4.267 & \tiny{  0.352}\\
+  5 & \tiny{  0.028} &   0.474 & \tiny{  0.032} &  50 & \tiny{  0.265} &   4.299 & \tiny{  0.303} &  95 & \tiny{  0.397} &   6.011 & \tiny{  0.457} & 140 & \tiny{  0.297} &   4.186 & \tiny{  0.346}\\
+  6 & \tiny{  0.034} &   0.568 & \tiny{  0.039} &  51 & \tiny{  0.270} &   4.367 & \tiny{  0.308} &  96 & \tiny{  0.397} &   6.012 & \tiny{  0.458} & 141 & \tiny{  0.292} &   4.104 & \tiny{  0.340}\\
+  7 & \tiny{  0.040} &   0.662 & \tiny{  0.045} &  52 & \tiny{  0.274} &   4.433 & \tiny{  0.313} &  97 & \tiny{  0.398} &   6.011 & \tiny{  0.459} & 142 & \tiny{  0.286} &   4.020 & \tiny{  0.333}\\
+  8 & \tiny{  0.045} &   0.757 & \tiny{  0.052} &  53 & \tiny{  0.279} &   4.499 & \tiny{  0.318} &  98 & \tiny{  0.399} &   6.008 & \tiny{  0.459} & 143 & \tiny{  0.280} &   3.935 & \tiny{  0.327}\\
+  9 & \tiny{  0.051} &   0.851 & \tiny{  0.058} &  54 & \tiny{  0.283} &   4.564 & \tiny{  0.323} &  99 & \tiny{  0.399} &   6.004 & \tiny{  0.460} & 144 & \tiny{  0.274} &   3.848 & \tiny{  0.320}\\
+ 10 & \tiny{  0.057} &   0.945 & \tiny{  0.064} &  55 & \tiny{  0.287} &   4.627 & \tiny{  0.328} & 100 & \tiny{  0.399} &   5.997 & \tiny{  0.460} & 145 & \tiny{  0.269} &   3.760 & \tiny{  0.313}\\
+ 11 & \tiny{  0.062} &   1.038 & \tiny{  0.071} &  56 & \tiny{  0.292} &   4.689 & \tiny{  0.333} & 101 & \tiny{  0.399} &   5.989 & \tiny{  0.461} & 146 & \tiny{  0.262} &   3.670 & \tiny{  0.306}\\
+ 12 & \tiny{  0.068} &   1.132 & \tiny{  0.077} &  57 & \tiny{  0.296} &   4.750 & \tiny{  0.338} & 102 & \tiny{  0.399} &   5.979 & \tiny{  0.461} & 147 & \tiny{  0.256} &   3.578 & \tiny{  0.299}\\
+ 13 & \tiny{  0.074} &   1.225 & \tiny{  0.084} &  58 & \tiny{  0.300} &   4.810 & \tiny{  0.343} & 103 & \tiny{  0.399} &   5.966 & \tiny{  0.461} & 148 & \tiny{  0.250} &   3.486 & \tiny{  0.292}\\
+ 14 & \tiny{  0.079} &   1.318 & \tiny{  0.090} &  59 & \tiny{  0.304} &   4.869 & \tiny{  0.347} & 104 & \tiny{  0.399} &   5.952 & \tiny{  0.460} & 149 & \tiny{  0.243} &   3.392 & \tiny{  0.284}\\
+ 15 & \tiny{  0.085} &   1.410 & \tiny{  0.096} &  60 & \tiny{  0.308} &   4.926 & \tiny{  0.352} & 105 & \tiny{  0.399} &   5.937 & \tiny{  0.460} & 150 & \tiny{  0.237} &   3.296 & \tiny{  0.276}\\
+ 16 & \tiny{  0.090} &   1.502 & \tiny{  0.103} &  61 & \tiny{  0.312} &   4.982 & \tiny{  0.356} & 106 & \tiny{  0.398} &   5.919 & \tiny{  0.460} & 151 & \tiny{  0.230} &   3.199 & \tiny{  0.269}\\
+ 17 & \tiny{  0.096} &   1.594 & \tiny{  0.109} &  62 & \tiny{  0.316} &   5.037 & \tiny{  0.361} & 107 & \tiny{  0.397} &   5.899 & \tiny{  0.459} & 152 & \tiny{  0.223} &   3.101 & \tiny{  0.261}\\
+ 18 & \tiny{  0.102} &   1.686 & \tiny{  0.115} &  63 & \tiny{  0.320} &   5.091 & \tiny{  0.365} & 108 & \tiny{  0.397} &   5.877 & \tiny{  0.458} & 153 & \tiny{  0.216} &   3.002 & \tiny{  0.253}\\
+ 19 & \tiny{  0.107} &   1.777 & \tiny{  0.122} &  64 & \tiny{  0.323} &   5.143 & \tiny{  0.370} & 109 & \tiny{  0.396} &   5.854 & \tiny{  0.457} & 154 & \tiny{  0.209} &   2.901 & \tiny{  0.244}\\
+ 20 & \tiny{  0.113} &   1.868 & \tiny{  0.128} &  65 & \tiny{  0.327} &   5.194 & \tiny{  0.374} & 110 & \tiny{  0.395} &   5.828 & \tiny{  0.456} & 155 & \tiny{  0.202} &   2.800 & \tiny{  0.236}\\
+ 21 & \tiny{  0.118} &   1.958 & \tiny{  0.134} &  66 & \tiny{  0.330} &   5.243 & \tiny{  0.378} & 111 & \tiny{  0.394} &   5.801 & \tiny{  0.455} & 156 & \tiny{  0.195} &   2.697 & \tiny{  0.228}\\
+ 22 & \tiny{  0.124} &   2.048 & \tiny{  0.141} &  67 & \tiny{  0.334} &   5.292 & \tiny{  0.382} & 112 & \tiny{  0.392} &   5.772 & \tiny{  0.454} & 157 & \tiny{  0.187} &   2.593 & \tiny{  0.219}\\
+ 23 & \tiny{  0.129} &   2.138 & \tiny{  0.147} &  68 & \tiny{  0.337} &   5.338 & \tiny{  0.386} & 113 & \tiny{  0.391} &   5.740 & \tiny{  0.452} & 158 & \tiny{  0.180} &   2.488 & \tiny{  0.210}\\
+ 24 & \tiny{  0.134} &   2.227 & \tiny{  0.153} &  69 & \tiny{  0.341} &   5.384 & \tiny{  0.390} & 114 & \tiny{  0.389} &   5.707 & \tiny{  0.450} & 159 & \tiny{  0.172} &   2.382 & \tiny{  0.202}\\
+ 25 & \tiny{  0.140} &   2.315 & \tiny{  0.159} &  70 & \tiny{  0.344} &   5.428 & \tiny{  0.394} & 115 & \tiny{  0.387} &   5.672 & \tiny{  0.448} & 160 & \tiny{  0.165} &   2.275 & \tiny{  0.193}\\
+ 26 & \tiny{  0.145} &   2.403 & \tiny{  0.165} &  71 & \tiny{  0.347} &   5.470 & \tiny{  0.398} & 116 & \tiny{  0.386} &   5.635 & \tiny{  0.446} & 161 & \tiny{  0.157} &   2.167 & \tiny{  0.184}\\
+ 27 & \tiny{  0.151} &   2.490 & \tiny{  0.171} &  72 & \tiny{  0.350} &   5.511 & \tiny{  0.401} & 117 & \tiny{  0.384} &   5.596 & \tiny{  0.444} & 162 & \tiny{  0.149} &   2.059 & \tiny{  0.175}\\
+ 28 & \tiny{  0.156} &   2.577 & \tiny{  0.178} &  73 & \tiny{  0.353} &   5.551 & \tiny{  0.405} & 118 & \tiny{  0.381} &   5.555 & \tiny{  0.442} & 163 & \tiny{  0.142} &   1.949 & \tiny{  0.166}\\
+ 29 & \tiny{  0.161} &   2.663 & \tiny{  0.184} &  74 & \tiny{  0.356} &   5.589 & \tiny{  0.408} & 119 & \tiny{  0.379} &   5.512 & \tiny{  0.439} & 164 & \tiny{  0.134} &   1.839 & \tiny{  0.156}\\
+ 30 & \tiny{  0.167} &   2.749 & \tiny{  0.190} &  75 & \tiny{  0.359} &   5.625 & \tiny{  0.412} & 120 & \tiny{  0.377} &   5.467 & \tiny{  0.437} & 165 & \tiny{  0.126} &   1.727 & \tiny{  0.147}\\
+ 31 & \tiny{  0.172} &   2.834 & \tiny{  0.196} &  76 & \tiny{  0.362} &   5.660 & \tiny{  0.415} & 121 & \tiny{  0.374} &   5.421 & \tiny{  0.434} & 166 & \tiny{  0.118} &   1.616 & \tiny{  0.138}\\
+ 32 & \tiny{  0.177} &   2.918 & \tiny{  0.202} &  77 & \tiny{  0.365} &   5.694 & \tiny{  0.418} & 122 & \tiny{  0.371} &   5.372 & \tiny{  0.431} & 167 & \tiny{  0.109} &   1.503 & \tiny{  0.128}\\
+ 33 & \tiny{  0.182} &   3.002 & \tiny{  0.208} &  78 & \tiny{  0.367} &   5.726 & \tiny{  0.421} & 123 & \tiny{  0.368} &   5.322 & \tiny{  0.427} & 168 & \tiny{  0.101} &   1.390 & \tiny{  0.118}\\
+ 34 & \tiny{  0.188} &   3.085 & \tiny{  0.214} &  79 & \tiny{  0.370} &   5.756 & \tiny{  0.424} & 124 & \tiny{  0.365} &   5.270 & \tiny{  0.424} & 169 & \tiny{  0.093} &   1.276 & \tiny{  0.109}\\
+ 35 & \tiny{  0.193} &   3.167 & \tiny{  0.219} &  80 & \tiny{  0.372} &   5.784 & \tiny{  0.427} & 125 & \tiny{  0.362} &   5.215 & \tiny{  0.420} & 170 & \tiny{  0.085} &   1.162 & \tiny{  0.099}\\
+ 36 & \tiny{  0.198} &   3.248 & \tiny{  0.225} &  81 & \tiny{  0.375} &   5.811 & \tiny{  0.430} & 126 & \tiny{  0.359} &   5.159 & \tiny{  0.417} & 171 & \tiny{  0.076} &   1.047 & \tiny{  0.089}\\
+ 37 & \tiny{  0.203} &   3.329 & \tiny{  0.231} &  82 & \tiny{  0.377} &   5.837 & \tiny{  0.433} & 127 & \tiny{  0.355} &   5.101 & \tiny{  0.413} & 172 & \tiny{  0.068} &   0.932 & \tiny{  0.080}\\
+ 38 & \tiny{  0.208} &   3.409 & \tiny{  0.237} &  83 & \tiny{  0.379} &   5.861 & \tiny{  0.435} & 128 & \tiny{  0.352} &   5.042 & \tiny{  0.409} & 173 & \tiny{  0.060} &   0.816 & \tiny{  0.070}\\
+ 39 & \tiny{  0.213} &   3.488 & \tiny{  0.243} &  84 & \tiny{  0.381} &   5.883 & \tiny{  0.438} & 129 & \tiny{  0.348} &   4.980 & \tiny{  0.404} & 174 & \tiny{  0.051} &   0.700 & \tiny{  0.060}\\
+ 40 & \tiny{  0.218} &   3.566 & \tiny{  0.248} &  85 & \tiny{  0.383} &   5.903 & \tiny{  0.440} & 130 & \tiny{  0.344} &   4.917 & \tiny{  0.400} & 175 & \tiny{  0.043} &   0.584 & \tiny{  0.050}\\
+ 41 & \tiny{  0.223} &   3.644 & \tiny{  0.254} &  86 & \tiny{  0.385} &   5.922 & \tiny{  0.442} & 131 & \tiny{  0.340} &   4.851 & \tiny{  0.395} & 176 & \tiny{  0.034} &   0.467 & \tiny{  0.040}\\
+ 42 & \tiny{  0.228} &   3.720 & \tiny{  0.260} &  87 & \tiny{  0.387} &   5.939 & \tiny{  0.444} & 132 & \tiny{  0.336} &   4.784 & \tiny{  0.390} & 177 & \tiny{  0.026} &   0.351 & \tiny{  0.030}\\
+ 43 & \tiny{  0.233} &   3.796 & \tiny{  0.265} &  88 & \tiny{  0.388} &   5.954 & \tiny{  0.446} & 133 & \tiny{  0.331} &   4.716 & \tiny{  0.386} & 178 & \tiny{  0.017} &   0.234 & \tiny{  0.020}\\
+ 44 & \tiny{  0.238} &   3.871 & \tiny{  0.271} &  89 & \tiny{  0.390} &   5.967 & \tiny{  0.448} & 134 & \tiny{  0.327} &   4.645 & \tiny{  0.380} & 179 & \tiny{  0.009} &   0.117 & \tiny{  0.010}\\
+ 45 & \tiny{  0.242} &   3.944 & \tiny{  0.276} &  90 & \tiny{  0.391} &   5.979 & \tiny{  0.450} & 135 & \tiny{  0.322} &   4.573 & \tiny{  0.375} & 180 & \tiny{  0.000} &   0.000 & \tiny{  0.000}\\
+\end{tabular}}
+\caption{Epicyclic anomalies of Saturn. All quantities are in degrees. Note that $\bar{\theta}(360^\circ-\mu) = -\bar{\theta}(\mu)$, and $\delta\theta_{\pm}(360^\circ-\mu) = -\delta\theta_{\pm}(\mu)$. }\label{vt16}
+\end{table}
+
+\newpage
+\begin{table}\centering
+{\small\begin{tabular}{lcl}
+Event & Date &$\lambda$ \\\hline
+&&\\[-1.75ex]
+Conjunction & 10/05/2000 & 20TA26\\
+Station (R) & 12/09/2000 & 00GE59\\
+Opposition & 19/11/2000 & 27TA29\\
+Station (D) & 24/01/2001 & 24TA03\\
+Conjunction & 25/05/2001 & 04GE22\\
+Station (R) & 26/09/2001 & 14GE59\\
+Opposition & 03/12/2001 & 11GE29\\
+Station (D) & 08/02/2002 & 08GE02\\
+Conjunction & 09/06/2002 & 18GE28\\
+Station (R) & 11/10/2002 & 29GE06\\
+Opposition & 17/12/2002 & 25GE36\\
+Station (D) & 22/02/2003 & 22GE08\\
+Conjunction & 24/06/2003 & 02CN39\\
+Station (R) & 25/10/2003 & 13CN15\\
+Opposition & 31/12/2003 & 09CN46\\
+Station (D) & 07/03/2004 & 06CN17\\
+Conjunction & 08/07/2004 & 16CN50\\
+Station (R) & 08/11/2004 & 27CN21\\
+Opposition & 13/01/2005 & 23CN52\\
+Station (D) & 22/03/2005 & 20CN23\\
+Conjunction & 23/07/2005 & 00LE56\\
+Station (R) & 22/11/2005 & 11LE19\\
+Opposition & 27/01/2006 & 07LE51\\
+Station (D) & 05/04/2006 & 04LE22\\
+Conjunction & 07/08/2006 & 14LE51\\
+Station (R) & 06/12/2006 & 25LE04\\
+Opposition & 10/02/2007 & 21LE38\\
+Station (D) & 19/04/2007 & 18LE09\\
+Conjunction & 22/08/2007 & 28LE32\\
+Station (R) & 19/12/2007 & 08VI34\\
+Opposition & 24/02/2008 & 05VI10\\
+Station (D) & 03/05/2008 & 01VI41\\
+Conjunction & 04/09/2008 & 11VI56\\
+Station (R) & 31/12/2008 & 21VI46\\
+Opposition & 08/03/2009 & 18VI23\\
+Station (D) & 17/05/2009 & 14VI56\\
+Conjunction & 17/09/2009 & 25VI01\\
+Station (R) & 13/01/2010 & 04LI40\\
+Opposition & 22/03/2010 & 01LI18\\
+Station (D) & 30/05/2010 & 27VI51\\
+Conjunction & 01/10/2010 & 07LI46\\
+\end{tabular}}
+\caption{The conjunctions, oppositions, and stations of Saturn
+during the years 2000--2010 AD. (R) indicates a retrograde station, and (D)
+a direct station.}\label{vtsaturn}
+\end{table}
