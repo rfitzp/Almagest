@@ -1,0 +1,1410 @@
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  12 FEB 2026 16:56
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Almagest.tex
+(./Almagest.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@chapter=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count190
+\Gm@cntv=\count191
+\c@Gm@tempcnt=\count192
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks17
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+
+Package epstopdf Warning: Drivers other than `pdftex' and `luatex' are not supp
+orted.
+
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/parallel/parallel.sty
+Package: parallel 2003/04/13, setting two texts parallel (me)
+
+`parallel': setting two texts parallel, (beta 4) 2003/04/13.
+\ParallelLWidth=\dimen151
+\ParallelRWidth=\dimen152
+\ParallelTextWidth=\dimen153
+\ParallelLeftMargin=\dimen154
+\ParallelUserMidSkip=\dimen155
+\ParallelMainMidSkip=\dimen156
+\ParallelLBox=\box51
+\ParallelRBox=\box52
+\ParallelBoxVar=\box53
+\ParallelLTok=\box54
+\ParallelRTok=\box55
+\ParallelBoolVar=\count193
+\ParallelBoolMid=\count194
+\ParallelWhichBox=\count195
+\ParallelMainMode=\count196
+\ParallelFNMode=\count197
+\ParallelLFNCounter=\count198
+\ParallelRFNCounter=\count199
+\ParallelMaxFN=\count266
+\ParallelFNNumMode=\count267
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen157
+))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen158
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count268
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count269
+\leftroot@=\count270
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count271
+\DOTSCASE@=\count272
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box56
+\strutbox@=\box57
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen159
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count273
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count274
+\dotsspace@=\muskip16
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
+\tag@help=\toks19
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
+\andhelp@=\toks20
+\eqnshift@=\dimen160
+\alignsep@=\dimen161
+\tagshift@=\dimen162
+\tagwidth@=\dimen163
+\totwidth@=\dimen164
+\lineht@=\dimen165
+\@envbody=\toks21
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.st
+y
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
+\g__graphics_track_int=\count280
+\l__pdf_internal_box=\box58
+\g__pdf_backend_object_int=\count281
+\g__pdf_backend_annotation_int=\count282
+\g__pdf_backend_link_int=\count283
+))
+Package: xparse 2023-02-02 L3 Experimental document command parser
+)
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count284
+\l__fontspec_language_int=\count285
+\l__fontspec_strnum_int=\count286
+\l__fontspec_tmp_int=\count287
+\l__fontspec_tmpa_int=\count288
+\l__fontspec_tmpb_int=\count289
+\l__fontspec_tmpc_int=\count290
+\l__fontspec_em_int=\count291
+\l__fontspec_emdef_int=\count292
+\l__fontspec_strong_int=\count293
+\l__fontspec_strongdef_int=\count294
+\l__fontspec_tmpa_dim=\dimen166
+\l__fontspec_tmpb_dim=\dimen167
+\l__fontspec_tmpc_dim=\dimen168
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+
+Package fontspec Info: Font family 'EBGaramond(0)' created for font 'EB
+(fontspec)             Garamond' with options [Ligatures=TeX,Scale=0.955].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[0.955]"EB
+(fontspec)             Garamond/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->s*[0.955]"EB
+(fontspec)             Garamond/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[0.955]"EB
+(fontspec)             Garamond/B/OT:script=latn;language=dflt;mapping=tex-text
+;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[0.955]"EB
+(fontspec)             Garamond/B/OT:script=latn;language=dflt;+smcp;mapping=te
+x-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[0.955]"EB
+(fontspec)             Garamond/I/OT:script=latn;language=dflt;mapping=tex-text
+;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[0.955]"EB
+(fontspec)             Garamond/I/OT:script=latn;language=dflt;+smcp;mapping=te
+x-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->s*[0.955]"EB
+(fontspec)             Garamond/BI/OT:script=latn;language=dflt;mapping=tex-tex
+t;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[0.955]"EB
+(fontspec)             Garamond/BI/OT:script=latn;language=dflt;+smcp;mapping=t
+ex-text;"
+
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 9.55002pt on input line 10.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2023/02/11 v1.60 Modern multilingual typesetting with XeLa
+TeX and LuaLaTeX
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count295
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/makecmds/makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
+)
+\XKV@depth=\count296
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+\xpg@normalclass=\XeTeXcharclass1
+(/usr/local/texlive/2023/texmf-dist/tex/latex/polyglossia/gloss-latex.lde
+Package: gloss-latex 2023/02/11 vv1.60 polyglossia: module for default language
+
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/DefineCommandsCmd}  =>  {use_none:n}.
+)
+Package polyglossia Info: Default language is latex.
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
+File: gloss-english.ldf polyglossia: module for English
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/DefineCommandsCmd}  =>  {use_none:n}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {english}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
+Package polyglossia Info: Option: English, variant=american.
+)
+Package polyglossia Info: Default language is english.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/polyglossia/gloss-greek.ldf
+File: gloss-greek.ldf polyglossia: module for Greek
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/DefineCommandsCmd}  =>  {use_none:n}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {american}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}
+>  {greek/script}  =>  {Greek}
+>  {greek/lcscript}  =>  {greek}
+>  {greek/scripttag}  =>  {grek}
+>  {greek/language}  =>  {Greek}
+>  {greek/langtag}  =>  {ELL}
+>  {greek/bcp47}  =>  {el-monoton}
+>  {greek/hyphennames}  =>  {}
+>  {greek/direction}  =>  {LR}
+>  {greek/hyphenmins}  =>  {2,3}
+>  {greek/frenchspacing}  =>  {true}
+>  {greek/indentfirst}  =>  {true}
+>  {greek/fontsetup}  =>  {true}
+>  {greek/envname}  =>  {greek}
+>  {greek/babelname}  =>  {greek}
+>  {greek/localnumeral}  =>  {greeknumerals}
+>  {greek/Localnumeral}  =>  {Greeknumerals}
+>  {greek/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/polyglossia/xgreek-fixes.def)
+Package polyglossia Info: Option: Monotonic Greek.
+\@attic@num=\count297
+)
+
+Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box59
+\beforetitleunit=\skip53
+\aftertitleunit=\skip54
+\ttl@plus=\dimen169
+\ttl@minus=\dimen170
+\ttl@toksa=\toks25
+\titlewidth=\dimen171
+\titlewidthlast=\dimen172
+\titlewidthfirst=\dimen173
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip55
+\f@nch@O@elh=\skip56
+\f@nch@O@erh=\skip57
+\f@nch@O@olh=\skip58
+\f@nch@O@orh=\skip59
+\f@nch@O@elf=\skip60
+\f@nch@O@erf=\skip61
+\f@nch@O@olf=\skip62
+\f@nch@O@orf=\skip63
+)
+(./Almagest.aux
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+ (./Chapter01.aux) (./Chapter02.aux) (./Chapter03.aux)
+(./Chapter04.aux) (./Chapter05.aux) (./Chapter06.aux) (./Chapter07.aux)
+(./Chapter08.aux) (./Chapter09.aux) (./Chapter10.aux) (./Chapter11.aux)
+(./Chapter12.aux) (./Chapter13.aux))
+\openout1 = `Almagest.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
+0.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(101.69016pt, 343.28249pt, 152.53523pt)
+* v-part:(T,H,B)=(135.66272pt, 505.89pt, 203.49413pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=343.28249pt
+* \textheight=505.89pt
+* \oddsidemargin=29.42017pt
+* \evensidemargin=80.26524pt
+* \topmargin=33.32524pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 40.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 40.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 40.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 40.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 40.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 40.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 40.
+LaTeX Font Info:    Redeclaring math accent \check on input line 40.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 40.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 40.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 40.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 40.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 40.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/EBGaramond(0)/m/n on input line 40.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 40.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/EBGaramond(0)/m/n on input line 40.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/EBGaramond(0)/m/n --> TU/EBGaramond(0)/m/n on input 
+line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/EBGaramond(0)/m/it on input line 40
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/EBGaramond(0)/b/n on input line 40.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 40.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/EBGaramond(0)/m/n --> TU/EBGaramond(0)/b/n on input 
+line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/EBGaramond(0)/b/it on input line 4
+0.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 40.
+The property list \__xpg_alias contains the pairs (without outer braces):
+>  {latex/target}  =>  {latex}
+>  {english/target}  =>  {english}
+>  {en/target}  =>  {english}
+>  {en-AU/target}  =>  {english}
+>  {en-AU/variant}  =>  {australian}
+>  {en-AU/options}  =>  {variant=australian}
+>  {en-CA/target}  =>  {english}
+>  {en-CA/variant}  =>  {canadian}
+>  {en-CA/options}  =>  {variant=canadian}
+>  {en-GB/target}  =>  {english}
+>  {en-GB/variant}  =>  {british}
+>  {en-GB/options}  =>  {variant=british}
+>  {en-NZ/target}  =>  {english}
+>  {en-NZ/variant}  =>  {newzealand}
+>  {en-NZ/options}  =>  {variant=newzealand}
+>  {en-US/target}  =>  {english}
+>  {en-US/variant}  =>  {us}
+>  {en-US/options}  =>  {variant=us}
+>  {american/target}  =>  {english}
+>  {american/variant}  =>  {us}
+>  {american/options}  =>  {variant=us}
+>  {australian/target}  =>  {english}
+>  {australian/variant}  =>  {australian}
+>  {australian/options}  =>  {variant=australian}
+>  {british/target}  =>  {english}
+>  {british/variant}  =>  {british}
+>  {british/options}  =>  {variant=british}
+>  {canadian/target}  =>  {english}
+>  {canadian/variant}  =>  {canadian}
+>  {canadian/options}  =>  {variant=canadian}
+>  {newzealand/target}  =>  {english}
+>  {newzealand/variant}  =>  {newzealand}
+>  {newzealand/options}  =>  {variant=newzealand}
+>  {greek/target}  =>  {greek}
+>  {grc/target}  =>  {greek}
+>  {grc/variant}  =>  {ancient}
+>  {grc/options}  =>  {variant=ancient}
+>  {el-polyton/target}  =>  {greek}
+>  {el-polyton/options}  =>  {varant=polytonic}
+>  {el-monoton/target}  =>  {greek}
+>  {el-monoton/variant}  =>  {monotonic}
+>  {el-monoton/options}  =>  {variant=monotonic}
+>  {el/target}  =>  {greek}
+>  {polutonikogreek/target}  =>  {greek}
+>  {polutonikogreek/variant}  =>  {polytonic}
+>  {polutonikogreek/options}  =>  {variant=polytonic}.
+LaTeX Info: Redefining \rmfamily on input line 40.
+LaTeX Info: Redefining \sffamily on input line 40.
+LaTeX Info: Redefining \ttfamily on input line 40.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 16.50243pt on input line 46.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 16.50243pt on input line 46.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 11.46002pt on input line 46.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 7.64001pt on input line 46.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 5.73001pt on input line 46.
+[1
+
+
+] [2
+
+]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 19.80673pt on input line 48.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 19.80673pt on input line 48.
+ (./Almagest.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 9.55002pt on input line 2.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 6.68501pt on input line 3.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 4.77501pt on input line 3.
+ [3] [4])
+\tf@toc=\write3
+\openout3 = `Almagest.toc'.
+
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 9.55002pt on input line 50.
+ [5]
+\openout2 = `Chapter01.aux'.
+
+ (./Chapter01.tex [6
+
+
+]
+Chapter 1.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 13.75201pt on input line 4.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 13.75201pt on input line 4.
+[7] [8] [9]
+File: Fig1-1.eps Graphic file (type eps)
+<Fig1-1.eps>
+ [10] [11] [12] [13]
+File: Fig1-2.eps Graphic file (type eps)
+<Fig1-2.eps>
+ [14]) [15] [16]
+\openout2 = `Chapter02.aux'.
+
+ (./Chapter02.tex
+Chapter 2.
+File: Fig2-1.eps Graphic file (type eps)
+<Fig2-1.eps>
+[17
+
+
+
+
+]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 6.68501pt on input line 45.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 4.77501pt on input line 45.
+File: Fig2-2.eps Graphic file (type eps)
+<Fig2-2.eps>
+ [18]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 7.64001pt on input line 88.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 5.73001pt on input line 88.
+File: Fig2-3.eps Graphic file (type eps)
+<Fig2-3.eps>
+ [19]
+File: Fig2-4.eps Graphic file (type eps)
+<Fig2-4.eps>
+ [20] [21]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 8.59502pt on input line 182.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 8.59502pt on input line 183.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (2.75302pt too wide) in paragraph at lines 193--198
+\TU/EBGaramond(0)/m/n/10 (Twins), Κάρκινος (Crab), Λέων (Lion), Παρθένος (Virgi
+n), Ζυγός (Balance/scale), Σκορπιός (Scor-
+ []
+
+
+Overfull \hbox (5.26784pt too wide) in paragraph at lines 193--198
+\TU/EBGaramond(0)/m/n/10 pion), Τοξότης (Archer), Αἰγόκερως (Goat-horned), Ὑδρο
+χόος (Water-pourer), and Ἰχθύες (Fishes).
+ []
+
+[22]
+File: Fig2-5.eps Graphic file (type eps)
+<Fig2-5.eps>
+File: Fig2-6.eps Graphic file (type eps)
+<Fig2-6.eps>
+File: Fig2-7.eps Graphic file (type eps)
+<Fig2-7.eps>
+ [23] [24]
+File: Fig2-8.eps Graphic file (type eps)
+<Fig2-8.eps>
+ [25] [26]
+File: Fig2-9.eps Graphic file (type eps)
+<Fig2-9.eps>
+ [27] [28]
+File: Fig2-10.eps Graphic file (type eps)
+<Fig2-10.eps>
+ [29] [30] [31] [32]
+Underfull \vbox (badness 3884) has occurred while \output is active []
+
+ [33]
+File: Fig2-11.eps Graphic file (type eps)
+<Fig2-11.eps>
+
+[34]
+File: Fig2-12.eps Graphic file (type eps)
+<Fig2-12.eps>
+ [35] [36] [37] [38]
+File: Fig2-13a.eps Graphic file (type eps)
+<Fig2-13a.eps>
+File: Fig2-13b.eps Graphic file (type eps)
+<Fig2-13b.eps>
+ [39] [40]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55]
+[56] [57] [58]
+Overfull \vbox (194.25761pt too high) detected at line 1771
+ []
+
+
+Overfull \vbox (194.25761pt too high) detected at line 1771
+ []
+
+
+Overfull \vbox (206.55103pt too high) detected at line 1887
+ []
+
+
+Overfull \vbox (202.45322pt too high) detected at line 1887
+ []
+
+
+Overfull \vbox (206.55103pt too high) detected at line 2003
+ []
+
+
+Overfull \vbox (202.45322pt too high) detected at line 2003
+ []
+
+
+Overfull \vbox (206.55103pt too high) detected at line 2119
+ []
+
+
+Overfull \vbox (202.45322pt too high) detected at line 2119
+ []
+
+
+Overfull \vbox (206.55103pt too high) detected at line 2235
+ []
+
+
+Overfull \vbox (202.45322pt too high) detected at line 2235
+ []
+
+
+Overfull \vbox (206.55103pt too high) detected at line 2352
+ []
+
+
+Overfull \vbox (206.55103pt too high) detected at line 2352
+ []
+
+
+Overfull \vbox (206.64882pt too high) detected at line 2468
+ []
+
+
+Overfull \vbox (202.35542pt too high) detected at line 2468
+ []
+
+
+Overfull \vbox (186.25761pt too high) detected at line 2575
+ []
+
+
+Overfull \vbox (186.15982pt too high) detected at line 2575
+ []
+
+
+Overfull \vbox (182.15982pt too high) detected at line 2679
+ []
+
+
+Overfull \vbox (177.86641pt too high) detected at line 2679
+ []
+
+) [59] [60] [61] [62] [63] [64] [65] [66] [67]
+\openout2 = `Chapter03.aux'.
+
+ (./Chapter03.tex [68
+
+
+
+
+
+
+
+
+]
+Chapter 3.
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 43--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--70
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[70]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [71] [72]
+\openout2 = `Chapter04.aux'.
+
+ (./Chapter04.tex
+Chapter 4.
+File: Fig4-1.eps Graphic file (type eps)
+<Fig4-1.eps>
+[73
+
+
+
+
+] [74] [75]
+File: Fig4-2.eps Graphic file (type eps)
+<Fig4-2.eps>
+ [76]
+File: Fig4-3.eps Graphic file (type eps)
+<Fig4-3.eps>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[77] [78]
+File: Fig4-4.eps Graphic file (type eps)
+<Fig4-4.eps>
+
+Overfull \hbox (2.57597pt too wide) in paragraph at lines 236--241
+\TU/EBGaramond(0)/m/n/10 complete the rectangle $\OML/cmm/m/it/10 XCKL$\TU/EBGa
+ramond(0)/m/n/10 . Simple geometry reveals that $\OML/cmm/m/it/10 CK \OT1/cmr/m
+/n/10 = \OML/cmm/m/it/10 XL \OT1/cmr/m/n/10 = (3/2) \OML/cmm/m/it/10 e a  [] M$
+\TU/EBGaramond(0)/m/n/10 ,
+ []
+
+[79]) [80]
+\openout2 = `Chapter05.aux'.
+
+ (./Chapter05.tex
+Chapter 5.
+File: Fig5-1.eps Graphic file (type eps)
+<Fig5-1.eps>
+[81
+
+
+
+
+] [82]
+Underfull \hbox (badness 10000) in paragraph at lines 126--146
+
+ []
+
+
+Overfull \hbox (10.0656pt too wide) in paragraph at lines 126--146
+\TU/EBGaramond(0)/m/n/10 According to Tables 3.1[]–3.3[], $\OML/cmm/m/it/10 t \
+OT1/cmr/m/n/10 = 2 453 495\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5$ \TU/EBGaramond(0
+)/m/n/10 JD. Hence, $\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 t
+[] \OT1/cmr/m/n/10 = 2 453 495\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5 \OMS/cmsy/m/n
+/10 ^^@ \OT1/cmr/m/n/10 2 451 545\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0 =
+ []
+
+[83]
+Underfull \hbox (badness 10000) in paragraph at lines 164--186
+
+ []
+
+
+Overfull \hbox (10.0656pt too wide) in paragraph at lines 164--186
+\TU/EBGaramond(0)/m/n/10 According to Tables 3.1[]–3.3[], $\OML/cmm/m/it/10 t \
+OT1/cmr/m/n/10 = 2 378 854\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5$ \TU/EBGaramond(0
+)/m/n/10 JD. Hence, $\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 t
+[] \OT1/cmr/m/n/10 = 2 378 854\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5 \OMS/cmsy/m/n
+/10 ^^@ \OT1/cmr/m/n/10 2 451 545\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0 =
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84]
+[85]
+File: Fig5-2.eps Graphic file (type eps)
+<Fig5-2.eps>
+
+Overfull \hbox (0.89409pt too wide) in paragraph at lines 259--268
+[]\TU/EBGaramond(0)/m/n/10 Figure 5.2[] illustrates the relationship between th
+e equinox and solstice points, and the lengths
+ []
+
+[86] [87] [88]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[89] [90]
+Overfull \hbox (1.61104pt too wide) in paragraph at lines 474--498
+ [][][][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (9.63605pt too wide) in paragraph at lines 558--601
+ [][][][] 
+ []
+
+) [91] [92] [93] [94] [95]
+\openout2 = `Chapter06.aux'.
+
+ (./Chapter06.tex [96
+
+
+
+
+
+]
+Chapter 6.
+[97] [98]
+Underfull \hbox (badness 10000) in paragraph at lines 95--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--162
+
+ []
+
+[99]
+File: Fig6-1.eps Graphic file (type eps)
+<Fig6-1.eps>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[100] [101]
+Underfull \hbox (badness 10000) in paragraph at lines 263--272
+
+ []
+
+[102]
+Underfull \hbox (badness 10000) in paragraph at lines 273--283
+
+ []
+
+[103]
+File: Fig6-2.eps Graphic file (type eps)
+<Fig6-2.eps>
+ [104] [105]
+File: Fig6-3.eps Graphic file (type eps)
+<Fig6-3.eps>
+ [106]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [107]
+[108]) [109] [110] [111] [112] [113] [114] [115] [116]
+\openout2 = `Chapter07.aux'.
+
+ (./Chapter07.tex
+Chapter 7.
+File: Fig7-1.eps Graphic file (type eps)
+<Fig7-1.eps>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [117
+
+
+
+
+
+]
+[118]
+Underfull \hbox (badness 10000) in paragraph at lines 87--110
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [119]
+Underfull \hbox (badness 10000) in paragraph at lines 135--158
+
+ []
+
+[120] [121]
+File: Fig7-2.eps Graphic file (type eps)
+<Fig7-2.eps>
+File: Fig7-3.eps Graphic file (type eps)
+<Fig7-3.eps>
+ [122] [123] [124]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [125]
+[126]
+Overfull \hbox (1.24234pt too wide) in paragraph at lines 406--415
+\TU/EBGaramond(0)/m/n/10 Now, $\OT1/cmr/m/n/10 223$ \TU/EBGaramond(0)/m/n/10 sy
+nodic months corresponds to $\OT1/cmr/m/n/10 6585\OML/cmm/m/it/10 :\OT1/cmr/m/n
+/10 413$ \TU/EBGaramond(0)/m/n/10 days, which corresponds to $\OT1/cmr/m/n/10 2
+38\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 99$ \TU/EBGaramond(0)/m/n/10 anoma-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [127]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [128]
+[129]) [130] [131] [132] [133]
+\openout2 = `Chapter08.aux'.
+
+ (./Chapter08.tex [134
+
+
+
+
+]
+Chapter 8.
+File: Fig8-1.eps Graphic file (type eps)
+<Fig8-1.eps>
+File: Fig8-2.eps Graphic file (type eps)
+<Fig8-2.eps>
+[135]
+File: Fig8-3.eps Graphic file (type eps)
+<Fig8-3.eps>
+ [136] [137]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [138]
+[139]
+Underfull \hbox (badness 10000) in paragraph at lines 230--249
+
+ []
+
+[140]
+Underfull \hbox (badness 10000) in paragraph at lines 287--308
+
+ []
+
+[141]
+File: Fig8-4.eps Graphic file (type eps)
+<Fig8-4.eps>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[142]
+Underfull \vbox (badness 7047) has occurred while \output is active []
+
+ [143]
+[144]
+Underfull \hbox (badness 10000) in paragraph at lines 456--475
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [145]
+[146]
+Underfull \hbox (badness 10000) in paragraph at lines 536--556
+
+ []
+
+[147] [148] [149]) [150] [151] [152] [153] [154] [155] [156] [157] [158]
+[159] [160] [161]
+\openout2 = `Chapter09.aux'.
+
+ (./Chapter09.tex [162
+
+
+
+
+]
+Chapter 9.
+File: Fig9-1.eps Graphic file (type eps)
+<Fig9-1.eps>
+[163]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [164]
+[165]
+Underfull \hbox (badness 10000) in paragraph at lines 137--157
+
+ []
+
+[166]
+Underfull \hbox (badness 10000) in paragraph at lines 194--214
+
+ []
+
+[167] [168] [169]
+Underfull \hbox (badness 10000) in paragraph at lines 353--373
+
+ []
+
+[170] [171] [172] [173] [174] [175]) [176] [177] [178] [179]
+\openout2 = `Chapter10.aux'.
+
+ (./Chapter10.tex
+[180
+
+
+
+
+
+
+]
+Chapter 10.
+[181]
+File: Fig10-1.eps Graphic file (type eps)
+<Fig10-1.eps>
+ [182] [183]
+Underfull \hbox (badness 10000) in paragraph at lines 157--179
+
+ []
+
+[184]
+Underfull \hbox (badness 10000) in paragraph at lines 211--233
+
+ []
+
+[185]
+Underfull \hbox (badness 10000) in paragraph at lines 265--287
+
+ []
+
+[186] [187]
+File: Fig10-2.eps Graphic file (type eps)
+<Fig10-2.eps>
+ [188] [189]
+Underfull \hbox (badness 10000) in paragraph at lines 454--476
+
+ []
+
+[190]
+Underfull \hbox (badness 10000) in paragraph at lines 509--531
+
+ []
+
+[191] [192]) [193] [194] [195] [196] [197] [198] [199] [200] [201] [202]
+\openout2 = `Chapter11.aux'.
+
+
+(./Chapter11.tex
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 8.59502pt on input line 20.
+ [203
+
+
+
+
+] [204]
+Overfull \hbox (5.69116pt too wide) in paragraph at lines 179--181
+[]\TU/EBGaramond(0)/m/n/9 Greatest \TU/EBGaramond(0)/b/n/9 elongation \TU/EBGar
+amond(0)/m/n/9 of an \TU/EBGaramond(0)/m/it/9 inferior planet \TU/EBGaramond(0)
+/m/n/9 from the Sun. If the planet is to the east/west
+ []
+
+[205] [206] [207]) [208]
+\openout2 = `Chapter12.aux'.
+
+ (./Chapter12.tex [209
+
+
+
+
+
+])
+\openout2 = `Chapter13.aux'.
+
+ (./Chapter13.tex [210
+
+
+
+
+
+]
+Overfull \hbox (0.18939pt too wide) in paragraph at lines 30--31
+[]\TU/EBGaramond(0)/m/it/10 An Introduction to Celestial Mechanics\TU/EBGaramon
+d(0)/m/n/10 , R. Fitzpatrick (Cambridge University Press, Cambridge
+ []
+
+) [211]
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/DefineCommandsCmd}  =>  {use_none:n}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {american}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}
+>  {greek/script}  =>  {Greek}
+>  {greek/lcscript}  =>  {greek}
+>  {greek/scripttag}  =>  {grek}
+>  {greek/language}  =>  {Greek}
+>  {greek/langtag}  =>  {ELL}
+>  {greek/bcp47}  =>  {el-monoton}
+>  {greek/hyphennames}  =>  {}
+>  {greek/direction}  =>  {LR}
+>  {greek/hyphenmins}  =>  {2,3}
+>  {greek/frenchspacing}  =>  {true}
+>  {greek/indentfirst}  =>  {true}
+>  {greek/fontsetup}  =>  {true}
+>  {greek/envname}  =>  {greek}
+>  {greek/babelname}  =>  {greek}
+>  {greek/localnumeral}  =>  {greeknumerals}
+>  {greek/Localnumeral}  =>  {Greeknumerals}
+>  {greek/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
+The property list \__xpg_alias contains the pairs (without outer braces):
+>  {latex/target}  =>  {latex}
+>  {english/target}  =>  {english}
+>  {en/target}  =>  {english}
+>  {en-AU/target}  =>  {english}
+>  {en-AU/variant}  =>  {australian}
+>  {en-AU/options}  =>  {variant=australian}
+>  {en-CA/target}  =>  {english}
+>  {en-CA/variant}  =>  {canadian}
+>  {en-CA/options}  =>  {variant=canadian}
+>  {en-GB/target}  =>  {english}
+>  {en-GB/variant}  =>  {british}
+>  {en-GB/options}  =>  {variant=british}
+>  {en-NZ/target}  =>  {english}
+>  {en-NZ/variant}  =>  {newzealand}
+>  {en-NZ/options}  =>  {variant=newzealand}
+>  {en-US/target}  =>  {english}
+>  {en-US/variant}  =>  {us}
+>  {en-US/options}  =>  {variant=us}
+>  {american/target}  =>  {english}
+>  {american/variant}  =>  {us}
+>  {american/options}  =>  {variant=us}
+>  {australian/target}  =>  {english}
+>  {australian/variant}  =>  {australian}
+>  {australian/options}  =>  {variant=australian}
+>  {british/target}  =>  {english}
+>  {british/variant}  =>  {british}
+>  {british/options}  =>  {variant=british}
+>  {canadian/target}  =>  {english}
+>  {canadian/variant}  =>  {canadian}
+>  {canadian/options}  =>  {variant=canadian}
+>  {newzealand/target}  =>  {english}
+>  {newzealand/variant}  =>  {newzealand}
+>  {newzealand/options}  =>  {variant=newzealand}
+>  {greek/target}  =>  {greek}
+>  {grc/target}  =>  {greek}
+>  {grc/variant}  =>  {ancient}
+>  {grc/options}  =>  {variant=ancient}
+>  {el-polyton/target}  =>  {greek}
+>  {el-polyton/options}  =>  {varant=polytonic}
+>  {el-monoton/target}  =>  {greek}
+>  {el-monoton/variant}  =>  {monotonic}
+>  {el-monoton/options}  =>  {variant=monotonic}
+>  {el/target}  =>  {greek}
+>  {polutonikogreek/target}  =>  {greek}
+>  {polutonikogreek/variant}  =>  {polytonic}
+>  {polutonikogreek/options}  =>  {variant=polytonic}.
+ (./Almagest.aux
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+ (./Chapter01.aux) (./Chapter02.aux) (./Chapter03.aux)
+(./Chapter04.aux) (./Chapter05.aux) (./Chapter06.aux) (./Chapter07.aux)
+(./Chapter08.aux) (./Chapter09.aux) (./Chapter10.aux) (./Chapter11.aux)
+(./Chapter12.aux) (./Chapter13.aux)) ) 
+Here is how much of TeX's memory you used:
+ 8270 strings out of 476683
+ 197023 string characters out of 5804047
+ 2157018 words of memory out of 5000000
+ 28229 multiletter control sequences out of 15000+600000
+ 517648 words of font info for 95 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 72i,12n,85p,697b,378s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on Almagest.pdf (211 pages).

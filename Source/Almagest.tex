@@ -1,22 +1,44 @@
-\documentclass[11pt]{book}
-\usepackage{fullpage}
-\usepackage{epsf}
+\documentclass{book}[11pt]
+\usepackage[a4paper, total={4.75in, 7in}]{geometry}
 \usepackage{graphicx,epstopdf}	
 \usepackage{parallel}
 \usepackage{amsmath}
+\usepackage{pdflscape}
 
 \usepackage{fontspec}
-\setmainfont{Times New Roman}
+%\setmainfont{Times New Roman}[Scale=MatchLowercase]
+\setmainfont{EB Garamond}[Scale=0.955]
 \usepackage{polyglossia}
 \setmainlanguage{english}
 \setotherlanguage{greek}
 \newfontfamily\greekfont{Times New Roman}
 
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\huge\bfseries}
+  {\thechapter.}
+  {0.5em}
+  {}            
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[CE]{FITZPATRICK}
+\fancyhead[CO]{{\em Modern Almagest},\, \MakeUppercase{\leftmark}}
+
 \newcommand {\btau}{\mbox{\boldmath$\tau$}}
 \newcommand {\bOmega}{\mbox{\boldmath$\Omega$}}
 \newcommand {\bomega}{\mbox{\boldmath$\omega$}}
 
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter. #1}{}}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\setlength{\tabcolsep}{3.5pt} 
+
 \begin{document}
+%\fontsize{10pt}{11pt}\selectfont
 
 \title{{\bf A Modern Almagest}:\\[0.5ex]An Updated  Version of Ptolemy's Model of the Solar System}
 \author{Richard Fitzpatrick}
@@ -36,6 +58,11 @@
 \include{Chapter09.tex}
 \include{Chapter10.tex}
 
+\fancyhf{} 
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[CE]{FITZPATRICK}
+\fancyhead[CO]{{\em Modern Almagest},\, TECHNICAL TERMS}
+\pagestyle{fancy}
 \include{Chapter11.tex}
 \include{Chapter12.tex}
 \include{Chapter13.tex}
