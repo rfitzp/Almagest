@@ -73,7 +73,9 @@ q &= [2\,e - (1/4)\,e^3]\,\sin \,M + (5/4) \,e^2\,\sin\,2M + (13/12)\,e^3\,\sin 
 \zeta &= -(1/2)\,e^2+ [e-(3/8)\,e^3]\,\cos\,M + (1/2)\,e^2\,\cos\,2M \nonumber\\[0.5ex]
 &\phantom{=}+ (3/8)\,e^3\,\cos\,3M.
 \end{align}
-With this modification, the mean error is $6'$ and the maximum error $28'$. 
+With this modification, the mean error is $6'$ and the maximum error $28'$. Our modification of the planetary longitude model for the case of Mercury can be thought of
+as being equivalent to the additional epicycle that Ptolemy introduced into his model of Mercury's orbit. In both cases, the amendment to the model is necessitated by
+Mercury's particularly large orbital eccentricity. 
 
 \section{Determination of ecliptic longitude of Venus}
 The ecliptic longitude of Venus can be determined with the aid of Tables~\ref{vt17}--\ref{vt19}. Table~\ref{vt17} allows
@@ -181,9 +183,11 @@ $$
 \Theta_-(-0.48) = -0.355, \mbox{\hspace{0.5cm}}\Theta_+(-0.48) = -0.125,
 $$
 so
-$$
-\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = -0.355\times 0.126 + 9.212-0.125\times 0.129 = 9.151^\circ.
-$$
+\begin{align*}
+\theta  &= \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ \\[0.5ex]
+&= -0.355\times 0.126 + 9.212-0.125\times 0.129\\[0.5ex]
+& = 9.151^\circ.
+\end{align*}
 Finally,
 $$
 \lambda=\bar{\lambda}_S + \theta= 44.602+9.151=53.753 \simeq 53^\circ 45'. 
@@ -237,9 +241,11 @@ $$
 \Theta_-(0.90) = 0.045,\mbox{\hspace{0.5cm}}\Theta_+(0.90) = 0.855,
 $$
 so
-$$
-\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = 0.045\times 0.589+34.482+0.855\times 0.607 = 35.027^\circ.
-$$
+\begin{align*}
+\theta  &= \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+\\[0.5ex]
+& = 0.045\times 0.589+34.482+0.855\times 0.607\\[0.5ex]
+& = 35.027^\circ.
+\end{align*}
 Finally,
 $$
 \lambda=\bar{\lambda}_S  + \theta= 273.055+35.027= 308.082 \simeq 308^\circ 5'.
@@ -275,10 +281,10 @@ Tables~\ref{vt17}--\ref{vt19} can be used to determine the dates of the conjunct
 of Venus. Consider the first superior conjunction after the epoch (January 1, 2000 AD). We can estimate the
 time at which this event occurs by approximating the epicyclic anomaly as the 
 mean epicyclic anomaly: 
-$$
-\mu \simeq \bar{\mu} = \bar{\lambda}-\bar{\lambda}_S = \bar{\lambda}_0-\bar{\lambda}_{0\,S} +
-(n-n_S)\,(t-t_0) = 261.515 + 0.61652137\,(t-t_0).
-$$
+\begin{align*}
+\mu \simeq \bar{\mu} &= \bar{\lambda}-\bar{\lambda}_S = \bar{\lambda}_0-\bar{\lambda}_{0\,S} +
+(n-n_S)\,(t-t_0)\\[0.5ex]& = 261.515 + 0.61652137\,(t-t_0).
+\end{align*}
  Thus, 
 $$
  t\simeq t_0 + (360-261.515)/0.61652137\simeq
@@ -397,9 +403,11 @@ $$
 \Theta_-(0.69) = 0.107, \mbox{\hspace{0.5cm}}\Theta_+(0.69) = 0.583,
 $$
 so
-$$
-\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = -0.107\times 4.005 -21.609-0.583\times 6.182 = -25.642^\circ.
-$$
+\begin{align*}
+\theta  &= \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ \\[0.5ex]
+&= -0.107\times 4.005 -21.609-0.583\times 6.182 \\[0.5ex]
+&= -25.642^\circ.
+\end{align*}
 Finally,
 $$
 \lambda=\bar{\lambda}_S + \theta= 44.602-25.642=18.960 \simeq 18^\circ 58'. 
@@ -426,8 +434,7 @@ to that contained in the ``Tables of the longitudinal corrections of the five pl
 discussed in Book~XII of the Almagest. 
 
 \section{Tables}
-\clearpage
-\newpage
+
 \begin{table}
 \centering
 \begin{tabular}{rrrr|rrrr}

@@ -15,11 +15,17 @@
 
 \usepackage{titlesec}
 \titleformat{\chapter}
-  {\normalfont\huge\bfseries}
+  {\normalfont\huge\bfseries\centering}
   {\thechapter.}
   {0.5em}
   {}            
 \titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+\titleformat{\section}
+  {\normalfont\Large\itshape\centering}
+  {\thesection}
+  {1em}
+  {}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -33,6 +39,9 @@
 \newcommand {\bomega}{\mbox{\boldmath$\omega$}}
 
 \renewcommand{\chaptermark}[1]{\markboth{\thechapter. #1}{}}
+\addto\captionsenglish{%
+  \renewcommand{\contentsname}{Table of Contents}
+}
 %\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
 \setlength{\tabcolsep}{3.5pt} 
@@ -40,13 +49,16 @@
 \begin{document}
 %\fontsize{10pt}{11pt}\selectfont
 
-\title{{\bf A Modern Almagest}:\\[0.5ex]An Updated  Version of Ptolemy's Model of the Solar System}
+\title{A MODERN ALMAGEST:\\[0.5ex]An Updated  Version of Ptolemy's Model of the Solar System}
 \author{Richard Fitzpatrick}
 \date{}
 \maketitle
 
+\frontmatter
 \tableofcontents
+\include{Preface.tex}
 
+\mainmatter
 \include{Chapter01.tex}
 \include{Chapter02.tex}
 \include{Chapter03.tex}

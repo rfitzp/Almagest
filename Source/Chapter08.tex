@@ -39,7 +39,7 @@ executes a Keplerian orbit about the guide-point, $G'$, whose
 \end{figure}
  
 \begin{figure}
-\centerline{\includegraphics[height=2in]{Fig8-2.eps}}
+\centerline{\includegraphics[height=2.5in]{Fig8-2.eps}}
 \caption{Planetary longitude model. View is from northern ecliptic pole. }\label{vf4}
 \end{figure}
 
@@ -274,9 +274,11 @@ $$
 \Theta_-(0.72) = 0.101, \mbox{\hspace{0.5cm}}\Theta_+(0.72) = 0.619,
 $$
 so
-$$
-\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = 0.101\times 3.853+39.209+0.619\times 4.612 = 42.453^\circ.
-$$ 
+\begin{align*}
+\theta & = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ \\[0.5ex]
+&= 0.101\times 3.853+39.209+0.619\times 4.612 \\[0.5ex]
+&= 42.453^\circ.
+\end{align*}
 Finally,
 $$
 \lambda=\bar{\lambda} + q + \theta= 297.661-7.345+42.453=332.769 \simeq 332^\circ 46'.
@@ -332,9 +334,11 @@ $$
 \Theta_+(-0.19) = -0.077,
 $$
 so
-$$
-\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = -0.113\times 5.980-32.007-0.077\times 8.955 = -30.642^\circ.
-$$
+\begin{align*}
+\theta & = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ \\[0.5ex]
+&= -0.113\times 5.980-32.007-0.077\times 8.955 \\[0.5ex]
+&= -30.642^\circ.
+\end{align*}
 Finally,
 $$
 \lambda=\bar{\lambda} + q + \theta= 60.464+10.739-30.642 = 40.561 \simeq 40^\circ 34'.
@@ -360,15 +364,16 @@ faster angular velocity than its guide-point rotates around the deferent. Moreov
 in the same direction. It follows that the planet is traveling  backward in the sky (relative to the direction
 of its mean motion) at opposition. This phenomenon is called {\em retrograde motion}. The period of
 retrograde motion begins and ends at  {\em stations}; so-called because when the planet reaches them
-it appears to stand still in the sky for a few days while it reverses direction.
+it appears to stand still in the sky (relative to the fixed stars) for a few days while it reverses direction.
 
 Tables~\ref{vt8}--\ref{vt10} can be used to determine the dates of the conjunctions, oppositions, and
 stations of Mars. Consider the first conjunction after the epoch (January 1, 2000 AD). We can estimate the
 time at which this event occurs by approximating the epicyclic anomaly as the so-called
 {\em mean epicyclic anomaly}: 
-$$
-\mu \simeq \bar{\mu} = \bar{\lambda}_S-\bar{\lambda} = \bar{\lambda}_{0\,S}-\bar{\lambda}_0 +(n_S-n)\,(t-t_0) = 284.998 + 0.46157617\,(t-t_0).
-$$
+\begin{align*}
+\mu \simeq \bar{\mu} &= \bar{\lambda}_S-\bar{\lambda} = \bar{\lambda}_{0\,S}-\bar{\lambda}_0 +(n_S-n)\,(t-t_0)\\[0.5ex]
+& = 284.998 + 0.46157617\,(t-t_0).
+\end{align*}
  We obtain
 $$
 t\simeq t_0 + (360-284.998)/0.46157617\simeq t_0 + 162\, {\rm JD}.
@@ -500,9 +505,11 @@ $$
 \Theta_-(-0.59) = -0.469, \mbox{\hspace{0.5cm}}\Theta_+(-0.59) = -0.121,
 $$
 so
-$$
-\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = 0.469\times 0.447-6.194+0.121\times 0.522 =- 5.921^\circ.
-$$ 
+\begin{align*}
+\theta  &= \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ \\[0.5ex]
+&= 0.469\times 0.447-6.194+0.121\times 0.522\\[0.5ex]
+& =- 5.921^\circ.
+\end{align*}
 Finally,
 $$
 \lambda=\bar{\lambda} + q + \theta= 196.501-0.091-5.921=190.489 \simeq 190^\circ 29'.
@@ -581,9 +588,11 @@ $$
 \Theta_-(0.83) = 0.071, \mbox{\hspace{0.5cm}}\Theta_+(0.83) = 0.759,
 $$
 so
-$$
-\theta  = \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+ = -0.071\times 0.353-5.551-0.759\times 0.405 =- 5.883^\circ.
-$$ 
+\begin{align*}
+\theta  &= \Theta_-\,\delta\theta_- + \bar{\theta}+\Theta_+\,\delta\theta_+\\[0.5ex]
+& = -0.071\times 0.353-5.551-0.759\times 0.405\\[0.5ex]
+& =- 5.883^\circ.
+\end{align*}
 Finally,
 $$
 \lambda=\bar{\lambda} + q + \theta= 115.416+2.561-5.883=112.094 \simeq 112^\circ 06'.
@@ -610,7 +619,8 @@ to that contained in the ``Tables of the longitudinal corrections of the five pl
 discussed in Book~XII of the Almagest. 
 
 \section{Tables}
-\begin{table}
+
+\begin{table}[h]
 \centering
 \begin{tabular}{l|cccc}
 Planet & $\bar{z}$ & $\delta z$ & $z_{\rm min}$ & $z_{\rm max}$\\\hline
@@ -1002,7 +1012,8 @@ $\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ \\\hline
 
 \newpage
 \begin{table}\centering
-{\small\begin{tabular}{lcl|lcl}
+{%\small
+\begin{tabular}{lcl|lcl}
 Event & Date & $\lambda$ & Event & Date & $\lambda$\\\hline
 &&\\[-1.75ex]
 Conjunction & 08/05/2000 & 17TA53  &Conjunction & 22/10/2005 & 29LI16\\
@@ -1188,7 +1199,8 @@ $\mu$ & $\delta\theta_-$  & $\bar{\theta}~~~~$ & $\delta\theta_+$ \\\hline
 
 \newpage
 \begin{table}\centering
-{\small\begin{tabular}{lcl|lcl}
+{%\small
+\begin{tabular}{lcl|lcl}
 Event & Date &$\lambda$ & Event & Date &$\lambda$ \\\hline
 &&\\[-1.75ex]
 Conjunction & 10/05/2000 & 20TA26 &Station (R) & 22/11/2005 & 11LE19\\

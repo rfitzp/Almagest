@@ -1,90 +1,91 @@
 \selectlanguage *{english}
-\contentsline {chapter}{\numberline {1}Introduction}{7}{}%
-\contentsline {section}{\numberline {1.1}Euclid's Elements and Ptolemy's Almagest}{7}{}%
-\contentsline {section}{\numberline {1.2}Ptolemy's model of the Solar System}{8}{}%
-\contentsline {section}{\numberline {1.3}Copernicus's model of the Solar System}{13}{}%
-\contentsline {section}{\numberline {1.4}Kepler's model of the Solar System}{14}{}%
-\contentsline {section}{\numberline {1.5}Purpose of book}{15}{}%
-\contentsline {chapter}{\numberline {2}Spherical astronomy}{17}{}%
-\contentsline {section}{\numberline {2.1}The celestial sphere}{17}{}%
-\contentsline {section}{\numberline {2.2}Celestial motions}{17}{}%
-\contentsline {section}{\numberline {2.3}Celestial coordinates}{17}{}%
-\contentsline {section}{\numberline {2.4}The ecliptic circle}{19}{}%
-\contentsline {section}{\numberline {2.5}Ecliptic coordinates}{21}{}%
-\contentsline {section}{\numberline {2.6}The signs of the zodiac}{22}{}%
-\contentsline {section}{\numberline {2.7}Ecliptic declinations and right ascensions.}{23}{}%
-\contentsline {section}{\numberline {2.8}Local horizon and meridian}{23}{}%
-\contentsline {section}{\numberline {2.9}Horizontal coordinates}{26}{}%
-\contentsline {section}{\numberline {2.10}Meridian transits}{27}{}%
-\contentsline {section}{\numberline {2.11}Principal terrestrial latitude circles}{28}{}%
-\contentsline {section}{\numberline {2.12}Equinoxes and solstices}{29}{}%
-\contentsline {section}{\numberline {2.13}Terrestrial climes}{30}{}%
-\contentsline {section}{\numberline {2.14}Ecliptic ascensions}{30}{}%
-\contentsline {section}{\numberline {2.15}Azimuth of ecliptic ascension point}{34}{}%
-\contentsline {section}{\numberline {2.16}Ecliptic altitude and orientation}{34}{}%
-\contentsline {section}{\numberline {2.17}Maps and tables}{38}{}%
-\contentsline {chapter}{\numberline {3}Dates and times}{69}{}%
-\contentsline {section}{\numberline {3.1}Julian and Gregorian calendars}{69}{}%
-\contentsline {section}{\numberline {3.2}Julian day number}{69}{}%
-\contentsline {section}{\numberline {3.3}Determination of Julian day numbers}{69}{}%
-\contentsline {section}{\numberline {3.4}Tables}{70}{}%
-\contentsline {chapter}{\numberline {4}Geometric planetary orbit models}{73}{}%
-\contentsline {section}{\numberline {4.1}The model of Kepler}{73}{}%
-\contentsline {section}{\numberline {4.2}The model of Hipparchus}{76}{}%
-\contentsline {section}{\numberline {4.3}The model of Ptolemy}{77}{}%
-\contentsline {section}{\numberline {4.4}The model of Copernicus}{78}{}%
-\contentsline {chapter}{\numberline {5}The Sun}{81}{}%
-\contentsline {section}{\numberline {5.1}Solar ecliptic longitude model}{81}{}%
-\contentsline {section}{\numberline {5.2}Determination of solar ecliptic longitude}{83}{}%
-\contentsline {section}{\numberline {5.3}Example solar longitude calculations}{84}{}%
-\contentsline {section}{\numberline {5.4}Determination of equinox and solstice dates}{85}{}%
-\contentsline {section}{\numberline {5.5}The equation of time}{87}{}%
-\contentsline {section}{\numberline {5.6}Solar distance model}{88}{}%
-\contentsline {section}{\numberline {5.7}Tables}{89}{}%
-\contentsline {chapter}{\numberline {6}The Moon}{97}{}%
-\contentsline {section}{\numberline {6.1}Lunar ecliptic longitude model}{97}{}%
-\contentsline {section}{\numberline {6.2}Determination of lunar ecliptic longitude}{98}{}%
-\contentsline {section}{\numberline {6.3}Example lunar longitude calculations}{99}{}%
-\contentsline {section}{\numberline {6.4}Lunar ecliptic latitude model}{101}{}%
-\contentsline {section}{\numberline {6.5}Determination of lunar ecliptic latitude}{102}{}%
-\contentsline {section}{\numberline {6.6}Example lunar latitude calculations}{102}{}%
-\contentsline {section}{\numberline {6.7}The length of a month}{103}{}%
-\contentsline {section}{\numberline {6.8}Lunar distance model}{103}{}%
-\contentsline {section}{\numberline {6.9}Lunar parallax}{105}{}%
-\contentsline {section}{\numberline {6.10}Tables}{108}{}%
-\contentsline {chapter}{\numberline {7}Lunar-Solar Syzygies and Eclipses}{117}{}%
-\contentsline {section}{\numberline {7.1}Syzygies}{117}{}%
-\contentsline {section}{\numberline {7.2}Lunar-solar elongation model}{118}{}%
-\contentsline {section}{\numberline {7.3}Determination of lunar-solar elongation}{118}{}%
-\contentsline {section}{\numberline {7.4}Example syzygy calculations}{119}{}%
-\contentsline {section}{\numberline {7.5}Solar and lunar eclipses}{121}{}%
-\contentsline {section}{\numberline {7.6}Example eclipse calculations}{124}{}%
-\contentsline {section}{\numberline {7.7}Eclipse statistics}{126}{}%
-\contentsline {section}{\numberline {7.8}Eclipse cycles}{127}{}%
-\contentsline {section}{\numberline {7.9}Tables}{129}{}%
-\contentsline {chapter}{\numberline {8}The superior planets}{135}{}%
-\contentsline {section}{\numberline {8.1}Planetary ecliptic longitude model}{135}{}%
-\contentsline {section}{\numberline {8.2}Determination of the ecliptic longitude of Mars}{139}{}%
-\contentsline {section}{\numberline {8.3}Example martian ecliptic longitude calculations}{140}{}%
-\contentsline {section}{\numberline {8.4}Conjunction, opposition, and station dates}{143}{}%
-\contentsline {section}{\numberline {8.5}Determination of ecliptic longitude of Jupiter}{145}{}%
-\contentsline {section}{\numberline {8.6}Determination of ecliptic longitude of Saturn}{147}{}%
-\contentsline {section}{\numberline {8.7}Tables}{148}{}%
-\contentsline {chapter}{\numberline {9}The inferior planets}{163}{}%
-\contentsline {section}{\numberline {9.1}Determination of ecliptic longitude}{163}{}%
-\contentsline {section}{\numberline {9.2}Determination of ecliptic longitude of Venus}{165}{}%
-\contentsline {section}{\numberline {9.3}Conjunction and greatest elongation dates}{168}{}%
-\contentsline {section}{\numberline {9.4}Determination of ecliptic longitude of Mercury}{169}{}%
-\contentsline {section}{\numberline {9.5}Tables}{171}{}%
-\contentsline {chapter}{\numberline {10}Planetary latitudes}{181}{}%
-\contentsline {section}{\numberline {10.1}Determination of ecliptic latitude of superior planet}{181}{}%
-\contentsline {section}{\numberline {10.2}Determination of ecliptic latitude of Mars}{183}{}%
-\contentsline {section}{\numberline {10.3}Determination of ecliptic latitude of Jupiter}{185}{}%
-\contentsline {section}{\numberline {10.4}Determination of ecliptic latitude of Saturn}{186}{}%
-\contentsline {section}{\numberline {10.5}Determination of ecliptic latitude of inferior planet}{187}{}%
-\contentsline {section}{\numberline {10.6}Determination of ecliptic latitude of Venus}{189}{}%
-\contentsline {section}{\numberline {10.7}Determination of ecliptic latitude of Mercury}{191}{}%
-\contentsline {section}{\numberline {10.8}Tables}{192}{}%
-\contentsline {chapter}{Technical terms}{203}{}%
-\contentsline {chapter}{Index of symbols}{209}{}%
-\contentsline {chapter}{Bibliography}{211}{}%
+\contentsline {chapter}{Preface}{v}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {section}{\numberline {1.1}Euclid's Elements and Ptolemy's Almagest}{1}{}%
+\contentsline {section}{\numberline {1.2}Ptolemy's model of the Solar System}{2}{}%
+\contentsline {section}{\numberline {1.3}Copernicus's model of the Solar System}{7}{}%
+\contentsline {section}{\numberline {1.4}Kepler's model of the Solar System}{8}{}%
+\contentsline {section}{\numberline {1.5}Purpose of book}{9}{}%
+\contentsline {chapter}{\numberline {2}Spherical astronomy}{11}{}%
+\contentsline {section}{\numberline {2.1}The celestial sphere}{11}{}%
+\contentsline {section}{\numberline {2.2}Celestial motions}{11}{}%
+\contentsline {section}{\numberline {2.3}Celestial coordinates}{11}{}%
+\contentsline {section}{\numberline {2.4}The ecliptic circle}{13}{}%
+\contentsline {section}{\numberline {2.5}Ecliptic coordinates}{15}{}%
+\contentsline {section}{\numberline {2.6}The signs of the zodiac}{16}{}%
+\contentsline {section}{\numberline {2.7}Ecliptic declinations and right ascensions.}{17}{}%
+\contentsline {section}{\numberline {2.8}Local horizon and meridian}{17}{}%
+\contentsline {section}{\numberline {2.9}Horizontal coordinates}{20}{}%
+\contentsline {section}{\numberline {2.10}Meridian transits}{21}{}%
+\contentsline {section}{\numberline {2.11}Principal terrestrial latitude circles}{22}{}%
+\contentsline {section}{\numberline {2.12}Equinoxes and solstices}{23}{}%
+\contentsline {section}{\numberline {2.13}Terrestrial climes}{24}{}%
+\contentsline {section}{\numberline {2.14}Ecliptic ascensions}{25}{}%
+\contentsline {section}{\numberline {2.15}Azimuth of ecliptic ascension point}{28}{}%
+\contentsline {section}{\numberline {2.16}Ecliptic altitude and orientation}{28}{}%
+\contentsline {section}{\numberline {2.17}Maps and tables}{32}{}%
+\contentsline {chapter}{\numberline {3}Dates and times}{61}{}%
+\contentsline {section}{\numberline {3.1}Julian and Gregorian calendars}{61}{}%
+\contentsline {section}{\numberline {3.2}Julian day number}{61}{}%
+\contentsline {section}{\numberline {3.3}Determination of Julian day numbers}{61}{}%
+\contentsline {section}{\numberline {3.4}Tables}{62}{}%
+\contentsline {chapter}{\numberline {4}Geometric planetary orbit models}{65}{}%
+\contentsline {section}{\numberline {4.1}The model of Kepler}{65}{}%
+\contentsline {section}{\numberline {4.2}The model of Hipparchus}{68}{}%
+\contentsline {section}{\numberline {4.3}The model of Ptolemy}{69}{}%
+\contentsline {section}{\numberline {4.4}The model of Copernicus}{70}{}%
+\contentsline {chapter}{\numberline {5}The Sun}{73}{}%
+\contentsline {section}{\numberline {5.1}Solar ecliptic longitude model}{73}{}%
+\contentsline {section}{\numberline {5.2}Determination of solar ecliptic longitude}{75}{}%
+\contentsline {section}{\numberline {5.3}Example solar longitude calculations}{76}{}%
+\contentsline {section}{\numberline {5.4}Determination of equinox and solstice dates}{77}{}%
+\contentsline {section}{\numberline {5.5}The equation of time}{79}{}%
+\contentsline {section}{\numberline {5.6}Solar distance model}{80}{}%
+\contentsline {section}{\numberline {5.7}Tables}{82}{}%
+\contentsline {chapter}{\numberline {6}The Moon}{89}{}%
+\contentsline {section}{\numberline {6.1}Lunar ecliptic longitude model}{89}{}%
+\contentsline {section}{\numberline {6.2}Determination of lunar ecliptic longitude}{90}{}%
+\contentsline {section}{\numberline {6.3}Example lunar longitude calculations}{91}{}%
+\contentsline {section}{\numberline {6.4}Lunar ecliptic latitude model}{93}{}%
+\contentsline {section}{\numberline {6.5}Determination of lunar ecliptic latitude}{94}{}%
+\contentsline {section}{\numberline {6.6}Example lunar latitude calculations}{94}{}%
+\contentsline {section}{\numberline {6.7}The length of a month}{95}{}%
+\contentsline {section}{\numberline {6.8}Lunar distance model}{96}{}%
+\contentsline {section}{\numberline {6.9}Lunar parallax}{98}{}%
+\contentsline {section}{\numberline {6.10}Tables}{100}{}%
+\contentsline {chapter}{\numberline {7}Lunar-Solar Syzygies and Eclipses}{109}{}%
+\contentsline {section}{\numberline {7.1}Syzygies}{109}{}%
+\contentsline {section}{\numberline {7.2}Lunar-solar elongation model}{110}{}%
+\contentsline {section}{\numberline {7.3}Determination of lunar-solar elongation}{110}{}%
+\contentsline {section}{\numberline {7.4}Example syzygy calculations}{111}{}%
+\contentsline {section}{\numberline {7.5}Solar and lunar eclipses}{113}{}%
+\contentsline {section}{\numberline {7.6}Example eclipse calculations}{116}{}%
+\contentsline {section}{\numberline {7.7}Eclipse statistics}{118}{}%
+\contentsline {section}{\numberline {7.8}Eclipse cycles}{119}{}%
+\contentsline {section}{\numberline {7.9}Tables}{121}{}%
+\contentsline {chapter}{\numberline {8}The superior planets}{127}{}%
+\contentsline {section}{\numberline {8.1}Planetary ecliptic longitude model}{127}{}%
+\contentsline {section}{\numberline {8.2}Determination of the ecliptic longitude of Mars}{131}{}%
+\contentsline {section}{\numberline {8.3}Example martian ecliptic longitude calculations}{132}{}%
+\contentsline {section}{\numberline {8.4}Conjunction, opposition, and station dates}{135}{}%
+\contentsline {section}{\numberline {8.5}Determination of ecliptic longitude of Jupiter}{137}{}%
+\contentsline {section}{\numberline {8.6}Determination of ecliptic longitude of Saturn}{139}{}%
+\contentsline {section}{\numberline {8.7}Tables}{141}{}%
+\contentsline {chapter}{\numberline {9}The inferior planets}{155}{}%
+\contentsline {section}{\numberline {9.1}Determination of ecliptic longitude}{155}{}%
+\contentsline {section}{\numberline {9.2}Determination of ecliptic longitude of Venus}{157}{}%
+\contentsline {section}{\numberline {9.3}Conjunction and greatest elongation dates}{160}{}%
+\contentsline {section}{\numberline {9.4}Determination of ecliptic longitude of Mercury}{162}{}%
+\contentsline {section}{\numberline {9.5}Tables}{163}{}%
+\contentsline {chapter}{\numberline {10}Planetary latitudes}{173}{}%
+\contentsline {section}{\numberline {10.1}Determination of ecliptic latitude of superior planet}{173}{}%
+\contentsline {section}{\numberline {10.2}Determination of ecliptic latitude of Mars}{175}{}%
+\contentsline {section}{\numberline {10.3}Determination of ecliptic latitude of Jupiter}{177}{}%
+\contentsline {section}{\numberline {10.4}Determination of ecliptic latitude of Saturn}{178}{}%
+\contentsline {section}{\numberline {10.5}Determination of ecliptic latitude of inferior planet}{179}{}%
+\contentsline {section}{\numberline {10.6}Determination of ecliptic latitude of Venus}{182}{}%
+\contentsline {section}{\numberline {10.7}Determination of ecliptic latitude of Mercury}{183}{}%
+\contentsline {section}{\numberline {10.8}Tables}{184}{}%
+\contentsline {chapter}{Technical terms}{195}{}%
+\contentsline {chapter}{Index of symbols}{201}{}%
+\contentsline {chapter}{Bibliography}{203}{}%

@@ -1,117 +1,73 @@
 PRAEFATIO.
 
-Ad Ptolemaeum edendum adcessi a Bibliopola honestissimo
-rogatus, nec inuitus obsecutus sum, cum id maxime
-opus esse uiderem, quod praestare me posse putabam,
-ut codicibus denuo collatis aestimatisque fundamentum
-quoddam recensionis iaceretur. nam editio princeps
-Syntaxis (Basileae 1538), ut mos erat illorum temporum,
-uno nec eo bono codice nititur, et Halma, abbas Parisinus,
-qui deinde solus Graecam editionem curauit (Parisiis
-1813 sqq.) hodie rarissimam, ut optimum codicem Parisinum
-adhibuit, ita nesque negotii critici neque sermonis
-Graeci satis peritus fuit. mihi igitur incipiendum erat a
-codicibus conquirendis, inspiciendis, conferendis, ubi opus
-esse uisum erat. quem laborem ut per annos 1893 et
-1894 profligare possem, effectum est ope et liberalitate
-summi Ministerii, quod cultui scholisque Daniae
-praeest, maximeque Instituti Carlsbergici, bonarum
-artium in rebus angustis adminiculi locupletissimi,
-cuius praesidibus hoc loco ex animi sententia maximas ago gratias.
+Ad Ptolemaeum edendum adcessi a Bibliopola honestissimo rogatus, nec inuitus obsecutus sum, cum id maxime
+opus esse uiderem, quod praestare me posse putabam, ut codicibus denuo collatis aestimatisque fundamentum
+quoddam recensionis iaceretur. nam editio princeps Syntaxis (Basileae 1538), ut mos erat illorum temporum,
+uno nec eo bono codice nititur, et Halma, abbas Parisinus, qui deinde solus Graecam editionem curauit (Parisiis
+1813 sqq.) hodie rarissimam, ut optimum codicem Parisinum dhibuit, ita nesque negotii critici neque sermonis
+Graeci satis peritus fuit. mihi igitur incipiendum erat a odicibus conquirendis, inspiciendis, conferendis, ubi opus
+esse uisum erat. quem laborem ut per annos 1893 et 1894 profligare possem, effectum est ope et liberalitate
+summi Ministerii, quod cultui scholisque Daniae praeest, maximeque Instituti Carlsbergici, bonarum
+artium in rebus angustis adminiculi locupletissimi, cuius praesidibus hoc loco ex animi sententia maximas ago gratias.
 
-Inspectis examinatisque codicibus, qui quidem innotuissent,
-omnibus, de quibus in Prolegomenis partis posterioris agam,
+Inspectis examinatisque codicibus, qui quidem innotuissent, omnibus, de quibus in Prolegomenis partis posterioris agam,
 hos elegi ut recensioni et utiles et sufficientes:
 
-A — codex Parisinus Graecus 2389, membranaceous in folio,
-litteris uncialibus binis columnis scriptus s. IX
-(u. Omont, Inventaire II p. 251), charactere, ut Henrico
-Omont uidetur, Aegyptio. constat foliis 376, quorum
-primum ad extermum librum XIII pertinet et paene
-detrutum est foll. 207-210, 255-270, 374-375
-suppleta sunt s. XV(a); post fol. 68 quattuor folia
-desunt (u. p. 200, 7 et p. 209, 21), ut ex quaternionum
-ratione colligitur. scriptus est codex omnium praestantissimus
-duabus manibus eiusdem temporis, quarum una
-(A siue A2) atramento rauo, altera (A1) badio utitur;
-A1 quae a fol. 175 (p. 487, 17) incipit, sed iam in
-priore parte nonnulla correxit, litteras inclinatiores habet,
-iota adscriptum interdum ab A2 semper fere omittit, adcentus uero
-spiritusque plures adponit quam A2 specimen exstat apud
-Omont Facsimilés des plus anciens
-Manuscrits Grecs en onciale et en minuscule de la Bibliothéque Nationale tab. IX.
-correctiones paucae manibus recentiori (A3) et recentissimae (A4 s. XVI) debentur. —
-contuli ipse Parisiis 1893. semper in adparatu neglexi.
+A — codex Parisinus Graecus 2389, membranaceous in folio, litteris uncialibus binis columnis scriptus s. IX
+(u. Omont, Inventaire II p. 251), charactere, ut Henrico Omont uidetur, Aegyptio. constat foliis 376, quorum
+primum ad extermum librum XIII pertinet et paene detrutum est foll. 207-210, 255-270, 374-375
+suppleta sunt s. XV(a); post fol. 68 quattuor folia desunt (u. p. 200, 7 et p. 209, 21), ut ex quaternionum
+ratione colligitur. scriptus est codex omnium praestantissimus duabus manibus eiusdem temporis, quarum una
+(A siue A2) atramento rauo, altera (A1) badio utitur; A1 quae a fol. 175 (p. 487, 17) incipit, sed iam in
+priore parte nonnulla correxit, litteras inclinatiores habet, iota adscriptum interdum ab A2 semper fere omittit,  
+adcentus uero spiritusque plures adponit quam A2 specimen exstat apud Omont Facsimilés des plus anciens
+Manuscrits Grecs en onciale et en minuscule de la Bibliothéque Nationale tab. IX. correctiones paucae manibus 
+recentiori (A3) et recentissimae (A4 s. XVI) debentur. — contuli ipse Parisiis 1893. semper in adparatu neglexi.
 
-B — codex Uaticanus Graecus 1594, membraneceus in 
-folio s. IX, quo nullam pulchriorem elegantioremque
-unquam uidi. constat foliis 284, sed olim plura habuit;
-nam fol. 284 legitur: h biblos auth ths megalas suntaxews
-exei fulla 315 kai duo eus thn archhn tou bibiou
-apoluta. post fol. 65 unum folium excidit, cui manus
-recens s. XV duo substituit (u. p. 224, 14 et p. 228, 20).
-continet codex: fol. 1—8 Prolegomena anonyma ad Ptolemaeum,
-fol. 9—263 Ptolemaei Syntaxin cum scholiis,
-fol. 264—272 Ptolemaeum de apparentiis, fol. 272—276
-Ptolemaeum peri , fol. 277-276 tabulam
-categoriarum (fol. 277 uacat), fol. 278—283 Ptolemaei
-hypotheses, fol. 283—284 notas uarias. inde afolio 271
-extremo duabus columnis uti desinit. — inuestigaui
-ipse et, quoad potui, contuli Romae 1894.
-P. 232, 4 - p. 546, 20 mea causa contulit Ionnnes Tschiedel. 
+B — codex Uaticanus Graecus 1594, membraneceus in  folio s. IX, quo nullam pulchriorem elegantioremque
+unquam uidi. constat foliis 284, sed olim plura habuit; nam fol. 284 legitur: h biblos auth ths megalas suntaxews
+exei fulla 315 kai duo eus thn archhn tou bibiou apoluta. post fol. 65 unum folium excidit, cui manus
+recens s. XV duo substituit (u. p. 224, 14 et p. 228, 20). continet codex: fol. 1—8 Prolegomena anonyma ad Ptolemaeum,
+fol. 9—263 Ptolemaei Syntaxin cum scholiis, fol. 264—272 Ptolemaeum de apparentiis, fol. 272—276
+Ptolemaeum peri , fol. 277-276 tabulam categoriarum (fol. 277 uacat), fol. 278—283 Ptolemaei
+hypotheses, fol. 283—284 notas uarias. inde afolio 271 extremo duabus columnis uti desinit. — inuestigaui
+ipse et, quoad potui, contuli Romae 1894. P. 232, 4 - p. 546, 20 mea causa contulit Ionnnes Tschiedel. 
 
-C — codex Marcianus Graecus 313, membranaceus in folio
-s. X, ab imperito librario pulcherrime scriptus non sine
-compendiis maxime uersus finem. correctus est duabus
-manibus recentioribus (C2 s. XIV—XV) et una recentissima
-(C3 fortasse ipsius Halmae; nam fuit Parisiis
-initio huius saeculi). continet: fol. 1—30 Prolegomena
-ad Ptolemaeum ab initio mutila, fol. 30—370 Ptolecum Syntaxim sum scholiis.
-ex archetypo codicis B descriptus est. — contuli ipse Uenetiis 1893.
+C — codex Marcianus Graecus 313, membranaceus in folio s. X, ab imperito librario pulcherrime scriptus non sine
+compendiis maxime uersus finem. correctus est duabus manibus recentioribus (C2 s. XIV—XV) et una recentissima
+(C3 fortasse ipsius Halmae; nam fuit Parisiis initio huius saeculi). continet: fol. 1—30 Prolegomena
+ad Ptolemaeum ab initio mutila, fol. 30—370 Ptolecum Syntaxim sum scholiis. ex archetypo codicis B descriptus est. 
+— contuli ipse Uenetiis 1893.
 
-D - codex Uaticanus Graecus 180, membranaceus, in quarto s. XII
-s. XII, compluribus manibus eiusdem temporis 
-scriptus, saltim alio alibi calamo atramentoque, et duabus minimum manibus
-antiquis (D2 D3), una recentiore
-(D4) correctus. continet: fol. 1—2 notas quasdam astronomicas a manu recenti,
-fol. 3—280 Ptolemaei Syntaxin cum scholiis, fol. 280 notas uarias manuum
-recentium, in imo mg. omou fulla 6 ebdoumhkonta epta 
-(debuit computari 278). deriuatus est ab exemplari
-optimo et uetustissimo, quod saepe cum codice A consentiebat contra BC,
-saepe etiam solum ueram seripturam seruabat, sed ab homine rerum
-perito aliquod audacter eius apographum; nam imperitis
-librariis codicis D interpolationes illae adtribul minime possunt.
-quorum errores incredibiles, ex itacismo et ex compendiis male intellectis plerumque ortos,
-saepe omisi, sed numquam nisi
-monito lectore (u. ad p. 4, 3; 12, 20; 27, 2; 29, 23; cfr. p. 40, 20).
-compendiorum usum significaui, quia ad aetatem genusque archetypi definienda utilia sunt, —
-contuli ipse Romae 1893—94.
+D - codex Uaticanus Graecus 180, membranaceus, in quarto s. XII s. XII, compluribus manibus eiusdem temporis 
+scriptus, saltim alio alibi calamo atramentoque, et duabus minimum manibus antiquis (D2 D3), una recentiore
+(D4) correctus. continet: fol. 1—2 notas quasdam astronomicas a manu recenti, fol. 3—280 Ptolemaei Syntaxin 
+cum scholiis, fol. 280 notas uarias manuum recentium, in imo mg. omou fulla 6 ebdoumhkonta epta (debuit 
+computari 278). deriuatus est ab exemplari optimo et uetustissimo, quod saepe cum codice A consentiebat contra BC,
+saepe etiam solum ueram seripturam seruabat, sed ab homine rerum perito aliquod audacter eius apographum; nam imperitis
+librariis codicis D interpolationes illae adtribul minime possunt. quorum errores incredibiles, ex itacismo et ex 
+compendiis male intellectis plerumque ortos, saepe omisi, sed numquam nisi monito lectore (u. ad p. 4, 3; 12, 20; 
+27, 2; 29, 23; cfr. p. 40, 20). compendiorum usum significaui, quia ad aetatem genusque archetypi definienda utilia 
+sunt, — contuli ipse Romae 1893—94.
 
-E — codex Marcianus Graecus 310, chartaceus s. XV.
-continet: fol. 1—18 Prolegomena ad Ptolemaeum,
-fol. 13—151 Ptolemaei Syntaxin cum scholiis (fol. 152
-uacat), fol. 153—261 Theonis commentaria in Syntaxin
-(fol. 262—264 uvacant), fol. 265—286 alia mauu Cabasilae
-commentaria aliaque eius opera, fol. 287-—288 Barlaami
+E — codex Marcianus Graecus 310, chartaceus s. XV. continet: fol. 1—18 Prolegomena ad Ptolemaeum,
+fol. 13—151 Ptolemaei Syntaxin cum scholiis (fol. 152 uacat), fol. 153—261 Theonis commentaria in Syntaxin
+(fol. 262—264 uvacant), fol. 265—286 alia mauu Cabasilae commentaria aliaque eius opera, fol. 287-—288 Barlaami
 quaedam. adcedit ad BC. inspexi paucis locis Uenetiis 1893,
 
-F — codex Parisinus Graecus 2390, bombycinus s. X111, de quo u. Omont
-Inventaire II p. 251. arte cohaeret cum BC. hic illic inspexi Parisiis 1893.
+F — codex Parisinus Graecus 2390, bombycinus s. X111, de quo u. Omont Inventaire II p. 251. arte cohaeret 
+cum BC. hic illic inspexi Parisiis 1893.
 
-Horum codicum ope uerba Ptolemaei talia restitui posse confido, qualia a wuiris doctis
-Alexandriae anno circiter 500 legerentur. interpretationibus commentariisque
-Arabum uti non potui, Latinis nolui. interpretationem meam siue Latinam siue linguae
-recentioris in tanta rerum difficultate addere ausus non sum; de ea re uideant astronomi,
+Horum codicum ope uerba Ptolemaei talia restitui posse confido, qualia a wuiris doctis Alexandriae anno circiter 
+500 legerentur. interpretationibus commentariisque Arabum uti non potui, Latinis nolui. interpretationem meam siue 
+Latinam siue linguae recentioris in tanta rerum difficultate addere ausus non sum; de ea re uideant astronomi,
 si interpretationem desiderauerint.
 
-In adparatu ad p. 227, 10 et p. 481, 15 pro Halma
-reponendumn ed. Basil. ad p. 522, 49 delendum 6] 1/2 A1?;
-nam etiam in A est 6, ut ab Henrico Omont postea
-certior factus sum. ad p. 539, 7 haec adnotatio addatur:
+In adparatu ad p. 227, 10 et p. 481, 15 pro Halma reponendumn ed. Basil. ad p. 522, 49 delendum 6] 1/2 A1?;
+nam etiam in A est 6, ut ab Henrico Omont postea certior factus sum. ad p. 539, 7 haec adnotatio addatur:
 7. ektos scripsi, entos A'BCD.
 
-In plagulis corrigendis opem peritam diligentemque
-beneuolenter mihi praestitit Henricus Menge amicus.
+In plagulis corrigendis opem peritam diligentemque beneuolenter mihi praestitit Henricus Menge amicus.
 
 Scr. Hauniae mense Maio MDCCCLXXXXVIIIL.
 
@@ -197,9 +153,9 @@ D — Codex Vaticanus Graecus 180, parchment, quarto, 12th century, written by s
 in part elsewhere with different pen and ink, and corrected by at least two ancient hands (D², D³) and one more recent
 one (D⁴). It contains:
 
-	•    folios 1–2:   certain astronomical notes in a recent hand;
-	•    folios 3–280: Ptolemy’s Syntaxis with scholia;
-	•    folio 280:    various notes by later hands;
+	•    fols. 1–2:   certain astronomical notes in a recent hand;
+	•    fols. 3–280: Ptolemy’s Syntaxis with scholia;
+	•    fols. 280:   various notes by later hands;
 
 in the lower margin: ‘altogether 277 leaves’ (it ought to be counted 278).
 
@@ -216,34 +172,33 @@ E  — Codex Marcianus Graecus 310, on paper, from the 15th century.
 
 It contains:
 
-	•	folios 1–18    — Prolegomena to Ptolemy
-	•	folios 13–151  — Ptolemy’s Syntaxis with scholia (folio 152 is blank)
-	•	folios 153–261 — Theon’s commentaries on the Syntaxis (folios 262–264 are blank)
-	•	folios 265–286 — other manuscrits - commentaries of Kabasilas and other works by him
-	•	folios 287–288 — certain works of Barlaam
+	•	fols. 1–18    — Prolegomena to Ptolemy
+	•	fols. 13–151  — Ptolemy’s Syntaxis with scholia (folio 152 is blank)
+	•	fols. 153–261 — Theon’s commentaries on the Syntaxis (folios 262–264 are blank)
+	•	fols. 265–286 — other manuscrits - commentaries of Kabasilas and other works by him
+	•	fols. 287–288 — certain works of Barlaam
 
-It is added ad BC (i.e., along with codices B and C).
+It is added to BC.
 
 I examined it in a few places in Venice in 1893.
 
-F — Codex Parisinus Graecus 2390, on paper or parchment (described as bombycinus — meaning fine or luxurious,
-typically paper), from the 13th century (s. XIII). See Omont, Inventaire II, p. 251.
+F — Codex Parisinus Graecus 2390, on silk, from the 13th century (s. XIII). See Omont, Inventaire II, p. 251.
 
 By its style and quality it agrees with BC.
 
 I inspected it in Paris in 1893.
 
 Thanks to the help of these manuscripts, I am confident that the words of Ptolemy can be restored in such
-a way as they would have been read by learned men in Alexandria around the year 500. I could not make use
+a way as they would have been read by learned men in Alexandria around the year 500 AD. I could not make use
 of the interpretations and commentaries of the Arabs, and I did not wish to use the Latin ones. I have not
-ventured to add my own interpretation, whether in Latin or in a more recent language, when faced with such
+ventured to add my own interpretation, whether in Latin or in a more recent language, when faced with 
 difficulties; let astronomers see to that if they desire an interpretation.
 
 In the apparatus at p. 227, line 10 and p. 481, line 15, for Halma it should be placed ed. Basil. at p. 522,
 line 49 the reading 6] 1/2 A1? should be deleted, for also in A it is 6, as I was made more certain by Henri
 Omont afterwards. At p. 539, line 7, this note should be added: 7. “ektos I wrote, entos AʹBCD.”
 
-In correcting the proofsheets, Henricus Menge, a friend, generously and kindly provided me with experienced
+In correcting the proof sheets, Henry Menge, a friend, generously and kindly provided me with experienced
 and diligent assistance.
 
 Written at Copenhagen (Hauniae) in the month of May 1888.
