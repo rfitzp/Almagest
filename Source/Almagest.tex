@@ -6,9 +6,11 @@
 \usepackage{pdflscape}
 
 \usepackage{fontspec}
-%\setmainfont{Times New Roman}[Scale=MatchLowercase]
-\setmainfont{EB Garamond}[Scale=0.955]
+\usepackage{unicode-math}
 \usepackage{polyglossia}
+
+\setmainfont{EB Garamond}[Scale=0.955]
+%\setmathfont{Garamond Math}[Scale=0.955]
 \setmainlanguage{english}
 \setotherlanguage{greek}
 \newfontfamily\greekfont{Times New Roman}
@@ -42,12 +44,10 @@
 \addto\captionsenglish{%
   \renewcommand{\contentsname}{Table of Contents}
 }
-%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
 \setlength{\tabcolsep}{3.5pt} 
 
 \begin{document}
-%\fontsize{10pt}{11pt}\selectfont
 
 \title{A MODERN ALMAGEST:\\[0.5ex]An Updated  Version of Ptolemy's Model of the Solar System}
 \author{Richard Fitzpatrick}

@@ -6,7 +6,8 @@ Up to now, we have neglected the fact that  the orbits of the
 five visible planets about the Sun are all slightly inclined to the plane of the ecliptic. Of course, these inclinations cause
 the ecliptic latitudes of the said planets to take small, but non-zero, values. 
 In the following, we shall outline a model that is capable of predicting these values. Incidentally, the calculation of planetary latitudes is discussed in Book~XIII of the Almagest, which is also
-the last book in the treatise. 
+the last book in the treatise. The planetary latitude model outlined in Book XIII  is rather unwieldy, and not particularly accurate. Ptolemy grearly
+improved this model in his later works {\em Handy Tables}\/ (Πρόχειροι κανόνες) and {\em Planetary Hypotheses}\/ (Ὑποθέσεις τῶν πλανωμένων).
 
 Figure~\ref{flong} shows the orbit of a superior planet. 
 As we have already mentioned, the deferent and epicycle of such a planet have the same elements as 
@@ -20,8 +21,21 @@ deferent passes through the  plane of the ecliptic from south to north, in the d
 mean planetary motion. This point is called the {\em ascending node}. 
 Note that the line $NGN'$ must pass through point $G$, because the
 Earth is common to the plane of the deferent and the ecliptic plane.
+
+\begin{figure}[h]
+\centerline{\includegraphics[height=2.5in]{Fig10-1.eps}}
+\caption{Orbit of a superior planet. Here, $G$, $G'$, $P$, 
+$N$, $N'$,  and $F$ represent the Earth,  the guide-point,
+the planet, the ascending node, the descending node, and the argument of latitude, respectively. The view is from northern
+ecliptic pole.}\label{flong}
+\end{figure}
+
 Now, it follows from simple geometry that the elevation of the guide-point $G'$ above  the
-ecliptic plane satisfies $v= r\,\sin i\,\sin F$, where $r$ is the length $GG'$, $i$  the fixed inclination of the
+ecliptic plane satisfies 
+\begin{equation}
+v= r\,\sin i\,\sin F,
+\end{equation}
+ where $r$ is the length $GG'$, $i$  the fixed inclination of the
 planetary orbit (and, hence, of the deferent) to the ecliptic plane, and $F$  the angle $NGG'$. The
 angle $F$ is termed the {\em argument of latitude}. We can write (see Chapter~\ref{csup})
 \begin{equation}
@@ -32,7 +46,7 @@ increases uniformly in time; that is,
 \begin{equation}
 \bar{F}  = \bar{F}_0 + \breve{n}\,(t-t_0).
 \end{equation}
- Now, because the epicycle is parallel to the ecliptic
+ Because the epicycle is parallel to the ecliptic
 plane, the elevation of the planet above the said plane is
 the same as that of the guide-point. Hence, from simple geometry, the ecliptic latitude of the planet satisfies
 \begin{equation}
@@ -61,14 +75,6 @@ and
 h(\mu,z) = \left[1 + 2\,(a\,z)^{-1}\,\cos\mu+ (a\,z)^{-2}\right]^{-1/2}
 \end{equation}
 the {\em epicyclic latitude correction factor}.
-
-\begin{figure}[h]
-\centerline{\includegraphics[height=2.5in]{Fig10-1.eps}}
-\caption{Orbit of a superior planet. Here, $G$, $G'$, $P$, 
-$N$, $N'$,  and $F$ represent the Earth,  the guide-point,
-the planet, the ascending node, the descending node, and the argument of latitude, respectively. The view is from northern
-ecliptic pole.}\label{flong}
-\end{figure}
 
 In the following, $a$, $e$, $n$, $\tilde{n}$, $\breve{n}$, $\bar{\lambda}_0$, $M_0$,  $\bar{F}_0$, and $i$ are  elements of the orbit of the planet in question
 about the Sun, and $e_S$, $\zeta_S$, and $\lambda_S$  are elements of the Sun's apparent orbit
@@ -118,8 +124,8 @@ The procedure for using the tables is as follows:
 
 \item Determine the fractional Julian day number, $t$, corresponding to the date and time
 at which the ecliptic latitude is to be calculated with the aid of Tables~\ref{kt1}--\ref{kt3}. Form $\Delta t = t-t_0$, where $t_0=2\,451\,545.0$ is the epoch. 
-\
-item Calculate the planetary equation
+
+\item Calculate the planetary equation
 of center, $q$, ecliptic anomaly, $\mu$, and 
 interpolation parameters $\Theta_+$ and $\Theta_-$ using the
 procedure set out in Chapter~\ref{csup}.
@@ -324,8 +330,21 @@ epicycle passes through the  plane of the ecliptic from south to north, in the d
 mean planetary motion. This point is called the {\em ascending node}. 
 Note that the line $NG'N'$ must pass through the guide-point, $G'$, because  the
 Sun (which is coincident with the guide-point)  is common to the plane of the planetary orbit and the ecliptic plane.
+
+\begin{figure}[h]
+\centerline{\includegraphics[height=2.5in]{Fig10-2.eps}}
+\caption{Orbit of an inferior planet. Here, $G$, $G'$, $P$, 
+$N$, $N'$,  and $F$ represent the earth, the guide-point,
+the planet, the ascending node, the descending node, and the argument of latitude, respectively. The view is from northern
+ecliptic pole.}\label{flong1}
+\end{figure}
+
 Now, it follows from simple geometry that the elevation of the planet $P$ above  the
-guide-point, $G'$, satisfies $v= r'\,\sin i\,\sin F$, where $r'$ is the length $G'P$, $i$  the fixed inclination of the
+guide-point, $G'$, satisfies 
+\begin{equation}
+v= r'\,\sin i\,\sin F,
+\end{equation}
+ where $r'$ is the length $G'P$, $i$  the fixed inclination of the
 planetary orbit (and, hence, of the epicycle) to the ecliptic plane, and $F$  the angle $NG'P$. The
 angle $F$ is termed the argument of latitude. We can write (see Chapter~\ref{cinf})
 \begin{equation}
@@ -336,7 +355,7 @@ increases uniformly  in time; that is,
 \begin{equation}
 \bar{F}  = \bar{F}_0 + \breve{n}\,(t-t_0).
 \end{equation}
- Now, because the deferent is parallel to the ecliptic
+ Because the deferent is parallel to the ecliptic
 plane, the elevation of the planet above the said plane is
 the same as that of the planet above the guide-point. Hence, from simple geometry, the ecliptic latitude of the planet satisfies
 \begin{equation}
@@ -365,14 +384,6 @@ and
 h(\mu,z) = \left[z^2 + 2\,a\,z\,\cos\mu+ a^2\right]^{-1/2}
 \end{equation}
 the {\em deferential latitude correction factor}.
-
-\begin{figure}[h]
-\centerline{\includegraphics[height=2.5in]{Fig10-2.eps}}
-\caption{Orbit of an inferior planet. Here, $G$, $G'$, $P$, 
-$N$, $N'$,  and $F$ represent the earth, the guide-point,
-the planet, the ascending node, the descending node, and the argument of latitude, respectively. The view is from northern
-ecliptic pole.}\label{flong1}
-\end{figure}
 
 In the following, $a$, $e$, $n$, $\tilde{n}$, $\breve{n}$, $\bar{\lambda}_0$, $M_0$,  $\bar{F}_0$, and $i$ are  elements of the orbit of the planet in question
 about the Sun, and $e_S$, $\zeta_S$, and $\lambda_S$  are elements of the Sun's apparent orbit
@@ -544,15 +555,17 @@ $$
 \beta_0(250^\circ) = -2.511^\circ.
 $$
 Because $\mu\simeq 253^\circ$, Table~\ref{tlat2mc} yields
-\begin{align*}
-\delta h_-(253^\circ)& = 0.184,\mbox{\hspace{0.5cm}}\bar{h}(253^\circ)\\[0.5ex]
-&=1.037, \mbox{\hspace{0.5cm}}\delta h_+(253^\circ) \\[0.5ex]
-&= 0.272,
-\end{align*}
+$$
+\delta h_-(253^\circ) = 0.184,\mbox{\hspace{0.5cm}}\bar{h}(253^\circ)
+=1.037, \mbox{\hspace{0.5cm}}\delta h_+(253^\circ) 
+= 0.272,
+$$
 so
-$$
-h = \Theta_-\,\delta h_- + \bar{h}+\Theta_+\,\delta h_+ = 0.107\times 0.184+1.037+0.583\times 0.272= 1.215.
-$$
+\begin{align*}
+h &= \Theta_-\,\delta h_- + \bar{h}+\Theta_+\,\delta h_+ \\[0.5ex]
+&= 0.107\times 0.184+1.037+0.583\times 0.272\\[0.5ex]
+&= 1.215.
+\end{align*}
 Finally,
 $$
 \beta = h\,\beta_0 =- 1.215\times 2.511 = -3.051\simeq -3^\circ 03'.

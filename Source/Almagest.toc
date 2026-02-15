@@ -37,7 +37,7 @@
 \contentsline {chapter}{\numberline {5}The Sun}{73}{}%
 \contentsline {section}{\numberline {5.1}Solar ecliptic longitude model}{73}{}%
 \contentsline {section}{\numberline {5.2}Determination of solar ecliptic longitude}{75}{}%
-\contentsline {section}{\numberline {5.3}Example solar longitude calculations}{76}{}%
+\contentsline {section}{\numberline {5.3}Example solar longitude calculations}{75}{}%
 \contentsline {section}{\numberline {5.4}Determination of equinox and solstice dates}{77}{}%
 \contentsline {section}{\numberline {5.5}The equation of time}{79}{}%
 \contentsline {section}{\numberline {5.6}Solar distance model}{80}{}%
@@ -60,8 +60,8 @@
 \contentsline {section}{\numberline {7.4}Example syzygy calculations}{111}{}%
 \contentsline {section}{\numberline {7.5}Solar and lunar eclipses}{113}{}%
 \contentsline {section}{\numberline {7.6}Example eclipse calculations}{116}{}%
-\contentsline {section}{\numberline {7.7}Eclipse statistics}{118}{}%
-\contentsline {section}{\numberline {7.8}Eclipse cycles}{119}{}%
+\contentsline {section}{\numberline {7.7}Eclipse statistics}{117}{}%
+\contentsline {section}{\numberline {7.8}Eclipse cycles}{118}{}%
 \contentsline {section}{\numberline {7.9}Tables}{121}{}%
 \contentsline {chapter}{\numberline {8}The superior planets}{127}{}%
 \contentsline {section}{\numberline {8.1}Planetary ecliptic longitude model}{127}{}%
@@ -84,8 +84,8 @@
 \contentsline {section}{\numberline {10.4}Determination of ecliptic latitude of Saturn}{178}{}%
 \contentsline {section}{\numberline {10.5}Determination of ecliptic latitude of inferior planet}{179}{}%
 \contentsline {section}{\numberline {10.6}Determination of ecliptic latitude of Venus}{182}{}%
-\contentsline {section}{\numberline {10.7}Determination of ecliptic latitude of Mercury}{183}{}%
-\contentsline {section}{\numberline {10.8}Tables}{184}{}%
-\contentsline {chapter}{Technical terms}{195}{}%
-\contentsline {chapter}{Index of symbols}{201}{}%
-\contentsline {chapter}{Bibliography}{203}{}%
+\contentsline {section}{\numberline {10.7}Determination of ecliptic latitude of Mercury}{184}{}%
+\contentsline {section}{\numberline {10.8}Tables}{185}{}%
+\contentsline {chapter}{Technical terms}{197}{}%
+\contentsline {chapter}{Index of symbols}{203}{}%
+\contentsline {chapter}{Bibliography}{205}{}%
