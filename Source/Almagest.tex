@@ -1,5 +1,14 @@
-\documentclass{book}[11pt]
-\usepackage[a4paper, total={4.75in, 7in}]{geometry}
+\documentclass{book}[10pt]
+\usepackage[
+  papersize={6in,9in},
+  %margin=1in,
+   headsep=5pt,
+   inner=0.75in,
+  outer=0.56in,
+  top=1in,
+  bottom=0.75in
+]{geometry}
+%\usepackage[a4paper, total={4.75in, 7in}]{geometry}
 \usepackage{graphicx,epstopdf}	
 \usepackage{parallel}
 \usepackage{amsmath}
@@ -17,14 +26,14 @@
 
 \usepackage{titlesec}
 \titleformat{\chapter}
-  {\normalfont\huge\bfseries\centering}
+  {\normalfont\Large\bfseries\centering}
   {\thechapter.}
   {0.5em}
   {}            
-\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+\titlespacing*{\chapter}{0pt}{-20pt}{15pt}
 
 \titleformat{\section}
-  {\normalfont\Large\itshape\centering}
+  {\normalfont\large\itshape\centering}
   {\thesection}
   {1em}
   {}
@@ -42,7 +51,7 @@
 
 \renewcommand{\chaptermark}[1]{\markboth{\thechapter. #1}{}}
 \addto\captionsenglish{%
-  \renewcommand{\contentsname}{Table of Contents}
+  \renewcommand{\contentsname}{\large Table of Contents}
 }
 
 \setlength{\tabcolsep}{3.5pt} 

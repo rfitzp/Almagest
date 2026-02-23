@@ -1,4 +1,4 @@
-\chapter{Lunar-Solar Syzygies and Eclipses}
+\chapter[Syzygies and Eclipses]{Lunar-Solar Syzygies and Eclipses}
 % !TEX root = ./Almagest.tex
 
 \section{Syzygies}
@@ -84,14 +84,16 @@ the dates and fractional Julian day numbers of the first new moons of the years 
 of syzygy calculations are given in the following section. Incidentally, our model is capable of predicting the times of new moons and full moons to within 10 minutes. 
 
 \section{Example syzygy calculations}
-\noindent {\em Example 1}: Sixth new moon in 2004 AD:\\
-~\\
+\begin{center}
+{\em Example 1}: Sixth new moon in 2004 AD
+\end{center}
 From Table~\ref{tnewmoon}, the date of first new moon in 2004 AD is 2453026.4 JD. Now, the
 lunar-solar elongation increases at the mean rate $n_M - n_S = 13.17639646-0.98564735=12.1907491^\circ$ per day, or
 $360^\circ$ in $29.53$ days; the latter  time period is known as a synodic month. Hence, a rough estimate for the
 date of the sixth new moon in 2004 AD is five synodic months after that of the first: that is, $2453026.4
 + 5\times 29.53\simeq 2453174.1$ JD. It follows that $\Delta t = 2453174.1-2451545.0=1629.1$ JD. Let us calculate the lunar-solar elongation at this date.
-From Table~\ref{telon}:\\
+From Table~\ref{telon}:
+\begin{center}
 \begin{tabular}{rrrrr}
 &&&&\\
 $t$(JD) & $ \bar{D}(^\circ)$ & $\bar{F}_M(^\circ)$ & $M_S(^\circ)$ & $M_M(^\circ)$\\[-2ex]
@@ -105,7 +107,8 @@ Epoch & $297.864$ & $93.284$ & $357.588$ & $134.916$\\\cline{2-5}
 &$1077.813$ & $765.218$ & $883.229$ & $899.096$\\\cline{2-5}
 Modulus & $357.813$ & $45.218$ &$163.229$ & $179.096$\\ 
 &&&\\
-\end{tabular}\\
+\end{tabular}
+\end{center}
 Thus,
 $$
 a_1=M_M\simeq 179^\circ,~~~a_2=2\bar{D}-M_M = 2\times 357.813-179.082\simeq 177^\circ,
@@ -131,16 +134,17 @@ Now, the actual new moon takes place when $D=360.00^\circ$. Thus, a far better e
 of the sixth new moon in 2004 AD is $2453174.10 +(360.00-357.22)/12.1907491= 2453174.33$ JD.
 This corresponds to 19:55 UT on June 17th.
 
-~\\
-\noindent {\em Example 2}: Third full moon in 1982 AD\\
-~\\
+\begin{center}
+\noindent {\em Example 2}: Third full moon in 1982 AD
+\end{center}
 From Table~\ref{tnewmoon}, the fractional Julian day number of first new moon in 1982 AD is 2444994.7 JD, which
 corresponds to January 25th. Because there is more than half a synodic month between this event and the
 start of year, we conclude that the first full moon in 1982 AD took place before January 25th.  Hence, a rough estimate for the
 date of the third full moon in 1982 AD is one and a half synodic months after that of the first new moon; that is, $2444994.7
 + 1.5\times 29.53\simeq 2445039.0$ JD. It follows that $\Delta t = 2445039.0 -2451545.0=-6506.0$ JD. Let us calculate the lunar-solar elongation at
 this date.
-From Table~\ref{telon}:\\
+From Table~\ref{telon}:
+\begin{center}
 \begin{tabular}{rrrrr}
 &&&&\\
 $t$(JD) & $ \bar{D}(^\circ)$ & $\bar{F}_M(^\circ)$ & $M_S(^\circ)$ & $M_M(^\circ)$\\[-2ex]
@@ -152,7 +156,8 @@ Epoch & $297.864$ & $93.284$ & $357.588$ & $134.916$\\\cline{2-5}
 &$-175.150$ & $-296.869$ & $65.273$ & $-265.928$\\\cline{2-5}
 Modulus & $184.131$ & $63.062$ &$65.273$ & $94.072$\\ 
 &&&\\
-\end{tabular}\\
+\end{tabular}
+\end{center}
 Thus,
 
 $$
@@ -209,7 +214,7 @@ the identification of two of the angles in the figure with $\rho_S=R_S/r_S$ foll
 because $R_S\gg R_E$.
 
 \begin{figure}
-\centerline{\includegraphics[height=2.in]{Fig7-2.eps}}
+\centerline{\includegraphics[height=1.9in]{Fig7-2.eps}}
 \caption{The Earth's umbra. Here,  $R_S$, $R_E$, $R_U$, $r_S$, and $r_M$ are the physical radius of the Sun, the physical radius of the  Earth,  the physical radius of the Earth's
 umbra at the Moon, the Earth-Sun distance, and the Earth-Moon distances, respectively. }\label{fumbra}
 \end{figure}
@@ -476,7 +481,7 @@ Date & Time (UT) & $\beta_{M}(')$ & $\beta_{Mt}(')$ & $|\beta_{syz}|(')$& Type &
 \newpage
 \section{Tables}
 
-\begin{table}[h]
+\begin{table}[h!]
 \centering
 {\scriptsize
 \begin{tabular}{rrrrr|rrrrr}
@@ -519,8 +524,9 @@ At epoch  ($t_0 = 2\,451\,545.0$ JD), $\bar{D}_0 = 297.864^\circ$, $\bar{F}_{M\,
 $M_{S\,0} = 357.588^\circ$, and $M_{M\,0} = 134.916^\circ$. }\label{telon}
 \end{table}
 
-\newpage
-\begin{table}\centering
+\clearpage
+\begin{table}[!h]\centering
+\vspace{0.25cm}
  \begin{tabular}{crrrrr}
 Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$  & $q_5(^\circ)$  \\\hline
 &&&&&\\[-1.75ex]
@@ -558,7 +564,9 @@ Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$
 \end{tabular}
 \end{table}
 
-\begin{table}\centering
+\clearpage
+\begin{table}[!h]\centering
+\vspace{0.25cm}
  \begin{tabular}{crrrrr}
 Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$  & $q_5(^\circ)$  \\\hline
 &&&&&\\[-1.75ex]
@@ -596,7 +604,10 @@ Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$
 \end{tabular}
 \end{table}
 
-\begin{table}\centering
+\clearpage
+\begin{table}[!h]
+\vspace{0.25cm}
+\centering
  \begin{tabular}{crrrrr}
 Arg. ($^\circ$) & $q_1(^\circ)$  & $q_2(^\circ)$ & $q_3(^\circ)$ & $q_4(^\circ)$  & $q_5(^\circ)$  \\\hline
 &&&&&\\[-1.75ex]
@@ -639,7 +650,9 @@ in parentheses then the anomalies are minus the values shown
 in the table. }\label{telona}
 \end{table}
 
-\begin{table}
+\clearpage
+\begin{table}[!h]
+\vspace{0.25cm}
 \centering
 {\scriptsize
 \begin{tabular}{cc|cc|cc|cc}

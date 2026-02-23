@@ -40,29 +40,34 @@ one day to the tabular value. The sum of the values obtained
 in steps 1, 2, and 3 then gives the Julian day number of the date in question.
 \end{enumerate}
 
+\clearpage
+\begin{center}
+ {\em Example~1}: June 10, 1992 AD\\
 ~\\
-\noindent {\em Example~1}: June 10, 1992 AD:\\~\\
 \begin{tabular}{lrrr}
 1.~Century year & $^\dag1900$ &&$2\,415\,020$\\
 2.~Year of the century & $^\ast92$ & $33\,603 - 1 =$& $33\,602$\\
 3.~Day of the year & June 10 & $161+1 =$ & $162$\\\cline{4-4}
 Julian day number&&&$2\,448\,784$\\
 &&&\\
-\end{tabular}\\
+\end{tabular}
+\end{center}
 Observe that in step 2 the tabular value has been diminished by 1 because 1900
 is a common year (marked with a $\dag$ in Table~\ref{kt1}). In step 3, the
 tabular value has been increased by 1 because 1992 is a leap year (marked with a $\ast$ in Table~\ref{kt2}), and the
 date falls after February 28.
 
-~\\
-\noindent {\em Example~2}: January 18, 1824 AD:\\~\\
+\begin{center}
+ {\em Example~2}: January 18, 1824 AD\\
+ ~\\
 \begin{tabular}{lrrr}
 1.~Century year & $^\dag1800$ &&$2\,378\,496$\\
 2.~Year of the century & $^\ast24$ & $8\,766 - 1=$ & 8\,765\\
 3.~Day of the year & January 18 & $18 =$ & $18$\\\cline{4-4}
 Julian day number&&&$2\,387\,279$\\
 &&&\\
-\end{tabular}\\
+\end{tabular}
+\end{center}
 Observe that in step 2 the tabular value has been diminished by 1 because 1800
 is a common year (marked with a $\dag$ in Table~\ref{kt1}). In step 3, the
 tabular value has not been increased by 1, despite the fact that 1824 is a leap year (marked with an $\ast$ in Table~\ref{kt2}),  because the
@@ -75,7 +80,7 @@ $t=2\,448\,784.5$ JD corresponds to 24:00 UT later the same day.
 
 \section{Tables}
 
-\begin{table}[b]\centering
+\begin{table}[!h]\centering
 \begin{tabular}{rr}
 $^\dag$1700 &  $2\,341\,972$\\
  $^\dag$1800 &  $2\,378\,496$\\
@@ -88,9 +93,9 @@ $^\dag$1700 &  $2\,341\,972$\\
 \caption {Julian Day Number: Century Years. $^\dag$\,Common years. All years are AD. Table reproduced, with permission, from Evans (1998).}\label{kt1}
 \end{table}
 
-\vspace*{1cm}
-
-\begin{table}[h]\centering
+\clearpage
+\begin{table}[!h]\centering
+\vspace{0.25cm}
 \begin{tabular}{rr|rr|rr|rr|rr}
 $^\S$0 & $0$ & $^\ast$20 & $7\,305$ & $^\ast$40 & $14$\,610 & $^\ast$60 &$21\,915$ & $^\ast$80 & $29\,220$\\
 1 & $336$ & 21 & $7\,671$ & 41 & $14\,976$ & 61 &$22\,281$ & 81& $\,29\,586$\\
@@ -123,7 +128,8 @@ Reproduced, with permission, from Evans (1998).}\label{kt2}
 \end{table}
 
 \newpage
-\begin{table}[h]\centering
+\begin{table}[!h]\centering
+\vspace{0.25cm}
 \begin{tabular}{r|rrrrrrrrrrrr}
 Day & Jan & Feb & Mar & Apr & May & Jun & Jul & Aug & Sep & Oct& Nov & Dec\\\hline
 &&&&&&&&&&&&\\[-1.5ex]

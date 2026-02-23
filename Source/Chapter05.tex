@@ -83,7 +83,7 @@ M &= M_0 + \tilde{n}\,(t-t_0),\\[0.5ex]
 q &= 2\,e\,\sin M + (5/4)\,e^2\,\sin\,2M,\label{le2.8}\\[0.5ex]
 \lambda &= \bar{\lambda}  + q.
 \end{align}
- These formulae are capable of matching NASA ephemeris data\,\footnote{See {\tt http://ssd.jpl.nasa.gov/}}
+ These formulae are capable of matching NASA ephemeris data\,\footnote{See {http://ssd.jpl.nasa.gov/}}
 during the years 1995--2006 AD with a mean error of $0.2'$ and a maximum error of $0.7'$. 
 
 The ecliptic longitude of the Sun can be calculated with the aid of Tables~\ref{lt5} and \ref{lt6}.
@@ -123,11 +123,14 @@ using Table~\ref{lt6a}. Round to the nearest arc minute.
 Two examples of the use of this procedure are given in the next section.
 
 \section{Example solar longitude calculations}
-\noindent {\em Example 1}: May 5, 2005 AD, 00:00 UT:\\
-~\\
+\begin{center}
+ {\em Example 1}: May 5, 2005 AD, 00:00 UT
+\end{center}
 According to Tables~\ref{kt1}--\ref{kt3}, $t = 2\,453\,495.5$ JD. Hence,
-$t-t_0 = 2\,453\,495.5-2\,451\,545.0=1\,950.5$ JD. Making use of
-Table~\ref{lt5}, we find:\\
+$$t-t_0 = 2\,453\,495.5-2\,451\,545.0=1\,950.5~{\rm JD}.$$ 
+Making use of
+Table~\ref{lt5}, we find:
+\begin{center}
 \begin{tabular}{rrr}
 &&\\
 $t$(JD) & $ \bar{\lambda}(^\circ)$ & $M(^\circ)$\\[-2ex]
@@ -140,7 +143,8 @@ Epoch & $280.458$ & $357.588$\\\cline{2-3}
 &$762.963$ & $840.001$\\\cline{2-3}
 Modulus & $42.963$ & $120.001$\\ 
 &&\\
-\end{tabular}\\
+\end{tabular}
+\end{center}
 Rounding the mean anomaly to the nearest degree, we obtain $M\simeq 120^\circ$.
 It follows from  Table~\ref{lt6} that
 $$
@@ -161,12 +165,15 @@ $14^\circ36'$ into the sign of Taurus. Thus, we conclude that the position of
 the Sun 
 at 00:00 UT on May 5, 2005 AD was 14TA36.
 
-~\\
-\noindent {\em Example 2}: December 25, 1800 AD, 00:00 UT:\\
-~\\
+\begin{center}
+{\em Example 2}: December 25, 1800 AD, 00:00 UT
+\end{center}
 According to Tables~\ref{kt1}--\ref{kt3}, $t = 2\,378\,854.5$ JD. Hence,
-$ t-t_0 = 2\,378\,854.5-2\,451\,545.0=-72\,690.5$ JD. Making use of
-Table~\ref{lt5}, we find:\\
+$$
+ t-t_0 = 2\,378\,854.5-2\,451\,545.0=-72\,690.5~{\rm JD}.
+ $$ Making use of
+Table~\ref{lt5}, we find:
+\begin{center}
 \begin{tabular}{rrr}
 &&\\
 $t$(JD) & $\bar{\lambda}(^\circ)$ & $ M(^\circ)$\\[-2ex]
@@ -180,7 +187,8 @@ Epoch & $280.458$ & $357.588$\\\cline{2-3}
 &$-446.741$ & $-366.186$\\\cline{2-3}
 Modulus & $273.259$ & $353.814$\\
 &&\\
-\end{tabular}\\
+\end{tabular}
+\end{center}
 We conclude that  $M\simeq 354^\circ$. 
  From Table~\ref{lt6}, 
 $$
@@ -387,7 +395,6 @@ apparent radius of the solar disk was
 \rho_S = \frac{15.987}{1-1.662\times 10^{-2}}\simeq 16.26'.
 \end{equation}
 
-\newpage
 \section{Tables}
 
 \begin{table}[h]\centering
@@ -403,12 +410,13 @@ Saturn   & $9.536651$  & $0.053862$    & $0.03350830$     & $0.03348152$   & $50
 \end{tabular}
 \caption{Keplerian orbital elements for the Sun and the five visible planets at the J2000 epoch (that is, 12:00 UT, January 1, 2000 AD,
 which corresponds to $t_0 = 2\,451\,545.0$ JD). The elements are optimized for use in the
-time period 1800 AD to 2050 AD. Source: Jet Propulsion Laboratory (NASA), {\tt http://ssd.jpl.nasa.gov/}.  The motion rates have been converted into tropical motion rates assuming a uniform precession of the equinoxes
+time period 1800 AD to 2050 AD. Source: Jet Propulsion Laboratory (NASA), {http://ssd.jpl.nasa.gov/}.  The motion rates have been converted into tropical motion rates assuming a uniform precession of the equinoxes
  of $3.8246\times 10^{-5}\,\,^\circ$ per day. An astronomical unit (AU) is $1.496\times 10^8$\,km.}\label{lt4}
 \end{table}
 
 \clearpage
-\begin{table}\centering
+\begin{table}[!h]\centering
+\vspace{0.25cm}
 {\small\begin{tabular}{ll|ll|ll|ll|ll|ll}
 $00.0'$ & .000 & $10.0'$ & .167 & $20.0'$ & .333 & $30.0'$ & .500 & $40.0'$ & .667 & $50.0'$ & .833\\
 $00.2'$ & .003 & $10.2'$ & .170 & $20.2'$ & .337 & $30.2'$ & .503 & $40.2'$ & .670 & $50.2'$ & .837\\
@@ -437,7 +445,10 @@ $04.6'$ & .077 & $14.6'$ & .243 & $24.6'$ & .410 & $34.6'$ & .577 & $44.6'$ & .7
 $04.8'$ & .080 & $14.8'$ & .247 & $24.8'$ & .413 & $34.8'$ & .580 & $44.8'$ & .747 & $54.8'$ & .913\\
 \end{tabular}}
 \end{table}
-\begin{table}
+
+\clearpage
+\begin{table}[!h]
+\vspace{0.25cm}
 \centering
 {\small\begin{tabular}{ll|ll|ll|ll|ll|ll}
 $05.0'$ & .083 & $15.0'$ & .250 & $25.0'$ & .417 & $35.0'$ & .583 & $45.0'$ & .750 & $55.0'$ & .917\\
@@ -469,9 +480,10 @@ $09.8'$ & .163 & $19.8'$ & .330 & $29.8'$ & .497 & $39.8'$ & .663 & $49.8'$ & .8
 \caption{Arc minute to decimal fraction conversion table.}\label{lt6a}
 \end{table}
 
-\newpage
-\begin{table}[h]
+\clearpage
+\begin{table}[!h]
 \centering
+\vspace{0.25cm}
 \begin{tabular}{rrr|rrr|rrr}
 $\Delta t$(JD)& $\Delta\bar{\lambda}(^\circ)$ &  $\Delta M(^\circ)$ & $\Delta t$(JD)& $\Delta \bar{\lambda}(^\circ)$ & $\Delta M(^\circ)$ &$\Delta t$(JD)& $\Delta \bar{\lambda}(^\circ)$ & $\Delta M(^\circ)$\\ \hline
 &&&&&&&&\\[-1.75ex]
@@ -499,8 +511,10 @@ $90$ &  $88.708$ &  $88.704$ & $9$ &   $8.871$ &   $8.870$ & $0.9$ &   $0.887$ &
 At epoch  ($t_0 = 2\,451\,545.0$ JD), $\bar{\lambda}_0 = 280.458^\circ$, and $M_0 = 357.588^\circ$.}\label{lt5}
 \end{table}
 
-\newpage
-\begin{table}\centering
+\clearpage
+\begin{table}[!h]
+\vspace{0.25cm}
+\centering
 \scriptsize{ \begin{tabular}{rrr|rrr|rrr|rrr}
 $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$& $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$\\\hline
 &&&&&&&&&&&\\[-1.75ex]
@@ -554,7 +568,9 @@ $M(^\circ)$ & $q(^\circ)$  & $100\,\zeta$ & $M(^\circ)$ & $q(^\circ)$  & $100\,\
 \caption{Anomalies of the Sun.}\label{lt6}
 \end{table}
 
-\begin{table}
+\clearpage
+\begin{table}[!h]
+\vspace{0.25cm}
 \centering
 {\scriptsize \begin{tabular}{cr|cr|cr|cr|cr|cr}
 \multicolumn{2}{c}{Aries}\vline & \multicolumn{2}{c}{Taurus} \vline& \multicolumn{2}{c}{Gemini} \vline& \multicolumn{2}{c}{Cancer}\vline &
