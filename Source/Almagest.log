@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  23 FEB 2026 15:33
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  24 FEB 2026 09:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -577,15 +577,15 @@ LaTeX Font Info:    ... okay on input line 59.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(54.2025pt, 338.94647pt, 40.47102pt)
-* v-part:(T,H,B)=(72.26999pt, 523.9575pt, 54.2025pt)
+* h-part:(L,W,R)=(65.04256pt, 325.21501pt, 43.36243pt)
+* v-part:(T,H,B)=(57.81621pt, 534.79758pt, 57.81621pt)
 * \paperwidth=433.62pt
 * \paperheight=650.43pt
-* \textwidth=338.94647pt
-* \textheight=523.9575pt
-* \oddsidemargin=-18.06749pt
-* \evensidemargin=-31.79897pt
-* \topmargin=-17.0pt
+* \textwidth=325.21501pt
+* \textheight=534.79758pt
+* \oddsidemargin=-7.22743pt
+* \evensidemargin=-28.90756pt
+* \topmargin=-31.45378pt
 * \headheight=12.0pt
 * \headsep=5.0pt
 * \topskip=10.0pt
@@ -942,33 +942,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--18
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
 (Font)              scaled to size 11.46002pt on input line 4.
-
-Overfull \hbox (0.88472pt too wide) in paragraph at lines 5--17
-\TU/EBGaramond(0)/m/n/10 The modern world inherited two major scientific treati
-es from the civilization of ancient Greece.
- []
-
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 6.68501pt on input line 18.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 7.64001pt on input line 20.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 5.73001pt on input line 20.
-
-Underfull \vbox (badness 1412) has occurred while \output is active []
-
- [1
+[1
 
 
-]
-[2]
-Overfull \hbox (1.83969pt too wide) in paragraph at lines 127--147
-\TU/EBGaramond(0)/m/n/10 (Ἀριστοτέλης) argues, from a purely philosophical stan
-dpoint, that heavenly bodies should move
+] [2]
+Overfull \hbox (0.12573pt too wide) in paragraph at lines 95--106
+[]\TU/EBGaramond(0)/m/n/10 Kepler’s second law of planetary motion states that 
+the radius vector connecting a planet
  []
 
 
-Underfull \vbox (badness 3646) has occurred while \output is active []
+Underfull \vbox (badness 2512) has occurred while \output is active []
 
  [3]
 File: Fig1-1.eps Graphic file (type eps)
@@ -978,23 +968,40 @@ File: Fig1-1.eps Graphic file (type eps)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
-[6]
-Overfull \hbox (4.41821pt too wide) in paragraph at lines 335--340
-\TU/EBGaramond(0)/m/n/10 Ptolemy’s, the only difference being that Copernicus’s
- epicycles are much smaller than Ptolemy’s.
+Overfull \hbox (3.75153pt too wide) in paragraph at lines 245--253
+[]\TU/EBGaramond(0)/m/n/10 Ptolemy’s fourth, and possibly largest, error is ass
+ociated with his treatment of the Moon.
  []
 
+
+Overfull \hbox (3.51381pt too wide) in paragraph at lines 254--273
+[]\TU/EBGaramond(0)/m/n/10 Ptolemy’s fifth error is associated with his treatme
+nt of planetary ecliptic latitudes. Given
+ []
+
+
+Underfull \vbox (badness 2512) has occurred while \output is active []
+
+ [6]
+Overfull \hbox (4.71931pt too wide) in paragraph at lines 325--335
+[]\TU/EBGaramond(0)/m/n/10 Copernicus modeled the orbit of the Earth around the
+ Sun using an Hipparchian scheme
+ []
+
+[7]
 File: Fig1-2.eps Graphic file (type eps)
 <Fig1-2.eps>
-
-Underfull \vbox (badness 3646) has occurred while \output is active []
-
- [7]
-[8]) [9] [10]
+ [8]) [9] [10]
 \openout2 = `Chapter02.aux'.
 
  (./Chapter02.tex
 Chapter 2.
+
+Overfull \hbox (1.9507pt too wide) in paragraph at lines 23--25
+\TU/EBGaramond(0)/m/n/10 and ἡ σελήνη, respectively. Likewise, the terms for th
+e planets Mercury, Venus, Mars, Jupiter,
+ []
+
 File: Fig2-1.eps Graphic file (type eps)
 <Fig2-1.eps>
 [11
@@ -1017,9 +1024,6 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(1)/m/n' will be
 (Font)              scaled to size 6.68501pt on input line 73.
 LaTeX Font Info:    Font shape `TU/EBGaramond(1)/m/n' will be
 (Font)              scaled to size 4.77501pt on input line 73.
-
-Underfull \vbox (badness 1881) has occurred while \output is active []
-
  [12]
 LaTeX Font Info:    Font shape `TU/EBGaramond(1)/m/n' will be
 (Font)              scaled to size 7.64001pt on input line 87.
@@ -1031,8 +1035,7 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(1)/b/n' will be
 (Font)              scaled to size 5.73001pt on input line 87.
 File: Fig2-3.eps Graphic file (type eps)
 <Fig2-3.eps>
-
-[13]
+ [13]
 File: Fig2-4.eps Graphic file (type eps)
 <Fig2-4.eps>
  [14]
@@ -1051,44 +1054,45 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 8.99904pt on input line 193.
 LaTeX Font Info:    Font shape `TU/EBGaramond(1)/b/n' will be
 (Font)              scaled to size 8.59502pt on input line 193.
- [17]
+
+Overfull \hbox (5.1616pt too wide) in paragraph at lines 203--208
+\TU/EBGaramond(0)/m/n/10 Σκορπιός (Scorpion), Τοξότης (Archer), Αἰγόκερως (Goat
+-horned), Ὑδροχόος (Water-pourer),
+ []
+
+[17]
 File: Fig2-5.eps Graphic file (type eps)
 <Fig2-5.eps>
 File: Fig2-6.eps Graphic file (type eps)
 <Fig2-6.eps>
-
-Overfull \hbox (0.12804pt too wide) in paragraph at lines 249--260
-[]\TU/EBGaramond(0)/m/n/10 Figure 2.7[] shows the visible half of the celestial
- sphere at observation site $[]$. Here, $[][][][]$
- []
-
-[18]
+ [18]
 File: Fig2-7.eps Graphic file (type eps)
 <Fig2-7.eps>
 File: Fig2-8.eps Graphic file (type eps)
 <Fig2-8.eps>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-[20] [21]
+ [19] [20] [21]
 File: Fig2-9.eps Graphic file (type eps)
 <Fig2-9.eps>
  [22]
 File: Fig2-10.eps Graphic file (type eps)
 <Fig2-10.eps>
- [23]
-Overfull \hbox (13.83775pt too wide) in paragraph at lines 431--449
-\TU/EBGaramond(0)/m/n/10 (which, of course, occurs when the Sun reaches the sum
-mer solstice) is $[][][][] [] []  [][][][] []  [] [][]$
+
+Overfull \hbox (5.2196pt too wide) in paragraph at lines 431--437
+\TU/EBGaramond(0)/m/n/10 an altitude of $[][][] [] [][] [] [][]$ when $[][] [] 
+[][][]$, and sets when $[][] [] [][][][] [] [][][][] []  [] [][]$.
  []
 
-[24] [25] [26] [27] [28]
+[23] [24] [25] [26]
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
+ [27]
+[28]
 File: Fig2-11.eps Graphic file (type eps)
 <Fig2-11.eps>
+ [29]
 File: Fig2-12.eps Graphic file (type eps)
 <Fig2-12.eps>
- [29] [30] [31] [32] [33
+ [30] [31] [32] [33
 
 ] [34
 
@@ -1100,8 +1104,7 @@ File: Fig2-12.eps Graphic file (type eps)
 
 ] [38
 
-]
-[39
+] [39
 
 ] [40
 
@@ -1109,7 +1112,8 @@ File: Fig2-12.eps Graphic file (type eps)
 
 ] [42
 
-] [43
+]
+[43
 
 ] [44
 
@@ -1126,91 +1130,91 @@ File: Fig2-12.eps Graphic file (type eps)
 ] [50
 
 ]
-Overfull \vbox (192.4874pt too high) detected at line 1810
+Overfull \vbox (192.4874pt too high) detected at line 1811
  []
 
 
-Overfull \vbox (192.4874pt too high) detected at line 1810
+Overfull \vbox (192.4874pt too high) detected at line 1811
  []
 
 [51
 
 ]
-Overfull \vbox (204.65434pt too high) detected at line 1929
+Overfull \vbox (204.65434pt too high) detected at line 1930
  []
 
 
-Overfull \vbox (200.5987pt too high) detected at line 1929
+Overfull \vbox (200.5987pt too high) detected at line 1930
  []
 
 [52
 
 ]
-Overfull \vbox (204.65434pt too high) detected at line 2048
+Overfull \vbox (204.65434pt too high) detected at line 2049
  []
 
 
-Overfull \vbox (200.5987pt too high) detected at line 2048
+Overfull \vbox (200.5987pt too high) detected at line 2049
  []
 
 [53
 
 ]
-Overfull \vbox (204.65434pt too high) detected at line 2167
+Overfull \vbox (204.65434pt too high) detected at line 2168
  []
 
 
-Overfull \vbox (200.5987pt too high) detected at line 2167
+Overfull \vbox (200.5987pt too high) detected at line 2168
  []
 
 [54
 
 ]
-Overfull \vbox (204.65434pt too high) detected at line 2286
+Overfull \vbox (204.65434pt too high) detected at line 2287
  []
 
 
-Overfull \vbox (200.5987pt too high) detected at line 2286
+Overfull \vbox (200.5987pt too high) detected at line 2287
  []
 
 [55
 
 ]
-Overfull \vbox (204.65434pt too high) detected at line 2406
+Overfull \vbox (204.65434pt too high) detected at line 2407
  []
 
 
-Overfull \vbox (204.65434pt too high) detected at line 2406
+Overfull \vbox (204.65434pt too high) detected at line 2407
  []
 
 [56
 
 ]
-Overfull \vbox (204.70999pt too high) detected at line 2525
+Overfull \vbox (204.70999pt too high) detected at line 2526
  []
 
 
-Overfull \vbox (200.54305pt too high) detected at line 2525
+Overfull \vbox (200.54305pt too high) detected at line 2526
  []
 
 [57
 
 ]
-Overfull \vbox (184.4874pt too high) detected at line 2635
+Overfull \vbox (184.4874pt too high) detected at line 2636
  []
 
 
-Overfull \vbox (184.43175pt too high) detected at line 2635
+Overfull \vbox (184.43175pt too high) detected at line 2636
  []
 
 [58
 
 ]
-Overfull \vbox (180.43175pt too high) detected at line 2742
+Overfull \vbox (180.43175pt too high) detected at line 2743
  []
 
 
-Overfull \vbox (176.2648pt too high) detected at line 2742
+Overfull \vbox (176.2648pt too high) detected at line 2743
  []
 
 ) [59
@@ -1252,20 +1256,14 @@ File: Fig4-3.eps Graphic file (type eps)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [69]
-Overfull \hbox (6.27727pt too wide) in paragraph at lines 210--214
-\TU/EBGaramond(0)/m/n/10 geometric model of a heliocentric planetary orbit is s
-ignificantly more accurate than Hipparchus’s
+Overfull \hbox (5.59457pt too wide) in paragraph at lines 210--214
+\TU/EBGaramond(0)/m/n/10 It can be seen, by comparison with Equations (4.22[])–
+(4.23[]) and (4.26[])–(4.27[]), that Ptolemy’s
  []
 
 [70]
 File: Fig4-4.eps Graphic file (type eps)
 <Fig4-4.eps>
-
-Overfull \hbox (6.26518pt too wide) in paragraph at lines 236--241
-\TU/EBGaramond(0)/m/n/10 complete the rectangle $[][][][]$. Simple geometry rev
-eals that $[][] [] [][] [] [][][][][] [] []  [] []$,
- []
-
 ) [71] [72]
 \openout2 = `Chapter05.aux'.
 
@@ -1278,69 +1276,73 @@ File: Fig5-1.eps Graphic file (type eps)
 
 
 
-] [74] [75]
-Overfull \hbox (2.16762pt too wide) in paragraph at lines 156--160
-\TU/EBGaramond(0)/m/n/10 Here, we have converted the decimal fraction into arc 
-minutes using Table 5.2[], and then rounded
- []
-
-[76] [77]
+] [74] [75] [76] [77]
 File: Fig5-2.eps Graphic file (type eps)
 <Fig5-2.eps>
- [78] [79] [80] [81] [82
 
-] [83
+Underfull \vbox (badness 2277) has occurred while \output is active []
+
+ [78]
+[79] [80] [81] [82
 
 ]
-Overfull \hbox (6.8564pt too wide) in paragraph at lines 487--511
+Overfull \hbox (20.58786pt too wide) in paragraph at lines 487--511
+ [][][][] 
+ []
+
+[83
+
+]
+Overfull \hbox (2.90926pt too wide) in paragraph at lines 518--568
  [][][][] 
  []
 
 [84
 
-] [85
+]
+Overfull \hbox (13.31725pt too wide) in paragraph at lines 575--618
+ [][][][] 
+ []
 
-]) [86
+) [85
 
 ]
 \openout2 = `Chapter06.aux'.
 
- (./Chapter06.tex
+ (./Chapter06.tex [86
+
+
+
+
+]
 Chapter 6.
-[87
-
-
-
-
-] [88] [89]
+[87] [88] [89]
 File: Fig6-1.eps Graphic file (type eps)
 <Fig6-1.eps>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[90] [91] [92]
-Overfull \hbox (13.22948pt too wide) in paragraph at lines 303--311
-\TU/EBGaramond(0)/m/n/10 moons, or successive full moons, and is $[][][][][][] 
-[] [][][] [] [][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] []
+[90
+
+] [91] [92]
+Overfull \hbox (4.11691pt too wide) in paragraph at lines 303--305
+\TU/EBGaramond(0)/m/n/10 A \TU/EBGaramond(0)/m/it/10 sidereal month \TU/EBGaram
+ond(0)/m/n/10 is the mean period of time between successive passages of the Moo
+n through
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1552) has occurred while \output is active []
 
  [93]
 [94]
 File: Fig6-2.eps Graphic file (type eps)
 <Fig6-2.eps>
  [95]
-Overfull \hbox (2.61711pt too wide) in paragraph at lines 411--413
-[]\TU/EBGaramond(0)/m/n/10 We have seen that at 00:00UT on May 5, 2005 AD the l
-unar radial anomalies were $[][][] [][] []
- []
-
 File: Fig6-3.eps Graphic file (type eps)
 <Fig6-3.eps>
-[96] [97] [98] [99
+ [96] [97] [98] [99
 
 ] [100
 
@@ -1359,7 +1361,8 @@ File: Fig6-3.eps Graphic file (type eps)
 ]
 \openout2 = `Chapter07.aux'.
 
- (./Chapter07.tex
+
+(./Chapter07.tex
 Chapter 7.
 File: Fig7-1.eps Graphic file (type eps)
 <Fig7-1.eps>
@@ -1372,7 +1375,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-[108] [109] [110]
+[108] [109]
+Overfull \hbox (2.729pt too wide) in paragraph at lines 140--147
+\TU/EBGaramond(0)/m/n/10 From Table 7.3[], the fractional Julian day number of 
+first new moon in 1982 AD is 2444994.7
+ []
+
+[110]
 File: Fig7-2.eps Graphic file (type eps)
 <Fig7-2.eps>
  [111]
@@ -1383,76 +1392,70 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [114]
 [115]
-Overfull \hbox (5.58255pt too wide) in paragraph at lines 419--430
-\TU/EBGaramond(0)/m/n/10 Now, $[][][]$ synodic months corresponds to $[][][][][
-][][][]$ days, which corresponds to $[][][][][][]$ anoma-
+Overfull \hbox (2.62154pt too wide) in paragraph at lines 406--417
+[]\TU/EBGaramond(0)/m/n/10 Thus, we can see that, over a long period of time, t
+he ratio of the number of total/annular
  []
 
-[116] [117] [118] [119
+[116]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [117]
+[118] [119
 
 ] [120
 
 ] [121
 
-]) [122
+] [122
+
+]) [123
 
 ]
 \openout2 = `Chapter08.aux'.
 
- (./Chapter08.tex
+ (./Chapter08.tex [124
+
+
+
+
+]
 Chapter 8.
 File: Fig8-1.eps Graphic file (type eps)
 <Fig8-1.eps>
 File: Fig8-2.eps Graphic file (type eps)
 <Fig8-2.eps>
-[123
-
-
-
-
-]
+[125]
 File: Fig8-3.eps Graphic file (type eps)
 <Fig8-3.eps>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[124] [125]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [126]
-[127] [128] [129]
+ [126] [127] [128] [129] [130] [131]
 File: Fig8-4.eps Graphic file (type eps)
 <Fig8-4.eps>
+ [132]
+Overfull \hbox (7.66177pt too wide) in paragraph at lines 385--388
+\TU/EBGaramond(0)/m/n/10 A calculation of the epicyclic anomaly at this time, u
+sing Tables 8.3[]–8.5[], yields $[] [] [][][][][][][]$.
+ []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[130]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [131]
-[132] [133] [134] [135] [136] [137
-
-] [138
+[133] [134] [135] [136] [137] [138
 
 ] [139
 
 ] [140
 
+] [141
+
 ]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 4.77501pt on input line 793.
- [141
-
-] [142
+ [142
 
 ] [143
 
-]
-[144
+] [144
 
-] [145
+]
+[145
 
 ] [146
 
@@ -1462,28 +1465,37 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 
 ] [149
 
-]) [150
+] [150
+
+]) [151
 
 ]
 \openout2 = `Chapter09.aux'.
 
- (./Chapter09.tex
+ (./Chapter09.tex [152
+
+
+
+
+]
 Chapter 9.
 File: Fig9-1.eps Graphic file (type eps)
 <Fig9-1.eps>
-[151
+[153] [154] [155] [156] [157]
+Overfull \hbox (7.79178pt too wide) in paragraph at lines 296--300
+\TU/EBGaramond(0)/m/n/10 A calculation of the epicyclic anomaly at this time, u
+sing Tables 9.1[]–9.3[], yields $[] [] [][][][][][][]$.
+ []
 
+[158] [159]
+Overfull \hbox (3.5478pt too wide) in paragraph at lines 424--436
+[]\TU/EBGaramond(0)/m/n/10 The conjunctions and elongations of Mercury can be i
+nvestigated using analogous meth-
+ []
 
+[160] [161] [162
 
-
-] [152] [153] [154] [155] [156] [157] [158] [159] [160
-
-] [161
-
-] [162
-
-]
-[163
+] [163
 
 ] [164
 
@@ -1491,12 +1503,17 @@ File: Fig9-1.eps Graphic file (type eps)
 
 ] [166
 
-]) [167
+] [167
+
+] [168
+
+]) [169
 
 ]
 \openout2 = `Chapter10.aux'.
 
- (./Chapter10.tex [168
+ (./Chapter10.tex
+[170
 
 
 
@@ -1505,28 +1522,20 @@ File: Fig9-1.eps Graphic file (type eps)
 Chapter 10.
 File: Fig10-1.eps Graphic file (type eps)
 <Fig10-1.eps>
+[171] [172] [173]
+Overfull \hbox (1.46507pt too wide) in paragraph at lines 157--161
+[]\TU/EBGaramond(0)/m/n/10 The ecliptic latitude, $[]$, is the product of the d
+eferential latitude, $[][]$, and the epicyclic
+ []
 
-Underfull \vbox (badness 1286) has occurred while \output is active []
-
- [169]
-[170] [171] [172] [173] [174]
+[174] [175] [176]
 File: Fig10-2.eps Graphic file (type eps)
 <Fig10-2.eps>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[175] [176] [177]
-Overfull \hbox (0.76448pt too wide) in paragraph at lines 459--461
-[]\TU/EBGaramond(0)/m/n/10 Enter Table 10.8[] with the value of $[]$ and take o
-ut the corresponding value of the epicyclic
- []
-
-[178] [179] [180] [181
-
-] [182
-
-] [183
+[177] [178] [179] [180] [181] [182] [183
 
 ] [184
 
@@ -1538,10 +1547,14 @@ ut the corresponding value of the epicyclic
 
 ] [188
 
-] [189
+]
+[189
 
-])
-[190
+] [190
+
+] [191
+
+]) [192
 
 ]
 \openout2 = `Chapter11.aux'.
@@ -1551,16 +1564,22 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
 (Font)              scaled to size 8.59502pt on input line 8.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
 (Font)              scaled to size 8.59502pt on input line 20.
- [191
+ [193
 
 
 
 
-] [192] [193] [194] [195]) [196]
+] [194] [195]
+Overfull \hbox (3.11246pt too wide) in paragraph at lines 253--255
+[]\TU/EBGaramond(0)/m/n/9 Value of the \TU/EBGaramond(0)/b/n/9 mean longitude \
+TU/EBGaramond(0)/m/n/9 of a \TU/EBGaramond(0)/b/n/9 Keplerian orbit \TU/EBGaram
+ond(0)/m/n/9 at the \TU/EBGaramond(0)/b/n/9 epoch\TU/EBGaramond(0)/m/n/9 . 
+ []
+
+[196] [197]) [198]
 \openout2 = `Chapter12.aux'.
 
- (./Chapter12.tex
-[197
+ (./Chapter12.tex [199
 
 
 
@@ -1569,13 +1588,19 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
 ])
 \openout2 = `Chapter13.aux'.
 
- (./Chapter13.tex [198
+ (./Chapter13.tex [200
 
 
 
 
 
-]) [199]
+]
+Overfull \hbox (3.03413pt too wide) in paragraph at lines 10--11
+[]\TU/EBGaramond(0)/m/it/10 The Complete Works of Aristotle\TU/EBGaramond(0)/m/
+n/10 , Aristotle, ed. J. Barnes (Princeton University Press, Prince-
+ []
+
+) [201]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1680,11 +1705,10 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 LaTeX Info: Redefining \rmfamily on input line 3.
 LaTeX Info: Redefining \sffamily on input line 3.
 LaTeX Info: Redefining \ttfamily on input line 3.
- (./Preface.aux)
-(./Chapter01.aux) (./Chapter02.aux) (./Chapter03.aux) (./Chapter04.aux)
-(./Chapter05.aux) (./Chapter06.aux) (./Chapter07.aux) (./Chapter08.aux)
-(./Chapter09.aux) (./Chapter10.aux) (./Chapter11.aux) (./Chapter12.aux)
-(./Chapter13.aux)) ) 
+ (./Preface.aux) (./Chapter01.aux) (./Chapter02.aux)
+(./Chapter03.aux) (./Chapter04.aux) (./Chapter05.aux) (./Chapter06.aux)
+(./Chapter07.aux) (./Chapter08.aux) (./Chapter09.aux) (./Chapter10.aux)
+(./Chapter11.aux) (./Chapter12.aux) (./Chapter13.aux)) ) 
 Here is how much of TeX's memory you used:
  12198 strings out of 476683
  256538 string characters out of 5804047
@@ -1694,4 +1718,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  72i,12n,115p,692b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Almagest.pdf (207 pages).
+Output written on Almagest.pdf (209 pages).
