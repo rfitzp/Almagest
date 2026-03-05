@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  24 FEB 2026 09:45
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.15)  1 MAR 2026 19:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -980,7 +980,7 @@ nt of planetary ecliptic latitudes. Given
  []
 
 
-Underfull \vbox (badness 2512) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
 Overfull \hbox (4.71931pt too wide) in paragraph at lines 325--335
@@ -1255,8 +1255,11 @@ File: Fig4-3.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[69]
-Overfull \hbox (5.59457pt too wide) in paragraph at lines 210--214
+
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+ [69]
+Overfull \hbox (5.59457pt too wide) in paragraph at lines 211--215
 \TU/EBGaramond(0)/m/n/10 It can be seen, by comparison with Equations (4.22[])–
 (4.23[]) and (4.26[])–(4.27[]), that Ptolemy’s
  []
@@ -1264,7 +1267,7 @@ Overfull \hbox (5.59457pt too wide) in paragraph at lines 210--214
 [70]
 File: Fig4-4.eps Graphic file (type eps)
 <Fig4-4.eps>
-) [71] [72]
+ [71]) [72]
 \openout2 = `Chapter05.aux'.
 
  (./Chapter05.tex
