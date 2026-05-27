@@ -1,0 +1,110 @@
+import matplotlib.pyplot as plt
+
+R_plus_moon = 64
+
+print ("R_plus_moon = %10.3e" % R_plus_moon)
+
+eps_mercury = 0.387098
+
+R_minus_mercury = 64.0
+R_mercury       = R_minus_mercury /(1. - eps_mercury)
+R_plus_mercury  = R_minus_mercury * (1. + eps_mercury) /(1. - eps_mercury)
+a_mercury       = R_mercury * eps_mercury
+
+print ("R_mercury   = %10.3e a_mercury = %10.3e R_minus_mercury = %10.3e R_plus_mercury = %10.3e" % (R_mercury, a_mercury, R_minus_mercury, R_plus_mercury))
+
+eps_venus = 0.723334
+
+R_minus_venus = R_plus_mercury
+R_venus       = R_minus_venus /(1. - eps_venus)
+R_plus_venus  = R_minus_venus * (1. + eps_venus) /(1. - eps_venus)
+a_venus       = R_venus * eps_venus
+
+print ("R_venus     = %10.3e a_venus   = %10.3e R_minus_venus   = %10.3e R_plus_venus   = %10.3e" % (R_venus, a_venus, R_minus_venus, R_plus_venus))
+
+eps_sun = 2.*0.016711
+
+R_minus_sun = R_plus_venus
+R_sun       = R_minus_sun /(1. - eps_sun)
+R_plus_sun  = R_minus_sun * (1. + eps_sun) /(1. - eps_sun)
+a_sun       = R_sun * eps_sun
+
+print ("R_sun       = %10.3e a_sun     = %10.3e R_minus_sun     = %10.3e R_plus_sun     = %10.3e" % (R_sun, a_sun, R_minus_sun, R_plus_sun))
+
+eps_mars = 1./1.523706
+
+R_minus_mars = R_plus_sun
+R_mars       = R_minus_mars /(1. - eps_mars)
+R_plus_mars  = R_minus_mars * (1. + eps_mars) /(1. - eps_mars)
+a_mars       = R_mars * eps_mars
+
+print ("R_mars      = %10.3e a_mars    = %10.3e R_minus_mars    = %10.3e R_plus_mars    = %10.3e" % (R_mars, a_mars, R_minus_mars, R_plus_mars))
+
+eps_jupiter = 1./5.202873
+
+R_minus_jupiter = R_plus_mars
+R_jupiter       = R_minus_jupiter /(1. - eps_jupiter)
+R_plus_jupiter  = R_minus_jupiter * (1. + eps_jupiter) /(1. - eps_jupiter)
+a_jupiter       = R_jupiter * eps_jupiter
+
+print ("R_jupiter   = %10.3e a_jupiter = %10.3e R_minus_jupiter = %10.3e R_plus_jupiter = %10.3e" % (R_jupiter, a_jupiter, R_minus_jupiter, R_plus_jupiter))
+
+eps_saturn = 1./9.536651
+
+R_minus_saturn = R_plus_jupiter
+R_saturn       = R_minus_saturn /(1. - eps_saturn)
+R_plus_saturn  = R_minus_saturn * (1. + eps_saturn) /(1. - eps_saturn)
+a_saturn       = R_saturn * eps_saturn
+
+print ("R_saturn    = %10.3e a_saturn  = %10.3e R_minus_saturn  = %10.3e R_plus_saturn  = %10.3e" % (R_saturn, a_saturn, R_minus_saturn, R_plus_saturn))
+
+fig, ax = plt.subplots ()
+plt.rc ('xtick', labelsize = 20) 
+plt.rc ('ytick', labelsize = 20) 
+
+earth = plt.Circle((0, 0), 1., fill=False)
+moon  = plt.Circle((0, 0), R_plus_moon, fill=False)
+
+mercury_def = plt.Circle((0, 0),         R_mercury, fill=False)
+mercury_epi = plt.Circle((0, R_mercury), a_mercury, fill=False)
+
+venus_def = plt.Circle((0, 0),       R_venus, fill=False)
+venus_epi = plt.Circle((0, R_venus), a_venus, fill=False)
+
+sun_def = plt.Circle((0, 0),     R_sun, fill=False)
+sun_epi = plt.Circle((0, R_sun), a_sun, fill=False)
+
+mars_def = plt.Circle((0, 0),      R_mars, fill=False)
+mars_epi = plt.Circle((0, R_mars), a_mars, fill=False)
+
+jupiter_def = plt.Circle((0, 0),         R_jupiter, fill=False)
+jupiter_epi = plt.Circle((0, R_jupiter), a_jupiter, fill=False)
+
+saturn_def = plt.Circle((0, 0),        R_saturn, fill=False)
+saturn_epi = plt.Circle((0, R_saturn), a_saturn, fill=False)
+
+
+ax.add_patch(earth)
+ax.add_patch(moon)
+
+ax.add_patch(mercury_def)
+ax.add_patch(mercury_epi)
+ax.add_patch(venus_def)
+ax.add_patch(venus_epi)
+ax.add_patch(sun_def)
+ax.add_patch(sun_epi)
+ax.add_patch(mars_def)
+ax.add_patch(mars_epi)
+ax.add_patch(jupiter_def)
+ax.add_patch(jupiter_epi)
+ax.add_patch(saturn_def)
+ax.add_patch(saturn_epi)
+
+ax.set_aspect('equal')
+
+plt.xlim(-8500, 8500)
+
+plt.ylim(-8500, 8500)
+
+plt.show ()    
+#plt.savefig("Figure13_6.pdf")
